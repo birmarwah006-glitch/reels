@@ -1,0 +1,25 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+.env
+
+# Generated media — regenerate with the pipeline, don't version binaries
+clipper/output/*.mp4
+clipper/audio_stems/
+
+# Character art is NOT distributed with this repo.
+# The pipeline takes any transparent RGBA PNG; supply your own and drop them
+# at the paths below. See README for how to cut them out with rembg.
+clipper/assets/characters/*.png
+*.jpeg
+*.jpg
+
+# macOS
+.DS_Store
+
+# Local tooling config
+.claude/
+
+# Generated sidecars contain absolute local paths
+clipper/output/*.json
