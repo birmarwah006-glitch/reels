@@ -23,3 +23,10 @@ clipper/assets/characters/*.png
 
 # Generated sidecars contain absolute local paths
 clipper/output/*.json
+
+# Node
+node_modules/
+dist/
+.vite/
+tsconfig.tsbuildinfo
+.smoke/

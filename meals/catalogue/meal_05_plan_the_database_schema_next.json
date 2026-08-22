@@ -1,0 +1,110 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_05_plan_the_database_schema_next",
+    "title": "Plan the database schema for the grocery app",
+    "concept": "python.project.overview",
+    "objective": "Outline that the next lesson will create MySQL tables for the app",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [],
+    "source": {
+      "kind": "lecture"
+    },
+    "voice": {
+      "script": "What tables does a grocery store need? Imagine the app as a library; the books are data stored in tables. Which tables will store our products, orders, and customers? First, identify the core entities: products, customers, orders. Now we\u2019ll outline the main tables you\u2019ll create in MySQL. Each table gets a primary key and relevant columns. That blueprint becomes the database schema for the next lesson. Your next step: List three tables you would create for the grocery app and their key columns.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": true,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What tables does a grocery store need?"
+        },
+        "narration_anchor": "What tables does a grocery store need?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "Which tables will store our products, orders, and customers?"
+        },
+        "narration_anchor": "Which tables will store our products, orders, and customers?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Identify entities",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Define tables",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "to create"
+            }
+          ]
+        },
+        "narration_anchor": "Now we\u2019ll outline the main tables you\u2019ll create in MySQL."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Your schema is the blueprint for all data the app will manage."
+        },
+        "narration_anchor": "That blueprint becomes the database schema for the next lesson.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "List three tables you would create for the grocery app and their key columns."
+        },
+        "narration_anchor": "Your next step: List three tables you would create for the grocery app and their key columns.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "List three tables you would create for the grocery app and their key columns.",
+      "hint": "Think of products, customers, and orders."
+    },
+    "series": {
+      "title": "Grocery Store App Overview",
+      "artifact": "a grocery store management system web application",
+      "order": 5,
+      "total": 5,
+      "previous_id": "meal_04_identify_prerequisite_skills",
+      "next_id": null
+    }
+  }
+}

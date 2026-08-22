@@ -1,0 +1,102 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_02_create_ui_mock_ups",
+    "title": "Create UI mock\u2011ups for the grocery app",
+    "concept": "python.project.design",
+    "objective": "Sketch the screens to clarify the user interface before coding",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.project.design",
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "voice": {
+      "script": "What does your grocery app look like before you write a line? How can you plan screens without coding? First, imagine the screen layout on paper. This helps you see the flow and catch missing elements early. Now let's see a quick mock\u2011up example. You\u2019ll see the sketch on your screen. Remember, a clear mock\u2011up saves time and reduces rework later. Try drawing the main checkout screen on a sticky note.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": true,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What does your grocery app look like before you write a line?"
+        },
+        "narration_anchor": "What does your grocery app look like before you write a line?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How can you plan screens without coding?"
+        },
+        "narration_anchor": "How can you plan screens without coding?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Sketch screens",
+              "kind": "box"
+            }
+          ],
+          "edges": []
+        },
+        "narration_anchor": "First, imagine the screen layout on paper."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A simple mock\u2011up clarifies UI needs and prevents costly changes later."
+        },
+        "narration_anchor": "Remember, a clear mock\u2011up saves time and reduces rework later.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Draw a mock\u2011up of the product list screen using pen and paper."
+        },
+        "narration_anchor": "Try drawing the main checkout screen on a sticky note.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Draw a mock\u2011up of the product list screen using pen and paper.",
+      "hint": "Include a search bar, product tiles, and an add\u2011to\u2011cart button."
+    },
+    "series": {
+      "title": "Grocery Store App Overview",
+      "artifact": "a grocery store management system web application",
+      "order": 2,
+      "total": 5,
+      "previous_id": "meal_01_understand_three_tier_architecture",
+      "next_id": "meal_03_choose_the_technology_stack"
+    }
+  }
+}

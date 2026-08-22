@@ -1,0 +1,121 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_01_understand_three_tier_architecture",
+    "title": "Understand three\u2011tier architecture",
+    "concept": "python.project.overview",
+    "objective": "Explain how UI, back\u2011end, and database are separated into layers",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.project.design",
+      "python.project.design"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "voice": {
+      "script": "Why does a grocery app need three separate layers? How do UI, back\u2011end, and database stay separate? Imagine the checkout screen, the order logic, and the inventory table all talking directly. That quickly becomes a tangled mess. In a three tier architecture we split responsibilities. The user interface, or UI, handles what the shopper sees and clicks. The back\u2011end processes requests, applies business rules, and talks to storage. The database stores product data, prices, and stock levels. Each layer communicates only with the one below it, so changes in the UI don\u2019t break the database, and the back\u2011end can be reused across different front\u2011ends. This separation makes the app easier to develop, test, and scale.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": true,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Why does a grocery app need three separate layers?"
+        },
+        "narration_anchor": "Why does a grocery app need three separate layers?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do UI, back\u2011end, and database stay separate?"
+        },
+        "narration_anchor": "How do UI, back\u2011end, and database stay separate?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "ui",
+              "label": "User Interface",
+              "kind": "box"
+            },
+            {
+              "id": "be",
+              "label": "Back\u2011end Logic",
+              "kind": "box"
+            },
+            {
+              "id": "db",
+              "label": "Database",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "ui",
+              "to": "be",
+              "label": "calls"
+            },
+            {
+              "from": "be",
+              "to": "db",
+              "label": "queries"
+            }
+          ]
+        },
+        "narration_anchor": "In a three tier architecture we split responsibilities."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Separate UI, back\u2011end, and database into distinct layers for maintainability."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Sketch a diagram labeling UI, back\u2011end, and database for a grocery app."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Sketch a diagram labeling UI, back\u2011end, and database for a grocery app.",
+      "hint": "Show arrows only between adjacent layers."
+    },
+    "series": {
+      "title": "Grocery Store App Overview",
+      "artifact": "a grocery store management system web application",
+      "order": 1,
+      "total": 5,
+      "previous_id": null,
+      "next_id": "meal_02_create_ui_mock_ups"
+    }
+  }
+}
