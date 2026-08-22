@@ -223,18 +223,55 @@ def _llm_json(system: str, user: str, label: str, max_tokens: int = 3000,
 
 
 def window_transcript(text: str, words_per_window: int) -> list[str]:
-    """Split on paragraph boundaries so a window never starts mid-sentence."""
-    blocks = [b for b in text.split("\n\n") if b.strip()]
+    """Split a transcript into windows that fit the per-minute token ceiling.
+
+    Prefers paragraph boundaries so a window never starts mid-sentence. But a
+    boundary-only split is not sufficient: a chipper manifest with a single
+    module is ONE paragraph, so a 6,800-word lecture came through as one
+    15,686-token window and was rejected with a 413. Any block that is itself
+    over budget is therefore hard-split on sentence ends, and failing that on
+    words, so no window can ever exceed the cap.
+    """
+    def split_block(block: str) -> list[str]:
+        words = block.split()
+        if len(words) <= words_per_window:
+            return [block]
+
+        # Sentence ends first, so the seams land somewhere readable.
+        pieces, chunk, count = [], [], 0
+        for sentence in re.split(r"(?<=[.!?])\s+", block):
+            n = len(sentence.split())
+            if chunk and count + n > words_per_window:
+                pieces.append(" ".join(chunk))
+                chunk, count = [], 0
+            # A single sentence longer than the window (unpunctuated
+            # auto-captions do this) still has to be cut somewhere.
+            if n > words_per_window:
+                if chunk:
+                    pieces.append(" ".join(chunk))
+                    chunk, count = [], 0
+                sentence_words = sentence.split()
+                for i in range(0, len(sentence_words), words_per_window):
+                    pieces.append(" ".join(sentence_words[i:i + words_per_window]))
+                continue
+            chunk.append(sentence)
+            count += n
+        if chunk:
+            pieces.append(" ".join(chunk))
+        return pieces
+
     windows, current, count = [], [], 0
-    for block in blocks:
-        n = len(block.split())
-        if current and count + n > words_per_window:
-            windows.append("\n\n".join(current))
-            current, count = [], 0
-        current.append(block)
-        count += n
+    for block in (b for b in text.split("\n\n") if b.strip()):
+        for piece in split_block(block):
+            n = len(piece.split())
+            if current and count + n > words_per_window:
+                windows.append("\n\n".join(current))
+                current, count = [], 0
+            current.append(piece)
+            count += n
     if current:
         windows.append("\n\n".join(current))
+
     return windows
 
 
