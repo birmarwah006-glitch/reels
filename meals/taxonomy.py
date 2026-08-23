@@ -253,6 +253,17 @@ def catalogue_for_prompt() -> str:
     )
 
 
+def compact_catalogue() -> str:
+    """Ids and display names only, no glosses.
+
+    The full catalogue with glosses is ~800 tokens, which matters when the
+    whole curriculum request has to fit inside an 8,000-token minute. Pass 2
+    is choosing an id from a list, not learning what each one means, so the
+    names carry enough signal.
+    """
+    return " | ".join(f"{cid}={name}" for cid, (name, _g, _p) in CONCEPTS.items())
+
+
 def nearest_valid(concept_id: str) -> str | None:
     """Map a model-suggested id onto a real one, or return None.
 

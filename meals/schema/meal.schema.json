@@ -200,6 +200,20 @@
           ]
         }
       }
+    },
+    "teaches": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Terms this Meal explains for the first time. Ordering a series for a beginner depends on knowing what each Meal introduces, not just which concept id it carries."
+    },
+    "assumes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Terms the viewer must already understand. Checked against what earlier Meals introduce, so nothing is used before it is taught."
     }
   },
   "$defs": {

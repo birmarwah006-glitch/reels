@@ -1,0 +1,173 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_12_static_method",
+    "title": "Static method without self",
+    "concept": "python.oop.methods",
+    "objective": "Define a method that does not take self and can be called on the class",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "python.oop.init"
+    ],
+    "next_concepts": [
+      "python.oop.classes",
+      "python.oop.classes"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "@staticmethod"
+    ],
+    "assumes": [
+      "class definition syntax",
+      "print"
+    ],
+    "voice": {
+      "script": "What if you could call a function without an object? That's what a static method lets you do. In Python you add the @staticmethod decorator before a function inside a class. The decorator tells Python this method doesn't need the instance, so you can call it on the class itself. Here\u2019s a tiny class. We define class Student. Inside we put a regular method greet that prints a greeting using self.name. Then we add @staticmethod above a method eligible that receives an age and returns True if age is at least eighteen. Because it has no self, we call Student.eligible(20) and it returns True. We also create a Student object named Alice and call alice.greet() to show the normal method still works. Running the program prints the greeting and then prints that twenty is adult: True.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": true,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could call a function without an object?"
+        },
+        "narration_anchor": "What if you could call a function without an object?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How can you call a method without an instance?"
+        }
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Add @staticmethod",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Call on class",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "makes callable"
+            }
+          ]
+        },
+        "narration_anchor": "In Python you add the @staticmethod decorator before a function inside a class."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "class Student:\n    def __init__(self, name):\n        self.name = name\n    def greet(self):\n        print(f\"Hello, I am {self.name}\")\n    @staticmethod\n    def eligible(age):\n        return age >= 18\n\nprint(Student.eligible(20))\nalice = Student(\"Alice\")\nalice.greet()\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "class Student:\n    def __init__(self, name):\n        self.name = name\n    def greet(self):\n        print(f\"Hello, I am {self.name}\")\n    @staticmethod\n    def eligible(age):\n        return age >= 18\n\nprint(Student.eligible(20))\nalice = Student(\"Alice\")\nalice.greet()",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "eligible"
+            }
+          ]
+        },
+        "narration_anchor": "Here\u2019s a tiny class."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-23T08:51:38+00:00",
+            "stdout": "True\nHello, I am Alice\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running the program prints the greeting and then prints that twenty is adult: True.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A static method uses @staticmethod and can be called directly on the class."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Add a static method to a new class that converts Celsius to Fahrenheit."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Add a static method to a new class that converts Celsius to Fahrenheit.",
+      "hint": "Remember the formula (C * 9/5) + 32."
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 12,
+      "total": 15,
+      "previous_id": "meal_11_average_calculation_method",
+      "next_id": "meal_13_build_a_student_class"
+    }
+  }
+}

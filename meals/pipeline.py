@@ -23,6 +23,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import re
 import subprocess
 import sys
 import time
@@ -64,6 +66,10 @@ class Status:
         self.data = {
             "run_id": run_id,
             "job_id": job_id,
+            # Recorded so a reader can tell "still working" from "died".
+            # A killed or crashed run never gets to write a terminal state,
+            # and without this the UI polls a stale file forever.
+            "pid": os.getpid(),
             "url": url,
             "state": "running",
             "stage": "ingest",
@@ -92,8 +98,8 @@ class Status:
 
 
 def run(cmd: list[str], cwd: Path | None = None, timeout: int = 3600) -> tuple[int, str]:
-    """Run a stage, streaming nothing but capturing everything. -u keeps the
-    child's output unbuffered so a captured log is not empty on a crash."""
+    """Run a stage, capturing everything. -u keeps the child's output
+    unbuffered so a captured log is not empty on a crash."""
     proc = subprocess.run(
         cmd, cwd=str(cwd) if cwd else None,
         capture_output=True, text=True, timeout=timeout,
@@ -101,9 +107,64 @@ def run(cmd: list[str], cwd: Path | None = None, timeout: int = 3600) -> tuple[i
     return proc.returncode, (proc.stdout + proc.stderr)
 
 
+def run_streaming(cmd: list[str], cwd: Path, on_line) -> tuple[int, str]:
+    """Run a stage and hand each line to a callback as it arrives.
+
+    Planning is by far the longest stage — it comprehends the lecture, designs
+    the series, and then makes one call per Meal. Captured wholesale it looks
+    frozen for minutes, which is exactly how it looked in the UI: "Finding the
+    concepts" and nothing else. Streaming lets the status file report which
+    Meal is being written.
+    """
+    proc = subprocess.Popen(
+        cmd, cwd=str(cwd), stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT, text=True, bufsize=1,
+    )
+    captured: list[str] = []
+    assert proc.stdout is not None
+    for line in proc.stdout:
+        captured.append(line)
+        # Echo it. Capturing silently meant a run that lost twelve of fourteen
+        # sections left no trace of it anywhere: only the last 1,500 characters
+        # survived, inside an exception message.
+        print(line.rstrip(), flush=True)
+        try:
+            on_line(line.rstrip())
+        except Exception:
+            pass  # progress reporting must never break the run
+    proc.wait()
+    return proc.returncode, "".join(captured)
+
+
 # ─────────────────────────────────────────────────────────────────────────
 # Stages
 # ─────────────────────────────────────────────────────────────────────────
+
+def ingest_captions(url: str, status: Status) -> Path | None:
+    """Try the publisher's own captions before transcribing anything.
+
+    Whisper at chipper's `tiny` size renders technical speech as word salad,
+    and transcription is also the slowest stage by an order of magnitude. When
+    a video ships captions they are both faster and better, so they are tried
+    first. Falls back silently — a video without captions is ordinary.
+    """
+    from transcript import fetch_youtube_captions
+
+    status.stage("ingest", "running", url=url, source="captions")
+    cookies = MAROS_ROOT / "config" / "cookies.txt"
+    result = fetch_youtube_captions(url, cookies)
+    if not result:
+        print("[pipeline] no captions on this video — falling back to transcription",
+              flush=True)
+        return None
+
+    title, text = result
+    path = BUILD_DIR / f"captions_{abs(hash(url)) % (10 ** 10)}.txt"
+    path.write_text(f"{title}\n\n{text}")
+    status.stage("ingest", "done", source="captions",
+                 words=len(text.split()), title=title[:60])
+    return path
+
 
 def ingest(url: str, status: Status) -> str:
     """Hand the URL to the existing backend and wait for chipper to finish.
@@ -154,10 +215,35 @@ def ingest(url: str, status: Status) -> str:
     raise TimeoutError("chipper did not finish within an hour")
 
 
-def plan(job_id: str, status: Status) -> list[Path]:
-    status.stage("plan", "running")
+# Lines the planner prints that map onto visible progress.
+PASS1 = re.compile(r"window (\d+)/(\d+)")
+PASS2 = re.compile(r"series: (\d+) Meals")
+PASS3 = re.compile(r"\[(\d+)/(\d+)\]\s+(.*)")
 
-    code, log = run([PYTHON, "-u", "planner.py", "--job", job_id], cwd=HERE)
+
+def plan(job_id: str, status: Status,
+         transcript: Path | None = None, title: str = "") -> list[Path]:
+    status.stage("plan", "running", step="reading the lecture")
+
+    def progress(line: str) -> None:
+        if m := PASS1.search(line):
+            status.stage("plan", "running", step="reading the lecture",
+                         window=f"{m.group(1)}/{m.group(2)}")
+        elif m := PASS2.search(line):
+            status.stage("plan", "running", step="designing the series",
+                         planned=int(m.group(1)))
+        elif m := PASS3.search(line):
+            status.stage("plan", "running", step="writing the Meals",
+                         written=f"{m.group(1)}/{m.group(2)}",
+                         current=m.group(3)[:60])
+
+    command = (
+        [PYTHON, "-u", "planner.py", "--transcript", str(transcript),
+         "--title", title, "--key", job_id]
+        if transcript else
+        [PYTHON, "-u", "planner.py", "--job", job_id]
+    )
+    code, log = run_streaming(command, HERE, progress)
 
     # Read the series the planner declares rather than diffing the catalogue
     # directory: on a resumed run every Meal already exists on disk, so a diff
@@ -262,8 +348,18 @@ def main() -> int:
     status = Status(args.job or "pending", args.url, args.run_id)
 
     try:
+        transcript_path, title = None, ""
         if args.url:
-            job_id = ingest(args.url, status)
+            transcript_path = ingest_captions(args.url, status)
+            if transcript_path:
+                # Captions carry their own title on the first line.
+                head = transcript_path.read_text().split("\n\n", 1)
+                title = head[0].strip()
+                job_id = f"cap_{abs(hash(args.url)) % (10 ** 10)}"
+                status.data["job_id"] = job_id
+                status.write()
+            else:
+                job_id = ingest(args.url, status)
         else:
             job_id = args.job
             status.stage("ingest", "done", job_id=job_id, note="already ingested")
@@ -273,7 +369,7 @@ def main() -> int:
                 status.path = BUILD_DIR / f"pipeline_{job_id}.json"
             status.write()
 
-        meals = plan(job_id, status)
+        meals = plan(job_id, status, transcript_path, title)
         meals = verify(meals, status)
         rendered = narrate_and_render(meals, status)
 

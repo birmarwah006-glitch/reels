@@ -58,6 +58,7 @@ function mealsDevServer(): Plugin {
 
   const summary = (meal: Record<string, unknown>) => ({
     id: meal.id,
+    series: meal.series ?? null,
     title: meal.title,
     concept: meal.concept,
     objective: meal.objective,
@@ -179,7 +180,41 @@ function mealsDevServer(): Plugin {
             })
           }
           try {
-            return sendJson(res, JSON.parse(fs.readFileSync(file, 'utf8')))
+            const status = JSON.parse(fs.readFileSync(file, 'utf8'))
+
+            // A run that was killed or crashed never wrote a terminal state,
+            // so the file still says "running" and the UI would poll it
+            // forever. The recorded pid settles it: if the process is gone
+            // and the state is not terminal, the run died.
+            const active = status.state === 'running' || status.state === 'starting'
+            if (active) {
+              let dead = false
+
+              if (typeof status.pid === 'number') {
+                try {
+                  process.kill(status.pid, 0)
+                } catch {
+                  dead = true
+                }
+              } else {
+                // Runs started before the pid was recorded, and any case where
+                // the pid was reused. The pipeline writes its status after
+                // every step; the longest gap is one Meal's narrate-and-render,
+                // so silence well past that means it is not coming back.
+                const idleMs = Date.now() - fs.statSync(file).mtimeMs
+                dead = idleMs > 10 * 60 * 1000
+              }
+
+              if (dead) {
+                status.state = 'failed'
+                status.error =
+                  status.error ||
+                  `The run stopped during "${status.stage}". Anything already ` +
+                  'finished was kept — starting it again resumes from there.'
+              }
+            }
+
+            return sendJson(res, status)
           } catch {
             return sendJson(res, {
               run_id: runId, state: 'starting', stage: 'ingest',
@@ -205,6 +240,20 @@ function mealsDevServer(): Plugin {
             // feed's contract is that everything in it is watchable.
             .filter((m) => m && fs.existsSync(path.join(OUT, `${m.id}.mp4`)))
             .map(summary)
+
+          // Order by SERIES, then by position within it. Sorting by filename
+          // interleaved two courses — Meal 1 of the game, Meal 1 of the OOP
+          // course, Meal 2 of the game — which is unlearnable. Every Meal
+          // already carries its series and order; the feed just ignored them.
+          meals.sort((a, b) => {
+            const sa = (a.series as { title?: string; order?: number }) ?? {}
+            const sb = (b.series as { title?: string; order?: number }) ?? {}
+            const ta = sa.title ?? ''
+            const tb = sb.title ?? ''
+            if (ta !== tb) return ta.localeCompare(tb)
+            return (sa.order ?? 0) - (sb.order ?? 0)
+          })
+
           return sendJson(res, { meals })
         }
 

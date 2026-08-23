@@ -1,0 +1,185 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_08_handle_a_win_scenario",
+    "title": "Handle a win scenario in Rock\u2011Paper\u2011Scissors",
+    "concept": "python.basics.print",
+    "objective": "Determine when the player wins and display the appropriate message",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.basics.strings",
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "win condition"
+    ],
+    "assumes": [
+      "if",
+      "elif"
+    ],
+    "voice": {
+      "script": "Can you tell when you win at rock paper scissors? How do we decide a winning move after checking for a tie? A win condition is a specific pairing of the player's choice and the computer's choice that means the player beats the computer. We use print to show the result. Here is the winning check code. If the player chose rock and the computer chose scissors, the program prints a victory message. Running this prints the win message. The decision node shows the win condition. Remember each winning pair has its own condition. Add the remaining win cases to your game.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": true,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Can you tell when you win at rock paper scissors?"
+        },
+        "narration_anchor": "Can you tell when you win at rock paper scissors?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do we decide a winning move after checking for a tie?"
+        },
+        "narration_anchor": "How do we decide a winning move after checking for a tie?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Start game",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "Win condition?",
+              "kind": "decision"
+            },
+            {
+              "id": "c",
+              "label": "Print win message",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "evaluate"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "true"
+            }
+          ]
+        },
+        "narration_anchor": "We use print to show the result."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "import random\nmoves = ['rock', 'paper', 'scissors']\nuser_choice = input('Choose rock, paper, or scissors: ').lower()\ncomputer_choice = random.choice(moves)\nprint(f'Computer chose {computer_choice}')\nif user_choice == computer_choice:\n    print('It\\'s a tie!')\nelif user_choice == 'rock' and computer_choice == 'scissors':\n    print('You win! Rock crushes scissors')\nelse:\n    print('You lose!')\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "import random\nmoves = ['rock', 'paper', 'scissors']\nuser_choice = input('Choose rock, paper, or scissors: ').lower()\ncomputer_choice = random.choice(moves)\nprint(f'Computer chose {computer_choice}')\nif user_choice == computer_choice:\n    print('It\\'s a tie!')\nelif user_choice == 'rock' and computer_choice == 'scissors':\n    print('You win! Rock crushes scissors')\nelse:\n    print('You lose!')",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "elif user_choice == 'rock' and computer_choice == 'scissors':"
+            }
+          ]
+        },
+        "narration_anchor": "Here is the winning check code."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [
+            "rock"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-23T08:51:38+00:00",
+            "stdout": "Choose rock, paper, or scissors: Computer chose scissors\nYou win! Rock crushes scissors\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running this prints the win message.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Remember each winning pair has its own condition."
+        },
+        "narration_anchor": "Remember each winning pair has its own condition.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Add the remaining win cases to your game."
+        },
+        "narration_anchor": "Add the remaining win cases to your game.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Add the remaining win cases to your game.",
+      "hint": "Use similar elif statements for paper beats rock and scissors beats paper."
+    },
+    "series": {
+      "title": "Build a Rock\u2011Paper\u2011Scissors Game",
+      "artifact": "A command\u2011line rock\u2011paper\u2011scissors game you can run in the terminal",
+      "order": 8,
+      "total": 10,
+      "previous_id": "meal_07_detect_a_tie",
+      "next_id": "meal_09_show_results_with_f_strings"
+    }
+  }
+}

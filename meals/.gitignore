@@ -2,3 +2,6 @@
 build/
 out/
 __pycache__/
+
+# Retired Meals kept locally for recovery. Not part of the catalogue.
+catalogue/_archive/

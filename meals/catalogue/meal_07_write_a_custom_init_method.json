@@ -1,0 +1,169 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_07_write_a_custom_init_method",
+    "title": "Write a custom __init__ method",
+    "concept": "python.oop.init",
+    "objective": "Define an __init__ that receives a name and stores it on the object",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.oop.classes"
+    ],
+    "next_concepts": [
+      "python.oop.classes",
+      "python.oop.classes"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "self"
+    ],
+    "assumes": [
+      "default constructor (__init__)",
+      "object / instance",
+      "variable"
+    ],
+    "voice": {
+      "script": "What if you could give every student a name the moment they\u2019re created? How do you store a name inside each new object? self is like saying \u201cmyself\u201d. Here\u2019s the code that defines the class. The __init__ method takes two parameters: self and a name supplied when we create the object. Inside it we assign the name to an attribute on self, so each instance remembers its own name. Finally we create a Student called Alice and print her stored name. Running this prints Alice, showing that the name was saved on that particular object. The __init__ method lets you set up each instance when it\u2019s made. Create a Book class that stores title and author using __init__.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": true,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could give every student a name the moment they\u2019re created?"
+        },
+        "narration_anchor": "What if you could give every student a name the moment they\u2019re created?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you store a name inside each new object?"
+        },
+        "narration_anchor": "How do you store a name inside each new object?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "self refers to object",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "__init__ stores name",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "used in"
+            }
+          ]
+        },
+        "narration_anchor": "self is like saying \u201cmyself\u201d"
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "class Student:\n    def __init__(self, name):\n        self.name = name\n\nstudent = Student(\"Alice\")\nprint(student.name)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "class Student:\n    def __init__(self, name):\n        self.name = name\n\nstudent = Student(\"Alice\")\nprint(student.name)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "self.name = name"
+            }
+          ]
+        },
+        "narration_anchor": "Here\u2019s the code that defines the class"
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-23T08:51:38+00:00",
+            "stdout": "Alice\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "The __init__ method lets you set up each instance when it\u2019s made."
+        },
+        "narration_anchor": "The __init__ method lets you set up each instance when it\u2019s made.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Create a Book class that stores title and author using __init__."
+        },
+        "narration_anchor": "Create a Book class that stores title and author using __init__.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Create a Book class that stores title and author using __init__."
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 7,
+      "total": 15,
+      "previous_id": "meal_06_default_constructor_init",
+      "next_id": "meal_08_instance_attributes"
+    }
+  }
+}

@@ -22,7 +22,29 @@ export function codePane(
   filename: string,
   codeRef: Reference<Code>,
   initial = '',
+  opts: { compact?: boolean; sizeFor?: string } = {},
 ) {
+  // Compact is for when the snippet shares the frame with a terminal: the
+  // code is being referred to rather than read line by line, so it gives up
+  // room to the output it produced.
+  const padding = opts.compact ? 26 : 36
+
+  // Fit the longest line to the pane rather than using a fixed size. Real
+  // snippets contain lines like
+  //   user_choice = input('Enter rock, paper, or scissors: ').lower()
+  // which ran off the right edge at any size readable for short lines.
+  // DM Mono advances ~0.6em per character.
+  // A typing pane starts empty and fills in, so size it against the code it
+  // will END UP holding — otherwise it is laid out for one blank line and the
+  // text runs off the edge as soon as it appears.
+  const longest = (opts.sizeFor ?? initial)
+    .split('\n')
+    .reduce((n, line) => Math.max(n, line.length), 1)
+  const available = CONTENT_WIDTH - padding * 2
+  const ideal = opts.compact ? 32 : 40
+  const fitted = Math.floor(available / (longest * 0.6))
+  const fontSize = Math.max(Math.min(ideal, fitted), 18)
+  const lineHeight = Math.round(fontSize * 1.45)
   return (
     <Rect
       layout
@@ -48,13 +70,13 @@ export function codePane(
           fill={theme.muted}
         />
       </Rect>
-      <Rect layout padding={36} width={CONTENT_WIDTH}>
+      <Rect layout padding={padding} width={CONTENT_WIDTH}>
         <Code
           ref={codeRef}
           highlighter={pythonHighlighter}
           fontFamily={theme.fontMono}
-          fontSize={40}
-          lineHeight={62}
+          fontSize={fontSize}
+          lineHeight={lineHeight}
           code={initial}
         />
       </Rect>
@@ -76,6 +98,7 @@ export function codePane(
 export function terminalPane(
   command: string,
   bodyRef: Reference<Txt>,
+  stdin: string[] = [],
 ) {
   return (
     <Rect
@@ -95,7 +118,7 @@ export function terminalPane(
         fill="rgba(255,255,255,0.03)"
       >
         <Txt
-          text="TERMINAL"
+          text={stdin.length ? `TERMINAL — TYPED: ${stdin.join(', ')}` : 'TERMINAL'}
           fontFamily={theme.fontMono}
           fontSize={24}
           letterSpacing={3}

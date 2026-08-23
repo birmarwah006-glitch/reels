@@ -1,0 +1,164 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_04_read_the_player_s_choice",
+    "title": "Read the player's choice",
+    "concept": "python.basics.input_output",
+    "objective": "You can ask the player for input and store it as a string",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.basics.print"
+    ],
+    "next_concepts": [
+      "python.basics.strings",
+      "python.control.if"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "input"
+    ],
+    "assumes": [
+      "string"
+    ],
+    "voice": {
+      "script": "What text does the computer need to know your move? How do we capture the player's choice? The input function displays a prompt and waits for the player to type something, then returns that text as a string. We also call lower to turn any capital letters into lowercase so comparisons are simple. On the screen you can picture an input_output diagram showing the prompt and the entered text. ').lower() After this line runs, the variable user_choice holds whatever the player typed, all in lowercase. Store the player's move as a lowercase string for easy comparison. Try changing the prompt to ask for a secret word.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": true,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What text does the computer need to know your move?"
+        },
+        "narration_anchor": "What text does the computer need to know your move?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do we capture the player's choice?"
+        },
+        "narration_anchor": "How do we capture the player's choice?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Ask player",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "Store choice",
+              "kind": "value"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "captures input"
+            }
+          ]
+        },
+        "narration_anchor": "The input function displays a prompt and waits for the player to type something, then returns that text as a string."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "user_choice = input('Enter rock, paper, or scissors: ').lower()\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "user_choice = input('Enter rock, paper, or scissors: ').lower()",
+              "lines": [
+                1
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "user_choice = input"
+            }
+          ]
+        }
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [
+            "rock"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-23T08:51:38+00:00",
+            "stdout": "Enter rock, paper, or scissors: ",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "After this line runs, the variable user_choice holds whatever the player typed, all in lowercase.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Store the player's move as a lowercase string for easy comparison"
+        },
+        "narration_anchor": "Store the player's move as a lowercase string for easy comparison.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Try changing the prompt to ask for a secret word"
+        },
+        "narration_anchor": "Try changing the prompt to ask for a secret word.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Try changing the prompt to ask for a secret word"
+    },
+    "series": {
+      "title": "Build a Rock\u2011Paper\u2011Scissors Game",
+      "artifact": "A command\u2011line rock\u2011paper\u2011scissors game you can run in the terminal",
+      "order": 4,
+      "total": 10,
+      "previous_id": "meal_03_understand_strings",
+      "next_id": "meal_05_pick_a_random_computer_move"
+    }
+  }
+}

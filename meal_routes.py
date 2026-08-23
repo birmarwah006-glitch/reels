@@ -62,6 +62,7 @@ def _summary(meal: dict) -> dict:
     meal_id = meal["id"]
     return {
         "id": meal_id,
+        "series": meal.get("series"),
         "title": meal["title"],
         "concept": meal["concept"],
         "objective": meal["objective"],
@@ -105,6 +106,12 @@ def list_meals():
             continue
         meals.append(_summary(meal))
 
+    # Series order, then position within the series. Filename order interleaves
+    # unrelated courses, which makes the feed unlearnable.
+    meals.sort(key=lambda m: (
+        ((m.get("series") or {}).get("title") or ""),
+        ((m.get("series") or {}).get("order") or 0),
+    ))
     return {"meals": meals}
 
 

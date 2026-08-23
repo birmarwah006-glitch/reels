@@ -1,0 +1,188 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_07_detect_a_tie",
+    "title": "Detect a Tie in Rock\u2011Paper\u2011Scissors",
+    "concept": "python.basics.print",
+    "objective": "You can recognise when both players chose the same move and print a tie message",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.basics.print",
+      "python.basics.strings"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "tie condition",
+      "print"
+    ],
+    "assumes": [
+      "if"
+    ],
+    "voice": {
+      "script": "What happens when both players pick the same move? How do we detect a tie in rock\u2011paper\u2011scissors? You need to recognise a tie condition. In Python the equality operator checks whether two values match. If they match, we use print displays a message on the screen. So we write: if user_choice is equal to computer_choice: print('It\u2019s a tie!') That line prints the tie message. Now the program will tell the player when the round ends in a tie. A tie is detected by comparing the two choices and printing a message. Modify the program to also announce a win for the player.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": true,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What happens when both players pick the same move?"
+        },
+        "narration_anchor": "What happens when both players pick the same move?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do we detect a tie in rock\u2011paper\u2011scissors?"
+        },
+        "narration_anchor": "How do we detect a tie in rock\u2011paper\u2011scissors?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "User choice",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "Computer choice",
+              "kind": "actor"
+            },
+            {
+              "id": "c",
+              "label": "Choices equal?",
+              "kind": "decision"
+            },
+            {
+              "id": "d",
+              "label": "Print tie message",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "c"
+            },
+            {
+              "from": "b",
+              "to": "c"
+            },
+            {
+              "from": "c",
+              "to": "d",
+              "label": "yes"
+            }
+          ]
+        },
+        "narration_anchor": "print displays a message on the screen"
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "import random\nmoves = ['rock', 'paper', 'scissors']\nuser_choice = input('Your move: ')\ncomputer_choice = random.choice(moves)\nif user_choice == computer_choice:\n    print('It\u2019s a tie!')\nelse:\n    print('Not a tie')\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "import random\nmoves = ['rock', 'paper', 'scissors']\nuser_choice = input('Your move: ')\ncomputer_choice = random.choice(moves)\nif user_choice == computer_choice:\n    print('It\u2019s a tie!')\nelse:\n    print('Not a tie')",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "if user_choice == computer_choice:"
+            }
+          ]
+        }
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [
+            "rock"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-23T08:51:38+00:00",
+            "stdout": "Your move: Not a tie\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A tie is detected by comparing the two choices and printing a message"
+        },
+        "narration_anchor": "A tie is detected by comparing the two choices and printing a message",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Modify the program to also announce a win for the player"
+        },
+        "narration_anchor": "Modify the program to also announce a win for the player",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Modify the program to also announce a win for the player",
+      "hint": "Add an else\u2011if branch that compares the moves and prints a win message"
+    },
+    "series": {
+      "title": "Build a Rock\u2011Paper\u2011Scissors Game",
+      "artifact": "A command\u2011line rock\u2011paper\u2011scissors game you can run in the terminal",
+      "order": 7,
+      "total": 10,
+      "previous_id": "meal_06_write_an_if_elif_else_chain",
+      "next_id": "meal_08_handle_a_win_scenario"
+    }
+  }
+}

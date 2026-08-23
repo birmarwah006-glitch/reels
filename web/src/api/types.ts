@@ -220,8 +220,19 @@ export interface MealPractice {
   hint?: string
 }
 
+/** Where a Meal sits in its course. Written by the planner. */
+export interface MealSeries {
+  title: string | null
+  artifact: string | null
+  order: number
+  total: number
+  previous_id: string | null
+  next_id: string | null
+}
+
 export interface MealSummary {
   id: string
+  series: MealSeries | null
   title: string
   concept: string
   objective: string

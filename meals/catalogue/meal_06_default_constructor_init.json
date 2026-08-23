@@ -1,0 +1,153 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_06_default_constructor_init",
+    "title": "Default constructor (__init__)",
+    "concept": "python.oop.init",
+    "objective": "Explain that Python automatically provides a simple __init__ method",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.oop.classes"
+    ],
+    "next_concepts": [
+      "python.oop.init",
+      "python.oop.classes"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "__init__",
+      "constructor"
+    ],
+    "assumes": [
+      "object / instance"
+    ],
+    "voice": {
+      "script": "Hook: What happens when you create an object without writing any setup code? Question: Do I need to write an __init__ method for every class? Concept: Python automatically provides a simple constructor called __init__ that runs whenever an instance is created, even if you never defined one. Code: Here is a class with no __init__ defined, and we create an instance. Execution: When we run the program, it prints the default representation of the object, showing that the hidden __init__ ran. Takeaway: Even without writing one, Python gives each class a basic __init__. Practice: Define a class called Account with no __init__, create an object, and print it.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": true,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What happens when you create an object without writing any setup code?"
+        },
+        "narration_anchor": "Hook: What happens when you create an object without writing any setup code?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "Do I need to write an __init__ method for every class?"
+        },
+        "narration_anchor": "Question: Do I need to write an __init__ method for every class?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Default __init__ runs",
+              "kind": "box"
+            }
+          ],
+          "edges": []
+        },
+        "narration_anchor": "Concept: Python automatically provides a simple constructor called __init__ that runs whenever an instance is created, even if you never defined one."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "class Student:\n    pass\n\ns = Student()\nprint(s)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "class Student:\n    pass\n\ns = Student()\nprint(s)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "speed_cps": 26
+            }
+          ]
+        },
+        "narration_anchor": "Code: Here is a class with no __init__ defined, and we create an instance."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-23T08:51:38+00:00",
+            "stdout": "<__main__.Student object at 0x1025ca510>\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Execution: When we run the program, it prints the default representation of the object, showing that the hidden __init__ ran.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Even without writing one, Python gives each class a basic __init__."
+        },
+        "narration_anchor": "Takeaway: Even without writing one, Python gives each class a basic __init__.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Define a class called Account with no __init__, create an object, and print it."
+        },
+        "narration_anchor": "Practice: Define a class called Account with no __init__, create an object, and print it.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Define a class called Account with no __init__, create an object, and print it."
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 6,
+      "total": 15,
+      "previous_id": "meal_05_create_an_object_from_a_class",
+      "next_id": "meal_07_write_a_custom_init_method"
+    }
+  }
+}

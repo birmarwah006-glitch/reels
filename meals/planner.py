@@ -50,6 +50,9 @@ import argparse
 import json
 import os
 import re
+import subprocess
+import sys
+import tempfile
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -77,14 +80,40 @@ CATALOGUE_DIR = HERE / "catalogue"
 # not a target to hit.
 SCRIPT_WORD_CAP = 200
 
-# Guard rails on the series length. NOT a target: the count follows the
-# material. These only catch a model that has produced something absurd.
-MIN_MEALS, MAX_MEALS = 5, 24
+# There is no Meal quota, and the count is NOT derived from the length of the
+# source. Duration says nothing about how much a lecture teaches: a rambling
+# hour can hold five ideas and a dense ten minutes can hold twelve.
+#
+# The count comes from the CONCEPTS the lecture actually teaches, which Pass 1
+# reports. The governing rule is that the learner must end up understanding the
+# material — brevity never wins over that. So this is a sanity bound to catch
+# runaway output, not a budget to spend down.
+MIN_MEALS = 3
+
+# Room above the concept count for the Meals a project needs that are not
+# language features: what we are building, how the pieces fit, common mistakes.
+MEAL_HEADROOM = 8
+
+# Only a model that has lost the plot produces more than this.
+ABSURD = 120
+
+
+def max_meals_for(analysis: dict) -> int:
+    """The most Meals this lecture could reasonably justify.
+
+    Bounded by what Pass 1 found, not by how long the video is. A course that
+    genuinely teaches forty things is allowed forty Meals; clamping it would
+    silently drop what the learner needs.
+    """
+    concepts = len(analysis.get("concepts_taught") or [])
+    code_bits = len(analysis.get("code_written") or [])
+    substantive = max(concepts, code_bits)
+    return min(max(substantive + MEAL_HEADROOM, MIN_MEALS + MEAL_HEADROOM), ABSURD)
 
 # The curriculum reply must fit under the per-minute ceiling alongside its own
 # prompt. Roughly 200 tokens per Meal entry, so this comfortably covers a
 # 20-Meal series while leaving room for the digest and the catalogue.
-CURRICULUM_MAX_TOKENS = 3400
+CURRICULUM_MAX_TOKENS = 4600
 
 # An authored Meal is ~700 tokens of JSON. Reserving 4000 meant each call
 # claimed half the per-minute ceiling and the account rate-limited anyway,
@@ -127,31 +156,259 @@ def estimate_tokens(text: str) -> int:
 
 
 class _RateBudget:
-    """Tracks tokens spent in the trailing minute and waits when the next call
-    would breach the limit. Cheaper than discovering the limit by 429."""
+    """Paces calls against the account's ACTUAL remaining budget.
+
+    The first version estimated cost as `input + max_tokens` and slept when
+    its own running total looked too high. That over-reserved badly: a real
+    authoring call costs ~1,100 tokens, but reserving max_tokens=4000 against
+    it made the estimate 4.6x the truth, which throttled the run to ONE call a
+    minute when the account could comfortably do six. A 16-Meal series took
+    sixteen minutes for no reason.
+
+    Groq reports the real state on every response:
+
+        x-ratelimit-remaining-tokens   what is actually left
+        x-ratelimit-reset-tokens       when it refills
+
+    So the server is the source of truth and the estimate is only used before
+    the first call, when nothing has been observed yet.
+    """
 
     def __init__(self, limit: int = TPM_LIMIT):
-        self.limit = int(limit * TPM_SAFETY)
-        self._spent: list[tuple[float, int]] = []
+        self.limit = limit
+        self.remaining: int | None = None
+        self.reset_seconds: float = 0.0
+        self._observed_at = 0.0
 
-    def _prune(self, now: float) -> None:
-        self._spent = [(t, n) for t, n in self._spent if now - t < 60.0]
+    @staticmethod
+    def _parse_duration(value: str | None) -> float:
+        """Groq formats these as '8.7s', '1m26.4s', '615ms'."""
+        if not value:
+            return 0.0
+        total, number = 0.0, ""
+        for ch in value:
+            if ch.isdigit() or ch == ".":
+                number += ch
+                continue
+            if not number:
+                continue
+            amount = float(number)
+            total += {"m": amount * 60, "s": amount}.get(ch, 0.0)
+            number = ""
+        if value.endswith("ms"):
+            return total / 1000 if total else 0.0
+        return total
 
-    def reserve(self, tokens: int) -> None:
-        now = time.time()
-        self._prune(now)
-        used = sum(n for _, n in self._spent)
-        if used + tokens > self.limit and self._spent:
-            oldest = min(t for t, _ in self._spent)
-            wait = max(60.0 - (now - oldest), 0) + 1.0
-            print(f"      rate budget: waiting {wait:.0f}s "
-                  f"({used} + {tokens} would exceed {self.limit}/min)")
-            time.sleep(wait)
-            self._prune(time.time())
-        self._spent.append((time.time(), tokens))
+    def observe(self, headers) -> None:
+        """Record what the server just told us."""
+        try:
+            remaining = headers.get("x-ratelimit-remaining-tokens")
+            if remaining is not None:
+                self.remaining = int(remaining)
+                self._observed_at = time.time()
+            self.reset_seconds = self._parse_duration(
+                headers.get("x-ratelimit-reset-tokens"))
+        except Exception:
+            pass
+
+    def wait_for(self, needed: int) -> None:
+        """Sleep only when the server says there is genuinely not enough left."""
+        if self.remaining is None:
+            return  # nothing observed yet; the first call reveals the state
+
+        # The bucket refills continuously, so anything observed a while ago is
+        # stale in our favour — assume it has recovered.
+        age = time.time() - self._observed_at
+        if age > 60:
+            self.remaining = None
+            return
+
+        if self.remaining >= needed:
+            return
+
+        wait = max(self.reset_seconds, 60 - age) + 1.0
+        print(f"      rate budget: {self.remaining} tokens left, need ~{needed} "
+              f"— waiting {wait:.0f}s", flush=True)
+        time.sleep(wait)
+        self.remaining = None
 
 
 BUDGET = _RateBudget()
+
+GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
+
+
+class _KeyRing:
+    """Groq keys from separate accounts, rotated on DAILY quota exhaustion.
+
+    The free tier allows 200,000 tokens per day per ACCOUNT, and a full-length
+    course costs most of that — so a single key supports roughly one course a
+    day, which is not enough to iterate on. Keys from different accounts have
+    independent allowances, so listing several multiplies the ceiling.
+
+    Rotation happens only on the daily limit. The per-minute limit is shared
+    behaviour worth waiting out, and switching keys to dodge it would just
+    exhaust every account's daily budget faster.
+    """
+
+    def __init__(self) -> None:
+        primary = os.getenv("GROQ_API_KEY", "").strip()
+        extra = [
+            k.strip() for k in os.getenv("GROQ_API_KEYS", "").split(",") if k.strip()
+        ]
+        # Preserve order, drop duplicates.
+        self.keys: list[str] = []
+        for key in [primary, *extra]:
+            if key and key not in self.keys:
+                self.keys.append(key)
+        self.index = 0
+        self.exhausted: set[int] = set()
+
+    @property
+    def current(self) -> str:
+        return self.keys[self.index] if self.keys else ""
+
+    def label(self) -> str:
+        return f"key {self.index + 1}/{len(self.keys)}"
+
+    def retire_current(self) -> bool:
+        """Mark this account as out for the day. True if another is available."""
+        self.exhausted.add(self.index)
+        for i in range(len(self.keys)):
+            if i not in self.exhausted:
+                self.index = i
+                print(f"      daily quota gone on the previous account — "
+                      f"switching to {self.label()}", flush=True)
+                # The new account has its own per-minute budget too.
+                BUDGET.remaining = None
+                return True
+        return False
+
+
+KEYRING = _KeyRing()
+
+
+class QuotaExhausted(Exception):
+    """The account's DAILY allowance is gone.
+
+    Distinct from RateLimited, which is worth waiting out. This one is hours
+    away, so every remaining call in the run will fail the same way. It must
+    abort the run rather than be retried or swallowed — an earlier version let
+    it fall into the generic handler, which turned it into an empty string and
+    reported it as "empty reply". Nine Meals were recorded as authoring
+    failures when the real cause was that the account had simply run out.
+    """
+
+
+class RateLimited(Exception):
+    """Throttled, not answered.
+
+    This distinction cost twelve of fourteen windows of a two-hour course. A
+    429 used to be returned as an empty string, which the retry loop could not
+    tell apart from a model that genuinely produced nothing — so it burned all
+    three attempts on a request that was never going to be answered until the
+    bucket refilled, then skipped the window and moved on. The course lost most
+    of its content and nothing reported an error.
+    """
+
+    def __init__(self, wait: float):
+        super().__init__(f"rate limited, retry in {wait:.0f}s")
+        self.wait = wait
+
+
+def _groq_chat(messages: list[dict], temperature: float,
+               max_tokens: int) -> tuple[str, object]:
+    """One Groq call, returning the content AND the response headers.
+
+    podcastengine.llm_chat is still the fallback, but it discards the
+    response object, and the rate-limit headers on it are the only reliable
+    way to pace a long run. Anything other than a Groq key falls through to
+    the shared router.
+    """
+    import requests
+
+    key = KEYRING.current
+    if not key:
+        return llm_chat(messages, temperature=temperature,
+                        max_tokens=max_tokens) or "", {}
+
+    model = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
+    payload = {
+        "model": model,
+        "messages": messages,
+        "temperature": temperature,
+        "max_tokens": max_tokens,
+    }
+    # gpt-oss is a reasoning model: without this it spends the whole budget on
+    # hidden reasoning and returns empty content.
+    if "gpt-oss" in model:
+        payload["reasoning_effort"] = "low"
+
+    response = requests.post(
+        GROQ_URL,
+        headers={"Authorization": f"Bearer {key}",
+                 "Content-Type": "application/json"},
+        json=payload,
+        timeout=180,
+    )
+    BUDGET.observe(response.headers)
+
+    # A key that is rejected outright — revoked, mistyped, out of credit — is
+    # no more usable than one that is out of quota. Retire it and let another
+    # account finish the work rather than failing the whole run on one bad key.
+    if response.status_code in (401, 403):
+        print(f"      {KEYRING.label()} rejected ({response.status_code})", flush=True)
+        if KEYRING.retire_current():
+            raise RateLimited(0.0)
+        raise QuotaExhausted(
+            f"every configured Groq key was rejected (last: {response.status_code})")
+
+    if response.status_code == 429:
+        detail = ""
+        try:
+            detail = response.json().get("error", {}).get("message", "")
+        except Exception:
+            pass
+
+        # Two very different 429s wear the same status code. The per-minute one
+        # is worth waiting out. The per-DAY one is not: it is hours away, and
+        # the per-minute headers still read as healthy while it is in force,
+        # so a waiting loop looks like normal throttling and never ends.
+        if "per day" in detail.lower() or "(TPD)" in detail:
+            # Try another account before giving up on the run.
+            if KEYRING.retire_current():
+                raise RateLimited(0.0)
+            raise QuotaExhausted(
+                "Groq daily token quota is exhausted, not the per-minute one.\n"
+                f"        {detail.strip()}\n"
+                "        Nothing will succeed until it resets. A full-length "
+                "course costs most of the free tier's daily allowance, so this "
+                "is the real ceiling on how much can be processed per day."
+            )
+
+        wait = BUDGET._parse_duration(
+            response.headers.get("retry-after")
+            or response.headers.get("x-ratelimit-reset-tokens")) or 20
+        raise RateLimited(wait)
+
+    response.raise_for_status()
+    data = response.json()
+    choice = data["choices"][0]
+    content = choice["message"].get("content") or ""
+
+    # gpt-oss is a reasoning model: it spends tokens thinking before it writes.
+    # If max_tokens is too small for prompt + reasoning + answer, it returns
+    # finish_reason "length" with EMPTY content — which reads as "the model had
+    # nothing to say" when it actually means "the budget was too small".
+    if not content and choice.get("finish_reason") == "length":
+        used = data.get("usage", {}).get("completion_tokens", "?")
+        raise RuntimeError(
+            f"the model exhausted max_tokens on reasoning and returned nothing "
+            f"(finish_reason=length, completion_tokens={used}). Raise max_tokens "
+            f"or shorten the prompt."
+        )
+
+    return content, response.headers
 
 
 def _extract_json(raw: str):
@@ -173,30 +430,41 @@ def _extract_json(raw: str):
 
 def _llm_raw(system: str, user: str, label: str, max_tokens: int,
              temperature: float) -> str:
-    """One call, rate-budgeted, with the real error preserved."""
-    BUDGET.reserve(estimate_tokens(system + user) + max_tokens)
+    """One call, paced against the server's reported budget, errors preserved."""
+    messages = [{"role": "system", "content": system},
+                {"role": "user", "content": user}]
+
+    # Groq counts the FULL max_tokens reservation against the per-minute
+    # budget, not the tokens actually produced. Under-reserving here is what
+    # generated the 429s in the first place: two comprehension calls whose
+    # real cost was ~5,200 each were let through against an 8,000 ceiling.
+    needed = estimate_tokens(system + user) + max_tokens
+    BUDGET.wait_for(needed)
+
     try:
-        return llm_chat(
-            [{"role": "system", "content": system},
-             {"role": "user", "content": user}],
-            temperature=temperature,
-            max_tokens=max_tokens,
-        ) or ""
+        content, _headers = _groq_chat(messages, temperature, max_tokens)
+        return content
+    except QuotaExhausted:
+        raise
+    except RateLimited as limited:
+        # Not a failed attempt — the request was never answered. Wait for the
+        # bucket and let the caller try again without spending its budget.
+        print(f"      {label}: rate limited, waiting {limited.wait:.0f}s", flush=True)
+        time.sleep(limited.wait + 1)
+        BUDGET.remaining = None
+        raise
     except Exception as e:
         message = str(e)
-        # A request that is too large will never succeed by retrying; say so
-        # rather than letting the caller spend its attempts discovering it.
-        if "Request too large" in message or "reduce your message size" in message:
+        # A request too large will never succeed by retrying; say so rather
+        # than letting the caller spend its attempts discovering it.
+        if "Request too large" in message or "reduce your message size" in message \
+                or "413" in message:
             raise RuntimeError(
-                f"{label}: the request exceeds the account's per-minute token "
+                f"{label}: this request exceeds the account's per-minute token "
                 f"limit ({TPM_LIMIT} TPM). Shrink the window, not the retries. "
                 f"Original: {message[:200]}"
             ) from e
-        if "rate_limit" in message.lower() or "429" in message:
-            print(f"      {label}: rate limited, backing off 20s")
-            time.sleep(20)
-            return ""
-        print(f"      {label}: LLM call failed — {message[:200]}")
+        print(f"      {label}: LLM call failed — {message[:200]}", flush=True)
         return ""
 
 
@@ -209,9 +477,25 @@ def _llm_json(system: str, user: str, label: str, max_tokens: int = 3000,
     a model that just emitted unparsable output is usually being too creative.
     """
     last_error = None
-    for attempt in range(attempts):
-        raw = _llm_raw(system, user, f"{label} (attempt {attempt + 1})",
-                       max_tokens, max(temperature - attempt * 0.1, 0.0))
+    attempt = 0
+    throttled = 0
+    while attempt < attempts:
+        try:
+            raw = _llm_raw(system, user, f"{label} (attempt {attempt + 1})",
+                           max_tokens, max(temperature - attempt * 0.1, 0.0))
+        except QuotaExhausted:
+            raise
+        except RateLimited:
+            # Does not count: nothing was asked and nothing was answered.
+            throttled += 1
+            if throttled > 6:
+                raise RuntimeError(
+                    f"{label}: still rate limited after {throttled} waits — "
+                    f"the account's per-minute budget is too small for this "
+                    f"request size")
+            continue
+
+        attempt += 1
         if not raw.strip():
             last_error = "empty reply"
             continue
@@ -311,6 +595,10 @@ def load_from_job(job_id: str) -> dict:
 
 def load_from_transcript(path: Path, title: str) -> dict:
     text = Path(path).read_text()
+    # The caption fetcher writes "<title>\n\n<transcript>"; drop the title line
+    # so it is not analysed as if it were speech.
+    if text.startswith(title + "\n\n"):
+        text = text.split("\n\n", 1)[1]
     return {
         "job_id": None,
         "title": title,
@@ -489,7 +777,8 @@ def comprehend(source: dict, use_cache: bool = True) -> dict:
     print(f"[planner] Pass 1 — comprehending {total_words} words "
           f"in {len(windows)} window(s)...")
 
-    partials = []
+    partials: list[dict] = []
+    lost: list[int] = []
     for i, window in enumerate(windows, 1):
         print(f"    window {i}/{len(windows)} ({len(window.split())} words)")
         try:
@@ -503,11 +792,28 @@ def comprehend(source: dict, use_cache: bool = True) -> dict:
                 max_tokens=2600,
             ))
         except RuntimeError as e:
-            # One unreadable window should not lose the rest of the lecture.
-            print(f"      skipped: {e}")
+            # One unreadable window should not lose the rest of the lecture —
+            # but losing most of them silently is far worse than failing.
+            lost.append(i)
+            print(f"      window {i} LOST: {e}", flush=True)
 
     if not partials:
         raise RuntimeError("no window could be analysed — see errors above")
+
+    # A course analysed from two of its fourteen sections is not an analysis of
+    # that course, and every stage downstream would treat it as one. Better to
+    # stop and say so than to publish a series built on a tenth of the
+    # material.
+    lost_share = len(lost) / max(len(windows), 1)
+    if lost_share > 0.25:
+        raise RuntimeError(
+            f"{len(lost)} of {len(windows)} sections could not be analysed "
+            f"({lost_share:.0%}). The result would misrepresent the lecture. "
+            f"Lost sections: {lost}. Re-run to resume — completed sections are "
+            f"cached.")
+    if lost:
+        print(f"  WARNING: {len(lost)} of {len(windows)} sections lost "
+              f"({lost_share:.0%}) — the series may have gaps", flush=True)
 
     # Cheap merge first, so the synthesis call sees compact input rather than
     # the raw partials.
@@ -535,16 +841,40 @@ def comprehend(source: dict, use_cache: bool = True) -> dict:
           f"{len(merged['analogies'])} analogies, "
           f"{len(merged['code_written'])} code snippets")
 
+    # The synthesis call is for the NARRATIVE fields only — artifact, summary,
+    # arc. The lists are merged deterministically above and are authoritative.
+    #
+    # Sending the whole merge and truncating it was silently destructive: on a
+    # two-hour course eleven window analyses are far larger than any prompt
+    # budget, so most of what the course taught would be cut off mid-JSON and
+    # simply never reach the curriculum. Only a compact digest is sent, and the
+    # full lists are restored afterwards.
+    digest = {
+        "section_summaries": merged["section_summaries"],
+        "concept_names": [
+            c.get("name") for c in merged["concepts_taught"] if c.get("name")
+        ],
+        "code_purposes": [
+            c.get("purpose") for c in merged["code_written"] if c.get("purpose")
+        ][:40],
+        "decisions": merged["decisions"][:15],
+    }
+
     try:
         result = _llm_json(
             SYNTHESIS_SYSTEM,
             SYNTHESIS_USER.format(
                 title=source["title"],
-                sections=json.dumps(merged, indent=1)[:9000],
+                sections=json.dumps(digest, indent=1)[:9000],
             ),
             "synthesis",
-            max_tokens=3000,
+            max_tokens=2000,
         )
+        # The digest cannot carry evidence or timestamps, so the merged lists
+        # win outright rather than being replaced by a summarised version.
+        for key in ("concepts_taught", "analogies", "code_written", "decisions"):
+            if len(merged[key]) >= len(result.get(key) or []):
+                result[key] = merged[key]
     except RuntimeError as e:
         # If consolidation fails the raw merge is still usable — it is missing
         # only the narrative fields, which Pass 2 can live without.
@@ -593,16 +923,52 @@ the learner should be able to build the thing the lecture builds.
 
 Return ONLY valid JSON. No markdown, no prose.
 
+THE AUDIENCE is sixteen years old and has never written a line of code. They
+do not know what a module is, what a list is, or what a variable does. They
+have never seen a terminal. Assume nothing.
+
+That audience decides the ORDER. A lecture is usually taught to people who
+already know the basics, and it jumps straight to the interesting part. Your
+series may not. Rank the objectives so that NOTHING IS USED BEFORE IT HAS BEEN
+EXPLAINED, even when the lecture itself used it early.
+
+If the lecture opens by importing a module, the module import cannot be Meal 1
+unless a beginner can follow it — either put a Meal before it that explains
+what a module is, or make that Meal explain it as part of its own objective.
+Prefer explaining inside the Meal to adding a Meal; the series should stay
+tight.
+
+Set "assumes" on every Meal: the terms a viewer must already understand to
+follow it. Anything in "assumes" must have been taught by an EARLIER Meal in
+this series, or be genuinely everyday knowledge. That list is checked.
+
 THE RULES THAT MATTER:
 
 1. ONE MEAL = ONE LEARNING OBJECTIVE. If an objective needs the word "and" to
    state it, it is two Meals.
-2. THE COUNT FOLLOWS THE MATERIAL. Do not pad to reach a number and do not
-   compress to be brief. A lecture with twelve real ideas gets twelve Meals.
+2. THE COUNT FOLLOWS THE MATERIAL. There is no target and no quota. Do not pad
+   to reach a number and do not compress to be brief. A lecture with twelve
+   real ideas gets twelve Meals; one with forty gets forty.
+
+   UNDERSTANDING WINS OVER BREVITY. The point is not to make the course
+   shorter — it is to make it learnable. If dropping a Meal would leave the
+   viewer unable to follow the next one, or unable to build the thing at the
+   end, that Meal stays. Never omit a step because the series is getting long.
 3. STRICT ORDER. Meal N may only rely on what Meals 1..N-1 have taught, plus
    general knowledge. Never forward-reference.
 4. SUFFICIENCY. Taken together the series must actually get someone to the
    finished artifact. Do not skip the unglamorous steps that the build needs.
+
+4b. COVER WHAT THE LECTURE TEACHES. Every concept in the analysis marked
+   "explained" or "worked_through" must appear in some Meal's "covers", or be
+   listed in "out_of_scope" with an honest reason. This is checked.
+
+   A concept marked "worked_through" MAY NOT be put in out_of_scope at all —
+   the teacher built a working example of it, so the learner needs it. Only
+   "explained" concepts may be excused, and only for an honest reason.
+   Dropping them silently is how a series about classes ends up never
+   mentioning encapsulation. If a concept is small, fold it into a related Meal and list
+   it in that Meal's "covers" — do not simply leave it out.
 5. NO FILLER. Course admin, greetings, tangents and repetition do not become
    Meals.
 6. REUSE THE TEACHER'S ANALOGIES. If the analysis captured an analogy for a
@@ -624,18 +990,22 @@ Design the Meal series. Return:
 {{
   "series_title": "short title for the whole series",
   "artifact": "what the learner can build after watching all of it",
+  "out_of_scope": [
+    {{"concept": "name from the analysis", "why": "why it needs no Meal"}}
+  ],
   "meals": [
     {{
       "order": 1,
       "title": "short, concrete, max 60 chars",
       "objective": "ONE sentence: what the learner can do after this Meal",
       "concept_id": "an id from the list above, or null",
-      "why_now": "why this comes at this point and not earlier or later",
       "builds_on": [list of earlier "order" numbers, empty for the first],
+      "covers": ["EXACT concept names from the analysis this Meal teaches"],
+      "assumes": ["terms the viewer must already know, e.g. variable, list"],
+      "introduces": ["terms this Meal explains for the first time"],
+      "difficulty": "beginner | intermediate | advanced",
       "analogy": "the teacher's VERBATIM analogy if one applies, else null",
-      "evidence": "short verbatim quote from the transcript this is grounded in",
-      "timestamp": "MM:SS in the source",
-      "code": "the code this Meal should show, or null",
+      "evidence": "a SHORT verbatim quote, max 15 words",
       "visual_hint": "one of: input_output, loop, memory, flow, decision, terminal, none"
     }}
   ]
@@ -655,43 +1025,43 @@ def digest_analysis(analysis: dict) -> str:
     if analysis.get("artifact"):
         lines.append(f"ARTIFACT: {analysis['artifact']}")
     if analysis.get("summary"):
-        lines.append(f"SUMMARY: {analysis['summary'][:600]}")
+        lines.append(f"SUMMARY: {analysis['summary'][:320]}")
 
     arc = analysis.get("arc") or []
     if arc:
-        lines.append("ARC: " + " -> ".join(str(a)[:60] for a in arc[:12]))
+        lines.append("ARC: " + " -> ".join(str(a)[:44] for a in arc[:10]))
 
     lines.append("\nCONCEPTS TAUGHT:")
+    # Depth and name are what Pass 2 orders by; the gloss only has to
+    # disambiguate. Every character here competes with the reply's token
+    # budget inside the same 8,000-token minute.
     for c in (analysis.get("concepts_taught") or [])[:32]:
         lines.append(
-            f"- [{c.get('timestamp','?')}] ({c.get('depth','?')}) {c.get('name')}: "
-            f"{str(c.get('what_is_taught',''))[:120]}"
+            f"- ({str(c.get('depth', '?'))[:4]}) {c.get('name')}: "
+            f"{str(c.get('what_is_taught', ''))[:70]}"
         )
 
     analogies = analysis.get("analogies") or []
     if analogies:
         lines.append("\nTEACHER'S ANALOGIES — reuse these verbatim, do not invent:")
-        for a in analogies[:12]:
+        for a in analogies[:8]:
             lines.append(
-                f"- explains {a.get('explains','?')}: \"{str(a.get('analogy',''))[:160]}\""
+                f"- {a.get('explains','?')}: \"{str(a.get('analogy',''))[:110]}\""
             )
 
+    # Only the PURPOSE of each snippet, never the snippet itself: authoring
+    # writes its own code and then executes it, so the source here would be
+    # replaced anyway — and it was the single largest block in the prompt.
     code = analysis.get("code_written") or []
     if code:
-        lines.append("\nCODE WRITTEN IN THE LECTURE:")
-        for c in code[:18]:
-            snippet = str(c.get("code", "")).replace("\n", " ; ")[:150]
-            lines.append(f"- [{c.get('timestamp','?')}] {str(c.get('purpose',''))[:70]}: {snippet}")
+        lines.append("\nCODE DEMONSTRATED: " + "; ".join(
+            str(c.get("purpose", ""))[:52] for c in code[:12]))
 
+    # Design rationale belongs to individual Meals, not to the ordering.
     decisions = analysis.get("decisions") or []
     if decisions:
-        lines.append("\nDECISIONS:")
-        for d in decisions[:8]:
-            lines.append(f"- {str(d.get('decision',''))[:90]} — {str(d.get('why',''))[:90]}")
-
-    filler = analysis.get("filler") or []
-    if filler:
-        lines.append("\nDROP (filler): " + "; ".join(str(f)[:50] for f in filler[:8]))
+        lines.append("DECISIONS: " + "; ".join(
+            str(d.get("decision", ""))[:52] for d in decisions[:6]))
 
     return "\n".join(lines)
 
@@ -720,14 +1090,14 @@ def build_curriculum(source: dict, analysis: dict, use_cache: bool = True) -> di
         CURRICULUM_USER.format(
             title=source["title"],
             analysis=digest_analysis(analysis),
-            catalogue=taxonomy.catalogue_for_prompt(),
+            catalogue=taxonomy.compact_catalogue(),
         ),
         "curriculum",
         max_tokens=CURRICULUM_MAX_TOKENS,
     )
 
     meals = result.get("meals", [])
-    problems = _check_curriculum(meals)
+    problems = _check_curriculum(meals, analysis, result)
 
     # One targeted repair attempt. Re-running the whole pass usually produces a
     # different plan rather than a fixed one, so the faults are named instead.
@@ -740,14 +1110,14 @@ def build_curriculum(source: dict, analysis: dict, use_cache: bool = True) -> di
             CURRICULUM_USER.format(
                 title=source["title"],
                 analysis=digest_analysis(analysis),
-                catalogue=taxonomy.catalogue_for_prompt(),
+                catalogue=taxonomy.compact_catalogue(),
             ) + "\n\nA previous attempt had these faults. Fix them:\n- "
-              + "\n- ".join(problems),
+              + "\n- ".join(problems[:12]),
             "curriculum-repair",
             max_tokens=CURRICULUM_MAX_TOKENS,
         )
         meals = result.get("meals", [])
-        problems = _check_curriculum(meals)
+        problems = _check_curriculum(meals, analysis, result)
 
     # Whatever survives, normalise the concept ids honestly: an id that does
     # not resolve becomes null rather than being forced onto a near-miss.
@@ -771,24 +1141,97 @@ def build_curriculum(source: dict, analysis: dict, use_cache: bool = True) -> di
     return result
 
 
-def _check_curriculum(meals: list) -> list[str]:
+def _check_curriculum(meals: list, analysis: dict | None = None,
+                      plan: dict | None = None) -> list[str]:
     """Checks a prompt cannot enforce. Returns human-readable faults."""
     problems: list[str] = []
+    analysis = analysis or {}
+    ceiling = max_meals_for(analysis)
+
+    # ── Coverage ───────────────────────────────────────────────────────
+    # Matching is on the plan's own declarations, not on keywords in titles:
+    # a keyword match called "debit method" covered because the word appeared
+    # somewhere, while encapsulation — which the lecture worked through — was
+    # dropped entirely and nothing noticed.
+    def norm(v: str) -> str:
+        return "".join(ch for ch in str(v).lower() if ch.isalnum())
+
+    claimed = {norm(c) for m in meals for c in (m.get("covers") or [])}
+    excused = {norm(x.get("concept", "")) for x in ((plan or {}).get("out_of_scope") or [])}
+
+    uncovered, wrongly_excused = [], []
+    for concept in (analysis.get("concepts_taught") or []):
+        name = (concept.get("name") or "").strip()
+        depth = concept.get("depth") or ""
+        if not name or depth == "mentioned":
+            continue  # a passing mention does not owe a Meal
+        key = norm(name)
+
+        # A concept the teacher WORKED THROUGH cannot be waved away. Given the
+        # chance, the model excused encapsulation as "demonstrated via class
+        # attributes" and the bank-account methods as "not required" — both
+        # were worked examples the teacher spent real time on. Allowing an
+        # excuse there turns the coverage check into a formality and, on one
+        # run, shrank the series from twelve Meals to ten.
+        if depth == "worked_through" and key in excused and key not in claimed:
+            wrongly_excused.append(name)
+            continue
+
+        if key not in claimed and key not in excused:
+            uncovered.append(name)
+
+    if wrongly_excused:
+        problems.append(
+            "the lecture WORKED THROUGH these, so they cannot be out of scope — "
+            "each needs a Meal, or must be folded into one and listed in its "
+            '"covers": ' + "; ".join(wrongly_excused[:12]))
+
+    if uncovered:
+        # One grouped line, not one per concept: forty-five separate messages
+        # pushed the repair prompt past the per-minute token limit, so the
+        # repair could never be sent at all.
+        problems.append(
+            "these concepts are taught in the lecture but no Meal lists them in "
+            '"covers": ' + "; ".join(uncovered[:30]) +
+            ". Give each one a Meal, fold it into a related Meal's \"covers\", "
+            'or list it in "out_of_scope" with a reason.')
 
     if not meals:
         return ["the plan contains no Meals"]
     if len(meals) < MIN_MEALS:
         problems.append(f"only {len(meals)} Meals — a real lecture teaches more than that")
-    if len(meals) > MAX_MEALS:
-        problems.append(f"{len(meals)} Meals is too many; merge the ones that share an objective")
+    if len(meals) > ceiling:
+        problems.append(
+            f"{len(meals)} Meals exceeds the {ceiling} this transcript supports; "
+            f"merge the ones that share an objective")
 
     orders = [m.get("order") for m in meals]
     if orders != sorted(orders) or len(set(orders)) != len(orders):
         problems.append("`order` must be unique and ascending, starting at 1")
 
+    # Everyday words a sixteen-year-old already has. Anything else must be
+    # taught by an earlier Meal before it can be assumed.
+    COMMON = {
+        "number", "numbers", "text", "word", "words", "letter", "letters",
+        "message", "computer", "keyboard", "screen", "game", "player",
+        "rules", "list of things", "name", "value", "choice",
+    }
+
+    introduced: set[str] = set()
     seen_objectives = set()
     for m in meals:
         order = m.get("order")
+
+        # Rule: nothing is used before it is explained.
+        for term in (m.get("assumes") or []):
+            key = str(term).strip().lower()
+            if key and key not in COMMON and key not in introduced:
+                problems.append(
+                    f"Meal {order} assumes the viewer knows {term!r}, but no "
+                    f"earlier Meal introduces it — teach it first, explain it "
+                    f"inside this Meal, or move this Meal later")
+        introduced.update(
+            str(t).strip().lower() for t in (m.get("introduces") or []))
 
         objective = (m.get("objective") or "").strip().lower()
         if not objective:
@@ -824,10 +1267,30 @@ seconds, teaching exactly ONE objective.
 
 Return ONLY valid JSON matching the shape given. No markdown, no prose.
 
-THE SCRIPT IS READ ALOUD by a text-to-speech voice. Write only words a person
-would say. No markdown, no arrows, no bare symbols. Write "input" not
-"input()", "arrow" not "->". Spell out anything a voice cannot pronounce.
-Under {SCRIPT_WORD_CAP} words total — this is a hard cap.
+THE SCRIPT IS READ ALOUD by a text-to-speech voice.
+
+NEVER PUT CODE IN THE SCRIPT. Not a line, not a fragment, not "here is the
+code" followed by the code. The code appears ON SCREEN; the narration EXPLAINS
+what it does. A script containing source is read out character by character
+and is unlistenable.
+
+  WRONG: "if user_choice == computer_choice: result = 'tie'"
+  RIGHT: "If both players picked the same move, it is a tie."
+
+NEVER DICTATE SYNTAX. Say what the code MEANS, not what it looks like.
+
+  WRONG: "double equals"        RIGHT: "checks whether they match"
+  WRONG: "f string"             RIGHT: "builds a message with the value inside"
+  WRONG: "elif"                 RIGHT: "otherwise, if"
+  WRONG: "dot lower open paren" RIGHT: "converts it to lowercase"
+
+NO EMOJI. Not one, anywhere in the script or in any on-screen text. The voice
+reads them aloud as their names — a script containing a celebration emoji is
+narrated as "party popper".
+
+No markdown, no arrows, no bare symbols. Write "input" not "input()". Spell
+out anything a voice cannot pronounce. Under {SCRIPT_WORD_CAP} words total —
+this is a hard cap.
 
 VOICE: a smart person explaining something to another student. Direct,
 slightly energetic, never lecturing. Bad: "In today's lesson we will discuss
@@ -867,6 +1330,23 @@ network call that cannot run.
 If the code needs typed input, supply it in `stdin`. Do NOT write the expected
 output — it is captured from a real run.
 
+EXPLAIN EVERY TERM YOU INTRODUCE, in plain words, the first time it appears.
+The viewer is sixteen and has never programmed. Naming a thing is not
+teaching it.
+
+  WRONG: "First we import math and random."
+  RIGHT: "Python ships with bundles of ready-made tools called modules.
+          Importing one is how you bring its tools into your program.
+          Random is the bundle that does anything unpredictable."
+
+  WRONG: "We store it in a list."
+  RIGHT: "A list holds several values in order under one name, so you can
+          reach for any of them later."
+
+One short clause is usually enough. Do not turn the Meal into a glossary — the
+explanation serves THIS Meal's objective, and anything a previous Meal already
+taught is assumed, not repeated.
+
 BE CRISP AND BE ACCURATE. Never invent behaviour Python does not have. If you
 are unsure a detail is true, leave it out. A shorter correct Meal beats a
 longer one with a wrong claim. Do not repeat yourself and do not pad.
@@ -884,11 +1364,11 @@ ALREADY TAUGHT (do not re-teach):
 THIS MEAL — number {order} of {total}
   title:      {title}
   objective:  {objective}
-  why now:    {why_now}
+  assumes:    {assumes}
+  introduces: {introduces}   <- explain each of these in plain words
   concept:    {concept_id}
   analogy:    {analogy}
   evidence:   {evidence}
-  code hint:  {code}
   visual:     {visual_hint}
 
 Return:
@@ -929,6 +1409,187 @@ The anchors are how the visuals are synchronised to the voice; an anchor that
 does not appear breaks the Meal."""
 
 
+REPAIR_SYSTEM = """You are fixing one Python snippet for a MAROS Meal.
+
+The snippet was executed and it failed. Return ONLY valid JSON, no markdown.
+
+Rules:
+- Fix the actual cause shown in the error. Do not rewrite the lesson.
+- If the code calls input(), it MUST come with enough stdin lines to run to
+  completion. One line per input() call, in order.
+- The snippet must run standalone: it cannot rely on variables defined in an
+  earlier Meal.
+- Keep it to the few lines that carry the idea."""
+
+REPAIR_USER = """This snippet failed:
+
+```python
+{code}
+```
+
+stdin supplied: {stdin}
+
+Error:
+{error}
+
+Return:
+
+{{
+  "source": "the corrected Python",
+  "stdin": ["lines to feed it, [] if it needs none"]
+}}"""
+
+
+def _run_snippet(code: str, stdin: list[str]) -> tuple[bool, str]:
+    """Execute a snippet exactly as verify.py will. Returns (ok, error)."""
+    with tempfile.TemporaryDirectory() as tmp:
+        script = Path(tmp) / "main.py"
+        script.write_text(code)
+        try:
+            proc = subprocess.run(
+                [sys.executable, str(script)],
+                input="".join(line + "\n" for line in stdin),
+                capture_output=True, text=True, timeout=10, cwd=tmp,
+            )
+        except subprocess.TimeoutExpired:
+            return False, "timed out after 10s"
+    if proc.returncode == 0:
+        return True, ""
+    return False, (proc.stderr or "non-zero exit").strip()[-600:]
+
+
+def repair_code(code: str, stdin: list[str], label: str,
+                attempts: int = 2) -> tuple[str, list[str], str | None]:
+    """Run the snippet; if it fails, ask for a fix and run it again.
+
+    Without this the verifier simply rejects the Meal and the series ends up
+    with holes — and the holes land on exactly the steps that matter, because
+    the interesting lessons are the ones with real code. Two failure modes
+    dominate: code that calls input() with no stdin declared, and ordinary
+    syntax errors. Both are trivially fixable when the model is shown the
+    actual error.
+    """
+    ok, error = _run_snippet(code, stdin)
+    if ok:
+        return code, stdin, None
+
+    for attempt in range(attempts):
+        print(f"      {label}: code failed ({error.splitlines()[-1][:70]}) "
+              f"— repairing, attempt {attempt + 1}", flush=True)
+        try:
+            fixed = _llm_json(
+                REPAIR_SYSTEM,
+                REPAIR_USER.format(code=code, stdin=stdin or "[]", error=error),
+                f"{label}-repair", max_tokens=1200, temperature=0.2, attempts=2,
+            )
+        except RuntimeError as e:
+            return code, stdin, f"repair call failed: {e}"
+
+        new_code = (fixed.get("source") or "").strip()
+        new_stdin = [str(x) for x in (fixed.get("stdin") or [])]
+        if not new_code:
+            continue
+        if not new_code.endswith("\n"):
+            new_code += "\n"
+
+        ok, error = _run_snippet(new_code, new_stdin)
+        if ok:
+            print(f"      {label}: repaired", flush=True)
+            return new_code, new_stdin, None
+        code, stdin = new_code, new_stdin
+
+    return code, stdin, error
+
+
+# Anything in these ranges is read aloud by name, so none of it can survive
+# into a script. Ranges rather than a list, because a list is always missing
+# the one that actually appeared.
+_EMOJI = re.compile(
+    "[\U0001F000-\U0001FAFF\U00002190-\U000021FF\U00002300-\U000027BF"
+    "\U00002B00-\U00002BFF\U0000FE00-\U0000FE0F\U0001F1E6-\U0001F1FF]"
+)
+
+# Lines that are source code rather than speech. The model is told not to put
+# code in the script and mostly complies, but "mostly" produces a Meal that
+# reads a whole program aloud, so this is checked rather than trusted.
+_CODE_LINE = re.compile(
+    r"""^\s*(?:
+          (?:import|from|def|class|return|elif|else\s*:|if\s.*:|for\s.*:|while\s.*:|print\()
+        | [A-Za-z_][A-Za-z0-9_]*\s*=[^=]
+        | [A-Za-z_][A-Za-z0-9_]*\s*\(.*\)\s*$
+    )""",
+    re.X,
+)
+
+# Operators a voice should never pronounce literally.
+_SPOKEN = [
+    (re.compile(r"\s*==\s*"), " is equal to "),
+    (re.compile(r"\s*!=\s*"), " is not equal to "),
+    (re.compile(r"\s*>=\s*"), " is at least "),
+    (re.compile(r"\s*<=\s*"), " is at most "),
+    (re.compile(r"\s*->\s*"), " gives "),
+    (re.compile(r"\s*\+=\s*"), " increases by "),
+]
+
+
+def sanitise_script(script: str, label: str) -> tuple[str, list[str]]:
+    """Strip anything the voice must not read aloud.
+
+    Three things get through the prompt often enough to need enforcing:
+    emoji (narrated by name), pasted source code (narrated character by
+    character), and bare operators. Fixing them here is deterministic and
+    costs nothing, which beats another round trip to the model.
+    """
+    notes: list[str] = []
+
+    if _EMOJI.search(script):
+        count = len(_EMOJI.findall(script))
+        script = _EMOJI.sub("", script)
+        notes.append(f"removed {count} emoji")
+
+    # "Here is the code: <code>" puts source INLINE after the introduction, so
+    # a line-start match alone leaves the first statement behind. Cut from the
+    # marker to the end of that line first.
+    marker = re.compile(
+        r"(?:Here(?:'s| is)|This is|Take a look at|Look at)\s+the\s+"
+        r"(?:code|snippet|script)\s*[:.]?[^\n]*", re.I)
+    if marker.search(script):
+        script = marker.sub("", script)
+        notes.append("removed an inline code introduction")
+
+    # Then drop whole lines that are source rather than speech.
+    kept, dropped = [], 0
+    for line in script.split("\n"):
+        if _CODE_LINE.match(line) and len(line.strip()) > 3:
+            dropped += 1
+            continue
+        kept.append(line)
+    if dropped:
+        script = "\n".join(kept)
+        notes.append(f"removed {dropped} line(s) of pasted code")
+
+    # Finally any code statement still sitting inside a sentence.
+    inline = re.compile(
+        r"(?:^|(?<=[.;:!?]))\s*(?:import\s+\w+|from\s+\w+\s+import\s+\w+"
+        r"|\w+\s*=\s*[^=\s][^.\n]*)(?=\s|$)")
+    before = script
+    script = inline.sub(" ", script)
+    if script != before:
+        notes.append("removed inline code")
+
+    for pattern, spoken in _SPOKEN:
+        if pattern.search(script):
+            script = pattern.sub(spoken, script)
+            notes.append(f"spoke out {spoken.strip()!r}")
+
+    script = re.sub(r"[ \t]+", " ", script)
+    script = re.sub(r"\n{2,}", " ", script).strip()
+
+    if notes:
+        print(f"      {label}: script cleaned — {'; '.join(notes)}", flush=True)
+    return script, notes
+
+
 def _slug(value: str) -> str:
     out = re.sub(r"[^a-z0-9]+", "_", value.lower()).strip("_")
     return re.sub(r"_+", "_", out)[:48] or "meal"
@@ -965,9 +1626,19 @@ def author_meal(plan: dict, spec: dict, prior: list[dict], total: int) -> dict:
     order = spec.get("order")
     print(f"  [{order}/{total}] {spec.get('title')}")
 
-    prior_text = "\n".join(
-        f"  {p['order']}. {p['title']} — {p['objective']}" for p in prior
-    ) or "  (nothing yet — this is the first Meal)"
+    # Only the recent run of Meals, plus a count of what came before. Carrying
+    # every prior Meal made the prompt grow with the series: by Meal 12 it was
+    # several times the size it was at Meal 2, which is why failures clustered
+    # at the end. Continuity only needs what was just taught.
+    RECENT = 6
+    earlier = len(prior) - RECENT
+    lines = [
+        f"  {p['order']}. {p['title']} — {p['objective']}"
+        for p in prior[-RECENT:]
+    ]
+    if earlier > 0:
+        lines.insert(0, f"  (plus {earlier} earlier Meal(s) already taught)")
+    prior_text = "\n".join(lines) or "  (nothing yet — this is the first Meal)"
 
     written = _llm_json(
         AUTHOR_SYSTEM,
@@ -978,11 +1649,11 @@ def author_meal(plan: dict, spec: dict, prior: list[dict], total: int) -> dict:
             order=order, total=total,
             title=spec.get("title"),
             objective=spec.get("objective"),
-            why_now=spec.get("why_now", ""),
+            assumes=", ".join(spec.get("assumes") or []) or "(nothing — assume zero knowledge)",
+            introduces=", ".join(spec.get("introduces") or []) or "(nothing new)",
             concept_id=spec.get("concept_id") or "(unmapped)",
             analogy=spec.get("analogy") or "(none supplied — do not invent one)",
             evidence=spec.get("evidence", ""),
-            code=spec.get("code") or "(none)",
             visual_hint=spec.get("visual_hint", "none"),
         ),
         f"author-{order}",
@@ -993,6 +1664,10 @@ def author_meal(plan: dict, spec: dict, prior: list[dict], total: int) -> dict:
     script = (written.get("script") or "").strip()
     if not script:
         raise RuntimeError(f"Meal {order}: empty script")
+
+    # Clean BEFORE anchoring: anchors are matched against the final script,
+    # so cleaning afterwards would invalidate them.
+    script, _cleanup = sanitise_script(script, f"meal-{order}")
 
     words = len(script.split())
     if words > SCRIPT_WORD_CAP * 1.25:
@@ -1024,12 +1699,15 @@ def _assemble(plan: dict, spec: dict, written: dict, script: str,
             scene["min_duration"] = min_duration
         scenes.append(scene)
 
-    hook = (written.get("hook_text") or spec.get("title") or "").strip()
+    def clean(value) -> str:
+        return _EMOJI.sub("", str(value or "")).strip()
+
+    hook = clean(written.get("hook_text") or spec.get("title"))
     add("hook", {"type": "text", "tone": "hook", "text": hook[:160]}, 2.0)
 
     if written.get("question_text"):
         add("question", {"type": "text", "tone": "question",
-                         "text": str(written["question_text"])[:160]})
+                         "text": clean(written["question_text"])[:160]})
 
     flow = written.get("concept_flow") or {}
     nodes = [
@@ -1055,9 +1733,18 @@ def _assemble(plan: dict, spec: dict, written: dict, script: str,
 
     code_block = written.get("code") or {}
     source_code = (code_block.get("source") or "").strip()
+    stdin_lines = [str(x) for x in (code_block.get("stdin") or [])]
     if source_code:
         if not source_code.endswith("\n"):
             source_code += "\n"
+        # Run it here, while the model that wrote it is still in reach. A
+        # failure caught now is repairable; one caught by verify.py at the end
+        # of the run is just a missing Meal.
+        source_code, stdin_lines, unfixed = repair_code(
+            source_code, stdin_lines, f"meal-{order}")
+        if unfixed:
+            print(f"      meal-{order}: code still failing — "
+                  f"this Meal will be rejected by validation", flush=True)
         lines = source_code.rstrip("\n").split("\n")
         actions: list[dict] = [{
             "action": "type",
@@ -1079,7 +1766,7 @@ def _assemble(plan: dict, spec: dict, written: dict, script: str,
         add("execution", {
             "type": "terminal",
             "command": "python main.py",
-            "stdin": [str(x) for x in (code_block.get("stdin") or [])],
+            "stdin": stdin_lines,
             **({"files": [
                 {"name": str(f.get("name")), "content": str(f.get("content", ""))}
                 for f in code_block["files"]
@@ -1091,9 +1778,9 @@ def _assemble(plan: dict, spec: dict, written: dict, script: str,
 
     if written.get("takeaway_text"):
         add("takeaway", {"type": "text", "tone": "takeaway",
-                         "text": str(written["takeaway_text"])[:160]}, 2.5)
+                         "text": clean(written["takeaway_text"])[:160]}, 2.5)
 
-    practice_prompt = str(written.get("practice_prompt") or "").strip()
+    practice_prompt = clean(written.get("practice_prompt"))
     if practice_prompt:
         add("practice", {"type": "practice", "prompt": practice_prompt[:200]}, 2.5)
 
@@ -1104,10 +1791,13 @@ def _assemble(plan: dict, spec: dict, written: dict, script: str,
         "title": str(written.get("title") or spec.get("title") or "")[:80],
         "concept": concept_id or "python.project.overview",
         "objective": str(written.get("objective") or spec.get("objective") or "")[:200],
-        "difficulty": "beginner",
+        "difficulty": spec.get("difficulty") if spec.get("difficulty") in
+                      {"beginner", "intermediate", "advanced"} else "beginner",
         "prerequisites": taxonomy.prerequisites(concept_id) if concept_id else [],
         "next_concepts": [],
         "source": {"kind": "lecture"},
+        "teaches": [str(t) for t in (spec.get("introduces") or [])],
+        "assumes": [str(t) for t in (spec.get("assumes") or [])],
         "voice": {"script": script, "voice_id": "en-US-BrianNeural", "rate": "+6%"},
         "captions": {"enabled": True, "words_per_line": 5,
                      "highlight_active_word": True},
@@ -1211,6 +1901,11 @@ def plan_series(source: dict, write: bool = True, limit: int | None = None,
                 "title": spec.get("title"),
                 "objective": spec.get("objective"),
             })
+        except QuotaExhausted as e:
+            print(f"\n[planner] STOPPING: {e}", flush=True)
+            print(f"[planner] {len(documents)} Meal(s) written before the quota "
+                  f"ran out. Re-running resumes from here.", flush=True)
+            break
         except Exception as e:
             # One bad Meal must not lose the other fourteen.
             print(f"      FAILED: {e}")
@@ -1264,6 +1959,8 @@ def main() -> int:
     src.add_argument("--job", help="chipper job id from outputs/")
     src.add_argument("--transcript", help="path to a plain-text transcript")
     ap.add_argument("--title", default="Lecture", help="title, with --transcript")
+    ap.add_argument("--key", help="stable id for caching and the series manifest; "
+                                  "used when the source is a transcript rather than a job")
     ap.add_argument("--pass1-only", action="store_true",
                     help="comprehend and print the analysis, author nothing")
     ap.add_argument("--plan-only", action="store_true",
@@ -1277,6 +1974,8 @@ def main() -> int:
 
     source = (load_from_job(args.job) if args.job
               else load_from_transcript(Path(args.transcript), args.title))
+    if args.key:
+        source["job_id"] = args.key
 
     print(f"[planner] source: {source['title']}")
     print(f"[planner] {len(source['segments'])} segment(s), "

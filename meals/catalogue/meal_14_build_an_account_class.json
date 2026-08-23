@@ -1,0 +1,209 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_14_build_an_account_class",
+    "title": "Build an Account class with debit and credit",
+    "concept": "python.oop.classes",
+    "objective": "Create an Account class that can credit, debit, and report its balance",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "python.functions.define"
+    ],
+    "next_concepts": [
+      "python.project.pipeline"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "Account"
+    ],
+    "assumes": [
+      "method",
+      "self parameter",
+      "print"
+    ],
+    "voice": {
+      "script": "What happens when you spend more than you have? How to track money with debit and credit methods? Imagine a bank account you can add or remove money from. In Python, a class is a blueprint for such objects. The Account class will hold the current balance as an instance attribute. Its constructor runs when you create a new account and sets the balance to zero. The debit method subtracts an amount, but only if enough funds exist. The credit method adds an amount. The get_balance method prints the current balance. Now let's see the code. Running this prints the balance after each operation. An Account object lets you safely modify and view its balance. Create an Account and try withdrawing more than the balance.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": true,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What happens when you spend more than you have?"
+        },
+        "narration_anchor": "What happens when you spend more than you have?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How to track money with debit and credit methods?"
+        },
+        "narration_anchor": "How to track money with debit and credit methods?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Define Account class",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Constructor sets balance",
+              "kind": "value"
+            },
+            {
+              "id": "c",
+              "label": "Debit method checks funds",
+              "kind": "box"
+            },
+            {
+              "id": "d",
+              "label": "Credit method adds money",
+              "kind": "box"
+            },
+            {
+              "id": "e",
+              "label": "Get balance prints",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b"
+            },
+            {
+              "from": "a",
+              "to": "c"
+            },
+            {
+              "from": "a",
+              "to": "d"
+            },
+            {
+              "from": "a",
+              "to": "e"
+            }
+          ]
+        },
+        "narration_anchor": "The Account class will hold the current balance as an instance attribute."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "class Account:\n    def __init__(self):\n        self.balance = 0\n    def debit(self, amount):\n        if amount > self.balance:\n            print('Insufficient funds')\n        else:\n            self.balance -= amount\n    def credit(self, amount):\n        self.balance += amount\n    def get_balance(self):\n        print('Balance:', self.balance)\n\nacct = Account()\nacct.credit(100)\nacct.debit(30)\nacct.get_balance()\nacct.debit(80)\nacct.get_balance()\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "class Account:\n    def __init__(self):\n        self.balance = 0\n    def debit(self, amount):\n        if amount > self.balance:\n            print('Insufficient funds')\n        else:\n            self.balance -= amount\n    def credit(self, amount):\n        self.balance += amount\n    def get_balance(self):\n        print('Balance:', self.balance)\n\nacct = Account()\nacct.credit(100)\nacct.debit(30)\nacct.get_balance()\nacct.debit(80)\nacct.get_balance()",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "debit"
+            }
+          ]
+        },
+        "narration_anchor": "Now let's see the code."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-23T08:51:38+00:00",
+            "stdout": "Balance: 70\nInsufficient funds\nBalance: 70\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running this prints the balance after each operation.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "An Account object lets you safely modify and view its balance."
+        },
+        "narration_anchor": "An Account object lets you safely modify and view its balance.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Create an Account and try withdrawing more than the balance."
+        },
+        "narration_anchor": "Create an Account and try withdrawing more than the balance.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Create an Account and try withdrawing more than the balance.",
+      "hint": "Use the debit method with a larger amount than the current balance."
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 14,
+      "total": 15,
+      "previous_id": "meal_13_build_a_student_class",
+      "next_id": "meal_15_putting_it_together"
+    }
+  }
+}

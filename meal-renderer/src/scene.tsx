@@ -20,7 +20,7 @@ import { statement, box, variableCell, sequenceRow, eyebrow } from './components
 import { codePane, terminalPane } from './components/codePane'
 import type { ThreadGenerator } from '@motion-canvas/core'
 import type {
-  Meal, Timing, Scene, CodeEditorVisual, TerminalVisual,
+  Beat, Meal, Timing, Scene, CodeEditorVisual, TerminalVisual,
   FlowVisual, TextVisual, VariableVisual, SequenceVisual, PracticeVisual,
 } from './meal'
 
@@ -33,15 +33,61 @@ declare global {
 
 const FADE = 0.35
 
-/** Absolute-time schedule for the beats, derived from the alignment. */
+/** Absolute-time schedule for the beats, derived from the alignment.
+ *
+ * Two things this has to survive, both seen in real Meals:
+ *
+ * A scene may have NO anchor — the planner only anchors what it can quote
+ * verbatim from the script. Treating a missing anchor as time zero put that
+ * beat at the start of the Meal and collapsed the beat before it to a
+ * ZERO-second budget: in one Meal the code appeared for an instant while the
+ * narration discussed it for twelve seconds. An unanchored beat now simply
+ * follows the one before it.
+ *
+ * Anchors can also come back out of order, because forced alignment matches
+ * on text and a phrase can land earlier than its beat. Starts are therefore
+ * forced to be non-decreasing.
+ *
+ * Finally, a beat that shows something the viewer must READ — code, a
+ * terminal — is given a floor, so it can never flash past regardless of how
+ * the narration happens to be timed.
+ */
+
+/** Beats whose content has to stay up long enough to actually read. */
+const MIN_VISIBLE: Partial<Record<Beat, number>> = {
+  code: 3.5,
+  execution: 3.0,
+  visual: 2.0,
+}
+
 function schedule(meal: Meal, timing: Timing) {
-  const starts = meal.scenes.map((s) =>
-    s.narration_anchor !== undefined ? (timing.anchors[s.narration_anchor] ?? 0) : 0,
-  )
+  const starts: number[] = []
+  let previous = 0
+
+  meal.scenes.forEach((scene, i) => {
+    const anchored =
+      scene.narration_anchor !== undefined
+        ? timing.anchors[scene.narration_anchor]
+        : undefined
+
+    // No anchor, or an anchor that would move time backwards: follow on from
+    // the previous beat rather than jumping to zero.
+    const start =
+      anchored === undefined || anchored < previous ? previous : anchored
+
+    starts.push(start)
+    previous = start
+    if (i === meal.scenes.length - 1) return
+  })
+
   return meal.scenes.map((scene, i) => {
     const start = starts[i]
     const nextStart = i + 1 < starts.length ? starts[i + 1] : timing.duration
-    const end = Math.max(nextStart, start + (scene.min_duration ?? 0))
+    const floor = Math.max(
+      scene.min_duration ?? 0,
+      MIN_VISIBLE[scene.beat] ?? 0,
+    )
+    const end = Math.max(nextStart, start + floor)
     return { scene, start, end }
   })
 }
@@ -100,12 +146,24 @@ export default makeScene2D(function* (view) {
 
   // ── Caption track, driven off the same alignment as the beats ────────
   // Runs concurrently with the beat animation for the whole Meal.
+  // Beats that fill the frame with something to READ. A caption drawn over a
+  // terminal is worse than no caption, so the track goes quiet during these.
+  const readingWindows = schedule(meal, timing)
+    .filter(({ scene }) =>
+      scene.visual.type === 'code_editor' || scene.visual.type === 'terminal')
+    .map(({ start, end }) => [start, end] as const)
+
+  // Overlap, not just the start instant: a caption that begins a moment
+  // before the code appears would otherwise sit on screen for the whole beat.
+  const isReading = (from: number, to: number) =>
+    readingWindows.some(([wFrom, wTo]) => from < wTo + 0.2 && to > wFrom - 0.2)
+
   const captionTrack = function* () {
     if (meal.captions?.enabled === false) return
     let cursor = 0
     for (const line of timing.captions) {
       if (line.start > cursor) yield* waitFor(line.start - cursor)
-      captionRef().text(line.text)
+      captionRef().text(isReading(line.start, line.end) ? '' : line.text)
       cursor = Math.max(line.start, cursor)
       const hold = Math.max(line.end - cursor, 0.08)
       yield* waitFor(hold)
@@ -116,13 +174,18 @@ export default makeScene2D(function* (view) {
 
   const beatTrack = function* () {
     let cursor = 0
+    // Carried between beats so the terminal can keep the snippet on screen.
+    const context: BeatContext = {}
     for (const { scene, start, end } of schedule(meal, timing)) {
+      if (scene.visual.type === 'code_editor') {
+        context.code = scene.visual
+      }
       if (start > cursor) {
         yield* waitFor(start - cursor)
         cursor = start
       }
       const budget = Math.max(end - cursor, 0.4)
-      yield* renderBeat(stage, scene, budget, timing)
+      yield* renderBeat(stage, scene, budget, timing, context)
       cursor += budget
     }
     // Hold the frame to the end of the narration.
@@ -138,6 +201,7 @@ function* renderBeat(
   scene: Scene,
   budget: number,
   timing: Timing,
+  context: BeatContext,
 ) {
   const container = createRef<Layout>()
   const node = (
@@ -159,7 +223,7 @@ function* renderBeat(
 
   const build = BUILDERS[scene.visual.type]
   const inner: Built = build
-    ? build(scene, timing)
+    ? build(scene, timing, context)
     : { nodes: [] }
   for (const child of inner.nodes) container().add(child)
 
@@ -182,7 +246,12 @@ interface Built {
   animate?: (seconds: number) => ThreadGenerator
 }
 
-type Builder = (scene: Scene, timing: Timing) => Built
+type Builder = (scene: Scene, timing: Timing, context: BeatContext) => Built
+
+/** What earlier beats established. Currently just the snippet on screen. */
+interface BeatContext {
+  code?: CodeEditorVisual
+}
 
 /**
  * One builder per controlled visual type. The planner may only choose from
@@ -328,7 +397,12 @@ const BUILDERS: Record<string, Builder> = {
     const v = scene.visual as CodeEditorVisual
     const codeRef = createRef<Code>()
     return {
-      nodes: [codePane(v.filename ?? 'main.py', codeRef, '') as Node],
+      // Sized against the code it will end up holding: the pane starts
+      // empty, so sizing on its initial content lays it out for one blank
+      // line and the text runs off the edge as soon as it is typed.
+      nodes: [
+        codePane(v.filename ?? 'main.py', codeRef, '', { sizeFor: v.code }) as Node,
+      ],
       *animate(seconds: number) {
         const actions = v.actions ?? []
         if (!actions.length) {
@@ -339,11 +413,23 @@ const BUILDERS: Record<string, Builder> = {
 
         // Typing actions get time proportional to how much they type, so a
         // long line does not race and a short one does not crawl.
+        //
+        // But typing must FINISH EARLY, not fill the beat. Spreading it over
+        // the whole scene meant the narration had already explained a line
+        // before it finished appearing — the code visibly lagged the voice.
+        // Capping it at 45% leaves the finished snippet on screen for the
+        // majority of the beat, which is when it is being talked about.
         const typing = actions.filter((a) => a.action === 'type')
         const typedChars = typing.reduce((n, a) => n + (a.text?.length ?? 0), 0)
         const otherCount = actions.length - typing.length
-        const otherBudget = Math.min(otherCount * 0.6, seconds * 0.4)
-        const typeBudget = Math.max(seconds - otherBudget, 0.3)
+        const otherBudget = Math.min(otherCount * 0.6, seconds * 0.3)
+        const TYPE_SHARE = 0.45
+        const typeBudget = Math.max(
+          Math.min(seconds * TYPE_SHARE, seconds - otherBudget),
+          0.3,
+        )
+        // Whatever typing does not use, the finished code holds the screen for.
+        const holdAfterTyping = Math.max(seconds - typeBudget - otherBudget, 0)
 
         let built = ''
         for (const action of actions) {
@@ -365,13 +451,16 @@ const BUILDERS: Record<string, Builder> = {
           }
         }
         codeRef().selection(codeRef().findAllRanges(''))
+        // Hold the completed snippet while the narration discusses it.
+        if (holdAfterTyping > 0) yield* waitFor(holdAfterTyping)
       },
     }
   },
 
-  terminal(scene) {
+  terminal(scene, _timing, context) {
     const v = scene.visual as TerminalVisual
     const bodyRef = createRef<Txt>()
+    const codeRef = createRef<Code>()
     const ex = v.execution
 
     // Guard rail, enforced at render time as well as in the validator: an
@@ -383,23 +472,37 @@ const BUILDERS: Record<string, Builder> = {
       )
     }
 
-    return {
-      nodes: [terminalPane(v.command ?? 'python main.py', bodyRef) as Node],
-      *animate(seconds: number) {
-        // A real TTY echoes typed input; a captured pipe does not. So stdin is
-        // interleaved here rather than being faked into the recorded stdout.
-        const stdout = ex.stdout
-        const stdin = v.stdin ?? []
-        let composed = stdout
-        if (stdin.length) {
-          // Insert the echo right after the first prompt, where a person
-          // would actually have typed it.
-          const firstNewline = stdout.indexOf('\n')
-          const promptEnd = firstNewline === -1 ? stdout.length : firstNewline
-          composed = stdout.slice(0, promptEnd) + stdin[0] + '\n' + stdout.slice(promptEnd).replace(/^\n/, '')
-        }
+    // The narration keeps discussing the code while its output appears, so
+    // the snippet stays on screen rather than being replaced by the terminal.
+    // Without this the code flashed past in a second and the viewer was left
+    // listening to an explanation of something no longer visible.
+    const snippet = context.code
+    const nodes: Node[] = []
+    if (snippet) {
+      nodes.push(
+        codePane(snippet.filename ?? 'main.py', codeRef, snippet.code, {
+          compact: true,
+        }) as Node,
+      )
+    }
+    nodes.push(
+      terminalPane(v.command ?? 'python main.py', bodyRef, v.stdin ?? []) as Node,
+    )
 
-        // Reveal progressively, as output actually appears.
+    return {
+      nodes,
+      *animate(seconds: number) {
+        // Show exactly what the program printed.
+        //
+        // An earlier version spliced the stdin back in to imitate a TTY echo,
+        // guessing where the prompt ended by looking for the first newline.
+        // input() prompts carry no newline, so the guess landed mid-line and
+        // produced "Computer chose rockrock". A captured pipe has no echo;
+        // inventing one is both wrong and, given the rule that terminal
+        // output is a recording, dishonest. The input is labelled separately
+        // instead.
+        const composed = ex.stdout
+
         const chars = composed.length
         const reveal = Math.min(seconds * 0.6, 1.6)
         const steps = Math.max(Math.min(chars, 40), 1)

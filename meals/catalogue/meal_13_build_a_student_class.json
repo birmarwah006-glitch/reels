@@ -1,0 +1,184 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_13_build_a_student_class",
+    "title": "Build a Student class",
+    "concept": "python.oop.classes",
+    "objective": "Combine a class, constructor, attributes, and a method to model a student",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "python.functions.define"
+    ],
+    "next_concepts": [
+      "python.oop.classes",
+      "python.project.pipeline"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "Student"
+    ],
+    "assumes": [
+      "instance attributes",
+      "method",
+      "average calculation method"
+    ],
+    "voice": {
+      "script": "What if you could turn a real student into a tiny program? How do we model a student with name and grades? A class is like a school blueprint, and each student we create is an object. Here\u2019s the Student class definition. Python lets us group related data and behavior inside a class. First we write the class name. Inside we define an __init__ method that receives a name and stores it on the instance as an attribute. Then we add a method called average_marks that receives a list of grades, computes their average, and prints a message. Finally we create a Student object named Alice and ask it to calculate the average of three marks. Running the program prints the average of the grades. A class bundles data and behavior for many objects. Now try creating another class called Account with a balance attribute.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": true,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could turn a real student into a tiny program?"
+        },
+        "narration_anchor": "What if you could turn a real student into a tiny program?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do we model a student with name and grades?"
+        },
+        "narration_anchor": "How do we model a student with name and grades?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Class blueprint",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Student object",
+              "kind": "actor"
+            },
+            {
+              "id": "c",
+              "label": "average_marks method",
+              "kind": "value"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "creates"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "calls"
+            }
+          ]
+        },
+        "narration_anchor": "A class is like a school blueprint, and each student we create is an object."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "class Student:\n    def __init__(self, name):\n        self.name = name\n    def average_marks(self, marks):\n        avg = sum(marks) / len(marks)\n        print(f\"{self.name}'s average is {avg}\")\n\nstudent = Student(\"Alice\")\nstudent.average_marks([80, 90, 85])\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "class Student:\n    def __init__(self, name):\n        self.name = name\n    def average_marks(self, marks):\n        avg = sum(marks) / len(marks)\n        print(f\"{self.name}'s average is {avg}\")\n\nstudent = Student(\"Alice\")\nstudent.average_marks([80, 90, 85])",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "average_marks"
+            }
+          ]
+        },
+        "narration_anchor": "Here\u2019s the Student class definition."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-23T08:51:38+00:00",
+            "stdout": "Alice's average is 85.0\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running the program prints the average of the grades.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A class bundles data and behavior for many objects."
+        },
+        "narration_anchor": "A class bundles data and behavior for many objects.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Create another class called Account with a balance attribute and a method to deposit money."
+        },
+        "narration_anchor": "Now try creating another class called Account with a balance attribute.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Create another class called Account with a balance attribute and a method to deposit money.",
+      "hint": "Define __init__ to store balance and a deposit method that adds to it."
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 13,
+      "total": 15,
+      "previous_id": "meal_12_static_method",
+      "next_id": "meal_14_build_an_account_class"
+    }
+  }
+}

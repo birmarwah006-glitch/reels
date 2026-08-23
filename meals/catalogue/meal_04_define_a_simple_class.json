@@ -1,0 +1,163 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_04_define_a_simple_class",
+    "title": "Define a simple class",
+    "concept": "python.oop.classes",
+    "objective": "Write the Python syntax that creates an empty class",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.functions.define"
+    ],
+    "next_concepts": [
+      "python.oop.classes",
+      "python.oop.init"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "class keyword"
+    ],
+    "assumes": [
+      "class",
+      "print"
+    ],
+    "voice": {
+      "script": "What if you could build a factory that makes anything you imagine? How do you write a blueprint for a new kind of object? In Python, the class keyword tells Python to start a blueprint definition. Think of it like setting up a factory called Car where each car will be built later. \n pass. That single line defines a new type you can use later. An empty class is just the keyword and a name, ready to be filled. Try writing a class called Student with no contents.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": true,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could build a factory that makes anything you imagine?"
+        },
+        "narration_anchor": "What if you could build a factory that makes anything you imagine?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you write a blueprint for a new kind of object?"
+        },
+        "narration_anchor": "How do you write a blueprint for a new kind of object?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Start",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "Define class",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "writes class"
+            }
+          ]
+        },
+        "narration_anchor": "In Python, the class keyword tells Python to start a blueprint definition."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "class Car:\n    pass\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "class Car:\n    pass",
+              "lines": [
+                1,
+                2
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "class Car"
+            }
+          ]
+        }
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-23T08:51:38+00:00",
+            "stdout": "",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "An empty class is just the keyword and a name, ready to be filled."
+        },
+        "narration_anchor": "An empty class is just the keyword and a name, ready to be filled.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write a class named Student that contains no attributes or methods."
+        },
+        "narration_anchor": "Try writing a class called Student with no contents.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write a class named Student that contains no attributes or methods."
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 4,
+      "total": 15,
+      "previous_id": "meal_03_what_is_a_class",
+      "next_id": "meal_05_create_an_object_from_a_class"
+    }
+  }
+}

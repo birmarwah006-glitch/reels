@@ -1,0 +1,150 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_01_import_the_random_module",
+    "title": "Import the random module",
+    "concept": "python.modules.import",
+    "objective": "You can bring the random module into your program",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.functions.define"
+    ],
+    "next_concepts": [
+      "python.data.lists",
+      "python.basics.strings"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "module",
+      "import"
+    ],
+    "assumes": [],
+    "voice": {
+      "script": "What makes a computer choose rock, paper, or scissors? How do you bring random numbers into a program? To let it pick unpredictably we need random numbers. Python provides bundles of ready-made tools called modules. Importing one is how you bring its tools into your program. The random module supplies functions that generate random values. To use it, write import random at the top of your file. Now the program can call random functions later. Importing a module makes its functions available in your code. Try adding import random to a new file and run it.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": true,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What makes a computer choose rock, paper, or scissors?"
+        },
+        "narration_anchor": "What makes a computer choose rock, paper, or scissors?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you bring random numbers into a program?"
+        },
+        "narration_anchor": "How do you bring random numbers into a program?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "import random",
+              "kind": "box"
+            }
+          ],
+          "edges": []
+        }
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "import random\nprint(random.random())\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "import random\nprint(random.random())",
+              "lines": [
+                1,
+                2
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "import random"
+            }
+          ]
+        }
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-23T08:51:38+00:00",
+            "stdout": "0.4455193487649298\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Importing a module makes its functions available in your code."
+        },
+        "narration_anchor": "Importing a module makes its functions available in your code.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Add import random to a new script and print a random number."
+        },
+        "narration_anchor": "Try adding import random to a new file and run it.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Add import random to a new script and print a random number.",
+      "hint": "Place the import line at the very top of the file."
+    },
+    "series": {
+      "title": "Build a Rock\u2011Paper\u2011Scissors Game",
+      "artifact": "A command\u2011line rock\u2011paper\u2011scissors game you can run in the terminal",
+      "order": 1,
+      "total": 10,
+      "previous_id": null,
+      "next_id": "meal_02_create_a_list_of_moves"
+    }
+  }
+}

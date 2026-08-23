@@ -241,6 +241,14 @@ export function useMeals() {
     ...baseOptions,
     queryKey: queryKeys.meals,
     queryFn: api.meals,
+    // The catalogue grows underneath an open tab: a pipeline run started
+    // minutes ago finishes and writes new Meals. The global config disables
+    // refetch-on-focus, which meant a tab opened when there was one Meal kept
+    // showing one Meal forever. The feed is the surface where that is most
+    // wrong, so it refreshes on focus and on a slow interval.
+    staleTime: 15_000,
+    refetchOnWindowFocus: true,
+    refetchInterval: 30_000,
   })
 }
 

@@ -141,6 +141,14 @@ function MealCard({
       {/* Meal metadata and the learning actions. */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black via-black/85 to-transparent px-5 pb-7 pt-16 sm:px-8">
         <div className="pointer-events-auto mx-auto w-full max-w-lg">
+          {meal.series?.title && (
+            <p className="mb-1.5 font-mono text-micro uppercase tracking-[0.14em] text-white/45">
+              {meal.series.title}
+              {meal.series.total > 1 &&
+                ` · ${meal.series.order} of ${meal.series.total}`}
+            </p>
+          )}
+
           <div className="flex flex-wrap items-center gap-2">
             <Badge tone="green">Meal</Badge>
             {meal.difficulty && <Badge tone="neutral">{meal.difficulty}</Badge>}
@@ -304,7 +312,14 @@ export default function Feed() {
           </span>
         </Link>
         <span className="pointer-events-auto font-mono text-micro text-white/40">
-          {activeIndex + 1} / {meals.length}
+          {(() => {
+            // Position within the current course, not across every course in
+            // the feed — "4 / 22" means nothing when the feed holds two.
+            const s = meals[activeIndex]?.series
+            return s?.title && s.total > 1
+              ? `${s.order} / ${s.total}`
+              : `${activeIndex + 1} / ${meals.length}`
+          })()}
         </span>
       </div>
 

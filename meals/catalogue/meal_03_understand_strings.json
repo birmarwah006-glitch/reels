@@ -1,0 +1,151 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_03_understand_strings",
+    "title": "Understand strings for rock\u2011paper\u2011scissors",
+    "concept": "python.basics.strings",
+    "objective": "You can recognise and write text values called strings",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.basics.data_types"
+    ],
+    "next_concepts": [
+      "python.basics.input_output",
+      "python.basics.strings"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "string"
+    ],
+    "assumes": [],
+    "voice": {
+      "script": "What does a piece of text look like in code? How do we store words like rock or paper? In Python a string is a piece of text written inside single or double quotes. For example, the word rock becomes a string when we write \"rock\". Strings let us represent words, sentences, or any characters. Now we create three string variables for the moves and print them. The program defines rock, paper, and scissors as strings and prints each one. Running this prints each word on its own line. Remember, strings are just text inside quotes. Try adding a new move called lizard as a string and print it.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": true,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What does a piece of text look like in code?"
+        },
+        "narration_anchor": "What does a piece of text look like in code?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do we store words like rock or paper?"
+        },
+        "narration_anchor": "How do we store words like rock or paper?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "String",
+              "kind": "value"
+            }
+          ],
+          "edges": []
+        },
+        "narration_anchor": "In Python a string is a piece of text written inside single or double quotes."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "rock = \"rock\"\npaper = \"paper\"\nscissors = \"scissors\"\nprint(rock)\nprint(paper)\nprint(scissors)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "rock = \"rock\"\npaper = \"paper\"\nscissors = \"scissors\"\nprint(rock)\nprint(paper)\nprint(scissors)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "speed_cps": 26
+            }
+          ]
+        },
+        "narration_anchor": "Now we create three string variables for the moves and print them."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-23T08:51:38+00:00",
+            "stdout": "rock\npaper\nscissors\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running this prints each word on its own line.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Remember, strings are just text inside quotes."
+        },
+        "narration_anchor": "Remember, strings are just text inside quotes.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Add a new move called lizard as a string and print it."
+        },
+        "narration_anchor": "Try adding a new move called lizard as a string and print it.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Add a new move called lizard as a string and print it."
+    },
+    "series": {
+      "title": "Build a Rock\u2011Paper\u2011Scissors Game",
+      "artifact": "A command\u2011line rock\u2011paper\u2011scissors game you can run in the terminal",
+      "order": 3,
+      "total": 10,
+      "previous_id": "meal_02_create_a_list_of_moves",
+      "next_id": "meal_04_read_the_player_s_choice"
+    }
+  }
+}

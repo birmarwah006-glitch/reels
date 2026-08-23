@@ -18,7 +18,7 @@ import { cn } from '@/lib/cn'
 
 const STAGES: { key: PipelineStage; label: string; detail: string }[] = [
   { key: 'ingest', label: 'Transcribing the lecture', detail: 'Downloading audio and running speech recognition' },
-  { key: 'plan', label: 'Finding the concepts', detail: 'Reading the whole lecture, then designing the series' },
+  { key: 'plan', label: 'Finding the concepts', detail: 'Reading the lecture, designing the series, writing each Meal' },
   { key: 'verify', label: 'Running the code', detail: 'Every snippet is executed for real before it can ship' },
   { key: 'narrate', label: 'Recording the voice', detail: 'Narration, then aligning it word by word' },
   { key: 'render', label: 'Rendering the Meals', detail: 'Drawing each frame and encoding to video' },
@@ -160,12 +160,28 @@ export default function Generating() {
                         {stage.detail}
                       </span>
                       {state !== 'pending' && info && (
-                        <span className="mt-1 block font-mono text-micro text-muted2">
-                          {Object.entries(info)
-                            .filter(([k]) => k !== 'state')
-                            .map(([k, v]) => `${k}=${v}`)
-                            .join('  ')}
-                        </span>
+                        <>
+                          {/* The planner reports which sub-step it is on.
+                              Without this the longest stage looks frozen. */}
+                          {typeof info.step === 'string' && (
+                            <span className="mt-1 block text-xs text-green">
+                              {info.step}
+                              {typeof info.window === 'string' && ` — section ${info.window}`}
+                              {typeof info.written === 'string' && ` — ${info.written}`}
+                            </span>
+                          )}
+                          {typeof info.current === 'string' && (
+                            <span className="mt-0.5 block truncate text-xs text-muted2">
+                              {info.current}
+                            </span>
+                          )}
+                          <span className="mt-1 block font-mono text-micro text-muted2">
+                            {Object.entries(info)
+                              .filter(([k]) => !['state', 'step', 'current', 'window', 'written'].includes(k))
+                              .map(([k, v]) => `${k}=${v}`)
+                              .join('  ')}
+                          </span>
+                        </>
                       )}
                     </span>
                     {state === 'active' && <Spinner className="mt-0.5" />}
