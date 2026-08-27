@@ -1,0 +1,150 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_02_why_virtualize_a_cpu",
+    "title": "Why virtualize a CPU?",
+    "concept": "python.project.overview",
+    "objective": "Explain how CPU virtualization aims for efficiency and security",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.project.overview",
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "efficiency",
+      "security"
+    ],
+    "assumes": [
+      "CPU",
+      "virtualization"
+    ],
+    "voice": {
+      "script": "What if one CPU could run many apps safely? Why do we virtualize a CPU? Virtualization lets a single processor appear as many separate processors. Efficiency means the system can handle more work without adding hardware, using time slices so each program gets a turn. Security means each program runs in its own sandbox, so a mistake in one cannot affect the others. Here is the flow of a virtualized CPU handling processes. First the hypervisor receives a request to run a program. It assigns a time slice, runs the program, then saves its state and moves to the next request. This repeat keeps the CPU busy and protects each program. Virtualization lets one CPU be efficient and secure. Try drawing your own flow diagram of how a virtual CPU schedules tasks.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if one CPU could run many apps safely?"
+        },
+        "narration_anchor": "What if one CPU could run many apps safely?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "Why do we virtualize a CPU?"
+        },
+        "narration_anchor": "Why do we virtualize a CPU?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Hypervisor",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "Assign time slice",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Run program",
+              "kind": "box"
+            },
+            {
+              "id": "d",
+              "label": "Save state",
+              "kind": "box"
+            },
+            {
+              "id": "e",
+              "label": "Next request",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "receives request"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "gives slice"
+            },
+            {
+              "from": "c",
+              "to": "d",
+              "label": "finishes slice"
+            },
+            {
+              "from": "d",
+              "to": "e",
+              "label": "ready for next"
+            }
+          ]
+        },
+        "narration_anchor": "Efficiency means the system can handle more work without adding hardware, using time slices so each program gets a turn. Security means each program runs in its own sandbox, so a mistake in one cannot affect the others."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Virtualization lets one CPU be efficient and secure."
+        },
+        "narration_anchor": "Virtualization lets one CPU be efficient and secure.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Try drawing your own flow diagram of how a virtual CPU schedules tasks."
+        },
+        "narration_anchor": "Try drawing your own flow diagram of how a virtual CPU schedules tasks.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Try drawing your own flow diagram of how a virtual CPU schedules tasks."
+    },
+    "series": {
+      "title": "CPU Virtualization Basics",
+      "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+      "order": 2,
+      "total": 12,
+      "previous_id": "meal_01_what_is_a_cpu",
+      "next_id": "meal_03_time_sharing_basics"
+    }
+  }
+}

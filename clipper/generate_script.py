@@ -133,6 +133,20 @@ would say. No arrows, no symbols, no notation, no markdown. Write "A implies B",
 never "A->B". Write "true false case", never "T->F". Spell out anything a
 speaker could not pronounce.
 
+
+LINE RULES — these are what make it watchable:
+- Every line is ONE spoken breath. Hard cap 20 words per line. A line longer
+  than that reads as a lecture, not a conversation.
+- NEVER write a line that is a comma-separated list of facts. If A has four
+  points to make, they belong in four different lines across the script, not
+  crammed into one.
+- A's resolving line is the punchline of the whole thing. It must be short,
+  sharp and quotable — the one sentence a student would screenshot.
+- B's FINAL line must be a confident, complete restatement of the answer in
+  his own plain words. Never a filler acknowledgement. "Got it", "Exactly",
+  "Makes sense", "That's all" are all banned as final lines — he has to
+  actually say the answer back.
+
 Write 8-12 alternating lines (A, B, A, B...). Keep total spoken word count under {max_words} words.
 This is a hard cap — going over makes the reel run past its slot.
 
@@ -257,6 +271,20 @@ EVERY LINE IS READ ALOUD BY A TEXT-TO-SPEECH VOICE. Write only words a person
 would say. No arrows, no symbols, no notation, no markdown. Spell out anything
 a speaker could not pronounce.
 
+
+LINE RULES — these are what make it watchable:
+- Every line is ONE spoken breath. Hard cap 20 words per line. A line longer
+  than that reads as a lecture, not a conversation.
+- NEVER write a line that is a comma-separated list of facts. If A has four
+  points to make, they belong in four different lines across the script, not
+  crammed into one.
+- A's resolving line is the punchline of the whole thing. It must be short,
+  sharp and quotable — the one sentence a student would screenshot.
+- B's FINAL line must be a confident, complete restatement of the answer in
+  his own plain words. Never a filler acknowledgement. "Got it", "Exactly",
+  "Makes sense", "That's all" are all banned as final lines — he has to
+  actually say the answer back.
+
 Write 8-12 alternating lines (A, B, A, B...). Keep total spoken word count under {max_words} words.
 This is a hard cap — going over makes the reel run past its slot.
 
@@ -320,4 +348,114 @@ def generate_pyq_solution(pyq: dict, module: dict | None = None, max_retries: in
                 print(f"[clipper] pyq script attempt {attempt + 1} failed ({e}) — retrying")
                 continue
             print(f"[clipper] pyq script failed for {pyq['q_id']}, skipping: {e}")
+            return None
+
+
+# ─────────────────────────────────────────────
+# TOPIC MODE
+# ─────────────────────────────────────────────
+
+# Some classic exam topics ("paging versus segmentation") are not a single
+# dated question in the pool — they are comparisons that recur across papers.
+# Topic mode covers those. CHARACTER_A deliberately does NOT cite a year or
+# paper here, because there is no specific question behind it to cite.
+TOPIC_PROMPT = """
+You are writing a 50-60 second two-character comedic script in which the pair
+work through a classic Operating Systems exam topic together.
+
+THE TOPIC: {topic}
+
+CHARACTER_A: hyper-intelligent, precise, slightly condescending. Opens by
+naming the topic and why students lose marks on it, then lays out the real
+distinctions one at a time. Everything A says must be factually correct
+standard Operating Systems material. Do not invent behaviour or numbers.
+
+Do NOT have A cite a year, a paper, or an exam. There is no specific past
+question behind this one, so claiming one would be a lie.
+
+CHARACTER_B: well-meaning, dim, and CONFIDENTLY WRONG. B gives the specific
+wrong answers students actually write on this topic — the property assigned
+to the wrong side, the distinction collapsed, the condition forgotten. B is
+funny because the error is real and stated with total certainty, never
+because it is random.
+
+ARC — follow this shape:
+1. A names the topic and what students get wrong about it.
+2. B fires off the classic wrong answer, confidently.
+3. A corrects it and gives the first real distinction.
+4. B gets it half right but flips or forgets a key property.
+5. A delivers the distinction that actually matters.
+6. B restates it in his own plain words, and this time is CORRECT.
+
+{grounding_block}
+
+EVERY LINE IS READ ALOUD BY A TEXT-TO-SPEECH VOICE. Write only words a person
+would say. No arrows, no symbols, no notation, no markdown. Spell out anything
+a speaker could not pronounce.
+
+LINE RULES — these are what make it watchable:
+- Every line is ONE spoken breath. Hard cap 20 words per line.
+- NEVER write a line that is a comma-separated list of facts. Four points
+  means four lines, not one crammed line.
+- A's resolving line is the punchline. Short, sharp, quotable.
+- B's FINAL line must be a confident, complete restatement of the answer in
+  his own plain words. "Got it", "Exactly", "Makes sense", "That's all" are
+  banned as final lines — he has to actually say the answer back.
+
+Write 8-12 alternating lines (A, B, A, B...). Keep total spoken word count under {max_words} words.
+This is a hard cap — going over makes the reel run past its slot.
+
+Output ONLY valid JSON, this exact schema, no markdown fences:
+{{
+  "lines": [
+    {{"speaker": "A", "text": "..."}},
+    {{"speaker": "B", "text": "..."}}
+  ]
+}}
+"""
+
+
+def generate_topic_solution(topic: str, related_pyqs: list | None = None,
+                            max_retries: int = 1):
+    """Write a script covering a classic topic that has no single PYQ behind it.
+
+    `related_pyqs` shape which mistakes B makes, but are never cited aloud.
+    """
+    grounding_block = ""
+    if related_pyqs:
+        qs = "\n".join(f"- {q['text']}" for q in related_pyqs)
+        grounding_block = (
+            f"PAST QUESTIONS THAT TOUCH THIS TOPIC:\n{qs}\n\n"
+            "Use these only to choose WHICH mistakes CHARACTER_B makes — they are "
+            "what students actually lose marks on. Never read one aloud and never "
+            "mention exams or papers."
+        )
+
+    prompt = TOPIC_PROMPT.format(
+        topic=topic,
+        grounding_block=grounding_block,
+        max_words=MAX_WORDS,
+    )
+
+    for attempt in range(max_retries + 1):
+        try:
+            raw = _llm_json(prompt, 0.7, "topic-script")
+            parsed = json.loads(_strip_json_fences(raw))
+            lines = parsed["lines"]
+            if not isinstance(lines, list) or len(lines) < MIN_LINES:
+                raise ValueError("script too short or malformed")
+            clean = []
+            for ln in lines:
+                speaker = str(ln.get("speaker", "")).strip().upper()
+                text = _normalize(str(ln.get("text", "")))
+                if speaker in ("A", "B") and text:
+                    clean.append({"speaker": speaker, "text": text})
+            if len(clean) < MIN_LINES:
+                raise ValueError("too few usable lines after cleaning")
+            return clean
+        except Exception as e:
+            if attempt < max_retries:
+                print(f"[clipper] topic script attempt {attempt + 1} failed ({e}) — retrying")
+                continue
+            print(f"[clipper] topic script failed for {topic!r}, skipping: {e}")
             return None

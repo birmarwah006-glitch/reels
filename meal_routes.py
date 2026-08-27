@@ -106,9 +106,25 @@ def list_meals():
             continue
         meals.append(_summary(meal))
 
-    # Series order, then position within the series. Filename order interleaves
+    # Course order, then position within the course. Filename order interleaves
     # unrelated courses, which makes the feed unlearnable.
+    #
+    # meals/series_order.json pins the course sequence when it exists; anything
+    # unlisted follows. Recency alone would let a single new render reshuffle
+    # the running order, which is not something a demo should have to survive.
+    pinned: list[str] = []
+    order_file = MEALS_DIR / "series_order.json"
+    if order_file.exists():
+        try:
+            pinned = json.loads(order_file.read_text()).get("order", [])
+        except Exception as e:
+            print(f"[MAROS] Ignoring malformed series_order.json: {e}")
+
+    def rank(title: str) -> int:
+        return pinned.index(title) if title in pinned else len(pinned)
+
     meals.sort(key=lambda m: (
+        rank((m.get("series") or {}).get("title") or ""),
         ((m.get("series") or {}).get("title") or ""),
         ((m.get("series") or {}).get("order") or 0),
     ))

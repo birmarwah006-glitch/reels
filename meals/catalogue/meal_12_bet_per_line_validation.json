@@ -1,0 +1,221 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_12_bet_per_line_validation",
+    "title": "Bet Per Line Validation",
+    "concept": "python.control.if",
+    "objective": "Prompt for a bet amount per line, ensure it is within limits and does not exceed the balance",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.basics.operators"
+    ],
+    "next_concepts": [
+      "python.basics.print",
+      "python.data.dicts"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "get_bet"
+    ],
+    "assumes": [
+      "deposit",
+      "global constants",
+      "while",
+      "comparison",
+      "f-strings"
+    ],
+    "voice": {
+      "script": "How much should you bet per line? What bet amount keeps you playing without overspending? Imagine you have a balance and you want to place a bet on several lines. First we ask the user for the amount they want to wager on each line. We keep asking until they type a number. Then we check if that number is at least the minimum allowed and no more than the maximum allowed. We calculate the total bet by multiplying the per\u2011line amount by the number of lines they chose earlier. We use an if statement to decide if the bet is allowed. If the total exceeds the current balance, we tell them they need to lower their bet and ask again. Once the amount passes all checks we return it. Now let's see the function that gets a valid bet. The program then prints the bet summary. Always check both per\u2011line limits and total against balance. Try changing the minimum bet and see how validation reacts.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "How much should you bet per line?"
+        },
+        "narration_anchor": "How much should you bet per line?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "What bet amount keeps you playing without overspending?"
+        },
+        "narration_anchor": "What bet amount keeps you playing without overspending?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Ask bet per line",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "Is numeric and within limits?",
+              "kind": "decision"
+            },
+            {
+              "id": "c",
+              "label": "Is total \u2264 balance?",
+              "kind": "decision"
+            },
+            {
+              "id": "d",
+              "label": "Return valid bet",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "input"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "yes"
+            },
+            {
+              "from": "b",
+              "to": "a",
+              "label": "no"
+            },
+            {
+              "from": "c",
+              "to": "d",
+              "label": "yes"
+            },
+            {
+              "from": "c",
+              "to": "a",
+              "label": "no"
+            }
+          ]
+        },
+        "narration_anchor": "We use an if statement to decide if the bet is allowed."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "MIN_BET = 10\nMAX_BET = 1000\nBALANCE = 5000\nLINES = 3\n\ndef get_bet():\n    while True:\n        bet_input = input(\"Enter bet per line: \")\n        if not bet_input.isdigit():\n            print(\"Please enter a number.\")\n            continue\n        bet = int(bet_input)\n        if bet < MIN_BET or bet > MAX_BET:\n            print(f\"Bet must be between {MIN_BET} and {MAX_BET}.\")\n            continue\n        total = bet * LINES\n        if total > BALANCE:\n            print(\"Total bet exceeds your balance.\")\n            continue\n        return bet\n\nbet_per_line = get_bet()\nprint(f\"You bet {bet_per_line} on each of {LINES} lines, total {bet_per_line * LINES}.\")\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "MIN_BET = 10\nMAX_BET = 1000\nBALANCE = 5000\nLINES = 3\n\ndef get_bet():\n    while True:\n        bet_input = input(\"Enter bet per line: \")\n        if not bet_input.isdigit():\n            print(\"Please enter a number.\")\n            continue\n        bet = int(bet_input)\n        if bet < MIN_BET or bet > MAX_BET:\n            print(f\"Bet must be between {MIN_BET} and {MAX_BET}.\")\n            continue\n        total = bet * LINES\n        if total > BALANCE:\n            print(\"Total bet exceeds your balance.\")\n            continue\n        return bet\n\nbet_per_line = get_bet()\nprint(f\"You bet {bet_per_line} on each of {LINES} lines, total {bet_per_line * LINES}.\")",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "if total > BALANCE"
+            }
+          ]
+        },
+        "narration_anchor": "Now let's see the function that gets a valid bet."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [
+            "50"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-27T06:37:13+00:00",
+            "stdout": "Enter bet per line: You bet 50 on each of 3 lines, total 150.\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "The program then prints the bet summary.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Always check both per\u2011line limits and total against balance."
+        },
+        "narration_anchor": "Always check both per\u2011line limits and total against balance.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Modify the minimum bet value and observe how the validation reacts."
+        },
+        "narration_anchor": "Try changing the minimum bet and see how validation reacts.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Modify the minimum bet value and observe how the validation reacts."
+    },
+    "series": {
+      "title": "Build a Simple Slot\u2011Machine Deposit App",
+      "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot\u2011machine spin",
+      "order": 12,
+      "total": 17,
+      "previous_id": "meal_11_choosing_number_of_lines",
+      "next_id": "meal_13_printing_a_bet_summary"
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_11_choosing_number_of_lines",
+    "title": "Choosing Number of Lines",
+    "concept": "python.control.if",
+    "objective": "Prompt for 1\u20113 lines, validate with a while loop and chained comparisons",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.basics.operators"
+    ],
+    "next_concepts": [
+      "python.control.if",
+      "python.basics.print"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "get_number_of_lines"
+    ],
+    "assumes": [
+      "deposit",
+      "global constants",
+      "while",
+      "comparison"
+    ],
+    "voice": {
+      "script": "How many lines should you bet on? You need to pick a number between one and three. First, we define MIN_LINES and MAX_LINES as the smallest and largest allowed lines. Then we write a function called get_number_of_lines. Inside, we ask the player to type a number. While the input isn\u2019t a digit or isn\u2019t between MIN_LINES and MAX_LINES, we repeat the question. The chained comparison MIN_LINES is at most lines is at most MAX_LINES checks that the value falls inside the range. Once we have a good number, we return it. Finally, we call the function and print a short summary that shows how many lines you will play.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "How many lines should you bet on?"
+        },
+        "narration_anchor": "How many lines should you bet on?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "User must pick 1 to 3 lines, but how to enforce it?"
+        }
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Ask for lines",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "Validate input",
+              "kind": "decision"
+            },
+            {
+              "id": "c",
+              "label": "Return valid count",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "user types"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "valid"
+            }
+          ]
+        }
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "MIN_LINES = 1\nMAX_LINES = 3\n\ndef get_number_of_lines():\n    while True:\n        user_input = input(f\"Enter lines ({MIN_LINES}-{MAX_LINES}): \")\n        if not user_input.isdigit():\n            print(\"Please type a number.\")\n            continue\n        lines = int(user_input)\n        if MIN_LINES <= lines <= MAX_LINES:\n            return lines\n        print(f\"Number must be between {MIN_LINES} and {MAX_LINES}.\")\n\nchosen = get_number_of_lines()\nprint(f\"You will play on {chosen} line(s).\")\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "MIN_LINES = 1\nMAX_LINES = 3\n\ndef get_number_of_lines():\n    while True:\n        user_input = input(f\"Enter lines ({MIN_LINES}-{MAX_LINES}): \")\n        if not user_input.isdigit():\n            print(\"Please type a number.\")\n            continue\n        lines = int(user_input)\n        if MIN_LINES <= lines <= MAX_LINES:\n            return lines\n        print(f\"Number must be between {MIN_LINES} and {MAX_LINES}.\")\n\nchosen = get_number_of_lines()\nprint(f\"You will play on {chosen} line(s).\")",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "MIN_LINES <= lines <= MAX_LINES"
+            }
+          ]
+        }
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [
+            "2"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-27T06:37:13+00:00",
+            "stdout": "Enter lines (1-3): You will play on 2 line(s).\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Use a while loop with a chained comparison to keep prompting until input is in range."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Modify the function to allow betting on up to five lines."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Modify the function to allow betting on up to five lines.",
+      "hint": "Just change the MAX_LINES constant."
+    },
+    "series": {
+      "title": "Build a Simple Slot\u2011Machine Deposit App",
+      "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot\u2011machine spin",
+      "order": 11,
+      "total": 17,
+      "previous_id": "meal_10_global_constants",
+      "next_id": "meal_12_bet_per_line_validation"
+    }
+  }
+}

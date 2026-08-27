@@ -1,0 +1,189 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_04_add_two_integers",
+    "title": "Add two integers",
+    "concept": "c.basics.operators",
+    "objective": "Perform addition on two integer variables and store the result",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "c.basics.variables"
+    ],
+    "next_concepts": [
+      "c.basics.printf",
+      "c.basics.hello_world"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "addition operator (+)"
+    ],
+    "assumes": [
+      "variable"
+    ],
+    "voice": {
+      "script": "What happens when you add two numbers in code? How do you store the sum of two integers? You already have two integer variables holding values. The addition operator, a plus sign, tells Python to calculate the total of those values. So we write a new variable called total and assign it the sum of the first two variables. This line performs the addition and stores the result. When the program runs, it prints the total so you can see the answer. The flow looks like: start, read numbers, add them, display result, end. Remember: the plus sign adds two integers and gives a new integer. Now try changing the numbers and see a different sum.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What happens when you add two numbers in code?"
+        },
+        "narration_anchor": "What happens when you add two numbers in code?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you store the sum of two integers?"
+        },
+        "narration_anchor": "How do you store the sum of two integers?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Read first integer",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Read second integer",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Add them",
+              "kind": "box"
+            },
+            {
+              "id": "d",
+              "label": "Print result",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b"
+            },
+            {
+              "from": "b",
+              "to": "c"
+            },
+            {
+              "from": "c",
+              "to": "d"
+            }
+          ]
+        },
+        "narration_anchor": "The addition operator, a plus sign, tells Python to calculate the total of those values."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "import sys\n\na = int(sys.stdin.readline())\nb = int(sys.stdin.readline())\n\ntotal = a + b\nprint(total)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "import sys\n\na = int(sys.stdin.readline())\nb = int(sys.stdin.readline())\n\ntotal = a + b\nprint(total)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "a + b"
+            }
+          ]
+        },
+        "narration_anchor": "So we write a new variable called total and assign it the sum of the first two variables."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "/opt/homebrew/opt/python@3.14/bin/python3.14 main.py",
+          "stdin": [
+            "3",
+            "5"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-27T06:37:13+00:00",
+            "stdout": "8\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "When the program runs, it prints the total so you can see the answer.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "The plus sign adds two integers and stores the result in a new integer variable."
+        },
+        "narration_anchor": "Remember: the plus sign adds two integers and gives a new integer.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Change the input numbers and run the program to see a different sum."
+        },
+        "narration_anchor": "Now try changing the numbers and see a different sum.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Change the input numbers and run the program to see a different sum."
+    },
+    "series": {
+      "title": "Add Two Numbers in C",
+      "artifact": "A compiled C program that reads two integers, adds them, and prints the sum",
+      "order": 4,
+      "total": 7,
+      "previous_id": "meal_03_read_input_with_scanf",
+      "next_id": "meal_05_print_the_sum_with_printf"
+    }
+  }
+}

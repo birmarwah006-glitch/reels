@@ -126,7 +126,7 @@ export default makeScene2D(function* (view) {
         y={-40}
       />
 
-      {/* Captions. Audio-first product, so these are not optional chrome. */}
+      {/* Caption band. Empty unless a Meal opts in. */}
       <Layout layout y={CANVAS.height / 2 - 560} width={CANVAS.width - GUTTER} justifyContent="center">
         <Txt
           ref={captionRef}
@@ -159,7 +159,11 @@ export default makeScene2D(function* (view) {
     readingWindows.some(([wFrom, wTo]) => from < wTo + 0.2 && to > wFrom - 0.2)
 
   const captionTrack = function* () {
-    if (meal.captions?.enabled === false) return
+    // Captions are OPT-IN. They were on by default and crowded the frame —
+    // a second, smaller line of text competing with the hook, the code and
+    // the takeaway, all of which are already on screen and readable. The
+    // narration carries the words; the visuals carry the teaching.
+    if (meal.captions?.enabled !== true) return
     let cursor = 0
     for (const line of timing.captions) {
       if (line.start > cursor) yield* waitFor(line.start - cursor)

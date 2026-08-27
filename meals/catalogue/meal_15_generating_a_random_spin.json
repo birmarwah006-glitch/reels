@@ -1,0 +1,198 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_15_generating_a_random_spin",
+    "title": "Generating a Random Slot Machine Spin",
+    "concept": "python.data.lists",
+    "objective": "Build columns of random symbols without repeats using lists and random.choice",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "python.basics.data_types"
+    ],
+    "next_concepts": [
+      "python.control.for",
+      "python.functions.define"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "get_slot_machine_spin"
+    ],
+    "assumes": [
+      "dictionary",
+      "symbol_counts",
+      "import random"
+    ],
+    "voice": {
+      "script": "What if every spin was truly random? How do we generate columns of symbols without repeats? First, we need a function that creates the spin. We'll call it get_slot_machine_spin. This function will take the symbol counts dictionary and the number of columns we want. Inside, we build each column by picking three symbols at random, making sure we don't pick the same symbol twice in that column. We use random.choice to select a symbol from a list that reflects its frequency. Now let's write the function. Each column is built by looping three times and adding a chosen symbol to a temporary list, then we collect all columns into a master list. Running the script prints three columns of symbols. A list lets you collect random symbols for each reel. Try changing the number of columns or symbols to see different results.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if every spin was truly random?"
+        },
+        "narration_anchor": "What if every spin was truly random?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do we generate columns of symbols without repeats?"
+        },
+        "narration_anchor": "How do we generate columns of symbols without repeats?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Define get_slot_machine_spin",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Loop to pick symbols",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Return spin columns",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "calls"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "produces"
+            }
+          ]
+        },
+        "narration_anchor": "First, we need a function that creates the spin. We'll call it get_slot_machine_spin."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "import random\n\nsymbol_counts = {\"A\": 2, \"B\": 2, \"C\": 2, \"D\": 2}\n\ndef get_slot_machine_spin(symbol_counts, columns=3, rows=3):\n    # Build a list that contains each symbol as many times as its count\n    symbols = []\n    for symbol, count in symbol_counts.items():\n        symbols.extend([symbol] * count)\n    spin = []\n    for _ in range(columns):\n        column = []\n        while len(column) < rows:\n            choice = random.choice(symbols)\n            if choice not in column:\n                column.append(choice)\n        spin.append(column)\n    return spin\n\nif __name__ == \"__main__\":\n    result = get_slot_machine_spin(symbol_counts)\n    for col in result:\n        print(col)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "import random\n\nsymbol_counts = {\"A\": 2, \"B\": 2, \"C\": 2, \"D\": 2}\n\ndef get_slot_machine_spin(symbol_counts, columns=3, rows=3):\n    # Build a list that contains each symbol as many times as its count\n    symbols = []\n    for symbol, count in symbol_counts.items():\n        symbols.extend([symbol] * count)\n    spin = []\n    for _ in range(columns):\n        column = []\n        while len(column) < rows:\n            choice = random.choice(symbols)\n            if choice not in column:\n                column.append(choice)\n        spin.append(column)\n    return spin\n\nif __name__ == \"__main__\":\n    result = get_slot_machine_spin(symbol_counts)\n    for col in result:\n        print(col)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "random.choice"
+            }
+          ]
+        },
+        "narration_anchor": "Now let's write the function."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-27T06:37:16+00:00",
+            "stdout": "['B', 'A', 'D']\n['A', 'D', 'C']\n['D', 'B', 'C']\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running the script prints three columns of symbols.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A list lets you collect random symbols for each reel."
+        },
+        "narration_anchor": "A list lets you collect random symbols for each reel.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Try changing the number of columns or symbols to see different results."
+        },
+        "narration_anchor": "Try changing the number of columns or symbols to see different results.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Try changing the number of columns or symbols to see different results.",
+      "hint": "Adjust the columns argument or add new symbols to the dictionary."
+    },
+    "series": {
+      "title": "Build a Simple Slot\u2011Machine Deposit App",
+      "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot\u2011machine spin",
+      "order": 15,
+      "total": 17,
+      "previous_id": "meal_14_symbol_count_dictionary",
+      "next_id": "meal_16_transposing_and_printing_the_spin"
+    }
+  }
+}

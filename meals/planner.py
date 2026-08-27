@@ -70,7 +70,10 @@ from podcastengine import llm_chat  # noqa: E402  Cerebras primary, Groq fallbac
 BUILD_DIR = project_env.BUILD_DIR
 CATALOGUE_DIR = project_env.CATALOGUE_DIR
 
-import taxonomy
+import languages as lang_config
+
+# Reassigned in plan_series() once the source language is known.
+taxonomy = lang_config.taxonomy_for(lang_config.DEFAULT_LANGUAGE)
 
 BUILD_DIR = HERE / "build"
 CATALOGUE_DIR = HERE / "catalogue"
@@ -620,9 +623,9 @@ def full_text(source: dict) -> str:
 # PASS 1 — COMPREHEND
 # ─────────────────────────────────────────────────────────────────────────
 
-COMPREHEND_SYSTEM = """You are a curriculum analyst for MAROS, a Python-first
-microlearning platform. You are given the transcript of a real programming
-lecture or project walkthrough.
+COMPREHEND_SYSTEM = """You are a curriculum analyst for MAROS, a microlearning
+platform. You are given the transcript of a real programming lecture or
+project walkthrough.
 
 Your job is to UNDERSTAND it, not to summarise it. Someone will use your
 analysis to rebuild this lecture as a series of short lessons, and they will
@@ -661,7 +664,7 @@ Return this exact JSON shape:
 
 {{
   "is_programming": true,
-  "language": "python",
+  "language": "{language}",
   "builds_something": true,
   "artifact": "one sentence: what is built by the end, or null if nothing is built",
   "summary": "3-4 sentences: what this lecture actually teaches, in order",
@@ -725,7 +728,7 @@ Return:
 
 {{
   "is_programming": true,
-  "language": "python",
+  "language": "{language}",
   "builds_something": true,
   "artifact": "one sentence: what is built by the end, or null",
   "summary": "3-4 sentences: what this lecture actually teaches, in order",
@@ -787,6 +790,7 @@ def comprehend(source: dict, use_cache: bool = True) -> dict:
                 COMPREHEND_USER.format(
                     title=f"{source['title']} (section {i} of {len(windows)})",
                     transcript=window,
+                    language=lang_config.get(source.get("language"))["display"],
                 ),
                 f"comprehend-{i}",
                 max_tokens=2600,
@@ -866,6 +870,7 @@ def comprehend(source: dict, use_cache: bool = True) -> dict:
             SYNTHESIS_USER.format(
                 title=source["title"],
                 sections=json.dumps(digest, indent=1)[:9000],
+                language=lang_config.get(source.get("language"))["display"],
             ),
             "synthesis",
             max_tokens=2000,
@@ -1262,8 +1267,9 @@ def _check_curriculum(meals: list, analysis: dict | None = None,
 # PASS 3 — AUTHOR
 # ─────────────────────────────────────────────────────────────────────────
 
-AUTHOR_SYSTEM = f"""You write a single MAROS Meal: one short lesson, 30-90
-seconds, teaching exactly ONE objective.
+def author_system(lang: dict) -> str:
+    return f"""You write a single MAROS Meal: one short lesson, 30-90
+seconds, teaching exactly ONE objective. The source material is {lang["display"]}.
 
 Return ONLY valid JSON matching the shape given. No markdown, no prose.
 
@@ -1277,12 +1283,7 @@ and is unlistenable.
   WRONG: "if user_choice == computer_choice: result = 'tie'"
   RIGHT: "If both players picked the same move, it is a tie."
 
-NEVER DICTATE SYNTAX. Say what the code MEANS, not what it looks like.
-
-  WRONG: "double equals"        RIGHT: "checks whether they match"
-  WRONG: "f string"             RIGHT: "builds a message with the value inside"
-  WRONG: "elif"                 RIGHT: "otherwise, if"
-  WRONG: "dot lower open paren" RIGHT: "converts it to lowercase"
+{lang["syntax_rules"]}
 
 NO EMOJI. Not one, anywhere in the script or in any on-screen text. The voice
 reads them aloud as their names — a script containing a celebration emoji is
@@ -1306,7 +1307,7 @@ already works for this audience. Do not replace it with your own. If none is
 supplied, only add one if it genuinely helps, and never a strained one.
 
 CODE MUST RUN, AND IT MUST RUN ON ITS OWN. It is executed as a complete
-`main.py` in an empty directory, with nothing from any other Meal in scope,
+`{lang["file_name"]}` in an empty directory, with nothing from any other Meal in scope,
 and the Meal is REJECTED if it fails.
 
 This is the one place where continuity does NOT apply. Teaching builds on
@@ -1440,14 +1441,30 @@ Return:
 }}"""
 
 
-def _run_snippet(code: str, stdin: list[str]) -> tuple[bool, str]:
-    """Execute a snippet exactly as verify.py will. Returns (ok, error)."""
+def _run_snippet(code: str, stdin: list[str], language: str = "python") -> tuple[bool, str]:
+    """Execute a snippet exactly as verify.py will. Returns (ok, error).
+
+    Compiled languages get a compile step first; a compile failure is
+    reported the same way a runtime failure is, so repair_code can fix
+    either kind of error through the same path."""
+    lang = lang_config.get(language)
     with tempfile.TemporaryDirectory() as tmp:
-        script = Path(tmp) / "main.py"
+        script = Path(tmp) / lang["file_name"]
         script.write_text(code)
+        binpath = Path(tmp) / "a.out"
+        if lang["compile_cmd"]:
+            try:
+                compile_proc = subprocess.run(
+                    lang["compile_cmd"](script, binpath),
+                    capture_output=True, text=True, timeout=15, cwd=tmp,
+                )
+            except subprocess.TimeoutExpired:
+                return False, "compile timed out after 15s"
+            if compile_proc.returncode != 0:
+                return False, (compile_proc.stderr or "compile failed").strip()[-600:]
         try:
             proc = subprocess.run(
-                [sys.executable, str(script)],
+                lang["run_cmd"](script, binpath),
                 input="".join(line + "\n" for line in stdin),
                 capture_output=True, text=True, timeout=10, cwd=tmp,
             )
@@ -1459,7 +1476,7 @@ def _run_snippet(code: str, stdin: list[str]) -> tuple[bool, str]:
 
 
 def repair_code(code: str, stdin: list[str], label: str,
-                attempts: int = 2) -> tuple[str, list[str], str | None]:
+                attempts: int = 2, language: str = "python") -> tuple[str, list[str], str | None]:
     """Run the snippet; if it fails, ask for a fix and run it again.
 
     Without this the verifier simply rejects the Meal and the series ends up
@@ -1469,7 +1486,7 @@ def repair_code(code: str, stdin: list[str], label: str,
     syntax errors. Both are trivially fixable when the model is shown the
     actual error.
     """
-    ok, error = _run_snippet(code, stdin)
+    ok, error = _run_snippet(code, stdin, language)
     if ok:
         return code, stdin, None
 
@@ -1492,7 +1509,7 @@ def repair_code(code: str, stdin: list[str], label: str,
         if not new_code.endswith("\n"):
             new_code += "\n"
 
-        ok, error = _run_snippet(new_code, new_stdin)
+        ok, error = _run_snippet(new_code, new_stdin, language)
         if ok:
             print(f"      {label}: repaired", flush=True)
             return new_code, new_stdin, None
@@ -1640,8 +1657,9 @@ def author_meal(plan: dict, spec: dict, prior: list[dict], total: int) -> dict:
         lines.insert(0, f"  (plus {earlier} earlier Meal(s) already taught)")
     prior_text = "\n".join(lines) or "  (nothing yet — this is the first Meal)"
 
+    lang = lang_config.get(spec.get("language") or getattr(plan, "get", lambda *_: None)("language"))
     written = _llm_json(
-        AUTHOR_SYSTEM,
+        author_system(lang),
         AUTHOR_USER.format(
             series_title=plan.get("series_title", ""),
             artifact=plan.get("artifact", ""),
@@ -1741,7 +1759,7 @@ def _assemble(plan: dict, spec: dict, written: dict, script: str,
         # failure caught now is repairable; one caught by verify.py at the end
         # of the run is just a missing Meal.
         source_code, stdin_lines, unfixed = repair_code(
-            source_code, stdin_lines, f"meal-{order}")
+            source_code, stdin_lines, f"meal-{order}", language=spec.get("language") or "python")
         if unfixed:
             print(f"      meal-{order}: code still failing — "
                   f"this Meal will be rejected by validation", flush=True)
@@ -1756,16 +1774,18 @@ def _assemble(plan: dict, spec: dict, written: dict, script: str,
         if highlight and highlight in source_code:
             actions.append({"action": "highlight", "text": highlight})
 
-        add("code", {"type": "code_editor", "language": "python",
-                     "filename": "main.py", "code": source_code,
+        lang = lang_config.get(spec.get("language"))
+        add("code", {"type": "code_editor", "language": lang["id"],
+                     "filename": lang["file_name"], "code": source_code,
                      "show_line_numbers": True, "actions": actions})
 
         # Execution is left UNVERIFIED on purpose. verify.py runs the code for
         # real and writes back what it actually printed; validate.py refuses
         # the Meal until then. The model never supplies output.
+        run_display = " ".join(lang["run_cmd"](Path(lang["file_name"]), Path("a.out")))
         add("execution", {
             "type": "terminal",
-            "command": "python main.py",
+            "command": run_display,
             "stdin": stdin_lines,
             **({"files": [
                 {"name": str(f.get("name")), "content": str(f.get("content", ""))}
@@ -1789,7 +1809,7 @@ def _assemble(plan: dict, spec: dict, written: dict, script: str,
         "schema_version": "1.0",
         "id": meal_id,
         "title": str(written.get("title") or spec.get("title") or "")[:80],
-        "concept": concept_id or "python.project.overview",
+        "concept": concept_id or f"{spec.get('language') or 'python'}.project.overview",
         "objective": str(written.get("objective") or spec.get("objective") or "")[:200],
         "difficulty": spec.get("difficulty") if spec.get("difficulty") in
                       {"beginner", "intermediate", "advanced"} else "beginner",
@@ -1799,7 +1819,10 @@ def _assemble(plan: dict, spec: dict, written: dict, script: str,
         "teaches": [str(t) for t in (spec.get("introduces") or [])],
         "assumes": [str(t) for t in (spec.get("assumes") or [])],
         "voice": {"script": script, "voice_id": "en-US-BrianNeural", "rate": "+6%"},
-        "captions": {"enabled": True, "words_per_line": 5,
+        # Off by default: the frame already carries the hook, the code and the
+        # takeaway as real typography, and a second smaller line underneath
+        # competed with them rather than adding anything.
+        "captions": {"enabled": False, "words_per_line": 5,
                      "highlight_active_word": True},
         "scenes": scenes,
         "render": {"width": 1080, "height": 1920, "fps": 30},
@@ -1858,13 +1881,18 @@ def _existing_document(spec: dict) -> dict | None:
 
 def plan_series(source: dict, write: bool = True, limit: int | None = None,
                 fresh: bool = False, resume: bool = True) -> dict:
+    global taxonomy
+    taxonomy = lang_config.taxonomy_for(source.get("language"))
     analysis = comprehend(source, use_cache=not fresh)
 
-    if not analysis.get("is_programming", True):
+    has_code = bool(analysis.get("code_written"))
+    has_concepts = bool(analysis.get("concepts_taught"))
+    if not analysis.get("is_programming", True) and not has_code and not has_concepts:
         raise SystemExit(
-            "[planner] This does not look like a programming lecture.\n"
+            "[planner] Nothing teachable was found in this lecture.\n"
             f"  {analysis.get('summary', '')[:300]}\n"
-            "  MAROS is Python-first; Meals are not generated for other subjects yet."
+            "  Neither code nor coherent concepts were extracted \u2014 the source\n"
+            "  material itself may be too garbled or off-topic to build Meals from."
         )
 
     plan = build_curriculum(source, analysis, use_cache=not fresh)
@@ -1961,6 +1989,9 @@ def main() -> int:
     ap.add_argument("--title", default="Lecture", help="title, with --transcript")
     ap.add_argument("--key", help="stable id for caching and the series manifest; "
                                   "used when the source is a transcript rather than a job")
+    ap.add_argument("--language", default=lang_config.DEFAULT_LANGUAGE,
+                    choices=list(lang_config.LANGUAGES.keys()),
+                    help="source language (default: python)")
     ap.add_argument("--pass1-only", action="store_true",
                     help="comprehend and print the analysis, author nothing")
     ap.add_argument("--plan-only", action="store_true",
@@ -1976,6 +2007,7 @@ def main() -> int:
               else load_from_transcript(Path(args.transcript), args.title))
     if args.key:
         source["job_id"] = args.key
+    source["language"] = args.language
 
     print(f"[planner] source: {source['title']}")
     print(f"[planner] {len(source['segments'])} segment(s), "

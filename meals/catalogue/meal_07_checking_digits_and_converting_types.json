@@ -1,0 +1,194 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_07_checking_digits_and_converting_types",
+    "title": "Checking Digits and Converting Types",
+    "concept": "python.basics.strings",
+    "objective": "Verify a string is numeric with isdigit and convert it to an integer",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.basics.data_types"
+    ],
+    "next_concepts": [
+      "python.basics.operators",
+      "python.functions.define"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "isdigit",
+      "int()"
+    ],
+    "assumes": [
+      "while",
+      "string",
+      "variable"
+    ],
+    "voice": {
+      "script": "Is your input really a number? When you ask the player for a deposit, you need to be sure they typed digits only. Python strings have a method called isdigit that looks at every character and returns true if each one is a numeral. If the check passes, you can turn the text into a real number using the int function, which builds an integer from the characters. Let\u2019s see it in action.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Is your input really a number?"
+        },
+        "narration_anchor": "Is your input really a number?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "When you ask the player for a deposit, you need to be sure they typed digits only."
+        },
+        "narration_anchor": "When you ask the player for a deposit, you need to be sure they typed digits only."
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Read input",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "Is digit?",
+              "kind": "decision"
+            },
+            {
+              "id": "c",
+              "label": "Convert to int",
+              "kind": "box"
+            },
+            {
+              "id": "d",
+              "label": "Reject input",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "yes"
+            },
+            {
+              "from": "b",
+              "to": "d",
+              "label": "no"
+            }
+          ]
+        },
+        "narration_anchor": "Python strings have a method called isdigit that looks at every character and returns true if each one is a numeral."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "def get_deposit():\n    amount = input(\"Enter deposit amount: \")\n    if amount.isdigit():\n        return int(amount)\n    else:\n        print(\"Please enter a whole number.\")\n        return None\n\ndeposit = get_deposit()\nprint(\"You entered:\", deposit)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "def get_deposit():\n    amount = input(\"Enter deposit amount: \")\n    if amount.isdigit():\n        return int(amount)\n    else:\n        print(\"Please enter a whole number.\")\n        return None\n\ndeposit = get_deposit()\nprint(\"You entered:\", deposit)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "amount.isdigit()"
+            }
+          ]
+        },
+        "narration_anchor": "Let\u2019s see it in action."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [
+            "123"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-27T06:37:13+00:00",
+            "stdout": "Enter deposit amount: You entered: 123\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Use isdigit to verify and int to convert user input."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write a function that asks for a bet amount and validates it the same way."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write a function that asks for a bet amount and validates it the same way.",
+      "hint": "Reuse the isdigit check before converting."
+    },
+    "series": {
+      "title": "Build a Simple Slot\u2011Machine Deposit App",
+      "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot\u2011machine spin",
+      "order": 7,
+      "total": 17,
+      "previous_id": "meal_06_while_loops_for_repetition",
+      "next_id": "meal_08_comparisons_and_positive_checks"
+    }
+  }
+}

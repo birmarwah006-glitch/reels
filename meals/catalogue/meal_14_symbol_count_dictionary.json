@@ -1,0 +1,183 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_14_symbol_count_dictionary",
+    "title": "Create a Symbol Count Dictionary for the Slot Machine",
+    "concept": "python.data.dicts",
+    "objective": "Build a dictionary that maps each slot symbol to the number of times it appears on a reel",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.data.lists"
+    ],
+    "next_concepts": [
+      "python.data.lists",
+      "python.control.for"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "symbol_counts"
+    ],
+    "assumes": [
+      "variable"
+    ],
+    "voice": {
+      "script": "What if the machine could count its own symbols? How do we track how many of each symbol appear on a reel? A dictionary stores pairs of keys and values, so we can use the symbol as the key and its count as the value. First we list the symbols that appear on a single reel. Then we loop over those symbols, count how often each shows up, and store the result in a dictionary called symbol_counts. Finally we print the dictionary so you can see the mapping. That\u2019s all you need to know about creating a symbol count dictionary.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if the machine could count its own symbols?"
+        },
+        "narration_anchor": "What if the machine could count its own symbols?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do we track how many of each symbol appear on a reel?"
+        },
+        "narration_anchor": "How do we track how many of each symbol appear on a reel?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Define symbols list",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Create empty dictionary",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Loop and count",
+              "kind": "box"
+            },
+            {
+              "id": "d",
+              "label": "Print dictionary",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "use list"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "fill counts"
+            },
+            {
+              "from": "c",
+              "to": "d",
+              "label": "display result"
+            }
+          ]
+        },
+        "narration_anchor": "A dictionary stores pairs of keys and values, so we can use the symbol as the key and its count as the value."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "symbols = ['A', 'B', 'C', 'A', 'B', 'A']\nsymbol_counts = {}\nfor s in symbols:\n    if s in symbol_counts:\n        symbol_counts[s] += 1\n    else:\n        symbol_counts[s] = 1\nprint(symbol_counts)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "symbols = ['A', 'B', 'C', 'A', 'B', 'A']\nsymbol_counts = {}\nfor s in symbols:\n    if s in symbol_counts:\n        symbol_counts[s] += 1\n    else:\n        symbol_counts[s] = 1\nprint(symbol_counts)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "speed_cps": 26
+            }
+          ]
+        }
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-27T06:37:16+00:00",
+            "stdout": "{'A': 3, 'B': 2, 'C': 1}\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A dictionary lets you map each slot symbol to its frequency on a reel."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Add a second reel list and extend the dictionary to count symbols across both reels."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Add a second reel list and extend the dictionary to count symbols across both reels.",
+      "hint": "Create a second symbols list and repeat the counting loop, updating the same dictionary."
+    },
+    "series": {
+      "title": "Build a Simple Slot\u2011Machine Deposit App",
+      "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot\u2011machine spin",
+      "order": 14,
+      "total": 17,
+      "previous_id": "meal_13_printing_a_bet_summary",
+      "next_id": "meal_15_generating_a_random_spin"
+    }
+  }
+}

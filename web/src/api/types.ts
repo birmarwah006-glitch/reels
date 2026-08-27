@@ -233,6 +233,8 @@ export interface MealSeries {
 export interface MealSummary {
   id: string
   series: MealSeries | null
+  /** MP4 mtime, used to rank courses by recency. */
+  generated_at?: number
   title: string
   concept: string
   objective: string

@@ -29,7 +29,7 @@
       "rate": "+6%"
     },
     "captions": {
-      "enabled": true,
+      "enabled": false,
       "words_per_line": 5,
       "highlight_active_word": true
     },
@@ -103,8 +103,8 @@
           "execution": {
             "verified": true,
             "source": "local_sandbox",
-            "executed_at": "2026-08-23T08:51:38+00:00",
-            "stdout": "<__main__.Student object at 0x1025ca510>\n",
+            "executed_at": "2026-08-27T06:37:13+00:00",
+            "stdout": "<__main__.Student object at 0x102c54830>\n",
             "stderr": "",
             "exit_code": 0
           }

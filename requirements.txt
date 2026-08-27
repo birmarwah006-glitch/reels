@@ -26,9 +26,13 @@ onnxruntime==1.29.0
 # ── Media ────────────────────────────────────────────────────────────────
 moviepy==2.2.1
 numpy==2.5.2
-pillow==12.3.0
+pillow==11.1.0
 
 # ── clipper (the older two-character explainer pipeline) ─────────────────
 pymupdf==1.28.2
 pydantic==2.13.4
-rembg==2.0.81
+
+# — clipper YouTube frontend/server —
+fastapi==0.121.2
+uvicorn[standard]==0.38.0
+yt-dlp==2026.8.19

@@ -217,6 +217,53 @@ export default function Feed() {
   const [activeIndex, setActiveIndex] = useState(0)
   const [muted, setMuted] = useState(true)
 
+  // Courses in feed order, with where each one starts. Without this the only
+  // way to reach the second course is to scroll through all of the first.
+  // "Build a Rock-Paper-Scissors Game" -> "Rock-Paper-Scissors". Taking the
+  // first two words gave "Build a" and "Intro to", which name nothing.
+  const shortLabel = (title: string) =>
+    title
+      .replace(/^(build(ing)?\s+(a|an|the)?|intro(duction)?\s+to|learn(ing)?|python)\s+/i, '')
+      .replace(/\s+(game|basics|course|tutorial|series)$/i, '')
+      .trim() || title
+
+  // "Intro to Python OOP" -> "OOP"; "Build a Rock-Paper-Scissors Game" -> "RPS".
+  // A circle only has room for a few characters, so acronym the distinctive
+  // part of the name and keep the full title in the tooltip.
+  const initials = (title: string) => {
+    const words = shortLabel(title)
+      .split(/[\s—‑–-]+/)
+      .filter((w) => w.length > 1)
+
+    // A word that is already an acronym IS the label — "Python OOP" should
+    // read OOP, not PO.
+    const acronym = words.find((w) => w.length <= 4 && w === w.toUpperCase())
+    if (acronym) return acronym
+
+    if (words.length === 1) return words[0].slice(0, 3).toUpperCase()
+    return words.map((w) => w[0]).join('').slice(0, 3).toUpperCase()
+  }
+
+  const courses = useMemo(() => {
+    const out: { title: string; start: number; count: number }[] = []
+    meals.forEach((meal, i) => {
+      const title = meal.series?.title ?? 'Other'
+      const last = out[out.length - 1]
+      if (last && last.title === title) last.count += 1
+      else out.push({ title, start: i, count: 1 })
+    })
+    return out
+  }, [meals])
+
+  const jumpTo = useCallback((index: number) => {
+    containerRef.current
+      ?.querySelector(`[data-index="${index}"]`)
+      ?.scrollIntoView({ behavior: 'smooth' })
+  }, [])
+
+  const activeCourse =
+    [...courses].reverse().find((c) => activeIndex >= c.start) ?? courses[0]
+
   // Which Meal is in view. Scroll-snap does the movement; this only observes.
   useEffect(() => {
     const root = containerRef.current
@@ -322,6 +369,44 @@ export default function Feed() {
           })()}
         </span>
       </div>
+
+      {/* Course switcher. Previously a row of chips in the header, where two
+          course names collided on a phone. A vertical rail on the right edge
+          has room regardless of how many courses there are, and sits clear of
+          the wordmark and the counter. */}
+      {courses.length > 1 && (
+        <nav
+          aria-label="Courses"
+          className="fixed right-3 top-1/2 z-40 flex -translate-y-1/2 flex-col gap-2.5 sm:right-5"
+        >
+          {courses.map((course) => {
+            const active = course === activeCourse
+            return (
+              <button
+                key={course.title}
+                type="button"
+                onClick={() => jumpTo(course.start)}
+                title={`${course.title} — ${course.count} Meals`}
+                aria-current={active ? 'true' : undefined}
+                className={cn(
+                  'flex h-11 w-11 flex-col items-center justify-center rounded-full',
+                  'border backdrop-blur-sm transition-colors',
+                  active
+                    ? 'border-green bg-green-soft text-green'
+                    : 'border-white/20 bg-black/45 text-white/55 hover:border-white/40 hover:text-white',
+                )}
+              >
+                <span className="font-mono text-[10px] font-medium leading-none tracking-[0.06em]">
+                  {initials(course.title)}
+                </span>
+                <span className="mt-0.5 font-mono text-[8px] leading-none opacity-60">
+                  {course.count}
+                </span>
+              </button>
+            )
+          })}
+        </nav>
+      )}
 
       <div
         ref={containerRef}

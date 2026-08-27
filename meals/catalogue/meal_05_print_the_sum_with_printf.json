@@ -1,0 +1,120 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_05_print_the_sum_with_printf",
+    "title": "Print the sum with printf",
+    "concept": "c.basics.printf",
+    "objective": "Use printf and the %d placeholder to output the computed sum.",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "c.basics.hello_world"
+    ],
+    "next_concepts": [
+      "c.basics.hello_world",
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "printf",
+      "%d"
+    ],
+    "assumes": [
+      "addition operation"
+    ],
+    "voice": {
+      "script": "What does your program say when it adds numbers? You have already added two numbers and stored the result. How do you show the result to the user? printf is the function that writes text to the screen. The placeholder %d tells printf to insert an integer value at that spot. So you call printf, pass a string like \"The sum is %d\\n\", and then give the sum variable as the next argument. When the program runs, the screen will show the sentence with the actual number. That single line lets the user see the sum.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What does your program say when it adds numbers?"
+        },
+        "narration_anchor": "What does your program say when it adds numbers?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you show the result to the user?"
+        },
+        "narration_anchor": "How do you show the result to the user?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Add numbers",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "printf with %d",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "display result"
+            }
+          ]
+        },
+        "narration_anchor": "printf is the function that writes text to the screen"
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Use printf with %d to display an integer result."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Modify the program to label the sum as \"Result:\" before the number."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Modify the program to label the sum as \"Result:\" before the number.",
+      "hint": "Change the format string inside printf."
+    },
+    "series": {
+      "title": "Add Two Numbers in C",
+      "artifact": "A compiled C program that reads two integers, adds them, and prints the sum",
+      "order": 5,
+      "total": 7,
+      "previous_id": "meal_04_add_two_integers",
+      "next_id": "meal_06_compile_the_program_with_gcc"
+    }
+  }
+}

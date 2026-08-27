@@ -331,7 +331,8 @@
         },
         "language": {
           "enum": [
-            "python"
+            "python",
+            "c"
           ]
         },
         "filename": {

@@ -1,0 +1,119 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_08_why_states_change",
+    "title": "Why a blocked process must become ready first",
+    "concept": "python.project.overview",
+    "objective": "Explain why a blocked process must become ready before it can run",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.project.overview",
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "state transition"
+    ],
+    "assumes": [
+      "running",
+      "ready",
+      "blocked"
+    ],
+    "voice": {
+      "script": "Why can\u2019t a blocked process jump straight to running? A process moves through defined states. A state transition is simply the change from one condition to another. When a process is blocked, it is waiting for some event, like input or a lock. It cannot run because the needed resource isn\u2019t available. Once that event occurs, the operating system marks the process as ready, placing it in the queue of processes that can run. Only processes in the ready state are eligible to be scheduled onto the CPU, so the blocked one must become ready before it can run. Here\u2019s the flow of states.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Why can\u2019t a blocked process jump straight to running?"
+        },
+        "narration_anchor": "Why can\u2019t a blocked process jump straight to running?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Blocked",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Ready",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Running",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "event occurs"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "scheduler picks"
+            }
+          ]
+        },
+        "narration_anchor": "A state transition is simply the change from one condition to another."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A blocked process must become ready before the scheduler can give it CPU time"
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "List the steps a process follows from blocked to running in your own words"
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "List the steps a process follows from blocked to running in your own words"
+    },
+    "series": {
+      "title": "CPU Virtualization Basics",
+      "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+      "order": 8,
+      "total": 12,
+      "previous_id": "meal_07_process_states",
+      "next_id": "meal_09_priority_queue_in_scheduling"
+    }
+  }
+}

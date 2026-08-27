@@ -1,0 +1,7 @@
+{
+  "_comment": "Explicit course order for the feed. Courses listed here appear first, in this order; anything unlisted follows, newest first. Recency alone is not enough for a demo — rendering one new Meal could reshuffle the running order underneath you.",
+  "order": [
+    "Intro to Python OOP",
+    "Build a Rock‑Paper‑Scissors Game"
+  ]
+}

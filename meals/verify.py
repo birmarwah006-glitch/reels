@@ -31,18 +31,24 @@ import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
+import languages as lang_config
+
 TIMEOUT_SEC = 10
 
 
-def run_python(code: str, stdin_lines: list[str],
-               files: list[dict] | None = None) -> dict:
+def run_snippet(code: str, stdin_lines: list[str], language: str = "python",
+                files: list[dict] | None = None) -> dict:
     """Execute one snippet and capture exactly what it printed.
+
+    Compiled languages (C) get a compile step first; a compile failure is
+    reported through the same stderr/exit_code shape as a runtime failure.
 
     Any fixture files the Meal declares are written alongside the script, so a
     Meal that teaches reading a file can actually read one. Names are filenames
     only; anything with a path separator is refused rather than allowed to
     write outside the sandbox.
     """
+    lang = lang_config.get(language)
     with tempfile.TemporaryDirectory() as tmp:
         for fixture in files or []:
             name = fixture.get("name", "")
@@ -54,12 +60,32 @@ def run_python(code: str, stdin_lines: list[str],
                 }
             (Path(tmp) / name).write_text(fixture.get("content", ""))
 
-        script = Path(tmp) / "main.py"
+        script = Path(tmp) / lang["file_name"]
         script.write_text(code)
+        binpath = Path(tmp) / "a.out"
+
+        if lang["compile_cmd"]:
+            try:
+                compile_proc = subprocess.run(
+                    lang["compile_cmd"](script, binpath),
+                    capture_output=True, text=True, timeout=15, cwd=tmp,
+                )
+            except subprocess.TimeoutExpired:
+                return {
+                    "verified": False, "source": "unverified", "stdout": "",
+                    "stderr": "compile timed out after 15s", "exit_code": -1,
+                }
+            if compile_proc.returncode != 0:
+                return {
+                    "verified": False, "source": "unverified", "stdout": "",
+                    "stderr": f"compile failed: {compile_proc.stderr.strip()[-600:]}",
+                    "exit_code": compile_proc.returncode,
+                }
+
         stdin_data = "".join(line + "\n" for line in stdin_lines)
         try:
             proc = subprocess.run(
-                [sys.executable, str(script)],
+                lang["run_cmd"](script, binpath),
                 input=stdin_data,
                 capture_output=True,
                 text=True,
@@ -85,18 +111,24 @@ def run_python(code: str, stdin_lines: list[str],
     }
 
 
+# Old name kept as an alias — nothing else in this file needs to change.
+run_python = run_snippet
+
+
 def verify_meal(path: Path, write: bool = True) -> bool:
     meal = json.loads(path.read_text())["meal"]
     scenes = meal["scenes"]
 
     ok = True
     latest_code: str | None = None
+    latest_code_language: str | None = None
 
     for i, scene in enumerate(scenes):
         visual = scene["visual"]
 
         if visual["type"] == "code_editor":
             latest_code = visual["code"]
+            latest_code_language = visual.get("language", "python")
             continue
 
         if visual["type"] != "terminal":
@@ -108,7 +140,8 @@ def verify_meal(path: Path, write: bool = True) -> bool:
             continue
 
         stdin = visual.get("stdin", [])
-        result = run_python(latest_code, stdin, visual.get("files"))
+        language = latest_code_language or "python"
+        result = run_snippet(latest_code, stdin, language, visual.get("files"))
         visual["execution"] = result
 
         if result["verified"] and result["exit_code"] == 0:

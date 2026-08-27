@@ -1,0 +1,181 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_12_os_regaining_cpu_control",
+    "title": "OS Regaining CPU Control",
+    "concept": "python.project.overview",
+    "objective": "Identify the challenges the OS faces when it must take back the CPU",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "next_concepts": [],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "CPU control challenge"
+    ],
+    "assumes": [
+      "limited direct execution"
+    ],
+    "voice": {
+      "script": "What happens when the OS needs to yank the CPU away? Imagine a process happily running. The OS can only step in at special moments because normal code runs without special rights. How does the OS regain control from a running process? It relies on privileged mechanisms like timer interrupts or system calls that force the CPU to stop the current task and jump to the scheduler. Without those, the OS would have to wait for the process to finish on its own, which defeats multitasking. Here is a tiny program that pretends to be the OS timer. It counts down and, when the counter reaches zero, prints a message saying the scheduler would take over. Now picture the flow of control as the OS steps in, saves the current state, chooses the next process, and restores its state. The OS must use privileged actions to interrupt and switch processes. Try writing a loop that prints a message every second and then stops.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What happens when the OS needs to yank the CPU away?"
+        },
+        "narration_anchor": "What happens when the OS needs to yank the CPU away?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How does the OS regain control from a running process?"
+        },
+        "narration_anchor": "How does the OS regain control from a running process?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Process runs",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Timer interrupt",
+              "kind": "actor"
+            },
+            {
+              "id": "c",
+              "label": "Scheduler decides",
+              "kind": "decision"
+            },
+            {
+              "id": "d",
+              "label": "Next process runs",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "expires"
+            },
+            {
+              "from": "b",
+              "to": "c"
+            },
+            {
+              "from": "c",
+              "to": "d",
+              "label": "selects"
+            }
+          ]
+        },
+        "narration_anchor": "Now picture the flow of control as the OS steps in, saves the current state, chooses the next process, and restores its state."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "import time\ncounter = 3\nwhile counter:\n    time.sleep(1)\n    counter -= 1\nprint(\"Timer expired \u2013 scheduler would run now\")\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "import time\ncounter = 3\nwhile counter:\n    time.sleep(1)\n    counter -= 1\nprint(\"Timer expired \u2013 scheduler would run now\")",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "Timer expired \u2013 scheduler would run now"
+            }
+          ]
+        },
+        "narration_anchor": "Here is a tiny program that pretends to be the OS timer."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "/opt/homebrew/opt/python@3.14/bin/python3.14 main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-27T06:37:16+00:00",
+            "stdout": "Timer expired \u2013 scheduler would run now\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "The OS must use privileged actions to interrupt and switch processes."
+        },
+        "narration_anchor": "The OS must use privileged actions to interrupt and switch processes.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Try writing a loop that prints a message every second and then stops."
+        },
+        "narration_anchor": "Try writing a loop that prints a message every second and then stops.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Try writing a loop that prints a message every second and then stops."
+    },
+    "series": {
+      "title": "CPU Virtualization Basics",
+      "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+      "order": 12,
+      "total": 12,
+      "previous_id": "meal_11_limited_direct_execution",
+      "next_id": null
+    }
+  }
+}

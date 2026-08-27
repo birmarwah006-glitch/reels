@@ -1,0 +1,118 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_10_policy_vs_mechanism",
+    "title": "Policy vs. Mechanism in Scheduling",
+    "concept": "python.project.overview",
+    "objective": "Differentiate high\u2011level scheduling policy from its enforcement mechanism",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.project.overview",
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "policy",
+      "mechanism"
+    ],
+    "assumes": [
+      "priority queue"
+    ],
+    "voice": {
+      "script": "How does the OS decide which process runs next? What\u2019s the difference between scheduling policy and mechanism? A policy is a high\u2011level rule that tells the scheduler which process should be chosen next, like \"always run the highest priority ready process\". A mechanism is the concrete code and data structures that actually pick that process from the priority queue and hand the CPU to it. In other words, policy is the decision, mechanism is how it\u2019s enforced. We show a decision box representing the policy. The mechanism then walks the queue, selects the top entry, and switches context. Remember: policy decides, mechanism carries out. Try writing down a simple policy and its mechanism.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "How does the OS decide which process runs next?"
+        },
+        "narration_anchor": "How does the OS decide which process runs next?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "What\u2019s the difference between scheduling policy and mechanism?"
+        },
+        "narration_anchor": "What\u2019s the difference between scheduling policy and mechanism?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Policy decides",
+              "kind": "decision"
+            },
+            {
+              "id": "b",
+              "label": "Mechanism enforces",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "applies to queue"
+            }
+          ]
+        }
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Remember: policy decides, mechanism carries out."
+        },
+        "narration_anchor": "Remember: policy decides, mechanism carries out.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Try writing down a simple policy and its mechanism."
+        },
+        "narration_anchor": "Try writing down a simple policy and its mechanism.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Try writing down a simple policy and its mechanism."
+    },
+    "series": {
+      "title": "CPU Virtualization Basics",
+      "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+      "order": 10,
+      "total": 12,
+      "previous_id": "meal_09_priority_queue_in_scheduling",
+      "next_id": "meal_11_limited_direct_execution"
+    }
+  }
+}

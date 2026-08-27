@@ -1,0 +1,169 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_06_process_control_block_pcb",
+    "title": "Process Control Block (PCB) Overview",
+    "concept": "python.project.overview",
+    "objective": "Define the PCB and explain its role in tracking a process\u2019s state",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.project.overview",
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "PCB"
+    ],
+    "assumes": [
+      "memory sections",
+      "registers",
+      "metadata"
+    ],
+    "voice": {
+      "script": "Ever wonder how the OS remembers each running program? How does the system keep track of a process\u2019s state? That's the job of the Process Control Block. The PCB is a data structure that the operating system creates for every process. It holds the process\u2019s current state, like which instruction it will execute next, the values in its registers, and pointers to its memory sections. It also stores metadata such as the process identifier and scheduling priority. When the CPU switches from one process to another, the OS saves the outgoing process\u2019s state into its PCB, then loads the incoming process\u2019s state from its PCB. Think of the PCB as a snapshot of everything the OS needs to pause and resume a process. Now let's see a tiny example. The code creates a simple PCB dictionary, fills in a few fields, and prints the saved state. The output shows the saved state ready for a context switch.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Ever wonder how the OS remembers each running program?"
+        },
+        "narration_anchor": "Ever wonder how the OS remembers each running program?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How does the system keep track of a process\u2019s state?"
+        },
+        "narration_anchor": "How does the system keep track of a process\u2019s state?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Process Control Block",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "CPU Scheduler",
+              "kind": "actor"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "provides state"
+            }
+          ]
+        },
+        "narration_anchor": "The PCB is a data structure that the operating system creates for every process."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "pcb = {\n    \"pid\": 1,\n    \"state\": \"running\",\n    \"registers\": {\"pc\": 100, \"acc\": 0},\n    \"memory_base\": 4096,\n    \"priority\": 5\n}\nprint(\"Saved state:\", pcb[\"state\"])\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "pcb = {\n    \"pid\": 1,\n    \"state\": \"running\",\n    \"registers\": {\"pc\": 100, \"acc\": 0},\n    \"memory_base\": 4096,\n    \"priority\": 5\n}\nprint(\"Saved state:\", pcb[\"state\"])",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "Saved state"
+            }
+          ]
+        },
+        "narration_anchor": "Now let's see a tiny example."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "/opt/homebrew/opt/python@3.14/bin/python3.14 main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-27T06:37:13+00:00",
+            "stdout": "Saved state: running\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "The output shows the saved state ready for a context switch.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "The PCB stores all information needed to pause and later resume a process."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write your own PCB dictionary with a different priority and print it."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write your own PCB dictionary with a different priority and print it.",
+      "hint": "Just change the value of the priority key."
+    },
+    "series": {
+      "title": "CPU Virtualization Basics",
+      "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+      "order": 6,
+      "total": 12,
+      "previous_id": "meal_05_what_a_process_contains",
+      "next_id": "meal_07_process_states"
+    }
+  }
+}

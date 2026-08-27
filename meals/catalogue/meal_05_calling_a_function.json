@@ -1,0 +1,192 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_05_calling_a_function",
+    "title": "Calling a Function",
+    "concept": "python.functions.parameters",
+    "objective": "Execute a previously defined function and use its result",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.functions.define"
+    ],
+    "next_concepts": [
+      "python.control.while",
+      "python.basics.strings"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "call"
+    ],
+    "assumes": [
+      "function",
+      "def",
+      "variable"
+    ],
+    "voice": {
+      "script": "Ready to make your code run? First, you write a function that does something, like ask the user for a deposit. Then, calling a function means asking it to do its work and returning a result. How do you actually use a function you wrote? Here\u2019s a tiny program that defines and calls a function. When you run it, you\u2019ll see the result printed. The flow diagram shows the call and return steps. Remember, calling a function runs its code and gives you back a value. Now try writing a function that returns the square of a number and call it.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Ready to make your code run?"
+        },
+        "narration_anchor": "Ready to make your code run?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you actually use a function you wrote?"
+        },
+        "narration_anchor": "How do you actually use a function you wrote?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Start",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "Call function",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Return value",
+              "kind": "value"
+            },
+            {
+              "id": "d",
+              "label": "Print result",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "invoke"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "returns"
+            },
+            {
+              "from": "c",
+              "to": "d",
+              "label": "used by"
+            }
+          ]
+        }
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "def get_deposit():\n    amount = int(input(\"Enter deposit amount: \"))\n    return amount\n\ndeposit = get_deposit()\nprint(\"You deposited:\", deposit)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "def get_deposit():\n    amount = int(input(\"Enter deposit amount: \"))\n    return amount\n\ndeposit = get_deposit()\nprint(\"You deposited:\", deposit)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "get_deposit()"
+            }
+          ]
+        },
+        "narration_anchor": "Here\u2019s a tiny program that defines and calls a function."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [
+            "100"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-27T06:37:13+00:00",
+            "stdout": "Enter deposit amount: You deposited: 100\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "When you run it, you\u2019ll see the result printed.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Calling a function runs its code and gives you back a value"
+        },
+        "narration_anchor": "Remember, calling a function runs its code and gives you back a value.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write a function that returns the square of a number and call it"
+        },
+        "narration_anchor": "Now try writing a function that returns the square of a number and call it.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write a function that returns the square of a number and call it",
+      "hint": "Use the ** operator to square the input"
+    },
+    "series": {
+      "title": "Build a Simple Slot\u2011Machine Deposit App",
+      "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot\u2011machine spin",
+      "order": 5,
+      "total": 17,
+      "previous_id": "meal_04_defining_a_function",
+      "next_id": "meal_06_while_loops_for_repetition"
+    }
+  }
+}

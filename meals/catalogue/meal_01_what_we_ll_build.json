@@ -1,0 +1,106 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_01_what_we_ll_build",
+    "title": "What We'll Build: Slot\u2011Machine Deposit Overview",
+    "concept": "python.project.overview",
+    "objective": "Understand the overall goal of the slot\u2011machine deposit program",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.basics.variables",
+      "python.basics.input_output"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "project",
+      "script"
+    ],
+    "assumes": [],
+    "voice": {
+      "script": "What if you could turn a simple deposit into a slot\u2011machine game? That hook grabs your curiosity. A project is the complete application you are creating, everything from asking for money to showing a spin. A script is a single Python file that runs the steps of that project. Our goal is to build a program that asks for a deposit, lets you choose how many lines to bet and how much to wager, prints a summary of the bet, and then displays a random slot\u2011machine spin. This gives you a clear picture of what the finished app will do.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could turn a simple deposit into a slot\u2011machine game?"
+        },
+        "narration_anchor": "What if you could turn a simple deposit into a slot\u2011machine game?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Project: full app",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Script: runs steps",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "contains"
+            }
+          ]
+        },
+        "narration_anchor": "Our goal is to build a program that asks for a deposit, lets you choose how many lines to bet and how much to wager, prints a summary of the bet, and then displays a random slot\u2011machine spin."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Remember, a project is the whole app, and a script is the file that runs it."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write down the three steps this program will perform, in your own words."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write down the three steps this program will perform, in your own words."
+    },
+    "series": {
+      "title": "Build a Simple Slot\u2011Machine Deposit App",
+      "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot\u2011machine spin",
+      "order": 1,
+      "total": 17,
+      "previous_id": null,
+      "next_id": "meal_02_variables_and_basic_types"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_02_declare_integer_variables",
+    "title": "Declare Integer Variables in C",
+    "concept": "c.basics.variables",
+    "objective": "Write statements that create integer variables as labeled boxes",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "c.basics.hello_world"
+    ],
+    "next_concepts": [
+      "c.basics.scanf",
+      "c.basics.operators"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "variable"
+    ],
+    "assumes": [
+      "main"
+    ],
+    "voice": {
+      "script": "What if you could store a number in a labeled box? In C, a variable is a labeled box with a fixed type. How do you create a place to hold an integer in C? First, you tell the computer the kind of box you need. The word int means the box will store whole numbers. Then you give the box a name, like a label you can read later. Now we write the declarations. For example, int a; creates a box named a that can hold an integer. You can also declare several boxes at once, like int b, c;. Each name points to its own spot in memory. Remember: a variable declaration reserves a box of a specific type. Try declaring a variable named total to hold the sum.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could store a number in a labeled box?"
+        },
+        "narration_anchor": "What if you could store a number in a labeled box?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you create a place to hold an integer in C?"
+        },
+        "narration_anchor": "How do you create a place to hold an integer in C?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Declare integer variables",
+              "kind": "box"
+            }
+          ],
+          "edges": []
+        }
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A variable declaration reserves a box of a specific type for later use."
+        },
+        "narration_anchor": "Remember: a variable declaration reserves a box of a specific type.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Declare a variable named total to hold the sum of two numbers."
+        },
+        "narration_anchor": "Try declaring a variable named total to hold the sum.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Declare a variable named total to hold the sum of two numbers.",
+      "hint": "Use the int keyword followed by the variable name and a semicolon."
+    },
+    "series": {
+      "title": "Add Two Numbers in C",
+      "artifact": "A compiled C program that reads two integers, adds them, and prints the sum",
+      "order": 2,
+      "total": 7,
+      "previous_id": "meal_01_identify_the_main_function",
+      "next_id": "meal_03_read_input_with_scanf"
+    }
+  }
+}

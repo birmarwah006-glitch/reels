@@ -1,0 +1,180 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_16_transposing_and_printing_the_spin",
+    "title": "Transposing and Printing the Slot Spin",
+    "concept": "python.control.for",
+    "objective": "Convert column lists to rows, enumerate them, and print with pipe separators",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "python.basics.variables"
+    ],
+    "next_concepts": [
+      "python.functions.define"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [],
+    "assumes": [
+      "list of columns",
+      "for loop",
+      "print"
+    ],
+    "voice": {
+      "script": "Ever wonder how a slot machine shows its reels as rows instead of columns? How do you turn column data into readable rows? We already have three columns, each a list of symbols. To display them like a real machine we need to flip the orientation. The built\u2011in zip function groups the first items of each column together, then the second items, and so on. That gives us rows. Here\u2019s the code that does the transposition and printing. First we define the columns. Then we call zip with the unpacking operator to get rows. We use a for loop to walk through each row. Enumerate supplies a line number starting at one. Inside the loop we join the symbols with a pipe character, so the output looks like A | D | G. Running it prints each row with pipes separating symbols. Remember, zip lets you transpose a list of columns into rows. Try changing the symbols or number of rows and see the output.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Ever wonder how a slot machine shows its reels as rows instead of columns?"
+        },
+        "narration_anchor": "Ever wonder how a slot machine shows its reels as rows instead of columns?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you turn column data into readable rows?"
+        },
+        "narration_anchor": "How do you turn column data into readable rows?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Define columns",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Transpose with zip",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Print rows",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b"
+            },
+            {
+              "from": "b",
+              "to": "c"
+            }
+          ]
+        },
+        "narration_anchor": "We use a for loop to walk through each row."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "columns = [\n    ['A', 'B', 'C'],\n    ['D', 'E', 'F'],\n    ['G', 'H', 'I']\n]\n\nrows = zip(*columns)\n\nfor i, row in enumerate(rows, start=1):\n    line = ' | '.join(row)\n    print(f'Line {i}: {line}')\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "columns = [\n    ['A', 'B', 'C'],\n    ['D', 'E', 'F'],\n    ['G', 'H', 'I']\n]\n\nrows = zip(*columns)\n\nfor i, row in enumerate(rows, start=1):\n    line = ' | '.join(row)\n    print(f'Line {i}: {line}')",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "zip(*columns)"
+            }
+          ]
+        },
+        "narration_anchor": "Here\u2019s the code that does the transposition and printing."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-27T06:37:16+00:00",
+            "stdout": "Line 1: A | D | G\nLine 2: B | E | H\nLine 3: C | F | I\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running it prints each row with pipes separating symbols.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Remember, zip lets you transpose a list of columns into rows."
+        },
+        "narration_anchor": "Remember, zip lets you transpose a list of columns into rows.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Try changing the symbols or number of rows and see the output."
+        },
+        "narration_anchor": "Try changing the symbols or number of rows and see the output.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Try changing the symbols or number of rows and see the output."
+    },
+    "series": {
+      "title": "Build a Simple Slot\u2011Machine Deposit App",
+      "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot\u2011machine spin",
+      "order": 16,
+      "total": 17,
+      "previous_id": "meal_15_generating_a_random_spin",
+      "next_id": "meal_17_main_entry_point"
+    }
+  }
+}

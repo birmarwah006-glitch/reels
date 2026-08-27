@@ -56,9 +56,10 @@ function mealsDevServer(): Plugin {
     }
   }
 
-  const summary = (meal: Record<string, unknown>) => ({
+  const summary = (meal: Record<string, unknown>, mtime = 0) => ({
     id: meal.id,
     series: meal.series ?? null,
+    generated_at: mtime,
     title: meal.title,
     concept: meal.concept,
     objective: meal.objective,
@@ -239,18 +240,47 @@ function mealsDevServer(): Plugin {
             // Only Meals that have actually been rendered are listed: the
             // feed's contract is that everything in it is watchable.
             .filter((m) => m && fs.existsSync(path.join(OUT, `${m.id}.mp4`)))
-            .map(summary)
+            .map((m) => summary(m, fs.statSync(path.join(OUT, `${m.id}.mp4`)).mtimeMs))
 
-          // Order by SERIES, then by position within it. Sorting by filename
-          // interleaved two courses — Meal 1 of the game, Meal 1 of the OOP
-          // course, Meal 2 of the game — which is unlearnable. Every Meal
-          // already carries its series and order; the feed just ignored them.
+          // Pinned course order, if one is configured. Recency alone is not
+          // enough: rendering a single new Meal could reorder the whole feed,
+          // which is not something a demo should have to survive.
+          let pinned: string[] = []
+          try {
+            const cfg = path.join(MEALS, 'series_order.json')
+            if (fs.existsSync(cfg)) {
+              pinned = JSON.parse(fs.readFileSync(cfg, 'utf8')).order ?? []
+            }
+          } catch {
+            /* a malformed order file falls back to recency */
+          }
+          const rank = (title: string) => {
+            const i = pinned.indexOf(title)
+            return i === -1 ? Number.MAX_SAFE_INTEGER : i
+          }
+
+          // Group by SERIES, pinned first then newest, ordered within the course.
+          //
+          // Filename order interleaved two courses — game Meal 1, OOP Meal 1,
+          // game Meal 2 — which is unlearnable. Alphabetical series order
+          // fixed that but buried the course you just made behind ten Meals
+          // of an older one, so series are ranked by recency instead.
+          const newest = new Map<string, number>()
+          for (const m of meals) {
+            const title = ((m.series as { title?: string }) ?? {}).title ?? ''
+            newest.set(title, Math.max(newest.get(title) ?? 0, m.generated_at))
+          }
           meals.sort((a, b) => {
             const sa = (a.series as { title?: string; order?: number }) ?? {}
             const sb = (b.series as { title?: string; order?: number }) ?? {}
             const ta = sa.title ?? ''
             const tb = sb.title ?? ''
-            if (ta !== tb) return ta.localeCompare(tb)
+            if (ta !== tb) {
+              const ra = rank(ta)
+              const rb = rank(tb)
+              if (ra !== rb) return ra - rb
+              return (newest.get(tb) ?? 0) - (newest.get(ta) ?? 0)
+            }
             return (sa.order ?? 0) - (sb.order ?? 0)
           })
 

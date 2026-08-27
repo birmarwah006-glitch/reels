@@ -1,0 +1,140 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_07_process_states",
+    "title": "Process states",
+    "concept": "python.project.overview",
+    "objective": "Identify the three basic states a process can be in",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.project.overview",
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "running",
+      "ready",
+      "blocked"
+    ],
+    "assumes": [
+      "PCB"
+    ],
+    "voice": {
+      "script": "Why does a process sometimes pause even though the CPU is free? What are the three basic states a process can be in? A process can be running, ready, or blocked. When it is running, the CPU is actively executing its instructions. When it is ready, it has everything it needs and is waiting its turn on the CPU. When it is blocked, it cannot continue until some external event, like input or a lock, becomes available. Now look at the decision diagram of process states. This diagram shows the flow from ready to running, and from running to blocked, and back when the event occurs. Remember: running, ready, blocked are the core states. List a real\u2011world example for each state.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Why does a process sometimes pause even though the CPU is free?"
+        },
+        "narration_anchor": "Why does a process sometimes pause even though the CPU is free?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "What are the three basic states a process can be in?"
+        },
+        "narration_anchor": "What are the three basic states a process can be in?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Ready",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Running",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Blocked",
+              "kind": "box"
+            },
+            {
+              "id": "d",
+              "label": "Process State?",
+              "kind": "decision"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "CPU picks"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "waits for event"
+            },
+            {
+              "from": "c",
+              "to": "a",
+              "label": "event occurs"
+            }
+          ]
+        },
+        "narration_anchor": "A process can be running, ready, or blocked."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Remember: running, ready, blocked are the core states"
+        },
+        "narration_anchor": "Remember: running, ready, blocked are the core states.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "List a real\u2011world example for each state"
+        },
+        "narration_anchor": "List a real\u2011world example for each state.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "List a real\u2011world example for each state"
+    },
+    "series": {
+      "title": "CPU Virtualization Basics",
+      "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+      "order": 7,
+      "total": 12,
+      "previous_id": "meal_06_process_control_block_pcb",
+      "next_id": "meal_08_why_states_change"
+    }
+  }
+}

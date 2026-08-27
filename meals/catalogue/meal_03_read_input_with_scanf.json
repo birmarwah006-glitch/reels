@@ -1,0 +1,139 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_03_read_input_with_scanf",
+    "title": "Read input with scanf",
+    "concept": "c.basics.scanf",
+    "objective": "Use scanf with a format specifier and ampersand to read integers",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "c.basics.printf"
+    ],
+    "next_concepts": [
+      "c.basics.operators",
+      "c.basics.printf"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "scanf",
+      "ampersand"
+    ],
+    "assumes": [
+      "variable"
+    ],
+    "voice": {
+      "script": "How does a program hear what you type? That's what scanf does. Think of printf as shouting out text, while scanf is listening in. First, you need a way to tell the computer what kind of data to expect. A format specifier is a short code, like %d, that says \"I want an integer\". Next, you must give scanf the address of the variable where the number will live. The ampersand symbol provides that address, like a mailbox number for the value. So when you write scanf, you write the format specifier inside quotes, then a comma, then the ampersand and the variable name. When the user types a number and hits enter, scanf stores that number at the given address, ready for the program to use.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "How does a program hear what you type?"
+        },
+        "narration_anchor": "How does a program hear what you type?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How can a C program read numbers you type?"
+        }
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "printf sends text",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "scanf listens",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "format specifier %d",
+              "kind": "value"
+            },
+            {
+              "id": "d",
+              "label": "ampersand gives address",
+              "kind": "value"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "opposite actions"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "specifies type"
+            },
+            {
+              "from": "b",
+              "to": "d",
+              "label": "provides location"
+            }
+          ]
+        },
+        "narration_anchor": "Think of printf as shouting out text, while scanf is listening in."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Use scanf with %d and an ampersand to read an integer from the user."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write a C line that reads an integer into a variable named score."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write a C line that reads an integer into a variable named score.",
+      "hint": "Remember the format specifier and the ampersand before the variable."
+    },
+    "series": {
+      "title": "Add Two Numbers in C",
+      "artifact": "A compiled C program that reads two integers, adds them, and prints the sum",
+      "order": 3,
+      "total": 7,
+      "previous_id": "meal_02_declare_integer_variables",
+      "next_id": "meal_04_add_two_integers"
+    }
+  }
+}
