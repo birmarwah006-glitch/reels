@@ -1,0 +1,674 @@
+{
+  "meal_id": "meal_08_handle_a_win_scenario",
+  "audio": "meal_08_handle_a_win_scenario.mp3",
+  "duration": 32.664,
+  "alignment": "whisper",
+  "anchors": {
+    "Can you tell when you win at rock paper scissors?": 0.0,
+    "How do we decide a winning move after checking for a tie?": 3.16,
+    "We use print to show the result.": 12.8,
+    "Here is the winning check code.": 14.92,
+    "Running this prints the win message.": 22.28,
+    "Remember each winning pair has its own condition.": 27.1,
+    "Add the remaining win cases to your game.": 29.62
+  },
+  "captions": [
+    {
+      "text": "Can you tell when you",
+      "start": 0.0,
+      "end": 1.16,
+      "words": [
+        {
+          "w": "Can",
+          "start": 0.0,
+          "end": 0.3
+        },
+        {
+          "w": "you",
+          "start": 0.3,
+          "end": 0.44
+        },
+        {
+          "w": "tell",
+          "start": 0.44,
+          "end": 0.78
+        },
+        {
+          "w": "when",
+          "start": 0.78,
+          "end": 0.94
+        },
+        {
+          "w": "you",
+          "start": 0.94,
+          "end": 1.16
+        }
+      ]
+    },
+    {
+      "text": "win at rock paper scissors?",
+      "start": 1.16,
+      "end": 2.64,
+      "words": [
+        {
+          "w": "win",
+          "start": 1.16,
+          "end": 1.36
+        },
+        {
+          "w": "at",
+          "start": 1.36,
+          "end": 1.66
+        },
+        {
+          "w": "rock",
+          "start": 1.66,
+          "end": 1.86
+        },
+        {
+          "w": "paper",
+          "start": 1.86,
+          "end": 2.18
+        },
+        {
+          "w": "scissors?",
+          "start": 2.18,
+          "end": 2.64
+        }
+      ]
+    },
+    {
+      "text": "How do we decide a",
+      "start": 3.16,
+      "end": 4.14,
+      "words": [
+        {
+          "w": "How",
+          "start": 3.16,
+          "end": 3.24
+        },
+        {
+          "w": "do",
+          "start": 3.24,
+          "end": 3.36
+        },
+        {
+          "w": "we",
+          "start": 3.36,
+          "end": 3.52
+        },
+        {
+          "w": "decide",
+          "start": 3.52,
+          "end": 3.86
+        },
+        {
+          "w": "a",
+          "start": 3.86,
+          "end": 4.14
+        }
+      ]
+    },
+    {
+      "text": "winning move after checking for",
+      "start": 4.14,
+      "end": 5.72,
+      "words": [
+        {
+          "w": "winning",
+          "start": 4.14,
+          "end": 4.28
+        },
+        {
+          "w": "move",
+          "start": 4.28,
+          "end": 4.78
+        },
+        {
+          "w": "after",
+          "start": 4.78,
+          "end": 5.12
+        },
+        {
+          "w": "checking",
+          "start": 5.12,
+          "end": 5.38
+        },
+        {
+          "w": "for",
+          "start": 5.38,
+          "end": 5.72
+        }
+      ]
+    },
+    {
+      "text": "a tie? A win condition",
+      "start": 5.72,
+      "end": 7.2,
+      "words": [
+        {
+          "w": "a",
+          "start": 5.72,
+          "end": 5.86
+        },
+        {
+          "w": "tie?",
+          "start": 5.86,
+          "end": 6.1
+        },
+        {
+          "w": "A",
+          "start": 6.6,
+          "end": 6.68
+        },
+        {
+          "w": "win",
+          "start": 6.68,
+          "end": 6.84
+        },
+        {
+          "w": "condition",
+          "start": 6.84,
+          "end": 7.2
+        }
+      ]
+    },
+    {
+      "text": "is a specific pairing of",
+      "start": 7.2,
+      "end": 8.66,
+      "words": [
+        {
+          "w": "is",
+          "start": 7.2,
+          "end": 7.48
+        },
+        {
+          "w": "a",
+          "start": 7.48,
+          "end": 7.72
+        },
+        {
+          "w": "specific",
+          "start": 7.72,
+          "end": 8.06
+        },
+        {
+          "w": "pairing",
+          "start": 8.06,
+          "end": 8.44
+        },
+        {
+          "w": "of",
+          "start": 8.44,
+          "end": 8.66
+        }
+      ]
+    },
+    {
+      "text": "the player's choice and the",
+      "start": 8.66,
+      "end": 9.84,
+      "words": [
+        {
+          "w": "the",
+          "start": 8.66,
+          "end": 8.86
+        },
+        {
+          "w": "player's",
+          "start": 8.86,
+          "end": 9.18
+        },
+        {
+          "w": "choice",
+          "start": 9.18,
+          "end": 9.46
+        },
+        {
+          "w": "and",
+          "start": 9.46,
+          "end": 9.74
+        },
+        {
+          "w": "the",
+          "start": 9.74,
+          "end": 9.84
+        }
+      ]
+    },
+    {
+      "text": "computer's choice that means the",
+      "start": 9.84,
+      "end": 11.28,
+      "words": [
+        {
+          "w": "computer's",
+          "start": 9.84,
+          "end": 10.34
+        },
+        {
+          "w": "choice",
+          "start": 10.34,
+          "end": 10.58
+        },
+        {
+          "w": "that",
+          "start": 10.58,
+          "end": 10.82
+        },
+        {
+          "w": "means",
+          "start": 10.82,
+          "end": 11.0
+        },
+        {
+          "w": "the",
+          "start": 11.0,
+          "end": 11.28
+        }
+      ]
+    },
+    {
+      "text": "player beats the computer. We",
+      "start": 11.28,
+      "end": 12.86,
+      "words": [
+        {
+          "w": "player",
+          "start": 11.28,
+          "end": 11.46
+        },
+        {
+          "w": "beats",
+          "start": 11.46,
+          "end": 11.72
+        },
+        {
+          "w": "the",
+          "start": 11.72,
+          "end": 11.98
+        },
+        {
+          "w": "computer.",
+          "start": 11.98,
+          "end": 12.28
+        },
+        {
+          "w": "We",
+          "start": 12.8,
+          "end": 12.86
+        }
+      ]
+    },
+    {
+      "text": "use print to show the",
+      "start": 12.86,
+      "end": 14.06,
+      "words": [
+        {
+          "w": "use",
+          "start": 12.86,
+          "end": 13.16
+        },
+        {
+          "w": "print",
+          "start": 13.16,
+          "end": 13.42
+        },
+        {
+          "w": "to",
+          "start": 13.42,
+          "end": 13.68
+        },
+        {
+          "w": "show",
+          "start": 13.68,
+          "end": 13.86
+        },
+        {
+          "w": "the",
+          "start": 13.86,
+          "end": 14.06
+        }
+      ]
+    },
+    {
+      "text": "result. Here is the winning",
+      "start": 14.06,
+      "end": 15.8,
+      "words": [
+        {
+          "w": "result.",
+          "start": 14.06,
+          "end": 14.48
+        },
+        {
+          "w": "Here",
+          "start": 14.92,
+          "end": 15.12
+        },
+        {
+          "w": "is",
+          "start": 15.12,
+          "end": 15.4
+        },
+        {
+          "w": "the",
+          "start": 15.4,
+          "end": 15.6
+        },
+        {
+          "w": "winning",
+          "start": 15.6,
+          "end": 15.8
+        }
+      ]
+    },
+    {
+      "text": "check code. If the player",
+      "start": 15.8,
+      "end": 17.42,
+      "words": [
+        {
+          "w": "check",
+          "start": 15.8,
+          "end": 16.08
+        },
+        {
+          "w": "code.",
+          "start": 16.08,
+          "end": 16.42
+        },
+        {
+          "w": "If",
+          "start": 16.84,
+          "end": 17.0
+        },
+        {
+          "w": "the",
+          "start": 17.0,
+          "end": 17.24
+        },
+        {
+          "w": "player",
+          "start": 17.24,
+          "end": 17.42
+        }
+      ]
+    },
+    {
+      "text": "chose rock and the computer",
+      "start": 17.42,
+      "end": 18.8,
+      "words": [
+        {
+          "w": "chose",
+          "start": 17.42,
+          "end": 17.72
+        },
+        {
+          "w": "rock",
+          "start": 17.72,
+          "end": 18.04
+        },
+        {
+          "w": "and",
+          "start": 18.04,
+          "end": 18.36
+        },
+        {
+          "w": "the",
+          "start": 18.36,
+          "end": 18.52
+        },
+        {
+          "w": "computer",
+          "start": 18.52,
+          "end": 18.8
+        }
+      ]
+    },
+    {
+      "text": "chose scissors, the program prints",
+      "start": 18.8,
+      "end": 20.8,
+      "words": [
+        {
+          "w": "chose",
+          "start": 18.8,
+          "end": 19.1
+        },
+        {
+          "w": "scissors,",
+          "start": 19.1,
+          "end": 19.46
+        },
+        {
+          "w": "the",
+          "start": 20.02,
+          "end": 20.16
+        },
+        {
+          "w": "program",
+          "start": 20.16,
+          "end": 20.46
+        },
+        {
+          "w": "prints",
+          "start": 20.46,
+          "end": 20.8
+        }
+      ]
+    },
+    {
+      "text": "a victory message. Running this",
+      "start": 20.8,
+      "end": 22.76,
+      "words": [
+        {
+          "w": "a",
+          "start": 20.8,
+          "end": 21.02
+        },
+        {
+          "w": "victory",
+          "start": 21.02,
+          "end": 21.2
+        },
+        {
+          "w": "message.",
+          "start": 21.2,
+          "end": 21.72
+        },
+        {
+          "w": "Running",
+          "start": 22.28,
+          "end": 22.44
+        },
+        {
+          "w": "this",
+          "start": 22.44,
+          "end": 22.76
+        }
+      ]
+    },
+    {
+      "text": "prints the win message. The",
+      "start": 22.76,
+      "end": 24.66,
+      "words": [
+        {
+          "w": "prints",
+          "start": 22.76,
+          "end": 23.08
+        },
+        {
+          "w": "the",
+          "start": 23.08,
+          "end": 23.36
+        },
+        {
+          "w": "win",
+          "start": 23.36,
+          "end": 23.54
+        },
+        {
+          "w": "message.",
+          "start": 23.54,
+          "end": 24.0
+        },
+        {
+          "w": "The",
+          "start": 24.46,
+          "end": 24.66
+        }
+      ]
+    },
+    {
+      "text": "decision node shows the win",
+      "start": 24.66,
+      "end": 26.1,
+      "words": [
+        {
+          "w": "decision",
+          "start": 24.66,
+          "end": 24.96
+        },
+        {
+          "w": "node",
+          "start": 24.96,
+          "end": 25.36
+        },
+        {
+          "w": "shows",
+          "start": 25.36,
+          "end": 25.7
+        },
+        {
+          "w": "the",
+          "start": 25.7,
+          "end": 25.96
+        },
+        {
+          "w": "win",
+          "start": 25.96,
+          "end": 26.1
+        }
+      ]
+    },
+    {
+      "text": "condition. Remember each winning pair",
+      "start": 26.1,
+      "end": 28.42,
+      "words": [
+        {
+          "w": "condition.",
+          "start": 26.1,
+          "end": 26.58
+        },
+        {
+          "w": "Remember",
+          "start": 27.1,
+          "end": 27.46
+        },
+        {
+          "w": "each",
+          "start": 27.46,
+          "end": 27.78
+        },
+        {
+          "w": "winning",
+          "start": 27.78,
+          "end": 28.06
+        },
+        {
+          "w": "pair",
+          "start": 28.06,
+          "end": 28.42
+        }
+      ]
+    },
+    {
+      "text": "has its own condition. Add",
+      "start": 28.42,
+      "end": 30.36,
+      "words": [
+        {
+          "w": "has",
+          "start": 28.42,
+          "end": 28.7
+        },
+        {
+          "w": "its",
+          "start": 28.7,
+          "end": 28.96
+        },
+        {
+          "w": "own",
+          "start": 28.96,
+          "end": 29.12
+        },
+        {
+          "w": "condition.",
+          "start": 29.12,
+          "end": 29.62
+        },
+        {
+          "w": "Add",
+          "start": 29.62,
+          "end": 30.36
+        }
+      ]
+    },
+    {
+      "text": "the remaining win cases to",
+      "start": 30.36,
+      "end": 31.88,
+      "words": [
+        {
+          "w": "the",
+          "start": 30.36,
+          "end": 30.58
+        },
+        {
+          "w": "remaining",
+          "start": 30.58,
+          "end": 30.98
+        },
+        {
+          "w": "win",
+          "start": 30.98,
+          "end": 31.28
+        },
+        {
+          "w": "cases",
+          "start": 31.28,
+          "end": 31.62
+        },
+        {
+          "w": "to",
+          "start": 31.62,
+          "end": 31.88
+        }
+      ]
+    },
+    {
+      "text": "your game.",
+      "start": 31.88,
+      "end": 32.38,
+      "words": [
+        {
+          "w": "your",
+          "start": 31.88,
+          "end": 32.02
+        },
+        {
+          "w": "game.",
+          "start": 32.02,
+          "end": 32.38
+        }
+      ]
+    }
+  ]
+}

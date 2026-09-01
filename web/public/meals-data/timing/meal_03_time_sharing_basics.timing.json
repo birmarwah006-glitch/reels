@@ -1,0 +1,721 @@
+{
+  "meal_id": "meal_03_time_sharing_basics",
+  "audio": "meal_03_time_sharing_basics.mp3",
+  "duration": 34.44,
+  "alignment": "whisper",
+  "anchors": {
+    "What if your computer could multitask in a heartbeat?": 0.0,
+    "How does one CPU let many programs run seemingly at once?": 3.22,
+    "Time sharing means the operating system gives each process a tiny slice of CPU time, then moves to the next, repeating in a loop.": 7.24,
+    "The code below shows a list of process names and a loop that prints which one runs for each slice.": 14.88,
+    "When you run it, you\u2019ll see the CPU jumping from Process A to Process B to Process C over and over.": 20.26,
+    "That rapid rotation is what lets many processes use the CPU quickly.": 25.34,
+    "Try changing the slice order or adding another process to see the effect.": 30.22
+  },
+  "captions": [
+    {
+      "text": "What if your computer could",
+      "start": 0.0,
+      "end": 1.4,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.34
+        },
+        {
+          "w": "if",
+          "start": 0.34,
+          "end": 0.5
+        },
+        {
+          "w": "your",
+          "start": 0.5,
+          "end": 0.7
+        },
+        {
+          "w": "computer",
+          "start": 0.7,
+          "end": 1.04
+        },
+        {
+          "w": "could",
+          "start": 1.04,
+          "end": 1.4
+        }
+      ]
+    },
+    {
+      "text": "multitask in a heartbeat? How",
+      "start": 1.4,
+      "end": 3.34,
+      "words": [
+        {
+          "w": "multitask",
+          "start": 1.4,
+          "end": 2.06
+        },
+        {
+          "w": "in",
+          "start": 2.06,
+          "end": 2.28
+        },
+        {
+          "w": "a",
+          "start": 2.28,
+          "end": 2.48
+        },
+        {
+          "w": "heartbeat?",
+          "start": 2.48,
+          "end": 2.76
+        },
+        {
+          "w": "How",
+          "start": 3.22,
+          "end": 3.34
+        }
+      ]
+    },
+    {
+      "text": "does one CPU let many",
+      "start": 3.34,
+      "end": 4.8,
+      "words": [
+        {
+          "w": "does",
+          "start": 3.34,
+          "end": 3.52
+        },
+        {
+          "w": "one",
+          "start": 3.52,
+          "end": 3.82
+        },
+        {
+          "w": "CPU",
+          "start": 3.82,
+          "end": 4.22
+        },
+        {
+          "w": "let",
+          "start": 4.22,
+          "end": 4.58
+        },
+        {
+          "w": "many",
+          "start": 4.58,
+          "end": 4.8
+        }
+      ]
+    },
+    {
+      "text": "programs run seemingly at once?",
+      "start": 4.8,
+      "end": 6.82,
+      "words": [
+        {
+          "w": "programs",
+          "start": 4.8,
+          "end": 5.28
+        },
+        {
+          "w": "run",
+          "start": 5.28,
+          "end": 5.72
+        },
+        {
+          "w": "seemingly",
+          "start": 5.72,
+          "end": 6.14
+        },
+        {
+          "w": "at",
+          "start": 6.14,
+          "end": 6.52
+        },
+        {
+          "w": "once?",
+          "start": 6.52,
+          "end": 6.82
+        }
+      ]
+    },
+    {
+      "text": "Time sharing means the operating",
+      "start": 7.24,
+      "end": 8.64,
+      "words": [
+        {
+          "w": "Time",
+          "start": 7.24,
+          "end": 7.5
+        },
+        {
+          "w": "sharing",
+          "start": 7.5,
+          "end": 7.84
+        },
+        {
+          "w": "means",
+          "start": 7.84,
+          "end": 8.18
+        },
+        {
+          "w": "the",
+          "start": 8.18,
+          "end": 8.44
+        },
+        {
+          "w": "operating",
+          "start": 8.44,
+          "end": 8.64
+        }
+      ]
+    },
+    {
+      "text": "system gives each process a",
+      "start": 8.64,
+      "end": 10.34,
+      "words": [
+        {
+          "w": "system",
+          "start": 8.64,
+          "end": 9.12
+        },
+        {
+          "w": "gives",
+          "start": 9.12,
+          "end": 9.36
+        },
+        {
+          "w": "each",
+          "start": 9.36,
+          "end": 9.68
+        },
+        {
+          "w": "process",
+          "start": 9.68,
+          "end": 10.06
+        },
+        {
+          "w": "a",
+          "start": 10.06,
+          "end": 10.34
+        }
+      ]
+    },
+    {
+      "text": "tiny slice of CPU time,",
+      "start": 10.34,
+      "end": 11.86,
+      "words": [
+        {
+          "w": "tiny",
+          "start": 10.34,
+          "end": 10.56
+        },
+        {
+          "w": "slice",
+          "start": 10.56,
+          "end": 10.84
+        },
+        {
+          "w": "of",
+          "start": 10.84,
+          "end": 11.06
+        },
+        {
+          "w": "CPU",
+          "start": 11.06,
+          "end": 11.32
+        },
+        {
+          "w": "time,",
+          "start": 11.32,
+          "end": 11.86
+        }
+      ]
+    },
+    {
+      "text": "then moves to the next,",
+      "start": 12.36,
+      "end": 13.4,
+      "words": [
+        {
+          "w": "then",
+          "start": 12.36,
+          "end": 12.54
+        },
+        {
+          "w": "moves",
+          "start": 12.54,
+          "end": 12.8
+        },
+        {
+          "w": "to",
+          "start": 12.8,
+          "end": 13.02
+        },
+        {
+          "w": "the",
+          "start": 13.02,
+          "end": 13.18
+        },
+        {
+          "w": "next,",
+          "start": 13.18,
+          "end": 13.4
+        }
+      ]
+    },
+    {
+      "text": "repeating in a loop. The",
+      "start": 13.62,
+      "end": 14.96,
+      "words": [
+        {
+          "w": "repeating",
+          "start": 13.62,
+          "end": 13.8
+        },
+        {
+          "w": "in",
+          "start": 13.8,
+          "end": 14.1
+        },
+        {
+          "w": "a",
+          "start": 14.1,
+          "end": 14.12
+        },
+        {
+          "w": "loop.",
+          "start": 14.12,
+          "end": 14.38
+        },
+        {
+          "w": "The",
+          "start": 14.88,
+          "end": 14.96
+        }
+      ]
+    },
+    {
+      "text": "code below shows a list",
+      "start": 14.96,
+      "end": 16.16,
+      "words": [
+        {
+          "w": "code",
+          "start": 14.96,
+          "end": 15.18
+        },
+        {
+          "w": "below",
+          "start": 15.18,
+          "end": 15.56
+        },
+        {
+          "w": "shows",
+          "start": 15.56,
+          "end": 15.82
+        },
+        {
+          "w": "a",
+          "start": 15.82,
+          "end": 16.04
+        },
+        {
+          "w": "list",
+          "start": 16.04,
+          "end": 16.16
+        }
+      ]
+    },
+    {
+      "text": "of process names and a",
+      "start": 16.16,
+      "end": 17.52,
+      "words": [
+        {
+          "w": "of",
+          "start": 16.16,
+          "end": 16.4
+        },
+        {
+          "w": "process",
+          "start": 16.4,
+          "end": 16.7
+        },
+        {
+          "w": "names",
+          "start": 16.7,
+          "end": 17.12
+        },
+        {
+          "w": "and",
+          "start": 17.12,
+          "end": 17.46
+        },
+        {
+          "w": "a",
+          "start": 17.46,
+          "end": 17.52
+        }
+      ]
+    },
+    {
+      "text": "loop that prints which one",
+      "start": 17.52,
+      "end": 18.76,
+      "words": [
+        {
+          "w": "loop",
+          "start": 17.52,
+          "end": 17.72
+        },
+        {
+          "w": "that",
+          "start": 17.72,
+          "end": 17.98
+        },
+        {
+          "w": "prints",
+          "start": 17.98,
+          "end": 18.24
+        },
+        {
+          "w": "which",
+          "start": 18.24,
+          "end": 18.54
+        },
+        {
+          "w": "one",
+          "start": 18.54,
+          "end": 18.76
+        }
+      ]
+    },
+    {
+      "text": "runs for each slice. When",
+      "start": 18.76,
+      "end": 20.42,
+      "words": [
+        {
+          "w": "runs",
+          "start": 18.76,
+          "end": 19.02
+        },
+        {
+          "w": "for",
+          "start": 19.02,
+          "end": 19.28
+        },
+        {
+          "w": "each",
+          "start": 19.28,
+          "end": 19.46
+        },
+        {
+          "w": "slice.",
+          "start": 19.46,
+          "end": 19.8
+        },
+        {
+          "w": "When",
+          "start": 20.26,
+          "end": 20.42
+        }
+      ]
+    },
+    {
+      "text": "you run it, you\u2019ll see",
+      "start": 20.42,
+      "end": 21.4,
+      "words": [
+        {
+          "w": "you",
+          "start": 20.42,
+          "end": 20.58
+        },
+        {
+          "w": "run",
+          "start": 20.58,
+          "end": 20.7
+        },
+        {
+          "w": "it,",
+          "start": 20.7,
+          "end": 20.94
+        },
+        {
+          "w": "you\u2019ll",
+          "start": 21.0,
+          "end": 21.26
+        },
+        {
+          "w": "see",
+          "start": 21.26,
+          "end": 21.4
+        }
+      ]
+    },
+    {
+      "text": "the CPU jumping from Process",
+      "start": 21.4,
+      "end": 22.9,
+      "words": [
+        {
+          "w": "the",
+          "start": 21.4,
+          "end": 21.6
+        },
+        {
+          "w": "CPU",
+          "start": 21.6,
+          "end": 21.94
+        },
+        {
+          "w": "jumping",
+          "start": 21.94,
+          "end": 22.24
+        },
+        {
+          "w": "from",
+          "start": 22.24,
+          "end": 22.58
+        },
+        {
+          "w": "Process",
+          "start": 22.58,
+          "end": 22.9
+        }
+      ]
+    },
+    {
+      "text": "A to Process B to",
+      "start": 22.9,
+      "end": 24.16,
+      "words": [
+        {
+          "w": "A",
+          "start": 22.9,
+          "end": 23.16
+        },
+        {
+          "w": "to",
+          "start": 23.16,
+          "end": 23.46
+        },
+        {
+          "w": "Process",
+          "start": 23.46,
+          "end": 23.62
+        },
+        {
+          "w": "B",
+          "start": 23.62,
+          "end": 23.88
+        },
+        {
+          "w": "to",
+          "start": 23.88,
+          "end": 24.16
+        }
+      ]
+    },
+    {
+      "text": "Process C over and over.",
+      "start": 24.16,
+      "end": 25.34,
+      "words": [
+        {
+          "w": "Process",
+          "start": 24.16,
+          "end": 24.38
+        },
+        {
+          "w": "C",
+          "start": 24.38,
+          "end": 24.68
+        },
+        {
+          "w": "over",
+          "start": 24.68,
+          "end": 24.84
+        },
+        {
+          "w": "and",
+          "start": 24.84,
+          "end": 25.0
+        },
+        {
+          "w": "over.",
+          "start": 25.0,
+          "end": 25.34
+        }
+      ]
+    },
+    {
+      "text": "That rapid rotation is what",
+      "start": 25.34,
+      "end": 27.24,
+      "words": [
+        {
+          "w": "That",
+          "start": 25.34,
+          "end": 25.92
+        },
+        {
+          "w": "rapid",
+          "start": 25.92,
+          "end": 26.18
+        },
+        {
+          "w": "rotation",
+          "start": 26.18,
+          "end": 26.7
+        },
+        {
+          "w": "is",
+          "start": 26.7,
+          "end": 27.08
+        },
+        {
+          "w": "what",
+          "start": 27.08,
+          "end": 27.24
+        }
+      ]
+    },
+    {
+      "text": "lets many processes use the",
+      "start": 27.24,
+      "end": 28.94,
+      "words": [
+        {
+          "w": "lets",
+          "start": 27.24,
+          "end": 27.52
+        },
+        {
+          "w": "many",
+          "start": 27.52,
+          "end": 27.78
+        },
+        {
+          "w": "processes",
+          "start": 27.78,
+          "end": 28.26
+        },
+        {
+          "w": "use",
+          "start": 28.26,
+          "end": 28.68
+        },
+        {
+          "w": "the",
+          "start": 28.68,
+          "end": 28.94
+        }
+      ]
+    },
+    {
+      "text": "CPU quickly. Try changing the",
+      "start": 28.94,
+      "end": 31.16,
+      "words": [
+        {
+          "w": "CPU",
+          "start": 28.94,
+          "end": 29.2
+        },
+        {
+          "w": "quickly.",
+          "start": 29.2,
+          "end": 29.7
+        },
+        {
+          "w": "Try",
+          "start": 30.22,
+          "end": 30.46
+        },
+        {
+          "w": "changing",
+          "start": 30.46,
+          "end": 30.9
+        },
+        {
+          "w": "the",
+          "start": 30.9,
+          "end": 31.16
+        }
+      ]
+    },
+    {
+      "text": "slice order or adding another",
+      "start": 31.16,
+      "end": 32.74,
+      "words": [
+        {
+          "w": "slice",
+          "start": 31.16,
+          "end": 31.42
+        },
+        {
+          "w": "order",
+          "start": 31.42,
+          "end": 31.76
+        },
+        {
+          "w": "or",
+          "start": 31.76,
+          "end": 32.14
+        },
+        {
+          "w": "adding",
+          "start": 32.14,
+          "end": 32.36
+        },
+        {
+          "w": "another",
+          "start": 32.36,
+          "end": 32.74
+        }
+      ]
+    },
+    {
+      "text": "process to see the effect.",
+      "start": 32.74,
+      "end": 34.04,
+      "words": [
+        {
+          "w": "process",
+          "start": 32.74,
+          "end": 33.16
+        },
+        {
+          "w": "to",
+          "start": 33.16,
+          "end": 33.4
+        },
+        {
+          "w": "see",
+          "start": 33.4,
+          "end": 33.56
+        },
+        {
+          "w": "the",
+          "start": 33.56,
+          "end": 33.74
+        },
+        {
+          "w": "effect.",
+          "start": 33.74,
+          "end": 34.04
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,711 @@
+{
+  "meal_id": "meal_06_default_constructor_init",
+  "audio": "meal_06_default_constructor_init.mp3",
+  "duration": 50.52,
+  "alignment": "estimated",
+  "anchors": {
+    "Hook: What happens when you create an object without writing any setup code?": 0.0,
+    "Question: Do I need to write an __init__ method for every class?": 6.081,
+    "Concept: Python automatically provides a simple constructor called __init__ that runs whenever an instance is created, even if you never defined one.": 11.694,
+    "Code: Here is a class with no __init__ defined, and we create an instance.": 21.986,
+    "Execution: When we run the program, it prints the default representation of the object, showing that the hidden __init__ ran.": 28.534,
+    "Takeaway: Even without writing one, Python gives each class a basic __init__.": 37.89,
+    "Practice: Define a class called Account with no __init__, create an object, and print it.": 43.503
+  },
+  "captions": [
+    {
+      "text": "Hook: What happens when you",
+      "start": 0.0,
+      "end": 2.339,
+      "words": [
+        {
+          "w": "Hook:",
+          "start": 0.0,
+          "end": 0.468
+        },
+        {
+          "w": "What",
+          "start": 0.468,
+          "end": 0.936
+        },
+        {
+          "w": "happens",
+          "start": 0.936,
+          "end": 1.403
+        },
+        {
+          "w": "when",
+          "start": 1.403,
+          "end": 1.871
+        },
+        {
+          "w": "you",
+          "start": 1.871,
+          "end": 2.339
+        }
+      ]
+    },
+    {
+      "text": "create an object without writing",
+      "start": 2.339,
+      "end": 4.678,
+      "words": [
+        {
+          "w": "create",
+          "start": 2.339,
+          "end": 2.807
+        },
+        {
+          "w": "an",
+          "start": 2.807,
+          "end": 3.274
+        },
+        {
+          "w": "object",
+          "start": 3.274,
+          "end": 3.742
+        },
+        {
+          "w": "without",
+          "start": 3.742,
+          "end": 4.21
+        },
+        {
+          "w": "writing",
+          "start": 4.21,
+          "end": 4.678
+        }
+      ]
+    },
+    {
+      "text": "any setup code? Question: Do",
+      "start": 4.678,
+      "end": 7.017,
+      "words": [
+        {
+          "w": "any",
+          "start": 4.678,
+          "end": 5.146
+        },
+        {
+          "w": "setup",
+          "start": 5.146,
+          "end": 5.613
+        },
+        {
+          "w": "code?",
+          "start": 5.613,
+          "end": 6.081
+        },
+        {
+          "w": "Question:",
+          "start": 6.081,
+          "end": 6.549
+        },
+        {
+          "w": "Do",
+          "start": 6.549,
+          "end": 7.017
+        }
+      ]
+    },
+    {
+      "text": "I need to write an",
+      "start": 7.017,
+      "end": 9.356,
+      "words": [
+        {
+          "w": "I",
+          "start": 7.017,
+          "end": 7.484
+        },
+        {
+          "w": "need",
+          "start": 7.484,
+          "end": 7.952
+        },
+        {
+          "w": "to",
+          "start": 7.952,
+          "end": 8.42
+        },
+        {
+          "w": "write",
+          "start": 8.42,
+          "end": 8.888
+        },
+        {
+          "w": "an",
+          "start": 8.888,
+          "end": 9.356
+        }
+      ]
+    },
+    {
+      "text": "__init__ method for every class?",
+      "start": 9.356,
+      "end": 11.694,
+      "words": [
+        {
+          "w": "__init__",
+          "start": 9.356,
+          "end": 9.823
+        },
+        {
+          "w": "method",
+          "start": 9.823,
+          "end": 10.291
+        },
+        {
+          "w": "for",
+          "start": 10.291,
+          "end": 10.759
+        },
+        {
+          "w": "every",
+          "start": 10.759,
+          "end": 11.227
+        },
+        {
+          "w": "class?",
+          "start": 11.227,
+          "end": 11.694
+        }
+      ]
+    },
+    {
+      "text": "Concept: Python automatically provides a",
+      "start": 11.694,
+      "end": 14.033,
+      "words": [
+        {
+          "w": "Concept:",
+          "start": 11.694,
+          "end": 12.162
+        },
+        {
+          "w": "Python",
+          "start": 12.162,
+          "end": 12.63
+        },
+        {
+          "w": "automatically",
+          "start": 12.63,
+          "end": 13.098
+        },
+        {
+          "w": "provides",
+          "start": 13.098,
+          "end": 13.566
+        },
+        {
+          "w": "a",
+          "start": 13.566,
+          "end": 14.033
+        }
+      ]
+    },
+    {
+      "text": "simple constructor called __init__ that",
+      "start": 14.033,
+      "end": 16.372,
+      "words": [
+        {
+          "w": "simple",
+          "start": 14.033,
+          "end": 14.501
+        },
+        {
+          "w": "constructor",
+          "start": 14.501,
+          "end": 14.969
+        },
+        {
+          "w": "called",
+          "start": 14.969,
+          "end": 15.437
+        },
+        {
+          "w": "__init__",
+          "start": 15.437,
+          "end": 15.904
+        },
+        {
+          "w": "that",
+          "start": 15.904,
+          "end": 16.372
+        }
+      ]
+    },
+    {
+      "text": "runs whenever an instance is",
+      "start": 16.372,
+      "end": 18.711,
+      "words": [
+        {
+          "w": "runs",
+          "start": 16.372,
+          "end": 16.84
+        },
+        {
+          "w": "whenever",
+          "start": 16.84,
+          "end": 17.308
+        },
+        {
+          "w": "an",
+          "start": 17.308,
+          "end": 17.776
+        },
+        {
+          "w": "instance",
+          "start": 17.776,
+          "end": 18.243
+        },
+        {
+          "w": "is",
+          "start": 18.243,
+          "end": 18.711
+        }
+      ]
+    },
+    {
+      "text": "created, even if you never",
+      "start": 18.711,
+      "end": 21.05,
+      "words": [
+        {
+          "w": "created,",
+          "start": 18.711,
+          "end": 19.179
+        },
+        {
+          "w": "even",
+          "start": 19.179,
+          "end": 19.647
+        },
+        {
+          "w": "if",
+          "start": 19.647,
+          "end": 20.114
+        },
+        {
+          "w": "you",
+          "start": 20.114,
+          "end": 20.582
+        },
+        {
+          "w": "never",
+          "start": 20.582,
+          "end": 21.05
+        }
+      ]
+    },
+    {
+      "text": "defined one. Code: Here is",
+      "start": 21.05,
+      "end": 23.389,
+      "words": [
+        {
+          "w": "defined",
+          "start": 21.05,
+          "end": 21.518
+        },
+        {
+          "w": "one.",
+          "start": 21.518,
+          "end": 21.986
+        },
+        {
+          "w": "Code:",
+          "start": 21.986,
+          "end": 22.453
+        },
+        {
+          "w": "Here",
+          "start": 22.453,
+          "end": 22.921
+        },
+        {
+          "w": "is",
+          "start": 22.921,
+          "end": 23.389
+        }
+      ]
+    },
+    {
+      "text": "a class with no __init__",
+      "start": 23.389,
+      "end": 25.728,
+      "words": [
+        {
+          "w": "a",
+          "start": 23.389,
+          "end": 23.857
+        },
+        {
+          "w": "class",
+          "start": 23.857,
+          "end": 24.324
+        },
+        {
+          "w": "with",
+          "start": 24.324,
+          "end": 24.792
+        },
+        {
+          "w": "no",
+          "start": 24.792,
+          "end": 25.26
+        },
+        {
+          "w": "__init__",
+          "start": 25.26,
+          "end": 25.728
+        }
+      ]
+    },
+    {
+      "text": "defined, and we create an",
+      "start": 25.728,
+      "end": 28.067,
+      "words": [
+        {
+          "w": "defined,",
+          "start": 25.728,
+          "end": 26.196
+        },
+        {
+          "w": "and",
+          "start": 26.196,
+          "end": 26.663
+        },
+        {
+          "w": "we",
+          "start": 26.663,
+          "end": 27.131
+        },
+        {
+          "w": "create",
+          "start": 27.131,
+          "end": 27.599
+        },
+        {
+          "w": "an",
+          "start": 27.599,
+          "end": 28.067
+        }
+      ]
+    },
+    {
+      "text": "instance. Execution: When we run",
+      "start": 28.067,
+      "end": 30.406,
+      "words": [
+        {
+          "w": "instance.",
+          "start": 28.067,
+          "end": 28.534
+        },
+        {
+          "w": "Execution:",
+          "start": 28.534,
+          "end": 29.002
+        },
+        {
+          "w": "When",
+          "start": 29.002,
+          "end": 29.47
+        },
+        {
+          "w": "we",
+          "start": 29.47,
+          "end": 29.938
+        },
+        {
+          "w": "run",
+          "start": 29.938,
+          "end": 30.406
+        }
+      ]
+    },
+    {
+      "text": "the program, it prints the",
+      "start": 30.406,
+      "end": 32.744,
+      "words": [
+        {
+          "w": "the",
+          "start": 30.406,
+          "end": 30.873
+        },
+        {
+          "w": "program,",
+          "start": 30.873,
+          "end": 31.341
+        },
+        {
+          "w": "it",
+          "start": 31.341,
+          "end": 31.809
+        },
+        {
+          "w": "prints",
+          "start": 31.809,
+          "end": 32.277
+        },
+        {
+          "w": "the",
+          "start": 32.277,
+          "end": 32.744
+        }
+      ]
+    },
+    {
+      "text": "default representation of the object,",
+      "start": 32.744,
+      "end": 35.083,
+      "words": [
+        {
+          "w": "default",
+          "start": 32.744,
+          "end": 33.212
+        },
+        {
+          "w": "representation",
+          "start": 33.212,
+          "end": 33.68
+        },
+        {
+          "w": "of",
+          "start": 33.68,
+          "end": 34.148
+        },
+        {
+          "w": "the",
+          "start": 34.148,
+          "end": 34.616
+        },
+        {
+          "w": "object,",
+          "start": 34.616,
+          "end": 35.083
+        }
+      ]
+    },
+    {
+      "text": "showing that the hidden __init__",
+      "start": 35.083,
+      "end": 37.422,
+      "words": [
+        {
+          "w": "showing",
+          "start": 35.083,
+          "end": 35.551
+        },
+        {
+          "w": "that",
+          "start": 35.551,
+          "end": 36.019
+        },
+        {
+          "w": "the",
+          "start": 36.019,
+          "end": 36.487
+        },
+        {
+          "w": "hidden",
+          "start": 36.487,
+          "end": 36.954
+        },
+        {
+          "w": "__init__",
+          "start": 36.954,
+          "end": 37.422
+        }
+      ]
+    },
+    {
+      "text": "ran. Takeaway: Even without writing",
+      "start": 37.422,
+      "end": 39.761,
+      "words": [
+        {
+          "w": "ran.",
+          "start": 37.422,
+          "end": 37.89
+        },
+        {
+          "w": "Takeaway:",
+          "start": 37.89,
+          "end": 38.358
+        },
+        {
+          "w": "Even",
+          "start": 38.358,
+          "end": 38.826
+        },
+        {
+          "w": "without",
+          "start": 38.826,
+          "end": 39.293
+        },
+        {
+          "w": "writing",
+          "start": 39.293,
+          "end": 39.761
+        }
+      ]
+    },
+    {
+      "text": "one, Python gives each class",
+      "start": 39.761,
+      "end": 42.1,
+      "words": [
+        {
+          "w": "one,",
+          "start": 39.761,
+          "end": 40.229
+        },
+        {
+          "w": "Python",
+          "start": 40.229,
+          "end": 40.697
+        },
+        {
+          "w": "gives",
+          "start": 40.697,
+          "end": 41.164
+        },
+        {
+          "w": "each",
+          "start": 41.164,
+          "end": 41.632
+        },
+        {
+          "w": "class",
+          "start": 41.632,
+          "end": 42.1
+        }
+      ]
+    },
+    {
+      "text": "a basic __init__. Practice: Define",
+      "start": 42.1,
+      "end": 44.439,
+      "words": [
+        {
+          "w": "a",
+          "start": 42.1,
+          "end": 42.568
+        },
+        {
+          "w": "basic",
+          "start": 42.568,
+          "end": 43.036
+        },
+        {
+          "w": "__init__.",
+          "start": 43.036,
+          "end": 43.503
+        },
+        {
+          "w": "Practice:",
+          "start": 43.503,
+          "end": 43.971
+        },
+        {
+          "w": "Define",
+          "start": 43.971,
+          "end": 44.439
+        }
+      ]
+    },
+    {
+      "text": "a class called Account with",
+      "start": 44.439,
+      "end": 46.778,
+      "words": [
+        {
+          "w": "a",
+          "start": 44.439,
+          "end": 44.907
+        },
+        {
+          "w": "class",
+          "start": 44.907,
+          "end": 45.374
+        },
+        {
+          "w": "called",
+          "start": 45.374,
+          "end": 45.842
+        },
+        {
+          "w": "Account",
+          "start": 45.842,
+          "end": 46.31
+        },
+        {
+          "w": "with",
+          "start": 46.31,
+          "end": 46.778
+        }
+      ]
+    },
+    {
+      "text": "no __init__, create an object,",
+      "start": 46.778,
+      "end": 49.117,
+      "words": [
+        {
+          "w": "no",
+          "start": 46.778,
+          "end": 47.246
+        },
+        {
+          "w": "__init__,",
+          "start": 47.246,
+          "end": 47.713
+        },
+        {
+          "w": "create",
+          "start": 47.713,
+          "end": 48.181
+        },
+        {
+          "w": "an",
+          "start": 48.181,
+          "end": 48.649
+        },
+        {
+          "w": "object,",
+          "start": 48.649,
+          "end": 49.117
+        }
+      ]
+    },
+    {
+      "text": "and print it.",
+      "start": 49.117,
+      "end": 50.52,
+      "words": [
+        {
+          "w": "and",
+          "start": 49.117,
+          "end": 49.584
+        },
+        {
+          "w": "print",
+          "start": 49.584,
+          "end": 50.052
+        },
+        {
+          "w": "it.",
+          "start": 50.052,
+          "end": 50.52
+        }
+      ]
+    }
+  ]
+}

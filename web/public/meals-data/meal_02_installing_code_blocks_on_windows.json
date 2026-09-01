@@ -1,0 +1,107 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_02_installing_code_blocks_on_windows",
+    "title": "Installing Code::Blocks on Windows",
+    "concept": "c.project.overview",
+    "objective": "Install the Code::Blocks IDE on a Windows computer",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "Code::Blocks"
+    ],
+    "assumes": [
+      "IDE"
+    ],
+    "voice": {
+      "script": "Want to start coding in C right now? How do you get Code::Blocks onto a Windows PC? Code::Blocks is a free, open\u2011source development environment for C, meaning it bundles a text editor, a compiler, and tools to manage your projects. First, open a web browser and go to codeblocks.org. Click the Downloads link, then choose the Windows binary release. Save the installer file to your computer. Once the download finishes, double\u2011click the file to launch the installer. Follow the prompts, accepting the default options, and let it copy the files. When the wizard reports completion, click Finish. Now we run the installer. Remember, installing Code::Blocks is just a download and run. Try installing Code::Blocks on your own computer.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Want to start coding in C right now?"
+        },
+        "narration_anchor": "Want to start coding in C right now?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you get Code::Blocks onto a Windows PC?"
+        },
+        "narration_anchor": "How do you get Code::Blocks onto a Windows PC?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Download and run installer",
+              "kind": "box"
+            }
+          ],
+          "edges": []
+        },
+        "narration_anchor": "Code::Blocks is a free, open\u2011source development environment for C, meaning it bundles a text editor, a compiler, and tools to manage your projects."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Remember, installing Code::Blocks is just a download and run."
+        },
+        "narration_anchor": "Remember, installing Code::Blocks is just a download and run.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Try installing Code::Blocks on your own computer."
+        },
+        "narration_anchor": "Try installing Code::Blocks on your own computer.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Try installing Code::Blocks on your own computer."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 2,
+      "total": 22,
+      "previous_id": "meal_01_what_is_an_ide_and_why_you_need_one",
+      "next_id": "meal_03_setting_gcc_as_the_default_compiler"
+    }
+  }
+}

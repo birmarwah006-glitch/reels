@@ -1,0 +1,988 @@
+{
+  "meal_id": "meal_20_loops_while_and_for",
+  "audio": "meal_20_loops_while_and_for.mp3",
+  "duration": 46.752,
+  "alignment": "whisper",
+  "anchors": {
+    "Can a program count forever without stopping?": 0.0,
+    "How do you repeat actions in Python?": 3.12,
+    "A while loop keeps doing something as long as a condition stays true.": 5.56,
+    "Now watch the code.": 31.78,
+    "Running it shows the numbers one through four followed by three through seven.": 37.42,
+    "while repeats while a test is true, and for repeats over a known collection": 42.52
+  },
+  "captions": [
+    {
+      "text": "Can a program count forever",
+      "start": 0.0,
+      "end": 1.66,
+      "words": [
+        {
+          "w": "Can",
+          "start": 0.0,
+          "end": 0.28
+        },
+        {
+          "w": "a",
+          "start": 0.28,
+          "end": 0.56
+        },
+        {
+          "w": "program",
+          "start": 0.56,
+          "end": 0.82
+        },
+        {
+          "w": "count",
+          "start": 0.82,
+          "end": 1.22
+        },
+        {
+          "w": "forever",
+          "start": 1.22,
+          "end": 1.66
+        }
+      ]
+    },
+    {
+      "text": "without stopping? How do you",
+      "start": 1.66,
+      "end": 3.56,
+      "words": [
+        {
+          "w": "without",
+          "start": 1.66,
+          "end": 2.2
+        },
+        {
+          "w": "stopping?",
+          "start": 2.2,
+          "end": 2.64
+        },
+        {
+          "w": "How",
+          "start": 3.12,
+          "end": 3.26
+        },
+        {
+          "w": "do",
+          "start": 3.26,
+          "end": 3.42
+        },
+        {
+          "w": "you",
+          "start": 3.42,
+          "end": 3.56
+        }
+      ]
+    },
+    {
+      "text": "repeat actions in Python? A",
+      "start": 3.56,
+      "end": 5.74,
+      "words": [
+        {
+          "w": "repeat",
+          "start": 3.56,
+          "end": 3.82
+        },
+        {
+          "w": "actions",
+          "start": 3.82,
+          "end": 4.32
+        },
+        {
+          "w": "in",
+          "start": 4.32,
+          "end": 4.58
+        },
+        {
+          "w": "Python?",
+          "start": 4.58,
+          "end": 5.02
+        },
+        {
+          "w": "A",
+          "start": 5.56,
+          "end": 5.74
+        }
+      ]
+    },
+    {
+      "text": "while loop keeps doing something",
+      "start": 5.74,
+      "end": 7.26,
+      "words": [
+        {
+          "w": "while",
+          "start": 5.74,
+          "end": 5.96
+        },
+        {
+          "w": "loop",
+          "start": 5.96,
+          "end": 6.2
+        },
+        {
+          "w": "keeps",
+          "start": 6.2,
+          "end": 6.54
+        },
+        {
+          "w": "doing",
+          "start": 6.54,
+          "end": 6.88
+        },
+        {
+          "w": "something",
+          "start": 6.88,
+          "end": 7.26
+        }
+      ]
+    },
+    {
+      "text": "as long as a condition",
+      "start": 7.26,
+      "end": 8.26,
+      "words": [
+        {
+          "w": "as",
+          "start": 7.26,
+          "end": 7.52
+        },
+        {
+          "w": "long",
+          "start": 7.52,
+          "end": 7.72
+        },
+        {
+          "w": "as",
+          "start": 7.72,
+          "end": 7.94
+        },
+        {
+          "w": "a",
+          "start": 7.94,
+          "end": 8.1
+        },
+        {
+          "w": "condition",
+          "start": 8.1,
+          "end": 8.26
+        }
+      ]
+    },
+    {
+      "text": "stays true. Imagine checking a",
+      "start": 8.26,
+      "end": 10.64,
+      "words": [
+        {
+          "w": "stays",
+          "start": 8.26,
+          "end": 8.68
+        },
+        {
+          "w": "true.",
+          "start": 8.68,
+          "end": 9.2
+        },
+        {
+          "w": "Imagine",
+          "start": 9.66,
+          "end": 9.94
+        },
+        {
+          "w": "checking",
+          "start": 9.94,
+          "end": 10.34
+        },
+        {
+          "w": "a",
+          "start": 10.34,
+          "end": 10.64
+        }
+      ]
+    },
+    {
+      "text": "door until it opens. In",
+      "start": 10.64,
+      "end": 12.42,
+      "words": [
+        {
+          "w": "door",
+          "start": 10.64,
+          "end": 10.82
+        },
+        {
+          "w": "until",
+          "start": 10.82,
+          "end": 11.2
+        },
+        {
+          "w": "it",
+          "start": 11.2,
+          "end": 11.42
+        },
+        {
+          "w": "opens.",
+          "start": 11.42,
+          "end": 11.8
+        },
+        {
+          "w": "In",
+          "start": 12.28,
+          "end": 12.42
+        }
+      ]
+    },
+    {
+      "text": "code we start with a",
+      "start": 12.42,
+      "end": 13.5,
+      "words": [
+        {
+          "w": "code",
+          "start": 12.42,
+          "end": 12.64
+        },
+        {
+          "w": "we",
+          "start": 12.64,
+          "end": 12.84
+        },
+        {
+          "w": "start",
+          "start": 12.84,
+          "end": 13.1
+        },
+        {
+          "w": "with",
+          "start": 13.1,
+          "end": 13.32
+        },
+        {
+          "w": "a",
+          "start": 13.32,
+          "end": 13.5
+        }
+      ]
+    },
+    {
+      "text": "counter at one, then while",
+      "start": 13.5,
+      "end": 15.16,
+      "words": [
+        {
+          "w": "counter",
+          "start": 13.5,
+          "end": 13.66
+        },
+        {
+          "w": "at",
+          "start": 13.66,
+          "end": 13.94
+        },
+        {
+          "w": "one,",
+          "start": 13.94,
+          "end": 14.52
+        },
+        {
+          "w": "then",
+          "start": 14.78,
+          "end": 14.98
+        },
+        {
+          "w": "while",
+          "start": 14.98,
+          "end": 15.16
+        }
+      ]
+    },
+    {
+      "text": "the counter is less than",
+      "start": 15.16,
+      "end": 16.16,
+      "words": [
+        {
+          "w": "the",
+          "start": 15.16,
+          "end": 15.28
+        },
+        {
+          "w": "counter",
+          "start": 15.28,
+          "end": 15.54
+        },
+        {
+          "w": "is",
+          "start": 15.54,
+          "end": 15.8
+        },
+        {
+          "w": "less",
+          "start": 15.8,
+          "end": 15.98
+        },
+        {
+          "w": "than",
+          "start": 15.98,
+          "end": 16.16
+        }
+      ]
+    },
+    {
+      "text": "five we print it and",
+      "start": 16.16,
+      "end": 17.16,
+      "words": [
+        {
+          "w": "five",
+          "start": 16.16,
+          "end": 16.4
+        },
+        {
+          "w": "we",
+          "start": 16.4,
+          "end": 16.6
+        },
+        {
+          "w": "print",
+          "start": 16.6,
+          "end": 16.78
+        },
+        {
+          "w": "it",
+          "start": 16.78,
+          "end": 17.04
+        },
+        {
+          "w": "and",
+          "start": 17.04,
+          "end": 17.16
+        }
+      ]
+    },
+    {
+      "text": "add one. When the condition",
+      "start": 17.16,
+      "end": 18.64,
+      "words": [
+        {
+          "w": "add",
+          "start": 17.16,
+          "end": 17.34
+        },
+        {
+          "w": "one.",
+          "start": 17.34,
+          "end": 17.66
+        },
+        {
+          "w": "When",
+          "start": 18.0,
+          "end": 18.18
+        },
+        {
+          "w": "the",
+          "start": 18.18,
+          "end": 18.28
+        },
+        {
+          "w": "condition",
+          "start": 18.28,
+          "end": 18.64
+        }
+      ]
+    },
+    {
+      "text": "fails the loop stops. A",
+      "start": 18.64,
+      "end": 20.58,
+      "words": [
+        {
+          "w": "fails",
+          "start": 18.64,
+          "end": 19.04
+        },
+        {
+          "w": "the",
+          "start": 19.04,
+          "end": 19.34
+        },
+        {
+          "w": "loop",
+          "start": 19.34,
+          "end": 19.54
+        },
+        {
+          "w": "stops.",
+          "start": 19.54,
+          "end": 20.0
+        },
+        {
+          "w": "A",
+          "start": 20.46,
+          "end": 20.58
+        }
+      ]
+    },
+    {
+      "text": "for loop is a shortcut",
+      "start": 20.58,
+      "end": 21.72,
+      "words": [
+        {
+          "w": "for",
+          "start": 20.58,
+          "end": 20.74
+        },
+        {
+          "w": "loop",
+          "start": 20.74,
+          "end": 20.94
+        },
+        {
+          "w": "is",
+          "start": 20.94,
+          "end": 21.24
+        },
+        {
+          "w": "a",
+          "start": 21.24,
+          "end": 21.38
+        },
+        {
+          "w": "shortcut",
+          "start": 21.38,
+          "end": 21.72
+        }
+      ]
+    },
+    {
+      "text": "when you know how many",
+      "start": 21.72,
+      "end": 22.64,
+      "words": [
+        {
+          "w": "when",
+          "start": 21.72,
+          "end": 22.06
+        },
+        {
+          "w": "you",
+          "start": 22.06,
+          "end": 22.1
+        },
+        {
+          "w": "know",
+          "start": 22.1,
+          "end": 22.26
+        },
+        {
+          "w": "how",
+          "start": 22.26,
+          "end": 22.46
+        },
+        {
+          "w": "many",
+          "start": 22.46,
+          "end": 22.64
+        }
+      ]
+    },
+    {
+      "text": "times to run. It takes",
+      "start": 22.64,
+      "end": 24.34,
+      "words": [
+        {
+          "w": "times",
+          "start": 22.64,
+          "end": 22.92
+        },
+        {
+          "w": "to",
+          "start": 22.92,
+          "end": 23.16
+        },
+        {
+          "w": "run.",
+          "start": 23.16,
+          "end": 23.5
+        },
+        {
+          "w": "It",
+          "start": 23.9,
+          "end": 24.08
+        },
+        {
+          "w": "takes",
+          "start": 24.08,
+          "end": 24.34
+        }
+      ]
+    },
+    {
+      "text": "a sequence of values and",
+      "start": 24.34,
+      "end": 25.78,
+      "words": [
+        {
+          "w": "a",
+          "start": 24.34,
+          "end": 24.58
+        },
+        {
+          "w": "sequence",
+          "start": 24.58,
+          "end": 24.86
+        },
+        {
+          "w": "of",
+          "start": 24.86,
+          "end": 25.18
+        },
+        {
+          "w": "values",
+          "start": 25.18,
+          "end": 25.54
+        },
+        {
+          "w": "and",
+          "start": 25.54,
+          "end": 25.78
+        }
+      ]
+    },
+    {
+      "text": "runs the block for each",
+      "start": 25.78,
+      "end": 26.98,
+      "words": [
+        {
+          "w": "runs",
+          "start": 25.78,
+          "end": 25.98
+        },
+        {
+          "w": "the",
+          "start": 25.98,
+          "end": 26.24
+        },
+        {
+          "w": "block",
+          "start": 26.24,
+          "end": 26.5
+        },
+        {
+          "w": "for",
+          "start": 26.5,
+          "end": 26.68
+        },
+        {
+          "w": "each",
+          "start": 26.68,
+          "end": 26.98
+        }
+      ]
+    },
+    {
+      "text": "one. Here we let the",
+      "start": 26.98,
+      "end": 28.44,
+      "words": [
+        {
+          "w": "one.",
+          "start": 26.98,
+          "end": 27.6
+        },
+        {
+          "w": "Here",
+          "start": 27.6,
+          "end": 27.82
+        },
+        {
+          "w": "we",
+          "start": 27.82,
+          "end": 28.02
+        },
+        {
+          "w": "let",
+          "start": 28.02,
+          "end": 28.2
+        },
+        {
+          "w": "the",
+          "start": 28.2,
+          "end": 28.44
+        }
+      ]
+    },
+    {
+      "text": "loop run over the numbers",
+      "start": 28.44,
+      "end": 29.82,
+      "words": [
+        {
+          "w": "loop",
+          "start": 28.44,
+          "end": 28.76
+        },
+        {
+          "w": "run",
+          "start": 28.76,
+          "end": 29.08
+        },
+        {
+          "w": "over",
+          "start": 29.08,
+          "end": 29.22
+        },
+        {
+          "w": "the",
+          "start": 29.22,
+          "end": 29.46
+        },
+        {
+          "w": "numbers",
+          "start": 29.46,
+          "end": 29.82
+        }
+      ]
+    },
+    {
+      "text": "three to seven and print",
+      "start": 29.82,
+      "end": 31.14,
+      "words": [
+        {
+          "w": "three",
+          "start": 29.82,
+          "end": 30.02
+        },
+        {
+          "w": "to",
+          "start": 30.02,
+          "end": 30.3
+        },
+        {
+          "w": "seven",
+          "start": 30.3,
+          "end": 30.56
+        },
+        {
+          "w": "and",
+          "start": 30.56,
+          "end": 30.76
+        },
+        {
+          "w": "print",
+          "start": 30.76,
+          "end": 31.14
+        }
+      ]
+    },
+    {
+      "text": "each. Now watch the code.",
+      "start": 31.58,
+      "end": 33.1,
+      "words": [
+        {
+          "w": "each.",
+          "start": 31.58,
+          "end": 31.78
+        },
+        {
+          "w": "Now",
+          "start": 31.78,
+          "end": 32.02
+        },
+        {
+          "w": "watch",
+          "start": 32.02,
+          "end": 32.22
+        },
+        {
+          "w": "the",
+          "start": 32.22,
+          "end": 32.5
+        },
+        {
+          "w": "code.",
+          "start": 32.96,
+          "end": 33.1
+        }
+      ]
+    },
+    {
+      "text": "The program first runs the",
+      "start": 33.1,
+      "end": 34.66,
+      "words": [
+        {
+          "w": "The",
+          "start": 33.1,
+          "end": 33.48
+        },
+        {
+          "w": "program",
+          "start": 33.48,
+          "end": 33.86
+        },
+        {
+          "w": "first",
+          "start": 33.86,
+          "end": 34.2
+        },
+        {
+          "w": "runs",
+          "start": 34.2,
+          "end": 34.48
+        },
+        {
+          "w": "the",
+          "start": 34.48,
+          "end": 34.66
+        }
+      ]
+    },
+    {
+      "text": "while example, then the for",
+      "start": 34.66,
+      "end": 36.72,
+      "words": [
+        {
+          "w": "while",
+          "start": 34.66,
+          "end": 35.24
+        },
+        {
+          "w": "example,",
+          "start": 35.68,
+          "end": 35.88
+        },
+        {
+          "w": "then",
+          "start": 35.88,
+          "end": 36.1
+        },
+        {
+          "w": "the",
+          "start": 36.1,
+          "end": 36.24
+        },
+        {
+          "w": "for",
+          "start": 36.24,
+          "end": 36.72
+        }
+      ]
+    },
+    {
+      "text": "example. Running it shows the",
+      "start": 37.2,
+      "end": 38.36,
+      "words": [
+        {
+          "w": "example.",
+          "start": 37.2,
+          "end": 37.42
+        },
+        {
+          "w": "Running",
+          "start": 37.42,
+          "end": 37.68
+        },
+        {
+          "w": "it",
+          "start": 37.68,
+          "end": 37.92
+        },
+        {
+          "w": "shows",
+          "start": 37.92,
+          "end": 38.1
+        },
+        {
+          "w": "the",
+          "start": 38.1,
+          "end": 38.36
+        }
+      ]
+    },
+    {
+      "text": "numbers one through four followed",
+      "start": 38.36,
+      "end": 39.94,
+      "words": [
+        {
+          "w": "numbers",
+          "start": 38.36,
+          "end": 38.76
+        },
+        {
+          "w": "one",
+          "start": 38.76,
+          "end": 39.0
+        },
+        {
+          "w": "through",
+          "start": 39.0,
+          "end": 39.36
+        },
+        {
+          "w": "four",
+          "start": 39.36,
+          "end": 39.62
+        },
+        {
+          "w": "followed",
+          "start": 39.62,
+          "end": 39.94
+        }
+      ]
+    },
+    {
+      "text": "by three through seven. That",
+      "start": 39.94,
+      "end": 41.86,
+      "words": [
+        {
+          "w": "by",
+          "start": 39.94,
+          "end": 40.22
+        },
+        {
+          "w": "three",
+          "start": 40.22,
+          "end": 40.48
+        },
+        {
+          "w": "through",
+          "start": 40.48,
+          "end": 40.92
+        },
+        {
+          "w": "seven.",
+          "start": 41.26,
+          "end": 41.5
+        },
+        {
+          "w": "That",
+          "start": 41.5,
+          "end": 41.86
+        }
+      ]
+    },
+    {
+      "text": "demonstrates how while repeats while",
+      "start": 41.86,
+      "end": 43.32,
+      "words": [
+        {
+          "w": "demonstrates",
+          "start": 41.86,
+          "end": 42.26
+        },
+        {
+          "w": "how",
+          "start": 42.26,
+          "end": 42.52
+        },
+        {
+          "w": "while",
+          "start": 42.52,
+          "end": 42.88
+        },
+        {
+          "w": "repeats",
+          "start": 42.88,
+          "end": 43.24
+        },
+        {
+          "w": "while",
+          "start": 43.24,
+          "end": 43.32
+        }
+      ]
+    },
+    {
+      "text": "a test is true, and",
+      "start": 43.32,
+      "end": 44.92,
+      "words": [
+        {
+          "w": "a",
+          "start": 43.32,
+          "end": 43.54
+        },
+        {
+          "w": "test",
+          "start": 43.54,
+          "end": 43.8
+        },
+        {
+          "w": "is",
+          "start": 43.8,
+          "end": 44.16
+        },
+        {
+          "w": "true,",
+          "start": 44.56,
+          "end": 44.72
+        },
+        {
+          "w": "and",
+          "start": 44.72,
+          "end": 44.92
+        }
+      ]
+    },
+    {
+      "text": "for repeats over a known",
+      "start": 44.92,
+      "end": 46.3,
+      "words": [
+        {
+          "w": "for",
+          "start": 44.92,
+          "end": 45.28
+        },
+        {
+          "w": "repeats",
+          "start": 45.28,
+          "end": 45.66
+        },
+        {
+          "w": "over",
+          "start": 45.66,
+          "end": 45.76
+        },
+        {
+          "w": "a",
+          "start": 45.76,
+          "end": 45.94
+        },
+        {
+          "w": "known",
+          "start": 45.94,
+          "end": 46.3
+        }
+      ]
+    },
+    {
+      "text": "collection.",
+      "start": 45.94,
+      "end": 46.3,
+      "words": [
+        {
+          "w": "collection.",
+          "start": 45.94,
+          "end": 46.3
+        }
+      ]
+    }
+  ]
+}

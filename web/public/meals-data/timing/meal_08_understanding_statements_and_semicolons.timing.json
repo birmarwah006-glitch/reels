@@ -1,0 +1,634 @@
+{
+  "meal_id": "meal_08_understanding_statements_and_semicolons",
+  "audio": "meal_08_understanding_statements_and_semicolons.mp3",
+  "duration": 32.856,
+  "alignment": "whisper",
+  "anchors": {
+    "Why does every line in C end with a tiny dot?": 0.0,
+    "In C a statement is a complete instruction for the computer.": 3.26,
+    "Remember: every statement needs a semicolon, and they execute in the order you write them.": 22.76,
+    "Now try writing three lines that print numbers, each ending with a semicolon.": 27.86
+  },
+  "captions": [
+    {
+      "text": "Why does every line in",
+      "start": 0.0,
+      "end": 1.4,
+      "words": [
+        {
+          "w": "Why",
+          "start": 0.0,
+          "end": 0.34
+        },
+        {
+          "w": "does",
+          "start": 0.34,
+          "end": 0.54
+        },
+        {
+          "w": "every",
+          "start": 0.54,
+          "end": 0.84
+        },
+        {
+          "w": "line",
+          "start": 0.84,
+          "end": 1.12
+        },
+        {
+          "w": "in",
+          "start": 1.12,
+          "end": 1.4
+        }
+      ]
+    },
+    {
+      "text": "C end with a tiny",
+      "start": 1.4,
+      "end": 2.46,
+      "words": [
+        {
+          "w": "C",
+          "start": 1.4,
+          "end": 1.56
+        },
+        {
+          "w": "end",
+          "start": 1.56,
+          "end": 1.92
+        },
+        {
+          "w": "with",
+          "start": 1.92,
+          "end": 2.14
+        },
+        {
+          "w": "a",
+          "start": 2.14,
+          "end": 2.3
+        },
+        {
+          "w": "tiny",
+          "start": 2.3,
+          "end": 2.46
+        }
+      ]
+    },
+    {
+      "text": "dot? In C a statement",
+      "start": 2.46,
+      "end": 4.06,
+      "words": [
+        {
+          "w": "dot?",
+          "start": 2.46,
+          "end": 2.78
+        },
+        {
+          "w": "In",
+          "start": 3.26,
+          "end": 3.38
+        },
+        {
+          "w": "C",
+          "start": 3.38,
+          "end": 3.58
+        },
+        {
+          "w": "a",
+          "start": 3.58,
+          "end": 3.82
+        },
+        {
+          "w": "statement",
+          "start": 3.82,
+          "end": 4.06
+        }
+      ]
+    },
+    {
+      "text": "is a complete instruction for",
+      "start": 4.06,
+      "end": 5.82,
+      "words": [
+        {
+          "w": "is",
+          "start": 4.06,
+          "end": 4.42
+        },
+        {
+          "w": "a",
+          "start": 4.42,
+          "end": 4.62
+        },
+        {
+          "w": "complete",
+          "start": 4.62,
+          "end": 4.9
+        },
+        {
+          "w": "instruction",
+          "start": 4.9,
+          "end": 5.44
+        },
+        {
+          "w": "for",
+          "start": 5.44,
+          "end": 5.82
+        }
+      ]
+    },
+    {
+      "text": "the computer. The semicolon tells",
+      "start": 5.82,
+      "end": 7.8,
+      "words": [
+        {
+          "w": "the",
+          "start": 5.82,
+          "end": 6.02
+        },
+        {
+          "w": "computer.",
+          "start": 6.02,
+          "end": 6.36
+        },
+        {
+          "w": "The",
+          "start": 6.86,
+          "end": 7.02
+        },
+        {
+          "w": "semicolon",
+          "start": 7.02,
+          "end": 7.46
+        },
+        {
+          "w": "tells",
+          "start": 7.46,
+          "end": 7.8
+        }
+      ]
+    },
+    {
+      "text": "the compiler where one instruction",
+      "start": 7.8,
+      "end": 9.54,
+      "words": [
+        {
+          "w": "the",
+          "start": 7.8,
+          "end": 8.0
+        },
+        {
+          "w": "compiler",
+          "start": 8.0,
+          "end": 8.34
+        },
+        {
+          "w": "where",
+          "start": 8.34,
+          "end": 8.74
+        },
+        {
+          "w": "one",
+          "start": 8.74,
+          "end": 9.08
+        },
+        {
+          "w": "instruction",
+          "start": 9.08,
+          "end": 9.54
+        }
+      ]
+    },
+    {
+      "text": "stops and the next begins.",
+      "start": 9.54,
+      "end": 11.08,
+      "words": [
+        {
+          "w": "stops",
+          "start": 9.54,
+          "end": 10.0
+        },
+        {
+          "w": "and",
+          "start": 10.0,
+          "end": 10.28
+        },
+        {
+          "w": "the",
+          "start": 10.28,
+          "end": 10.46
+        },
+        {
+          "w": "next",
+          "start": 10.46,
+          "end": 10.64
+        },
+        {
+          "w": "begins.",
+          "start": 10.64,
+          "end": 11.08
+        }
+      ]
+    },
+    {
+      "text": "The program runs statements one",
+      "start": 11.62,
+      "end": 13.2,
+      "words": [
+        {
+          "w": "The",
+          "start": 11.62,
+          "end": 11.7
+        },
+        {
+          "w": "program",
+          "start": 11.7,
+          "end": 12.04
+        },
+        {
+          "w": "runs",
+          "start": 12.04,
+          "end": 12.42
+        },
+        {
+          "w": "statements",
+          "start": 12.42,
+          "end": 12.74
+        },
+        {
+          "w": "one",
+          "start": 12.74,
+          "end": 13.2
+        }
+      ]
+    },
+    {
+      "text": "after another, from the first",
+      "start": 13.2,
+      "end": 15.14,
+      "words": [
+        {
+          "w": "after",
+          "start": 13.2,
+          "end": 13.54
+        },
+        {
+          "w": "another,",
+          "start": 13.54,
+          "end": 14.02
+        },
+        {
+          "w": "from",
+          "start": 14.02,
+          "end": 14.7
+        },
+        {
+          "w": "the",
+          "start": 14.7,
+          "end": 14.92
+        },
+        {
+          "w": "first",
+          "start": 14.92,
+          "end": 15.14
+        }
+      ]
+    },
+    {
+      "text": "to the last. Think of",
+      "start": 15.14,
+      "end": 16.68,
+      "words": [
+        {
+          "w": "to",
+          "start": 15.14,
+          "end": 15.36
+        },
+        {
+          "w": "the",
+          "start": 15.36,
+          "end": 15.48
+        },
+        {
+          "w": "last.",
+          "start": 15.48,
+          "end": 15.86
+        },
+        {
+          "w": "Think",
+          "start": 16.34,
+          "end": 16.52
+        },
+        {
+          "w": "of",
+          "start": 16.52,
+          "end": 16.68
+        }
+      ]
+    },
+    {
+      "text": "it as a train: each",
+      "start": 16.68,
+      "end": 18.3,
+      "words": [
+        {
+          "w": "it",
+          "start": 16.68,
+          "end": 16.86
+        },
+        {
+          "w": "as",
+          "start": 16.86,
+          "end": 17.04
+        },
+        {
+          "w": "a",
+          "start": 17.04,
+          "end": 17.18
+        },
+        {
+          "w": "train:",
+          "start": 17.18,
+          "end": 17.52
+        },
+        {
+          "w": "each",
+          "start": 18.16,
+          "end": 18.3
+        }
+      ]
+    },
+    {
+      "text": "car is a statement, and",
+      "start": 18.3,
+      "end": 19.84,
+      "words": [
+        {
+          "w": "car",
+          "start": 18.3,
+          "end": 18.58
+        },
+        {
+          "w": "is",
+          "start": 18.58,
+          "end": 18.78
+        },
+        {
+          "w": "a",
+          "start": 18.78,
+          "end": 19.0
+        },
+        {
+          "w": "statement,",
+          "start": 19.0,
+          "end": 19.28
+        },
+        {
+          "w": "and",
+          "start": 19.28,
+          "end": 19.84
+        }
+      ]
+    },
+    {
+      "text": "the semicolon is the coupler",
+      "start": 19.84,
+      "end": 21.16,
+      "words": [
+        {
+          "w": "the",
+          "start": 19.84,
+          "end": 20.04
+        },
+        {
+          "w": "semicolon",
+          "start": 20.04,
+          "end": 20.48
+        },
+        {
+          "w": "is",
+          "start": 20.48,
+          "end": 20.72
+        },
+        {
+          "w": "the",
+          "start": 20.72,
+          "end": 20.94
+        },
+        {
+          "w": "coupler",
+          "start": 20.94,
+          "end": 21.16
+        }
+      ]
+    },
+    {
+      "text": "that links them. Remember: every",
+      "start": 21.16,
+      "end": 23.8,
+      "words": [
+        {
+          "w": "that",
+          "start": 21.16,
+          "end": 21.42
+        },
+        {
+          "w": "links",
+          "start": 21.42,
+          "end": 21.6
+        },
+        {
+          "w": "them.",
+          "start": 21.6,
+          "end": 22.12
+        },
+        {
+          "w": "Remember:",
+          "start": 22.76,
+          "end": 22.78
+        },
+        {
+          "w": "every",
+          "start": 23.58,
+          "end": 23.8
+        }
+      ]
+    },
+    {
+      "text": "statement needs a semicolon, and",
+      "start": 23.8,
+      "end": 25.72,
+      "words": [
+        {
+          "w": "statement",
+          "start": 23.8,
+          "end": 24.16
+        },
+        {
+          "w": "needs",
+          "start": 24.16,
+          "end": 24.44
+        },
+        {
+          "w": "a",
+          "start": 24.44,
+          "end": 24.66
+        },
+        {
+          "w": "semicolon,",
+          "start": 24.66,
+          "end": 25.12
+        },
+        {
+          "w": "and",
+          "start": 25.12,
+          "end": 25.72
+        }
+      ]
+    },
+    {
+      "text": "they execute in the order",
+      "start": 25.72,
+      "end": 26.96,
+      "words": [
+        {
+          "w": "they",
+          "start": 25.72,
+          "end": 25.98
+        },
+        {
+          "w": "execute",
+          "start": 25.98,
+          "end": 26.32
+        },
+        {
+          "w": "in",
+          "start": 26.32,
+          "end": 26.62
+        },
+        {
+          "w": "the",
+          "start": 26.62,
+          "end": 26.82
+        },
+        {
+          "w": "order",
+          "start": 26.82,
+          "end": 26.96
+        }
+      ]
+    },
+    {
+      "text": "you write them. Now try",
+      "start": 26.96,
+      "end": 28.7,
+      "words": [
+        {
+          "w": "you",
+          "start": 26.96,
+          "end": 27.22
+        },
+        {
+          "w": "write",
+          "start": 27.22,
+          "end": 27.42
+        },
+        {
+          "w": "them.",
+          "start": 27.42,
+          "end": 27.86
+        },
+        {
+          "w": "Now",
+          "start": 27.86,
+          "end": 28.4
+        },
+        {
+          "w": "try",
+          "start": 28.4,
+          "end": 28.7
+        }
+      ]
+    },
+    {
+      "text": "writing three lines that print",
+      "start": 28.7,
+      "end": 30.14,
+      "words": [
+        {
+          "w": "writing",
+          "start": 28.7,
+          "end": 29.02
+        },
+        {
+          "w": "three",
+          "start": 29.02,
+          "end": 29.34
+        },
+        {
+          "w": "lines",
+          "start": 29.34,
+          "end": 29.7
+        },
+        {
+          "w": "that",
+          "start": 29.7,
+          "end": 29.94
+        },
+        {
+          "w": "print",
+          "start": 29.94,
+          "end": 30.14
+        }
+      ]
+    },
+    {
+      "text": "numbers, each ending with a",
+      "start": 30.14,
+      "end": 32.08,
+      "words": [
+        {
+          "w": "numbers,",
+          "start": 30.14,
+          "end": 30.58
+        },
+        {
+          "w": "each",
+          "start": 31.14,
+          "end": 31.34
+        },
+        {
+          "w": "ending",
+          "start": 31.34,
+          "end": 31.7
+        },
+        {
+          "w": "with",
+          "start": 31.7,
+          "end": 31.92
+        },
+        {
+          "w": "a",
+          "start": 31.92,
+          "end": 32.08
+        }
+      ]
+    },
+    {
+      "text": "semicolon.",
+      "start": 32.08,
+      "end": 32.5,
+      "words": [
+        {
+          "w": "semicolon.",
+          "start": 32.08,
+          "end": 32.5
+        }
+      ]
+    }
+  ]
+}

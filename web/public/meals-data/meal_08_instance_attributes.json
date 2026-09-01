@@ -1,0 +1,172 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_08_instance_attributes",
+    "title": "Instance attributes store data on each object",
+    "concept": "python.oop.classes",
+    "objective": "Store data on each object using self.attribute inside __init__",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.functions.define"
+    ],
+    "next_concepts": [
+      "python.oop.classes",
+      "python.oop.methods"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "attribute"
+    ],
+    "assumes": [
+      "self parameter",
+      "custom __init__ method"
+    ],
+    "voice": {
+      "script": "What if every student could remember their own name automatically? How do we store a unique name on each student object? Instance attributes let each object hold its own data. Inside the constructor we assign to self.name, which creates a name attribute that belongs to that particular instance. Now we write a class that saves the name. class Student: define a custom initializer that receives a name parameter and stores it on the object by assigning to self.name. Then we create two students, s1 with name Alice and s2 with name Bob. Finally we print each student's name. Running this prints each student's name, showing that s1 and s2 keep their own values. Remember: use self.attribute inside __init__ to create instance attributes. Create a second class called Account that stores a balance attribute and prints it for two accounts.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if every student could remember their own name automatically?"
+        },
+        "narration_anchor": "What if every student could remember their own name automatically?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do we store a unique name on each student object?"
+        },
+        "narration_anchor": "How do we store a unique name on each student object?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Student class",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "instance attributes",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "stores data"
+            }
+          ]
+        },
+        "narration_anchor": "Instance attributes let each object hold its own data."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "class Student:\n    def __init__(self, name):\n        self.name = name\n\ns1 = Student(\"Alice\")\ns2 = Student(\"Bob\")\nprint(s1.name)\nprint(s2.name)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "class Student:\n    def __init__(self, name):\n        self.name = name\n\ns1 = Student(\"Alice\")\ns2 = Student(\"Bob\")\nprint(s1.name)\nprint(s2.name)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "self.name"
+            }
+          ]
+        },
+        "narration_anchor": "Now we write a class that saves the name."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:33+00:00",
+            "stdout": "Alice\nBob\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running this prints each student's name, showing that s1 and s2 keep their own values.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Use self.attribute inside __init__ to give each object its own data."
+        },
+        "narration_anchor": "Remember: use self.attribute inside __init__ to create instance attributes.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Create a class Account with a balance attribute and print balances for two accounts."
+        },
+        "narration_anchor": "Create a second class called Account that stores a balance attribute and prints it for two accounts.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Create a class Account with a balance attribute and print balances for two accounts.",
+      "hint": "Define __init__ with a balance parameter and store it as self.balance."
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 8,
+      "total": 15,
+      "previous_id": "meal_07_write_a_custom_init_method",
+      "next_id": "meal_09_class_attributes"
+    }
+  }
+}

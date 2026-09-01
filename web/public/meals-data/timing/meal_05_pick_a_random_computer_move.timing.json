@@ -1,0 +1,719 @@
+{
+  "meal_id": "meal_05_pick_a_random_computer_move",
+  "audio": "meal_05_pick_a_random_computer_move.mp3",
+  "duration": 40.728,
+  "alignment": "whisper",
+  "anchors": {
+    "What if the computer could surprise you every round?": 0.0,
+    "How does the computer pick its move?": 3.18,
+    "computer_choice equals random dot choice of choices": 19.52,
+    "random.choice picks one element from a list at random.": 30.22,
+    "Try changing the list or printing computer_choice to see different results.": 34.42
+  },
+  "captions": [
+    {
+      "text": "What if the computer could",
+      "start": 0.0,
+      "end": 1.4,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.36
+        },
+        {
+          "w": "if",
+          "start": 0.36,
+          "end": 0.62
+        },
+        {
+          "w": "the",
+          "start": 0.62,
+          "end": 0.8
+        },
+        {
+          "w": "computer",
+          "start": 0.8,
+          "end": 1.1
+        },
+        {
+          "w": "could",
+          "start": 1.1,
+          "end": 1.4
+        }
+      ]
+    },
+    {
+      "text": "surprise you every round? How",
+      "start": 1.4,
+      "end": 3.34,
+      "words": [
+        {
+          "w": "surprise",
+          "start": 1.4,
+          "end": 1.82
+        },
+        {
+          "w": "you",
+          "start": 1.82,
+          "end": 2.16
+        },
+        {
+          "w": "every",
+          "start": 2.16,
+          "end": 2.38
+        },
+        {
+          "w": "round?",
+          "start": 2.38,
+          "end": 2.76
+        },
+        {
+          "w": "How",
+          "start": 3.18,
+          "end": 3.34
+        }
+      ]
+    },
+    {
+      "text": "does the computer pick its",
+      "start": 3.34,
+      "end": 4.6,
+      "words": [
+        {
+          "w": "does",
+          "start": 3.34,
+          "end": 3.52
+        },
+        {
+          "w": "the",
+          "start": 3.52,
+          "end": 3.76
+        },
+        {
+          "w": "computer",
+          "start": 3.76,
+          "end": 4.08
+        },
+        {
+          "w": "pick",
+          "start": 4.08,
+          "end": 4.32
+        },
+        {
+          "w": "its",
+          "start": 4.32,
+          "end": 4.6
+        }
+      ]
+    },
+    {
+      "text": "move? We already have a",
+      "start": 4.6,
+      "end": 6.4,
+      "words": [
+        {
+          "w": "move?",
+          "start": 4.6,
+          "end": 4.94
+        },
+        {
+          "w": "We",
+          "start": 5.38,
+          "end": 5.56
+        },
+        {
+          "w": "already",
+          "start": 5.56,
+          "end": 5.84
+        },
+        {
+          "w": "have",
+          "start": 5.84,
+          "end": 6.2
+        },
+        {
+          "w": "a",
+          "start": 6.2,
+          "end": 6.4
+        }
+      ]
+    },
+    {
+      "text": "list of possible moves. To",
+      "start": 6.4,
+      "end": 8.18,
+      "words": [
+        {
+          "w": "list",
+          "start": 6.4,
+          "end": 6.56
+        },
+        {
+          "w": "of",
+          "start": 6.56,
+          "end": 6.82
+        },
+        {
+          "w": "possible",
+          "start": 6.82,
+          "end": 7.14
+        },
+        {
+          "w": "moves.",
+          "start": 7.14,
+          "end": 7.62
+        },
+        {
+          "w": "To",
+          "start": 8.02,
+          "end": 8.18
+        }
+      ]
+    },
+    {
+      "text": "let the computer choose, we",
+      "start": 8.18,
+      "end": 9.42,
+      "words": [
+        {
+          "w": "let",
+          "start": 8.18,
+          "end": 8.34
+        },
+        {
+          "w": "the",
+          "start": 8.34,
+          "end": 8.58
+        },
+        {
+          "w": "computer",
+          "start": 8.58,
+          "end": 8.84
+        },
+        {
+          "w": "choose,",
+          "start": 8.84,
+          "end": 9.24
+        },
+        {
+          "w": "we",
+          "start": 9.4,
+          "end": 9.42
+        }
+      ]
+    },
+    {
+      "text": "use a tool called random.choice.",
+      "start": 9.42,
+      "end": 10.68,
+      "words": [
+        {
+          "w": "use",
+          "start": 9.42,
+          "end": 9.64
+        },
+        {
+          "w": "a",
+          "start": 9.64,
+          "end": 9.8
+        },
+        {
+          "w": "tool",
+          "start": 9.8,
+          "end": 10.0
+        },
+        {
+          "w": "called",
+          "start": 10.0,
+          "end": 10.34
+        },
+        {
+          "w": "random.choice.",
+          "start": 10.34,
+          "end": 10.68
+        }
+      ]
+    },
+    {
+      "text": "Random is the module that",
+      "start": 10.68,
+      "end": 12.88,
+      "words": [
+        {
+          "w": "Random",
+          "start": 10.68,
+          "end": 11.44
+        },
+        {
+          "w": "is",
+          "start": 12.0,
+          "end": 12.12
+        },
+        {
+          "w": "the",
+          "start": 12.12,
+          "end": 12.34
+        },
+        {
+          "w": "module",
+          "start": 12.34,
+          "end": 12.52
+        },
+        {
+          "w": "that",
+          "start": 12.52,
+          "end": 12.88
+        }
+      ]
+    },
+    {
+      "text": "gives us unpredictable behavior, and",
+      "start": 12.88,
+      "end": 14.68,
+      "words": [
+        {
+          "w": "gives",
+          "start": 12.88,
+          "end": 13.1
+        },
+        {
+          "w": "us",
+          "start": 13.1,
+          "end": 13.3
+        },
+        {
+          "w": "unpredictable",
+          "start": 13.3,
+          "end": 13.66
+        },
+        {
+          "w": "behavior,",
+          "start": 13.66,
+          "end": 14.08
+        },
+        {
+          "w": "and",
+          "start": 14.08,
+          "end": 14.68
+        }
+      ]
+    },
+    {
+      "text": "choice selects one item from",
+      "start": 14.68,
+      "end": 16.72,
+      "words": [
+        {
+          "w": "choice",
+          "start": 14.68,
+          "end": 15.42
+        },
+        {
+          "w": "selects",
+          "start": 15.42,
+          "end": 15.72
+        },
+        {
+          "w": "one",
+          "start": 15.72,
+          "end": 16.28
+        },
+        {
+          "w": "item",
+          "start": 16.28,
+          "end": 16.44
+        },
+        {
+          "w": "from",
+          "start": 16.44,
+          "end": 16.72
+        }
+      ]
+    },
+    {
+      "text": "a list at random. So",
+      "start": 16.72,
+      "end": 17.86,
+      "words": [
+        {
+          "w": "a",
+          "start": 16.72,
+          "end": 17.02
+        },
+        {
+          "w": "list",
+          "start": 17.02,
+          "end": 17.2
+        },
+        {
+          "w": "at",
+          "start": 17.2,
+          "end": 17.3
+        },
+        {
+          "w": "random.",
+          "start": 17.3,
+          "end": 17.52
+        },
+        {
+          "w": "So",
+          "start": 17.52,
+          "end": 17.86
+        }
+      ]
+    },
+    {
+      "text": "we write a line that",
+      "start": 18.36,
+      "end": 19.3,
+      "words": [
+        {
+          "w": "we",
+          "start": 18.36,
+          "end": 18.48
+        },
+        {
+          "w": "write",
+          "start": 18.48,
+          "end": 18.62
+        },
+        {
+          "w": "a",
+          "start": 18.62,
+          "end": 18.82
+        },
+        {
+          "w": "line",
+          "start": 18.82,
+          "end": 19.02
+        },
+        {
+          "w": "that",
+          "start": 19.02,
+          "end": 19.3
+        }
+      ]
+    },
+    {
+      "text": "says computer_choice equals random dot",
+      "start": 19.3,
+      "end": 20.98,
+      "words": [
+        {
+          "w": "says",
+          "start": 19.3,
+          "end": 19.52
+        },
+        {
+          "w": "computer_choice",
+          "start": 19.52,
+          "end": 19.78
+        },
+        {
+          "w": "equals",
+          "start": 19.78,
+          "end": 20.12
+        },
+        {
+          "w": "random",
+          "start": 20.12,
+          "end": 20.58
+        },
+        {
+          "w": "dot",
+          "start": 20.58,
+          "end": 20.98
+        }
+      ]
+    },
+    {
+      "text": "choice of choices. This stores",
+      "start": 20.98,
+      "end": 22.96,
+      "words": [
+        {
+          "w": "choice",
+          "start": 20.98,
+          "end": 21.32
+        },
+        {
+          "w": "of",
+          "start": 21.32,
+          "end": 21.78
+        },
+        {
+          "w": "choices.",
+          "start": 21.78,
+          "end": 22.32
+        },
+        {
+          "w": "This",
+          "start": 22.32,
+          "end": 22.52
+        },
+        {
+          "w": "stores",
+          "start": 22.52,
+          "end": 22.96
+        }
+      ]
+    },
+    {
+      "text": "a random move in the",
+      "start": 23.38,
+      "end": 24.92,
+      "words": [
+        {
+          "w": "a",
+          "start": 23.38,
+          "end": 23.6
+        },
+        {
+          "w": "random",
+          "start": 23.6,
+          "end": 23.96
+        },
+        {
+          "w": "move",
+          "start": 23.96,
+          "end": 24.22
+        },
+        {
+          "w": "in",
+          "start": 24.22,
+          "end": 24.5
+        },
+        {
+          "w": "the",
+          "start": 24.5,
+          "end": 24.92
+        }
+      ]
+    },
+    {
+      "text": "variable computer_choice. Now the computer",
+      "start": 24.92,
+      "end": 26.46,
+      "words": [
+        {
+          "w": "variable",
+          "start": 24.92,
+          "end": 25.18
+        },
+        {
+          "w": "computer_choice.",
+          "start": 25.18,
+          "end": 25.3
+        },
+        {
+          "w": "Now",
+          "start": 25.3,
+          "end": 25.62
+        },
+        {
+          "w": "the",
+          "start": 25.62,
+          "end": 26.06
+        },
+        {
+          "w": "computer",
+          "start": 26.06,
+          "end": 26.46
+        }
+      ]
+    },
+    {
+      "text": "has its own hidden pick,",
+      "start": 26.46,
+      "end": 28.32,
+      "words": [
+        {
+          "w": "has",
+          "start": 26.46,
+          "end": 26.92
+        },
+        {
+          "w": "its",
+          "start": 27.34,
+          "end": 27.56
+        },
+        {
+          "w": "own",
+          "start": 27.56,
+          "end": 27.74
+        },
+        {
+          "w": "hidden",
+          "start": 27.74,
+          "end": 28.04
+        },
+        {
+          "w": "pick,",
+          "start": 28.04,
+          "end": 28.32
+        }
+      ]
+    },
+    {
+      "text": "ready for the showdown. Remember:",
+      "start": 28.32,
+      "end": 30.22,
+      "words": [
+        {
+          "w": "ready",
+          "start": 28.32,
+          "end": 28.6
+        },
+        {
+          "w": "for",
+          "start": 28.6,
+          "end": 28.78
+        },
+        {
+          "w": "the",
+          "start": 28.78,
+          "end": 29.06
+        },
+        {
+          "w": "showdown.",
+          "start": 29.06,
+          "end": 29.42
+        },
+        {
+          "w": "Remember:",
+          "start": 29.42,
+          "end": 30.22
+        }
+      ]
+    },
+    {
+      "text": "random.choice picks one element from",
+      "start": 30.22,
+      "end": 32.94,
+      "words": [
+        {
+          "w": "random.choice",
+          "start": 30.22,
+          "end": 30.48
+        },
+        {
+          "w": "picks",
+          "start": 30.48,
+          "end": 30.66
+        },
+        {
+          "w": "one",
+          "start": 30.66,
+          "end": 31.28
+        },
+        {
+          "w": "element",
+          "start": 31.54,
+          "end": 31.92
+        },
+        {
+          "w": "from",
+          "start": 32.74,
+          "end": 32.94
+        }
+      ]
+    },
+    {
+      "text": "a list at random. Try",
+      "start": 32.94,
+      "end": 34.72,
+      "words": [
+        {
+          "w": "a",
+          "start": 32.94,
+          "end": 33.58
+        },
+        {
+          "w": "list",
+          "start": 33.58,
+          "end": 33.8
+        },
+        {
+          "w": "at",
+          "start": 33.8,
+          "end": 34.12
+        },
+        {
+          "w": "random.",
+          "start": 34.12,
+          "end": 34.42
+        },
+        {
+          "w": "Try",
+          "start": 34.42,
+          "end": 34.72
+        }
+      ]
+    },
+    {
+      "text": "changing the list or printing",
+      "start": 34.72,
+      "end": 36.4,
+      "words": [
+        {
+          "w": "changing",
+          "start": 34.72,
+          "end": 34.82
+        },
+        {
+          "w": "the",
+          "start": 34.82,
+          "end": 35.04
+        },
+        {
+          "w": "list",
+          "start": 35.04,
+          "end": 35.28
+        },
+        {
+          "w": "or",
+          "start": 35.28,
+          "end": 35.6
+        },
+        {
+          "w": "printing",
+          "start": 36.12,
+          "end": 36.4
+        }
+      ]
+    },
+    {
+      "text": "computer_choice to see different results.",
+      "start": 36.4,
+      "end": 37.98,
+      "words": [
+        {
+          "w": "computer_choice",
+          "start": 36.4,
+          "end": 36.8
+        },
+        {
+          "w": "to",
+          "start": 36.8,
+          "end": 37.08
+        },
+        {
+          "w": "see",
+          "start": 37.08,
+          "end": 37.36
+        },
+        {
+          "w": "different",
+          "start": 37.36,
+          "end": 37.66
+        },
+        {
+          "w": "results.",
+          "start": 37.66,
+          "end": 37.98
+        }
+      ]
+    }
+  ]
+}

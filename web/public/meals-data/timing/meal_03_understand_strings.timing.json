@@ -1,0 +1,716 @@
+{
+  "meal_id": "meal_03_understand_strings",
+  "audio": "meal_03_understand_strings.mp3",
+  "duration": 37.704,
+  "alignment": "whisper",
+  "anchors": {
+    "What does a piece of text look like in code?": 0.0,
+    "How do we store words like rock or paper?": 2.74,
+    "In Python a string is a piece of text written inside single or double quotes.": 5.4,
+    "Now we create three string variables for the moves and print them.": 18.64,
+    "Running this prints each word on its own line.": 27.5,
+    "Remember, strings are just text inside quotes.": 30.7,
+    "Try adding a new move called lizard as a string and print it.": 34.16
+  },
+  "captions": [
+    {
+      "text": "What does a piece of",
+      "start": 0.0,
+      "end": 0.96,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.26
+        },
+        {
+          "w": "does",
+          "start": 0.26,
+          "end": 0.44
+        },
+        {
+          "w": "a",
+          "start": 0.44,
+          "end": 0.56
+        },
+        {
+          "w": "piece",
+          "start": 0.56,
+          "end": 0.76
+        },
+        {
+          "w": "of",
+          "start": 0.76,
+          "end": 0.96
+        }
+      ]
+    },
+    {
+      "text": "text look like in code?",
+      "start": 0.96,
+      "end": 2.32,
+      "words": [
+        {
+          "w": "text",
+          "start": 0.96,
+          "end": 1.28
+        },
+        {
+          "w": "look",
+          "start": 1.28,
+          "end": 1.54
+        },
+        {
+          "w": "like",
+          "start": 1.54,
+          "end": 1.82
+        },
+        {
+          "w": "in",
+          "start": 1.82,
+          "end": 2.0
+        },
+        {
+          "w": "code?",
+          "start": 2.0,
+          "end": 2.32
+        }
+      ]
+    },
+    {
+      "text": "How do we store words",
+      "start": 2.74,
+      "end": 3.74,
+      "words": [
+        {
+          "w": "How",
+          "start": 2.74,
+          "end": 2.88
+        },
+        {
+          "w": "do",
+          "start": 2.88,
+          "end": 2.98
+        },
+        {
+          "w": "we",
+          "start": 2.98,
+          "end": 3.14
+        },
+        {
+          "w": "store",
+          "start": 3.14,
+          "end": 3.44
+        },
+        {
+          "w": "words",
+          "start": 3.44,
+          "end": 3.74
+        }
+      ]
+    },
+    {
+      "text": "like rock or paper? In",
+      "start": 3.74,
+      "end": 5.5,
+      "words": [
+        {
+          "w": "like",
+          "start": 3.74,
+          "end": 4.08
+        },
+        {
+          "w": "rock",
+          "start": 4.08,
+          "end": 4.36
+        },
+        {
+          "w": "or",
+          "start": 4.36,
+          "end": 4.56
+        },
+        {
+          "w": "paper?",
+          "start": 4.56,
+          "end": 4.96
+        },
+        {
+          "w": "In",
+          "start": 5.4,
+          "end": 5.5
+        }
+      ]
+    },
+    {
+      "text": "Python a string is a",
+      "start": 5.5,
+      "end": 6.66,
+      "words": [
+        {
+          "w": "Python",
+          "start": 5.5,
+          "end": 5.82
+        },
+        {
+          "w": "a",
+          "start": 5.82,
+          "end": 6.12
+        },
+        {
+          "w": "string",
+          "start": 6.12,
+          "end": 6.28
+        },
+        {
+          "w": "is",
+          "start": 6.28,
+          "end": 6.56
+        },
+        {
+          "w": "a",
+          "start": 6.56,
+          "end": 6.66
+        }
+      ]
+    },
+    {
+      "text": "piece of text written inside",
+      "start": 6.66,
+      "end": 8.08,
+      "words": [
+        {
+          "w": "piece",
+          "start": 6.66,
+          "end": 6.84
+        },
+        {
+          "w": "of",
+          "start": 6.84,
+          "end": 7.06
+        },
+        {
+          "w": "text",
+          "start": 7.06,
+          "end": 7.36
+        },
+        {
+          "w": "written",
+          "start": 7.36,
+          "end": 7.64
+        },
+        {
+          "w": "inside",
+          "start": 7.64,
+          "end": 8.08
+        }
+      ]
+    },
+    {
+      "text": "single or double quotes. For",
+      "start": 8.08,
+      "end": 10.02,
+      "words": [
+        {
+          "w": "single",
+          "start": 8.08,
+          "end": 8.48
+        },
+        {
+          "w": "or",
+          "start": 8.48,
+          "end": 8.74
+        },
+        {
+          "w": "double",
+          "start": 8.74,
+          "end": 8.98
+        },
+        {
+          "w": "quotes.",
+          "start": 8.98,
+          "end": 9.42
+        },
+        {
+          "w": "For",
+          "start": 9.88,
+          "end": 10.02
+        }
+      ]
+    },
+    {
+      "text": "example, the word rock becomes",
+      "start": 10.02,
+      "end": 11.82,
+      "words": [
+        {
+          "w": "example,",
+          "start": 10.02,
+          "end": 10.44
+        },
+        {
+          "w": "the",
+          "start": 10.92,
+          "end": 11.0
+        },
+        {
+          "w": "word",
+          "start": 11.0,
+          "end": 11.2
+        },
+        {
+          "w": "rock",
+          "start": 11.2,
+          "end": 11.5
+        },
+        {
+          "w": "becomes",
+          "start": 11.5,
+          "end": 11.82
+        }
+      ]
+    },
+    {
+      "text": "a string when we write",
+      "start": 11.82,
+      "end": 13.04,
+      "words": [
+        {
+          "w": "a",
+          "start": 11.82,
+          "end": 12.14
+        },
+        {
+          "w": "string",
+          "start": 12.14,
+          "end": 12.36
+        },
+        {
+          "w": "when",
+          "start": 12.36,
+          "end": 12.6
+        },
+        {
+          "w": "we",
+          "start": 12.6,
+          "end": 12.76
+        },
+        {
+          "w": "write",
+          "start": 12.76,
+          "end": 13.04
+        }
+      ]
+    },
+    {
+      "text": "\"rock\". Strings let us represent",
+      "start": 13.04,
+      "end": 15.22,
+      "words": [
+        {
+          "w": "\"rock\".",
+          "start": 13.04,
+          "end": 13.66
+        },
+        {
+          "w": "Strings",
+          "start": 14.16,
+          "end": 14.56
+        },
+        {
+          "w": "let",
+          "start": 14.56,
+          "end": 14.62
+        },
+        {
+          "w": "us",
+          "start": 14.62,
+          "end": 14.82
+        },
+        {
+          "w": "represent",
+          "start": 14.82,
+          "end": 15.22
+        }
+      ]
+    },
+    {
+      "text": "words, sentences, or any characters.",
+      "start": 15.22,
+      "end": 18.08,
+      "words": [
+        {
+          "w": "words,",
+          "start": 15.22,
+          "end": 15.84
+        },
+        {
+          "w": "sentences,",
+          "start": 16.3,
+          "end": 16.5
+        },
+        {
+          "w": "or",
+          "start": 17.22,
+          "end": 17.46
+        },
+        {
+          "w": "any",
+          "start": 17.46,
+          "end": 17.66
+        },
+        {
+          "w": "characters.",
+          "start": 17.66,
+          "end": 18.08
+        }
+      ]
+    },
+    {
+      "text": "Now we create three string",
+      "start": 18.64,
+      "end": 19.96,
+      "words": [
+        {
+          "w": "Now",
+          "start": 18.64,
+          "end": 18.86
+        },
+        {
+          "w": "we",
+          "start": 18.86,
+          "end": 19.02
+        },
+        {
+          "w": "create",
+          "start": 19.02,
+          "end": 19.32
+        },
+        {
+          "w": "three",
+          "start": 19.32,
+          "end": 19.68
+        },
+        {
+          "w": "string",
+          "start": 19.68,
+          "end": 19.96
+        }
+      ]
+    },
+    {
+      "text": "variables for the moves and",
+      "start": 19.96,
+      "end": 21.46,
+      "words": [
+        {
+          "w": "variables",
+          "start": 19.96,
+          "end": 20.36
+        },
+        {
+          "w": "for",
+          "start": 20.36,
+          "end": 20.74
+        },
+        {
+          "w": "the",
+          "start": 20.74,
+          "end": 20.92
+        },
+        {
+          "w": "moves",
+          "start": 20.92,
+          "end": 21.14
+        },
+        {
+          "w": "and",
+          "start": 21.14,
+          "end": 21.46
+        }
+      ]
+    },
+    {
+      "text": "print them. The program defines",
+      "start": 21.46,
+      "end": 23.16,
+      "words": [
+        {
+          "w": "print",
+          "start": 21.46,
+          "end": 21.66
+        },
+        {
+          "w": "them.",
+          "start": 21.66,
+          "end": 22.04
+        },
+        {
+          "w": "The",
+          "start": 22.34,
+          "end": 22.5
+        },
+        {
+          "w": "program",
+          "start": 22.5,
+          "end": 22.8
+        },
+        {
+          "w": "defines",
+          "start": 22.8,
+          "end": 23.16
+        }
+      ]
+    },
+    {
+      "text": "rock, paper, and scissors as",
+      "start": 23.16,
+      "end": 25.82,
+      "words": [
+        {
+          "w": "rock,",
+          "start": 23.16,
+          "end": 23.64
+        },
+        {
+          "w": "paper,",
+          "start": 24.2,
+          "end": 24.52
+        },
+        {
+          "w": "and",
+          "start": 25.02,
+          "end": 25.18
+        },
+        {
+          "w": "scissors",
+          "start": 25.18,
+          "end": 25.5
+        },
+        {
+          "w": "as",
+          "start": 25.5,
+          "end": 25.82
+        }
+      ]
+    },
+    {
+      "text": "strings and prints each one.",
+      "start": 25.82,
+      "end": 27.5,
+      "words": [
+        {
+          "w": "strings",
+          "start": 25.82,
+          "end": 26.14
+        },
+        {
+          "w": "and",
+          "start": 26.14,
+          "end": 26.46
+        },
+        {
+          "w": "prints",
+          "start": 26.46,
+          "end": 26.78
+        },
+        {
+          "w": "each",
+          "start": 26.78,
+          "end": 27.04
+        },
+        {
+          "w": "one.",
+          "start": 27.04,
+          "end": 27.5
+        }
+      ]
+    },
+    {
+      "text": "Running this prints each word",
+      "start": 27.5,
+      "end": 29.24,
+      "words": [
+        {
+          "w": "Running",
+          "start": 27.5,
+          "end": 27.98
+        },
+        {
+          "w": "this",
+          "start": 27.98,
+          "end": 28.26
+        },
+        {
+          "w": "prints",
+          "start": 28.26,
+          "end": 28.54
+        },
+        {
+          "w": "each",
+          "start": 28.54,
+          "end": 28.92
+        },
+        {
+          "w": "word",
+          "start": 28.92,
+          "end": 29.24
+        }
+      ]
+    },
+    {
+      "text": "on its own line. Remember,",
+      "start": 29.24,
+      "end": 31.06,
+      "words": [
+        {
+          "w": "on",
+          "start": 29.24,
+          "end": 29.5
+        },
+        {
+          "w": "its",
+          "start": 29.5,
+          "end": 29.66
+        },
+        {
+          "w": "own",
+          "start": 29.66,
+          "end": 29.84
+        },
+        {
+          "w": "line.",
+          "start": 29.84,
+          "end": 30.28
+        },
+        {
+          "w": "Remember,",
+          "start": 30.7,
+          "end": 31.06
+        }
+      ]
+    },
+    {
+      "text": "strings are just text inside",
+      "start": 31.68,
+      "end": 33.18,
+      "words": [
+        {
+          "w": "strings",
+          "start": 31.68,
+          "end": 31.92
+        },
+        {
+          "w": "are",
+          "start": 31.92,
+          "end": 32.22
+        },
+        {
+          "w": "just",
+          "start": 32.22,
+          "end": 32.46
+        },
+        {
+          "w": "text",
+          "start": 32.46,
+          "end": 32.74
+        },
+        {
+          "w": "inside",
+          "start": 32.74,
+          "end": 33.18
+        }
+      ]
+    },
+    {
+      "text": "quotes. Try adding a new",
+      "start": 33.18,
+      "end": 35.06,
+      "words": [
+        {
+          "w": "quotes.",
+          "start": 33.18,
+          "end": 33.72
+        },
+        {
+          "w": "Try",
+          "start": 34.16,
+          "end": 34.32
+        },
+        {
+          "w": "adding",
+          "start": 34.32,
+          "end": 34.62
+        },
+        {
+          "w": "a",
+          "start": 34.62,
+          "end": 34.88
+        },
+        {
+          "w": "new",
+          "start": 34.88,
+          "end": 35.06
+        }
+      ]
+    },
+    {
+      "text": "move called lizard as a",
+      "start": 35.06,
+      "end": 36.48,
+      "words": [
+        {
+          "w": "move",
+          "start": 35.06,
+          "end": 35.34
+        },
+        {
+          "w": "called",
+          "start": 35.34,
+          "end": 35.64
+        },
+        {
+          "w": "lizard",
+          "start": 35.64,
+          "end": 36.02
+        },
+        {
+          "w": "as",
+          "start": 36.02,
+          "end": 36.34
+        },
+        {
+          "w": "a",
+          "start": 36.34,
+          "end": 36.48
+        }
+      ]
+    },
+    {
+      "text": "string and print it.",
+      "start": 36.48,
+      "end": 37.36,
+      "words": [
+        {
+          "w": "string",
+          "start": 36.48,
+          "end": 36.68
+        },
+        {
+          "w": "and",
+          "start": 36.68,
+          "end": 36.98
+        },
+        {
+          "w": "print",
+          "start": 36.98,
+          "end": 37.14
+        },
+        {
+          "w": "it.",
+          "start": 37.14,
+          "end": 37.36
+        }
+      ]
+    }
+  ]
+}

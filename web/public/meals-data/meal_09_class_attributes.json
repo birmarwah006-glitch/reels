@@ -1,0 +1,171 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_09_class_attributes",
+    "title": "Class attributes shared by all instances",
+    "concept": "python.oop.classes",
+    "objective": "Define a variable on a class that is shared by every instance",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.functions.define"
+    ],
+    "next_concepts": [
+      "python.oop.methods",
+      "python.oop.methods"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "class attribute"
+    ],
+    "assumes": [
+      "class definition syntax"
+    ],
+    "voice": {
+      "script": "What if every car you built automatically came out blue? How can we give all objects the same value without setting it each time? A class attribute lives on the class itself, so every instance shares it. Here\u2019s a simple class with a shared counter. Running the program shows both students see the same total count. Class attributes let you store data common to all objects. Add a class attribute to track how many accounts have been created.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if every car you built automatically came out blue?"
+        },
+        "narration_anchor": "What if every car you built automatically came out blue?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How can we give all objects the same value without setting it each time?"
+        },
+        "narration_anchor": "How can we give all objects the same value without setting it each time?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Class attribute",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Shared value",
+              "kind": "value"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "is accessed by"
+            }
+          ]
+        },
+        "narration_anchor": "A class attribute lives on the class itself, so every instance shares it."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "class Student:\n    total = 0\n    def __init__(self, name):\n        self.name = name\n        Student.total += 1\n\ns1 = Student('Alice')\ns2 = Student('Bob')\nprint('Students created:', Student.total)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "class Student:\n    total = 0\n    def __init__(self, name):\n        self.name = name\n        Student.total += 1\n\ns1 = Student('Alice')\ns2 = Student('Bob')\nprint('Students created:', Student.total)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "Student.total"
+            }
+          ]
+        },
+        "narration_anchor": "Here\u2019s a simple class with a shared counter."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:33+00:00",
+            "stdout": "Students created: 2\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running the program shows both students see the same total count.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Class attributes let you store data common to all objects."
+        },
+        "narration_anchor": "Class attributes let you store data common to all objects.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Add a class attribute to track how many accounts have been created."
+        },
+        "narration_anchor": "Add a class attribute to track how many accounts have been created.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Add a class attribute to track how many accounts have been created."
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 9,
+      "total": 15,
+      "previous_id": "meal_08_instance_attributes",
+      "next_id": "meal_10_define_a_method"
+    }
+  }
+}

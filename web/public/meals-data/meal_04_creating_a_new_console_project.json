@@ -1,0 +1,108 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_04_creating_a_new_console_project",
+    "title": "Creating a New Console Project in Code::Blocks",
+    "concept": "c.project.overview",
+    "objective": "Start a new C console application project in Code::Blocks",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "console project"
+    ],
+    "assumes": [
+      "Code::Blocks",
+      "GCC"
+    ],
+    "voice": {
+      "script": "Want to see how a fresh C project appears in Code::Blocks? How do you start a new console application in Code::Blocks? A console project is a program that runs in a text window. Open Code::Blocks and choose File then New then Project. Pick Console application, click Go, select C language, then press Next. Give your project a name, choose a folder, and finish. Code::Blocks creates a main file with a simple function that returns zero. You can now type your code and press Build and Run to see the output. Remember, a new console project gives you a ready\u2011made main function to start coding. Now, create your own console project and run the empty program.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Want to see how a fresh C project appears in Code::Blocks?"
+        },
+        "narration_anchor": "Want to see how a fresh C project appears in Code::Blocks?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you start a new console application in Code::Blocks?"
+        },
+        "narration_anchor": "How do you start a new console application in Code::Blocks?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "New console project",
+              "kind": "box"
+            }
+          ],
+          "edges": []
+        },
+        "narration_anchor": "A console project is a program that runs in a text window."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A new console project gives you a ready\u2011made main function to start coding."
+        },
+        "narration_anchor": "Remember, a new console project gives you a ready\u2011made main function to start coding.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Create your own console project and run the empty program."
+        },
+        "narration_anchor": "Now, create your own console project and run the empty program.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Create your own console project and run the empty program."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 4,
+      "total": 22,
+      "previous_id": "meal_03_setting_gcc_as_the_default_compiler",
+      "next_id": "meal_05_understanding_the_generated_main_c_file"
+    }
+  }
+}

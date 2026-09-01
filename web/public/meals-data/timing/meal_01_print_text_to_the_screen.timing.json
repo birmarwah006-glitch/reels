@@ -1,0 +1,349 @@
+{
+  "meal_id": "meal_01_print_text_to_the_screen",
+  "audio": "meal_01_print_text_to_the_screen.mp3",
+  "duration": 16.776,
+  "alignment": "whisper",
+  "anchors": {
+    "What appears when you tell Python to speak?": 0.0,
+    "The word print is a built\u2011in function that sends whatever you give it to the screen.": 4.28
+  },
+  "captions": [
+    {
+      "text": "What appears when you tell",
+      "start": 0.0,
+      "end": 1.42,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.34
+        },
+        {
+          "w": "appears",
+          "start": 0.34,
+          "end": 0.74
+        },
+        {
+          "w": "when",
+          "start": 0.74,
+          "end": 1.1
+        },
+        {
+          "w": "you",
+          "start": 1.1,
+          "end": 1.2
+        },
+        {
+          "w": "tell",
+          "start": 1.2,
+          "end": 1.42
+        }
+      ]
+    },
+    {
+      "text": "Python to speak? That's what",
+      "start": 1.42,
+      "end": 3.2,
+      "words": [
+        {
+          "w": "Python",
+          "start": 1.42,
+          "end": 1.74
+        },
+        {
+          "w": "to",
+          "start": 1.74,
+          "end": 2.04
+        },
+        {
+          "w": "speak?",
+          "start": 2.04,
+          "end": 2.36
+        },
+        {
+          "w": "That's",
+          "start": 2.82,
+          "end": 3.08
+        },
+        {
+          "w": "what",
+          "start": 3.08,
+          "end": 3.2
+        }
+      ]
+    },
+    {
+      "text": "print does. The word print",
+      "start": 3.2,
+      "end": 4.94,
+      "words": [
+        {
+          "w": "print",
+          "start": 3.2,
+          "end": 3.44
+        },
+        {
+          "w": "does.",
+          "start": 3.44,
+          "end": 3.86
+        },
+        {
+          "w": "The",
+          "start": 4.28,
+          "end": 4.4
+        },
+        {
+          "w": "word",
+          "start": 4.4,
+          "end": 4.6
+        },
+        {
+          "w": "print",
+          "start": 4.6,
+          "end": 4.94
+        }
+      ]
+    },
+    {
+      "text": "is a built\u2011in function that",
+      "start": 4.94,
+      "end": 6.1,
+      "words": [
+        {
+          "w": "is",
+          "start": 4.94,
+          "end": 5.18
+        },
+        {
+          "w": "a",
+          "start": 5.18,
+          "end": 5.34
+        },
+        {
+          "w": "built\u2011in",
+          "start": 5.34,
+          "end": 5.54
+        },
+        {
+          "w": "function",
+          "start": 5.54,
+          "end": 5.74
+        },
+        {
+          "w": "that",
+          "start": 5.74,
+          "end": 6.1
+        }
+      ]
+    },
+    {
+      "text": "sends whatever you give it",
+      "start": 6.1,
+      "end": 7.4,
+      "words": [
+        {
+          "w": "sends",
+          "start": 6.1,
+          "end": 6.44
+        },
+        {
+          "w": "whatever",
+          "start": 6.44,
+          "end": 6.7
+        },
+        {
+          "w": "you",
+          "start": 6.7,
+          "end": 7.04
+        },
+        {
+          "w": "give",
+          "start": 7.04,
+          "end": 7.26
+        },
+        {
+          "w": "it",
+          "start": 7.26,
+          "end": 7.4
+        }
+      ]
+    },
+    {
+      "text": "to the screen. You write",
+      "start": 7.4,
+      "end": 8.76,
+      "words": [
+        {
+          "w": "to",
+          "start": 7.4,
+          "end": 7.62
+        },
+        {
+          "w": "the",
+          "start": 7.62,
+          "end": 7.74
+        },
+        {
+          "w": "screen.",
+          "start": 7.74,
+          "end": 7.84
+        },
+        {
+          "w": "You",
+          "start": 7.84,
+          "end": 8.18
+        },
+        {
+          "w": "write",
+          "start": 8.58,
+          "end": 8.76
+        }
+      ]
+    },
+    {
+      "text": "print followed by parentheses and",
+      "start": 8.76,
+      "end": 10.32,
+      "words": [
+        {
+          "w": "print",
+          "start": 8.76,
+          "end": 8.96
+        },
+        {
+          "w": "followed",
+          "start": 8.96,
+          "end": 9.34
+        },
+        {
+          "w": "by",
+          "start": 9.34,
+          "end": 9.64
+        },
+        {
+          "w": "parentheses",
+          "start": 9.64,
+          "end": 9.9
+        },
+        {
+          "w": "and",
+          "start": 9.9,
+          "end": 10.32
+        }
+      ]
+    },
+    {
+      "text": "place the text inside quotation",
+      "start": 10.32,
+      "end": 12.0,
+      "words": [
+        {
+          "w": "place",
+          "start": 10.32,
+          "end": 10.84
+        },
+        {
+          "w": "the",
+          "start": 10.84,
+          "end": 11.08
+        },
+        {
+          "w": "text",
+          "start": 11.08,
+          "end": 11.3
+        },
+        {
+          "w": "inside",
+          "start": 11.3,
+          "end": 11.6
+        },
+        {
+          "w": "quotation",
+          "start": 11.6,
+          "end": 12.0
+        }
+      ]
+    },
+    {
+      "text": "marks. The quotation marks indicate",
+      "start": 12.0,
+      "end": 14.22,
+      "words": [
+        {
+          "w": "marks.",
+          "start": 12.0,
+          "end": 12.4
+        },
+        {
+          "w": "The",
+          "start": 12.4,
+          "end": 12.8
+        },
+        {
+          "w": "quotation",
+          "start": 13.26,
+          "end": 13.36
+        },
+        {
+          "w": "marks",
+          "start": 13.36,
+          "end": 13.76
+        },
+        {
+          "w": "indicate",
+          "start": 13.76,
+          "end": 14.22
+        }
+      ]
+    },
+    {
+      "text": "a string, which is just",
+      "start": 14.22,
+      "end": 15.6,
+      "words": [
+        {
+          "w": "a",
+          "start": 14.22,
+          "end": 14.56
+        },
+        {
+          "w": "string,",
+          "start": 14.56,
+          "end": 14.88
+        },
+        {
+          "w": "which",
+          "start": 14.88,
+          "end": 15.12
+        },
+        {
+          "w": "is",
+          "start": 15.12,
+          "end": 15.4
+        },
+        {
+          "w": "just",
+          "start": 15.4,
+          "end": 15.6
+        }
+      ]
+    },
+    {
+      "text": "text data.",
+      "start": 15.6,
+      "end": 16.12,
+      "words": [
+        {
+          "w": "text",
+          "start": 15.6,
+          "end": 15.88
+        },
+        {
+          "w": "data.",
+          "start": 15.88,
+          "end": 16.12
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_08_comparisons_and_positive_checks",
+    "title": "Using Comparison Operators to Enforce Positive Values",
+    "concept": "python.basics.operators",
+    "objective": "Compare numbers and ensure a value is greater than zero",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.basics.data_types"
+    ],
+    "next_concepts": [
+      "python.functions.define",
+      "python.basics.variables"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      ">",
+      "<",
+      ">="
+    ],
+    "assumes": [
+      "int()",
+      "variable"
+    ],
+    "voice": {
+      "script": "What if your bet could be zero? How do you make sure a number is positive? These are the three operators: greater than, less than, and greater than or equal to. The greater than sign checks if the left number is larger than the right one. The less than sign checks if it is smaller. Greater than or equal to checks if it is larger or exactly the same. Here\u2019s the code that validates the deposit amount. It asks for a number, turns it into an integer, then checks if the value is greater than zero. The program tells you whether the amount is accepted. The decision diamond shows the check, sending you to an accepted path or an error message. Remember: use the > operator to ensure a value is positive.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if your bet could be zero?"
+        },
+        "narration_anchor": "What if your bet could be zero?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you make sure a number is positive?"
+        },
+        "narration_anchor": "How do you make sure a number is positive?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Start",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "value > 0 ?",
+              "kind": "decision"
+            },
+            {
+              "id": "c",
+              "label": "Accept or reject",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b"
+            },
+            {
+              "from": "b",
+              "to": "c"
+            }
+          ]
+        },
+        "narration_anchor": "greater than, less than, and greater than or equal to"
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "import sys\n\ndef get_deposit():\n    amount = input(\"Enter deposit amount: \")\n    if amount.isdigit():\n        value = int(amount)\n        if value > 0:\n            print(\"Deposit accepted:\", value)\n        else:\n            print(\"Amount must be greater than zero.\")\n    else:\n        print(\"Please enter a numeric value.\")\n\nif __name__ == \"__main__\":\n    get_deposit()\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "import sys\n\ndef get_deposit():\n    amount = input(\"Enter deposit amount: \")\n    if amount.isdigit():\n        value = int(amount)\n        if value > 0:\n            print(\"Deposit accepted:\", value)\n        else:\n            print(\"Amount must be greater than zero.\")\n    else:\n        print(\"Please enter a numeric value.\")\n\nif __name__ == \"__main__\":\n    get_deposit()",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "value > 0"
+            }
+          ]
+        },
+        "narration_anchor": "Here\u2019s the code that validates the deposit amount"
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [
+            "50"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:33+00:00",
+            "stdout": "Enter deposit amount: Deposit accepted: 50\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "The program tells you whether the amount is accepted",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Use the > operator to ensure a value is positive."
+        },
+        "narration_anchor": "Remember: use the > operator to ensure a value is positive.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write a check that only accepts ages over 13 and prints a welcome message."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write a check that only accepts ages over 13 and prints a welcome message.",
+      "hint": "Use the greater than operator with the entered age."
+    },
+    "series": {
+      "title": "Build a Simple Slot\u2011Machine Deposit App",
+      "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot\u2011machine spin",
+      "order": 8,
+      "total": 17,
+      "previous_id": "meal_07_checking_digits_and_converting_types",
+      "next_id": "meal_09_deposit_function_full_validation"
+    }
+  }
+}

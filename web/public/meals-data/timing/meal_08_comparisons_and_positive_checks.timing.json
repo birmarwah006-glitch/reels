@@ -1,0 +1,865 @@
+{
+  "meal_id": "meal_08_comparisons_and_positive_checks",
+  "audio": "meal_08_comparisons_and_positive_checks.mp3",
+  "duration": 42.216,
+  "alignment": "whisper",
+  "anchors": {
+    "What if your bet could be zero?": 0.0,
+    "How do you make sure a number is positive?": 2.02,
+    "greater than, less than, and greater than or equal to": 6.64,
+    "Here\u2019s the code that validates the deposit amount": 20.82,
+    "The program tells you whether the amount is accepted": 29.44,
+    "Remember: use the > operator to ensure a value is positive.": 38.2
+  },
+  "captions": [
+    {
+      "text": "What if your bet could",
+      "start": 0.0,
+      "end": 1.04,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.24
+        },
+        {
+          "w": "if",
+          "start": 0.24,
+          "end": 0.44
+        },
+        {
+          "w": "your",
+          "start": 0.44,
+          "end": 0.62
+        },
+        {
+          "w": "bet",
+          "start": 0.62,
+          "end": 0.82
+        },
+        {
+          "w": "could",
+          "start": 0.82,
+          "end": 1.04
+        }
+      ]
+    },
+    {
+      "text": "be zero? How do you",
+      "start": 1.04,
+      "end": 2.38,
+      "words": [
+        {
+          "w": "be",
+          "start": 1.04,
+          "end": 1.2
+        },
+        {
+          "w": "zero?",
+          "start": 1.2,
+          "end": 1.64
+        },
+        {
+          "w": "How",
+          "start": 2.02,
+          "end": 2.16
+        },
+        {
+          "w": "do",
+          "start": 2.16,
+          "end": 2.32
+        },
+        {
+          "w": "you",
+          "start": 2.32,
+          "end": 2.38
+        }
+      ]
+    },
+    {
+      "text": "make sure a number is",
+      "start": 2.38,
+      "end": 3.56,
+      "words": [
+        {
+          "w": "make",
+          "start": 2.38,
+          "end": 2.56
+        },
+        {
+          "w": "sure",
+          "start": 2.56,
+          "end": 2.8
+        },
+        {
+          "w": "a",
+          "start": 2.8,
+          "end": 3.0
+        },
+        {
+          "w": "number",
+          "start": 3.0,
+          "end": 3.22
+        },
+        {
+          "w": "is",
+          "start": 3.22,
+          "end": 3.56
+        }
+      ]
+    },
+    {
+      "text": "positive? These are the three",
+      "start": 3.56,
+      "end": 5.22,
+      "words": [
+        {
+          "w": "positive?",
+          "start": 3.56,
+          "end": 4.0
+        },
+        {
+          "w": "These",
+          "start": 4.5,
+          "end": 4.68
+        },
+        {
+          "w": "are",
+          "start": 4.68,
+          "end": 4.84
+        },
+        {
+          "w": "the",
+          "start": 4.84,
+          "end": 5.0
+        },
+        {
+          "w": "three",
+          "start": 5.0,
+          "end": 5.22
+        }
+      ]
+    },
+    {
+      "text": "operators: greater than, less than,",
+      "start": 5.22,
+      "end": 7.94,
+      "words": [
+        {
+          "w": "operators:",
+          "start": 5.22,
+          "end": 5.68
+        },
+        {
+          "w": "greater",
+          "start": 6.64,
+          "end": 6.76
+        },
+        {
+          "w": "than,",
+          "start": 6.76,
+          "end": 7.26
+        },
+        {
+          "w": "less",
+          "start": 7.26,
+          "end": 7.64
+        },
+        {
+          "w": "than,",
+          "start": 7.64,
+          "end": 7.94
+        }
+      ]
+    },
+    {
+      "text": "and greater than or equal",
+      "start": 7.94,
+      "end": 9.24,
+      "words": [
+        {
+          "w": "and",
+          "start": 7.94,
+          "end": 8.28
+        },
+        {
+          "w": "greater",
+          "start": 8.28,
+          "end": 8.48
+        },
+        {
+          "w": "than",
+          "start": 8.48,
+          "end": 8.8
+        },
+        {
+          "w": "or",
+          "start": 8.8,
+          "end": 8.98
+        },
+        {
+          "w": "equal",
+          "start": 8.98,
+          "end": 9.24
+        }
+      ]
+    },
+    {
+      "text": "to. The greater than sign",
+      "start": 9.24,
+      "end": 10.82,
+      "words": [
+        {
+          "w": "to.",
+          "start": 9.24,
+          "end": 9.68
+        },
+        {
+          "w": "The",
+          "start": 9.9,
+          "end": 10.06
+        },
+        {
+          "w": "greater",
+          "start": 10.06,
+          "end": 10.28
+        },
+        {
+          "w": "than",
+          "start": 10.28,
+          "end": 10.56
+        },
+        {
+          "w": "sign",
+          "start": 10.56,
+          "end": 10.82
+        }
+      ]
+    },
+    {
+      "text": "checks if the left number",
+      "start": 10.82,
+      "end": 12.1,
+      "words": [
+        {
+          "w": "checks",
+          "start": 10.82,
+          "end": 11.18
+        },
+        {
+          "w": "if",
+          "start": 11.18,
+          "end": 11.42
+        },
+        {
+          "w": "the",
+          "start": 11.42,
+          "end": 11.6
+        },
+        {
+          "w": "left",
+          "start": 11.6,
+          "end": 11.82
+        },
+        {
+          "w": "number",
+          "start": 11.82,
+          "end": 12.1
+        }
+      ]
+    },
+    {
+      "text": "is larger than the right",
+      "start": 12.1,
+      "end": 13.32,
+      "words": [
+        {
+          "w": "is",
+          "start": 12.1,
+          "end": 12.44
+        },
+        {
+          "w": "larger",
+          "start": 12.44,
+          "end": 12.78
+        },
+        {
+          "w": "than",
+          "start": 12.78,
+          "end": 13.08
+        },
+        {
+          "w": "the",
+          "start": 13.08,
+          "end": 13.2
+        },
+        {
+          "w": "right",
+          "start": 13.2,
+          "end": 13.32
+        }
+      ]
+    },
+    {
+      "text": "one. The less than sign",
+      "start": 13.32,
+      "end": 14.88,
+      "words": [
+        {
+          "w": "one.",
+          "start": 13.32,
+          "end": 13.82
+        },
+        {
+          "w": "The",
+          "start": 14.02,
+          "end": 14.16
+        },
+        {
+          "w": "less",
+          "start": 14.16,
+          "end": 14.42
+        },
+        {
+          "w": "than",
+          "start": 14.42,
+          "end": 14.64
+        },
+        {
+          "w": "sign",
+          "start": 14.64,
+          "end": 14.88
+        }
+      ]
+    },
+    {
+      "text": "checks if it is smaller.",
+      "start": 14.88,
+      "end": 16.1,
+      "words": [
+        {
+          "w": "checks",
+          "start": 14.88,
+          "end": 15.24
+        },
+        {
+          "w": "if",
+          "start": 15.24,
+          "end": 15.48
+        },
+        {
+          "w": "it",
+          "start": 15.48,
+          "end": 15.68
+        },
+        {
+          "w": "is",
+          "start": 15.68,
+          "end": 15.78
+        },
+        {
+          "w": "smaller.",
+          "start": 15.78,
+          "end": 16.1
+        }
+      ]
+    },
+    {
+      "text": "Greater than or equal to",
+      "start": 16.78,
+      "end": 18.0,
+      "words": [
+        {
+          "w": "Greater",
+          "start": 16.78,
+          "end": 17.0
+        },
+        {
+          "w": "than",
+          "start": 17.0,
+          "end": 17.36
+        },
+        {
+          "w": "or",
+          "start": 17.36,
+          "end": 17.54
+        },
+        {
+          "w": "equal",
+          "start": 17.54,
+          "end": 17.8
+        },
+        {
+          "w": "to",
+          "start": 17.8,
+          "end": 18.0
+        }
+      ]
+    },
+    {
+      "text": "checks if it is larger",
+      "start": 18.0,
+      "end": 19.16,
+      "words": [
+        {
+          "w": "checks",
+          "start": 18.0,
+          "end": 18.3
+        },
+        {
+          "w": "if",
+          "start": 18.3,
+          "end": 18.52
+        },
+        {
+          "w": "it",
+          "start": 18.52,
+          "end": 18.68
+        },
+        {
+          "w": "is",
+          "start": 18.68,
+          "end": 18.8
+        },
+        {
+          "w": "larger",
+          "start": 18.8,
+          "end": 19.16
+        }
+      ]
+    },
+    {
+      "text": "or exactly the same. Here\u2019s",
+      "start": 19.16,
+      "end": 21.14,
+      "words": [
+        {
+          "w": "or",
+          "start": 19.16,
+          "end": 19.54
+        },
+        {
+          "w": "exactly",
+          "start": 19.54,
+          "end": 19.88
+        },
+        {
+          "w": "the",
+          "start": 19.88,
+          "end": 20.2
+        },
+        {
+          "w": "same.",
+          "start": 20.2,
+          "end": 20.44
+        },
+        {
+          "w": "Here\u2019s",
+          "start": 20.82,
+          "end": 21.14
+        }
+      ]
+    },
+    {
+      "text": "the code that validates the",
+      "start": 21.14,
+      "end": 22.78,
+      "words": [
+        {
+          "w": "the",
+          "start": 21.14,
+          "end": 21.38
+        },
+        {
+          "w": "code",
+          "start": 21.38,
+          "end": 21.64
+        },
+        {
+          "w": "that",
+          "start": 21.64,
+          "end": 21.94
+        },
+        {
+          "w": "validates",
+          "start": 21.94,
+          "end": 22.5
+        },
+        {
+          "w": "the",
+          "start": 22.5,
+          "end": 22.78
+        }
+      ]
+    },
+    {
+      "text": "deposit amount. It asks for",
+      "start": 22.78,
+      "end": 24.6,
+      "words": [
+        {
+          "w": "deposit",
+          "start": 22.78,
+          "end": 23.1
+        },
+        {
+          "w": "amount.",
+          "start": 23.1,
+          "end": 23.54
+        },
+        {
+          "w": "It",
+          "start": 23.92,
+          "end": 24.14
+        },
+        {
+          "w": "asks",
+          "start": 24.14,
+          "end": 24.4
+        },
+        {
+          "w": "for",
+          "start": 24.4,
+          "end": 24.6
+        }
+      ]
+    },
+    {
+      "text": "a number, turns it into",
+      "start": 24.6,
+      "end": 26.0,
+      "words": [
+        {
+          "w": "a",
+          "start": 24.6,
+          "end": 24.74
+        },
+        {
+          "w": "number,",
+          "start": 24.74,
+          "end": 25.16
+        },
+        {
+          "w": "turns",
+          "start": 25.38,
+          "end": 25.58
+        },
+        {
+          "w": "it",
+          "start": 25.58,
+          "end": 25.82
+        },
+        {
+          "w": "into",
+          "start": 25.82,
+          "end": 26.0
+        }
+      ]
+    },
+    {
+      "text": "an integer, then checks if",
+      "start": 26.0,
+      "end": 27.96,
+      "words": [
+        {
+          "w": "an",
+          "start": 26.0,
+          "end": 26.22
+        },
+        {
+          "w": "integer,",
+          "start": 26.22,
+          "end": 26.56
+        },
+        {
+          "w": "then",
+          "start": 27.22,
+          "end": 27.44
+        },
+        {
+          "w": "checks",
+          "start": 27.44,
+          "end": 27.74
+        },
+        {
+          "w": "if",
+          "start": 27.74,
+          "end": 27.96
+        }
+      ]
+    },
+    {
+      "text": "the value is greater than",
+      "start": 27.96,
+      "end": 29.06,
+      "words": [
+        {
+          "w": "the",
+          "start": 27.96,
+          "end": 28.12
+        },
+        {
+          "w": "value",
+          "start": 28.12,
+          "end": 28.34
+        },
+        {
+          "w": "is",
+          "start": 28.34,
+          "end": 28.56
+        },
+        {
+          "w": "greater",
+          "start": 28.56,
+          "end": 28.84
+        },
+        {
+          "w": "than",
+          "start": 28.84,
+          "end": 29.06
+        }
+      ]
+    },
+    {
+      "text": "zero. The program tells you",
+      "start": 29.06,
+      "end": 31.0,
+      "words": [
+        {
+          "w": "zero.",
+          "start": 29.06,
+          "end": 29.44
+        },
+        {
+          "w": "The",
+          "start": 29.44,
+          "end": 29.94
+        },
+        {
+          "w": "program",
+          "start": 29.94,
+          "end": 30.34
+        },
+        {
+          "w": "tells",
+          "start": 30.34,
+          "end": 30.7
+        },
+        {
+          "w": "you",
+          "start": 30.7,
+          "end": 31.0
+        }
+      ]
+    },
+    {
+      "text": "whether the amount is accepted.",
+      "start": 31.0,
+      "end": 32.42,
+      "words": [
+        {
+          "w": "whether",
+          "start": 31.0,
+          "end": 31.24
+        },
+        {
+          "w": "the",
+          "start": 31.24,
+          "end": 31.46
+        },
+        {
+          "w": "amount",
+          "start": 31.46,
+          "end": 31.76
+        },
+        {
+          "w": "is",
+          "start": 31.76,
+          "end": 32.1
+        },
+        {
+          "w": "accepted.",
+          "start": 32.1,
+          "end": 32.42
+        }
+      ]
+    },
+    {
+      "text": "The decision diamond shows the",
+      "start": 33.02,
+      "end": 34.4,
+      "words": [
+        {
+          "w": "The",
+          "start": 33.02,
+          "end": 33.14
+        },
+        {
+          "w": "decision",
+          "start": 33.14,
+          "end": 33.44
+        },
+        {
+          "w": "diamond",
+          "start": 33.44,
+          "end": 33.84
+        },
+        {
+          "w": "shows",
+          "start": 33.84,
+          "end": 34.14
+        },
+        {
+          "w": "the",
+          "start": 34.14,
+          "end": 34.4
+        }
+      ]
+    },
+    {
+      "text": "check, sending you to an",
+      "start": 34.4,
+      "end": 35.96,
+      "words": [
+        {
+          "w": "check,",
+          "start": 34.4,
+          "end": 34.8
+        },
+        {
+          "w": "sending",
+          "start": 35.22,
+          "end": 35.36
+        },
+        {
+          "w": "you",
+          "start": 35.36,
+          "end": 35.66
+        },
+        {
+          "w": "to",
+          "start": 35.66,
+          "end": 35.82
+        },
+        {
+          "w": "an",
+          "start": 35.82,
+          "end": 35.96
+        }
+      ]
+    },
+    {
+      "text": "accepted path or an error",
+      "start": 35.96,
+      "end": 37.3,
+      "words": [
+        {
+          "w": "accepted",
+          "start": 35.96,
+          "end": 36.28
+        },
+        {
+          "w": "path",
+          "start": 36.28,
+          "end": 36.7
+        },
+        {
+          "w": "or",
+          "start": 36.7,
+          "end": 36.96
+        },
+        {
+          "w": "an",
+          "start": 36.96,
+          "end": 37.14
+        },
+        {
+          "w": "error",
+          "start": 37.14,
+          "end": 37.3
+        }
+      ]
+    },
+    {
+      "text": "message. Remember: use the >",
+      "start": 37.3,
+      "end": 40.06,
+      "words": [
+        {
+          "w": "message.",
+          "start": 37.3,
+          "end": 37.68
+        },
+        {
+          "w": "Remember:",
+          "start": 38.2,
+          "end": 38.5
+        },
+        {
+          "w": "use",
+          "start": 39.24,
+          "end": 39.46
+        },
+        {
+          "w": "the",
+          "start": 39.46,
+          "end": 39.78
+        },
+        {
+          "w": ">",
+          "start": 39.78,
+          "end": 40.06
+        }
+      ]
+    },
+    {
+      "text": "operator to ensure a value",
+      "start": 40.06,
+      "end": 41.42,
+      "words": [
+        {
+          "w": "operator",
+          "start": 40.06,
+          "end": 40.38
+        },
+        {
+          "w": "to",
+          "start": 40.38,
+          "end": 40.64
+        },
+        {
+          "w": "ensure",
+          "start": 40.64,
+          "end": 40.92
+        },
+        {
+          "w": "a",
+          "start": 40.92,
+          "end": 41.14
+        },
+        {
+          "w": "value",
+          "start": 41.14,
+          "end": 41.42
+        }
+      ]
+    },
+    {
+      "text": "is positive.",
+      "start": 41.42,
+      "end": 41.76,
+      "words": [
+        {
+          "w": "is",
+          "start": 41.42,
+          "end": 41.76
+        },
+        {
+          "w": "positive.",
+          "start": 41.42,
+          "end": 41.76
+        }
+      ]
+    }
+  ]
+}

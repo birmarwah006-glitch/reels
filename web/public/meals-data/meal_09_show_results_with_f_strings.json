@@ -1,0 +1,166 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_09_show_results_with_f_strings",
+    "title": "Show results with f\u2011strings in Rock\u2011Paper\u2011Scissors",
+    "concept": "python.basics.strings",
+    "objective": "Embed variables inside a printed message using an f\u2011string",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.basics.data_types"
+    ],
+    "next_concepts": [
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "f\u2011string"
+    ],
+    "assumes": [
+      "string",
+      "print"
+    ],
+    "voice": {
+      "script": "Want to see exactly what each player chose? How can we include the choices in the result message? An f\u2011string lets you embed variables directly inside a string. Now we print the full result with an f\u2011string: Running this prints a line that shows both choices and the outcome. Use f\u2011strings to create clear, dynamic messages. Try changing the message to include a friendly emoji description.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Want to see exactly what each player chose?"
+        },
+        "narration_anchor": "Want to see exactly what each player chose?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How can we include the choices in the result message?"
+        },
+        "narration_anchor": "How can we include the choices in the result message?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "f\u2011string",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "print result",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "embed variables"
+            }
+          ]
+        },
+        "narration_anchor": "An f\u2011string lets you embed variables directly inside a string."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "user_choice = \"rock\"\ncomputer_choice = \"paper\"\nresult = \"You lose!\"\nprint(f'You chose {user_choice}, computer chose {computer_choice}. {result}')\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "user_choice = \"rock\"\ncomputer_choice = \"paper\"\nresult = \"You lose!\"\nprint(f'You chose {user_choice}, computer chose {computer_choice}. {result}')",
+              "lines": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "f'You chose {user_choice}, computer chose {computer_choice}. {result}'"
+            }
+          ]
+        },
+        "narration_anchor": "Now we print the full result with an f\u2011string:"
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:33+00:00",
+            "stdout": "You chose rock, computer chose paper. You lose!\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running this prints a line that shows both choices and the outcome.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Use f\u2011strings to create clear, dynamic messages."
+        },
+        "narration_anchor": "Use f\u2011strings to create clear, dynamic messages.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Try changing the message to include a friendly emoji description."
+        },
+        "narration_anchor": "Try changing the message to include a friendly emoji description.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Try changing the message to include a friendly emoji description."
+    },
+    "series": {
+      "title": "Build a Rock\u2011Paper\u2011Scissors Game",
+      "artifact": "A command\u2011line rock\u2011paper\u2011scissors game you can run in the terminal",
+      "order": 9,
+      "total": 10,
+      "previous_id": "meal_08_handle_a_win_scenario",
+      "next_id": "meal_10_run_the_complete_game"
+    }
+  }
+}

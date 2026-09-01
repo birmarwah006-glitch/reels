@@ -1,0 +1,844 @@
+{
+  "meal_id": "meal_15_writing_comments",
+  "audio": "meal_15_writing_comments.mp3",
+  "duration": 43.104,
+  "alignment": "whisper",
+  "anchors": {
+    "Why does your C program ignore the notes you write?": 0.0,
+    "Comments let you explain code without affecting execution.": 3.16
+  },
+  "captions": [
+    {
+      "text": "Why does your C program",
+      "start": 0.0,
+      "end": 1.28,
+      "words": [
+        {
+          "w": "Why",
+          "start": 0.0,
+          "end": 0.32
+        },
+        {
+          "w": "does",
+          "start": 0.32,
+          "end": 0.46
+        },
+        {
+          "w": "your",
+          "start": 0.46,
+          "end": 0.68
+        },
+        {
+          "w": "C",
+          "start": 0.68,
+          "end": 0.86
+        },
+        {
+          "w": "program",
+          "start": 0.86,
+          "end": 1.28
+        }
+      ]
+    },
+    {
+      "text": "ignore the notes you write?",
+      "start": 1.28,
+      "end": 2.78,
+      "words": [
+        {
+          "w": "ignore",
+          "start": 1.28,
+          "end": 1.78
+        },
+        {
+          "w": "the",
+          "start": 1.78,
+          "end": 2.0
+        },
+        {
+          "w": "notes",
+          "start": 2.0,
+          "end": 2.18
+        },
+        {
+          "w": "you",
+          "start": 2.18,
+          "end": 2.4
+        },
+        {
+          "w": "write?",
+          "start": 2.4,
+          "end": 2.78
+        }
+      ]
+    },
+    {
+      "text": "Comments let you explain code",
+      "start": 3.16,
+      "end": 4.74,
+      "words": [
+        {
+          "w": "Comments",
+          "start": 3.16,
+          "end": 3.48
+        },
+        {
+          "w": "let",
+          "start": 3.48,
+          "end": 3.7
+        },
+        {
+          "w": "you",
+          "start": 3.7,
+          "end": 3.94
+        },
+        {
+          "w": "explain",
+          "start": 3.94,
+          "end": 4.34
+        },
+        {
+          "w": "code",
+          "start": 4.34,
+          "end": 4.74
+        }
+      ]
+    },
+    {
+      "text": "without affecting execution. A single\u2011line",
+      "start": 4.74,
+      "end": 7.22,
+      "words": [
+        {
+          "w": "without",
+          "start": 4.74,
+          "end": 5.18
+        },
+        {
+          "w": "affecting",
+          "start": 5.18,
+          "end": 5.66
+        },
+        {
+          "w": "execution.",
+          "start": 5.66,
+          "end": 6.36
+        },
+        {
+          "w": "A",
+          "start": 7.02,
+          "end": 7.02
+        },
+        {
+          "w": "single\u2011line",
+          "start": 7.02,
+          "end": 7.22
+        }
+      ]
+    },
+    {
+      "text": "comment starts with two forward",
+      "start": 7.22,
+      "end": 8.76,
+      "words": [
+        {
+          "w": "comment",
+          "start": 7.22,
+          "end": 7.5
+        },
+        {
+          "w": "starts",
+          "start": 7.5,
+          "end": 7.9
+        },
+        {
+          "w": "with",
+          "start": 7.9,
+          "end": 8.2
+        },
+        {
+          "w": "two",
+          "start": 8.2,
+          "end": 8.5
+        },
+        {
+          "w": "forward",
+          "start": 8.5,
+          "end": 8.76
+        }
+      ]
+    },
+    {
+      "text": "slashes and runs to the",
+      "start": 8.76,
+      "end": 10.32,
+      "words": [
+        {
+          "w": "slashes",
+          "start": 8.76,
+          "end": 9.04
+        },
+        {
+          "w": "and",
+          "start": 9.04,
+          "end": 9.54
+        },
+        {
+          "w": "runs",
+          "start": 9.54,
+          "end": 9.84
+        },
+        {
+          "w": "to",
+          "start": 9.84,
+          "end": 10.1
+        },
+        {
+          "w": "the",
+          "start": 10.1,
+          "end": 10.32
+        }
+      ]
+    },
+    {
+      "text": "end of that line. Anything",
+      "start": 10.32,
+      "end": 11.14,
+      "words": [
+        {
+          "w": "end",
+          "start": 10.32,
+          "end": 10.48
+        },
+        {
+          "w": "of",
+          "start": 10.48,
+          "end": 10.54
+        },
+        {
+          "w": "that",
+          "start": 10.54,
+          "end": 10.7
+        },
+        {
+          "w": "line.",
+          "start": 10.7,
+          "end": 10.86
+        },
+        {
+          "w": "Anything",
+          "start": 10.86,
+          "end": 11.14
+        }
+      ]
+    },
+    {
+      "text": "after those slashes is ignored",
+      "start": 11.58,
+      "end": 13.38,
+      "words": [
+        {
+          "w": "after",
+          "start": 11.58,
+          "end": 11.9
+        },
+        {
+          "w": "those",
+          "start": 11.9,
+          "end": 12.3
+        },
+        {
+          "w": "slashes",
+          "start": 12.3,
+          "end": 12.56
+        },
+        {
+          "w": "is",
+          "start": 12.56,
+          "end": 13.02
+        },
+        {
+          "w": "ignored",
+          "start": 13.02,
+          "end": 13.38
+        }
+      ]
+    },
+    {
+      "text": "by the compiler. A multi\u2011line",
+      "start": 13.38,
+      "end": 15.28,
+      "words": [
+        {
+          "w": "by",
+          "start": 13.38,
+          "end": 13.72
+        },
+        {
+          "w": "the",
+          "start": 13.72,
+          "end": 14.08
+        },
+        {
+          "w": "compiler.",
+          "start": 14.08,
+          "end": 14.24
+        },
+        {
+          "w": "A",
+          "start": 14.24,
+          "end": 14.62
+        },
+        {
+          "w": "multi\u2011line",
+          "start": 15.16,
+          "end": 15.28
+        }
+      ]
+    },
+    {
+      "text": "comment begins with a slash",
+      "start": 15.28,
+      "end": 16.74,
+      "words": [
+        {
+          "w": "comment",
+          "start": 15.28,
+          "end": 15.48
+        },
+        {
+          "w": "begins",
+          "start": 15.48,
+          "end": 15.76
+        },
+        {
+          "w": "with",
+          "start": 15.76,
+          "end": 16.1
+        },
+        {
+          "w": "a",
+          "start": 16.1,
+          "end": 16.46
+        },
+        {
+          "w": "slash",
+          "start": 16.46,
+          "end": 16.74
+        }
+      ]
+    },
+    {
+      "text": "and a star, and ends",
+      "start": 16.74,
+      "end": 18.0,
+      "words": [
+        {
+          "w": "and",
+          "start": 16.74,
+          "end": 16.84
+        },
+        {
+          "w": "a",
+          "start": 16.84,
+          "end": 17.14
+        },
+        {
+          "w": "star,",
+          "start": 17.14,
+          "end": 17.42
+        },
+        {
+          "w": "and",
+          "start": 17.42,
+          "end": 17.48
+        },
+        {
+          "w": "ends",
+          "start": 17.48,
+          "end": 18.0
+        }
+      ]
+    },
+    {
+      "text": "with a star and a",
+      "start": 18.28,
+      "end": 19.18,
+      "words": [
+        {
+          "w": "with",
+          "start": 18.28,
+          "end": 18.38
+        },
+        {
+          "w": "a",
+          "start": 18.38,
+          "end": 18.62
+        },
+        {
+          "w": "star",
+          "start": 18.62,
+          "end": 18.86
+        },
+        {
+          "w": "and",
+          "start": 18.86,
+          "end": 18.96
+        },
+        {
+          "w": "a",
+          "start": 18.96,
+          "end": 19.18
+        }
+      ]
+    },
+    {
+      "text": "slash. Everything between those markers,",
+      "start": 19.18,
+      "end": 21.16,
+      "words": [
+        {
+          "w": "slash.",
+          "start": 19.18,
+          "end": 19.48
+        },
+        {
+          "w": "Everything",
+          "start": 19.48,
+          "end": 19.54
+        },
+        {
+          "w": "between",
+          "start": 19.54,
+          "end": 19.92
+        },
+        {
+          "w": "those",
+          "start": 20.42,
+          "end": 20.76
+        },
+        {
+          "w": "markers,",
+          "start": 20.76,
+          "end": 21.16
+        }
+      ]
+    },
+    {
+      "text": "even across many lines, is",
+      "start": 21.16,
+      "end": 22.88,
+      "words": [
+        {
+          "w": "even",
+          "start": 21.16,
+          "end": 21.44
+        },
+        {
+          "w": "across",
+          "start": 21.44,
+          "end": 21.84
+        },
+        {
+          "w": "many",
+          "start": 22.02,
+          "end": 22.2
+        },
+        {
+          "w": "lines,",
+          "start": 22.2,
+          "end": 22.62
+        },
+        {
+          "w": "is",
+          "start": 22.62,
+          "end": 22.88
+        }
+      ]
+    },
+    {
+      "text": "ignored. You can also declare",
+      "start": 22.88,
+      "end": 24.9,
+      "words": [
+        {
+          "w": "ignored.",
+          "start": 22.88,
+          "end": 23.32
+        },
+        {
+          "w": "You",
+          "start": 23.46,
+          "end": 23.64
+        },
+        {
+          "w": "can",
+          "start": 23.64,
+          "end": 24.04
+        },
+        {
+          "w": "also",
+          "start": 24.58,
+          "end": 24.62
+        },
+        {
+          "w": "declare",
+          "start": 24.62,
+          "end": 24.9
+        }
+      ]
+    },
+    {
+      "text": "a constant with the const",
+      "start": 24.9,
+      "end": 26.32,
+      "words": [
+        {
+          "w": "a",
+          "start": 24.9,
+          "end": 25.1
+        },
+        {
+          "w": "constant",
+          "start": 25.1,
+          "end": 25.42
+        },
+        {
+          "w": "with",
+          "start": 25.42,
+          "end": 25.68
+        },
+        {
+          "w": "the",
+          "start": 25.68,
+          "end": 26.0
+        },
+        {
+          "w": "const",
+          "start": 26.0,
+          "end": 26.32
+        }
+      ]
+    },
+    {
+      "text": "keyword, which tells the compiler",
+      "start": 26.32,
+      "end": 28.04,
+      "words": [
+        {
+          "w": "keyword,",
+          "start": 26.32,
+          "end": 26.48
+        },
+        {
+          "w": "which",
+          "start": 26.48,
+          "end": 26.7
+        },
+        {
+          "w": "tells",
+          "start": 26.7,
+          "end": 27.12
+        },
+        {
+          "w": "the",
+          "start": 27.12,
+          "end": 27.72
+        },
+        {
+          "w": "compiler",
+          "start": 27.72,
+          "end": 28.04
+        }
+      ]
+    },
+    {
+      "text": "the value will never change.",
+      "start": 28.04,
+      "end": 29.32,
+      "words": [
+        {
+          "w": "the",
+          "start": 28.04,
+          "end": 28.26
+        },
+        {
+          "w": "value",
+          "start": 28.26,
+          "end": 28.54
+        },
+        {
+          "w": "will",
+          "start": 28.54,
+          "end": 28.82
+        },
+        {
+          "w": "never",
+          "start": 28.82,
+          "end": 29.12
+        },
+        {
+          "w": "change.",
+          "start": 29.12,
+          "end": 29.32
+        }
+      ]
+    },
+    {
+      "text": "Here is a tiny C",
+      "start": 29.32,
+      "end": 31.0,
+      "words": [
+        {
+          "w": "Here",
+          "start": 29.32,
+          "end": 29.54
+        },
+        {
+          "w": "is",
+          "start": 29.54,
+          "end": 29.96
+        },
+        {
+          "w": "a",
+          "start": 30.48,
+          "end": 30.58
+        },
+        {
+          "w": "tiny",
+          "start": 30.58,
+          "end": 30.84
+        },
+        {
+          "w": "C",
+          "start": 30.84,
+          "end": 31.0
+        }
+      ]
+    },
+    {
+      "text": "snippet. Notice the two slashes",
+      "start": 31.0,
+      "end": 32.92,
+      "words": [
+        {
+          "w": "snippet.",
+          "start": 31.0,
+          "end": 31.22
+        },
+        {
+          "w": "Notice",
+          "start": 31.22,
+          "end": 31.5
+        },
+        {
+          "w": "the",
+          "start": 31.5,
+          "end": 32.2
+        },
+        {
+          "w": "two",
+          "start": 32.48,
+          "end": 32.66
+        },
+        {
+          "w": "slashes",
+          "start": 32.66,
+          "end": 32.92
+        }
+      ]
+    },
+    {
+      "text": "before the first note, the",
+      "start": 32.92,
+      "end": 34.28,
+      "words": [
+        {
+          "w": "before",
+          "start": 32.92,
+          "end": 33.08
+        },
+        {
+          "w": "the",
+          "start": 33.08,
+          "end": 33.48
+        },
+        {
+          "w": "first",
+          "start": 33.48,
+          "end": 33.82
+        },
+        {
+          "w": "note,",
+          "start": 33.82,
+          "end": 34.02
+        },
+        {
+          "w": "the",
+          "start": 34.02,
+          "end": 34.28
+        }
+      ]
+    },
+    {
+      "text": "block comment wrapping several lines,",
+      "start": 34.28,
+      "end": 35.94,
+      "words": [
+        {
+          "w": "block",
+          "start": 34.28,
+          "end": 34.6
+        },
+        {
+          "w": "comment",
+          "start": 34.94,
+          "end": 35.04
+        },
+        {
+          "w": "wrapping",
+          "start": 35.04,
+          "end": 35.3
+        },
+        {
+          "w": "several",
+          "start": 35.3,
+          "end": 35.58
+        },
+        {
+          "w": "lines,",
+          "start": 35.58,
+          "end": 35.94
+        }
+      ]
+    },
+    {
+      "text": "and the const keyword before",
+      "start": 35.94,
+      "end": 37.64,
+      "words": [
+        {
+          "w": "and",
+          "start": 35.94,
+          "end": 36.26
+        },
+        {
+          "w": "the",
+          "start": 36.26,
+          "end": 36.7
+        },
+        {
+          "w": "const",
+          "start": 37.16,
+          "end": 37.26
+        },
+        {
+          "w": "keyword",
+          "start": 37.26,
+          "end": 37.48
+        },
+        {
+          "w": "before",
+          "start": 37.48,
+          "end": 37.64
+        }
+      ]
+    },
+    {
+      "text": "the number. When you run",
+      "start": 37.64,
+      "end": 39.42,
+      "words": [
+        {
+          "w": "the",
+          "start": 37.64,
+          "end": 37.98
+        },
+        {
+          "w": "number.",
+          "start": 37.98,
+          "end": 38.4
+        },
+        {
+          "w": "When",
+          "start": 38.4,
+          "end": 38.58
+        },
+        {
+          "w": "you",
+          "start": 38.58,
+          "end": 38.84
+        },
+        {
+          "w": "run",
+          "start": 39.28,
+          "end": 39.42
+        }
+      ]
+    },
+    {
+      "text": "the program, only the actual",
+      "start": 39.42,
+      "end": 40.7,
+      "words": [
+        {
+          "w": "the",
+          "start": 39.42,
+          "end": 39.56
+        },
+        {
+          "w": "program,",
+          "start": 39.56,
+          "end": 39.72
+        },
+        {
+          "w": "only",
+          "start": 39.72,
+          "end": 39.94
+        },
+        {
+          "w": "the",
+          "start": 39.94,
+          "end": 40.28
+        },
+        {
+          "w": "actual",
+          "start": 40.58,
+          "end": 40.7
+        }
+      ]
+    },
+    {
+      "text": "code runs, not the comments.",
+      "start": 40.7,
+      "end": 42.16,
+      "words": [
+        {
+          "w": "code",
+          "start": 40.7,
+          "end": 40.96
+        },
+        {
+          "w": "runs,",
+          "start": 40.96,
+          "end": 41.18
+        },
+        {
+          "w": "not",
+          "start": 41.18,
+          "end": 41.5
+        },
+        {
+          "w": "the",
+          "start": 41.5,
+          "end": 41.82
+        },
+        {
+          "w": "comments.",
+          "start": 42.0,
+          "end": 42.16
+        }
+      ]
+    }
+  ]
+}

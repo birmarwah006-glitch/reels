@@ -1,0 +1,154 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_08_understanding_statements_and_semicolons",
+    "title": "Why Every C Statement Ends with a Semicolon",
+    "concept": "c.project.overview",
+    "objective": "Explain why each statement must end with a semicolon and how execution order follows those marks",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.basics.variables",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "semicolon"
+    ],
+    "assumes": [
+      "printf"
+    ],
+    "voice": {
+      "script": "What if I told you a single tiny mark controls everything you write? Every instruction in C must end with a semicolon, which tells the compiler where one command stops and the next begins. Here\u2019s a tiny program that shows two statements. When you run it, the number 5 appears, proving the statements ran in order. Imagine a flow line where each block ends with a semicolon. Remember: the semicolon marks the end of each statement. Add another printf after the first one and end it with a semicolon.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if I told you a single tiny mark controls everything you write?"
+        },
+        "narration_anchor": "What if I told you a single tiny mark controls everything you write?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Statement ends",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Next statement",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "then"
+            }
+          ]
+        },
+        "narration_anchor": "Every instruction in C must end with a semicolon, which tells the compiler where one command stops and the next begins."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "c",
+          "filename": "main.c",
+          "code": "#include <stdio.h>\nint main(){\n    int a = 5;\n    printf(\"%d\\n\", a);\n    return 0;\n}\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "#include <stdio.h>\nint main(){\n    int a = 5;\n    printf(\"%d\\n\", a);\n    return 0;\n}",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "speed_cps": 26
+            }
+          ]
+        },
+        "narration_anchor": "Here\u2019s a tiny program that shows two statements."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "a.out",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:33+00:00",
+            "stdout": "5\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "When you run it, the number 5 appears, proving the statements ran in order.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "The semicolon tells the compiler a statement is finished, so execution proceeds to the next one."
+        },
+        "narration_anchor": "Remember: the semicolon marks the end of each statement.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Add a second printf that prints a message, making sure each line ends with a semicolon."
+        },
+        "narration_anchor": "Add another printf after the first one and end it with a semicolon.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Add a second printf that prints a message, making sure each line ends with a semicolon.",
+      "hint": "Place the new printf after the first and end it with a semicolon."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 8,
+      "total": 22,
+      "previous_id": "meal_07_printing_text_with_printf",
+      "next_id": "meal_09_variables_as_containers"
+    }
+  }
+}

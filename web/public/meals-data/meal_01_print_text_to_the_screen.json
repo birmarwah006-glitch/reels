@@ -1,0 +1,147 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_01_print_text_to_the_screen",
+    "title": "Print text to the screen",
+    "concept": "python.basics.print",
+    "objective": "Show a message on the screen using the print function",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.basics.variables",
+      "python.oop.classes"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "print"
+    ],
+    "assumes": [],
+    "voice": {
+      "script": "What appears when you tell Python to speak? That's what print does. The word print is a built\u2011in function that sends whatever you give it to the screen. You write print followed by parentheses and place the text inside quotation marks. The quotation marks indicate a string, which is just text data.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What appears when you tell Python to speak?"
+        },
+        "narration_anchor": "What appears when you tell Python to speak?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "print function",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "displayed text",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "sends to screen"
+            }
+          ]
+        },
+        "narration_anchor": "The word print is a built\u2011in function that sends whatever you give it to the screen."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "print(\"Hello, world!\")\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "print(\"Hello, world!\")",
+              "lines": [
+                1
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "Hello, world!"
+            }
+          ]
+        }
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:30+00:00",
+            "stdout": "Hello, world!\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Print sends any text you give it to the terminal screen."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write a print statement that outputs your favorite hobby."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write a print statement that outputs your favorite hobby.",
+      "hint": "Place the hobby name inside quotes after print."
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 1,
+      "total": 15,
+      "previous_id": null,
+      "next_id": "meal_02_store_a_value_in_a_variable"
+    }
+  }
+}

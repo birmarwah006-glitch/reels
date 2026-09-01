@@ -1,0 +1,177 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_02_variables_and_basic_types",
+    "title": "Variables and Basic Types",
+    "concept": "python.basics.variables",
+    "objective": "Create and store values using variables, strings, and integers",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.basics.input_output",
+      "python.functions.define"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "variable",
+      "string",
+      "integer"
+    ],
+    "assumes": [],
+    "voice": {
+      "script": "What if you could store a player's money with just three words? How do you keep track of a deposit amount? A variable is a named box that holds a value. A string is text inside quotes, like a name. An integer is a whole number without decimals, like a coin count. Now let's see that in code. The program asks for a name and a deposit, stores them in variables, and prints a summary. Running the program prints the summary. Imagine memory as a series of boxes labeled with variable names. Remember, variables let you store and reuse data. Try adding a new variable for the player's name and print it.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could store a player's money with just three words?"
+        },
+        "narration_anchor": "What if you could store a player's money with just three words?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you keep track of a deposit amount?"
+        },
+        "narration_anchor": "How do you keep track of a deposit amount?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Variable box",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "String value",
+              "kind": "value"
+            },
+            {
+              "id": "c",
+              "label": "Integer value",
+              "kind": "value"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "holds text"
+            },
+            {
+              "from": "a",
+              "to": "c",
+              "label": "holds number"
+            }
+          ]
+        },
+        "narration_anchor": "A variable is a named box that holds a value."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "name = input('Enter your name: ')\ndeposit = int(input('Enter deposit amount: '))\nprint('Player', name, 'deposited', deposit, 'coins')\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "name = input('Enter your name: ')\ndeposit = int(input('Enter deposit amount: '))\nprint('Player', name, 'deposited', deposit, 'coins')",
+              "lines": [
+                1,
+                2,
+                3
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "deposit"
+            }
+          ]
+        },
+        "narration_anchor": "Now let's see that in code."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [
+            "Alice",
+            "100"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:30+00:00",
+            "stdout": "Enter your name: Enter deposit amount: Player Alice deposited 100 coins\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running the program prints the summary.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Remember, variables let you store and reuse data."
+        },
+        "narration_anchor": "Remember, variables let you store and reuse data.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Add a variable for the bet amount, read it, and include it in the printed summary."
+        },
+        "narration_anchor": "Try adding a new variable for the player's name and print it.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Add a variable for the bet amount, read it, and include it in the printed summary.",
+      "hint": "Use input, convert to int, and concatenate in the print statement."
+    },
+    "series": {
+      "title": "Build a Simple Slot\u2011Machine Deposit App",
+      "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot\u2011machine spin",
+      "order": 2,
+      "total": 17,
+      "previous_id": "meal_01_what_we_ll_build",
+      "next_id": "meal_03_printing_and_getting_input"
+    }
+  }
+}

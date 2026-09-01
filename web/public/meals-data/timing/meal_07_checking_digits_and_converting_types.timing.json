@@ -1,0 +1,484 @@
+{
+  "meal_id": "meal_07_checking_digits_and_converting_types",
+  "audio": "meal_07_checking_digits_and_converting_types.mp3",
+  "duration": 20.904,
+  "alignment": "whisper",
+  "anchors": {
+    "Is your input really a number?": 0.0,
+    "When you ask the player for a deposit, you need to be sure they typed digits only.": 2.24,
+    "Python strings have a method called isdigit that looks at every character and returns true if each one is a numeral.": 6.72,
+    "Let\u2019s see it in action.": 18.56
+  },
+  "captions": [
+    {
+      "text": "Is your input really a",
+      "start": 0.0,
+      "end": 1.5,
+      "words": [
+        {
+          "w": "Is",
+          "start": 0.0,
+          "end": 0.34
+        },
+        {
+          "w": "your",
+          "start": 0.34,
+          "end": 0.62
+        },
+        {
+          "w": "input",
+          "start": 0.62,
+          "end": 0.88
+        },
+        {
+          "w": "really",
+          "start": 0.88,
+          "end": 1.28
+        },
+        {
+          "w": "a",
+          "start": 1.28,
+          "end": 1.5
+        }
+      ]
+    },
+    {
+      "text": "number? When you ask the",
+      "start": 1.5,
+      "end": 3.04,
+      "words": [
+        {
+          "w": "number?",
+          "start": 1.5,
+          "end": 1.82
+        },
+        {
+          "w": "When",
+          "start": 2.24,
+          "end": 2.42
+        },
+        {
+          "w": "you",
+          "start": 2.42,
+          "end": 2.6
+        },
+        {
+          "w": "ask",
+          "start": 2.6,
+          "end": 2.8
+        },
+        {
+          "w": "the",
+          "start": 2.8,
+          "end": 3.04
+        }
+      ]
+    },
+    {
+      "text": "player for a deposit, you",
+      "start": 3.04,
+      "end": 4.24,
+      "words": [
+        {
+          "w": "player",
+          "start": 3.04,
+          "end": 3.26
+        },
+        {
+          "w": "for",
+          "start": 3.26,
+          "end": 3.52
+        },
+        {
+          "w": "a",
+          "start": 3.52,
+          "end": 3.6
+        },
+        {
+          "w": "deposit,",
+          "start": 3.6,
+          "end": 3.98
+        },
+        {
+          "w": "you",
+          "start": 4.2,
+          "end": 4.24
+        }
+      ]
+    },
+    {
+      "text": "need to be sure they",
+      "start": 4.24,
+      "end": 5.16,
+      "words": [
+        {
+          "w": "need",
+          "start": 4.24,
+          "end": 4.4
+        },
+        {
+          "w": "to",
+          "start": 4.4,
+          "end": 4.52
+        },
+        {
+          "w": "be",
+          "start": 4.52,
+          "end": 4.74
+        },
+        {
+          "w": "sure",
+          "start": 4.74,
+          "end": 4.92
+        },
+        {
+          "w": "they",
+          "start": 4.92,
+          "end": 5.16
+        }
+      ]
+    },
+    {
+      "text": "typed digits only. Python strings",
+      "start": 5.16,
+      "end": 7.34,
+      "words": [
+        {
+          "w": "typed",
+          "start": 5.16,
+          "end": 5.38
+        },
+        {
+          "w": "digits",
+          "start": 5.38,
+          "end": 5.74
+        },
+        {
+          "w": "only.",
+          "start": 5.74,
+          "end": 6.2
+        },
+        {
+          "w": "Python",
+          "start": 6.72,
+          "end": 6.94
+        },
+        {
+          "w": "strings",
+          "start": 6.94,
+          "end": 7.34
+        }
+      ]
+    },
+    {
+      "text": "have a method called isdigit",
+      "start": 7.34,
+      "end": 8.88,
+      "words": [
+        {
+          "w": "have",
+          "start": 7.34,
+          "end": 7.62
+        },
+        {
+          "w": "a",
+          "start": 7.62,
+          "end": 7.84
+        },
+        {
+          "w": "method",
+          "start": 7.84,
+          "end": 8.0
+        },
+        {
+          "w": "called",
+          "start": 8.0,
+          "end": 8.3
+        },
+        {
+          "w": "isdigit",
+          "start": 8.3,
+          "end": 8.88
+        }
+      ]
+    },
+    {
+      "text": "that looks at every character",
+      "start": 8.88,
+      "end": 10.14,
+      "words": [
+        {
+          "w": "that",
+          "start": 8.88,
+          "end": 9.06
+        },
+        {
+          "w": "looks",
+          "start": 9.06,
+          "end": 9.26
+        },
+        {
+          "w": "at",
+          "start": 9.26,
+          "end": 9.52
+        },
+        {
+          "w": "every",
+          "start": 9.52,
+          "end": 9.76
+        },
+        {
+          "w": "character",
+          "start": 9.76,
+          "end": 10.14
+        }
+      ]
+    },
+    {
+      "text": "and returns true if each",
+      "start": 10.14,
+      "end": 11.54,
+      "words": [
+        {
+          "w": "and",
+          "start": 10.14,
+          "end": 10.46
+        },
+        {
+          "w": "returns",
+          "start": 10.46,
+          "end": 10.74
+        },
+        {
+          "w": "true",
+          "start": 10.74,
+          "end": 11.12
+        },
+        {
+          "w": "if",
+          "start": 11.12,
+          "end": 11.34
+        },
+        {
+          "w": "each",
+          "start": 11.34,
+          "end": 11.54
+        }
+      ]
+    },
+    {
+      "text": "one is a numeral. If",
+      "start": 11.54,
+      "end": 12.34,
+      "words": [
+        {
+          "w": "one",
+          "start": 11.54,
+          "end": 11.68
+        },
+        {
+          "w": "is",
+          "start": 11.68,
+          "end": 11.88
+        },
+        {
+          "w": "a",
+          "start": 11.88,
+          "end": 12.04
+        },
+        {
+          "w": "numeral.",
+          "start": 12.04,
+          "end": 12.1
+        },
+        {
+          "w": "If",
+          "start": 12.1,
+          "end": 12.34
+        }
+      ]
+    },
+    {
+      "text": "the check passes, you can",
+      "start": 12.76,
+      "end": 13.92,
+      "words": [
+        {
+          "w": "the",
+          "start": 12.76,
+          "end": 12.9
+        },
+        {
+          "w": "check",
+          "start": 12.9,
+          "end": 13.08
+        },
+        {
+          "w": "passes,",
+          "start": 13.08,
+          "end": 13.28
+        },
+        {
+          "w": "you",
+          "start": 13.28,
+          "end": 13.66
+        },
+        {
+          "w": "can",
+          "start": 13.86,
+          "end": 13.92
+        }
+      ]
+    },
+    {
+      "text": "turn the text into a",
+      "start": 13.92,
+      "end": 15.02,
+      "words": [
+        {
+          "w": "turn",
+          "start": 13.92,
+          "end": 14.08
+        },
+        {
+          "w": "the",
+          "start": 14.08,
+          "end": 14.26
+        },
+        {
+          "w": "text",
+          "start": 14.26,
+          "end": 14.46
+        },
+        {
+          "w": "into",
+          "start": 14.46,
+          "end": 14.76
+        },
+        {
+          "w": "a",
+          "start": 14.76,
+          "end": 15.02
+        }
+      ]
+    },
+    {
+      "text": "real number using the int",
+      "start": 15.02,
+      "end": 16.24,
+      "words": [
+        {
+          "w": "real",
+          "start": 15.02,
+          "end": 15.2
+        },
+        {
+          "w": "number",
+          "start": 15.2,
+          "end": 15.38
+        },
+        {
+          "w": "using",
+          "start": 15.38,
+          "end": 15.68
+        },
+        {
+          "w": "the",
+          "start": 15.68,
+          "end": 16.0
+        },
+        {
+          "w": "int",
+          "start": 16.0,
+          "end": 16.24
+        }
+      ]
+    },
+    {
+      "text": "function, which builds an integer",
+      "start": 16.24,
+      "end": 17.84,
+      "words": [
+        {
+          "w": "function,",
+          "start": 16.24,
+          "end": 16.38
+        },
+        {
+          "w": "which",
+          "start": 16.38,
+          "end": 16.78
+        },
+        {
+          "w": "builds",
+          "start": 17.2,
+          "end": 17.34
+        },
+        {
+          "w": "an",
+          "start": 17.34,
+          "end": 17.58
+        },
+        {
+          "w": "integer",
+          "start": 17.58,
+          "end": 17.84
+        }
+      ]
+    },
+    {
+      "text": "from the characters. Let\u2019s see",
+      "start": 17.84,
+      "end": 19.66,
+      "words": [
+        {
+          "w": "from",
+          "start": 17.84,
+          "end": 18.1
+        },
+        {
+          "w": "the",
+          "start": 18.1,
+          "end": 18.4
+        },
+        {
+          "w": "characters.",
+          "start": 18.4,
+          "end": 18.56
+        },
+        {
+          "w": "Let\u2019s",
+          "start": 18.56,
+          "end": 18.92
+        },
+        {
+          "w": "see",
+          "start": 19.46,
+          "end": 19.66
+        }
+      ]
+    },
+    {
+      "text": "it in action.",
+      "start": 19.66,
+      "end": 20.18,
+      "words": [
+        {
+          "w": "it",
+          "start": 19.66,
+          "end": 19.84
+        },
+        {
+          "w": "in",
+          "start": 19.84,
+          "end": 20.06
+        },
+        {
+          "w": "action.",
+          "start": 20.06,
+          "end": 20.18
+        }
+      ]
+    }
+  ]
+}

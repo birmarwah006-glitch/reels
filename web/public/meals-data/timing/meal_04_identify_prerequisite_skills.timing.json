@@ -1,0 +1,719 @@
+{
+  "meal_id": "meal_04_identify_prerequisite_skills",
+  "audio": "meal_04_identify_prerequisite_skills.mp3",
+  "duration": 38.76,
+  "alignment": "whisper",
+  "anchors": {
+    "What skills do you need before you can build a grocery store app?": 0.0,
+    "Which Python, front\u2011end, and SQL skills are required?": 6.32,
+    "You should be comfortable with Python basics like variables loops and functions.": 9.24,
+    "Make sure you can write simple Python scripts, style pages with Bootstrap, and run basic SQL before coding": 25.74,
+    "Write a short Python function, an HTML snippet with Bootstrap, and a SQL SELECT query": 32.36
+  },
+  "captions": [
+    {
+      "text": "What skills do you need",
+      "start": 0.0,
+      "end": 1.16,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.3
+        },
+        {
+          "w": "skills",
+          "start": 0.3,
+          "end": 0.68
+        },
+        {
+          "w": "do",
+          "start": 0.68,
+          "end": 0.92
+        },
+        {
+          "w": "you",
+          "start": 0.92,
+          "end": 0.92
+        },
+        {
+          "w": "need",
+          "start": 0.92,
+          "end": 1.16
+        }
+      ]
+    },
+    {
+      "text": "before you can build a",
+      "start": 1.16,
+      "end": 2.32,
+      "words": [
+        {
+          "w": "before",
+          "start": 1.16,
+          "end": 1.52
+        },
+        {
+          "w": "you",
+          "start": 1.52,
+          "end": 1.78
+        },
+        {
+          "w": "can",
+          "start": 1.78,
+          "end": 1.92
+        },
+        {
+          "w": "build",
+          "start": 1.92,
+          "end": 2.14
+        },
+        {
+          "w": "a",
+          "start": 2.14,
+          "end": 2.32
+        }
+      ]
+    },
+    {
+      "text": "grocery store app? Think about",
+      "start": 2.32,
+      "end": 4.08,
+      "words": [
+        {
+          "w": "grocery",
+          "start": 2.32,
+          "end": 2.52
+        },
+        {
+          "w": "store",
+          "start": 2.52,
+          "end": 2.9
+        },
+        {
+          "w": "app?",
+          "start": 2.9,
+          "end": 3.4
+        },
+        {
+          "w": "Think",
+          "start": 3.58,
+          "end": 3.78
+        },
+        {
+          "w": "about",
+          "start": 3.78,
+          "end": 4.08
+        }
+      ]
+    },
+    {
+      "text": "the three worlds you\u2019ll be",
+      "start": 4.08,
+      "end": 5.28,
+      "words": [
+        {
+          "w": "the",
+          "start": 4.08,
+          "end": 4.3
+        },
+        {
+          "w": "three",
+          "start": 4.3,
+          "end": 4.52
+        },
+        {
+          "w": "worlds",
+          "start": 4.52,
+          "end": 4.88
+        },
+        {
+          "w": "you\u2019ll",
+          "start": 4.88,
+          "end": 5.16
+        },
+        {
+          "w": "be",
+          "start": 5.16,
+          "end": 5.28
+        }
+      ]
+    },
+    {
+      "text": "coding in. Which Python, front\u2011end,",
+      "start": 5.28,
+      "end": 7.48,
+      "words": [
+        {
+          "w": "coding",
+          "start": 5.28,
+          "end": 5.56
+        },
+        {
+          "w": "in.",
+          "start": 5.56,
+          "end": 6.06
+        },
+        {
+          "w": "Which",
+          "start": 6.32,
+          "end": 6.48
+        },
+        {
+          "w": "Python,",
+          "start": 6.48,
+          "end": 6.94
+        },
+        {
+          "w": "front\u2011end,",
+          "start": 7.22,
+          "end": 7.48
+        }
+      ]
+    },
+    {
+      "text": "and SQL skills are required?",
+      "start": 7.48,
+      "end": 9.24,
+      "words": [
+        {
+          "w": "and",
+          "start": 7.48,
+          "end": 7.82
+        },
+        {
+          "w": "SQL",
+          "start": 8.2,
+          "end": 8.32
+        },
+        {
+          "w": "skills",
+          "start": 8.32,
+          "end": 8.58
+        },
+        {
+          "w": "are",
+          "start": 8.58,
+          "end": 9.0
+        },
+        {
+          "w": "required?",
+          "start": 9.0,
+          "end": 9.24
+        }
+      ]
+    },
+    {
+      "text": "You should be comfortable with",
+      "start": 9.24,
+      "end": 11.0,
+      "words": [
+        {
+          "w": "You",
+          "start": 9.24,
+          "end": 9.68
+        },
+        {
+          "w": "should",
+          "start": 10.16,
+          "end": 10.3
+        },
+        {
+          "w": "be",
+          "start": 10.3,
+          "end": 10.48
+        },
+        {
+          "w": "comfortable",
+          "start": 10.48,
+          "end": 10.7
+        },
+        {
+          "w": "with",
+          "start": 10.7,
+          "end": 11.0
+        }
+      ]
+    },
+    {
+      "text": "Python basics like variables loops",
+      "start": 11.0,
+      "end": 12.94,
+      "words": [
+        {
+          "w": "Python",
+          "start": 11.0,
+          "end": 11.4
+        },
+        {
+          "w": "basics",
+          "start": 11.4,
+          "end": 11.76
+        },
+        {
+          "w": "like",
+          "start": 11.76,
+          "end": 12.16
+        },
+        {
+          "w": "variables",
+          "start": 12.16,
+          "end": 12.58
+        },
+        {
+          "w": "loops",
+          "start": 12.58,
+          "end": 12.94
+        }
+      ]
+    },
+    {
+      "text": "and functions. On the front",
+      "start": 13.3,
+      "end": 14.8,
+      "words": [
+        {
+          "w": "and",
+          "start": 13.3,
+          "end": 13.38
+        },
+        {
+          "w": "functions.",
+          "start": 13.38,
+          "end": 13.56
+        },
+        {
+          "w": "On",
+          "start": 13.56,
+          "end": 14.04
+        },
+        {
+          "w": "the",
+          "start": 14.48,
+          "end": 14.64
+        },
+        {
+          "w": "front",
+          "start": 14.64,
+          "end": 14.8
+        }
+      ]
+    },
+    {
+      "text": "end you need HTML CSS",
+      "start": 14.8,
+      "end": 16.18,
+      "words": [
+        {
+          "w": "end",
+          "start": 14.8,
+          "end": 15.04
+        },
+        {
+          "w": "you",
+          "start": 15.04,
+          "end": 15.3
+        },
+        {
+          "w": "need",
+          "start": 15.3,
+          "end": 15.44
+        },
+        {
+          "w": "HTML",
+          "start": 15.44,
+          "end": 15.66
+        },
+        {
+          "w": "CSS",
+          "start": 15.66,
+          "end": 16.18
+        }
+      ]
+    },
+    {
+      "text": "and JavaScript, plus a feel",
+      "start": 16.4,
+      "end": 18.5,
+      "words": [
+        {
+          "w": "and",
+          "start": 16.4,
+          "end": 16.72
+        },
+        {
+          "w": "JavaScript,",
+          "start": 16.94,
+          "end": 17.04
+        },
+        {
+          "w": "plus",
+          "start": 17.04,
+          "end": 17.52
+        },
+        {
+          "w": "a",
+          "start": 18.2,
+          "end": 18.26
+        },
+        {
+          "w": "feel",
+          "start": 18.26,
+          "end": 18.5
+        }
+      ]
+    },
+    {
+      "text": "for Bootstrap\u2019s grid and components.",
+      "start": 18.5,
+      "end": 19.9,
+      "words": [
+        {
+          "w": "for",
+          "start": 18.5,
+          "end": 18.7
+        },
+        {
+          "w": "Bootstrap\u2019s",
+          "start": 18.7,
+          "end": 18.92
+        },
+        {
+          "w": "grid",
+          "start": 18.92,
+          "end": 19.4
+        },
+        {
+          "w": "and",
+          "start": 19.4,
+          "end": 19.72
+        },
+        {
+          "w": "components.",
+          "start": 19.72,
+          "end": 19.9
+        }
+      ]
+    },
+    {
+      "text": "For the database you need",
+      "start": 19.9,
+      "end": 21.8,
+      "words": [
+        {
+          "w": "For",
+          "start": 19.9,
+          "end": 20.36
+        },
+        {
+          "w": "the",
+          "start": 20.88,
+          "end": 21.04
+        },
+        {
+          "w": "database",
+          "start": 21.04,
+          "end": 21.26
+        },
+        {
+          "w": "you",
+          "start": 21.26,
+          "end": 21.56
+        },
+        {
+          "w": "need",
+          "start": 21.56,
+          "end": 21.8
+        }
+      ]
+    },
+    {
+      "text": "to write simple SELECT INSERT",
+      "start": 21.8,
+      "end": 23.2,
+      "words": [
+        {
+          "w": "to",
+          "start": 21.8,
+          "end": 22.02
+        },
+        {
+          "w": "write",
+          "start": 22.02,
+          "end": 22.18
+        },
+        {
+          "w": "simple",
+          "start": 22.18,
+          "end": 22.4
+        },
+        {
+          "w": "SELECT",
+          "start": 22.4,
+          "end": 22.74
+        },
+        {
+          "w": "INSERT",
+          "start": 22.82,
+          "end": 23.2
+        }
+      ]
+    },
+    {
+      "text": "UPDATE statements and understand tables",
+      "start": 23.2,
+      "end": 25.1,
+      "words": [
+        {
+          "w": "UPDATE",
+          "start": 23.2,
+          "end": 23.54
+        },
+        {
+          "w": "statements",
+          "start": 23.54,
+          "end": 23.98
+        },
+        {
+          "w": "and",
+          "start": 23.98,
+          "end": 24.36
+        },
+        {
+          "w": "understand",
+          "start": 24.36,
+          "end": 24.7
+        },
+        {
+          "w": "tables",
+          "start": 24.7,
+          "end": 25.1
+        }
+      ]
+    },
+    {
+      "text": "and relationships. Make sure you",
+      "start": 25.1,
+      "end": 27.3,
+      "words": [
+        {
+          "w": "and",
+          "start": 25.1,
+          "end": 25.5
+        },
+        {
+          "w": "relationships.",
+          "start": 25.5,
+          "end": 25.74
+        },
+        {
+          "w": "Make",
+          "start": 25.74,
+          "end": 26.24
+        },
+        {
+          "w": "sure",
+          "start": 26.82,
+          "end": 27.08
+        },
+        {
+          "w": "you",
+          "start": 27.08,
+          "end": 27.3
+        }
+      ]
+    },
+    {
+      "text": "can write simple Python scripts,",
+      "start": 27.3,
+      "end": 28.58,
+      "words": [
+        {
+          "w": "can",
+          "start": 27.3,
+          "end": 27.38
+        },
+        {
+          "w": "write",
+          "start": 27.38,
+          "end": 27.64
+        },
+        {
+          "w": "simple",
+          "start": 27.64,
+          "end": 27.86
+        },
+        {
+          "w": "Python",
+          "start": 27.86,
+          "end": 28.16
+        },
+        {
+          "w": "scripts,",
+          "start": 28.16,
+          "end": 28.58
+        }
+      ]
+    },
+    {
+      "text": "style pages with Bootstrap, and",
+      "start": 28.58,
+      "end": 30.52,
+      "words": [
+        {
+          "w": "style",
+          "start": 28.58,
+          "end": 28.96
+        },
+        {
+          "w": "pages",
+          "start": 28.96,
+          "end": 29.4
+        },
+        {
+          "w": "with",
+          "start": 29.4,
+          "end": 29.74
+        },
+        {
+          "w": "Bootstrap,",
+          "start": 29.74,
+          "end": 29.96
+        },
+        {
+          "w": "and",
+          "start": 29.96,
+          "end": 30.52
+        }
+      ]
+    },
+    {
+      "text": "run basic SQL before coding.",
+      "start": 30.52,
+      "end": 32.36,
+      "words": [
+        {
+          "w": "run",
+          "start": 30.52,
+          "end": 31.16
+        },
+        {
+          "w": "basic",
+          "start": 31.16,
+          "end": 31.38
+        },
+        {
+          "w": "SQL",
+          "start": 31.38,
+          "end": 31.68
+        },
+        {
+          "w": "before",
+          "start": 31.68,
+          "end": 32.06
+        },
+        {
+          "w": "coding.",
+          "start": 32.06,
+          "end": 32.36
+        }
+      ]
+    },
+    {
+      "text": "Write a short Python function,",
+      "start": 32.36,
+      "end": 34.16,
+      "words": [
+        {
+          "w": "Write",
+          "start": 32.36,
+          "end": 32.78
+        },
+        {
+          "w": "a",
+          "start": 33.36,
+          "end": 33.46
+        },
+        {
+          "w": "short",
+          "start": 33.46,
+          "end": 33.64
+        },
+        {
+          "w": "Python",
+          "start": 33.64,
+          "end": 33.82
+        },
+        {
+          "w": "function,",
+          "start": 33.82,
+          "end": 34.16
+        }
+      ]
+    },
+    {
+      "text": "an HTML snippet with Bootstrap,",
+      "start": 34.16,
+      "end": 36.04,
+      "words": [
+        {
+          "w": "an",
+          "start": 34.16,
+          "end": 34.64
+        },
+        {
+          "w": "HTML",
+          "start": 34.64,
+          "end": 34.98
+        },
+        {
+          "w": "snippet",
+          "start": 34.98,
+          "end": 35.34
+        },
+        {
+          "w": "with",
+          "start": 35.34,
+          "end": 35.86
+        },
+        {
+          "w": "Bootstrap,",
+          "start": 35.86,
+          "end": 36.04
+        }
+      ]
+    },
+    {
+      "text": "and a SQL SELECT query.",
+      "start": 36.04,
+      "end": 38.04,
+      "words": [
+        {
+          "w": "and",
+          "start": 36.04,
+          "end": 36.6
+        },
+        {
+          "w": "a",
+          "start": 36.6,
+          "end": 37.26
+        },
+        {
+          "w": "SQL",
+          "start": 37.26,
+          "end": 37.42
+        },
+        {
+          "w": "SELECT",
+          "start": 37.42,
+          "end": 37.66
+        },
+        {
+          "w": "query.",
+          "start": 37.66,
+          "end": 38.04
+        }
+      ]
+    }
+  ]
+}

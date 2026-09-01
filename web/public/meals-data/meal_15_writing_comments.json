@@ -1,0 +1,155 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_15_writing_comments",
+    "title": "Adding Comments in C",
+    "concept": "c.project.overview",
+    "objective": "Add single\u2011line and multi\u2011line comments and the const keyword to C code",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "python.functions.define"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "//",
+      "/* */",
+      "const"
+    ],
+    "assumes": [],
+    "voice": {
+      "script": "What if your code could talk without saying a word? How do you add notes to C code? In C you can write remarks that the compiler ignores. A double slash starts a single\u2011line comment that runs to the end of that line. Anything after the slashes is just a note for humans. For longer explanations you open with slash\u2011asterisk and close with asterisk\u2011slash; everything in between is ignored, even across many lines. You can also mark a value as constant with the const keyword, which tells the compiler the variable never changes, and you often add a comment explaining why. Here\u2019s a tiny program. // This prints a greeting /* The next line declares a constant integer */ const int answer = 42; printf(\"The answer is %d\\n\", answer); When you run it, the only output is the greeting line with the number, because all the comments vanished during compilation. Remember: comments are your way to document code without affecting what runs. Try adding a comment above each line of a program you write today.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if your code could talk without saying a word?"
+        },
+        "narration_anchor": "What if your code could talk without saying a word?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you add notes to C code?"
+        },
+        "narration_anchor": "How do you add notes to C code?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Comments in C",
+              "kind": "box"
+            }
+          ],
+          "edges": []
+        },
+        "narration_anchor": "In C you can write remarks that the compiler ignores."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "c",
+          "filename": "main.c",
+          "code": "#include <stdio.h>\n\nint main() {\n    // This prints a greeting\n    /* The next line declares a constant integer */\n    const int answer = 42;\n    printf(\"The answer is %d\\n\", answer);\n    return 0;\n}\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "#include <stdio.h>\n\nint main() {\n    // This prints a greeting\n    /* The next line declares a constant integer */\n    const int answer = 42;\n    printf(\"The answer is %d\\n\", answer);\n    return 0;\n}",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "speed_cps": 26
+            }
+          ]
+        },
+        "narration_anchor": "Here\u2019s a tiny program."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "a.out",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:39+00:00",
+            "stdout": "The answer is 42\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "When you run it, the only output is the greeting line with the number, because all the comments vanished during compilation.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Comments let you explain code without changing its behavior."
+        },
+        "narration_anchor": "Remember: comments are your way to document code without affecting what runs.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Add a comment describing what each line does in a simple C program."
+        },
+        "narration_anchor": "Try adding a comment above each line of a program you write today.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Add a comment describing what each line does in a simple C program.",
+      "hint": "Use // for one\u2011line notes and /* \u2026 */ for longer ones."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 15,
+      "total": 22,
+      "previous_id": "meal_14_using_the_math_library_pow_sqrt_ceil_floor",
+      "next_id": "meal_16_arrays_and_indexing"
+    }
+  }
+}

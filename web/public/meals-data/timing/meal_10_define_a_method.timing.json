@@ -1,0 +1,656 @@
+{
+  "meal_id": "meal_10_define_a_method",
+  "audio": "meal_10_define_a_method.mp3",
+  "duration": 34.296,
+  "alignment": "whisper",
+  "anchors": {
+    "How can a class actually do something?": 0.0,
+    "How do I make a student greet?": 2.52,
+    "A method is just a function written inside a class definition": 4.44,
+    "In the code we define the method, use self.name inside the message, create a Student object, and call greet.": 15.5,
+    "Remember: methods let objects behave, not just hold data.": 25.88,
+    "Now try writing a method that returns the student\u2019s email address.": 29.76
+  },
+  "captions": [
+    {
+      "text": "How can a class actually",
+      "start": 0.0,
+      "end": 1.44,
+      "words": [
+        {
+          "w": "How",
+          "start": 0.0,
+          "end": 0.34
+        },
+        {
+          "w": "can",
+          "start": 0.34,
+          "end": 0.5
+        },
+        {
+          "w": "a",
+          "start": 0.5,
+          "end": 0.74
+        },
+        {
+          "w": "class",
+          "start": 0.74,
+          "end": 1.02
+        },
+        {
+          "w": "actually",
+          "start": 1.02,
+          "end": 1.44
+        }
+      ]
+    },
+    {
+      "text": "do something? How do I",
+      "start": 1.44,
+      "end": 2.88,
+      "words": [
+        {
+          "w": "do",
+          "start": 1.44,
+          "end": 1.68
+        },
+        {
+          "w": "something?",
+          "start": 1.68,
+          "end": 2.08
+        },
+        {
+          "w": "How",
+          "start": 2.52,
+          "end": 2.64
+        },
+        {
+          "w": "do",
+          "start": 2.64,
+          "end": 2.74
+        },
+        {
+          "w": "I",
+          "start": 2.74,
+          "end": 2.88
+        }
+      ]
+    },
+    {
+      "text": "make a student greet? A",
+      "start": 2.88,
+      "end": 4.58,
+      "words": [
+        {
+          "w": "make",
+          "start": 2.88,
+          "end": 3.18
+        },
+        {
+          "w": "a",
+          "start": 3.18,
+          "end": 3.26
+        },
+        {
+          "w": "student",
+          "start": 3.26,
+          "end": 3.56
+        },
+        {
+          "w": "greet?",
+          "start": 3.56,
+          "end": 3.96
+        },
+        {
+          "w": "A",
+          "start": 4.44,
+          "end": 4.58
+        }
+      ]
+    },
+    {
+      "text": "method is just a function",
+      "start": 4.58,
+      "end": 5.62,
+      "words": [
+        {
+          "w": "method",
+          "start": 4.58,
+          "end": 4.78
+        },
+        {
+          "w": "is",
+          "start": 4.78,
+          "end": 5.0
+        },
+        {
+          "w": "just",
+          "start": 5.0,
+          "end": 5.2
+        },
+        {
+          "w": "a",
+          "start": 5.2,
+          "end": 5.3
+        },
+        {
+          "w": "function",
+          "start": 5.3,
+          "end": 5.62
+        }
+      ]
+    },
+    {
+      "text": "written inside a class definition,",
+      "start": 5.62,
+      "end": 7.22,
+      "words": [
+        {
+          "w": "written",
+          "start": 5.62,
+          "end": 5.94
+        },
+        {
+          "w": "inside",
+          "start": 5.94,
+          "end": 6.3
+        },
+        {
+          "w": "a",
+          "start": 6.3,
+          "end": 6.5
+        },
+        {
+          "w": "class",
+          "start": 6.5,
+          "end": 6.74
+        },
+        {
+          "w": "definition,",
+          "start": 6.74,
+          "end": 7.22
+        }
+      ]
+    },
+    {
+      "text": "and it always receives the",
+      "start": 7.22,
+      "end": 9.02,
+      "words": [
+        {
+          "w": "and",
+          "start": 7.22,
+          "end": 7.86
+        },
+        {
+          "w": "it",
+          "start": 7.86,
+          "end": 8.12
+        },
+        {
+          "w": "always",
+          "start": 8.12,
+          "end": 8.36
+        },
+        {
+          "w": "receives",
+          "start": 8.36,
+          "end": 8.7
+        },
+        {
+          "w": "the",
+          "start": 8.7,
+          "end": 9.02
+        }
+      ]
+    },
+    {
+      "text": "instance as its first parameter,",
+      "start": 9.02,
+      "end": 10.48,
+      "words": [
+        {
+          "w": "instance",
+          "start": 9.02,
+          "end": 9.38
+        },
+        {
+          "w": "as",
+          "start": 9.38,
+          "end": 9.62
+        },
+        {
+          "w": "its",
+          "start": 9.62,
+          "end": 9.82
+        },
+        {
+          "w": "first",
+          "start": 9.82,
+          "end": 10.06
+        },
+        {
+          "w": "parameter,",
+          "start": 10.06,
+          "end": 10.48
+        }
+      ]
+    },
+    {
+      "text": "usually named self. That lets",
+      "start": 10.68,
+      "end": 12.44,
+      "words": [
+        {
+          "w": "usually",
+          "start": 10.68,
+          "end": 10.96
+        },
+        {
+          "w": "named",
+          "start": 10.96,
+          "end": 11.28
+        },
+        {
+          "w": "self.",
+          "start": 11.28,
+          "end": 11.74
+        },
+        {
+          "w": "That",
+          "start": 12.14,
+          "end": 12.24
+        },
+        {
+          "w": "lets",
+          "start": 12.24,
+          "end": 12.44
+        }
+      ]
+    },
+    {
+      "text": "the method read or change",
+      "start": 12.44,
+      "end": 13.8,
+      "words": [
+        {
+          "w": "the",
+          "start": 12.44,
+          "end": 12.64
+        },
+        {
+          "w": "method",
+          "start": 12.64,
+          "end": 12.9
+        },
+        {
+          "w": "read",
+          "start": 12.9,
+          "end": 13.2
+        },
+        {
+          "w": "or",
+          "start": 13.2,
+          "end": 13.48
+        },
+        {
+          "w": "change",
+          "start": 13.48,
+          "end": 13.8
+        }
+      ]
+    },
+    {
+      "text": "the instance\u2019s attributes. In the",
+      "start": 13.8,
+      "end": 15.8,
+      "words": [
+        {
+          "w": "the",
+          "start": 13.8,
+          "end": 14.08
+        },
+        {
+          "w": "instance\u2019s",
+          "start": 14.08,
+          "end": 14.6
+        },
+        {
+          "w": "attributes.",
+          "start": 14.6,
+          "end": 14.94
+        },
+        {
+          "w": "In",
+          "start": 15.5,
+          "end": 15.62
+        },
+        {
+          "w": "the",
+          "start": 15.62,
+          "end": 15.8
+        }
+      ]
+    },
+    {
+      "text": "code we define the method,",
+      "start": 15.8,
+      "end": 17.08,
+      "words": [
+        {
+          "w": "code",
+          "start": 15.8,
+          "end": 16.02
+        },
+        {
+          "w": "we",
+          "start": 16.02,
+          "end": 16.2
+        },
+        {
+          "w": "define",
+          "start": 16.2,
+          "end": 16.54
+        },
+        {
+          "w": "the",
+          "start": 16.54,
+          "end": 16.76
+        },
+        {
+          "w": "method,",
+          "start": 16.76,
+          "end": 17.08
+        }
+      ]
+    },
+    {
+      "text": "use self.name inside the message,",
+      "start": 17.52,
+      "end": 19.1,
+      "words": [
+        {
+          "w": "use",
+          "start": 17.52,
+          "end": 17.68
+        },
+        {
+          "w": "self.name",
+          "start": 17.68,
+          "end": 17.96
+        },
+        {
+          "w": "inside",
+          "start": 17.96,
+          "end": 18.48
+        },
+        {
+          "w": "the",
+          "start": 18.48,
+          "end": 18.92
+        },
+        {
+          "w": "message,",
+          "start": 18.92,
+          "end": 19.1
+        }
+      ]
+    },
+    {
+      "text": "create a Student object, and",
+      "start": 19.1,
+      "end": 20.92,
+      "words": [
+        {
+          "w": "create",
+          "start": 19.1,
+          "end": 19.48
+        },
+        {
+          "w": "a",
+          "start": 20.02,
+          "end": 20.12
+        },
+        {
+          "w": "Student",
+          "start": 20.12,
+          "end": 20.32
+        },
+        {
+          "w": "object,",
+          "start": 20.32,
+          "end": 20.5
+        },
+        {
+          "w": "and",
+          "start": 20.5,
+          "end": 20.92
+        }
+      ]
+    },
+    {
+      "text": "call greet. Running it prints",
+      "start": 21.26,
+      "end": 22.94,
+      "words": [
+        {
+          "w": "call",
+          "start": 21.26,
+          "end": 21.36
+        },
+        {
+          "w": "greet.",
+          "start": 21.36,
+          "end": 21.54
+        },
+        {
+          "w": "Running",
+          "start": 21.54,
+          "end": 21.9
+        },
+        {
+          "w": "it",
+          "start": 22.44,
+          "end": 22.66
+        },
+        {
+          "w": "prints",
+          "start": 22.66,
+          "end": 22.94
+        }
+      ]
+    },
+    {
+      "text": "the greeting, showing the method",
+      "start": 22.94,
+      "end": 24.46,
+      "words": [
+        {
+          "w": "the",
+          "start": 22.94,
+          "end": 23.16
+        },
+        {
+          "w": "greeting,",
+          "start": 23.16,
+          "end": 23.38
+        },
+        {
+          "w": "showing",
+          "start": 23.38,
+          "end": 23.74
+        },
+        {
+          "w": "the",
+          "start": 24.12,
+          "end": 24.2
+        },
+        {
+          "w": "method",
+          "start": 24.2,
+          "end": 24.46
+        }
+      ]
+    },
+    {
+      "text": "works on that specific instance.",
+      "start": 24.46,
+      "end": 25.88,
+      "words": [
+        {
+          "w": "works",
+          "start": 24.46,
+          "end": 24.68
+        },
+        {
+          "w": "on",
+          "start": 24.68,
+          "end": 25.04
+        },
+        {
+          "w": "that",
+          "start": 25.04,
+          "end": 25.3
+        },
+        {
+          "w": "specific",
+          "start": 25.3,
+          "end": 25.48
+        },
+        {
+          "w": "instance.",
+          "start": 25.48,
+          "end": 25.88
+        }
+      ]
+    },
+    {
+      "text": "Remember: methods let objects behave,",
+      "start": 25.88,
+      "end": 28.5,
+      "words": [
+        {
+          "w": "Remember:",
+          "start": 25.88,
+          "end": 26.38
+        },
+        {
+          "w": "methods",
+          "start": 26.38,
+          "end": 27.24
+        },
+        {
+          "w": "let",
+          "start": 27.56,
+          "end": 27.74
+        },
+        {
+          "w": "objects",
+          "start": 27.74,
+          "end": 28.12
+        },
+        {
+          "w": "behave,",
+          "start": 28.12,
+          "end": 28.5
+        }
+      ]
+    },
+    {
+      "text": "not just hold data. Now",
+      "start": 28.5,
+      "end": 30.12,
+      "words": [
+        {
+          "w": "not",
+          "start": 28.5,
+          "end": 29.0
+        },
+        {
+          "w": "just",
+          "start": 29.0,
+          "end": 29.34
+        },
+        {
+          "w": "hold",
+          "start": 29.34,
+          "end": 29.58
+        },
+        {
+          "w": "data.",
+          "start": 29.58,
+          "end": 29.76
+        },
+        {
+          "w": "Now",
+          "start": 29.76,
+          "end": 30.12
+        }
+      ]
+    },
+    {
+      "text": "try writing a method that",
+      "start": 30.58,
+      "end": 31.94,
+      "words": [
+        {
+          "w": "try",
+          "start": 30.58,
+          "end": 30.86
+        },
+        {
+          "w": "writing",
+          "start": 30.86,
+          "end": 31.16
+        },
+        {
+          "w": "a",
+          "start": 31.16,
+          "end": 31.44
+        },
+        {
+          "w": "method",
+          "start": 31.44,
+          "end": 31.64
+        },
+        {
+          "w": "that",
+          "start": 31.64,
+          "end": 31.94
+        }
+      ]
+    },
+    {
+      "text": "returns the student\u2019s email address.",
+      "start": 31.94,
+      "end": 33.5,
+      "words": [
+        {
+          "w": "returns",
+          "start": 31.94,
+          "end": 32.2
+        },
+        {
+          "w": "the",
+          "start": 32.2,
+          "end": 32.56
+        },
+        {
+          "w": "student\u2019s",
+          "start": 32.56,
+          "end": 32.84
+        },
+        {
+          "w": "email",
+          "start": 32.84,
+          "end": 33.34
+        },
+        {
+          "w": "address.",
+          "start": 33.34,
+          "end": 33.5
+        }
+      ]
+    }
+  ]
+}

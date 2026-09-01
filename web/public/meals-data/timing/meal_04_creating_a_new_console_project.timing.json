@@ -1,0 +1,815 @@
+{
+  "meal_id": "meal_04_creating_a_new_console_project",
+  "audio": "meal_04_creating_a_new_console_project.mp3",
+  "duration": 46.368,
+  "alignment": "whisper",
+  "anchors": {
+    "Want to see your first C program appear on screen?": 0.0,
+    "How do you create a new console project in Code::Blocks?": 3.36,
+    "A console project is a simple program that runs in a text window, where you can type and see output.": 6.72,
+    "Remember, a console project gives you a ready\u2011made skeleton to start coding quickly.": 35.72,
+    "Your next step is to add a print statement that says Hello, world!": 40.0
+  },
+  "captions": [
+    {
+      "text": "Want to see your first",
+      "start": 0.0,
+      "end": 1.12,
+      "words": [
+        {
+          "w": "Want",
+          "start": 0.0,
+          "end": 0.38
+        },
+        {
+          "w": "to",
+          "start": 0.38,
+          "end": 0.46
+        },
+        {
+          "w": "see",
+          "start": 0.46,
+          "end": 0.6
+        },
+        {
+          "w": "your",
+          "start": 0.6,
+          "end": 0.86
+        },
+        {
+          "w": "first",
+          "start": 0.86,
+          "end": 1.12
+        }
+      ]
+    },
+    {
+      "text": "C program appear on screen?",
+      "start": 1.12,
+      "end": 2.88,
+      "words": [
+        {
+          "w": "C",
+          "start": 1.12,
+          "end": 1.42
+        },
+        {
+          "w": "program",
+          "start": 1.42,
+          "end": 1.8
+        },
+        {
+          "w": "appear",
+          "start": 1.8,
+          "end": 2.16
+        },
+        {
+          "w": "on",
+          "start": 2.16,
+          "end": 2.52
+        },
+        {
+          "w": "screen?",
+          "start": 2.52,
+          "end": 2.88
+        }
+      ]
+    },
+    {
+      "text": "How do you create a",
+      "start": 3.36,
+      "end": 4.14,
+      "words": [
+        {
+          "w": "How",
+          "start": 3.36,
+          "end": 3.4
+        },
+        {
+          "w": "do",
+          "start": 3.4,
+          "end": 3.58
+        },
+        {
+          "w": "you",
+          "start": 3.58,
+          "end": 3.58
+        },
+        {
+          "w": "create",
+          "start": 3.58,
+          "end": 3.94
+        },
+        {
+          "w": "a",
+          "start": 3.94,
+          "end": 4.14
+        }
+      ]
+    },
+    {
+      "text": "new console project in Code::Blocks?",
+      "start": 4.14,
+      "end": 5.96,
+      "words": [
+        {
+          "w": "new",
+          "start": 4.14,
+          "end": 4.38
+        },
+        {
+          "w": "console",
+          "start": 4.38,
+          "end": 4.72
+        },
+        {
+          "w": "project",
+          "start": 4.72,
+          "end": 5.24
+        },
+        {
+          "w": "in",
+          "start": 5.24,
+          "end": 5.56
+        },
+        {
+          "w": "Code::Blocks?",
+          "start": 5.56,
+          "end": 5.96
+        }
+      ]
+    },
+    {
+      "text": "A console project is a",
+      "start": 6.72,
+      "end": 8.62,
+      "words": [
+        {
+          "w": "A",
+          "start": 6.72,
+          "end": 7.1
+        },
+        {
+          "w": "console",
+          "start": 7.4,
+          "end": 7.6
+        },
+        {
+          "w": "project",
+          "start": 7.6,
+          "end": 7.9
+        },
+        {
+          "w": "is",
+          "start": 7.9,
+          "end": 8.38
+        },
+        {
+          "w": "a",
+          "start": 8.38,
+          "end": 8.62
+        }
+      ]
+    },
+    {
+      "text": "simple program that runs in",
+      "start": 8.62,
+      "end": 10.02,
+      "words": [
+        {
+          "w": "simple",
+          "start": 8.62,
+          "end": 8.78
+        },
+        {
+          "w": "program",
+          "start": 8.78,
+          "end": 9.02
+        },
+        {
+          "w": "that",
+          "start": 9.02,
+          "end": 9.5
+        },
+        {
+          "w": "runs",
+          "start": 9.5,
+          "end": 9.78
+        },
+        {
+          "w": "in",
+          "start": 9.78,
+          "end": 10.02
+        }
+      ]
+    },
+    {
+      "text": "a text window, where you",
+      "start": 10.02,
+      "end": 11.62,
+      "words": [
+        {
+          "w": "a",
+          "start": 10.02,
+          "end": 10.3
+        },
+        {
+          "w": "text",
+          "start": 10.3,
+          "end": 10.4
+        },
+        {
+          "w": "window,",
+          "start": 10.4,
+          "end": 10.62
+        },
+        {
+          "w": "where",
+          "start": 10.62,
+          "end": 11.0
+        },
+        {
+          "w": "you",
+          "start": 11.5,
+          "end": 11.62
+        }
+      ]
+    },
+    {
+      "text": "can type and see output.",
+      "start": 11.62,
+      "end": 12.64,
+      "words": [
+        {
+          "w": "can",
+          "start": 11.62,
+          "end": 11.66
+        },
+        {
+          "w": "type",
+          "start": 11.66,
+          "end": 11.9
+        },
+        {
+          "w": "and",
+          "start": 11.9,
+          "end": 12.16
+        },
+        {
+          "w": "see",
+          "start": 12.16,
+          "end": 12.42
+        },
+        {
+          "w": "output.",
+          "start": 12.42,
+          "end": 12.64
+        }
+      ]
+    },
+    {
+      "text": "Open Code::Blocks, click the Create",
+      "start": 12.64,
+      "end": 15.88,
+      "words": [
+        {
+          "w": "Open",
+          "start": 12.64,
+          "end": 13.0
+        },
+        {
+          "w": "Code::Blocks,",
+          "start": 13.54,
+          "end": 13.72
+        },
+        {
+          "w": "click",
+          "start": 13.72,
+          "end": 14.52
+        },
+        {
+          "w": "the",
+          "start": 14.88,
+          "end": 15.24
+        },
+        {
+          "w": "Create",
+          "start": 15.68,
+          "end": 15.88
+        }
+      ]
+    },
+    {
+      "text": "a new project button, choose",
+      "start": 15.88,
+      "end": 17.1,
+      "words": [
+        {
+          "w": "a",
+          "start": 15.88,
+          "end": 16.08
+        },
+        {
+          "w": "new",
+          "start": 16.08,
+          "end": 16.34
+        },
+        {
+          "w": "project",
+          "start": 16.34,
+          "end": 16.58
+        },
+        {
+          "w": "button,",
+          "start": 16.58,
+          "end": 16.78
+        },
+        {
+          "w": "choose",
+          "start": 16.78,
+          "end": 17.1
+        }
+      ]
+    },
+    {
+      "text": "Console application, then press Next.",
+      "start": 17.1,
+      "end": 20.12,
+      "words": [
+        {
+          "w": "Console",
+          "start": 17.1,
+          "end": 17.58
+        },
+        {
+          "w": "application,",
+          "start": 17.98,
+          "end": 18.24
+        },
+        {
+          "w": "then",
+          "start": 18.24,
+          "end": 18.7
+        },
+        {
+          "w": "press",
+          "start": 18.7,
+          "end": 19.2
+        },
+        {
+          "w": "Next.",
+          "start": 19.86,
+          "end": 20.12
+        }
+      ]
+    },
+    {
+      "text": "Select C as the language,",
+      "start": 20.12,
+      "end": 22.0,
+      "words": [
+        {
+          "w": "Select",
+          "start": 20.12,
+          "end": 20.38
+        },
+        {
+          "w": "C",
+          "start": 20.38,
+          "end": 20.74
+        },
+        {
+          "w": "as",
+          "start": 21.26,
+          "end": 21.52
+        },
+        {
+          "w": "the",
+          "start": 21.52,
+          "end": 21.78
+        },
+        {
+          "w": "language,",
+          "start": 21.78,
+          "end": 22.0
+        }
+      ]
+    },
+    {
+      "text": "give your project a name",
+      "start": 22.0,
+      "end": 23.7,
+      "words": [
+        {
+          "w": "give",
+          "start": 22.0,
+          "end": 22.12
+        },
+        {
+          "w": "your",
+          "start": 22.12,
+          "end": 22.48
+        },
+        {
+          "w": "project",
+          "start": 23.02,
+          "end": 23.18
+        },
+        {
+          "w": "a",
+          "start": 23.18,
+          "end": 23.4
+        },
+        {
+          "w": "name",
+          "start": 23.4,
+          "end": 23.7
+        }
+      ]
+    },
+    {
+      "text": "like MyFirstProgram, choose a folder,",
+      "start": 23.7,
+      "end": 24.82,
+      "words": [
+        {
+          "w": "like",
+          "start": 23.7,
+          "end": 23.92
+        },
+        {
+          "w": "MyFirstProgram,",
+          "start": 23.92,
+          "end": 24.1
+        },
+        {
+          "w": "choose",
+          "start": 24.1,
+          "end": 24.4
+        },
+        {
+          "w": "a",
+          "start": 24.4,
+          "end": 24.58
+        },
+        {
+          "w": "folder,",
+          "start": 24.58,
+          "end": 24.82
+        }
+      ]
+    },
+    {
+      "text": "and click Next again. Accept",
+      "start": 24.82,
+      "end": 26.94,
+      "words": [
+        {
+          "w": "and",
+          "start": 24.82,
+          "end": 25.44
+        },
+        {
+          "w": "click",
+          "start": 25.84,
+          "end": 26.02
+        },
+        {
+          "w": "Next",
+          "start": 26.02,
+          "end": 26.26
+        },
+        {
+          "w": "again.",
+          "start": 26.26,
+          "end": 26.54
+        },
+        {
+          "w": "Accept",
+          "start": 26.54,
+          "end": 26.94
+        }
+      ]
+    },
+    {
+      "text": "the default compiler settings, click",
+      "start": 26.94,
+      "end": 28.8,
+      "words": [
+        {
+          "w": "the",
+          "start": 26.94,
+          "end": 27.2
+        },
+        {
+          "w": "default",
+          "start": 27.2,
+          "end": 27.46
+        },
+        {
+          "w": "compiler",
+          "start": 27.46,
+          "end": 27.9
+        },
+        {
+          "w": "settings,",
+          "start": 27.9,
+          "end": 28.6
+        },
+        {
+          "w": "click",
+          "start": 28.6,
+          "end": 28.8
+        }
+      ]
+    },
+    {
+      "text": "Finish, and Code::Blocks will generate",
+      "start": 28.8,
+      "end": 30.96,
+      "words": [
+        {
+          "w": "Finish,",
+          "start": 28.8,
+          "end": 29.08
+        },
+        {
+          "w": "and",
+          "start": 29.08,
+          "end": 29.5
+        },
+        {
+          "w": "Code::Blocks",
+          "start": 29.5,
+          "end": 30.0
+        },
+        {
+          "w": "will",
+          "start": 30.42,
+          "end": 30.58
+        },
+        {
+          "w": "generate",
+          "start": 30.58,
+          "end": 30.96
+        }
+      ]
+    },
+    {
+      "text": "a basic main file for",
+      "start": 30.96,
+      "end": 33.24,
+      "words": [
+        {
+          "w": "a",
+          "start": 30.96,
+          "end": 31.3
+        },
+        {
+          "w": "basic",
+          "start": 31.3,
+          "end": 31.74
+        },
+        {
+          "w": "main",
+          "start": 32.5,
+          "end": 32.68
+        },
+        {
+          "w": "file",
+          "start": 32.68,
+          "end": 32.92
+        },
+        {
+          "w": "for",
+          "start": 32.92,
+          "end": 33.24
+        }
+      ]
+    },
+    {
+      "text": "you. That\u2019s all you need",
+      "start": 33.24,
+      "end": 34.64,
+      "words": [
+        {
+          "w": "you.",
+          "start": 33.24,
+          "end": 33.56
+        },
+        {
+          "w": "That\u2019s",
+          "start": 33.56,
+          "end": 33.8
+        },
+        {
+          "w": "all",
+          "start": 33.8,
+          "end": 34.1
+        },
+        {
+          "w": "you",
+          "start": 34.1,
+          "end": 34.4
+        },
+        {
+          "w": "need",
+          "start": 34.4,
+          "end": 34.64
+        }
+      ]
+    },
+    {
+      "text": "to begin writing code. Remember,",
+      "start": 34.64,
+      "end": 35.9,
+      "words": [
+        {
+          "w": "to",
+          "start": 34.64,
+          "end": 34.96
+        },
+        {
+          "w": "begin",
+          "start": 35.18,
+          "end": 35.5
+        },
+        {
+          "w": "writing",
+          "start": 35.5,
+          "end": 35.64
+        },
+        {
+          "w": "code.",
+          "start": 35.64,
+          "end": 35.72
+        },
+        {
+          "w": "Remember,",
+          "start": 35.72,
+          "end": 35.9
+        }
+      ]
+    },
+    {
+      "text": "a console project gives you",
+      "start": 35.9,
+      "end": 38.0,
+      "words": [
+        {
+          "w": "a",
+          "start": 35.9,
+          "end": 36.08
+        },
+        {
+          "w": "console",
+          "start": 36.08,
+          "end": 36.36
+        },
+        {
+          "w": "project",
+          "start": 36.36,
+          "end": 36.7
+        },
+        {
+          "w": "gives",
+          "start": 36.7,
+          "end": 37.14
+        },
+        {
+          "w": "you",
+          "start": 37.68,
+          "end": 38.0
+        }
+      ]
+    },
+    {
+      "text": "a ready\u2011made skeleton to start",
+      "start": 38.26,
+      "end": 39.74,
+      "words": [
+        {
+          "w": "a",
+          "start": 38.26,
+          "end": 38.4
+        },
+        {
+          "w": "ready\u2011made",
+          "start": 38.4,
+          "end": 38.66
+        },
+        {
+          "w": "skeleton",
+          "start": 38.66,
+          "end": 39.16
+        },
+        {
+          "w": "to",
+          "start": 39.16,
+          "end": 39.46
+        },
+        {
+          "w": "start",
+          "start": 39.46,
+          "end": 39.74
+        }
+      ]
+    },
+    {
+      "text": "coding quickly. Your next step",
+      "start": 39.74,
+      "end": 40.94,
+      "words": [
+        {
+          "w": "coding",
+          "start": 39.74,
+          "end": 39.84
+        },
+        {
+          "w": "quickly.",
+          "start": 39.84,
+          "end": 40.0
+        },
+        {
+          "w": "Your",
+          "start": 40.0,
+          "end": 40.22
+        },
+        {
+          "w": "next",
+          "start": 40.22,
+          "end": 40.58
+        },
+        {
+          "w": "step",
+          "start": 40.58,
+          "end": 40.94
+        }
+      ]
+    },
+    {
+      "text": "is to add a print",
+      "start": 40.94,
+      "end": 42.7,
+      "words": [
+        {
+          "w": "is",
+          "start": 40.94,
+          "end": 41.16
+        },
+        {
+          "w": "to",
+          "start": 41.16,
+          "end": 41.46
+        },
+        {
+          "w": "add",
+          "start": 41.46,
+          "end": 41.9
+        },
+        {
+          "w": "a",
+          "start": 42.32,
+          "end": 42.46
+        },
+        {
+          "w": "print",
+          "start": 42.46,
+          "end": 42.7
+        }
+      ]
+    },
+    {
+      "text": "statement that says Hello, world!",
+      "start": 42.7,
+      "end": 43.64,
+      "words": [
+        {
+          "w": "statement",
+          "start": 42.7,
+          "end": 42.94
+        },
+        {
+          "w": "that",
+          "start": 42.94,
+          "end": 43.2
+        },
+        {
+          "w": "says",
+          "start": 43.2,
+          "end": 43.36
+        },
+        {
+          "w": "Hello,",
+          "start": 43.36,
+          "end": 43.52
+        },
+        {
+          "w": "world!",
+          "start": 43.52,
+          "end": 43.64
+        }
+      ]
+    }
+  ]
+}

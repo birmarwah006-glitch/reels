@@ -1,0 +1,162 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_02_create_a_list_of_moves",
+    "title": "Create a list of moves for Rock\u2011Paper\u2011Scissors",
+    "concept": "python.data.lists",
+    "objective": "You can store the three possible moves in a list",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.basics.data_types"
+    ],
+    "next_concepts": [
+      "python.basics.strings",
+      "python.basics.input_output"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "list"
+    ],
+    "assumes": [
+      "list"
+    ],
+    "voice": {
+      "script": "What if you could let the computer choose rock, paper, or scissors for you? That's our first step. How do we keep the possible moves together? In Python a list is a simple container that holds several items in order. We create a list called choices and put the three move words inside. 'scissors']. Now the program has all the options ready to pick from later. Remember: a list stores multiple values under one name. Try adding a fourth move, like 'lizard', to the list.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could let the computer choose rock, paper, or scissors for you?"
+        },
+        "narration_anchor": "What if you could let the computer choose rock, paper, or scissors for you?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do we keep the possible moves together?"
+        },
+        "narration_anchor": "How do we keep the possible moves together?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "list",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "choices variable",
+              "kind": "value"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "stores moves"
+            }
+          ]
+        },
+        "narration_anchor": "In Python a list is a simple container that holds several items in order."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "choices = ['rock', 'paper', 'scissors']\nprint(choices)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "choices = ['rock', 'paper', 'scissors']\nprint(choices)",
+              "lines": [
+                1,
+                2
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "['rock', 'paper', 'scissors']"
+            }
+          ]
+        }
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:30+00:00",
+            "stdout": "['rock', 'paper', 'scissors']\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A list lets you keep several related values together under one name."
+        },
+        "narration_anchor": "Remember: a list stores multiple values under one name.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Add another move, such as \"lizard\", to the choices list and print it."
+        },
+        "narration_anchor": "Try adding a fourth move, like 'lizard', to the list.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Add another move, such as \"lizard\", to the choices list and print it."
+    },
+    "series": {
+      "title": "Build a Rock\u2011Paper\u2011Scissors Game",
+      "artifact": "A command\u2011line rock\u2011paper\u2011scissors game you can run in the terminal",
+      "order": 2,
+      "total": 10,
+      "previous_id": "meal_01_import_the_random_module",
+      "next_id": "meal_03_understand_strings"
+    }
+  }
+}

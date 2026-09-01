@@ -1,0 +1,237 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_09_deposit_function_full_validation",
+    "title": "Deposit Function \u2013 Full Validation",
+    "concept": "python.functions.define",
+    "objective": "Create a deposit() function that repeatedly asks for a positive numeric amount and returns it.",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.basics.variables"
+    ],
+    "next_concepts": [
+      "python.basics.variables",
+      "python.control.if"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "deposit"
+    ],
+    "assumes": [
+      "while",
+      "isdigit",
+      "int()",
+      "comparison",
+      "print",
+      "input"
+    ],
+    "voice": {
+      "script": "What if you could guarantee a valid deposit amount with just one function? How do you keep asking until the user enters a positive number? We define a deposit function that loops until the input passes all checks. First, the function asks for a deposit amount. It uses the digit check to see if the entry contains only numbers. If not, it tells the user to enter only digits and starts the loop again. If the entry is numeric, it converts the text to an integer. Then it compares the number to zero; if it is not greater than zero, it informs the user and repeats. When both tests succeed, the function returns the valid amount. Here is the complete deposit function. When you run the program, it will keep prompting until you type a positive number. The flow diagram shows the loop returning to the prompt on invalid input. A function can enforce input rules by looping until the data is valid. Add a second function that asks for a bet amount using the same pattern.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could guarantee a valid deposit amount with just one function?"
+        },
+        "narration_anchor": "What if you could guarantee a valid deposit amount with just one function?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you keep asking until the user enters a positive number?"
+        },
+        "narration_anchor": "How do you keep asking until the user enters a positive number?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Start",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "Prompt for amount",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Is digit?",
+              "kind": "decision"
+            },
+            {
+              "id": "d",
+              "label": "Convert to int",
+              "kind": "box"
+            },
+            {
+              "id": "e",
+              "label": "Greater than zero?",
+              "kind": "decision"
+            },
+            {
+              "id": "f",
+              "label": "Return value",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b"
+            },
+            {
+              "from": "b",
+              "to": "c"
+            },
+            {
+              "from": "c",
+              "to": "b",
+              "label": "no"
+            },
+            {
+              "from": "c",
+              "to": "d",
+              "label": "yes"
+            },
+            {
+              "from": "d",
+              "to": "e"
+            },
+            {
+              "from": "e",
+              "to": "b",
+              "label": "no"
+            },
+            {
+              "from": "e",
+              "to": "f",
+              "label": "yes"
+            }
+          ]
+        },
+        "narration_anchor": "We define a deposit function that loops until the input passes all checks"
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "import sys\n\ndef deposit():\n    while True:\n        amount = input(\"Enter deposit amount: \")\n        if not amount.isdigit():\n            print(\"Please enter only digits.\")\n            continue\n        value = int(amount)\n        if value <= 0:\n            print(\"Amount must be greater than zero.\")\n            continue\n        return value\n\ndef main():\n    total = deposit()\n    print(f\"Deposit accepted: {total}\")\n\nif __name__ == \"__main__\":\n    main()\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "import sys\n\ndef deposit():\n    while True:\n        amount = input(\"Enter deposit amount: \")\n        if not amount.isdigit():\n            print(\"Please enter only digits.\")\n            continue\n        value = int(amount)\n        if value <= 0:\n            print(\"Amount must be greater than zero.\")\n            continue\n        return value\n\ndef main():\n    total = deposit()\n    print(f\"Deposit accepted: {total}\")\n\nif __name__ == \"__main__\":\n    main()",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "def deposit():"
+            }
+          ]
+        },
+        "narration_anchor": "Here is the complete deposit function"
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [
+            "100"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:33+00:00",
+            "stdout": "Enter deposit amount: Deposit accepted: 100\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "When you run the program, it will keep prompting until you type a positive number",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A function can enforce input rules by looping until the data is valid."
+        },
+        "narration_anchor": "A function can enforce input rules by looping until the data is valid",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Add a second function that asks for a bet amount using the same pattern."
+        },
+        "narration_anchor": "Add a second function that asks for a bet amount using the same pattern",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Add a second function that asks for a bet amount using the same pattern.",
+      "hint": "Copy the deposit function and rename it, changing the prompt text."
+    },
+    "series": {
+      "title": "Build a Simple Slot\u2011Machine Deposit App",
+      "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot\u2011machine spin",
+      "order": 9,
+      "total": 17,
+      "previous_id": "meal_08_comparisons_and_positive_checks",
+      "next_id": "meal_10_global_constants"
+    }
+  }
+}

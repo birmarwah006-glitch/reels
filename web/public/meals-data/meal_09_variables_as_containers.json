@@ -1,0 +1,176 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_09_variables_as_containers",
+    "title": "Variables as containers in C",
+    "concept": "python.basics.variables",
+    "objective": "Declare, assign, and reuse variables of basic types",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "variable",
+      "int",
+      "double",
+      "char",
+      "char array"
+    ],
+    "assumes": [
+      "semicolon"
+    ],
+    "voice": {
+      "script": "You have three pieces of data: a whole number, a decimal number, and a single letter. What if you could store a score, a temperature, and a letter, all in one program? How do you keep different kinds of data in a C program? A variable is just a container that holds a piece of data. The word int declares a container for whole numbers. The word double declares a container for numbers with fractions. The word char declares a container for a single character. A char array, written as char name[10], creates a container that can hold a sequence of characters, like a short word. Now see the code on screen: The program creates an int called score, sets it to 95, a double called temp set to 98.6, and a char called grade set to A. It also creates a char array called name and stores the word Alice. Finally it prints each container's contents. Running this prints the values we stored. Remember: a variable is a named container that holds a value of a specific type.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could store a score, a temperature, and a letter, all in one program?"
+        },
+        "narration_anchor": "What if you could store a score, a temperature, and a letter, all in one program?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you keep different kinds of data in a C program?"
+        },
+        "narration_anchor": "How do you keep different kinds of data in a C program?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Variable as container",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "int, double, char, char array",
+              "kind": "value"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "stores data"
+            }
+          ]
+        },
+        "narration_anchor": "A variable is just a container that holds a piece of data."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "c",
+          "filename": "main.c",
+          "code": "#include <stdio.h>\n\nint main() {\n    int score = 95;\n    double temp = 98.6;\n    char grade = 'A';\n    char name[10] = \"Alice\";\n    printf(\"Score: %d\\n\", score);\n    printf(\"Temp: %.1f\\n\", temp);\n    printf(\"Grade: %c\\n\", grade);\n    printf(\"Name: %s\\n\", name);\n    return 0;\n}\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "#include <stdio.h>\n\nint main() {\n    int score = 95;\n    double temp = 98.6;\n    char grade = 'A';\n    char name[10] = \"Alice\";\n    printf(\"Score: %d\\n\", score);\n    printf(\"Temp: %.1f\\n\", temp);\n    printf(\"Grade: %c\\n\", grade);\n    printf(\"Name: %s\\n\", name);\n    return 0;\n}",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "score"
+            }
+          ]
+        },
+        "narration_anchor": "Now see the code on screen:"
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "a.out",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:34+00:00",
+            "stdout": "Score: 95\nTemp: 98.6\nGrade: A\nName: Alice\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running this prints the values we stored.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Remember: a variable is a named container that holds a value of a specific type."
+        },
+        "narration_anchor": "Remember: a variable is a named container that holds a value of a specific type.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Declare your own int, double, and char array, assign values, and print them."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Declare your own int, double, and char array, assign values, and print them."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 9,
+      "total": 22,
+      "previous_id": "meal_08_understanding_statements_and_semicolons",
+      "next_id": "meal_10_printing_variables_with_format_specifiers"
+    }
+  }
+}

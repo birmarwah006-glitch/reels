@@ -1,0 +1,608 @@
+{
+  "meal_id": "meal_03_writing_a_simple_class_definition",
+  "audio": "meal_03_writing_a_simple_class_definition.mp3",
+  "duration": 29.832,
+  "alignment": "whisper",
+  "anchors": {
+    "What does an empty class look like in code?": 0.0,
+    "The class keyword starts that blueprint definition.": 6.42,
+    "Here is the minimal class definition:": 9.56,
+    "Remember, an empty class is defined with the class name and a pass statement.": 20.6,
+    "Now try adding another method inside the Student class, like a greeting that prints a name.": 25.18
+  },
+  "captions": [
+    {
+      "text": "What does an empty class",
+      "start": 0.0,
+      "end": 1.18,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.3
+        },
+        {
+          "w": "does",
+          "start": 0.3,
+          "end": 0.5
+        },
+        {
+          "w": "an",
+          "start": 0.5,
+          "end": 0.64
+        },
+        {
+          "w": "empty",
+          "start": 0.64,
+          "end": 0.84
+        },
+        {
+          "w": "class",
+          "start": 0.84,
+          "end": 1.18
+        }
+      ]
+    },
+    {
+      "text": "look like in code? A",
+      "start": 1.18,
+      "end": 2.82,
+      "words": [
+        {
+          "w": "look",
+          "start": 1.18,
+          "end": 1.46
+        },
+        {
+          "w": "like",
+          "start": 1.46,
+          "end": 1.72
+        },
+        {
+          "w": "in",
+          "start": 1.72,
+          "end": 1.92
+        },
+        {
+          "w": "code?",
+          "start": 1.92,
+          "end": 2.24
+        },
+        {
+          "w": "A",
+          "start": 2.68,
+          "end": 2.82
+        }
+      ]
+    },
+    {
+      "text": "class is a blueprint that",
+      "start": 2.82,
+      "end": 4.1,
+      "words": [
+        {
+          "w": "class",
+          "start": 2.82,
+          "end": 3.06
+        },
+        {
+          "w": "is",
+          "start": 3.06,
+          "end": 3.32
+        },
+        {
+          "w": "a",
+          "start": 3.32,
+          "end": 3.4
+        },
+        {
+          "w": "blueprint",
+          "start": 3.4,
+          "end": 3.78
+        },
+        {
+          "w": "that",
+          "start": 3.78,
+          "end": 4.1
+        }
+      ]
+    },
+    {
+      "text": "tells Python how to build",
+      "start": 4.1,
+      "end": 5.4,
+      "words": [
+        {
+          "w": "tells",
+          "start": 4.1,
+          "end": 4.36
+        },
+        {
+          "w": "Python",
+          "start": 4.36,
+          "end": 4.74
+        },
+        {
+          "w": "how",
+          "start": 4.74,
+          "end": 5.04
+        },
+        {
+          "w": "to",
+          "start": 5.04,
+          "end": 5.18
+        },
+        {
+          "w": "build",
+          "start": 5.18,
+          "end": 5.4
+        }
+      ]
+    },
+    {
+      "text": "objects. The class keyword starts",
+      "start": 5.4,
+      "end": 7.74,
+      "words": [
+        {
+          "w": "objects.",
+          "start": 5.4,
+          "end": 5.92
+        },
+        {
+          "w": "The",
+          "start": 6.42,
+          "end": 6.56
+        },
+        {
+          "w": "class",
+          "start": 6.56,
+          "end": 6.86
+        },
+        {
+          "w": "keyword",
+          "start": 6.86,
+          "end": 7.24
+        },
+        {
+          "w": "starts",
+          "start": 7.24,
+          "end": 7.74
+        }
+      ]
+    },
+    {
+      "text": "that blueprint definition. Here is",
+      "start": 7.74,
+      "end": 9.96,
+      "words": [
+        {
+          "w": "that",
+          "start": 7.74,
+          "end": 8.16
+        },
+        {
+          "w": "blueprint",
+          "start": 8.16,
+          "end": 8.5
+        },
+        {
+          "w": "definition.",
+          "start": 8.5,
+          "end": 9.0
+        },
+        {
+          "w": "Here",
+          "start": 9.56,
+          "end": 9.74
+        },
+        {
+          "w": "is",
+          "start": 9.74,
+          "end": 9.96
+        }
+      ]
+    },
+    {
+      "text": "the minimal class definition: pass",
+      "start": 9.96,
+      "end": 12.26,
+      "words": [
+        {
+          "w": "the",
+          "start": 9.96,
+          "end": 10.16
+        },
+        {
+          "w": "minimal",
+          "start": 10.16,
+          "end": 10.38
+        },
+        {
+          "w": "class",
+          "start": 10.38,
+          "end": 10.74
+        },
+        {
+          "w": "definition:",
+          "start": 10.74,
+          "end": 11.26
+        },
+        {
+          "w": "pass",
+          "start": 12.12,
+          "end": 12.26
+        }
+      ]
+    },
+    {
+      "text": "The word pass is a",
+      "start": 12.26,
+      "end": 13.3,
+      "words": [
+        {
+          "w": "The",
+          "start": 12.26,
+          "end": 12.42
+        },
+        {
+          "w": "word",
+          "start": 12.42,
+          "end": 12.62
+        },
+        {
+          "w": "pass",
+          "start": 12.62,
+          "end": 12.96
+        },
+        {
+          "w": "is",
+          "start": 12.96,
+          "end": 13.2
+        },
+        {
+          "w": "a",
+          "start": 13.2,
+          "end": 13.3
+        }
+      ]
+    },
+    {
+      "text": "placeholder that does nothing but",
+      "start": 13.3,
+      "end": 14.88,
+      "words": [
+        {
+          "w": "placeholder",
+          "start": 13.3,
+          "end": 13.76
+        },
+        {
+          "w": "that",
+          "start": 13.76,
+          "end": 13.98
+        },
+        {
+          "w": "does",
+          "start": 13.98,
+          "end": 14.22
+        },
+        {
+          "w": "nothing",
+          "start": 14.22,
+          "end": 14.56
+        },
+        {
+          "w": "but",
+          "start": 14.56,
+          "end": 14.88
+        }
+      ]
+    },
+    {
+      "text": "satisfies Python\u2019s need for an",
+      "start": 14.88,
+      "end": 16.74,
+      "words": [
+        {
+          "w": "satisfies",
+          "start": 14.88,
+          "end": 15.28
+        },
+        {
+          "w": "Python\u2019s",
+          "start": 15.28,
+          "end": 16.1
+        },
+        {
+          "w": "need",
+          "start": 16.1,
+          "end": 16.3
+        },
+        {
+          "w": "for",
+          "start": 16.3,
+          "end": 16.62
+        },
+        {
+          "w": "an",
+          "start": 16.62,
+          "end": 16.74
+        }
+      ]
+    },
+    {
+      "text": "indented block. That's all you",
+      "start": 16.74,
+      "end": 18.3,
+      "words": [
+        {
+          "w": "indented",
+          "start": 16.74,
+          "end": 17.08
+        },
+        {
+          "w": "block.",
+          "start": 17.08,
+          "end": 17.5
+        },
+        {
+          "w": "That's",
+          "start": 17.78,
+          "end": 18.06
+        },
+        {
+          "w": "all",
+          "start": 18.06,
+          "end": 18.26
+        },
+        {
+          "w": "you",
+          "start": 18.26,
+          "end": 18.3
+        }
+      ]
+    },
+    {
+      "text": "need to create a blank",
+      "start": 18.3,
+      "end": 19.42,
+      "words": [
+        {
+          "w": "need",
+          "start": 18.3,
+          "end": 18.52
+        },
+        {
+          "w": "to",
+          "start": 18.52,
+          "end": 18.6
+        },
+        {
+          "w": "create",
+          "start": 18.6,
+          "end": 18.92
+        },
+        {
+          "w": "a",
+          "start": 18.92,
+          "end": 19.16
+        },
+        {
+          "w": "blank",
+          "start": 19.16,
+          "end": 19.42
+        }
+      ]
+    },
+    {
+      "text": "Student type. Remember, an empty",
+      "start": 19.42,
+      "end": 21.88,
+      "words": [
+        {
+          "w": "Student",
+          "start": 19.42,
+          "end": 19.7
+        },
+        {
+          "w": "type.",
+          "start": 19.7,
+          "end": 20.14
+        },
+        {
+          "w": "Remember,",
+          "start": 20.6,
+          "end": 20.9
+        },
+        {
+          "w": "an",
+          "start": 21.54,
+          "end": 21.64
+        },
+        {
+          "w": "empty",
+          "start": 21.64,
+          "end": 21.88
+        }
+      ]
+    },
+    {
+      "text": "class is defined with the",
+      "start": 21.88,
+      "end": 23.2,
+      "words": [
+        {
+          "w": "class",
+          "start": 21.88,
+          "end": 22.26
+        },
+        {
+          "w": "is",
+          "start": 22.26,
+          "end": 22.5
+        },
+        {
+          "w": "defined",
+          "start": 22.5,
+          "end": 22.86
+        },
+        {
+          "w": "with",
+          "start": 22.86,
+          "end": 23.06
+        },
+        {
+          "w": "the",
+          "start": 23.06,
+          "end": 23.2
+        }
+      ]
+    },
+    {
+      "text": "class name and a pass",
+      "start": 23.2,
+      "end": 24.34,
+      "words": [
+        {
+          "w": "class",
+          "start": 23.2,
+          "end": 23.48
+        },
+        {
+          "w": "name",
+          "start": 23.48,
+          "end": 23.76
+        },
+        {
+          "w": "and",
+          "start": 23.76,
+          "end": 24.0
+        },
+        {
+          "w": "a",
+          "start": 24.0,
+          "end": 24.14
+        },
+        {
+          "w": "pass",
+          "start": 24.14,
+          "end": 24.34
+        }
+      ]
+    },
+    {
+      "text": "statement. Now try adding another",
+      "start": 24.34,
+      "end": 26.32,
+      "words": [
+        {
+          "w": "statement.",
+          "start": 24.34,
+          "end": 24.7
+        },
+        {
+          "w": "Now",
+          "start": 25.18,
+          "end": 25.44
+        },
+        {
+          "w": "try",
+          "start": 25.44,
+          "end": 25.68
+        },
+        {
+          "w": "adding",
+          "start": 25.68,
+          "end": 26.0
+        },
+        {
+          "w": "another",
+          "start": 26.0,
+          "end": 26.32
+        }
+      ]
+    },
+    {
+      "text": "method inside the Student class,",
+      "start": 26.32,
+      "end": 27.94,
+      "words": [
+        {
+          "w": "method",
+          "start": 26.32,
+          "end": 26.68
+        },
+        {
+          "w": "inside",
+          "start": 26.68,
+          "end": 27.1
+        },
+        {
+          "w": "the",
+          "start": 27.1,
+          "end": 27.32
+        },
+        {
+          "w": "Student",
+          "start": 27.32,
+          "end": 27.56
+        },
+        {
+          "w": "class,",
+          "start": 27.56,
+          "end": 27.94
+        }
+      ]
+    },
+    {
+      "text": "like a greeting that prints",
+      "start": 27.94,
+      "end": 29.1,
+      "words": [
+        {
+          "w": "like",
+          "start": 27.94,
+          "end": 28.22
+        },
+        {
+          "w": "a",
+          "start": 28.22,
+          "end": 28.32
+        },
+        {
+          "w": "greeting",
+          "start": 28.32,
+          "end": 28.6
+        },
+        {
+          "w": "that",
+          "start": 28.6,
+          "end": 28.86
+        },
+        {
+          "w": "prints",
+          "start": 28.86,
+          "end": 29.1
+        }
+      ]
+    },
+    {
+      "text": "a name.",
+      "start": 29.1,
+      "end": 29.46,
+      "words": [
+        {
+          "w": "a",
+          "start": 29.1,
+          "end": 29.26
+        },
+        {
+          "w": "name.",
+          "start": 29.26,
+          "end": 29.46
+        }
+      ]
+    }
+  ]
+}

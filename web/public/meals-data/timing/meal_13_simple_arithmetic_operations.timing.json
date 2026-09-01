@@ -1,0 +1,1340 @@
+{
+  "meal_id": "meal_13_simple_arithmetic_operations",
+  "audio": "meal_13_simple_arithmetic_operations.mp3",
+  "duration": 75.048,
+  "alignment": "whisper",
+  "anchors": {
+    "What happens when you add 7 and 5 in code?": 0.0,
+    "plus adds, minus subtracts, asterisk multiplies, slash divides": 65.32,
+    "Here is a tiny program that demonstrates each operator.": 27.42,
+    "When you run it, you will see the four results for integers and then the four results for floating point numbers.": 48.44,
+    "Remember: plus adds, minus subtracts, asterisk multiplies, slash divides.": 64.26,
+    "Now try changing the numbers or adding your own operation to see what changes.": 70.68
+  },
+  "captions": [
+    {
+      "text": "What happens when you add",
+      "start": 0.0,
+      "end": 1.4,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.3
+        },
+        {
+          "w": "happens",
+          "start": 0.3,
+          "end": 0.72
+        },
+        {
+          "w": "when",
+          "start": 0.72,
+          "end": 1.02
+        },
+        {
+          "w": "you",
+          "start": 1.02,
+          "end": 1.24
+        },
+        {
+          "w": "add",
+          "start": 1.24,
+          "end": 1.4
+        }
+      ]
+    },
+    {
+      "text": "7 and 5 in code?",
+      "start": 1.4,
+      "end": 2.72,
+      "words": [
+        {
+          "w": "7",
+          "start": 1.4,
+          "end": 1.72
+        },
+        {
+          "w": "and",
+          "start": 1.72,
+          "end": 1.98
+        },
+        {
+          "w": "5",
+          "start": 1.98,
+          "end": 2.22
+        },
+        {
+          "w": "in",
+          "start": 2.22,
+          "end": 2.46
+        },
+        {
+          "w": "code?",
+          "start": 2.46,
+          "end": 2.72
+        }
+      ]
+    },
+    {
+      "text": "You use the plus sign,",
+      "start": 3.2,
+      "end": 4.32,
+      "words": [
+        {
+          "w": "You",
+          "start": 3.2,
+          "end": 3.28
+        },
+        {
+          "w": "use",
+          "start": 3.28,
+          "end": 3.58
+        },
+        {
+          "w": "the",
+          "start": 3.58,
+          "end": 3.78
+        },
+        {
+          "w": "plus",
+          "start": 3.78,
+          "end": 3.98
+        },
+        {
+          "w": "sign,",
+          "start": 3.98,
+          "end": 4.32
+        }
+      ]
+    },
+    {
+      "text": "which tells Python to calculate",
+      "start": 4.32,
+      "end": 5.94,
+      "words": [
+        {
+          "w": "which",
+          "start": 4.32,
+          "end": 4.56
+        },
+        {
+          "w": "tells",
+          "start": 4.56,
+          "end": 4.88
+        },
+        {
+          "w": "Python",
+          "start": 4.88,
+          "end": 5.32
+        },
+        {
+          "w": "to",
+          "start": 5.32,
+          "end": 5.62
+        },
+        {
+          "w": "calculate",
+          "start": 5.62,
+          "end": 5.94
+        }
+      ]
+    },
+    {
+      "text": "the sum of two numbers.",
+      "start": 5.94,
+      "end": 7.08,
+      "words": [
+        {
+          "w": "the",
+          "start": 5.94,
+          "end": 6.28
+        },
+        {
+          "w": "sum",
+          "start": 6.28,
+          "end": 6.36
+        },
+        {
+          "w": "of",
+          "start": 6.36,
+          "end": 6.5
+        },
+        {
+          "w": "two",
+          "start": 6.5,
+          "end": 6.68
+        },
+        {
+          "w": "numbers.",
+          "start": 6.68,
+          "end": 7.08
+        }
+      ]
+    },
+    {
+      "text": "The minus sign works the",
+      "start": 7.58,
+      "end": 8.86,
+      "words": [
+        {
+          "w": "The",
+          "start": 7.58,
+          "end": 7.66
+        },
+        {
+          "w": "minus",
+          "start": 7.66,
+          "end": 7.94
+        },
+        {
+          "w": "sign",
+          "start": 7.94,
+          "end": 8.28
+        },
+        {
+          "w": "works",
+          "start": 8.28,
+          "end": 8.56
+        },
+        {
+          "w": "the",
+          "start": 8.56,
+          "end": 8.86
+        }
+      ]
+    },
+    {
+      "text": "opposite way, finding the difference",
+      "start": 8.86,
+      "end": 10.96,
+      "words": [
+        {
+          "w": "opposite",
+          "start": 8.86,
+          "end": 9.1
+        },
+        {
+          "w": "way,",
+          "start": 9.1,
+          "end": 9.76
+        },
+        {
+          "w": "finding",
+          "start": 10.16,
+          "end": 10.38
+        },
+        {
+          "w": "the",
+          "start": 10.38,
+          "end": 10.62
+        },
+        {
+          "w": "difference",
+          "start": 10.62,
+          "end": 10.96
+        }
+      ]
+    },
+    {
+      "text": "between the first and second",
+      "start": 10.96,
+      "end": 12.3,
+      "words": [
+        {
+          "w": "between",
+          "start": 10.96,
+          "end": 11.36
+        },
+        {
+          "w": "the",
+          "start": 11.36,
+          "end": 11.6
+        },
+        {
+          "w": "first",
+          "start": 11.6,
+          "end": 11.84
+        },
+        {
+          "w": "and",
+          "start": 11.84,
+          "end": 12.04
+        },
+        {
+          "w": "second",
+          "start": 12.04,
+          "end": 12.3
+        }
+      ]
+    },
+    {
+      "text": "number. The asterisk means multiply,",
+      "start": 12.3,
+      "end": 14.58,
+      "words": [
+        {
+          "w": "number.",
+          "start": 12.3,
+          "end": 12.68
+        },
+        {
+          "w": "The",
+          "start": 13.1,
+          "end": 13.2
+        },
+        {
+          "w": "asterisk",
+          "start": 13.2,
+          "end": 13.68
+        },
+        {
+          "w": "means",
+          "start": 13.68,
+          "end": 14.0
+        },
+        {
+          "w": "multiply,",
+          "start": 14.0,
+          "end": 14.58
+        }
+      ]
+    },
+    {
+      "text": "giving you the product of",
+      "start": 15.3,
+      "end": 16.4,
+      "words": [
+        {
+          "w": "giving",
+          "start": 15.3,
+          "end": 15.48
+        },
+        {
+          "w": "you",
+          "start": 15.48,
+          "end": 15.7
+        },
+        {
+          "w": "the",
+          "start": 15.7,
+          "end": 15.88
+        },
+        {
+          "w": "product",
+          "start": 15.88,
+          "end": 16.18
+        },
+        {
+          "w": "of",
+          "start": 16.18,
+          "end": 16.4
+        }
+      ]
+    },
+    {
+      "text": "two values. The slash performs",
+      "start": 16.4,
+      "end": 18.46,
+      "words": [
+        {
+          "w": "two",
+          "start": 16.4,
+          "end": 16.6
+        },
+        {
+          "w": "values.",
+          "start": 16.6,
+          "end": 17.02
+        },
+        {
+          "w": "The",
+          "start": 17.58,
+          "end": 17.68
+        },
+        {
+          "w": "slash",
+          "start": 17.68,
+          "end": 18.0
+        },
+        {
+          "w": "performs",
+          "start": 18.0,
+          "end": 18.46
+        }
+      ]
+    },
+    {
+      "text": "division, dividing the first number",
+      "start": 18.46,
+      "end": 20.58,
+      "words": [
+        {
+          "w": "division,",
+          "start": 18.46,
+          "end": 19.04
+        },
+        {
+          "w": "dividing",
+          "start": 19.56,
+          "end": 19.76
+        },
+        {
+          "w": "the",
+          "start": 19.76,
+          "end": 20.06
+        },
+        {
+          "w": "first",
+          "start": 20.06,
+          "end": 20.28
+        },
+        {
+          "w": "number",
+          "start": 20.28,
+          "end": 20.58
+        }
+      ]
+    },
+    {
+      "text": "by the second and returning",
+      "start": 20.58,
+      "end": 21.92,
+      "words": [
+        {
+          "w": "by",
+          "start": 20.58,
+          "end": 20.82
+        },
+        {
+          "w": "the",
+          "start": 20.82,
+          "end": 20.98
+        },
+        {
+          "w": "second",
+          "start": 20.98,
+          "end": 21.3
+        },
+        {
+          "w": "and",
+          "start": 21.3,
+          "end": 21.58
+        },
+        {
+          "w": "returning",
+          "start": 21.58,
+          "end": 21.92
+        }
+      ]
+    },
+    {
+      "text": "a quotient. Integers hold whole",
+      "start": 21.92,
+      "end": 24.0,
+      "words": [
+        {
+          "w": "a",
+          "start": 21.92,
+          "end": 22.16
+        },
+        {
+          "w": "quotient.",
+          "start": 22.16,
+          "end": 22.58
+        },
+        {
+          "w": "Integers",
+          "start": 23.08,
+          "end": 23.44
+        },
+        {
+          "w": "hold",
+          "start": 23.44,
+          "end": 23.74
+        },
+        {
+          "w": "whole",
+          "start": 23.74,
+          "end": 24.0
+        }
+      ]
+    },
+    {
+      "text": "numbers, while floating point numbers",
+      "start": 24.0,
+      "end": 26.12,
+      "words": [
+        {
+          "w": "numbers,",
+          "start": 24.0,
+          "end": 24.44
+        },
+        {
+          "w": "while",
+          "start": 24.94,
+          "end": 25.12
+        },
+        {
+          "w": "floating",
+          "start": 25.12,
+          "end": 25.44
+        },
+        {
+          "w": "point",
+          "start": 25.44,
+          "end": 25.78
+        },
+        {
+          "w": "numbers",
+          "start": 25.78,
+          "end": 26.12
+        }
+      ]
+    },
+    {
+      "text": "hold numbers with fractions. Here",
+      "start": 26.12,
+      "end": 28.18,
+      "words": [
+        {
+          "w": "hold",
+          "start": 26.12,
+          "end": 26.4
+        },
+        {
+          "w": "numbers",
+          "start": 26.4,
+          "end": 26.72
+        },
+        {
+          "w": "with",
+          "start": 26.72,
+          "end": 27.0
+        },
+        {
+          "w": "fractions.",
+          "start": 27.0,
+          "end": 27.42
+        },
+        {
+          "w": "Here",
+          "start": 27.42,
+          "end": 28.18
+        }
+      ]
+    },
+    {
+      "text": "is a tiny program that",
+      "start": 28.18,
+      "end": 29.72,
+      "words": [
+        {
+          "w": "is",
+          "start": 28.18,
+          "end": 28.44
+        },
+        {
+          "w": "a",
+          "start": 28.44,
+          "end": 28.62
+        },
+        {
+          "w": "tiny",
+          "start": 28.62,
+          "end": 28.8
+        },
+        {
+          "w": "program",
+          "start": 28.8,
+          "end": 29.38
+        },
+        {
+          "w": "that",
+          "start": 29.38,
+          "end": 29.72
+        }
+      ]
+    },
+    {
+      "text": "demonstrates each operator. It creates",
+      "start": 29.72,
+      "end": 31.86,
+      "words": [
+        {
+          "w": "demonstrates",
+          "start": 29.72,
+          "end": 30.08
+        },
+        {
+          "w": "each",
+          "start": 30.08,
+          "end": 30.58
+        },
+        {
+          "w": "operator.",
+          "start": 30.58,
+          "end": 31.04
+        },
+        {
+          "w": "It",
+          "start": 31.56,
+          "end": 31.64
+        },
+        {
+          "w": "creates",
+          "start": 31.64,
+          "end": 31.86
+        }
+      ]
+    },
+    {
+      "text": "two integer variables, one holding",
+      "start": 31.86,
+      "end": 33.66,
+      "words": [
+        {
+          "w": "two",
+          "start": 31.86,
+          "end": 32.24
+        },
+        {
+          "w": "integer",
+          "start": 32.24,
+          "end": 32.48
+        },
+        {
+          "w": "variables,",
+          "start": 32.48,
+          "end": 32.96
+        },
+        {
+          "w": "one",
+          "start": 33.28,
+          "end": 33.42
+        },
+        {
+          "w": "holding",
+          "start": 33.42,
+          "end": 33.66
+        }
+      ]
+    },
+    {
+      "text": "7 and another holding 5,",
+      "start": 33.66,
+      "end": 35.36,
+      "words": [
+        {
+          "w": "7",
+          "start": 33.66,
+          "end": 34.1
+        },
+        {
+          "w": "and",
+          "start": 34.1,
+          "end": 34.3
+        },
+        {
+          "w": "another",
+          "start": 34.3,
+          "end": 34.58
+        },
+        {
+          "w": "holding",
+          "start": 34.58,
+          "end": 34.86
+        },
+        {
+          "w": "5,",
+          "start": 34.86,
+          "end": 35.36
+        }
+      ]
+    },
+    {
+      "text": "then prints their sum, difference,",
+      "start": 35.92,
+      "end": 37.66,
+      "words": [
+        {
+          "w": "then",
+          "start": 35.92,
+          "end": 36.1
+        },
+        {
+          "w": "prints",
+          "start": 36.1,
+          "end": 36.36
+        },
+        {
+          "w": "their",
+          "start": 36.36,
+          "end": 36.62
+        },
+        {
+          "w": "sum,",
+          "start": 36.62,
+          "end": 37.08
+        },
+        {
+          "w": "difference,",
+          "start": 37.08,
+          "end": 37.66
+        }
+      ]
+    },
+    {
+      "text": "product, and quotient. It also",
+      "start": 37.92,
+      "end": 39.76,
+      "words": [
+        {
+          "w": "product,",
+          "start": 37.92,
+          "end": 38.14
+        },
+        {
+          "w": "and",
+          "start": 38.14,
+          "end": 38.46
+        },
+        {
+          "w": "quotient.",
+          "start": 38.46,
+          "end": 38.9
+        },
+        {
+          "w": "It",
+          "start": 39.36,
+          "end": 39.52
+        },
+        {
+          "w": "also",
+          "start": 39.52,
+          "end": 39.76
+        }
+      ]
+    },
+    {
+      "text": "creates two floating point variables,",
+      "start": 39.76,
+      "end": 41.34,
+      "words": [
+        {
+          "w": "creates",
+          "start": 39.76,
+          "end": 40.04
+        },
+        {
+          "w": "two",
+          "start": 40.04,
+          "end": 40.34
+        },
+        {
+          "w": "floating",
+          "start": 40.34,
+          "end": 40.6
+        },
+        {
+          "w": "point",
+          "start": 40.6,
+          "end": 40.9
+        },
+        {
+          "w": "variables,",
+          "start": 40.9,
+          "end": 41.34
+        }
+      ]
+    },
+    {
+      "text": "7 point zero and 5",
+      "start": 41.96,
+      "end": 43.12,
+      "words": [
+        {
+          "w": "7",
+          "start": 41.96,
+          "end": 42.12
+        },
+        {
+          "w": "point",
+          "start": 42.12,
+          "end": 42.34
+        },
+        {
+          "w": "zero",
+          "start": 42.34,
+          "end": 42.7
+        },
+        {
+          "w": "and",
+          "start": 42.7,
+          "end": 42.9
+        },
+        {
+          "w": "5",
+          "start": 42.9,
+          "end": 43.12
+        }
+      ]
+    },
+    {
+      "text": "point zero, and prints the",
+      "start": 43.12,
+      "end": 44.82,
+      "words": [
+        {
+          "w": "point",
+          "start": 43.12,
+          "end": 43.28
+        },
+        {
+          "w": "zero,",
+          "start": 43.28,
+          "end": 43.72
+        },
+        {
+          "w": "and",
+          "start": 44.2,
+          "end": 44.32
+        },
+        {
+          "w": "prints",
+          "start": 44.32,
+          "end": 44.54
+        },
+        {
+          "w": "the",
+          "start": 44.54,
+          "end": 44.82
+        }
+      ]
+    },
+    {
+      "text": "same operations, showing how division",
+      "start": 44.82,
+      "end": 46.68,
+      "words": [
+        {
+          "w": "same",
+          "start": 44.82,
+          "end": 45.02
+        },
+        {
+          "w": "operations,",
+          "start": 45.02,
+          "end": 45.58
+        },
+        {
+          "w": "showing",
+          "start": 45.58,
+          "end": 46.06
+        },
+        {
+          "w": "how",
+          "start": 46.06,
+          "end": 46.38
+        },
+        {
+          "w": "division",
+          "start": 46.38,
+          "end": 46.68
+        }
+      ]
+    },
+    {
+      "text": "yields a decimal result. When",
+      "start": 46.68,
+      "end": 48.62,
+      "words": [
+        {
+          "w": "yields",
+          "start": 46.68,
+          "end": 47.02
+        },
+        {
+          "w": "a",
+          "start": 47.02,
+          "end": 47.28
+        },
+        {
+          "w": "decimal",
+          "start": 47.28,
+          "end": 47.54
+        },
+        {
+          "w": "result.",
+          "start": 47.54,
+          "end": 47.98
+        },
+        {
+          "w": "When",
+          "start": 48.44,
+          "end": 48.62
+        }
+      ]
+    },
+    {
+      "text": "you run it, you will",
+      "start": 48.62,
+      "end": 49.54,
+      "words": [
+        {
+          "w": "you",
+          "start": 48.62,
+          "end": 48.76
+        },
+        {
+          "w": "run",
+          "start": 48.76,
+          "end": 48.88
+        },
+        {
+          "w": "it,",
+          "start": 48.88,
+          "end": 49.16
+        },
+        {
+          "w": "you",
+          "start": 49.3,
+          "end": 49.32
+        },
+        {
+          "w": "will",
+          "start": 49.32,
+          "end": 49.54
+        }
+      ]
+    },
+    {
+      "text": "see the four results for",
+      "start": 49.54,
+      "end": 50.72,
+      "words": [
+        {
+          "w": "see",
+          "start": 49.54,
+          "end": 49.68
+        },
+        {
+          "w": "the",
+          "start": 49.68,
+          "end": 49.94
+        },
+        {
+          "w": "four",
+          "start": 49.94,
+          "end": 50.12
+        },
+        {
+          "w": "results",
+          "start": 50.12,
+          "end": 50.46
+        },
+        {
+          "w": "for",
+          "start": 50.46,
+          "end": 50.72
+        }
+      ]
+    },
+    {
+      "text": "integers and then the four",
+      "start": 50.72,
+      "end": 52.0,
+      "words": [
+        {
+          "w": "integers",
+          "start": 50.72,
+          "end": 51.12
+        },
+        {
+          "w": "and",
+          "start": 51.12,
+          "end": 51.42
+        },
+        {
+          "w": "then",
+          "start": 51.42,
+          "end": 51.66
+        },
+        {
+          "w": "the",
+          "start": 51.66,
+          "end": 51.82
+        },
+        {
+          "w": "four",
+          "start": 51.82,
+          "end": 52.0
+        }
+      ]
+    },
+    {
+      "text": "results for floating point numbers.",
+      "start": 52.0,
+      "end": 53.58,
+      "words": [
+        {
+          "w": "results",
+          "start": 52.0,
+          "end": 52.34
+        },
+        {
+          "w": "for",
+          "start": 52.34,
+          "end": 52.64
+        },
+        {
+          "w": "floating",
+          "start": 52.64,
+          "end": 52.9
+        },
+        {
+          "w": "point",
+          "start": 52.9,
+          "end": 53.16
+        },
+        {
+          "w": "numbers.",
+          "start": 53.16,
+          "end": 53.58
+        }
+      ]
+    },
+    {
+      "text": "Notice how division with integers",
+      "start": 53.58,
+      "end": 55.66,
+      "words": [
+        {
+          "w": "Notice",
+          "start": 53.58,
+          "end": 54.32
+        },
+        {
+          "w": "how",
+          "start": 54.32,
+          "end": 54.62
+        },
+        {
+          "w": "division",
+          "start": 54.62,
+          "end": 55.02
+        },
+        {
+          "w": "with",
+          "start": 55.02,
+          "end": 55.32
+        },
+        {
+          "w": "integers",
+          "start": 55.32,
+          "end": 55.66
+        }
+      ]
+    },
+    {
+      "text": "discards any fraction, while with",
+      "start": 55.66,
+      "end": 57.92,
+      "words": [
+        {
+          "w": "discards",
+          "start": 55.66,
+          "end": 56.36
+        },
+        {
+          "w": "any",
+          "start": 56.36,
+          "end": 56.52
+        },
+        {
+          "w": "fraction,",
+          "start": 56.52,
+          "end": 56.94
+        },
+        {
+          "w": "while",
+          "start": 57.5,
+          "end": 57.64
+        },
+        {
+          "w": "with",
+          "start": 57.64,
+          "end": 57.92
+        }
+      ]
+    },
+    {
+      "text": "floating point it keeps the",
+      "start": 57.92,
+      "end": 59.04,
+      "words": [
+        {
+          "w": "floating",
+          "start": 57.92,
+          "end": 58.16
+        },
+        {
+          "w": "point",
+          "start": 58.16,
+          "end": 58.5
+        },
+        {
+          "w": "it",
+          "start": 58.5,
+          "end": 58.7
+        },
+        {
+          "w": "keeps",
+          "start": 58.7,
+          "end": 58.88
+        },
+        {
+          "w": "the",
+          "start": 58.88,
+          "end": 59.04
+        }
+      ]
+    },
+    {
+      "text": "decimal. This visual loop shows",
+      "start": 59.04,
+      "end": 61.1,
+      "words": [
+        {
+          "w": "decimal.",
+          "start": 59.04,
+          "end": 59.44
+        },
+        {
+          "w": "This",
+          "start": 59.88,
+          "end": 60.1
+        },
+        {
+          "w": "visual",
+          "start": 60.1,
+          "end": 60.44
+        },
+        {
+          "w": "loop",
+          "start": 60.44,
+          "end": 60.74
+        },
+        {
+          "w": "shows",
+          "start": 60.74,
+          "end": 61.1
+        }
+      ]
+    },
+    {
+      "text": "the operations repeating for each",
+      "start": 61.1,
+      "end": 62.9,
+      "words": [
+        {
+          "w": "the",
+          "start": 61.1,
+          "end": 61.38
+        },
+        {
+          "w": "operations",
+          "start": 61.38,
+          "end": 61.82
+        },
+        {
+          "w": "repeating",
+          "start": 61.82,
+          "end": 62.28
+        },
+        {
+          "w": "for",
+          "start": 62.28,
+          "end": 62.68
+        },
+        {
+          "w": "each",
+          "start": 62.68,
+          "end": 62.9
+        }
+      ]
+    },
+    {
+      "text": "pair of numbers. Remember: plus",
+      "start": 62.9,
+      "end": 65.62,
+      "words": [
+        {
+          "w": "pair",
+          "start": 62.9,
+          "end": 63.14
+        },
+        {
+          "w": "of",
+          "start": 63.14,
+          "end": 63.3
+        },
+        {
+          "w": "numbers.",
+          "start": 63.3,
+          "end": 63.7
+        },
+        {
+          "w": "Remember:",
+          "start": 64.26,
+          "end": 64.56
+        },
+        {
+          "w": "plus",
+          "start": 65.32,
+          "end": 65.62
+        }
+      ]
+    },
+    {
+      "text": "adds, minus subtracts, asterisk multiplies,",
+      "start": 65.62,
+      "end": 68.88,
+      "words": [
+        {
+          "w": "adds,",
+          "start": 65.62,
+          "end": 66.18
+        },
+        {
+          "w": "minus",
+          "start": 66.18,
+          "end": 66.68
+        },
+        {
+          "w": "subtracts,",
+          "start": 66.68,
+          "end": 67.82
+        },
+        {
+          "w": "asterisk",
+          "start": 67.98,
+          "end": 68.28
+        },
+        {
+          "w": "multiplies,",
+          "start": 68.28,
+          "end": 68.88
+        }
+      ]
+    },
+    {
+      "text": "slash divides. Now try changing",
+      "start": 69.5,
+      "end": 71.58,
+      "words": [
+        {
+          "w": "slash",
+          "start": 69.5,
+          "end": 69.68
+        },
+        {
+          "w": "divides.",
+          "start": 69.68,
+          "end": 70.16
+        },
+        {
+          "w": "Now",
+          "start": 70.68,
+          "end": 70.94
+        },
+        {
+          "w": "try",
+          "start": 70.94,
+          "end": 71.22
+        },
+        {
+          "w": "changing",
+          "start": 71.22,
+          "end": 71.58
+        }
+      ]
+    },
+    {
+      "text": "the numbers or adding your",
+      "start": 71.58,
+      "end": 72.98,
+      "words": [
+        {
+          "w": "the",
+          "start": 71.58,
+          "end": 71.82
+        },
+        {
+          "w": "numbers",
+          "start": 71.82,
+          "end": 72.12
+        },
+        {
+          "w": "or",
+          "start": 72.12,
+          "end": 72.48
+        },
+        {
+          "w": "adding",
+          "start": 72.48,
+          "end": 72.72
+        },
+        {
+          "w": "your",
+          "start": 72.72,
+          "end": 72.98
+        }
+      ]
+    },
+    {
+      "text": "own operation to see what",
+      "start": 72.98,
+      "end": 74.26,
+      "words": [
+        {
+          "w": "own",
+          "start": 72.98,
+          "end": 73.16
+        },
+        {
+          "w": "operation",
+          "start": 73.16,
+          "end": 73.56
+        },
+        {
+          "w": "to",
+          "start": 73.56,
+          "end": 73.92
+        },
+        {
+          "w": "see",
+          "start": 73.92,
+          "end": 74.06
+        },
+        {
+          "w": "what",
+          "start": 74.06,
+          "end": 74.26
+        }
+      ]
+    },
+    {
+      "text": "changes.",
+      "start": 74.26,
+      "end": 74.6,
+      "words": [
+        {
+          "w": "changes.",
+          "start": 74.26,
+          "end": 74.6
+        }
+      ]
+    }
+  ]
+}

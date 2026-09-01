@@ -1,0 +1,168 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_03_what_is_a_class",
+    "title": "What is a class?",
+    "concept": "python.oop.classes",
+    "objective": "Explain that a class is a blueprint for objects",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.functions.define"
+    ],
+    "next_concepts": [
+      "python.oop.classes",
+      "python.oop.classes"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "class",
+      "blueprint"
+    ],
+    "assumes": [
+      "variable"
+    ],
+    "voice": {
+      "script": "Ever wonder how a video game creates many enemies from the same design? A class is like a blueprint \u2013 a plan that tells Python how to build objects. Think of a blueprint for a house: it lists rooms, doors, windows, but until you construct, you have no house. In code, we write the word class followed by a name and a colon. Inside we define a special method called __init__ that runs when we make a new object. It receives the new object's name, called self, and lets us set attributes like a student's name. Let's see a tiny example. class Student:\n self.  Running this prints Alice, showing the object holds the data we defined. A class is a reusable blueprint for creating objects. Write a class called Account with a balance attribute and a method to deposit money.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Ever wonder how a video game creates many enemies from the same design?"
+        },
+        "narration_anchor": "Ever wonder how a video game creates many enemies from the same design?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How can we create many similar objects without rewriting code?"
+        }
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Class blueprint",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Objects",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "creates"
+            }
+          ]
+        },
+        "narration_anchor": "A class is like a blueprint \u2013 a plan that tells Python how to build objects."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "class Student:\n    def __init__(self, name):\n        self.name = name\n\ns = Student(\"Alice\")\nprint(s.name)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "class Student:\n    def __init__(self, name):\n        self.name = name\n\ns = Student(\"Alice\")\nprint(s.name)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "class Student"
+            }
+          ]
+        },
+        "narration_anchor": "Let's see a tiny example."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:32+00:00",
+            "stdout": "Alice\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running this prints Alice, showing the object holds the data we defined.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A class is a reusable blueprint for creating objects"
+        },
+        "narration_anchor": "A class is a reusable blueprint for creating objects.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write a class called Account with a balance attribute and a method to deposit money"
+        },
+        "narration_anchor": "Write a class called Account with a balance attribute and a method to deposit money.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write a class called Account with a balance attribute and a method to deposit money"
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 3,
+      "total": 15,
+      "previous_id": "meal_02_store_a_value_in_a_variable",
+      "next_id": "meal_04_define_a_simple_class"
+    }
+  }
+}

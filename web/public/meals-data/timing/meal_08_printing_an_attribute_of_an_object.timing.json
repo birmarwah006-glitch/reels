@@ -1,0 +1,578 @@
+{
+  "meal_id": "meal_08_printing_an_attribute_of_an_object",
+  "audio": "meal_08_printing_an_attribute_of_an_object.mp3",
+  "duration": 30.648,
+  "alignment": "whisper",
+  "anchors": {
+    "How do you show a student's name on screen?": 0.0,
+    "How can you retrieve and display an attribute from an object?": 2.64,
+    "dot notation lets you reach an attribute stored inside an object": 11.98,
+    "Now we create a student and print the name": 14.82,
+    "The terminal prints Karan": 18.16,
+    "Access attributes with dot notation and print them": 19.7,
+    "For practice, try printing the age attribute after adding it to the class": 23.68
+  },
+  "captions": [
+    {
+      "text": "How do you show a",
+      "start": 0.0,
+      "end": 0.9,
+      "words": [
+        {
+          "w": "How",
+          "start": 0.0,
+          "end": 0.26
+        },
+        {
+          "w": "do",
+          "start": 0.26,
+          "end": 0.38
+        },
+        {
+          "w": "you",
+          "start": 0.38,
+          "end": 0.48
+        },
+        {
+          "w": "show",
+          "start": 0.48,
+          "end": 0.72
+        },
+        {
+          "w": "a",
+          "start": 0.72,
+          "end": 0.9
+        }
+      ]
+    },
+    {
+      "text": "student's name on screen? How",
+      "start": 0.9,
+      "end": 2.78,
+      "words": [
+        {
+          "w": "student's",
+          "start": 0.9,
+          "end": 1.36
+        },
+        {
+          "w": "name",
+          "start": 1.36,
+          "end": 1.56
+        },
+        {
+          "w": "on",
+          "start": 1.56,
+          "end": 1.84
+        },
+        {
+          "w": "screen?",
+          "start": 1.84,
+          "end": 2.22
+        },
+        {
+          "w": "How",
+          "start": 2.64,
+          "end": 2.78
+        }
+      ]
+    },
+    {
+      "text": "can you retrieve and display",
+      "start": 2.78,
+      "end": 4.4,
+      "words": [
+        {
+          "w": "can",
+          "start": 2.78,
+          "end": 2.96
+        },
+        {
+          "w": "you",
+          "start": 2.96,
+          "end": 3.18
+        },
+        {
+          "w": "retrieve",
+          "start": 3.18,
+          "end": 3.58
+        },
+        {
+          "w": "and",
+          "start": 3.58,
+          "end": 3.98
+        },
+        {
+          "w": "display",
+          "start": 3.98,
+          "end": 4.4
+        }
+      ]
+    },
+    {
+      "text": "an attribute from an object?",
+      "start": 4.4,
+      "end": 5.9,
+      "words": [
+        {
+          "w": "an",
+          "start": 4.4,
+          "end": 4.76
+        },
+        {
+          "w": "attribute",
+          "start": 4.76,
+          "end": 5.04
+        },
+        {
+          "w": "from",
+          "start": 5.04,
+          "end": 5.38
+        },
+        {
+          "w": "an",
+          "start": 5.38,
+          "end": 5.54
+        },
+        {
+          "w": "object?",
+          "start": 5.54,
+          "end": 5.9
+        }
+      ]
+    },
+    {
+      "text": "You already know a class",
+      "start": 6.4,
+      "end": 7.36,
+      "words": [
+        {
+          "w": "You",
+          "start": 6.4,
+          "end": 6.56
+        },
+        {
+          "w": "already",
+          "start": 6.56,
+          "end": 6.74
+        },
+        {
+          "w": "know",
+          "start": 6.74,
+          "end": 6.98
+        },
+        {
+          "w": "a",
+          "start": 6.98,
+          "end": 7.12
+        },
+        {
+          "w": "class",
+          "start": 7.12,
+          "end": 7.36
+        }
+      ]
+    },
+    {
+      "text": "is a blueprint and that",
+      "start": 7.36,
+      "end": 8.66,
+      "words": [
+        {
+          "w": "is",
+          "start": 7.36,
+          "end": 7.6
+        },
+        {
+          "w": "a",
+          "start": 7.6,
+          "end": 7.7
+        },
+        {
+          "w": "blueprint",
+          "start": 7.7,
+          "end": 8.0
+        },
+        {
+          "w": "and",
+          "start": 8.0,
+          "end": 8.36
+        },
+        {
+          "w": "that",
+          "start": 8.36,
+          "end": 8.66
+        }
+      ]
+    },
+    {
+      "text": "__init__ stores a name. To",
+      "start": 8.66,
+      "end": 10.18,
+      "words": [
+        {
+          "w": "__init__",
+          "start": 8.66,
+          "end": 8.98
+        },
+        {
+          "w": "stores",
+          "start": 8.98,
+          "end": 9.46
+        },
+        {
+          "w": "a",
+          "start": 9.46,
+          "end": 9.64
+        },
+        {
+          "w": "name.",
+          "start": 9.64,
+          "end": 9.8
+        },
+        {
+          "w": "To",
+          "start": 9.8,
+          "end": 10.18
+        }
+      ]
+    },
+    {
+      "text": "get that name out, you",
+      "start": 10.18,
+      "end": 11.8,
+      "words": [
+        {
+          "w": "get",
+          "start": 10.18,
+          "end": 10.66
+        },
+        {
+          "w": "that",
+          "start": 10.66,
+          "end": 10.94
+        },
+        {
+          "w": "name",
+          "start": 10.94,
+          "end": 11.12
+        },
+        {
+          "w": "out,",
+          "start": 11.12,
+          "end": 11.4
+        },
+        {
+          "w": "you",
+          "start": 11.68,
+          "end": 11.8
+        }
+      ]
+    },
+    {
+      "text": "use dot notation lets you",
+      "start": 11.8,
+      "end": 12.94,
+      "words": [
+        {
+          "w": "use",
+          "start": 11.8,
+          "end": 11.98
+        },
+        {
+          "w": "dot",
+          "start": 11.98,
+          "end": 12.22
+        },
+        {
+          "w": "notation",
+          "start": 12.22,
+          "end": 12.4
+        },
+        {
+          "w": "lets",
+          "start": 12.4,
+          "end": 12.74
+        },
+        {
+          "w": "you",
+          "start": 12.86,
+          "end": 12.94
+        }
+      ]
+    },
+    {
+      "text": "reach an attribute stored inside",
+      "start": 12.94,
+      "end": 14.32,
+      "words": [
+        {
+          "w": "reach",
+          "start": 12.94,
+          "end": 13.16
+        },
+        {
+          "w": "an",
+          "start": 13.16,
+          "end": 13.38
+        },
+        {
+          "w": "attribute",
+          "start": 13.38,
+          "end": 13.84
+        },
+        {
+          "w": "stored",
+          "start": 14.1,
+          "end": 14.2
+        },
+        {
+          "w": "inside",
+          "start": 14.2,
+          "end": 14.32
+        }
+      ]
+    },
+    {
+      "text": "an object. Now we create",
+      "start": 14.32,
+      "end": 15.92,
+      "words": [
+        {
+          "w": "an",
+          "start": 14.32,
+          "end": 14.58
+        },
+        {
+          "w": "object.",
+          "start": 14.58,
+          "end": 14.82
+        },
+        {
+          "w": "Now",
+          "start": 14.82,
+          "end": 15.12
+        },
+        {
+          "w": "we",
+          "start": 15.12,
+          "end": 15.56
+        },
+        {
+          "w": "create",
+          "start": 15.56,
+          "end": 15.92
+        }
+      ]
+    },
+    {
+      "text": "a student and print the",
+      "start": 15.92,
+      "end": 17.66,
+      "words": [
+        {
+          "w": "a",
+          "start": 15.92,
+          "end": 16.2
+        },
+        {
+          "w": "student",
+          "start": 16.2,
+          "end": 16.52
+        },
+        {
+          "w": "and",
+          "start": 16.98,
+          "end": 17.22
+        },
+        {
+          "w": "print",
+          "start": 17.22,
+          "end": 17.38
+        },
+        {
+          "w": "the",
+          "start": 17.38,
+          "end": 17.66
+        }
+      ]
+    },
+    {
+      "text": "name. print(s1.name) The terminal prints",
+      "start": 17.66,
+      "end": 18.84,
+      "words": [
+        {
+          "w": "name.",
+          "start": 17.66,
+          "end": 17.9
+        },
+        {
+          "w": "print(s1.name)",
+          "start": 17.9,
+          "end": 18.16
+        },
+        {
+          "w": "The",
+          "start": 18.16,
+          "end": 18.46
+        },
+        {
+          "w": "terminal",
+          "start": 18.46,
+          "end": 18.66
+        },
+        {
+          "w": "prints",
+          "start": 18.66,
+          "end": 18.84
+        }
+      ]
+    },
+    {
+      "text": "Karan. Access attributes with dot",
+      "start": 18.84,
+      "end": 21.82,
+      "words": [
+        {
+          "w": "Karan.",
+          "start": 18.84,
+          "end": 19.38
+        },
+        {
+          "w": "Access",
+          "start": 19.7,
+          "end": 20.26
+        },
+        {
+          "w": "attributes",
+          "start": 20.26,
+          "end": 20.62
+        },
+        {
+          "w": "with",
+          "start": 20.62,
+          "end": 21.46
+        },
+        {
+          "w": "dot",
+          "start": 21.8,
+          "end": 21.82
+        }
+      ]
+    },
+    {
+      "text": "notation and print them. For",
+      "start": 21.82,
+      "end": 24.12,
+      "words": [
+        {
+          "w": "notation",
+          "start": 21.82,
+          "end": 22.16
+        },
+        {
+          "w": "and",
+          "start": 22.16,
+          "end": 22.5
+        },
+        {
+          "w": "print",
+          "start": 22.5,
+          "end": 22.94
+        },
+        {
+          "w": "them.",
+          "start": 23.5,
+          "end": 23.68
+        },
+        {
+          "w": "For",
+          "start": 23.68,
+          "end": 24.12
+        }
+      ]
+    },
+    {
+      "text": "practice, try printing the age",
+      "start": 24.12,
+      "end": 25.82,
+      "words": [
+        {
+          "w": "practice,",
+          "start": 24.12,
+          "end": 24.56
+        },
+        {
+          "w": "try",
+          "start": 24.56,
+          "end": 24.76
+        },
+        {
+          "w": "printing",
+          "start": 24.76,
+          "end": 25.24
+        },
+        {
+          "w": "the",
+          "start": 25.24,
+          "end": 25.64
+        },
+        {
+          "w": "age",
+          "start": 25.64,
+          "end": 25.82
+        }
+      ]
+    },
+    {
+      "text": "attribute after adding it to",
+      "start": 25.82,
+      "end": 27.92,
+      "words": [
+        {
+          "w": "attribute",
+          "start": 25.82,
+          "end": 26.3
+        },
+        {
+          "w": "after",
+          "start": 26.3,
+          "end": 26.68
+        },
+        {
+          "w": "adding",
+          "start": 26.68,
+          "end": 27.08
+        },
+        {
+          "w": "it",
+          "start": 27.38,
+          "end": 27.6
+        },
+        {
+          "w": "to",
+          "start": 27.6,
+          "end": 27.92
+        }
+      ]
+    },
+    {
+      "text": "the class.",
+      "start": 27.92,
+      "end": 28.42,
+      "words": [
+        {
+          "w": "the",
+          "start": 27.92,
+          "end": 28.22
+        },
+        {
+          "w": "class.",
+          "start": 28.22,
+          "end": 28.42
+        }
+      ]
+    }
+  ]
+}

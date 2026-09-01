@@ -1,0 +1,164 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_04_program_vs_process",
+    "title": "Program vs. Process",
+    "concept": "python.project.overview",
+    "objective": "Distinguish a static program from a running process",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.project.overview",
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "program",
+      "process"
+    ],
+    "assumes": [
+      "time sharing"
+    ],
+    "voice": {
+      "script": "What happens when you double\u2011click an app? When you open a file, the operating system loads its instructions into memory. Those instructions are called a program \u2013 a static set of code that sits on disk. The moment the OS starts executing that code, it becomes a process. A process is the program while it is alive, with its own memory, registers, and a place on the CPU schedule. In other words, a program is the recipe, a process is the chef actually cooking. This distinction matters because the scheduler only sees processes, not raw files. Now let's look at a tiny script. When you run it, you will see the name appear on the screen. Remember: a program is code, a process is that code in action. Try writing a short text file and then run it with Python to see the difference.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What happens when you double\u2011click an app?"
+        },
+        "narration_anchor": "What happens when you double\u2011click an app?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "When you open a file, the operating system loads its instructions into memory."
+        },
+        "narration_anchor": "When you open a file, the operating system loads its instructions into memory."
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Program (code file)",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Process (running)",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "starts execution"
+            }
+          ]
+        },
+        "narration_anchor": "A process is the program while it is alive, with its own memory, registers, and a place on the CPU schedule."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "import sys\nprint(sys.argv[0])\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "import sys\nprint(sys.argv[0])",
+              "lines": [
+                1,
+                2
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "print"
+            }
+          ]
+        },
+        "narration_anchor": "Now let's look at a tiny script."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "/opt/homebrew/opt/python@3.14/bin/python3.14 main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:32+00:00",
+            "stdout": "/var/folders/h1/wy3kwl6n5cl7b4p_lf19d77c0000gn/T/tmp3472uh33/main.py\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "When you run it, you will see the name appear on the screen.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A program is code; a process is that code in action."
+        },
+        "narration_anchor": "Remember: a program is code, a process is that code in action.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Create a small text file with Python code and run it to see a process appear."
+        },
+        "narration_anchor": "Try writing a short text file and then run it with Python to see the difference.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Create a small text file with Python code and run it to see a process appear.",
+      "hint": "Use the command python your_file.py in a terminal."
+    },
+    "series": {
+      "title": "CPU Virtualization Basics",
+      "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+      "order": 4,
+      "total": 12,
+      "previous_id": "meal_03_time_sharing_basics",
+      "next_id": "meal_05_what_a_process_contains"
+    }
+  }
+}

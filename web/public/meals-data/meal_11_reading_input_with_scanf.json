@@ -1,0 +1,129 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_11_reading_input_with_scanf",
+    "title": "Reading input with scanf",
+    "concept": "c.project.overview",
+    "objective": "Read an integer, a character, and a string from the user using scanf",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "scanf",
+      "&"
+    ],
+    "assumes": [
+      "variables",
+      "printf"
+    ],
+    "voice": {
+      "script": "What if the computer could ask you for a number? How do you get the user to type a value? In C you use a function called scanf, which listens for what you type and stores it inside a variable. The ampersand symbol before a variable tells scanf where in memory to put the data. First, we ask for an integer, then a single character, and finally a short word. On screen you see a short program using scanf. When you run it, the program pauses, you type a number, a letter, and a word, then it prints them back so you can see they were captured. This shows how input and output work together.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if the computer could ask you for a number?"
+        },
+        "narration_anchor": "What if the computer could ask you for a number?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you get the user to type a value?"
+        },
+        "narration_anchor": "How do you get the user to type a value?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Ask for input",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Read with scanf",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Display values",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "user types"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "printf shows"
+            }
+          ]
+        },
+        "narration_anchor": "In C you use a function called scanf, which listens for what you type and stores it inside a variable."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Use scanf with an ampersand to read typed values into variables."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write a program that reads an age (integer) and prints a greeting using that age."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write a program that reads an age (integer) and prints a greeting using that age.",
+      "hint": "Remember to place & before the variable name in scanf."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 11,
+      "total": 22,
+      "previous_id": "meal_10_printing_variables_with_format_specifiers",
+      "next_id": "meal_12_reading_whole_lines_with_fgets"
+    }
+  }
+}

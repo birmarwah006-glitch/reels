@@ -1,0 +1,1226 @@
+{
+  "meal_id": "meal_16_arrays_and_indexing",
+  "audio": "meal_16_arrays_and_indexing.mp3",
+  "duration": 60.84,
+  "alignment": "whisper",
+  "anchors": {
+    "What if you could store ten scores in a single variable?": 0.0,
+    "An array is a block of memory that holds several values of the same type, each placed at a specific position called an index.": 5.14,
+    "Let's see this in action with a short Python example that mirrors the idea.": 37.56,
+    "An array lets you keep a fixed\u2011size series of same\u2011type values, accessed by their numeric index.": 49.12,
+    "Now try this: create a list of seven numbers and print the value at index four.": 54.48
+  },
+  "captions": [
+    {
+      "text": "What if you could store",
+      "start": 0.0,
+      "end": 1.12,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.32
+        },
+        {
+          "w": "if",
+          "start": 0.32,
+          "end": 0.56
+        },
+        {
+          "w": "you",
+          "start": 0.56,
+          "end": 0.62
+        },
+        {
+          "w": "could",
+          "start": 0.62,
+          "end": 0.84
+        },
+        {
+          "w": "store",
+          "start": 0.84,
+          "end": 1.12
+        }
+      ]
+    },
+    {
+      "text": "ten scores in a single",
+      "start": 1.12,
+      "end": 2.54,
+      "words": [
+        {
+          "w": "ten",
+          "start": 1.12,
+          "end": 1.42
+        },
+        {
+          "w": "scores",
+          "start": 1.42,
+          "end": 1.86
+        },
+        {
+          "w": "in",
+          "start": 1.86,
+          "end": 2.2
+        },
+        {
+          "w": "a",
+          "start": 2.2,
+          "end": 2.28
+        },
+        {
+          "w": "single",
+          "start": 2.28,
+          "end": 2.54
+        }
+      ]
+    },
+    {
+      "text": "variable? That's what an array",
+      "start": 2.54,
+      "end": 4.32,
+      "words": [
+        {
+          "w": "variable?",
+          "start": 2.54,
+          "end": 3.02
+        },
+        {
+          "w": "That's",
+          "start": 3.5,
+          "end": 3.78
+        },
+        {
+          "w": "what",
+          "start": 3.78,
+          "end": 3.94
+        },
+        {
+          "w": "an",
+          "start": 3.94,
+          "end": 4.1
+        },
+        {
+          "w": "array",
+          "start": 4.1,
+          "end": 4.32
+        }
+      ]
+    },
+    {
+      "text": "does. An array is a",
+      "start": 4.32,
+      "end": 5.88,
+      "words": [
+        {
+          "w": "does.",
+          "start": 4.32,
+          "end": 4.82
+        },
+        {
+          "w": "An",
+          "start": 5.14,
+          "end": 5.24
+        },
+        {
+          "w": "array",
+          "start": 5.24,
+          "end": 5.52
+        },
+        {
+          "w": "is",
+          "start": 5.52,
+          "end": 5.76
+        },
+        {
+          "w": "a",
+          "start": 5.76,
+          "end": 5.88
+        }
+      ]
+    },
+    {
+      "text": "block of memory that holds",
+      "start": 5.88,
+      "end": 7.02,
+      "words": [
+        {
+          "w": "block",
+          "start": 5.88,
+          "end": 6.08
+        },
+        {
+          "w": "of",
+          "start": 6.08,
+          "end": 6.26
+        },
+        {
+          "w": "memory",
+          "start": 6.26,
+          "end": 6.56
+        },
+        {
+          "w": "that",
+          "start": 6.56,
+          "end": 6.82
+        },
+        {
+          "w": "holds",
+          "start": 6.82,
+          "end": 7.02
+        }
+      ]
+    },
+    {
+      "text": "several values of the same",
+      "start": 7.02,
+      "end": 8.4,
+      "words": [
+        {
+          "w": "several",
+          "start": 7.02,
+          "end": 7.42
+        },
+        {
+          "w": "values",
+          "start": 7.42,
+          "end": 7.84
+        },
+        {
+          "w": "of",
+          "start": 7.84,
+          "end": 8.1
+        },
+        {
+          "w": "the",
+          "start": 8.1,
+          "end": 8.22
+        },
+        {
+          "w": "same",
+          "start": 8.22,
+          "end": 8.4
+        }
+      ]
+    },
+    {
+      "text": "type, each placed at a",
+      "start": 8.4,
+      "end": 10.2,
+      "words": [
+        {
+          "w": "type,",
+          "start": 8.4,
+          "end": 8.78
+        },
+        {
+          "w": "each",
+          "start": 9.28,
+          "end": 9.52
+        },
+        {
+          "w": "placed",
+          "start": 9.52,
+          "end": 9.88
+        },
+        {
+          "w": "at",
+          "start": 9.88,
+          "end": 10.1
+        },
+        {
+          "w": "a",
+          "start": 10.1,
+          "end": 10.2
+        }
+      ]
+    },
+    {
+      "text": "specific position called an index.",
+      "start": 10.2,
+      "end": 11.92,
+      "words": [
+        {
+          "w": "specific",
+          "start": 10.2,
+          "end": 10.56
+        },
+        {
+          "w": "position",
+          "start": 10.56,
+          "end": 10.98
+        },
+        {
+          "w": "called",
+          "start": 10.98,
+          "end": 11.32
+        },
+        {
+          "w": "an",
+          "start": 11.32,
+          "end": 11.56
+        },
+        {
+          "w": "index.",
+          "start": 11.56,
+          "end": 11.92
+        }
+      ]
+    },
+    {
+      "text": "Think of it like a",
+      "start": 12.4,
+      "end": 13.26,
+      "words": [
+        {
+          "w": "Think",
+          "start": 12.4,
+          "end": 12.6
+        },
+        {
+          "w": "of",
+          "start": 12.6,
+          "end": 12.74
+        },
+        {
+          "w": "it",
+          "start": 12.74,
+          "end": 12.88
+        },
+        {
+          "w": "like",
+          "start": 12.88,
+          "end": 13.08
+        },
+        {
+          "w": "a",
+          "start": 13.08,
+          "end": 13.26
+        }
+      ]
+    },
+    {
+      "text": "row of mailboxes, each numbered,",
+      "start": 13.26,
+      "end": 15.22,
+      "words": [
+        {
+          "w": "row",
+          "start": 13.26,
+          "end": 13.42
+        },
+        {
+          "w": "of",
+          "start": 13.42,
+          "end": 13.64
+        },
+        {
+          "w": "mailboxes,",
+          "start": 13.64,
+          "end": 14.5
+        },
+        {
+          "w": "each",
+          "start": 14.5,
+          "end": 14.82
+        },
+        {
+          "w": "numbered,",
+          "start": 14.82,
+          "end": 15.22
+        }
+      ]
+    },
+    {
+      "text": "where you drop a letter.",
+      "start": 15.84,
+      "end": 16.82,
+      "words": [
+        {
+          "w": "where",
+          "start": 15.84,
+          "end": 16.0
+        },
+        {
+          "w": "you",
+          "start": 16.0,
+          "end": 16.16
+        },
+        {
+          "w": "drop",
+          "start": 16.16,
+          "end": 16.38
+        },
+        {
+          "w": "a",
+          "start": 16.38,
+          "end": 16.6
+        },
+        {
+          "w": "letter.",
+          "start": 16.6,
+          "end": 16.82
+        }
+      ]
+    },
+    {
+      "text": "In C you declare an",
+      "start": 17.28,
+      "end": 18.4,
+      "words": [
+        {
+          "w": "In",
+          "start": 17.28,
+          "end": 17.46
+        },
+        {
+          "w": "C",
+          "start": 17.46,
+          "end": 17.62
+        },
+        {
+          "w": "you",
+          "start": 17.62,
+          "end": 17.8
+        },
+        {
+          "w": "declare",
+          "start": 17.8,
+          "end": 18.14
+        },
+        {
+          "w": "an",
+          "start": 18.14,
+          "end": 18.4
+        }
+      ]
+    },
+    {
+      "text": "array of integers with a",
+      "start": 18.4,
+      "end": 19.62,
+      "words": [
+        {
+          "w": "array",
+          "start": 18.4,
+          "end": 18.62
+        },
+        {
+          "w": "of",
+          "start": 18.62,
+          "end": 18.84
+        },
+        {
+          "w": "integers",
+          "start": 18.84,
+          "end": 19.14
+        },
+        {
+          "w": "with",
+          "start": 19.14,
+          "end": 19.48
+        },
+        {
+          "w": "a",
+          "start": 19.48,
+          "end": 19.62
+        }
+      ]
+    },
+    {
+      "text": "name and a size, for",
+      "start": 19.62,
+      "end": 20.72,
+      "words": [
+        {
+          "w": "name",
+          "start": 19.62,
+          "end": 19.82
+        },
+        {
+          "w": "and",
+          "start": 19.82,
+          "end": 20.08
+        },
+        {
+          "w": "a",
+          "start": 20.08,
+          "end": 20.18
+        },
+        {
+          "w": "size,",
+          "start": 20.18,
+          "end": 20.48
+        },
+        {
+          "w": "for",
+          "start": 20.48,
+          "end": 20.72
+        }
+      ]
+    },
+    {
+      "text": "example, an integer array named",
+      "start": 20.72,
+      "end": 22.6,
+      "words": [
+        {
+          "w": "example,",
+          "start": 20.72,
+          "end": 21.18
+        },
+        {
+          "w": "an",
+          "start": 21.52,
+          "end": 21.66
+        },
+        {
+          "w": "integer",
+          "start": 21.66,
+          "end": 21.92
+        },
+        {
+          "w": "array",
+          "start": 21.92,
+          "end": 22.3
+        },
+        {
+          "w": "named",
+          "start": 22.3,
+          "end": 22.6
+        }
+      ]
+    },
+    {
+      "text": "scores with ten slots. The",
+      "start": 22.6,
+      "end": 24.32,
+      "words": [
+        {
+          "w": "scores",
+          "start": 22.6,
+          "end": 22.92
+        },
+        {
+          "w": "with",
+          "start": 22.92,
+          "end": 23.16
+        },
+        {
+          "w": "ten",
+          "start": 23.16,
+          "end": 23.38
+        },
+        {
+          "w": "slots.",
+          "start": 23.38,
+          "end": 23.72
+        },
+        {
+          "w": "The",
+          "start": 24.18,
+          "end": 24.32
+        }
+      ]
+    },
+    {
+      "text": "first slot is index zero,",
+      "start": 24.32,
+      "end": 25.82,
+      "words": [
+        {
+          "w": "first",
+          "start": 24.32,
+          "end": 24.58
+        },
+        {
+          "w": "slot",
+          "start": 24.58,
+          "end": 24.82
+        },
+        {
+          "w": "is",
+          "start": 24.82,
+          "end": 25.1
+        },
+        {
+          "w": "index",
+          "start": 25.1,
+          "end": 25.44
+        },
+        {
+          "w": "zero,",
+          "start": 25.44,
+          "end": 25.82
+        }
+      ]
+    },
+    {
+      "text": "the last is index nine.",
+      "start": 25.94,
+      "end": 27.36,
+      "words": [
+        {
+          "w": "the",
+          "start": 25.94,
+          "end": 26.08
+        },
+        {
+          "w": "last",
+          "start": 26.08,
+          "end": 26.34
+        },
+        {
+          "w": "is",
+          "start": 26.34,
+          "end": 26.62
+        },
+        {
+          "w": "index",
+          "start": 26.62,
+          "end": 26.94
+        },
+        {
+          "w": "nine.",
+          "start": 26.94,
+          "end": 27.36
+        }
+      ]
+    },
+    {
+      "text": "To read or change a",
+      "start": 27.36,
+      "end": 28.92,
+      "words": [
+        {
+          "w": "To",
+          "start": 27.36,
+          "end": 27.86
+        },
+        {
+          "w": "read",
+          "start": 27.86,
+          "end": 28.14
+        },
+        {
+          "w": "or",
+          "start": 28.14,
+          "end": 28.4
+        },
+        {
+          "w": "change",
+          "start": 28.4,
+          "end": 28.66
+        },
+        {
+          "w": "a",
+          "start": 28.66,
+          "end": 28.92
+        }
+      ]
+    },
+    {
+      "text": "value you write the name",
+      "start": 28.92,
+      "end": 30.02,
+      "words": [
+        {
+          "w": "value",
+          "start": 28.92,
+          "end": 29.16
+        },
+        {
+          "w": "you",
+          "start": 29.4,
+          "end": 29.4
+        },
+        {
+          "w": "write",
+          "start": 29.4,
+          "end": 29.58
+        },
+        {
+          "w": "the",
+          "start": 29.58,
+          "end": 29.76
+        },
+        {
+          "w": "name",
+          "start": 29.76,
+          "end": 30.02
+        }
+      ]
+    },
+    {
+      "text": "followed by the index in",
+      "start": 30.02,
+      "end": 31.32,
+      "words": [
+        {
+          "w": "followed",
+          "start": 30.02,
+          "end": 30.32
+        },
+        {
+          "w": "by",
+          "start": 30.32,
+          "end": 30.64
+        },
+        {
+          "w": "the",
+          "start": 30.64,
+          "end": 30.8
+        },
+        {
+          "w": "index",
+          "start": 30.8,
+          "end": 31.04
+        },
+        {
+          "w": "in",
+          "start": 31.04,
+          "end": 31.32
+        }
+      ]
+    },
+    {
+      "text": "square brackets. For instance, assigning",
+      "start": 31.32,
+      "end": 33.78,
+      "words": [
+        {
+          "w": "square",
+          "start": 31.32,
+          "end": 31.52
+        },
+        {
+          "w": "brackets.",
+          "start": 31.52,
+          "end": 32.02
+        },
+        {
+          "w": "For",
+          "start": 32.5,
+          "end": 32.64
+        },
+        {
+          "w": "instance,",
+          "start": 32.64,
+          "end": 33.1
+        },
+        {
+          "w": "assigning",
+          "start": 33.56,
+          "end": 33.78
+        }
+      ]
+    },
+    {
+      "text": "the number five to the",
+      "start": 33.78,
+      "end": 34.86,
+      "words": [
+        {
+          "w": "the",
+          "start": 33.78,
+          "end": 34.08
+        },
+        {
+          "w": "number",
+          "start": 34.08,
+          "end": 34.26
+        },
+        {
+          "w": "five",
+          "start": 34.26,
+          "end": 34.5
+        },
+        {
+          "w": "to",
+          "start": 34.5,
+          "end": 34.7
+        },
+        {
+          "w": "the",
+          "start": 34.7,
+          "end": 34.86
+        }
+      ]
+    },
+    {
+      "text": "third slot looks like scores[2]",
+      "start": 34.86,
+      "end": 36.36,
+      "words": [
+        {
+          "w": "third",
+          "start": 34.86,
+          "end": 35.06
+        },
+        {
+          "w": "slot",
+          "start": 35.06,
+          "end": 35.34
+        },
+        {
+          "w": "looks",
+          "start": 35.34,
+          "end": 35.6
+        },
+        {
+          "w": "like",
+          "start": 35.6,
+          "end": 35.9
+        },
+        {
+          "w": "scores[2]",
+          "start": 35.9,
+          "end": 36.36
+        }
+      ]
+    },
+    {
+      "text": "equals five. Let's see this",
+      "start": 37.04,
+      "end": 38.84,
+      "words": [
+        {
+          "w": "equals",
+          "start": 37.04,
+          "end": 37.24
+        },
+        {
+          "w": "five.",
+          "start": 37.24,
+          "end": 37.56
+        },
+        {
+          "w": "Let's",
+          "start": 37.56,
+          "end": 38.14
+        },
+        {
+          "w": "see",
+          "start": 38.48,
+          "end": 38.64
+        },
+        {
+          "w": "this",
+          "start": 38.64,
+          "end": 38.84
+        }
+      ]
+    },
+    {
+      "text": "in action with a short",
+      "start": 38.84,
+      "end": 40.02,
+      "words": [
+        {
+          "w": "in",
+          "start": 38.84,
+          "end": 39.1
+        },
+        {
+          "w": "action",
+          "start": 39.1,
+          "end": 39.24
+        },
+        {
+          "w": "with",
+          "start": 39.24,
+          "end": 39.56
+        },
+        {
+          "w": "a",
+          "start": 39.56,
+          "end": 39.86
+        },
+        {
+          "w": "short",
+          "start": 39.86,
+          "end": 40.02
+        }
+      ]
+    },
+    {
+      "text": "Python example that mirrors the",
+      "start": 40.02,
+      "end": 41.58,
+      "words": [
+        {
+          "w": "Python",
+          "start": 40.02,
+          "end": 40.2
+        },
+        {
+          "w": "example",
+          "start": 40.2,
+          "end": 40.52
+        },
+        {
+          "w": "that",
+          "start": 40.52,
+          "end": 41.02
+        },
+        {
+          "w": "mirrors",
+          "start": 41.02,
+          "end": 41.36
+        },
+        {
+          "w": "the",
+          "start": 41.36,
+          "end": 41.58
+        }
+      ]
+    },
+    {
+      "text": "idea. The code creates a",
+      "start": 41.58,
+      "end": 43.38,
+      "words": [
+        {
+          "w": "idea.",
+          "start": 41.58,
+          "end": 41.88
+        },
+        {
+          "w": "The",
+          "start": 41.88,
+          "end": 42.2
+        },
+        {
+          "w": "code",
+          "start": 42.66,
+          "end": 42.8
+        },
+        {
+          "w": "creates",
+          "start": 42.8,
+          "end": 43.08
+        },
+        {
+          "w": "a",
+          "start": 43.08,
+          "end": 43.38
+        }
+      ]
+    },
+    {
+      "text": "list of five integers, then",
+      "start": 43.38,
+      "end": 44.64,
+      "words": [
+        {
+          "w": "list",
+          "start": 43.38,
+          "end": 43.6
+        },
+        {
+          "w": "of",
+          "start": 43.6,
+          "end": 43.82
+        },
+        {
+          "w": "five",
+          "start": 43.82,
+          "end": 44.0
+        },
+        {
+          "w": "integers,",
+          "start": 44.0,
+          "end": 44.3
+        },
+        {
+          "w": "then",
+          "start": 44.3,
+          "end": 44.64
+        }
+      ]
+    },
+    {
+      "text": "prints the element at index",
+      "start": 45.42,
+      "end": 46.68,
+      "words": [
+        {
+          "w": "prints",
+          "start": 45.42,
+          "end": 45.66
+        },
+        {
+          "w": "the",
+          "start": 45.66,
+          "end": 45.9
+        },
+        {
+          "w": "element",
+          "start": 45.9,
+          "end": 46.18
+        },
+        {
+          "w": "at",
+          "start": 46.18,
+          "end": 46.38
+        },
+        {
+          "w": "index",
+          "start": 46.38,
+          "end": 46.68
+        }
+      ]
+    },
+    {
+      "text": "three. Running it shows the",
+      "start": 46.68,
+      "end": 48.64,
+      "words": [
+        {
+          "w": "three.",
+          "start": 46.68,
+          "end": 47.0
+        },
+        {
+          "w": "Running",
+          "start": 47.0,
+          "end": 47.52
+        },
+        {
+          "w": "it",
+          "start": 47.92,
+          "end": 48.08
+        },
+        {
+          "w": "shows",
+          "start": 48.08,
+          "end": 48.36
+        },
+        {
+          "w": "the",
+          "start": 48.36,
+          "end": 48.64
+        }
+      ]
+    },
+    {
+      "text": "stored value. An array lets",
+      "start": 48.64,
+      "end": 50.44,
+      "words": [
+        {
+          "w": "stored",
+          "start": 48.64,
+          "end": 48.92
+        },
+        {
+          "w": "value.",
+          "start": 48.92,
+          "end": 49.12
+        },
+        {
+          "w": "An",
+          "start": 49.12,
+          "end": 49.58
+        },
+        {
+          "w": "array",
+          "start": 50.04,
+          "end": 50.18
+        },
+        {
+          "w": "lets",
+          "start": 50.18,
+          "end": 50.44
+        }
+      ]
+    },
+    {
+      "text": "you keep a fixed\u2011size series",
+      "start": 50.44,
+      "end": 51.5,
+      "words": [
+        {
+          "w": "you",
+          "start": 50.44,
+          "end": 50.78
+        },
+        {
+          "w": "keep",
+          "start": 50.78,
+          "end": 50.88
+        },
+        {
+          "w": "a",
+          "start": 50.88,
+          "end": 51.1
+        },
+        {
+          "w": "fixed\u2011size",
+          "start": 51.1,
+          "end": 51.3
+        },
+        {
+          "w": "series",
+          "start": 51.3,
+          "end": 51.5
+        }
+      ]
+    },
+    {
+      "text": "of same\u2011type values, accessed by",
+      "start": 51.5,
+      "end": 52.76,
+      "words": [
+        {
+          "w": "of",
+          "start": 51.5,
+          "end": 51.76
+        },
+        {
+          "w": "same\u2011type",
+          "start": 51.76,
+          "end": 52.06
+        },
+        {
+          "w": "values,",
+          "start": 52.06,
+          "end": 52.32
+        },
+        {
+          "w": "accessed",
+          "start": 52.32,
+          "end": 52.52
+        },
+        {
+          "w": "by",
+          "start": 52.52,
+          "end": 52.76
+        }
+      ]
+    },
+    {
+      "text": "their numeric index. Now try",
+      "start": 52.76,
+      "end": 54.98,
+      "words": [
+        {
+          "w": "their",
+          "start": 52.76,
+          "end": 53.24
+        },
+        {
+          "w": "numeric",
+          "start": 54.0,
+          "end": 54.22
+        },
+        {
+          "w": "index.",
+          "start": 54.22,
+          "end": 54.48
+        },
+        {
+          "w": "Now",
+          "start": 54.48,
+          "end": 54.62
+        },
+        {
+          "w": "try",
+          "start": 54.62,
+          "end": 54.98
+        }
+      ]
+    },
+    {
+      "text": "this: create a list of",
+      "start": 54.98,
+      "end": 57.56,
+      "words": [
+        {
+          "w": "this:",
+          "start": 54.98,
+          "end": 55.4
+        },
+        {
+          "w": "create",
+          "start": 55.4,
+          "end": 56.1
+        },
+        {
+          "w": "a",
+          "start": 56.1,
+          "end": 56.34
+        },
+        {
+          "w": "list",
+          "start": 56.34,
+          "end": 57.0
+        },
+        {
+          "w": "of",
+          "start": 57.36,
+          "end": 57.56
+        }
+      ]
+    },
+    {
+      "text": "seven numbers and print the",
+      "start": 57.56,
+      "end": 58.78,
+      "words": [
+        {
+          "w": "seven",
+          "start": 57.56,
+          "end": 57.74
+        },
+        {
+          "w": "numbers",
+          "start": 57.74,
+          "end": 57.96
+        },
+        {
+          "w": "and",
+          "start": 57.96,
+          "end": 58.18
+        },
+        {
+          "w": "print",
+          "start": 58.18,
+          "end": 58.42
+        },
+        {
+          "w": "the",
+          "start": 58.42,
+          "end": 58.78
+        }
+      ]
+    },
+    {
+      "text": "value at index four.",
+      "start": 58.78,
+      "end": 59.72,
+      "words": [
+        {
+          "w": "value",
+          "start": 58.78,
+          "end": 59.06
+        },
+        {
+          "w": "at",
+          "start": 59.06,
+          "end": 59.26
+        },
+        {
+          "w": "index",
+          "start": 59.26,
+          "end": 59.46
+        },
+        {
+          "w": "four.",
+          "start": 59.46,
+          "end": 59.72
+        }
+      ]
+    }
+  ]
+}

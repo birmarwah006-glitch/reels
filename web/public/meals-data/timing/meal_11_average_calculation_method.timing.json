@@ -1,0 +1,903 @@
+{
+  "meal_id": "meal_11_average_calculation_method",
+  "audio": "meal_11_average_calculation_method.mp3",
+  "duration": 42.312,
+  "alignment": "whisper",
+  "anchors": {
+    "How do you turn a list of grades into a single number?": 0.0,
+    "Calculate the average of a student's marks.": 3.52,
+    "We'll add an average method that receives a list of marks and prints the result.": 6.26,
+    "Here is the complete class with the new method.": 28.08,
+    "Running the program prints the average of the sample marks.": 30.68,
+    "A method can process a list and display its average.": 34.12,
+    "Write another method that returns the highest mark instead of printing.": 37.52
+  },
+  "captions": [
+    {
+      "text": "How do you turn a",
+      "start": 0.0,
+      "end": 0.98,
+      "words": [
+        {
+          "w": "How",
+          "start": 0.0,
+          "end": 0.36
+        },
+        {
+          "w": "do",
+          "start": 0.36,
+          "end": 0.5
+        },
+        {
+          "w": "you",
+          "start": 0.5,
+          "end": 0.56
+        },
+        {
+          "w": "turn",
+          "start": 0.56,
+          "end": 0.8
+        },
+        {
+          "w": "a",
+          "start": 0.8,
+          "end": 0.98
+        }
+      ]
+    },
+    {
+      "text": "list of grades into a",
+      "start": 0.98,
+      "end": 2.36,
+      "words": [
+        {
+          "w": "list",
+          "start": 0.98,
+          "end": 1.18
+        },
+        {
+          "w": "of",
+          "start": 1.18,
+          "end": 1.46
+        },
+        {
+          "w": "grades",
+          "start": 1.46,
+          "end": 1.74
+        },
+        {
+          "w": "into",
+          "start": 1.74,
+          "end": 2.14
+        },
+        {
+          "w": "a",
+          "start": 2.14,
+          "end": 2.36
+        }
+      ]
+    },
+    {
+      "text": "single number? Calculate the average",
+      "start": 2.36,
+      "end": 4.54,
+      "words": [
+        {
+          "w": "single",
+          "start": 2.36,
+          "end": 2.56
+        },
+        {
+          "w": "number?",
+          "start": 2.56,
+          "end": 3.04
+        },
+        {
+          "w": "Calculate",
+          "start": 3.52,
+          "end": 3.96
+        },
+        {
+          "w": "the",
+          "start": 3.96,
+          "end": 4.24
+        },
+        {
+          "w": "average",
+          "start": 4.24,
+          "end": 4.54
+        }
+      ]
+    },
+    {
+      "text": "of a student's marks. We'll",
+      "start": 4.54,
+      "end": 6.42,
+      "words": [
+        {
+          "w": "of",
+          "start": 4.54,
+          "end": 4.88
+        },
+        {
+          "w": "a",
+          "start": 4.88,
+          "end": 5.0
+        },
+        {
+          "w": "student's",
+          "start": 5.0,
+          "end": 5.42
+        },
+        {
+          "w": "marks.",
+          "start": 5.42,
+          "end": 5.72
+        },
+        {
+          "w": "We'll",
+          "start": 6.26,
+          "end": 6.42
+        }
+      ]
+    },
+    {
+      "text": "add an average method that",
+      "start": 6.42,
+      "end": 7.88,
+      "words": [
+        {
+          "w": "add",
+          "start": 6.42,
+          "end": 6.6
+        },
+        {
+          "w": "an",
+          "start": 6.6,
+          "end": 6.88
+        },
+        {
+          "w": "average",
+          "start": 6.88,
+          "end": 7.1
+        },
+        {
+          "w": "method",
+          "start": 7.1,
+          "end": 7.5
+        },
+        {
+          "w": "that",
+          "start": 7.5,
+          "end": 7.88
+        }
+      ]
+    },
+    {
+      "text": "receives a list of marks",
+      "start": 7.88,
+      "end": 9.08,
+      "words": [
+        {
+          "w": "receives",
+          "start": 7.88,
+          "end": 8.14
+        },
+        {
+          "w": "a",
+          "start": 8.14,
+          "end": 8.38
+        },
+        {
+          "w": "list",
+          "start": 8.38,
+          "end": 8.58
+        },
+        {
+          "w": "of",
+          "start": 8.58,
+          "end": 8.8
+        },
+        {
+          "w": "marks",
+          "start": 8.8,
+          "end": 9.08
+        }
+      ]
+    },
+    {
+      "text": "and prints the result. First,",
+      "start": 9.08,
+      "end": 11.06,
+      "words": [
+        {
+          "w": "and",
+          "start": 9.08,
+          "end": 9.4
+        },
+        {
+          "w": "prints",
+          "start": 9.4,
+          "end": 9.64
+        },
+        {
+          "w": "the",
+          "start": 9.64,
+          "end": 9.84
+        },
+        {
+          "w": "result.",
+          "start": 9.84,
+          "end": 10.24
+        },
+        {
+          "w": "First,",
+          "start": 10.78,
+          "end": 11.06
+        }
+      ]
+    },
+    {
+      "text": "Python lets us define a",
+      "start": 11.4,
+      "end": 12.6,
+      "words": [
+        {
+          "w": "Python",
+          "start": 11.4,
+          "end": 11.54
+        },
+        {
+          "w": "lets",
+          "start": 11.54,
+          "end": 11.82
+        },
+        {
+          "w": "us",
+          "start": 11.82,
+          "end": 12.0
+        },
+        {
+          "w": "define",
+          "start": 12.0,
+          "end": 12.32
+        },
+        {
+          "w": "a",
+          "start": 12.32,
+          "end": 12.6
+        }
+      ]
+    },
+    {
+      "text": "function inside a class; we",
+      "start": 12.6,
+      "end": 14.24,
+      "words": [
+        {
+          "w": "function",
+          "start": 12.6,
+          "end": 12.8
+        },
+        {
+          "w": "inside",
+          "start": 12.8,
+          "end": 13.12
+        },
+        {
+          "w": "a",
+          "start": 13.12,
+          "end": 13.3
+        },
+        {
+          "w": "class;",
+          "start": 13.3,
+          "end": 13.72
+        },
+        {
+          "w": "we",
+          "start": 14.12,
+          "end": 14.24
+        }
+      ]
+    },
+    {
+      "text": "call it a method because",
+      "start": 14.24,
+      "end": 15.18,
+      "words": [
+        {
+          "w": "call",
+          "start": 14.24,
+          "end": 14.44
+        },
+        {
+          "w": "it",
+          "start": 14.44,
+          "end": 14.56
+        },
+        {
+          "w": "a",
+          "start": 14.56,
+          "end": 14.68
+        },
+        {
+          "w": "method",
+          "start": 14.68,
+          "end": 14.88
+        },
+        {
+          "w": "because",
+          "start": 14.88,
+          "end": 15.18
+        }
+      ]
+    },
+    {
+      "text": "it works on an instance,",
+      "start": 15.18,
+      "end": 16.24,
+      "words": [
+        {
+          "w": "it",
+          "start": 15.18,
+          "end": 15.38
+        },
+        {
+          "w": "works",
+          "start": 15.38,
+          "end": 15.58
+        },
+        {
+          "w": "on",
+          "start": 15.58,
+          "end": 15.8
+        },
+        {
+          "w": "an",
+          "start": 15.8,
+          "end": 15.96
+        },
+        {
+          "w": "instance,",
+          "start": 15.96,
+          "end": 16.24
+        }
+      ]
+    },
+    {
+      "text": "so it always takes self",
+      "start": 16.52,
+      "end": 17.4,
+      "words": [
+        {
+          "w": "so",
+          "start": 16.52,
+          "end": 16.54
+        },
+        {
+          "w": "it",
+          "start": 16.54,
+          "end": 16.7
+        },
+        {
+          "w": "always",
+          "start": 16.7,
+          "end": 16.92
+        },
+        {
+          "w": "takes",
+          "start": 16.92,
+          "end": 17.14
+        },
+        {
+          "w": "self",
+          "start": 17.14,
+          "end": 17.4
+        }
+      ]
+    },
+    {
+      "text": "as the first parameter. The",
+      "start": 17.4,
+      "end": 19.08,
+      "words": [
+        {
+          "w": "as",
+          "start": 17.4,
+          "end": 17.66
+        },
+        {
+          "w": "the",
+          "start": 17.66,
+          "end": 17.8
+        },
+        {
+          "w": "first",
+          "start": 17.8,
+          "end": 18.0
+        },
+        {
+          "w": "parameter.",
+          "start": 18.0,
+          "end": 18.36
+        },
+        {
+          "w": "The",
+          "start": 18.9,
+          "end": 19.08
+        }
+      ]
+    },
+    {
+      "text": "method also takes a marks",
+      "start": 19.08,
+      "end": 20.6,
+      "words": [
+        {
+          "w": "method",
+          "start": 19.08,
+          "end": 19.44
+        },
+        {
+          "w": "also",
+          "start": 19.44,
+          "end": 19.92
+        },
+        {
+          "w": "takes",
+          "start": 19.92,
+          "end": 20.14
+        },
+        {
+          "w": "a",
+          "start": 20.14,
+          "end": 20.34
+        },
+        {
+          "w": "marks",
+          "start": 20.34,
+          "end": 20.6
+        }
+      ]
+    },
+    {
+      "text": "list. Inside, we add all",
+      "start": 20.6,
+      "end": 22.68,
+      "words": [
+        {
+          "w": "list.",
+          "start": 20.6,
+          "end": 21.02
+        },
+        {
+          "w": "Inside,",
+          "start": 21.6,
+          "end": 21.9
+        },
+        {
+          "w": "we",
+          "start": 22.14,
+          "end": 22.26
+        },
+        {
+          "w": "add",
+          "start": 22.26,
+          "end": 22.44
+        },
+        {
+          "w": "all",
+          "start": 22.44,
+          "end": 22.68
+        }
+      ]
+    },
+    {
+      "text": "the numbers with the built\u2011in",
+      "start": 22.68,
+      "end": 23.6,
+      "words": [
+        {
+          "w": "the",
+          "start": 22.68,
+          "end": 22.78
+        },
+        {
+          "w": "numbers",
+          "start": 22.78,
+          "end": 23.06
+        },
+        {
+          "w": "with",
+          "start": 23.06,
+          "end": 23.28
+        },
+        {
+          "w": "the",
+          "start": 23.28,
+          "end": 23.46
+        },
+        {
+          "w": "built\u2011in",
+          "start": 23.46,
+          "end": 23.6
+        }
+      ]
+    },
+    {
+      "text": "sum function, count them with",
+      "start": 23.6,
+      "end": 25.18,
+      "words": [
+        {
+          "w": "sum",
+          "start": 23.6,
+          "end": 23.78
+        },
+        {
+          "w": "function,",
+          "start": 23.78,
+          "end": 23.96
+        },
+        {
+          "w": "count",
+          "start": 23.96,
+          "end": 24.46
+        },
+        {
+          "w": "them",
+          "start": 24.8,
+          "end": 24.98
+        },
+        {
+          "w": "with",
+          "start": 24.98,
+          "end": 25.18
+        }
+      ]
+    },
+    {
+      "text": "len, divide to get the",
+      "start": 25.18,
+      "end": 26.34,
+      "words": [
+        {
+          "w": "len,",
+          "start": 25.18,
+          "end": 25.38
+        },
+        {
+          "w": "divide",
+          "start": 25.38,
+          "end": 25.64
+        },
+        {
+          "w": "to",
+          "start": 25.84,
+          "end": 25.98
+        },
+        {
+          "w": "get",
+          "start": 25.98,
+          "end": 26.12
+        },
+        {
+          "w": "the",
+          "start": 26.12,
+          "end": 26.34
+        }
+      ]
+    },
+    {
+      "text": "mean, and then use print",
+      "start": 26.34,
+      "end": 27.54,
+      "words": [
+        {
+          "w": "mean,",
+          "start": 26.34,
+          "end": 26.56
+        },
+        {
+          "w": "and",
+          "start": 26.56,
+          "end": 26.82
+        },
+        {
+          "w": "then",
+          "start": 27.1,
+          "end": 27.2
+        },
+        {
+          "w": "use",
+          "start": 27.2,
+          "end": 27.4
+        },
+        {
+          "w": "print",
+          "start": 27.4,
+          "end": 27.54
+        }
+      ]
+    },
+    {
+      "text": "to show it. Here is",
+      "start": 27.54,
+      "end": 28.96,
+      "words": [
+        {
+          "w": "to",
+          "start": 27.54,
+          "end": 27.76
+        },
+        {
+          "w": "show",
+          "start": 27.76,
+          "end": 27.96
+        },
+        {
+          "w": "it.",
+          "start": 27.96,
+          "end": 28.08
+        },
+        {
+          "w": "Here",
+          "start": 28.08,
+          "end": 28.42
+        },
+        {
+          "w": "is",
+          "start": 28.42,
+          "end": 28.96
+        }
+      ]
+    },
+    {
+      "text": "the complete class with the",
+      "start": 28.96,
+      "end": 30.4,
+      "words": [
+        {
+          "w": "the",
+          "start": 28.96,
+          "end": 29.26
+        },
+        {
+          "w": "complete",
+          "start": 29.26,
+          "end": 29.46
+        },
+        {
+          "w": "class",
+          "start": 29.46,
+          "end": 29.74
+        },
+        {
+          "w": "with",
+          "start": 29.74,
+          "end": 30.14
+        },
+        {
+          "w": "the",
+          "start": 30.14,
+          "end": 30.4
+        }
+      ]
+    },
+    {
+      "text": "new method. Running the program",
+      "start": 30.4,
+      "end": 32.04,
+      "words": [
+        {
+          "w": "new",
+          "start": 30.4,
+          "end": 30.58
+        },
+        {
+          "w": "method.",
+          "start": 30.58,
+          "end": 30.68
+        },
+        {
+          "w": "Running",
+          "start": 30.68,
+          "end": 31.04
+        },
+        {
+          "w": "the",
+          "start": 31.6,
+          "end": 31.76
+        },
+        {
+          "w": "program",
+          "start": 31.76,
+          "end": 32.04
+        }
+      ]
+    },
+    {
+      "text": "prints the average of the",
+      "start": 32.04,
+      "end": 33.78,
+      "words": [
+        {
+          "w": "prints",
+          "start": 32.04,
+          "end": 32.44
+        },
+        {
+          "w": "the",
+          "start": 32.44,
+          "end": 32.82
+        },
+        {
+          "w": "average",
+          "start": 32.82,
+          "end": 33.14
+        },
+        {
+          "w": "of",
+          "start": 33.14,
+          "end": 33.46
+        },
+        {
+          "w": "the",
+          "start": 33.46,
+          "end": 33.78
+        }
+      ]
+    },
+    {
+      "text": "sample marks. A method can",
+      "start": 33.78,
+      "end": 35.38,
+      "words": [
+        {
+          "w": "sample",
+          "start": 33.78,
+          "end": 33.88
+        },
+        {
+          "w": "marks.",
+          "start": 33.88,
+          "end": 34.12
+        },
+        {
+          "w": "A",
+          "start": 34.12,
+          "end": 34.52
+        },
+        {
+          "w": "method",
+          "start": 35.06,
+          "end": 35.12
+        },
+        {
+          "w": "can",
+          "start": 35.12,
+          "end": 35.38
+        }
+      ]
+    },
+    {
+      "text": "process a list and display",
+      "start": 35.38,
+      "end": 36.88,
+      "words": [
+        {
+          "w": "process",
+          "start": 35.38,
+          "end": 35.66
+        },
+        {
+          "w": "a",
+          "start": 35.66,
+          "end": 36.04
+        },
+        {
+          "w": "list",
+          "start": 36.04,
+          "end": 36.3
+        },
+        {
+          "w": "and",
+          "start": 36.3,
+          "end": 36.54
+        },
+        {
+          "w": "display",
+          "start": 36.54,
+          "end": 36.88
+        }
+      ]
+    },
+    {
+      "text": "its average. Write another method",
+      "start": 36.88,
+      "end": 38.92,
+      "words": [
+        {
+          "w": "its",
+          "start": 36.88,
+          "end": 37.22
+        },
+        {
+          "w": "average.",
+          "start": 37.22,
+          "end": 37.52
+        },
+        {
+          "w": "Write",
+          "start": 37.52,
+          "end": 37.94
+        },
+        {
+          "w": "another",
+          "start": 38.44,
+          "end": 38.64
+        },
+        {
+          "w": "method",
+          "start": 38.64,
+          "end": 38.92
+        }
+      ]
+    },
+    {
+      "text": "that returns the highest mark",
+      "start": 38.92,
+      "end": 40.68,
+      "words": [
+        {
+          "w": "that",
+          "start": 38.92,
+          "end": 39.4
+        },
+        {
+          "w": "returns",
+          "start": 39.4,
+          "end": 39.74
+        },
+        {
+          "w": "the",
+          "start": 39.74,
+          "end": 40.12
+        },
+        {
+          "w": "highest",
+          "start": 40.12,
+          "end": 40.44
+        },
+        {
+          "w": "mark",
+          "start": 40.44,
+          "end": 40.68
+        }
+      ]
+    },
+    {
+      "text": "instead of printing.",
+      "start": 40.68,
+      "end": 41.6,
+      "words": [
+        {
+          "w": "instead",
+          "start": 40.68,
+          "end": 41.1
+        },
+        {
+          "w": "of",
+          "start": 41.1,
+          "end": 41.38
+        },
+        {
+          "w": "printing.",
+          "start": 41.38,
+          "end": 41.6
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_05_what_a_process_contains",
+    "title": "What a Process Contains",
+    "concept": "python.project.overview",
+    "objective": "List the memory sections, registers, and metadata that make up a process",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.project.overview",
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "memory sections",
+      "registers",
+      "metadata"
+    ],
+    "assumes": [
+      "process"
+    ],
+    "voice": {
+      "script": "What exactly lives inside a running process? Which parts make up a process's state? A process is more than just code. First, memory sections are the different blocks where the operating system stores the program's data. The text section holds the executable instructions, the data section holds global variables, the heap grows for dynamic allocation, and the stack keeps track of function calls. Next, registers are tiny, fast storage locations inside the CPU that hold the current values the process is working with, such as the instruction pointer that tells the CPU where to execute next. Finally, metadata is information the operating system keeps about the process: its identifier, current state, open files, and resource limits. Here is a diagram of the process memory layout. Remember, a process consists of memory sections, registers, and metadata. Now, draw your own sketch labeling each part of a process.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What exactly lives inside a running process?"
+        },
+        "narration_anchor": "What exactly lives inside a running process?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "Which parts make up a process's state?"
+        },
+        "narration_anchor": "Which parts make up a process's state?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Process Components",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Memory Sections",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Registers",
+              "kind": "box"
+            },
+            {
+              "id": "d",
+              "label": "Metadata",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "includes"
+            },
+            {
+              "from": "a",
+              "to": "c",
+              "label": "includes"
+            },
+            {
+              "from": "a",
+              "to": "d",
+              "label": "includes"
+            }
+          ]
+        },
+        "narration_anchor": "A process is more than just code."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A process is built from memory sections, registers, and OS\u2011kept metadata."
+        },
+        "narration_anchor": "Remember, a process consists of memory sections, registers, and metadata.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Sketch a process diagram labeling text, data, heap, stack, registers, and metadata."
+        },
+        "narration_anchor": "Now, draw your own sketch labeling each part of a process.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Sketch a process diagram labeling text, data, heap, stack, registers, and metadata.",
+      "hint": "Think of each part as a separate drawer holding specific items."
+    },
+    "series": {
+      "title": "CPU Virtualization Basics",
+      "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+      "order": 5,
+      "total": 12,
+      "previous_id": "meal_04_program_vs_process",
+      "next_id": "meal_06_process_control_block_pcb"
+    }
+  }
+}

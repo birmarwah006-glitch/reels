@@ -1,0 +1,172 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_12_reading_whole_lines_with_fgets",
+    "title": "Reading whole lines with fgets",
+    "concept": "c.project.overview",
+    "objective": "Use fgets to read a full line of text including spaces",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "fgets"
+    ],
+    "assumes": [
+      "character array",
+      "scanf limitation with spaces"
+    ],
+    "voice": {
+      "script": "Can you read a sentence with spaces? How do you capture a full line of user input? In C, the function fgets lets you pull an entire line from the keyboard, stopping at a newline or when the buffer fills. First we create a character array to hold the text. Then we call fgets, giving it the array, its size, and the standard input stream. After the call, the array contains everything the user typed, spaces and all. Finally we display the captured line with printf. Here is the program. When you run it, you can type a sentence and see it printed back. Use fgets to read an entire line, including spaces.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Can you read a sentence with spaces?"
+        },
+        "narration_anchor": "Can you read a sentence with spaces?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you capture a full line of user input?"
+        },
+        "narration_anchor": "How do you capture a full line of user input?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "User types line",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "fgets stores line",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Program prints line",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "input"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "output"
+            }
+          ]
+        },
+        "narration_anchor": "fgets lets you pull an entire line from the keyboard, stopping at a newline or when the buffer fills"
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "c",
+          "filename": "main.c",
+          "code": "#!/usr/bin/env python3\nimport sys\nline = sys.stdin.readline().rstrip('\\n')\nprint(f\"You typed: {line}\")\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "#!/usr/bin/env python3\nimport sys\nline = sys.stdin.readline().rstrip('\\n')\nprint(f\"You typed: {line}\")",
+              "lines": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "speed_cps": 26
+            }
+          ]
+        },
+        "narration_anchor": "Here is the program."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "a.out",
+          "stdin": [
+            "Hello world"
+          ],
+          "execution": {
+            "verified": false,
+            "source": "unverified",
+            "stdout": "",
+            "stderr": "",
+            "exit_code": -1
+          }
+        },
+        "narration_anchor": "When you run it, you can type a sentence and see it printed back",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Use fgets to read an entire line, including spaces"
+        },
+        "narration_anchor": "Use fgets to read an entire line, including spaces",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Modify the program to echo the line back in uppercase letters"
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Modify the program to echo the line back in uppercase letters",
+      "hint": "Loop over each character and apply the toupper function"
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 12,
+      "total": 22,
+      "previous_id": "meal_11_reading_input_with_scanf",
+      "next_id": "meal_13_simple_arithmetic_operations"
+    }
+  }
+}

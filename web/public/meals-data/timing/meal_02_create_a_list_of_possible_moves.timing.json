@@ -1,0 +1,390 @@
+{
+  "meal_id": "meal_02_create_a_list_of_possible_moves",
+  "audio": "meal_02_create_a_list_of_possible_moves.mp3",
+  "duration": 22.584,
+  "alignment": "whisper",
+  "anchors": {
+    "What three moves can a rock\u2011paper\u2011scissors player make?": 0.0,
+    "We need a place to store those moves.": 2.28,
+    "In Python a list lets us keep an ordered collection of items.": 4.54,
+    "Here\u2019s the code that creates the list.": 8.44,
+    "Remember: a list is just brackets with comma\u2011separated values.": 12.76,
+    "Now add a second list for the computer\u2019s choice.": 17.76
+  },
+  "captions": [
+    {
+      "text": "What three moves can a",
+      "start": 0.0,
+      "end": 1.46,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.32
+        },
+        {
+          "w": "three",
+          "start": 0.32,
+          "end": 0.68
+        },
+        {
+          "w": "moves",
+          "start": 0.68,
+          "end": 1.04
+        },
+        {
+          "w": "can",
+          "start": 1.04,
+          "end": 1.32
+        },
+        {
+          "w": "a",
+          "start": 1.32,
+          "end": 1.46
+        }
+      ]
+    },
+    {
+      "text": "rock\u2011paper\u2011scissors player make? We need",
+      "start": 1.46,
+      "end": 2.98,
+      "words": [
+        {
+          "w": "rock\u2011paper\u2011scissors",
+          "start": 1.46,
+          "end": 1.68
+        },
+        {
+          "w": "player",
+          "start": 1.68,
+          "end": 1.96
+        },
+        {
+          "w": "make?",
+          "start": 1.96,
+          "end": 2.28
+        },
+        {
+          "w": "We",
+          "start": 2.28,
+          "end": 2.64
+        },
+        {
+          "w": "need",
+          "start": 2.64,
+          "end": 2.98
+        }
+      ]
+    },
+    {
+      "text": "a place to store those",
+      "start": 3.42,
+      "end": 4.34,
+      "words": [
+        {
+          "w": "a",
+          "start": 3.42,
+          "end": 3.5
+        },
+        {
+          "w": "place",
+          "start": 3.5,
+          "end": 3.72
+        },
+        {
+          "w": "to",
+          "start": 3.72,
+          "end": 3.86
+        },
+        {
+          "w": "store",
+          "start": 3.86,
+          "end": 4.1
+        },
+        {
+          "w": "those",
+          "start": 4.1,
+          "end": 4.34
+        }
+      ]
+    },
+    {
+      "text": "moves. In Python a list",
+      "start": 4.34,
+      "end": 6.18,
+      "words": [
+        {
+          "w": "moves.",
+          "start": 4.34,
+          "end": 4.54
+        },
+        {
+          "w": "In",
+          "start": 4.54,
+          "end": 4.82
+        },
+        {
+          "w": "Python",
+          "start": 4.82,
+          "end": 5.32
+        },
+        {
+          "w": "a",
+          "start": 5.78,
+          "end": 5.84
+        },
+        {
+          "w": "list",
+          "start": 5.84,
+          "end": 6.18
+        }
+      ]
+    },
+    {
+      "text": "lets us keep an ordered",
+      "start": 6.18,
+      "end": 7.52,
+      "words": [
+        {
+          "w": "lets",
+          "start": 6.18,
+          "end": 6.6
+        },
+        {
+          "w": "us",
+          "start": 6.6,
+          "end": 6.72
+        },
+        {
+          "w": "keep",
+          "start": 6.72,
+          "end": 6.96
+        },
+        {
+          "w": "an",
+          "start": 6.96,
+          "end": 7.26
+        },
+        {
+          "w": "ordered",
+          "start": 7.26,
+          "end": 7.52
+        }
+      ]
+    },
+    {
+      "text": "collection of items. Here\u2019s the",
+      "start": 7.52,
+      "end": 9.04,
+      "words": [
+        {
+          "w": "collection",
+          "start": 7.52,
+          "end": 7.8
+        },
+        {
+          "w": "of",
+          "start": 7.8,
+          "end": 8.08
+        },
+        {
+          "w": "items.",
+          "start": 8.08,
+          "end": 8.44
+        },
+        {
+          "w": "Here\u2019s",
+          "start": 8.44,
+          "end": 8.68
+        },
+        {
+          "w": "the",
+          "start": 8.68,
+          "end": 9.04
+        }
+      ]
+    },
+    {
+      "text": "code that creates the list.",
+      "start": 9.5,
+      "end": 10.88,
+      "words": [
+        {
+          "w": "code",
+          "start": 9.5,
+          "end": 9.84
+        },
+        {
+          "w": "that",
+          "start": 9.84,
+          "end": 10.0
+        },
+        {
+          "w": "creates",
+          "start": 10.0,
+          "end": 10.28
+        },
+        {
+          "w": "the",
+          "start": 10.28,
+          "end": 10.6
+        },
+        {
+          "w": "list.",
+          "start": 10.6,
+          "end": 10.88
+        }
+      ]
+    },
+    {
+      "text": "choices = [\"rock\", \"paper\", \"scissors\"]",
+      "start": 10.88,
+      "end": 12.76,
+      "words": [
+        {
+          "w": "choices",
+          "start": 10.88,
+          "end": 11.14
+        },
+        {
+          "w": "=",
+          "start": 11.14,
+          "end": 11.48
+        },
+        {
+          "w": "[\"rock\",",
+          "start": 12.0,
+          "end": 12.16
+        },
+        {
+          "w": "\"paper\",",
+          "start": 12.16,
+          "end": 12.46
+        },
+        {
+          "w": "\"scissors\"]",
+          "start": 12.46,
+          "end": 12.76
+        }
+      ]
+    },
+    {
+      "text": "Remember: a list is just",
+      "start": 12.76,
+      "end": 16.64,
+      "words": [
+        {
+          "w": "Remember:",
+          "start": 12.76,
+          "end": 13.4
+        },
+        {
+          "w": "a",
+          "start": 13.4,
+          "end": 14.14
+        },
+        {
+          "w": "list",
+          "start": 14.14,
+          "end": 15.02
+        },
+        {
+          "w": "is",
+          "start": 15.02,
+          "end": 15.78
+        },
+        {
+          "w": "just",
+          "start": 16.64,
+          "end": 16.64
+        }
+      ]
+    },
+    {
+      "text": "brackets with comma\u2011separated values. Now",
+      "start": 16.64,
+      "end": 18.14,
+      "words": [
+        {
+          "w": "brackets",
+          "start": 16.64,
+          "end": 16.88
+        },
+        {
+          "w": "with",
+          "start": 16.88,
+          "end": 17.2
+        },
+        {
+          "w": "comma\u2011separated",
+          "start": 17.2,
+          "end": 17.44
+        },
+        {
+          "w": "values.",
+          "start": 17.44,
+          "end": 17.76
+        },
+        {
+          "w": "Now",
+          "start": 17.76,
+          "end": 18.14
+        }
+      ]
+    },
+    {
+      "text": "add a second list for",
+      "start": 18.14,
+      "end": 20.52,
+      "words": [
+        {
+          "w": "add",
+          "start": 18.14,
+          "end": 18.84
+        },
+        {
+          "w": "a",
+          "start": 18.84,
+          "end": 19.34
+        },
+        {
+          "w": "second",
+          "start": 19.94,
+          "end": 20.06
+        },
+        {
+          "w": "list",
+          "start": 20.06,
+          "end": 20.4
+        },
+        {
+          "w": "for",
+          "start": 20.4,
+          "end": 20.52
+        }
+      ]
+    },
+    {
+      "text": "the computer\u2019s choice.",
+      "start": 20.52,
+      "end": 21.32,
+      "words": [
+        {
+          "w": "the",
+          "start": 20.52,
+          "end": 20.74
+        },
+        {
+          "w": "computer\u2019s",
+          "start": 20.74,
+          "end": 21.06
+        },
+        {
+          "w": "choice.",
+          "start": 21.06,
+          "end": 21.32
+        }
+      ]
+    }
+  ]
+}

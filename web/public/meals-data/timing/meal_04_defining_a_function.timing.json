@@ -1,0 +1,1031 @@
+{
+  "meal_id": "meal_04_defining_a_function",
+  "audio": "meal_04_defining_a_function.mp3",
+  "duration": 56.376,
+  "alignment": "whisper",
+  "anchors": {
+    "Want to reuse code without rewriting it?": 0.0,
+    "How can you package actions to call them later?": 2.94,
+    "In Python a function is a reusable block of instructions.": 5.64,
+    "Here\u2019s the function definition:": 28.32,
+    "Running this prints the total bet.": 44.66,
+    "Remember: define once, call many times.": 47.04,
+    "For practice, write a function that greets a user by name.": 49.18
+  },
+  "captions": [
+    {
+      "text": "Want to reuse code without",
+      "start": 0.0,
+      "end": 1.8,
+      "words": [
+        {
+          "w": "Want",
+          "start": 0.0,
+          "end": 0.4
+        },
+        {
+          "w": "to",
+          "start": 0.4,
+          "end": 0.66
+        },
+        {
+          "w": "reuse",
+          "start": 0.66,
+          "end": 0.94
+        },
+        {
+          "w": "code",
+          "start": 0.94,
+          "end": 1.36
+        },
+        {
+          "w": "without",
+          "start": 1.36,
+          "end": 1.8
+        }
+      ]
+    },
+    {
+      "text": "rewriting it? How can you",
+      "start": 1.8,
+      "end": 3.4,
+      "words": [
+        {
+          "w": "rewriting",
+          "start": 1.8,
+          "end": 2.26
+        },
+        {
+          "w": "it?",
+          "start": 2.26,
+          "end": 2.74
+        },
+        {
+          "w": "How",
+          "start": 2.94,
+          "end": 3.1
+        },
+        {
+          "w": "can",
+          "start": 3.1,
+          "end": 3.26
+        },
+        {
+          "w": "you",
+          "start": 3.26,
+          "end": 3.4
+        }
+      ]
+    },
+    {
+      "text": "package actions to call them",
+      "start": 3.4,
+      "end": 4.82,
+      "words": [
+        {
+          "w": "package",
+          "start": 3.4,
+          "end": 3.7
+        },
+        {
+          "w": "actions",
+          "start": 3.7,
+          "end": 4.22
+        },
+        {
+          "w": "to",
+          "start": 4.22,
+          "end": 4.44
+        },
+        {
+          "w": "call",
+          "start": 4.44,
+          "end": 4.6
+        },
+        {
+          "w": "them",
+          "start": 4.6,
+          "end": 4.82
+        }
+      ]
+    },
+    {
+      "text": "later? In Python a function",
+      "start": 4.82,
+      "end": 6.7,
+      "words": [
+        {
+          "w": "later?",
+          "start": 4.82,
+          "end": 5.18
+        },
+        {
+          "w": "In",
+          "start": 5.64,
+          "end": 5.8
+        },
+        {
+          "w": "Python",
+          "start": 5.8,
+          "end": 6.12
+        },
+        {
+          "w": "a",
+          "start": 6.12,
+          "end": 6.34
+        },
+        {
+          "w": "function",
+          "start": 6.34,
+          "end": 6.7
+        }
+      ]
+    },
+    {
+      "text": "is a reusable block of",
+      "start": 6.7,
+      "end": 8.28,
+      "words": [
+        {
+          "w": "is",
+          "start": 6.7,
+          "end": 7.06
+        },
+        {
+          "w": "a",
+          "start": 7.06,
+          "end": 7.26
+        },
+        {
+          "w": "reusable",
+          "start": 7.26,
+          "end": 7.54
+        },
+        {
+          "w": "block",
+          "start": 7.54,
+          "end": 8.06
+        },
+        {
+          "w": "of",
+          "start": 8.06,
+          "end": 8.28
+        }
+      ]
+    },
+    {
+      "text": "instructions. You create one with",
+      "start": 8.28,
+      "end": 10.36,
+      "words": [
+        {
+          "w": "instructions.",
+          "start": 8.28,
+          "end": 8.8
+        },
+        {
+          "w": "You",
+          "start": 9.38,
+          "end": 9.48
+        },
+        {
+          "w": "create",
+          "start": 9.48,
+          "end": 9.76
+        },
+        {
+          "w": "one",
+          "start": 9.76,
+          "end": 10.1
+        },
+        {
+          "w": "with",
+          "start": 10.1,
+          "end": 10.36
+        }
+      ]
+    },
+    {
+      "text": "the def keyword, followed by",
+      "start": 10.36,
+      "end": 12.28,
+      "words": [
+        {
+          "w": "the",
+          "start": 10.36,
+          "end": 10.5
+        },
+        {
+          "w": "def",
+          "start": 10.5,
+          "end": 10.66
+        },
+        {
+          "w": "keyword,",
+          "start": 10.66,
+          "end": 11.1
+        },
+        {
+          "w": "followed",
+          "start": 11.86,
+          "end": 12.04
+        },
+        {
+          "w": "by",
+          "start": 12.04,
+          "end": 12.28
+        }
+      ]
+    },
+    {
+      "text": "a name and parentheses. Inside",
+      "start": 12.28,
+      "end": 14.44,
+      "words": [
+        {
+          "w": "a",
+          "start": 12.28,
+          "end": 12.46
+        },
+        {
+          "w": "name",
+          "start": 12.46,
+          "end": 12.62
+        },
+        {
+          "w": "and",
+          "start": 12.62,
+          "end": 12.92
+        },
+        {
+          "w": "parentheses.",
+          "start": 12.92,
+          "end": 13.48
+        },
+        {
+          "w": "Inside",
+          "start": 14.18,
+          "end": 14.44
+        }
+      ]
+    },
+    {
+      "text": "the parentheses you list parameters,",
+      "start": 14.44,
+      "end": 16.08,
+      "words": [
+        {
+          "w": "the",
+          "start": 14.44,
+          "end": 14.74
+        },
+        {
+          "w": "parentheses",
+          "start": 14.74,
+          "end": 15.1
+        },
+        {
+          "w": "you",
+          "start": 15.1,
+          "end": 15.46
+        },
+        {
+          "w": "list",
+          "start": 15.46,
+          "end": 15.68
+        },
+        {
+          "w": "parameters,",
+          "start": 15.68,
+          "end": 16.08
+        }
+      ]
+    },
+    {
+      "text": "which are placeholders for values",
+      "start": 16.76,
+      "end": 18.22,
+      "words": [
+        {
+          "w": "which",
+          "start": 16.76,
+          "end": 16.86
+        },
+        {
+          "w": "are",
+          "start": 16.86,
+          "end": 17.02
+        },
+        {
+          "w": "placeholders",
+          "start": 17.02,
+          "end": 17.52
+        },
+        {
+          "w": "for",
+          "start": 17.52,
+          "end": 17.88
+        },
+        {
+          "w": "values",
+          "start": 17.88,
+          "end": 18.22
+        }
+      ]
+    },
+    {
+      "text": "you\u2019ll give later. The code",
+      "start": 18.22,
+      "end": 19.8,
+      "words": [
+        {
+          "w": "you\u2019ll",
+          "start": 18.22,
+          "end": 18.52
+        },
+        {
+          "w": "give",
+          "start": 18.52,
+          "end": 18.64
+        },
+        {
+          "w": "later.",
+          "start": 18.64,
+          "end": 18.98
+        },
+        {
+          "w": "The",
+          "start": 19.42,
+          "end": 19.58
+        },
+        {
+          "w": "code",
+          "start": 19.58,
+          "end": 19.8
+        }
+      ]
+    },
+    {
+      "text": "block runs when you call",
+      "start": 19.8,
+      "end": 21.06,
+      "words": [
+        {
+          "w": "block",
+          "start": 19.8,
+          "end": 20.12
+        },
+        {
+          "w": "runs",
+          "start": 20.12,
+          "end": 20.46
+        },
+        {
+          "w": "when",
+          "start": 20.46,
+          "end": 20.74
+        },
+        {
+          "w": "you",
+          "start": 20.74,
+          "end": 20.88
+        },
+        {
+          "w": "call",
+          "start": 20.88,
+          "end": 21.06
+        }
+      ]
+    },
+    {
+      "text": "the function by its name",
+      "start": 21.06,
+      "end": 22.3,
+      "words": [
+        {
+          "w": "the",
+          "start": 21.06,
+          "end": 21.22
+        },
+        {
+          "w": "function",
+          "start": 21.22,
+          "end": 21.54
+        },
+        {
+          "w": "by",
+          "start": 21.54,
+          "end": 21.82
+        },
+        {
+          "w": "its",
+          "start": 21.82,
+          "end": 22.02
+        },
+        {
+          "w": "name",
+          "start": 22.02,
+          "end": 22.3
+        }
+      ]
+    },
+    {
+      "text": "and supply arguments. If you",
+      "start": 22.3,
+      "end": 24.18,
+      "words": [
+        {
+          "w": "and",
+          "start": 22.3,
+          "end": 22.56
+        },
+        {
+          "w": "supply",
+          "start": 22.56,
+          "end": 22.88
+        },
+        {
+          "w": "arguments.",
+          "start": 22.88,
+          "end": 23.4
+        },
+        {
+          "w": "If",
+          "start": 23.88,
+          "end": 24.04
+        },
+        {
+          "w": "you",
+          "start": 24.04,
+          "end": 24.18
+        }
+      ]
+    },
+    {
+      "text": "want the function to give",
+      "start": 24.18,
+      "end": 25.1,
+      "words": [
+        {
+          "w": "want",
+          "start": 24.18,
+          "end": 24.32
+        },
+        {
+          "w": "the",
+          "start": 24.32,
+          "end": 24.48
+        },
+        {
+          "w": "function",
+          "start": 24.48,
+          "end": 24.74
+        },
+        {
+          "w": "to",
+          "start": 24.74,
+          "end": 24.96
+        },
+        {
+          "w": "give",
+          "start": 24.96,
+          "end": 25.1
+        }
+      ]
+    },
+    {
+      "text": "you something back, you use",
+      "start": 25.1,
+      "end": 26.32,
+      "words": [
+        {
+          "w": "you",
+          "start": 25.1,
+          "end": 25.28
+        },
+        {
+          "w": "something",
+          "start": 25.28,
+          "end": 25.48
+        },
+        {
+          "w": "back,",
+          "start": 25.48,
+          "end": 25.9
+        },
+        {
+          "w": "you",
+          "start": 26.02,
+          "end": 26.08
+        },
+        {
+          "w": "use",
+          "start": 26.08,
+          "end": 26.32
+        }
+      ]
+    },
+    {
+      "text": "return, which sends a value",
+      "start": 26.32,
+      "end": 27.68,
+      "words": [
+        {
+          "w": "return,",
+          "start": 26.32,
+          "end": 26.74
+        },
+        {
+          "w": "which",
+          "start": 26.74,
+          "end": 27.02
+        },
+        {
+          "w": "sends",
+          "start": 27.02,
+          "end": 27.22
+        },
+        {
+          "w": "a",
+          "start": 27.22,
+          "end": 27.5
+        },
+        {
+          "w": "value",
+          "start": 27.5,
+          "end": 27.68
+        }
+      ]
+    },
+    {
+      "text": "to the caller. Here\u2019s the",
+      "start": 27.68,
+      "end": 29.22,
+      "words": [
+        {
+          "w": "to",
+          "start": 27.68,
+          "end": 27.9
+        },
+        {
+          "w": "the",
+          "start": 27.9,
+          "end": 28.08
+        },
+        {
+          "w": "caller.",
+          "start": 28.08,
+          "end": 28.32
+        },
+        {
+          "w": "Here\u2019s",
+          "start": 28.32,
+          "end": 29.06
+        },
+        {
+          "w": "the",
+          "start": 29.06,
+          "end": 29.22
+        }
+      ]
+    },
+    {
+      "text": "function definition: def calculate_total(bet, lines):",
+      "start": 29.22,
+      "end": 31.78,
+      "words": [
+        {
+          "w": "function",
+          "start": 29.22,
+          "end": 29.46
+        },
+        {
+          "w": "definition:",
+          "start": 29.46,
+          "end": 30.06
+        },
+        {
+          "w": "def",
+          "start": 30.78,
+          "end": 31.0
+        },
+        {
+          "w": "calculate_total(bet,",
+          "start": 31.0,
+          "end": 31.56
+        },
+        {
+          "w": "lines):",
+          "start": 31.56,
+          "end": 31.78
+        }
+      ]
+    },
+    {
+      "text": "return bet * lines. Now",
+      "start": 31.78,
+      "end": 34.6,
+      "words": [
+        {
+          "w": "return",
+          "start": 31.78,
+          "end": 32.18
+        },
+        {
+          "w": "bet",
+          "start": 32.9,
+          "end": 32.92
+        },
+        {
+          "w": "*",
+          "start": 33.64,
+          "end": 33.84
+        },
+        {
+          "w": "lines.",
+          "start": 33.84,
+          "end": 34.28
+        },
+        {
+          "w": "Now",
+          "start": 34.28,
+          "end": 34.6
+        }
+      ]
+    },
+    {
+      "text": "see the flow of a",
+      "start": 34.6,
+      "end": 36.22,
+      "words": [
+        {
+          "w": "see",
+          "start": 34.6,
+          "end": 34.84
+        },
+        {
+          "w": "the",
+          "start": 34.84,
+          "end": 34.94
+        },
+        {
+          "w": "flow",
+          "start": 34.94,
+          "end": 35.08
+        },
+        {
+          "w": "of",
+          "start": 35.08,
+          "end": 35.48
+        },
+        {
+          "w": "a",
+          "start": 36.06,
+          "end": 36.22
+        }
+      ]
+    },
+    {
+      "text": "function call. First we ask",
+      "start": 36.22,
+      "end": 37.26,
+      "words": [
+        {
+          "w": "function",
+          "start": 36.22,
+          "end": 36.46
+        },
+        {
+          "w": "call.",
+          "start": 36.46,
+          "end": 36.64
+        },
+        {
+          "w": "First",
+          "start": 36.64,
+          "end": 36.9
+        },
+        {
+          "w": "we",
+          "start": 36.9,
+          "end": 37.12
+        },
+        {
+          "w": "ask",
+          "start": 37.12,
+          "end": 37.26
+        }
+      ]
+    },
+    {
+      "text": "the user for a bet",
+      "start": 37.26,
+      "end": 39.1,
+      "words": [
+        {
+          "w": "the",
+          "start": 37.26,
+          "end": 37.5
+        },
+        {
+          "w": "user",
+          "start": 37.5,
+          "end": 37.86
+        },
+        {
+          "w": "for",
+          "start": 38.34,
+          "end": 38.6
+        },
+        {
+          "w": "a",
+          "start": 38.6,
+          "end": 38.86
+        },
+        {
+          "w": "bet",
+          "start": 38.86,
+          "end": 39.1
+        }
+      ]
+    },
+    {
+      "text": "amount and how many lines",
+      "start": 39.1,
+      "end": 40.2,
+      "words": [
+        {
+          "w": "amount",
+          "start": 39.1,
+          "end": 39.36
+        },
+        {
+          "w": "and",
+          "start": 39.36,
+          "end": 39.64
+        },
+        {
+          "w": "how",
+          "start": 39.64,
+          "end": 39.96
+        },
+        {
+          "w": "many",
+          "start": 39.96,
+          "end": 40.06
+        },
+        {
+          "w": "lines",
+          "start": 40.06,
+          "end": 40.2
+        }
+      ]
+    },
+    {
+      "text": "they want. Then we call",
+      "start": 40.2,
+      "end": 41.36,
+      "words": [
+        {
+          "w": "they",
+          "start": 40.2,
+          "end": 40.5
+        },
+        {
+          "w": "want.",
+          "start": 40.5,
+          "end": 40.76
+        },
+        {
+          "w": "Then",
+          "start": 40.76,
+          "end": 40.88
+        },
+        {
+          "w": "we",
+          "start": 40.88,
+          "end": 41.1
+        },
+        {
+          "w": "call",
+          "start": 41.1,
+          "end": 41.36
+        }
+      ]
+    },
+    {
+      "text": "calculate_total with those numbers, store",
+      "start": 41.36,
+      "end": 42.88,
+      "words": [
+        {
+          "w": "calculate_total",
+          "start": 41.36,
+          "end": 41.62
+        },
+        {
+          "w": "with",
+          "start": 41.62,
+          "end": 41.88
+        },
+        {
+          "w": "those",
+          "start": 42.34,
+          "end": 42.52
+        },
+        {
+          "w": "numbers,",
+          "start": 42.52,
+          "end": 42.7
+        },
+        {
+          "w": "store",
+          "start": 42.7,
+          "end": 42.88
+        }
+      ]
+    },
+    {
+      "text": "the result, and print it.",
+      "start": 42.88,
+      "end": 44.66,
+      "words": [
+        {
+          "w": "the",
+          "start": 42.88,
+          "end": 43.46
+        },
+        {
+          "w": "result,",
+          "start": 43.46,
+          "end": 43.72
+        },
+        {
+          "w": "and",
+          "start": 43.72,
+          "end": 44.2
+        },
+        {
+          "w": "print",
+          "start": 44.2,
+          "end": 44.42
+        },
+        {
+          "w": "it.",
+          "start": 44.42,
+          "end": 44.66
+        }
+      ]
+    },
+    {
+      "text": "Running this prints the total",
+      "start": 44.66,
+      "end": 46.84,
+      "words": [
+        {
+          "w": "Running",
+          "start": 44.66,
+          "end": 45.1
+        },
+        {
+          "w": "this",
+          "start": 45.76,
+          "end": 45.92
+        },
+        {
+          "w": "prints",
+          "start": 45.92,
+          "end": 46.16
+        },
+        {
+          "w": "the",
+          "start": 46.16,
+          "end": 46.48
+        },
+        {
+          "w": "total",
+          "start": 46.48,
+          "end": 46.84
+        }
+      ]
+    },
+    {
+      "text": "bet. Remember: define once, call",
+      "start": 46.84,
+      "end": 48.62,
+      "words": [
+        {
+          "w": "bet.",
+          "start": 46.84,
+          "end": 47.04
+        },
+        {
+          "w": "Remember:",
+          "start": 47.04,
+          "end": 47.52
+        },
+        {
+          "w": "define",
+          "start": 47.84,
+          "end": 48.0
+        },
+        {
+          "w": "once,",
+          "start": 48.0,
+          "end": 48.32
+        },
+        {
+          "w": "call",
+          "start": 48.32,
+          "end": 48.62
+        }
+      ]
+    },
+    {
+      "text": "many times. For practice, write",
+      "start": 48.62,
+      "end": 50.94,
+      "words": [
+        {
+          "w": "many",
+          "start": 48.62,
+          "end": 48.92
+        },
+        {
+          "w": "times.",
+          "start": 48.92,
+          "end": 49.18
+        },
+        {
+          "w": "For",
+          "start": 49.18,
+          "end": 49.54
+        },
+        {
+          "w": "practice,",
+          "start": 50.34,
+          "end": 50.34
+        },
+        {
+          "w": "write",
+          "start": 50.34,
+          "end": 50.94
+        }
+      ]
+    },
+    {
+      "text": "a function that greets a",
+      "start": 50.94,
+      "end": 52.62,
+      "words": [
+        {
+          "w": "a",
+          "start": 50.94,
+          "end": 51.24
+        },
+        {
+          "w": "function",
+          "start": 51.24,
+          "end": 51.62
+        },
+        {
+          "w": "that",
+          "start": 51.62,
+          "end": 51.92
+        },
+        {
+          "w": "greets",
+          "start": 51.92,
+          "end": 52.12
+        },
+        {
+          "w": "a",
+          "start": 52.12,
+          "end": 52.62
+        }
+      ]
+    },
+    {
+      "text": "user by name.",
+      "start": 53.02,
+      "end": 54.0,
+      "words": [
+        {
+          "w": "user",
+          "start": 53.02,
+          "end": 53.14
+        },
+        {
+          "w": "by",
+          "start": 53.14,
+          "end": 53.56
+        },
+        {
+          "w": "name.",
+          "start": 53.88,
+          "end": 54.0
+        }
+      ]
+    }
+  ]
+}

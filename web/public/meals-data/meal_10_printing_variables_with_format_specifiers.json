@@ -1,0 +1,182 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_10_printing_variables_with_format_specifiers",
+    "title": "Printing variables with format specifiers",
+    "concept": "c.project.overview",
+    "objective": "Use printf format specifiers to display variable values",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "%d",
+      "%s",
+      "%f",
+      "%c"
+    ],
+    "assumes": [
+      "variables",
+      "printf"
+    ],
+    "voice": {
+      "script": "Ever wondered how a program turns numbers into readable text? How do you show the value of a variable on the screen? In C, the percent sign inside a text pattern tells printf where to insert a variable. %d stands for a whole number, %s stands for a sequence of characters, %f stands for a floating point number, and %c stands for a single character. %s is basically going to allow us to include some text. Here is the complete program. It declares an integer called age, a string called name, a floating point called gpa, and a character called grade. Then it calls printf four times, each time using the matching specifier. Running it prints each variable with its proper specifier. The output shows the integer, the string, the float, and the character. Remember each specifier matches a specific type of data. Try printing your own variables using different specifiers.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Ever wondered how a program turns numbers into readable text?"
+        },
+        "narration_anchor": "Ever wondered how a program turns numbers into readable text?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you show the value of a variable on the screen?"
+        },
+        "narration_anchor": "How do you show the value of a variable on the screen?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Introduce format specifiers",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Show C example",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Display output",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "uses"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "produces"
+            }
+          ]
+        },
+        "narration_anchor": "%s is basically going to allow us to include some text"
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "c",
+          "filename": "main.c",
+          "code": "#include <stdio.h>\nint main() {\n    int age = 30;\n    char name[] = \"Alice\";\n    float gpa = 3.75f;\n    char grade = 'A';\n    printf(\"Age: %d\\n\", age);\n    printf(\"Name: %s\\n\", name);\n    printf(\"GPA: %f\\n\", gpa);\n    printf(\"Grade: %c\\n\", grade);\n    return 0;\n}\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "#include <stdio.h>\nint main() {\n    int age = 30;\n    char name[] = \"Alice\";\n    float gpa = 3.75f;\n    char grade = 'A';\n    printf(\"Age: %d\\n\", age);\n    printf(\"Name: %s\\n\", name);\n    printf(\"GPA: %f\\n\", gpa);\n    printf(\"Grade: %c\\n\", grade);\n    return 0;\n}",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "speed_cps": 26
+            }
+          ]
+        },
+        "narration_anchor": "Here is the complete program"
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "a.out",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:34+00:00",
+            "stdout": "Age: 30\nName: Alice\nGPA: 3.750000\nGrade: A\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running it prints each variable with its proper specifier",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Remember each specifier matches a specific type of data"
+        },
+        "narration_anchor": "Remember each specifier matches a specific type of data",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Try printing your own variables using different specifiers"
+        },
+        "narration_anchor": "Try printing your own variables using different specifiers",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Try printing your own variables using different specifiers"
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 10,
+      "total": 22,
+      "previous_id": "meal_09_variables_as_containers",
+      "next_id": "meal_11_reading_input_with_scanf"
+    }
+  }
+}

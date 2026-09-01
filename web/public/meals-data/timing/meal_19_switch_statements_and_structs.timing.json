@@ -1,0 +1,1260 @@
+{
+  "meal_id": "meal_19_switch_statements_and_structs",
+  "audio": "meal_19_switch_statements_and_structs.mp3",
+  "duration": 61.176,
+  "alignment": "whisper",
+  "anchors": {
+    "What if you could pick actions with a single choice?": 0.0,
+    "How do you select among many options cleanly?": 3.02,
+    "A switch statement lets you choose code paths based on a value.": 6.0,
+    "Here\u2019s the code that defines a simple data container and selects actions.": 24.94,
+    "Running the program, you see the chosen message appear on the screen.": 41.34,
+    "The key idea is that a switch maps values to actions, and a struct groups related data together.": 48.4,
+    "Now try creating your own struct for a book and a switch that prints different details based on a menu choice.": 54.08
+  },
+  "captions": [
+    {
+      "text": "What if you could pick",
+      "start": 0.0,
+      "end": 1.0,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.32
+        },
+        {
+          "w": "if",
+          "start": 0.32,
+          "end": 0.48
+        },
+        {
+          "w": "you",
+          "start": 0.48,
+          "end": 0.56
+        },
+        {
+          "w": "could",
+          "start": 0.56,
+          "end": 0.74
+        },
+        {
+          "w": "pick",
+          "start": 0.74,
+          "end": 1.0
+        }
+      ]
+    },
+    {
+      "text": "actions with a single choice?",
+      "start": 1.0,
+      "end": 2.62,
+      "words": [
+        {
+          "w": "actions",
+          "start": 1.0,
+          "end": 1.44
+        },
+        {
+          "w": "with",
+          "start": 1.44,
+          "end": 1.78
+        },
+        {
+          "w": "a",
+          "start": 1.78,
+          "end": 1.9
+        },
+        {
+          "w": "single",
+          "start": 1.9,
+          "end": 2.12
+        },
+        {
+          "w": "choice?",
+          "start": 2.12,
+          "end": 2.62
+        }
+      ]
+    },
+    {
+      "text": "How do you select among",
+      "start": 3.02,
+      "end": 4.16,
+      "words": [
+        {
+          "w": "How",
+          "start": 3.02,
+          "end": 3.16
+        },
+        {
+          "w": "do",
+          "start": 3.16,
+          "end": 3.28
+        },
+        {
+          "w": "you",
+          "start": 3.28,
+          "end": 3.48
+        },
+        {
+          "w": "select",
+          "start": 3.48,
+          "end": 3.8
+        },
+        {
+          "w": "among",
+          "start": 3.8,
+          "end": 4.16
+        }
+      ]
+    },
+    {
+      "text": "many options cleanly? A switch",
+      "start": 4.16,
+      "end": 6.3,
+      "words": [
+        {
+          "w": "many",
+          "start": 4.16,
+          "end": 4.56
+        },
+        {
+          "w": "options",
+          "start": 4.56,
+          "end": 4.94
+        },
+        {
+          "w": "cleanly?",
+          "start": 4.94,
+          "end": 5.62
+        },
+        {
+          "w": "A",
+          "start": 6.0,
+          "end": 6.08
+        },
+        {
+          "w": "switch",
+          "start": 6.08,
+          "end": 6.3
+        }
+      ]
+    },
+    {
+      "text": "statement lets you choose code",
+      "start": 6.3,
+      "end": 7.72,
+      "words": [
+        {
+          "w": "statement",
+          "start": 6.3,
+          "end": 6.64
+        },
+        {
+          "w": "lets",
+          "start": 6.64,
+          "end": 6.96
+        },
+        {
+          "w": "you",
+          "start": 6.96,
+          "end": 7.14
+        },
+        {
+          "w": "choose",
+          "start": 7.14,
+          "end": 7.42
+        },
+        {
+          "w": "code",
+          "start": 7.42,
+          "end": 7.72
+        }
+      ]
+    },
+    {
+      "text": "paths based on a value.",
+      "start": 7.72,
+      "end": 9.0,
+      "words": [
+        {
+          "w": "paths",
+          "start": 7.72,
+          "end": 8.02
+        },
+        {
+          "w": "based",
+          "start": 8.02,
+          "end": 8.38
+        },
+        {
+          "w": "on",
+          "start": 8.38,
+          "end": 8.56
+        },
+        {
+          "w": "a",
+          "start": 8.56,
+          "end": 8.7
+        },
+        {
+          "w": "value.",
+          "start": 8.7,
+          "end": 9.0
+        }
+      ]
+    },
+    {
+      "text": "First, Python offers ready-made tools",
+      "start": 9.5,
+      "end": 11.3,
+      "words": [
+        {
+          "w": "First,",
+          "start": 9.5,
+          "end": 9.8
+        },
+        {
+          "w": "Python",
+          "start": 9.8,
+          "end": 10.34
+        },
+        {
+          "w": "offers",
+          "start": 10.34,
+          "end": 10.78
+        },
+        {
+          "w": "ready-made",
+          "start": 10.78,
+          "end": 11.1
+        },
+        {
+          "w": "tools",
+          "start": 11.1,
+          "end": 11.3
+        }
+      ]
+    },
+    {
+      "text": "called modules. The dataclasses module",
+      "start": 11.3,
+      "end": 13.3,
+      "words": [
+        {
+          "w": "called",
+          "start": 11.3,
+          "end": 11.64
+        },
+        {
+          "w": "modules.",
+          "start": 11.64,
+          "end": 11.94
+        },
+        {
+          "w": "The",
+          "start": 11.94,
+          "end": 12.38
+        },
+        {
+          "w": "dataclasses",
+          "start": 12.96,
+          "end": 13.06
+        },
+        {
+          "w": "module",
+          "start": 13.06,
+          "end": 13.3
+        }
+      ]
+    },
+    {
+      "text": "lets you create a lightweight",
+      "start": 13.3,
+      "end": 14.56,
+      "words": [
+        {
+          "w": "lets",
+          "start": 13.3,
+          "end": 13.5
+        },
+        {
+          "w": "you",
+          "start": 13.5,
+          "end": 13.74
+        },
+        {
+          "w": "create",
+          "start": 13.74,
+          "end": 14.1
+        },
+        {
+          "w": "a",
+          "start": 14.1,
+          "end": 14.4
+        },
+        {
+          "w": "lightweight",
+          "start": 14.4,
+          "end": 14.56
+        }
+      ]
+    },
+    {
+      "text": "data container, which we\u2019ll call",
+      "start": 14.56,
+      "end": 16.28,
+      "words": [
+        {
+          "w": "data",
+          "start": 14.56,
+          "end": 14.86
+        },
+        {
+          "w": "container,",
+          "start": 14.86,
+          "end": 15.14
+        },
+        {
+          "w": "which",
+          "start": 15.14,
+          "end": 15.4
+        },
+        {
+          "w": "we\u2019ll",
+          "start": 15.4,
+          "end": 15.8
+        },
+        {
+          "w": "call",
+          "start": 15.8,
+          "end": 16.28
+        }
+      ]
+    },
+    {
+      "text": "a struct. We define a",
+      "start": 16.92,
+      "end": 17.9,
+      "words": [
+        {
+          "w": "a",
+          "start": 16.92,
+          "end": 17.0
+        },
+        {
+          "w": "struct.",
+          "start": 17.0,
+          "end": 17.2
+        },
+        {
+          "w": "We",
+          "start": 17.2,
+          "end": 17.38
+        },
+        {
+          "w": "define",
+          "start": 17.38,
+          "end": 17.58
+        },
+        {
+          "w": "a",
+          "start": 17.58,
+          "end": 17.9
+        }
+      ]
+    },
+    {
+      "text": "Person struct with two fields:",
+      "start": 18.4,
+      "end": 19.5,
+      "words": [
+        {
+          "w": "Person",
+          "start": 18.4,
+          "end": 18.44
+        },
+        {
+          "w": "struct",
+          "start": 18.44,
+          "end": 18.78
+        },
+        {
+          "w": "with",
+          "start": 18.78,
+          "end": 19.06
+        },
+        {
+          "w": "two",
+          "start": 19.06,
+          "end": 19.24
+        },
+        {
+          "w": "fields:",
+          "start": 19.24,
+          "end": 19.5
+        }
+      ]
+    },
+    {
+      "text": "a name and an age.",
+      "start": 19.5,
+      "end": 21.38,
+      "words": [
+        {
+          "w": "a",
+          "start": 19.5,
+          "end": 19.72
+        },
+        {
+          "w": "name",
+          "start": 19.72,
+          "end": 19.98
+        },
+        {
+          "w": "and",
+          "start": 19.98,
+          "end": 20.34
+        },
+        {
+          "w": "an",
+          "start": 21.04,
+          "end": 21.16
+        },
+        {
+          "w": "age.",
+          "start": 21.16,
+          "end": 21.38
+        }
+      ]
+    },
+    {
+      "text": "Next, we ask the user",
+      "start": 21.38,
+      "end": 23.14,
+      "words": [
+        {
+          "w": "Next,",
+          "start": 21.38,
+          "end": 21.66
+        },
+        {
+          "w": "we",
+          "start": 21.66,
+          "end": 21.9
+        },
+        {
+          "w": "ask",
+          "start": 21.9,
+          "end": 22.1
+        },
+        {
+          "w": "the",
+          "start": 22.5,
+          "end": 22.8
+        },
+        {
+          "w": "user",
+          "start": 23.0,
+          "end": 23.14
+        }
+      ]
+    },
+    {
+      "text": "to type a number from",
+      "start": 23.14,
+      "end": 24.32,
+      "words": [
+        {
+          "w": "to",
+          "start": 23.14,
+          "end": 23.38
+        },
+        {
+          "w": "type",
+          "start": 23.38,
+          "end": 23.6
+        },
+        {
+          "w": "a",
+          "start": 23.6,
+          "end": 23.86
+        },
+        {
+          "w": "number",
+          "start": 23.86,
+          "end": 24.06
+        },
+        {
+          "w": "from",
+          "start": 24.06,
+          "end": 24.32
+        }
+      ]
+    },
+    {
+      "text": "one to three. Here\u2019s the",
+      "start": 24.32,
+      "end": 25.2,
+      "words": [
+        {
+          "w": "one",
+          "start": 24.32,
+          "end": 24.5
+        },
+        {
+          "w": "to",
+          "start": 24.5,
+          "end": 24.62
+        },
+        {
+          "w": "three.",
+          "start": 24.62,
+          "end": 24.94
+        },
+        {
+          "w": "Here\u2019s",
+          "start": 24.94,
+          "end": 25.12
+        },
+        {
+          "w": "the",
+          "start": 25.12,
+          "end": 25.2
+        }
+      ]
+    },
+    {
+      "text": "code that defines a simple",
+      "start": 25.2,
+      "end": 27.04,
+      "words": [
+        {
+          "w": "code",
+          "start": 25.2,
+          "end": 25.76
+        },
+        {
+          "w": "that",
+          "start": 25.76,
+          "end": 26.32
+        },
+        {
+          "w": "defines",
+          "start": 26.32,
+          "end": 26.48
+        },
+        {
+          "w": "a",
+          "start": 26.48,
+          "end": 26.78
+        },
+        {
+          "w": "simple",
+          "start": 26.78,
+          "end": 27.04
+        }
+      ]
+    },
+    {
+      "text": "data container and selects actions.",
+      "start": 27.04,
+      "end": 28.62,
+      "words": [
+        {
+          "w": "data",
+          "start": 27.04,
+          "end": 27.38
+        },
+        {
+          "w": "container",
+          "start": 27.38,
+          "end": 27.72
+        },
+        {
+          "w": "and",
+          "start": 27.72,
+          "end": 27.9
+        },
+        {
+          "w": "selects",
+          "start": 27.9,
+          "end": 28.18
+        },
+        {
+          "w": "actions.",
+          "start": 28.18,
+          "end": 28.62
+        }
+      ]
+    },
+    {
+      "text": "The switch is built as",
+      "start": 28.62,
+      "end": 30.66,
+      "words": [
+        {
+          "w": "The",
+          "start": 28.62,
+          "end": 29.0
+        },
+        {
+          "w": "switch",
+          "start": 29.0,
+          "end": 29.44
+        },
+        {
+          "w": "is",
+          "start": 29.44,
+          "end": 29.86
+        },
+        {
+          "w": "built",
+          "start": 30.34,
+          "end": 30.46
+        },
+        {
+          "w": "as",
+          "start": 30.46,
+          "end": 30.66
+        }
+      ]
+    },
+    {
+      "text": "a dictionary that maps each",
+      "start": 30.66,
+      "end": 31.9,
+      "words": [
+        {
+          "w": "a",
+          "start": 30.66,
+          "end": 30.96
+        },
+        {
+          "w": "dictionary",
+          "start": 30.96,
+          "end": 31.18
+        },
+        {
+          "w": "that",
+          "start": 31.18,
+          "end": 31.46
+        },
+        {
+          "w": "maps",
+          "start": 31.46,
+          "end": 31.58
+        },
+        {
+          "w": "each",
+          "start": 31.58,
+          "end": 31.9
+        }
+      ]
+    },
+    {
+      "text": "number to a function that",
+      "start": 31.9,
+      "end": 33.4,
+      "words": [
+        {
+          "w": "number",
+          "start": 31.9,
+          "end": 32.3
+        },
+        {
+          "w": "to",
+          "start": 32.3,
+          "end": 32.56
+        },
+        {
+          "w": "a",
+          "start": 32.56,
+          "end": 32.86
+        },
+        {
+          "w": "function",
+          "start": 32.86,
+          "end": 33.14
+        },
+        {
+          "w": "that",
+          "start": 33.14,
+          "end": 33.4
+        }
+      ]
+    },
+    {
+      "text": "prints a message about the",
+      "start": 33.4,
+      "end": 34.56,
+      "words": [
+        {
+          "w": "prints",
+          "start": 33.4,
+          "end": 33.5
+        },
+        {
+          "w": "a",
+          "start": 33.5,
+          "end": 33.82
+        },
+        {
+          "w": "message",
+          "start": 33.82,
+          "end": 34.12
+        },
+        {
+          "w": "about",
+          "start": 34.12,
+          "end": 34.32
+        },
+        {
+          "w": "the",
+          "start": 34.32,
+          "end": 34.56
+        }
+      ]
+    },
+    {
+      "text": "person. When the user enters",
+      "start": 34.56,
+      "end": 36.22,
+      "words": [
+        {
+          "w": "person.",
+          "start": 34.56,
+          "end": 34.82
+        },
+        {
+          "w": "When",
+          "start": 34.82,
+          "end": 35.14
+        },
+        {
+          "w": "the",
+          "start": 35.14,
+          "end": 35.26
+        },
+        {
+          "w": "user",
+          "start": 35.26,
+          "end": 35.62
+        },
+        {
+          "w": "enters",
+          "start": 36.04,
+          "end": 36.22
+        }
+      ]
+    },
+    {
+      "text": "a choice, we look it",
+      "start": 36.22,
+      "end": 37.38,
+      "words": [
+        {
+          "w": "a",
+          "start": 36.22,
+          "end": 36.4
+        },
+        {
+          "w": "choice,",
+          "start": 36.4,
+          "end": 36.6
+        },
+        {
+          "w": "we",
+          "start": 36.6,
+          "end": 36.88
+        },
+        {
+          "w": "look",
+          "start": 36.88,
+          "end": 37.14
+        },
+        {
+          "w": "it",
+          "start": 37.14,
+          "end": 37.38
+        }
+      ]
+    },
+    {
+      "text": "up in the dictionary and",
+      "start": 37.58,
+      "end": 38.16,
+      "words": [
+        {
+          "w": "up",
+          "start": 37.58,
+          "end": 37.64
+        },
+        {
+          "w": "in",
+          "start": 37.64,
+          "end": 37.8
+        },
+        {
+          "w": "the",
+          "start": 37.8,
+          "end": 37.92
+        },
+        {
+          "w": "dictionary",
+          "start": 37.92,
+          "end": 38.08
+        },
+        {
+          "w": "and",
+          "start": 38.08,
+          "end": 38.16
+        }
+      ]
+    },
+    {
+      "text": "run the matching function, or",
+      "start": 38.16,
+      "end": 39.36,
+      "words": [
+        {
+          "w": "run",
+          "start": 38.16,
+          "end": 38.24
+        },
+        {
+          "w": "the",
+          "start": 38.24,
+          "end": 38.62
+        },
+        {
+          "w": "matching",
+          "start": 38.62,
+          "end": 39.0
+        },
+        {
+          "w": "function,",
+          "start": 39.0,
+          "end": 39.2
+        },
+        {
+          "w": "or",
+          "start": 39.2,
+          "end": 39.36
+        }
+      ]
+    },
+    {
+      "text": "fall back to a default",
+      "start": 39.36,
+      "end": 41.2,
+      "words": [
+        {
+          "w": "fall",
+          "start": 39.36,
+          "end": 39.6
+        },
+        {
+          "w": "back",
+          "start": 39.6,
+          "end": 40.2
+        },
+        {
+          "w": "to",
+          "start": 40.52,
+          "end": 40.76
+        },
+        {
+          "w": "a",
+          "start": 40.76,
+          "end": 40.94
+        },
+        {
+          "w": "default",
+          "start": 40.94,
+          "end": 41.2
+        }
+      ]
+    },
+    {
+      "text": "message. Running the program, you",
+      "start": 41.2,
+      "end": 42.9,
+      "words": [
+        {
+          "w": "message.",
+          "start": 41.2,
+          "end": 41.34
+        },
+        {
+          "w": "Running",
+          "start": 41.34,
+          "end": 41.42
+        },
+        {
+          "w": "the",
+          "start": 41.42,
+          "end": 41.72
+        },
+        {
+          "w": "program,",
+          "start": 41.72,
+          "end": 42.18
+        },
+        {
+          "w": "you",
+          "start": 42.72,
+          "end": 42.9
+        }
+      ]
+    },
+    {
+      "text": "see the chosen message appear",
+      "start": 42.9,
+      "end": 44.56,
+      "words": [
+        {
+          "w": "see",
+          "start": 42.9,
+          "end": 43.16
+        },
+        {
+          "w": "the",
+          "start": 43.16,
+          "end": 43.58
+        },
+        {
+          "w": "chosen",
+          "start": 43.98,
+          "end": 44.2
+        },
+        {
+          "w": "message",
+          "start": 44.2,
+          "end": 44.34
+        },
+        {
+          "w": "appear",
+          "start": 44.34,
+          "end": 44.56
+        }
+      ]
+    },
+    {
+      "text": "on the screen. Imagine a",
+      "start": 44.56,
+      "end": 46.1,
+      "words": [
+        {
+          "w": "on",
+          "start": 44.56,
+          "end": 44.82
+        },
+        {
+          "w": "the",
+          "start": 44.82,
+          "end": 45.26
+        },
+        {
+          "w": "screen.",
+          "start": 45.26,
+          "end": 45.7
+        },
+        {
+          "w": "Imagine",
+          "start": 45.7,
+          "end": 45.96
+        },
+        {
+          "w": "a",
+          "start": 45.96,
+          "end": 46.1
+        }
+      ]
+    },
+    {
+      "text": "decision diamond showing the choices.",
+      "start": 46.1,
+      "end": 48.4,
+      "words": [
+        {
+          "w": "decision",
+          "start": 46.1,
+          "end": 46.44
+        },
+        {
+          "w": "diamond",
+          "start": 46.94,
+          "end": 47.28
+        },
+        {
+          "w": "showing",
+          "start": 47.28,
+          "end": 47.66
+        },
+        {
+          "w": "the",
+          "start": 47.66,
+          "end": 47.96
+        },
+        {
+          "w": "choices.",
+          "start": 47.96,
+          "end": 48.4
+        }
+      ]
+    },
+    {
+      "text": "The key idea is that",
+      "start": 48.4,
+      "end": 50.22,
+      "words": [
+        {
+          "w": "The",
+          "start": 48.4,
+          "end": 48.78
+        },
+        {
+          "w": "key",
+          "start": 48.78,
+          "end": 48.98
+        },
+        {
+          "w": "idea",
+          "start": 48.98,
+          "end": 49.42
+        },
+        {
+          "w": "is",
+          "start": 49.9,
+          "end": 50.06
+        },
+        {
+          "w": "that",
+          "start": 50.06,
+          "end": 50.22
+        }
+      ]
+    },
+    {
+      "text": "a switch maps values to",
+      "start": 50.22,
+      "end": 51.38,
+      "words": [
+        {
+          "w": "a",
+          "start": 50.22,
+          "end": 50.58
+        },
+        {
+          "w": "switch",
+          "start": 50.58,
+          "end": 50.86
+        },
+        {
+          "w": "maps",
+          "start": 50.86,
+          "end": 51.1
+        },
+        {
+          "w": "values",
+          "start": 51.1,
+          "end": 51.18
+        },
+        {
+          "w": "to",
+          "start": 51.18,
+          "end": 51.38
+        }
+      ]
+    },
+    {
+      "text": "actions, and a struct groups",
+      "start": 51.38,
+      "end": 53.42,
+      "words": [
+        {
+          "w": "actions,",
+          "start": 51.38,
+          "end": 51.7
+        },
+        {
+          "w": "and",
+          "start": 51.7,
+          "end": 52.08
+        },
+        {
+          "w": "a",
+          "start": 52.08,
+          "end": 52.34
+        },
+        {
+          "w": "struct",
+          "start": 52.34,
+          "end": 52.76
+        },
+        {
+          "w": "groups",
+          "start": 53.24,
+          "end": 53.42
+        }
+      ]
+    },
+    {
+      "text": "related data together. Now try",
+      "start": 53.42,
+      "end": 54.76,
+      "words": [
+        {
+          "w": "related",
+          "start": 53.42,
+          "end": 53.52
+        },
+        {
+          "w": "data",
+          "start": 53.52,
+          "end": 53.74
+        },
+        {
+          "w": "together.",
+          "start": 53.74,
+          "end": 54.08
+        },
+        {
+          "w": "Now",
+          "start": 54.08,
+          "end": 54.46
+        },
+        {
+          "w": "try",
+          "start": 54.46,
+          "end": 54.76
+        }
+      ]
+    },
+    {
+      "text": "creating your own struct for",
+      "start": 54.76,
+      "end": 56.82,
+      "words": [
+        {
+          "w": "creating",
+          "start": 54.76,
+          "end": 55.18
+        },
+        {
+          "w": "your",
+          "start": 55.18,
+          "end": 55.94
+        },
+        {
+          "w": "own",
+          "start": 55.94,
+          "end": 56.24
+        },
+        {
+          "w": "struct",
+          "start": 56.24,
+          "end": 56.56
+        },
+        {
+          "w": "for",
+          "start": 56.56,
+          "end": 56.82
+        }
+      ]
+    },
+    {
+      "text": "a book and a switch",
+      "start": 56.82,
+      "end": 57.9,
+      "words": [
+        {
+          "w": "a",
+          "start": 56.82,
+          "end": 57.02
+        },
+        {
+          "w": "book",
+          "start": 57.02,
+          "end": 57.28
+        },
+        {
+          "w": "and",
+          "start": 57.28,
+          "end": 57.56
+        },
+        {
+          "w": "a",
+          "start": 57.56,
+          "end": 57.62
+        },
+        {
+          "w": "switch",
+          "start": 57.62,
+          "end": 57.9
+        }
+      ]
+    },
+    {
+      "text": "that prints different details based",
+      "start": 57.9,
+      "end": 59.0,
+      "words": [
+        {
+          "w": "that",
+          "start": 57.9,
+          "end": 58.18
+        },
+        {
+          "w": "prints",
+          "start": 58.18,
+          "end": 58.28
+        },
+        {
+          "w": "different",
+          "start": 58.28,
+          "end": 58.5
+        },
+        {
+          "w": "details",
+          "start": 58.5,
+          "end": 58.76
+        },
+        {
+          "w": "based",
+          "start": 58.76,
+          "end": 59.0
+        }
+      ]
+    },
+    {
+      "text": "on a menu choice.",
+      "start": 59.0,
+      "end": 60.22,
+      "words": [
+        {
+          "w": "on",
+          "start": 59.0,
+          "end": 59.36
+        },
+        {
+          "w": "a",
+          "start": 59.36,
+          "end": 59.72
+        },
+        {
+          "w": "menu",
+          "start": 59.72,
+          "end": 60.08
+        },
+        {
+          "w": "choice.",
+          "start": 60.08,
+          "end": 60.22
+        }
+      ]
+    }
+  ]
+}

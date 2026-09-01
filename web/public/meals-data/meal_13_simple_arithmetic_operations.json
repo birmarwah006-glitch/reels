@@ -1,0 +1,199 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_13_simple_arithmetic_operations",
+    "title": "Simple arithmetic operations in C",
+    "concept": "c.project.overview",
+    "objective": "Perform addition, subtraction, multiplication, and division with integers and doubles",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "+",
+      "-",
+      "*",
+      "/"
+    ],
+    "assumes": [
+      "variables"
+    ],
+    "voice": {
+      "script": "What does a plus sign really do? You\u2019ve seen numbers added on a screen, but the plus symbol tells the computer to combine two values into their sum. The minus sign tells it to find the difference, taking one value away from another. The asterisk means multiplication, repeated addition of one value by the other. The slash stands for division, splitting one value into equal parts. How can you add, subtract, multiply, and divide numbers in C? Here\u2019s a tiny program that shows each operation. It declares two integer variables and two double variables, assigns them values, then uses each operator and stores the results. Running it prints the results of each calculation. Imagine a loop that repeats these steps for different values. The program finishes after showing the four results. Remember: + adds, - subtracts, * multiplies, and / divides. Try changing the numbers to see different results.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What does a plus sign really do?"
+        },
+        "narration_anchor": "What does a plus sign really do?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How can you add, subtract, multiply, and divide numbers in C?"
+        },
+        "narration_anchor": "How can you add, subtract, multiply, and divide numbers in C?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Start",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "Declare variables",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Compute operations",
+              "kind": "box"
+            },
+            {
+              "id": "d",
+              "label": "Print results",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b"
+            },
+            {
+              "from": "b",
+              "to": "c"
+            },
+            {
+              "from": "c",
+              "to": "d"
+            }
+          ]
+        },
+        "narration_anchor": "The minus sign tells it to find the difference, taking one value away from another."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "c",
+          "filename": "main.c",
+          "code": "#include <stdio.h>\nint main() {\n    int i1 = 7, i2 = 3;\n    double d1 = 5.5, d2 = 2.0;\n    int sum_i = i1 + i2;\n    int diff_i = i1 - i2;\n    int prod_i = i1 * i2;\n    int quot_i = i1 / i2;\n    double sum_d = d1 + d2;\n    double diff_d = d1 - d2;\n    double prod_d = d1 * d2;\n    double quot_d = d1 / d2;\n    printf(\"Int sum: %d\\n\", sum_i);\n    printf(\"Int diff: %d\\n\", diff_i);\n    printf(\"Int prod: %d\\n\", prod_i);\n    printf(\"Int quot: %d\\n\", quot_i);\n    printf(\"Double sum: %f\\n\", sum_d);\n    printf(\"Double diff: %f\\n\", diff_d);\n    printf(\"Double prod: %f\\n\", prod_d);\n    printf(\"Double quot: %f\\n\", quot_d);\n    return 0;\n}\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "#include <stdio.h>\nint main() {\n    int i1 = 7, i2 = 3;\n    double d1 = 5.5, d2 = 2.0;\n    int sum_i = i1 + i2;\n    int diff_i = i1 - i2;\n    int prod_i = i1 * i2;\n    int quot_i = i1 / i2;\n    double sum_d = d1 + d2;\n    double diff_d = d1 - d2;\n    double prod_d = d1 * d2;\n    double quot_d = d1 / d2;\n    printf(\"Int sum: %d\\n\", sum_i);\n    printf(\"Int diff: %d\\n\", diff_i);\n    printf(\"Int prod: %d\\n\", prod_i);\n    printf(\"Int quot: %d\\n\", quot_i);\n    printf(\"Double sum: %f\\n\", sum_d);\n    printf(\"Double diff: %f\\n\", diff_d);\n    printf(\"Double prod: %f\\n\", prod_d);\n    printf(\"Double quot: %f\\n\", quot_d);\n    return 0;\n}",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22
+              ],
+              "speed_cps": 26
+            }
+          ]
+        },
+        "narration_anchor": "Here\u2019s a tiny program that shows each operation."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "a.out",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:38+00:00",
+            "stdout": "Int sum: 10\nInt diff: 4\nInt prod: 21\nInt quot: 2\nDouble sum: 7.500000\nDouble diff: 3.500000\nDouble prod: 11.000000\nDouble quot: 2.750000\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running it prints the results of each calculation.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Use + to add, - to subtract, * to multiply, and / to divide values."
+        },
+        "narration_anchor": "Remember: + adds, - subtracts, * multiplies, and / divides.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Modify the program to use different numbers and observe the new results."
+        },
+        "narration_anchor": "Try changing the numbers to see different results.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Modify the program to use different numbers and observe the new results.",
+      "hint": "Change the initial values of i1, i2, d1, or d2."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 13,
+      "total": 22,
+      "previous_id": "meal_12_reading_whole_lines_with_fgets",
+      "next_id": "meal_14_using_the_math_library_pow_sqrt_ceil_floor"
+    }
+  }
+}

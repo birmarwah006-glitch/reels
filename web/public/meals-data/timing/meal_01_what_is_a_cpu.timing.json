@@ -1,0 +1,536 @@
+{
+  "meal_id": "meal_01_what_is_a_cpu",
+  "audio": "meal_01_what_is_a_cpu.mp3",
+  "duration": 29.112,
+  "alignment": "whisper",
+  "anchors": {
+    "What makes a computer think?": 0.0,
+    "The CPU, or central processing unit, is the part that carries out every instruction, just like a brain processes thoughts.": 2.0
+  },
+  "captions": [
+    {
+      "text": "What makes a computer think?",
+      "start": 0.0,
+      "end": 1.52,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.3
+        },
+        {
+          "w": "makes",
+          "start": 0.3,
+          "end": 0.58
+        },
+        {
+          "w": "a",
+          "start": 0.58,
+          "end": 0.8
+        },
+        {
+          "w": "computer",
+          "start": 0.8,
+          "end": 1.02
+        },
+        {
+          "w": "think?",
+          "start": 1.02,
+          "end": 1.52
+        }
+      ]
+    },
+    {
+      "text": "The CPU, or central processing",
+      "start": 2.0,
+      "end": 3.68,
+      "words": [
+        {
+          "w": "The",
+          "start": 2.0,
+          "end": 2.14
+        },
+        {
+          "w": "CPU,",
+          "start": 2.14,
+          "end": 2.56
+        },
+        {
+          "w": "or",
+          "start": 2.56,
+          "end": 2.92
+        },
+        {
+          "w": "central",
+          "start": 2.92,
+          "end": 3.22
+        },
+        {
+          "w": "processing",
+          "start": 3.22,
+          "end": 3.68
+        }
+      ]
+    },
+    {
+      "text": "unit, is the part that",
+      "start": 3.68,
+      "end": 5.34,
+      "words": [
+        {
+          "w": "unit,",
+          "start": 3.68,
+          "end": 4.1
+        },
+        {
+          "w": "is",
+          "start": 4.1,
+          "end": 4.66
+        },
+        {
+          "w": "the",
+          "start": 4.66,
+          "end": 4.86
+        },
+        {
+          "w": "part",
+          "start": 4.86,
+          "end": 5.12
+        },
+        {
+          "w": "that",
+          "start": 5.12,
+          "end": 5.34
+        }
+      ]
+    },
+    {
+      "text": "carries out every instruction, just",
+      "start": 5.34,
+      "end": 7.46,
+      "words": [
+        {
+          "w": "carries",
+          "start": 5.34,
+          "end": 5.54
+        },
+        {
+          "w": "out",
+          "start": 5.54,
+          "end": 5.88
+        },
+        {
+          "w": "every",
+          "start": 5.88,
+          "end": 6.16
+        },
+        {
+          "w": "instruction,",
+          "start": 6.16,
+          "end": 6.72
+        },
+        {
+          "w": "just",
+          "start": 7.24,
+          "end": 7.46
+        }
+      ]
+    },
+    {
+      "text": "like a brain processes thoughts.",
+      "start": 7.46,
+      "end": 8.98,
+      "words": [
+        {
+          "w": "like",
+          "start": 7.46,
+          "end": 7.64
+        },
+        {
+          "w": "a",
+          "start": 7.64,
+          "end": 7.74
+        },
+        {
+          "w": "brain",
+          "start": 7.74,
+          "end": 8.0
+        },
+        {
+          "w": "processes",
+          "start": 8.0,
+          "end": 8.44
+        },
+        {
+          "w": "thoughts.",
+          "start": 8.44,
+          "end": 8.98
+        }
+      ]
+    },
+    {
+      "text": "Virtualization means the CPU can",
+      "start": 9.620000000000001,
+      "end": 11.44,
+      "words": [
+        {
+          "w": "Virtualization",
+          "start": 9.620000000000001,
+          "end": 10.22
+        },
+        {
+          "w": "means",
+          "start": 10.22,
+          "end": 10.56
+        },
+        {
+          "w": "the",
+          "start": 10.56,
+          "end": 10.84
+        },
+        {
+          "w": "CPU",
+          "start": 10.84,
+          "end": 11.2
+        },
+        {
+          "w": "can",
+          "start": 11.2,
+          "end": 11.44
+        }
+      ]
+    },
+    {
+      "text": "pretend to be many separate",
+      "start": 11.44,
+      "end": 12.8,
+      "words": [
+        {
+          "w": "pretend",
+          "start": 11.44,
+          "end": 11.8
+        },
+        {
+          "w": "to",
+          "start": 11.8,
+          "end": 12.0
+        },
+        {
+          "w": "be",
+          "start": 12.0,
+          "end": 12.2
+        },
+        {
+          "w": "many",
+          "start": 12.2,
+          "end": 12.5
+        },
+        {
+          "w": "separate",
+          "start": 12.5,
+          "end": 12.8
+        }
+      ]
+    },
+    {
+      "text": "brains, each handling its own",
+      "start": 12.8,
+      "end": 14.64,
+      "words": [
+        {
+          "w": "brains,",
+          "start": 12.8,
+          "end": 13.3
+        },
+        {
+          "w": "each",
+          "start": 13.7,
+          "end": 13.84
+        },
+        {
+          "w": "handling",
+          "start": 13.84,
+          "end": 14.18
+        },
+        {
+          "w": "its",
+          "start": 14.18,
+          "end": 14.44
+        },
+        {
+          "w": "own",
+          "start": 14.44,
+          "end": 14.64
+        }
+      ]
+    },
+    {
+      "text": "program. The CPU reads instructions",
+      "start": 14.64,
+      "end": 16.86,
+      "words": [
+        {
+          "w": "program.",
+          "start": 14.64,
+          "end": 15.02
+        },
+        {
+          "w": "The",
+          "start": 15.48,
+          "end": 15.66
+        },
+        {
+          "w": "CPU",
+          "start": 15.66,
+          "end": 16.02
+        },
+        {
+          "w": "reads",
+          "start": 16.02,
+          "end": 16.3
+        },
+        {
+          "w": "instructions",
+          "start": 16.3,
+          "end": 16.86
+        }
+      ]
+    },
+    {
+      "text": "from memory, does the work,",
+      "start": 16.86,
+      "end": 18.9,
+      "words": [
+        {
+          "w": "from",
+          "start": 16.86,
+          "end": 17.18
+        },
+        {
+          "w": "memory,",
+          "start": 17.18,
+          "end": 17.58
+        },
+        {
+          "w": "does",
+          "start": 18.2,
+          "end": 18.32
+        },
+        {
+          "w": "the",
+          "start": 18.32,
+          "end": 18.52
+        },
+        {
+          "w": "work,",
+          "start": 18.52,
+          "end": 18.9
+        }
+      ]
+    },
+    {
+      "text": "and writes results back. This",
+      "start": 19.32,
+      "end": 21.16,
+      "words": [
+        {
+          "w": "and",
+          "start": 19.32,
+          "end": 19.48
+        },
+        {
+          "w": "writes",
+          "start": 19.48,
+          "end": 19.7
+        },
+        {
+          "w": "results",
+          "start": 19.7,
+          "end": 20.14
+        },
+        {
+          "w": "back.",
+          "start": 20.14,
+          "end": 20.56
+        },
+        {
+          "w": "This",
+          "start": 21.0,
+          "end": 21.16
+        }
+      ]
+    },
+    {
+      "text": "is why we say a",
+      "start": 21.16,
+      "end": 22.32,
+      "words": [
+        {
+          "w": "is",
+          "start": 21.16,
+          "end": 21.38
+        },
+        {
+          "w": "why",
+          "start": 21.38,
+          "end": 21.6
+        },
+        {
+          "w": "we",
+          "start": 21.6,
+          "end": 21.82
+        },
+        {
+          "w": "say",
+          "start": 21.82,
+          "end": 22.04
+        },
+        {
+          "w": "a",
+          "start": 22.04,
+          "end": 22.32
+        }
+      ]
+    },
+    {
+      "text": "CPU is the computer\u2019s brain.",
+      "start": 22.32,
+      "end": 24.04,
+      "words": [
+        {
+          "w": "CPU",
+          "start": 22.32,
+          "end": 22.64
+        },
+        {
+          "w": "is",
+          "start": 22.64,
+          "end": 23.06
+        },
+        {
+          "w": "the",
+          "start": 23.06,
+          "end": 23.2
+        },
+        {
+          "w": "computer\u2019s",
+          "start": 23.2,
+          "end": 23.68
+        },
+        {
+          "w": "brain.",
+          "start": 23.68,
+          "end": 24.04
+        }
+      ]
+    },
+    {
+      "text": "Imagine the memory as a",
+      "start": 24.52,
+      "end": 25.82,
+      "words": [
+        {
+          "w": "Imagine",
+          "start": 24.52,
+          "end": 24.8
+        },
+        {
+          "w": "the",
+          "start": 24.8,
+          "end": 25.08
+        },
+        {
+          "w": "memory",
+          "start": 25.08,
+          "end": 25.38
+        },
+        {
+          "w": "as",
+          "start": 25.38,
+          "end": 25.66
+        },
+        {
+          "w": "a",
+          "start": 25.66,
+          "end": 25.82
+        }
+      ]
+    },
+    {
+      "text": "bookshelf where the CPU pulls",
+      "start": 25.82,
+      "end": 27.4,
+      "words": [
+        {
+          "w": "bookshelf",
+          "start": 25.82,
+          "end": 26.18
+        },
+        {
+          "w": "where",
+          "start": 26.18,
+          "end": 26.5
+        },
+        {
+          "w": "the",
+          "start": 26.5,
+          "end": 26.72
+        },
+        {
+          "w": "CPU",
+          "start": 26.72,
+          "end": 27.06
+        },
+        {
+          "w": "pulls",
+          "start": 27.06,
+          "end": 27.4
+        }
+      ]
+    },
+    {
+      "text": "the pages it needs to",
+      "start": 27.4,
+      "end": 28.52,
+      "words": [
+        {
+          "w": "the",
+          "start": 27.4,
+          "end": 27.6
+        },
+        {
+          "w": "pages",
+          "start": 27.6,
+          "end": 27.9
+        },
+        {
+          "w": "it",
+          "start": 27.9,
+          "end": 28.12
+        },
+        {
+          "w": "needs",
+          "start": 28.12,
+          "end": 28.34
+        },
+        {
+          "w": "to",
+          "start": 28.34,
+          "end": 28.52
+        }
+      ]
+    },
+    {
+      "text": "read.",
+      "start": 28.52,
+      "end": 28.76,
+      "words": [
+        {
+          "w": "read.",
+          "start": 28.52,
+          "end": 28.76
+        }
+      ]
+    }
+  ]
+}

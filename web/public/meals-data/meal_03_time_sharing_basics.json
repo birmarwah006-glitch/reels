@@ -1,0 +1,168 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_03_time_sharing_basics",
+    "title": "Time Sharing Basics",
+    "concept": "python.project.overview",
+    "objective": "Describe how multiple processes share a CPU over time",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.project.overview",
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "time sharing"
+    ],
+    "assumes": [
+      "CPU",
+      "virtualization"
+    ],
+    "voice": {
+      "script": "What if your computer could multitask in a heartbeat? How does one CPU let many programs run seemingly at once? Time sharing means the operating system gives each process a tiny slice of CPU time, then moves to the next, repeating in a loop. The code below shows a list of process names and a loop that prints which one runs for each slice. When you run it, you\u2019ll see the CPU jumping from Process A to Process B to Process C over and over. That rapid rotation is what lets many processes use the CPU quickly. Try changing the slice order or adding another process to see the effect.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if your computer could multitask in a heartbeat?"
+        },
+        "narration_anchor": "What if your computer could multitask in a heartbeat?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How does one CPU let many programs run seemingly at once?"
+        },
+        "narration_anchor": "How does one CPU let many programs run seemingly at once?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "CPU slice",
+              "kind": "value"
+            },
+            {
+              "id": "b",
+              "label": "Next process",
+              "kind": "value"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "rotate"
+            }
+          ]
+        },
+        "narration_anchor": "Time sharing means the operating system gives each process a tiny slice of CPU time, then moves to the next, repeating in a loop."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "import time\nprocesses = [\"A\", \"B\", \"C\"]\nfor i in range(6):\n    for p in processes:\n        print(f\"Running process {p}\")\n        time.sleep(0.1)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "import time\nprocesses = [\"A\", \"B\", \"C\"]\nfor i in range(6):\n    for p in processes:\n        print(f\"Running process {p}\")\n        time.sleep(0.1)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "Running process"
+            }
+          ]
+        },
+        "narration_anchor": "The code below shows a list of process names and a loop that prints which one runs for each slice."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "/opt/homebrew/opt/python@3.14/bin/python3.14 main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:32+00:00",
+            "stdout": "Running process A\nRunning process B\nRunning process C\nRunning process A\nRunning process B\nRunning process C\nRunning process A\nRunning process B\nRunning process C\nRunning process A\nRunning process B\nRunning process C\nRunning process A\nRunning process B\nRunning process C\nRunning process A\nRunning process B\nRunning process C\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "When you run it, you\u2019ll see the CPU jumping from Process A to Process B to Process C over and over.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Rapid rotation of tiny time slices lets many processes share one CPU."
+        },
+        "narration_anchor": "That rapid rotation is what lets many processes use the CPU quickly.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Modify the list or loop count to observe how the schedule changes."
+        },
+        "narration_anchor": "Try changing the slice order or adding another process to see the effect.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Modify the list or loop count to observe how the schedule changes.",
+      "hint": "Add a fourth process name or increase the outer loop iterations."
+    },
+    "series": {
+      "title": "CPU Virtualization Basics",
+      "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+      "order": 3,
+      "total": 12,
+      "previous_id": "meal_02_why_virtualize_a_cpu",
+      "next_id": "meal_04_program_vs_process"
+    }
+  }
+}

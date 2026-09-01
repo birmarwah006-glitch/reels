@@ -137,7 +137,7 @@ export const mediaUrl = {
     `/reels/${encodeURIComponent(jobId)}/${moduleId}/audio`,
   clipperVideo: (jobId: string, moduleId: number) =>
     `/clipper/reels/${encodeURIComponent(jobId)}/${moduleId}/video`,
-  mealVideo: (mealId: string) => `/meals/${encodeURIComponent(mealId)}/video`,
+    mealVideo: (mealId: string) => `/meals-data/videos/${encodeURIComponent(mealId)}.mp4`,
 }
 
 /* ── Lectures & modules ─────────────────────────────────────────────────── */
@@ -225,10 +225,10 @@ export const api = {
 
   /* ── Meals ────────────────────────────────────────────────────────────── */
 
-  meals: () => getJson<{ meals: MealSummary[] }>('/meals'),
+    meals: () => getJson<{ meals: MealSummary[] }>('/meals-data/index.json'),
 
   mealTiming: (mealId: string) =>
-    getJson<MealTiming>(`/meals/${encodeURIComponent(mealId)}/timing`),
+    getJson<MealTiming>(`/meals-data/timing/${encodeURIComponent(mealId)}.timing.json`),
 
   /** Kick off ingest -> plan -> verify -> narrate -> render. Returns at once;
    *  poll generationStatus with the run id. */

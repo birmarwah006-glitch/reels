@@ -1,0 +1,171 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_10_define_a_method",
+    "title": "Define a method in a class",
+    "concept": "python.oop.methods",
+    "objective": "Create a function inside a class that operates on its instances",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.oop.init"
+    ],
+    "next_concepts": [
+      "python.oop.methods",
+      "python.oop.methods"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "method"
+    ],
+    "assumes": [
+      "custom __init__ method",
+      "self parameter"
+    ],
+    "voice": {
+      "script": "How can a class actually do something? How do I make a student greet? A method is just a function written inside a class definition, and it always receives the instance as its first parameter, usually named self. That lets the method read or change the instance\u2019s attributes. In the code we define the method, use self.name inside the message, create a Student object, and call greet. Running it prints the greeting, showing the method works on that specific instance. Remember: methods let objects behave, not just hold data. Now try writing a method that returns the student\u2019s email address.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "How can a class actually do something?"
+        },
+        "narration_anchor": "How can a class actually do something?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do I make a student greet?"
+        },
+        "narration_anchor": "How do I make a student greet?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Define method",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Call method",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "invoke"
+            }
+          ]
+        },
+        "narration_anchor": "A method is just a function written inside a class definition"
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "class Student:\n    def __init__(self, name):\n        self.name = name\n    def greet(self):\n        print(f\"Hello, I am {self.name}!\")\n\ns = Student(\"Alex\")\ns.greet()\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "class Student:\n    def __init__(self, name):\n        self.name = name\n    def greet(self):\n        print(f\"Hello, I am {self.name}!\")\n\ns = Student(\"Alex\")\ns.greet()",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "def greet(self):"
+            }
+          ]
+        },
+        "narration_anchor": "In the code we define the method, use self.name inside the message, create a Student object, and call greet."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:34+00:00",
+            "stdout": "Hello, I am Alex!\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Methods let objects behave, not just hold data."
+        },
+        "narration_anchor": "Remember: methods let objects behave, not just hold data.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write a method for Student that returns the email address based on the name."
+        },
+        "narration_anchor": "Now try writing a method that returns the student\u2019s email address.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write a method for Student that returns the email address based on the name.",
+      "hint": "Combine the name with a domain string and return it."
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 10,
+      "total": 15,
+      "previous_id": "meal_09_class_attributes",
+      "next_id": "meal_11_average_calculation_method"
+    }
+  }
+}

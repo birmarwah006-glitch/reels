@@ -1,0 +1,103 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_03_setting_gcc_as_the_default_compiler",
+    "title": "Set GCC as Code::Blocks Default Compiler",
+    "concept": "c.project.overview",
+    "objective": "Select GNU GCC as the default compiler in Code::Blocks",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "GCC"
+    ],
+    "assumes": [
+      "Code::Blocks"
+    ],
+    "voice": {
+      "script": "Which compiler does Code::Blocks use by default? Most beginners end up with a different toolchain. In Code::Blocks, a compiler is the program that turns your C code into an executable. GCC stands for GNU Compiler Collection, a free and widely used compiler. To tell Code::Blocks to use GCC for every project, open the Settings menu, choose Compiler, then select GNU GCC Compiler from the drop\u2011down list. Click the Set as default button, then press OK. From now on any new project will be built with GCC automatically.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Which compiler does Code::Blocks use by default?"
+        },
+        "narration_anchor": "Which compiler does Code::Blocks use by default?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How can you make GCC the default compiler?"
+        }
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Select GCC as default",
+              "kind": "box"
+            }
+          ],
+          "edges": []
+        }
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "GCC is now the default compiler for all new projects."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Create a new project and verify it builds with GCC."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Create a new project and verify it builds with GCC."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 3,
+      "total": 22,
+      "previous_id": "meal_02_installing_code_blocks_on_windows",
+      "next_id": "meal_04_creating_a_new_console_project"
+    }
+  }
+}

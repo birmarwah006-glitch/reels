@@ -1,0 +1,194 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_11_limited_direct_execution",
+    "title": "Limited Direct Execution Explained",
+    "concept": "python.project.overview",
+    "objective": "Explain how the OS intervenes only when necessary under limited direct execution",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "limited direct execution"
+    ],
+    "assumes": [
+      "policy",
+      "mechanism"
+    ],
+    "voice": {
+      "script": "What if your computer only stepped in when it really had to? When does the OS actually take control of the CPU? Limited direct execution means the CPU runs user code until the OS must step in. Here is a tiny program that simulates a process running until a timer fires. The program loops through a list of process names, prints the current one, and after two iterations triggers a timer event. When the timer expires the OS switches to the next process. The flow diagram shows user code, then a timer interrupt, then the OS scheduler, then the next process. Remember: limited direct execution lets user code run freely until the OS needs to intervene. Add another timer event and see how the scheduler picks the next process.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if your computer only stepped in when it really had to?"
+        },
+        "narration_anchor": "What if your computer only stepped in when it really had to?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "When does the OS actually take control of the CPU?"
+        },
+        "narration_anchor": "When does the OS actually take control of the CPU?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "User code runs",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Timer interrupt",
+              "kind": "decision"
+            },
+            {
+              "id": "c",
+              "label": "OS scheduler",
+              "kind": "box"
+            },
+            {
+              "id": "d",
+              "label": "Next process runs",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "timer expires"
+            },
+            {
+              "from": "b",
+              "to": "c"
+            },
+            {
+              "from": "c",
+              "to": "d",
+              "label": "select next"
+            },
+            {
+              "from": "d",
+              "to": "a",
+              "label": "continue"
+            }
+          ]
+        },
+        "narration_anchor": "Limited direct execution means the CPU runs user code until the OS must step in."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "processes = ['P1', 'P2', 'P3']\ncounter = 0\nfor name in processes:\n    print(f'Running', name)\n    counter += 1\n    if counter == 2:\n        print('Timer interrupt: OS takes over')\n        counter = 0\n        print('Scheduler selects next process')\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "processes = ['P1', 'P2', 'P3']\ncounter = 0\nfor name in processes:\n    print(f'Running', name)\n    counter += 1\n    if counter == 2:\n        print('Timer interrupt: OS takes over')\n        counter = 0\n        print('Scheduler selects next process')",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "Timer interrupt"
+            }
+          ]
+        },
+        "narration_anchor": "Here is a tiny program that simulates a process running until a timer fires."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "/opt/homebrew/opt/python@3.14/bin/python3.14 main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:34+00:00",
+            "stdout": "Running P1\nRunning P2\nTimer interrupt: OS takes over\nScheduler selects next process\nRunning P3\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "When the timer expires the OS switches to the next process.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Limited direct execution lets user code run freely until the OS needs to intervene."
+        },
+        "narration_anchor": "Remember: limited direct execution lets user code run freely until the OS needs to intervene.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Add another timer event in the code and observe how the scheduler picks the next process."
+        },
+        "narration_anchor": "Add another timer event and see how the scheduler picks the next process.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Add another timer event in the code and observe how the scheduler picks the next process.",
+      "hint": "Insert an extra if condition after a few more iterations."
+    },
+    "series": {
+      "title": "CPU Virtualization Basics",
+      "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+      "order": 11,
+      "total": 12,
+      "previous_id": "meal_10_policy_vs_mechanism",
+      "next_id": "meal_12_os_regaining_cpu_control"
+    }
+  }
+}

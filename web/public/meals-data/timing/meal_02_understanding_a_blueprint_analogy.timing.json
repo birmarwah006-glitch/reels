@@ -1,0 +1,929 @@
+{
+  "meal_id": "meal_02_understanding_a_blueprint_analogy",
+  "audio": "meal_02_understanding_a_blueprint_analogy.mp3",
+  "duration": 45.024,
+  "alignment": "whisper",
+  "anchors": {
+    "What if you could design every car before it\u2019s built?": 0.0,
+    "How does a class help you make many similar objects?": 3.22,
+    "Now let's see a tiny class in action.": 24.56,
+    "Running this prints the student\u2019s name and age.": 35.42,
+    "Remember: a class defines the shape of its objects.": 38.18,
+    "Try writing a class for a Book with title and author.": 42.0
+  },
+  "captions": [
+    {
+      "text": "What if you could design",
+      "start": 0.0,
+      "end": 1.14,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.26
+        },
+        {
+          "w": "if",
+          "start": 0.26,
+          "end": 0.48
+        },
+        {
+          "w": "you",
+          "start": 0.48,
+          "end": 0.54
+        },
+        {
+          "w": "could",
+          "start": 0.54,
+          "end": 0.78
+        },
+        {
+          "w": "design",
+          "start": 0.78,
+          "end": 1.14
+        }
+      ]
+    },
+    {
+      "text": "every car before it\u2019s built?",
+      "start": 1.14,
+      "end": 2.74,
+      "words": [
+        {
+          "w": "every",
+          "start": 1.14,
+          "end": 1.58
+        },
+        {
+          "w": "car",
+          "start": 1.58,
+          "end": 1.88
+        },
+        {
+          "w": "before",
+          "start": 1.88,
+          "end": 2.22
+        },
+        {
+          "w": "it\u2019s",
+          "start": 2.22,
+          "end": 2.46
+        },
+        {
+          "w": "built?",
+          "start": 2.46,
+          "end": 2.74
+        }
+      ]
+    },
+    {
+      "text": "How does a class help",
+      "start": 3.22,
+      "end": 4.34,
+      "words": [
+        {
+          "w": "How",
+          "start": 3.22,
+          "end": 3.36
+        },
+        {
+          "w": "does",
+          "start": 3.36,
+          "end": 3.52
+        },
+        {
+          "w": "a",
+          "start": 3.52,
+          "end": 3.72
+        },
+        {
+          "w": "class",
+          "start": 3.72,
+          "end": 3.98
+        },
+        {
+          "w": "help",
+          "start": 3.98,
+          "end": 4.34
+        }
+      ]
+    },
+    {
+      "text": "you make many similar objects?",
+      "start": 4.34,
+      "end": 5.98,
+      "words": [
+        {
+          "w": "you",
+          "start": 4.34,
+          "end": 4.5
+        },
+        {
+          "w": "make",
+          "start": 4.5,
+          "end": 4.76
+        },
+        {
+          "w": "many",
+          "start": 4.76,
+          "end": 5.06
+        },
+        {
+          "w": "similar",
+          "start": 5.06,
+          "end": 5.46
+        },
+        {
+          "w": "objects?",
+          "start": 5.46,
+          "end": 5.98
+        }
+      ]
+    },
+    {
+      "text": "In programming, a class is",
+      "start": 6.48,
+      "end": 7.94,
+      "words": [
+        {
+          "w": "In",
+          "start": 6.48,
+          "end": 6.64
+        },
+        {
+          "w": "programming,",
+          "start": 6.64,
+          "end": 7.02
+        },
+        {
+          "w": "a",
+          "start": 7.28,
+          "end": 7.44
+        },
+        {
+          "w": "class",
+          "start": 7.44,
+          "end": 7.68
+        },
+        {
+          "w": "is",
+          "start": 7.68,
+          "end": 7.94
+        }
+      ]
+    },
+    {
+      "text": "a blueprint for creating objects.",
+      "start": 7.94,
+      "end": 9.62,
+      "words": [
+        {
+          "w": "a",
+          "start": 7.94,
+          "end": 8.06
+        },
+        {
+          "w": "blueprint",
+          "start": 8.06,
+          "end": 8.36
+        },
+        {
+          "w": "for",
+          "start": 8.36,
+          "end": 8.76
+        },
+        {
+          "w": "creating",
+          "start": 8.76,
+          "end": 9.06
+        },
+        {
+          "w": "objects.",
+          "start": 9.06,
+          "end": 9.62
+        }
+      ]
+    },
+    {
+      "text": "A blueprint is a detailed",
+      "start": 10.12,
+      "end": 11.22,
+      "words": [
+        {
+          "w": "A",
+          "start": 10.12,
+          "end": 10.18
+        },
+        {
+          "w": "blueprint",
+          "start": 10.18,
+          "end": 10.5
+        },
+        {
+          "w": "is",
+          "start": 10.5,
+          "end": 10.72
+        },
+        {
+          "w": "a",
+          "start": 10.72,
+          "end": 10.94
+        },
+        {
+          "w": "detailed",
+          "start": 10.94,
+          "end": 11.22
+        }
+      ]
+    },
+    {
+      "text": "plan that tells a factory",
+      "start": 11.22,
+      "end": 12.6,
+      "words": [
+        {
+          "w": "plan",
+          "start": 11.22,
+          "end": 11.68
+        },
+        {
+          "w": "that",
+          "start": 11.68,
+          "end": 11.9
+        },
+        {
+          "w": "tells",
+          "start": 11.9,
+          "end": 12.1
+        },
+        {
+          "w": "a",
+          "start": 12.1,
+          "end": 12.3
+        },
+        {
+          "w": "factory",
+          "start": 12.3,
+          "end": 12.6
+        }
+      ]
+    },
+    {
+      "text": "how to build each item.",
+      "start": 12.6,
+      "end": 13.88,
+      "words": [
+        {
+          "w": "how",
+          "start": 12.6,
+          "end": 12.88
+        },
+        {
+          "w": "to",
+          "start": 12.88,
+          "end": 13.02
+        },
+        {
+          "w": "build",
+          "start": 13.02,
+          "end": 13.26
+        },
+        {
+          "w": "each",
+          "start": 13.26,
+          "end": 13.52
+        },
+        {
+          "w": "item.",
+          "start": 13.52,
+          "end": 13.88
+        }
+      ]
+    },
+    {
+      "text": "Imagine a car company sets",
+      "start": 14.48,
+      "end": 15.68,
+      "words": [
+        {
+          "w": "Imagine",
+          "start": 14.48,
+          "end": 14.62
+        },
+        {
+          "w": "a",
+          "start": 14.62,
+          "end": 14.88
+        },
+        {
+          "w": "car",
+          "start": 14.88,
+          "end": 15.06
+        },
+        {
+          "w": "company",
+          "start": 15.06,
+          "end": 15.44
+        },
+        {
+          "w": "sets",
+          "start": 15.44,
+          "end": 15.68
+        }
+      ]
+    },
+    {
+      "text": "up a factory line; the",
+      "start": 15.68,
+      "end": 17.32,
+      "words": [
+        {
+          "w": "up",
+          "start": 15.68,
+          "end": 15.88
+        },
+        {
+          "w": "a",
+          "start": 15.88,
+          "end": 16.1
+        },
+        {
+          "w": "factory",
+          "start": 16.1,
+          "end": 16.24
+        },
+        {
+          "w": "line;",
+          "start": 16.24,
+          "end": 16.62
+        },
+        {
+          "w": "the",
+          "start": 17.22,
+          "end": 17.32
+        }
+      ]
+    },
+    {
+      "text": "blueprint tells the line how",
+      "start": 17.32,
+      "end": 18.68,
+      "words": [
+        {
+          "w": "blueprint",
+          "start": 17.32,
+          "end": 17.64
+        },
+        {
+          "w": "tells",
+          "start": 17.64,
+          "end": 17.96
+        },
+        {
+          "w": "the",
+          "start": 17.96,
+          "end": 18.14
+        },
+        {
+          "w": "line",
+          "start": 18.14,
+          "end": 18.38
+        },
+        {
+          "w": "how",
+          "start": 18.38,
+          "end": 18.68
+        }
+      ]
+    },
+    {
+      "text": "each car should be assembled.",
+      "start": 18.68,
+      "end": 19.88,
+      "words": [
+        {
+          "w": "each",
+          "start": 18.68,
+          "end": 18.86
+        },
+        {
+          "w": "car",
+          "start": 18.86,
+          "end": 19.14
+        },
+        {
+          "w": "should",
+          "start": 19.14,
+          "end": 19.4
+        },
+        {
+          "w": "be",
+          "start": 19.4,
+          "end": 19.88
+        },
+        {
+          "w": "assembled.",
+          "start": 19.88,
+          "end": 19.88
+        }
+      ]
+    },
+    {
+      "text": "Likewise, a class tells Python",
+      "start": 20.36,
+      "end": 22.12,
+      "words": [
+        {
+          "w": "Likewise,",
+          "start": 20.36,
+          "end": 20.76
+        },
+        {
+          "w": "a",
+          "start": 21.04,
+          "end": 21.2
+        },
+        {
+          "w": "class",
+          "start": 21.2,
+          "end": 21.44
+        },
+        {
+          "w": "tells",
+          "start": 21.44,
+          "end": 21.7
+        },
+        {
+          "w": "Python",
+          "start": 21.7,
+          "end": 22.12
+        }
+      ]
+    },
+    {
+      "text": "how each object should look",
+      "start": 22.12,
+      "end": 23.52,
+      "words": [
+        {
+          "w": "how",
+          "start": 22.12,
+          "end": 22.44
+        },
+        {
+          "w": "each",
+          "start": 22.44,
+          "end": 22.68
+        },
+        {
+          "w": "object",
+          "start": 22.68,
+          "end": 23.04
+        },
+        {
+          "w": "should",
+          "start": 23.04,
+          "end": 23.28
+        },
+        {
+          "w": "look",
+          "start": 23.28,
+          "end": 23.52
+        }
+      ]
+    },
+    {
+      "text": "and behave. Now let's see",
+      "start": 23.52,
+      "end": 25.24,
+      "words": [
+        {
+          "w": "and",
+          "start": 23.52,
+          "end": 23.7
+        },
+        {
+          "w": "behave.",
+          "start": 23.7,
+          "end": 24.14
+        },
+        {
+          "w": "Now",
+          "start": 24.56,
+          "end": 24.78
+        },
+        {
+          "w": "let's",
+          "start": 24.78,
+          "end": 25.02
+        },
+        {
+          "w": "see",
+          "start": 25.02,
+          "end": 25.24
+        }
+      ]
+    },
+    {
+      "text": "a tiny class in action.",
+      "start": 25.24,
+      "end": 26.56,
+      "words": [
+        {
+          "w": "a",
+          "start": 25.24,
+          "end": 25.44
+        },
+        {
+          "w": "tiny",
+          "start": 25.44,
+          "end": 25.66
+        },
+        {
+          "w": "class",
+          "start": 25.66,
+          "end": 26.02
+        },
+        {
+          "w": "in",
+          "start": 26.02,
+          "end": 26.18
+        },
+        {
+          "w": "action.",
+          "start": 26.18,
+          "end": 26.56
+        }
+      ]
+    },
+    {
+      "text": "We define a class named",
+      "start": 26.56,
+      "end": 28.18,
+      "words": [
+        {
+          "w": "We",
+          "start": 26.56,
+          "end": 27.08
+        },
+        {
+          "w": "define",
+          "start": 27.08,
+          "end": 27.4
+        },
+        {
+          "w": "a",
+          "start": 27.4,
+          "end": 27.66
+        },
+        {
+          "w": "class",
+          "start": 27.66,
+          "end": 27.94
+        },
+        {
+          "w": "named",
+          "start": 27.94,
+          "end": 28.18
+        }
+      ]
+    },
+    {
+      "text": "Student with a method that",
+      "start": 28.18,
+      "end": 29.46,
+      "words": [
+        {
+          "w": "Student",
+          "start": 28.18,
+          "end": 28.56
+        },
+        {
+          "w": "with",
+          "start": 28.56,
+          "end": 28.82
+        },
+        {
+          "w": "a",
+          "start": 28.82,
+          "end": 28.92
+        },
+        {
+          "w": "method",
+          "start": 28.92,
+          "end": 29.22
+        },
+        {
+          "w": "that",
+          "start": 29.22,
+          "end": 29.46
+        }
+      ]
+    },
+    {
+      "text": "prints the student's name and",
+      "start": 29.46,
+      "end": 30.84,
+      "words": [
+        {
+          "w": "prints",
+          "start": 29.46,
+          "end": 29.66
+        },
+        {
+          "w": "the",
+          "start": 29.66,
+          "end": 29.92
+        },
+        {
+          "w": "student's",
+          "start": 29.92,
+          "end": 30.4
+        },
+        {
+          "w": "name",
+          "start": 30.4,
+          "end": 30.56
+        },
+        {
+          "w": "and",
+          "start": 30.56,
+          "end": 30.84
+        }
+      ]
+    },
+    {
+      "text": "age. Then we create a",
+      "start": 30.84,
+      "end": 32.38,
+      "words": [
+        {
+          "w": "age.",
+          "start": 30.84,
+          "end": 31.14
+        },
+        {
+          "w": "Then",
+          "start": 31.52,
+          "end": 31.72
+        },
+        {
+          "w": "we",
+          "start": 31.72,
+          "end": 31.88
+        },
+        {
+          "w": "create",
+          "start": 31.88,
+          "end": 32.18
+        },
+        {
+          "w": "a",
+          "start": 32.18,
+          "end": 32.38
+        }
+      ]
+    },
+    {
+      "text": "Student object and ask it",
+      "start": 32.38,
+      "end": 33.82,
+      "words": [
+        {
+          "w": "Student",
+          "start": 32.38,
+          "end": 32.62
+        },
+        {
+          "w": "object",
+          "start": 32.62,
+          "end": 33.08
+        },
+        {
+          "w": "and",
+          "start": 33.08,
+          "end": 33.46
+        },
+        {
+          "w": "ask",
+          "start": 33.46,
+          "end": 33.64
+        },
+        {
+          "w": "it",
+          "start": 33.64,
+          "end": 33.82
+        }
+      ]
+    },
+    {
+      "text": "to display its data. Running",
+      "start": 33.82,
+      "end": 35.54,
+      "words": [
+        {
+          "w": "to",
+          "start": 33.82,
+          "end": 33.96
+        },
+        {
+          "w": "display",
+          "start": 33.96,
+          "end": 34.26
+        },
+        {
+          "w": "its",
+          "start": 34.26,
+          "end": 34.54
+        },
+        {
+          "w": "data.",
+          "start": 34.54,
+          "end": 34.9
+        },
+        {
+          "w": "Running",
+          "start": 35.42,
+          "end": 35.54
+        }
+      ]
+    },
+    {
+      "text": "this prints the student\u2019s name",
+      "start": 35.54,
+      "end": 37.08,
+      "words": [
+        {
+          "w": "this",
+          "start": 35.54,
+          "end": 35.84
+        },
+        {
+          "w": "prints",
+          "start": 35.84,
+          "end": 36.14
+        },
+        {
+          "w": "the",
+          "start": 36.14,
+          "end": 36.4
+        },
+        {
+          "w": "student\u2019s",
+          "start": 36.4,
+          "end": 36.88
+        },
+        {
+          "w": "name",
+          "start": 36.88,
+          "end": 37.08
+        }
+      ]
+    },
+    {
+      "text": "and age. Remember: a class",
+      "start": 37.08,
+      "end": 39.66,
+      "words": [
+        {
+          "w": "and",
+          "start": 37.08,
+          "end": 37.36
+        },
+        {
+          "w": "age.",
+          "start": 37.36,
+          "end": 37.7
+        },
+        {
+          "w": "Remember:",
+          "start": 38.18,
+          "end": 38.5
+        },
+        {
+          "w": "a",
+          "start": 39.24,
+          "end": 39.38
+        },
+        {
+          "w": "class",
+          "start": 39.38,
+          "end": 39.66
+        }
+      ]
+    },
+    {
+      "text": "defines the shape of its",
+      "start": 39.66,
+      "end": 41.08,
+      "words": [
+        {
+          "w": "defines",
+          "start": 39.66,
+          "end": 40.12
+        },
+        {
+          "w": "the",
+          "start": 40.12,
+          "end": 40.48
+        },
+        {
+          "w": "shape",
+          "start": 40.48,
+          "end": 40.68
+        },
+        {
+          "w": "of",
+          "start": 40.68,
+          "end": 40.9
+        },
+        {
+          "w": "its",
+          "start": 40.9,
+          "end": 41.08
+        }
+      ]
+    },
+    {
+      "text": "objects. Try writing a class",
+      "start": 41.08,
+      "end": 43.08,
+      "words": [
+        {
+          "w": "objects.",
+          "start": 41.08,
+          "end": 41.48
+        },
+        {
+          "w": "Try",
+          "start": 42.0,
+          "end": 42.24
+        },
+        {
+          "w": "writing",
+          "start": 42.24,
+          "end": 42.54
+        },
+        {
+          "w": "a",
+          "start": 42.54,
+          "end": 42.76
+        },
+        {
+          "w": "class",
+          "start": 42.76,
+          "end": 43.08
+        }
+      ]
+    },
+    {
+      "text": "for a Book with title",
+      "start": 43.08,
+      "end": 44.1,
+      "words": [
+        {
+          "w": "for",
+          "start": 43.08,
+          "end": 43.34
+        },
+        {
+          "w": "a",
+          "start": 43.34,
+          "end": 43.4
+        },
+        {
+          "w": "Book",
+          "start": 43.4,
+          "end": 43.6
+        },
+        {
+          "w": "with",
+          "start": 43.6,
+          "end": 43.8
+        },
+        {
+          "w": "title",
+          "start": 43.8,
+          "end": 44.1
+        }
+      ]
+    },
+    {
+      "text": "and author.",
+      "start": 44.1,
+      "end": 44.64,
+      "words": [
+        {
+          "w": "and",
+          "start": 44.1,
+          "end": 44.36
+        },
+        {
+          "w": "author.",
+          "start": 44.36,
+          "end": 44.64
+        }
+      ]
+    }
+  ]
+}

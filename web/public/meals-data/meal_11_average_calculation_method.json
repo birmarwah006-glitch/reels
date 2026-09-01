@@ -1,0 +1,175 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_11_average_calculation_method",
+    "title": "Add an average calculation method to a class",
+    "concept": "python.oop.methods",
+    "objective": "Write a method that receives a list of marks and prints their average",
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "python.oop.init"
+    ],
+    "next_concepts": [
+      "python.oop.methods",
+      "python.oop.classes"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "average method"
+    ],
+    "assumes": [
+      "method",
+      "self parameter",
+      "print"
+    ],
+    "voice": {
+      "script": "How do you turn a list of grades into a single number? Calculate the average of a student's marks. We'll add an average method that receives a list of marks and prints the result. First, Python lets us define a function inside a class; we call it a method because it works on an instance, so it always takes self as the first parameter. The method also takes a marks list. Inside, we add all the numbers with the built\u2011in sum function, count them with len, divide to get the mean, and then use print to show it. Here is the complete class with the new method. Running the program prints the average of the sample marks. A method can process a list and display its average. Write another method that returns the highest mark instead of printing.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "How do you turn a list of grades into a single number?"
+        },
+        "narration_anchor": "How do you turn a list of grades into a single number?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "Calculate the average of a student's marks."
+        },
+        "narration_anchor": "Calculate the average of a student's marks."
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Student class",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "average method",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "adds"
+            }
+          ]
+        },
+        "narration_anchor": "We'll add an average method that receives a list of marks and prints the result."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "class Student:\n    def __init__(self, name):\n        self.name = name\n    def average(self, marks):\n        avg = sum(marks) / len(marks)\n        print(f\"Average for {self.name}: {avg}\")\n\n# Example usage\ns = Student(\"Alice\")\ns.average([85, 92, 78, 90])\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "class Student:\n    def __init__(self, name):\n        self.name = name\n    def average(self, marks):\n        avg = sum(marks) / len(marks)\n        print(f\"Average for {self.name}: {avg}\")\n\n# Example usage\ns = Student(\"Alice\")\ns.average([85, 92, 78, 90])",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "average(self, marks)"
+            }
+          ]
+        },
+        "narration_anchor": "Here is the complete class with the new method."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:34+00:00",
+            "stdout": "Average for Alice: 86.25\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running the program prints the average of the sample marks.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A method can process a list and display its average."
+        },
+        "narration_anchor": "A method can process a list and display its average.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write another method that returns the highest mark instead of printing."
+        },
+        "narration_anchor": "Write another method that returns the highest mark instead of printing.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write another method that returns the highest mark instead of printing.",
+      "hint": "Use the max function on the marks list."
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 11,
+      "total": 15,
+      "previous_id": "meal_10_define_a_method",
+      "next_id": "meal_12_static_method"
+    }
+  }
+}

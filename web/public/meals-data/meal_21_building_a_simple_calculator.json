@@ -1,0 +1,179 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_21_building_a_simple_calculator",
+    "title": "Simple Calculator in C",
+    "concept": "c.project.overview",
+    "objective": "Combine input, arithmetic, and output to build a basic calculator program",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [],
+    "assumes": [
+      "variables",
+      "printf",
+      "scanf",
+      "for/while"
+    ],
+    "voice": {
+      "script": "What if your calculator could talk back? How do you read numbers, compute, and show the result? We\u2019ll combine input, arithmetic, and output in one program. First, we include the standard input output library, which gives us the tools to talk to the user. Inside the main function we declare two integer variables to hold the numbers the user types. Using the input command we ask the user to enter two whole numbers and store them. Then we calculate their sum by adding the two variables, and their product by multiplying them. Finally we display both results with the output command, showing a clear message for each. Here\u2019s the complete program. Running it, you\u2019ll see the sum and product displayed. The diagram shows input flowing into calculations and out to the screen. A calculator is just input, math, then output. Try adding subtraction and division to the program.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if your calculator could talk back?"
+        },
+        "narration_anchor": "What if your calculator could talk back?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you read numbers, compute, and show the result?"
+        },
+        "narration_anchor": "How do you read numbers, compute, and show the result?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Read numbers",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "Add & multiply",
+              "kind": "value"
+            },
+            {
+              "id": "c",
+              "label": "Show results",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "feeds"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "outputs"
+            }
+          ]
+        },
+        "narration_anchor": "We\u2019ll combine input, arithmetic, and output in one program."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "c",
+          "filename": "main.c",
+          "code": "#include <stdio.h>\nint main() {\n    int x, y;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &x, &y);\n    int sum = x + y;\n    int product = x * y;\n    printf(\"Sum: %d\\n\", sum);\n    printf(\"Product: %d\\n\", product);\n    return 0;\n}\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "#include <stdio.h>\nint main() {\n    int x, y;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &x, &y);\n    int sum = x + y;\n    int product = x * y;\n    printf(\"Sum: %d\\n\", sum);\n    printf(\"Product: %d\\n\", product);\n    return 0;\n}",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "speed_cps": 26
+            }
+          ]
+        },
+        "narration_anchor": "Here\u2019s the complete program."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "a.out",
+          "stdin": [
+            "3 4"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:42+00:00",
+            "stdout": "Enter two integers: Sum: 7\nProduct: 12\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running it, you\u2019ll see the sum and product displayed.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A calculator is just input, math, then output."
+        },
+        "narration_anchor": "A calculator is just input, math, then output.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Try adding subtraction and division to the program."
+        },
+        "narration_anchor": "Try adding subtraction and division to the program.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Try adding subtraction and division to the program."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 21,
+      "total": 22,
+      "previous_id": "meal_20_loops_while_and_for",
+      "next_id": "meal_22_creating_a_number_guessing_game"
+    }
+  }
+}

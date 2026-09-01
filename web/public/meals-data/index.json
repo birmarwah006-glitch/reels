@@ -1,0 +1,2315 @@
+{
+  "meals": [
+    {
+      "id": "meal_01_print_text_to_the_screen",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 1,
+        "total": 15,
+        "previous_id": null,
+        "next_id": "meal_02_store_a_value_in_a_variable"
+      },
+      "generated_at": 0,
+      "title": "Print text to the screen",
+      "concept": "python.basics.print",
+      "objective": "Show a message on the screen using the print function",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.basics.variables",
+        "python.oop.classes"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Write a print statement that outputs your favorite hobby.",
+        "hint": "Place the hobby name inside quotes after print."
+      },
+      "video_url": "/meals-data/videos/meal_01_print_text_to_the_screen.mp4",
+      "timing_url": "/meals-data/timing/meal_01_print_text_to_the_screen.timing.json",
+      "duration_sec": 16.776
+    },
+    {
+      "id": "meal_02_store_a_value_in_a_variable",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 2,
+        "total": 15,
+        "previous_id": "meal_01_print_text_to_the_screen",
+        "next_id": "meal_03_what_is_a_class"
+      },
+      "generated_at": 0,
+      "title": "Store a value in a variable",
+      "concept": "python.basics.variables",
+      "objective": "Assign a value to a name so it can be reused later",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.oop.classes",
+        "python.oop.classes"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Create a variable called age, assign your age, and print it."
+      },
+      "video_url": "/meals-data/videos/meal_02_store_a_value_in_a_variable.mp4",
+      "timing_url": "/meals-data/timing/meal_02_store_a_value_in_a_variable.timing.json",
+      "duration_sec": 26.496
+    },
+    {
+      "id": "meal_03_what_is_a_class",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 3,
+        "total": 15,
+        "previous_id": "meal_02_store_a_value_in_a_variable",
+        "next_id": "meal_04_define_a_simple_class"
+      },
+      "generated_at": 0,
+      "title": "What is a class?",
+      "concept": "python.oop.classes",
+      "objective": "Explain that a class is a blueprint for objects",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.functions.define"
+      ],
+      "next_concepts": [
+        "python.oop.classes",
+        "python.oop.classes"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Write a class called Account with a balance attribute and a method to deposit money"
+      },
+      "video_url": "/meals-data/videos/meal_03_what_is_a_class.mp4",
+      "timing_url": "/meals-data/timing/meal_03_what_is_a_class.timing.json",
+      "duration_sec": 46.8
+    },
+    {
+      "id": "meal_04_define_a_simple_class",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 4,
+        "total": 15,
+        "previous_id": "meal_03_what_is_a_class",
+        "next_id": "meal_05_create_an_object_from_a_class"
+      },
+      "generated_at": 0,
+      "title": "Define a simple class",
+      "concept": "python.oop.classes",
+      "objective": "Write the Python syntax that creates an empty class",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.functions.define"
+      ],
+      "next_concepts": [
+        "python.oop.classes",
+        "python.oop.init"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Write a class named Student that contains no attributes or methods."
+      },
+      "video_url": "/meals-data/videos/meal_04_define_a_simple_class.mp4",
+      "timing_url": "/meals-data/timing/meal_04_define_a_simple_class.timing.json",
+      "duration_sec": 27.072
+    },
+    {
+      "id": "meal_05_create_an_object_from_a_class",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 5,
+        "total": 15,
+        "previous_id": "meal_04_define_a_simple_class",
+        "next_id": "meal_06_default_constructor_init"
+      },
+      "generated_at": 0,
+      "title": "Create an object from a class (instantiate)",
+      "concept": "python.oop.classes",
+      "objective": "Instantiate an object using the class name and store it in a variable",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.functions.define"
+      ],
+      "next_concepts": [
+        "python.oop.init",
+        "python.oop.init"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Create a second Student object named Bob and print his name.",
+        "hint": "Use the same class name and assign the result to a new variable."
+      },
+      "video_url": "/meals-data/videos/meal_05_create_an_object_from_a_class.mp4",
+      "timing_url": "/meals-data/timing/meal_05_create_an_object_from_a_class.timing.json",
+      "duration_sec": 46.056
+    },
+    {
+      "id": "meal_06_default_constructor_init",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 6,
+        "total": 15,
+        "previous_id": "meal_05_create_an_object_from_a_class",
+        "next_id": "meal_07_write_a_custom_init_method"
+      },
+      "generated_at": 0,
+      "title": "Default constructor (__init__)",
+      "concept": "python.oop.init",
+      "objective": "Explain that Python automatically provides a simple __init__ method",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.oop.classes"
+      ],
+      "next_concepts": [
+        "python.oop.init",
+        "python.oop.classes"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Define a class called Account with no __init__, create an object, and print it."
+      },
+      "video_url": "/meals-data/videos/meal_06_default_constructor_init.mp4",
+      "timing_url": "/meals-data/timing/meal_06_default_constructor_init.timing.json",
+      "duration_sec": 50.52
+    },
+    {
+      "id": "meal_07_write_a_custom_init_method",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 7,
+        "total": 15,
+        "previous_id": "meal_06_default_constructor_init",
+        "next_id": "meal_08_instance_attributes"
+      },
+      "generated_at": 0,
+      "title": "Write a custom __init__ method",
+      "concept": "python.oop.init",
+      "objective": "Define an __init__ that receives a name and stores it on the object",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.oop.classes"
+      ],
+      "next_concepts": [
+        "python.oop.classes",
+        "python.oop.classes"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Create a Book class that stores title and author using __init__."
+      },
+      "video_url": "/meals-data/videos/meal_07_write_a_custom_init_method.mp4",
+      "timing_url": "/meals-data/timing/meal_07_write_a_custom_init_method.timing.json",
+      "duration_sec": 43.56
+    },
+    {
+      "id": "meal_08_instance_attributes",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 8,
+        "total": 15,
+        "previous_id": "meal_07_write_a_custom_init_method",
+        "next_id": "meal_09_class_attributes"
+      },
+      "generated_at": 0,
+      "title": "Instance attributes store data on each object",
+      "concept": "python.oop.classes",
+      "objective": "Store data on each object using self.attribute inside __init__",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.functions.define"
+      ],
+      "next_concepts": [
+        "python.oop.classes",
+        "python.oop.methods"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Create a class Account with a balance attribute and print balances for two accounts.",
+        "hint": "Define __init__ with a balance parameter and store it as self.balance."
+      },
+      "video_url": "/meals-data/videos/meal_08_instance_attributes.mp4",
+      "timing_url": "/meals-data/timing/meal_08_instance_attributes.timing.json",
+      "duration_sec": 52.968
+    },
+    {
+      "id": "meal_09_class_attributes",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 9,
+        "total": 15,
+        "previous_id": "meal_08_instance_attributes",
+        "next_id": "meal_10_define_a_method"
+      },
+      "generated_at": 0,
+      "title": "Class attributes shared by all instances",
+      "concept": "python.oop.classes",
+      "objective": "Define a variable on a class that is shared by every instance",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.functions.define"
+      ],
+      "next_concepts": [
+        "python.oop.methods",
+        "python.oop.methods"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add a class attribute to track how many accounts have been created."
+      },
+      "video_url": "/meals-data/videos/meal_09_class_attributes.mp4",
+      "timing_url": "/meals-data/timing/meal_09_class_attributes.timing.json",
+      "duration_sec": 25.488
+    },
+    {
+      "id": "meal_10_define_a_method",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 10,
+        "total": 15,
+        "previous_id": "meal_09_class_attributes",
+        "next_id": "meal_11_average_calculation_method"
+      },
+      "generated_at": 0,
+      "title": "Define a method in a class",
+      "concept": "python.oop.methods",
+      "objective": "Create a function inside a class that operates on its instances",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.oop.init"
+      ],
+      "next_concepts": [
+        "python.oop.methods",
+        "python.oop.methods"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Write a method for Student that returns the email address based on the name.",
+        "hint": "Combine the name with a domain string and return it."
+      },
+      "video_url": "/meals-data/videos/meal_10_define_a_method.mp4",
+      "timing_url": "/meals-data/timing/meal_10_define_a_method.timing.json",
+      "duration_sec": 34.296
+    },
+    {
+      "id": "meal_11_average_calculation_method",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 11,
+        "total": 15,
+        "previous_id": "meal_10_define_a_method",
+        "next_id": "meal_12_static_method"
+      },
+      "generated_at": 0,
+      "title": "Add an average calculation method to a class",
+      "concept": "python.oop.methods",
+      "objective": "Write a method that receives a list of marks and prints their average",
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "python.oop.init"
+      ],
+      "next_concepts": [
+        "python.oop.methods",
+        "python.oop.classes"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Write another method that returns the highest mark instead of printing.",
+        "hint": "Use the max function on the marks list."
+      },
+      "video_url": "/meals-data/videos/meal_11_average_calculation_method.mp4",
+      "timing_url": "/meals-data/timing/meal_11_average_calculation_method.timing.json",
+      "duration_sec": 42.312
+    },
+    {
+      "id": "meal_12_static_method",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 12,
+        "total": 15,
+        "previous_id": "meal_11_average_calculation_method",
+        "next_id": "meal_13_build_a_student_class"
+      },
+      "generated_at": 0,
+      "title": "Static method without self",
+      "concept": "python.oop.methods",
+      "objective": "Define a method that does not take self and can be called on the class",
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "python.oop.init"
+      ],
+      "next_concepts": [
+        "python.oop.classes",
+        "python.oop.classes"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add a static method to a new class that converts Celsius to Fahrenheit.",
+        "hint": "Remember the formula (C * 9/5) + 32."
+      },
+      "video_url": "/meals-data/videos/meal_12_static_method.mp4",
+      "timing_url": "/meals-data/timing/meal_12_static_method.timing.json",
+      "duration_sec": 46.416
+    },
+    {
+      "id": "meal_13_build_a_student_class",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 13,
+        "total": 15,
+        "previous_id": "meal_12_static_method",
+        "next_id": "meal_14_build_an_account_class"
+      },
+      "generated_at": 0,
+      "title": "Build a Student class",
+      "concept": "python.oop.classes",
+      "objective": "Combine a class, constructor, attributes, and a method to model a student",
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "python.functions.define"
+      ],
+      "next_concepts": [
+        "python.oop.classes",
+        "python.project.pipeline"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Create another class called Account with a balance attribute and a method to deposit money.",
+        "hint": "Define __init__ to store balance and a deposit method that adds to it."
+      },
+      "video_url": "/meals-data/videos/meal_13_build_a_student_class.mp4",
+      "timing_url": "/meals-data/timing/meal_13_build_a_student_class.timing.json",
+      "duration_sec": 50.136
+    },
+    {
+      "id": "meal_14_build_an_account_class",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 14,
+        "total": 15,
+        "previous_id": "meal_13_build_a_student_class",
+        "next_id": "meal_15_putting_it_together"
+      },
+      "generated_at": 0,
+      "title": "Build an Account class with debit and credit",
+      "concept": "python.oop.classes",
+      "objective": "Create an Account class that can credit, debit, and report its balance",
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "python.functions.define"
+      ],
+      "next_concepts": [
+        "python.project.pipeline"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Create an Account and try withdrawing more than the balance.",
+        "hint": "Use the debit method with a larger amount than the current balance."
+      },
+      "video_url": "/meals-data/videos/meal_14_build_an_account_class.mp4",
+      "timing_url": "/meals-data/timing/meal_14_build_an_account_class.timing.json",
+      "duration_sec": 42.864
+    },
+    {
+      "id": "meal_15_putting_it_together",
+      "series": {
+        "title": "Intro to Python OOP",
+        "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+        "order": 15,
+        "total": 15,
+        "previous_id": "meal_14_build_an_account_class",
+        "next_id": null
+      },
+      "generated_at": 0,
+      "title": "Putting Student and Account classes together",
+      "concept": "python.project.pipeline",
+      "objective": "Instantiate Student and Account objects and call their methods to see OOP in action",
+      "difficulty": "intermediate",
+      "prerequisites": [],
+      "next_concepts": [],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Create a third Student, give them marks, and add a greeting method that prints a welcome message.",
+        "hint": "Define a method that uses the name attribute inside a formatted string."
+      },
+      "video_url": "/meals-data/videos/meal_15_putting_it_together.mp4",
+      "timing_url": "/meals-data/timing/meal_15_putting_it_together.timing.json",
+      "duration_sec": 41.592
+    },
+    {
+      "id": "meal_01_import_the_random_module",
+      "series": {
+        "title": "Build a Rock‑Paper‑Scissors Game",
+        "artifact": "A command‑line rock‑paper‑scissors game you can run in the terminal",
+        "order": 1,
+        "total": 10,
+        "previous_id": null,
+        "next_id": "meal_02_create_a_list_of_moves"
+      },
+      "generated_at": 0,
+      "title": "Import the random module",
+      "concept": "python.modules.import",
+      "objective": "You can bring the random module into your program",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.functions.define"
+      ],
+      "next_concepts": [
+        "python.data.lists",
+        "python.basics.strings"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add import random to a new script and print a random number.",
+        "hint": "Place the import line at the very top of the file."
+      },
+      "video_url": "/meals-data/videos/meal_01_import_the_random_module.mp4",
+      "timing_url": "/meals-data/timing/meal_01_import_the_random_module.timing.json",
+      "duration_sec": 34.992
+    },
+    {
+      "id": "meal_02_create_a_list_of_moves",
+      "series": {
+        "title": "Build a Rock‑Paper‑Scissors Game",
+        "artifact": "A command‑line rock‑paper‑scissors game you can run in the terminal",
+        "order": 2,
+        "total": 10,
+        "previous_id": "meal_01_import_the_random_module",
+        "next_id": "meal_03_understand_strings"
+      },
+      "generated_at": 0,
+      "title": "Create a list of moves for Rock‑Paper‑Scissors",
+      "concept": "python.data.lists",
+      "objective": "You can store the three possible moves in a list",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.basics.data_types"
+      ],
+      "next_concepts": [
+        "python.basics.strings",
+        "python.basics.input_output"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add another move, such as \"lizard\", to the choices list and print it."
+      },
+      "video_url": "/meals-data/videos/meal_02_create_a_list_of_moves.mp4",
+      "timing_url": "/meals-data/timing/meal_02_create_a_list_of_moves.timing.json",
+      "duration_sec": 29.472
+    },
+    {
+      "id": "meal_03_understand_strings",
+      "series": {
+        "title": "Build a Rock‑Paper‑Scissors Game",
+        "artifact": "A command‑line rock‑paper‑scissors game you can run in the terminal",
+        "order": 3,
+        "total": 10,
+        "previous_id": "meal_02_create_a_list_of_moves",
+        "next_id": "meal_04_read_the_player_s_choice"
+      },
+      "generated_at": 0,
+      "title": "Understand strings for rock‑paper‑scissors",
+      "concept": "python.basics.strings",
+      "objective": "You can recognise and write text values called strings",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.basics.data_types"
+      ],
+      "next_concepts": [
+        "python.basics.input_output",
+        "python.basics.strings"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add a new move called lizard as a string and print it."
+      },
+      "video_url": "/meals-data/videos/meal_03_understand_strings.mp4",
+      "timing_url": "/meals-data/timing/meal_03_understand_strings.timing.json",
+      "duration_sec": 37.704
+    },
+    {
+      "id": "meal_04_read_the_player_s_choice",
+      "series": {
+        "title": "Build a Rock‑Paper‑Scissors Game",
+        "artifact": "A command‑line rock‑paper‑scissors game you can run in the terminal",
+        "order": 4,
+        "total": 10,
+        "previous_id": "meal_03_understand_strings",
+        "next_id": "meal_05_pick_a_random_computer_move"
+      },
+      "generated_at": 0,
+      "title": "Read the player's choice",
+      "concept": "python.basics.input_output",
+      "objective": "You can ask the player for input and store it as a string",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.basics.print"
+      ],
+      "next_concepts": [
+        "python.basics.strings",
+        "python.control.if"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Try changing the prompt to ask for a secret word"
+      },
+      "video_url": "/meals-data/videos/meal_04_read_the_player_s_choice.mp4",
+      "timing_url": "/meals-data/timing/meal_04_read_the_player_s_choice.timing.json",
+      "duration_sec": 36.984
+    },
+    {
+      "id": "meal_05_pick_a_random_computer_move",
+      "series": {
+        "title": "Build a Rock‑Paper‑Scissors Game",
+        "artifact": "A command‑line rock‑paper‑scissors game you can run in the terminal",
+        "order": 5,
+        "total": 10,
+        "previous_id": "meal_04_read_the_player_s_choice",
+        "next_id": "meal_06_write_an_if_elif_else_chain"
+      },
+      "generated_at": 0,
+      "title": "Pick a random computer move",
+      "concept": "python.basics.strings",
+      "objective": "You can select a random element from the moves list",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.basics.data_types"
+      ],
+      "next_concepts": [
+        "python.control.if",
+        "python.basics.print"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Modify the list or print the computer_choice variable to see different outcomes"
+      },
+      "video_url": "/meals-data/videos/meal_05_pick_a_random_computer_move.mp4",
+      "timing_url": "/meals-data/timing/meal_05_pick_a_random_computer_move.timing.json",
+      "duration_sec": 40.728
+    },
+    {
+      "id": "meal_06_write_an_if_elif_else_chain",
+      "series": {
+        "title": "Build a Rock‑Paper‑Scissors Game",
+        "artifact": "A command‑line rock‑paper‑scissors game you can run in the terminal",
+        "order": 6,
+        "total": 10,
+        "previous_id": "meal_05_pick_a_random_computer_move",
+        "next_id": "meal_07_detect_a_tie"
+      },
+      "generated_at": 0,
+      "title": "Write an if‑elif‑else chain",
+      "concept": "python.control.if",
+      "objective": "You can structure multiple conditions using if, elif, and else",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.basics.operators"
+      ],
+      "next_concepts": [
+        "python.basics.print",
+        "python.basics.print"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add the missing win conditions for paper and scissors to the chain.",
+        "hint": "Check each player move against the move it defeats."
+      },
+      "video_url": "/meals-data/videos/meal_06_write_an_if_elif_else_chain.mp4",
+      "timing_url": "/meals-data/timing/meal_06_write_an_if_elif_else_chain.timing.json",
+      "duration_sec": 38.784
+    },
+    {
+      "id": "meal_07_detect_a_tie",
+      "series": {
+        "title": "Build a Rock‑Paper‑Scissors Game",
+        "artifact": "A command‑line rock‑paper‑scissors game you can run in the terminal",
+        "order": 7,
+        "total": 10,
+        "previous_id": "meal_06_write_an_if_elif_else_chain",
+        "next_id": "meal_08_handle_a_win_scenario"
+      },
+      "generated_at": 0,
+      "title": "Detect a Tie in Rock‑Paper‑Scissors",
+      "concept": "python.basics.print",
+      "objective": "You can recognise when both players chose the same move and print a tie message",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.basics.print",
+        "python.basics.strings"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Modify the program to also announce a win for the player",
+        "hint": "Add an else‑if branch that compares the moves and prints a win message"
+      },
+      "video_url": "/meals-data/videos/meal_07_detect_a_tie.mp4",
+      "timing_url": "/meals-data/timing/meal_07_detect_a_tie.timing.json",
+      "duration_sec": 36.504
+    },
+    {
+      "id": "meal_08_handle_a_win_scenario",
+      "series": {
+        "title": "Build a Rock‑Paper‑Scissors Game",
+        "artifact": "A command‑line rock‑paper‑scissors game you can run in the terminal",
+        "order": 8,
+        "total": 10,
+        "previous_id": "meal_07_detect_a_tie",
+        "next_id": "meal_09_show_results_with_f_strings"
+      },
+      "generated_at": 0,
+      "title": "Handle a win scenario in Rock‑Paper‑Scissors",
+      "concept": "python.basics.print",
+      "objective": "Determine when the player wins and display the appropriate message",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.basics.strings",
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add the remaining win cases to your game.",
+        "hint": "Use similar elif statements for paper beats rock and scissors beats paper."
+      },
+      "video_url": "/meals-data/videos/meal_08_handle_a_win_scenario.mp4",
+      "timing_url": "/meals-data/timing/meal_08_handle_a_win_scenario.timing.json",
+      "duration_sec": 32.664
+    },
+    {
+      "id": "meal_09_show_results_with_f_strings",
+      "series": {
+        "title": "Build a Rock‑Paper‑Scissors Game",
+        "artifact": "A command‑line rock‑paper‑scissors game you can run in the terminal",
+        "order": 9,
+        "total": 10,
+        "previous_id": "meal_08_handle_a_win_scenario",
+        "next_id": "meal_10_run_the_complete_game"
+      },
+      "generated_at": 0,
+      "title": "Show results with f‑strings in Rock‑Paper‑Scissors",
+      "concept": "python.basics.strings",
+      "objective": "Embed variables inside a printed message using an f‑string",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.basics.data_types"
+      ],
+      "next_concepts": [
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Try changing the message to include a friendly emoji description."
+      },
+      "video_url": "/meals-data/videos/meal_09_show_results_with_f_strings.mp4",
+      "timing_url": "/meals-data/timing/meal_09_show_results_with_f_strings.timing.json",
+      "duration_sec": 23.976
+    },
+    {
+      "id": "meal_10_run_the_complete_game",
+      "series": {
+        "title": "Build a Rock‑Paper‑Scissors Game",
+        "artifact": "A command‑line rock‑paper‑scissors game you can run in the terminal",
+        "order": 10,
+        "total": 10,
+        "previous_id": "meal_09_show_results_with_f_strings",
+        "next_id": null
+      },
+      "generated_at": 0,
+      "title": "Run the Complete Rock‑Paper‑Scissors Game",
+      "concept": "python.project.overview",
+      "objective": "You can assemble all parts and execute a working rock‑paper‑scissors program",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Try adding a replay loop so the game repeats until you quit.",
+        "hint": "Wrap the whole code in a while True loop and break on a quit command."
+      },
+      "video_url": "/meals-data/videos/meal_10_run_the_complete_game.mp4",
+      "timing_url": "/meals-data/timing/meal_10_run_the_complete_game.timing.json",
+      "duration_sec": 34.488
+    },
+    {
+      "id": "meal_01_identify_the_main_function",
+      "series": {
+        "title": "Add Two Numbers in C",
+        "artifact": "A compiled C program that reads two integers, adds them, and prints the sum",
+        "order": 1,
+        "total": 7,
+        "previous_id": null,
+        "next_id": "meal_02_declare_integer_variables"
+      },
+      "generated_at": 0,
+      "title": "Identify the main function in C",
+      "concept": "python.project.overview",
+      "objective": "Recognize the int main() function that starts every C program",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.basics.variables",
+        "c.basics.scanf"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add a comment above int main() describing its purpose.",
+        "hint": "Mention that it is where the program begins."
+      },
+      "video_url": "/meals-data/videos/meal_01_identify_the_main_function.mp4",
+      "timing_url": "/meals-data/timing/meal_01_identify_the_main_function.timing.json",
+      "duration_sec": 25.968
+    },
+    {
+      "id": "meal_02_declare_integer_variables",
+      "series": {
+        "title": "Add Two Numbers in C",
+        "artifact": "A compiled C program that reads two integers, adds them, and prints the sum",
+        "order": 2,
+        "total": 7,
+        "previous_id": "meal_01_identify_the_main_function",
+        "next_id": "meal_03_read_input_with_scanf"
+      },
+      "generated_at": 0,
+      "title": "Declare Integer Variables in C",
+      "concept": "c.basics.variables",
+      "objective": "Write statements that create integer variables as labeled boxes",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "c.basics.hello_world"
+      ],
+      "next_concepts": [
+        "c.basics.scanf",
+        "c.basics.operators"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Declare a variable named total to hold the sum of two numbers.",
+        "hint": "Use the int keyword followed by the variable name and a semicolon."
+      },
+      "video_url": "/meals-data/videos/meal_02_declare_integer_variables.mp4",
+      "timing_url": "/meals-data/timing/meal_02_declare_integer_variables.timing.json",
+      "duration_sec": 42.336
+    },
+    {
+      "id": "meal_03_read_input_with_scanf",
+      "series": {
+        "title": "Add Two Numbers in C",
+        "artifact": "A compiled C program that reads two integers, adds them, and prints the sum",
+        "order": 3,
+        "total": 7,
+        "previous_id": "meal_02_declare_integer_variables",
+        "next_id": "meal_04_add_two_integers"
+      },
+      "generated_at": 0,
+      "title": "Read input with scanf",
+      "concept": "c.basics.scanf",
+      "objective": "Use scanf with a format specifier and ampersand to read integers",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "c.basics.printf"
+      ],
+      "next_concepts": [
+        "c.basics.operators",
+        "c.basics.printf"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Write a C line that reads an integer into a variable named score.",
+        "hint": "Remember the format specifier and the ampersand before the variable."
+      },
+      "video_url": "/meals-data/videos/meal_03_read_input_with_scanf.mp4",
+      "timing_url": "/meals-data/timing/meal_03_read_input_with_scanf.timing.json",
+      "duration_sec": 41.88
+    },
+    {
+      "id": "meal_04_add_two_integers",
+      "series": {
+        "title": "Add Two Numbers in C",
+        "artifact": "A compiled C program that reads two integers, adds them, and prints the sum",
+        "order": 4,
+        "total": 7,
+        "previous_id": "meal_03_read_input_with_scanf",
+        "next_id": "meal_05_print_the_sum_with_printf"
+      },
+      "generated_at": 0,
+      "title": "Add two integers",
+      "concept": "c.basics.operators",
+      "objective": "Perform addition on two integer variables and store the result",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "c.basics.variables"
+      ],
+      "next_concepts": [
+        "c.basics.printf",
+        "c.basics.hello_world"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Change the input numbers and run the program to see a different sum."
+      },
+      "video_url": "/meals-data/videos/meal_04_add_two_integers.mp4",
+      "timing_url": "/meals-data/timing/meal_04_add_two_integers.timing.json",
+      "duration_sec": 40.296
+    },
+    {
+      "id": "meal_05_print_the_sum_with_printf",
+      "series": {
+        "title": "Add Two Numbers in C",
+        "artifact": "A compiled C program that reads two integers, adds them, and prints the sum",
+        "order": 5,
+        "total": 7,
+        "previous_id": "meal_04_add_two_integers",
+        "next_id": "meal_06_compile_the_program_with_gcc"
+      },
+      "generated_at": 0,
+      "title": "Print the sum with printf",
+      "concept": "c.basics.printf",
+      "objective": "Use printf and the %d placeholder to output the computed sum.",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "c.basics.hello_world"
+      ],
+      "next_concepts": [
+        "c.basics.hello_world",
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Modify the program to label the sum as \"Result:\" before the number.",
+        "hint": "Change the format string inside printf."
+      },
+      "video_url": "/meals-data/videos/meal_05_print_the_sum_with_printf.mp4",
+      "timing_url": "/meals-data/timing/meal_05_print_the_sum_with_printf.timing.json",
+      "duration_sec": 31.824
+    },
+    {
+      "id": "meal_06_compile_the_program_with_gcc",
+      "series": {
+        "title": "Add Two Numbers in C",
+        "artifact": "A compiled C program that reads two integers, adds them, and prints the sum",
+        "order": 6,
+        "total": 7,
+        "previous_id": "meal_05_print_the_sum_with_printf",
+        "next_id": "meal_07_avoid_the_missing_ampersand_mistake"
+      },
+      "generated_at": 0,
+      "title": "Compile C code with gcc",
+      "concept": "c.basics.hello_world",
+      "objective": "Run gcc to turn C source into an executable binary",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Try compiling a hello world program with gcc",
+        "hint": "Use gcc hello.c -o hello"
+      },
+      "video_url": "/meals-data/videos/meal_06_compile_the_program_with_gcc.mp4",
+      "timing_url": "/meals-data/timing/meal_06_compile_the_program_with_gcc.timing.json",
+      "duration_sec": 36.024
+    },
+    {
+      "id": "meal_07_avoid_the_missing_ampersand_mistake",
+      "series": {
+        "title": "Add Two Numbers in C",
+        "artifact": "A compiled C program that reads two integers, adds them, and prints the sum",
+        "order": 7,
+        "total": 7,
+        "previous_id": "meal_06_compile_the_program_with_gcc",
+        "next_id": null
+      },
+      "generated_at": 0,
+      "title": "Avoid the missing ampersand mistake",
+      "concept": "python.project.overview",
+      "objective": "Identify and fix the common error of forgetting the ampersand in scanf",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Take a small C program that reads two numbers and add the missing ampersand wherever scanf is used."
+      },
+      "video_url": "/meals-data/videos/meal_07_avoid_the_missing_ampersand_mistake.mp4",
+      "timing_url": "/meals-data/timing/meal_07_avoid_the_missing_ampersand_mistake.timing.json",
+      "duration_sec": 46.488
+    },
+    {
+      "id": "meal_01_what_is_a_cpu",
+      "series": {
+        "title": "CPU Virtualization Basics",
+        "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+        "order": 1,
+        "total": 12,
+        "previous_id": null,
+        "next_id": "meal_02_why_virtualize_a_cpu"
+      },
+      "generated_at": 0,
+      "title": "What is a CPU?",
+      "concept": "python.project.overview",
+      "objective": "Identify the CPU as the computer's brain",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.project.overview",
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Draw a simple diagram showing a CPU connected to memory and labeled as the brain."
+      },
+      "video_url": "/meals-data/videos/meal_01_what_is_a_cpu.mp4",
+      "timing_url": "/meals-data/timing/meal_01_what_is_a_cpu.timing.json",
+      "duration_sec": 29.112
+    },
+    {
+      "id": "meal_02_why_virtualize_a_cpu",
+      "series": {
+        "title": "CPU Virtualization Basics",
+        "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+        "order": 2,
+        "total": 12,
+        "previous_id": "meal_01_what_is_a_cpu",
+        "next_id": "meal_03_time_sharing_basics"
+      },
+      "generated_at": 0,
+      "title": "Why virtualize a CPU?",
+      "concept": "python.project.overview",
+      "objective": "Explain how CPU virtualization aims for efficiency and security",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.project.overview",
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Try drawing your own flow diagram of how a virtual CPU schedules tasks."
+      },
+      "video_url": "/meals-data/videos/meal_02_why_virtualize_a_cpu.mp4",
+      "timing_url": "/meals-data/timing/meal_02_why_virtualize_a_cpu.timing.json",
+      "duration_sec": 48.768
+    },
+    {
+      "id": "meal_03_time_sharing_basics",
+      "series": {
+        "title": "CPU Virtualization Basics",
+        "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+        "order": 3,
+        "total": 12,
+        "previous_id": "meal_02_why_virtualize_a_cpu",
+        "next_id": "meal_04_program_vs_process"
+      },
+      "generated_at": 0,
+      "title": "Time Sharing Basics",
+      "concept": "python.project.overview",
+      "objective": "Describe how multiple processes share a CPU over time",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.project.overview",
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Modify the list or loop count to observe how the schedule changes.",
+        "hint": "Add a fourth process name or increase the outer loop iterations."
+      },
+      "video_url": "/meals-data/videos/meal_03_time_sharing_basics.mp4",
+      "timing_url": "/meals-data/timing/meal_03_time_sharing_basics.timing.json",
+      "duration_sec": 34.44
+    },
+    {
+      "id": "meal_04_program_vs_process",
+      "series": {
+        "title": "CPU Virtualization Basics",
+        "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+        "order": 4,
+        "total": 12,
+        "previous_id": "meal_03_time_sharing_basics",
+        "next_id": "meal_05_what_a_process_contains"
+      },
+      "generated_at": 0,
+      "title": "Program vs. Process",
+      "concept": "python.project.overview",
+      "objective": "Distinguish a static program from a running process",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.project.overview",
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Create a small text file with Python code and run it to see a process appear.",
+        "hint": "Use the command python your_file.py in a terminal."
+      },
+      "video_url": "/meals-data/videos/meal_04_program_vs_process.mp4",
+      "timing_url": "/meals-data/timing/meal_04_program_vs_process.timing.json",
+      "duration_sec": 47.544
+    },
+    {
+      "id": "meal_05_what_a_process_contains",
+      "series": {
+        "title": "CPU Virtualization Basics",
+        "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+        "order": 5,
+        "total": 12,
+        "previous_id": "meal_04_program_vs_process",
+        "next_id": "meal_06_process_control_block_pcb"
+      },
+      "generated_at": 0,
+      "title": "What a Process Contains",
+      "concept": "python.project.overview",
+      "objective": "List the memory sections, registers, and metadata that make up a process",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.project.overview",
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Sketch a process diagram labeling text, data, heap, stack, registers, and metadata.",
+        "hint": "Think of each part as a separate drawer holding specific items."
+      },
+      "video_url": "/meals-data/videos/meal_05_what_a_process_contains.mp4",
+      "timing_url": "/meals-data/timing/meal_05_what_a_process_contains.timing.json",
+      "duration_sec": 57
+    },
+    {
+      "id": "meal_06_process_control_block_pcb",
+      "series": {
+        "title": "CPU Virtualization Basics",
+        "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+        "order": 6,
+        "total": 12,
+        "previous_id": "meal_05_what_a_process_contains",
+        "next_id": "meal_07_process_states"
+      },
+      "generated_at": 0,
+      "title": "Process Control Block (PCB) Overview",
+      "concept": "python.project.overview",
+      "objective": "Define the PCB and explain its role in tracking a process’s state",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.project.overview",
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Write your own PCB dictionary with a different priority and print it.",
+        "hint": "Just change the value of the priority key."
+      },
+      "video_url": "/meals-data/videos/meal_06_process_control_block_pcb.mp4",
+      "timing_url": "/meals-data/timing/meal_06_process_control_block_pcb.timing.json",
+      "duration_sec": 54.528
+    },
+    {
+      "id": "meal_07_process_states",
+      "series": {
+        "title": "CPU Virtualization Basics",
+        "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+        "order": 7,
+        "total": 12,
+        "previous_id": "meal_06_process_control_block_pcb",
+        "next_id": "meal_08_why_states_change"
+      },
+      "generated_at": 0,
+      "title": "Process states",
+      "concept": "python.project.overview",
+      "objective": "Identify the three basic states a process can be in",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.project.overview",
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "List a real‑world example for each state"
+      },
+      "video_url": "/meals-data/videos/meal_07_process_states.mp4",
+      "timing_url": "/meals-data/timing/meal_07_process_states.timing.json",
+      "duration_sec": 41.736
+    },
+    {
+      "id": "meal_08_why_states_change",
+      "series": {
+        "title": "CPU Virtualization Basics",
+        "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+        "order": 8,
+        "total": 12,
+        "previous_id": "meal_07_process_states",
+        "next_id": "meal_09_priority_queue_in_scheduling"
+      },
+      "generated_at": 0,
+      "title": "Why a blocked process must become ready first",
+      "concept": "python.project.overview",
+      "objective": "Explain why a blocked process must become ready before it can run",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.project.overview",
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "List the steps a process follows from blocked to running in your own words"
+      },
+      "video_url": "/meals-data/videos/meal_08_why_states_change.mp4",
+      "timing_url": "/meals-data/timing/meal_08_why_states_change.timing.json",
+      "duration_sec": 33.792
+    },
+    {
+      "id": "meal_09_priority_queue_in_scheduling",
+      "series": {
+        "title": "CPU Virtualization Basics",
+        "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+        "order": 9,
+        "total": 12,
+        "previous_id": "meal_08_why_states_change",
+        "next_id": "meal_10_policy_vs_mechanism"
+      },
+      "generated_at": 0,
+      "title": "Priority Queue in Process Scheduling",
+      "concept": "python.project.overview",
+      "objective": "Describe why a priority queue is needed to order ready processes",
+      "difficulty": "intermediate",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.project.overview",
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Modify the priority values and observe how the execution order changes.",
+        "hint": "Lower numbers mean higher priority."
+      },
+      "video_url": "/meals-data/videos/meal_09_priority_queue_in_scheduling.mp4",
+      "timing_url": "/meals-data/timing/meal_09_priority_queue_in_scheduling.timing.json",
+      "duration_sec": 50.64
+    },
+    {
+      "id": "meal_10_policy_vs_mechanism",
+      "series": {
+        "title": "CPU Virtualization Basics",
+        "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+        "order": 10,
+        "total": 12,
+        "previous_id": "meal_09_priority_queue_in_scheduling",
+        "next_id": "meal_11_limited_direct_execution"
+      },
+      "generated_at": 0,
+      "title": "Policy vs. Mechanism in Scheduling",
+      "concept": "python.project.overview",
+      "objective": "Differentiate high‑level scheduling policy from its enforcement mechanism",
+      "difficulty": "intermediate",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.project.overview",
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Try writing down a simple policy and its mechanism."
+      },
+      "video_url": "/meals-data/videos/meal_10_policy_vs_mechanism.mp4",
+      "timing_url": "/meals-data/timing/meal_10_policy_vs_mechanism.timing.json",
+      "duration_sec": 43.08
+    },
+    {
+      "id": "meal_11_limited_direct_execution",
+      "series": {
+        "title": "CPU Virtualization Basics",
+        "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+        "order": 11,
+        "total": 12,
+        "previous_id": "meal_10_policy_vs_mechanism",
+        "next_id": "meal_12_os_regaining_cpu_control"
+      },
+      "generated_at": 0,
+      "title": "Limited Direct Execution Explained",
+      "concept": "python.project.overview",
+      "objective": "Explain how the OS intervenes only when necessary under limited direct execution",
+      "difficulty": "intermediate",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add another timer event in the code and observe how the scheduler picks the next process.",
+        "hint": "Insert an extra if condition after a few more iterations."
+      },
+      "video_url": "/meals-data/videos/meal_11_limited_direct_execution.mp4",
+      "timing_url": "/meals-data/timing/meal_11_limited_direct_execution.timing.json",
+      "duration_sec": 44.424
+    },
+    {
+      "id": "meal_12_os_regaining_cpu_control",
+      "series": {
+        "title": "CPU Virtualization Basics",
+        "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+        "order": 12,
+        "total": 12,
+        "previous_id": "meal_11_limited_direct_execution",
+        "next_id": null
+      },
+      "generated_at": 0,
+      "title": "OS Regaining CPU Control",
+      "concept": "python.project.overview",
+      "objective": "Identify the challenges the OS faces when it must take back the CPU",
+      "difficulty": "intermediate",
+      "prerequisites": [],
+      "next_concepts": [],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Try writing a loop that prints a message every second and then stops."
+      },
+      "video_url": "/meals-data/videos/meal_12_os_regaining_cpu_control.mp4",
+      "timing_url": "/meals-data/timing/meal_12_os_regaining_cpu_control.timing.json",
+      "duration_sec": 53.088
+    },
+    {
+      "id": "meal_01_what_is_an_ide_and_why_you_need_one",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 1,
+        "total": 22,
+        "previous_id": null,
+        "next_id": "meal_02_installing_code_blocks_on_windows"
+      },
+      "generated_at": 0,
+      "title": "What is an IDE and why you need one",
+      "concept": "c.project.overview",
+      "objective": "Explain what an IDE is and why it is needed to write C programs",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Open a free IDE, create a file named hello.c, write a main function that prints \"Hello\", and build it.",
+        "hint": "Look for a button labeled run or build."
+      },
+      "video_url": "/meals-data/videos/meal_01_what_is_an_ide_and_why_you_need_one.mp4",
+      "timing_url": "/meals-data/timing/meal_01_what_is_an_ide_and_why_you_need_one.timing.json",
+      "duration_sec": 40.608
+    },
+    {
+      "id": "meal_02_installing_code_blocks_on_windows",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 2,
+        "total": 22,
+        "previous_id": "meal_01_what_is_an_ide_and_why_you_need_one",
+        "next_id": "meal_03_setting_gcc_as_the_default_compiler"
+      },
+      "generated_at": 0,
+      "title": "Installing Code::Blocks on Windows",
+      "concept": "c.project.overview",
+      "objective": "Install the Code::Blocks IDE on a Windows computer",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Try installing Code::Blocks on your own computer."
+      },
+      "video_url": "/meals-data/videos/meal_02_installing_code_blocks_on_windows.mp4",
+      "timing_url": "/meals-data/timing/meal_02_installing_code_blocks_on_windows.timing.json",
+      "duration_sec": 43.104
+    },
+    {
+      "id": "meal_03_setting_gcc_as_the_default_compiler",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 3,
+        "total": 22,
+        "previous_id": "meal_02_installing_code_blocks_on_windows",
+        "next_id": "meal_04_creating_a_new_console_project"
+      },
+      "generated_at": 0,
+      "title": "Set GCC as Code::Blocks Default Compiler",
+      "concept": "c.project.overview",
+      "objective": "Select GNU GCC as the default compiler in Code::Blocks",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Create a new project and verify it builds with GCC."
+      },
+      "video_url": "/meals-data/videos/meal_03_setting_gcc_as_the_default_compiler.mp4",
+      "timing_url": "/meals-data/timing/meal_03_setting_gcc_as_the_default_compiler.timing.json",
+      "duration_sec": 31.944
+    },
+    {
+      "id": "meal_04_creating_a_new_console_project",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 4,
+        "total": 22,
+        "previous_id": "meal_03_setting_gcc_as_the_default_compiler",
+        "next_id": "meal_05_understanding_the_generated_main_c_file"
+      },
+      "generated_at": 0,
+      "title": "Creating a New Console Project in Code::Blocks",
+      "concept": "c.project.overview",
+      "objective": "Start a new C console application project in Code::Blocks",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Create your own console project and run the empty program."
+      },
+      "video_url": "/meals-data/videos/meal_04_creating_a_new_console_project.mp4",
+      "timing_url": "/meals-data/timing/meal_04_creating_a_new_console_project.timing.json",
+      "duration_sec": 46.368
+    },
+    {
+      "id": "meal_05_understanding_the_generated_main_c_file",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 5,
+        "total": 22,
+        "previous_id": "meal_04_creating_a_new_console_project",
+        "next_id": "meal_06_compiling_and_running_a_c_program"
+      },
+      "generated_at": 0,
+      "title": "Understanding the generated main.c file",
+      "concept": "c.project.overview",
+      "objective": "Identify the default structure of the main.c file created by the IDE",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Create a new console project and find the #include line and main function in main.c.",
+        "hint": "Look for the line that begins with hash include and the function named main."
+      },
+      "video_url": "/meals-data/videos/meal_05_understanding_the_generated_main_c_file.mp4",
+      "timing_url": "/meals-data/timing/meal_05_understanding_the_generated_main_c_file.timing.json",
+      "duration_sec": 41.784
+    },
+    {
+      "id": "meal_06_compiling_and_running_a_c_program",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 6,
+        "total": 22,
+        "previous_id": "meal_05_understanding_the_generated_main_c_file",
+        "next_id": "meal_07_printing_text_with_printf"
+      },
+      "generated_at": 0,
+      "title": "Compiling and Running a C Program",
+      "concept": "c.project.overview",
+      "objective": "Build and run a C program inside the IDE",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Build and run the default main.c program in your IDE."
+      },
+      "video_url": "/meals-data/videos/meal_06_compiling_and_running_a_c_program.mp4",
+      "timing_url": "/meals-data/timing/meal_06_compiling_and_running_a_c_program.timing.json",
+      "duration_sec": 47.16
+    },
+    {
+      "id": "meal_07_printing_text_with_printf",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 7,
+        "total": 22,
+        "previous_id": "meal_06_compiling_and_running_a_c_program",
+        "next_id": "meal_08_understanding_statements_and_semicolons"
+      },
+      "generated_at": 0,
+      "title": "Printing text with printf in C",
+      "concept": "c.project.overview",
+      "objective": "Use printf to display text on the console",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "python.basics.variables"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Change the message inside printf to greet yourself",
+        "hint": "Replace Hello, world! with your own words"
+      },
+      "video_url": "/meals-data/videos/meal_07_printing_text_with_printf.mp4",
+      "timing_url": "/meals-data/timing/meal_07_printing_text_with_printf.timing.json",
+      "duration_sec": 35.4
+    },
+    {
+      "id": "meal_08_understanding_statements_and_semicolons",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 8,
+        "total": 22,
+        "previous_id": "meal_07_printing_text_with_printf",
+        "next_id": "meal_09_variables_as_containers"
+      },
+      "generated_at": 0,
+      "title": "Why Every C Statement Ends with a Semicolon",
+      "concept": "c.project.overview",
+      "objective": "Explain why each statement must end with a semicolon and how execution order follows those marks",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.basics.variables",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add a second printf that prints a message, making sure each line ends with a semicolon.",
+        "hint": "Place the new printf after the first and end it with a semicolon."
+      },
+      "video_url": "/meals-data/videos/meal_08_understanding_statements_and_semicolons.mp4",
+      "timing_url": "/meals-data/timing/meal_08_understanding_statements_and_semicolons.timing.json",
+      "duration_sec": 32.856
+    },
+    {
+      "id": "meal_09_variables_as_containers",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 9,
+        "total": 22,
+        "previous_id": "meal_08_understanding_statements_and_semicolons",
+        "next_id": "meal_10_printing_variables_with_format_specifiers"
+      },
+      "generated_at": 0,
+      "title": "Variables as containers in C",
+      "concept": "python.basics.variables",
+      "objective": "Declare, assign, and reuse variables of basic types",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Declare your own int, double, and char array, assign values, and print them."
+      },
+      "video_url": "/meals-data/videos/meal_09_variables_as_containers.mp4",
+      "timing_url": "/meals-data/timing/meal_09_variables_as_containers.timing.json",
+      "duration_sec": 57.624
+    },
+    {
+      "id": "meal_10_printing_variables_with_format_specifiers",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 10,
+        "total": 22,
+        "previous_id": "meal_09_variables_as_containers",
+        "next_id": "meal_11_reading_input_with_scanf"
+      },
+      "generated_at": 0,
+      "title": "Printing variables with format specifiers",
+      "concept": "c.project.overview",
+      "objective": "Use printf format specifiers to display variable values",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Try printing your own variables using different specifiers"
+      },
+      "video_url": "/meals-data/videos/meal_10_printing_variables_with_format_specifiers.mp4",
+      "timing_url": "/meals-data/timing/meal_10_printing_variables_with_format_specifiers.timing.json",
+      "duration_sec": 66.312
+    },
+    {
+      "id": "meal_12_reading_whole_lines_with_fgets",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 12,
+        "total": 22,
+        "previous_id": "meal_11_reading_input_with_scanf",
+        "next_id": "meal_13_simple_arithmetic_operations"
+      },
+      "generated_at": 0,
+      "title": "Reading whole lines with fgets",
+      "concept": "c.project.overview",
+      "objective": "Use fgets to read a full line of text including spaces",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Modify the program to echo the line back in uppercase letters",
+        "hint": "Loop over each character and apply the toupper function"
+      },
+      "video_url": "/meals-data/videos/meal_12_reading_whole_lines_with_fgets.mp4",
+      "timing_url": "/meals-data/timing/meal_12_reading_whole_lines_with_fgets.timing.json",
+      "duration_sec": 53.328
+    },
+    {
+      "id": "meal_13_simple_arithmetic_operations",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 13,
+        "total": 22,
+        "previous_id": "meal_12_reading_whole_lines_with_fgets",
+        "next_id": "meal_14_using_the_math_library_pow_sqrt_ceil_floor"
+      },
+      "generated_at": 0,
+      "title": "Simple arithmetic operations in C",
+      "concept": "c.project.overview",
+      "objective": "Perform addition, subtraction, multiplication, and division with integers and doubles",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Modify the program to use different numbers and observe the new results.",
+        "hint": "Change the initial values of i1, i2, d1, or d2."
+      },
+      "video_url": "/meals-data/videos/meal_13_simple_arithmetic_operations.mp4",
+      "timing_url": "/meals-data/timing/meal_13_simple_arithmetic_operations.timing.json",
+      "duration_sec": 75.048
+    },
+    {
+      "id": "meal_14_using_the_math_library_pow_sqrt_ceil_floor",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 14,
+        "total": 22,
+        "previous_id": "meal_13_simple_arithmetic_operations",
+        "next_id": "meal_15_writing_comments"
+      },
+      "generated_at": 0,
+      "title": "Using the C math library functions",
+      "concept": "c.project.overview",
+      "objective": "Call pow, sqrt, ceil, and floor from <math.h> in a C program",
+      "difficulty": "intermediate",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Change the input number and note how each function's result changes."
+      },
+      "video_url": "/meals-data/videos/meal_14_using_the_math_library_pow_sqrt_ceil_floor.mp4",
+      "timing_url": "/meals-data/timing/meal_14_using_the_math_library_pow_sqrt_ceil_floor.timing.json",
+      "duration_sec": 60.744
+    },
+    {
+      "id": "meal_15_writing_comments",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 15,
+        "total": 22,
+        "previous_id": "meal_14_using_the_math_library_pow_sqrt_ceil_floor",
+        "next_id": "meal_16_arrays_and_indexing"
+      },
+      "generated_at": 0,
+      "title": "Adding Comments in C",
+      "concept": "c.project.overview",
+      "objective": "Add single‑line and multi‑line comments and the const keyword to C code",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "python.functions.define"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add a comment describing what each line does in a simple C program.",
+        "hint": "Use // for one‑line notes and /* … */ for longer ones."
+      },
+      "video_url": "/meals-data/videos/meal_15_writing_comments.mp4",
+      "timing_url": "/meals-data/timing/meal_15_writing_comments.timing.json",
+      "duration_sec": 43.104
+    },
+    {
+      "id": "meal_16_arrays_and_indexing",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 16,
+        "total": 22,
+        "previous_id": "meal_15_writing_comments",
+        "next_id": "meal_17_defining_and_calling_functions"
+      },
+      "generated_at": 0,
+      "title": "Arrays and Indexing in C",
+      "concept": "c.project.overview",
+      "objective": "Declare an integer array and retrieve elements using their index",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.functions.define",
+        "python.control.if"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Modify the program to print the value at index four instead of two.",
+        "hint": "Change the index inside the brackets to 4."
+      },
+      "video_url": "/meals-data/videos/meal_16_arrays_and_indexing.mp4",
+      "timing_url": "/meals-data/timing/meal_16_arrays_and_indexing.timing.json",
+      "duration_sec": 60.84
+    },
+    {
+      "id": "meal_17_defining_and_calling_functions",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 17,
+        "total": 22,
+        "previous_id": "meal_16_arrays_and_indexing",
+        "next_id": "meal_18_conditional_statements_if_else"
+      },
+      "generated_at": 0,
+      "title": "Defining and Calling Functions in C",
+      "concept": "python.functions.define",
+      "objective": "Create a function that returns a value and call it from main",
+      "difficulty": "intermediate",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.control.if",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Write a function that multiplies three numbers and returns the product."
+      },
+      "video_url": "/meals-data/videos/meal_17_defining_and_calling_functions.mp4",
+      "timing_url": "/meals-data/timing/meal_17_defining_and_calling_functions.timing.json",
+      "duration_sec": 22.752
+    },
+    {
+      "id": "meal_18_conditional_statements_if_else",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 18,
+        "total": 22,
+        "previous_id": "meal_17_defining_and_calling_functions",
+        "next_id": "meal_19_switch_statements_and_structs"
+      },
+      "generated_at": 0,
+      "title": "Using if, else if, and else in C",
+      "concept": "python.control.if",
+      "objective": "Apply if, else if, and else to choose actions based on variable values",
+      "difficulty": "intermediate",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "python.control.for"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Write a program that categorizes ages as child, teen, or adult using if else.",
+        "hint": "Check age ranges with greater‑than and less‑than comparisons."
+      },
+      "video_url": "/meals-data/videos/meal_18_conditional_statements_if_else.mp4",
+      "timing_url": "/meals-data/timing/meal_18_conditional_statements_if_else.timing.json",
+      "duration_sec": 67.152
+    },
+    {
+      "id": "meal_19_switch_statements_and_structs",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 19,
+        "total": 22,
+        "previous_id": "meal_18_conditional_statements_if_else",
+        "next_id": "meal_20_loops_while_and_for"
+      },
+      "generated_at": 0,
+      "title": "Switch Statements and Structs in C",
+      "concept": "c.project.overview",
+      "objective": "Use a switch statement and define a simple struct",
+      "difficulty": "intermediate",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.control.for",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add a case for the number five that prints \"Perfect!\" using the same struct.",
+        "hint": "Create another case label 5 and set the message field accordingly."
+      },
+      "video_url": "/meals-data/videos/meal_19_switch_statements_and_structs.mp4",
+      "timing_url": "/meals-data/timing/meal_19_switch_statements_and_structs.timing.json",
+      "duration_sec": 61.176
+    },
+    {
+      "id": "meal_20_loops_while_and_for",
+      "series": {
+        "title": "C Programming Basics",
+        "artifact": "A simple C program that reads input, does calculations, and plays a number‑guessing game",
+        "order": 20,
+        "total": 22,
+        "previous_id": "meal_19_switch_statements_and_structs",
+        "next_id": "meal_21_building_a_simple_calculator"
+      },
+      "generated_at": 0,
+      "title": "Loops: while and for in C",
+      "concept": "python.control.for",
+      "objective": "Write while and for loops to repeat actions",
+      "difficulty": "intermediate",
+      "prerequisites": [],
+      "next_concepts": [
+        "c.project.overview",
+        "c.project.overview"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Write a while loop that sums numbers until the total exceeds 100.",
+        "hint": "Add each number to a total and stop when the total is greater than one hundred."
+      },
+      "video_url": "/meals-data/videos/meal_20_loops_while_and_for.mp4",
+      "timing_url": "/meals-data/timing/meal_20_loops_while_and_for.timing.json",
+      "duration_sec": 46.752
+    },
+    {
+      "id": "meal_01_what_we_ll_build",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 1,
+        "total": 17,
+        "previous_id": null,
+        "next_id": "meal_02_variables_and_basic_types"
+      },
+      "generated_at": 0,
+      "title": "What We'll Build: Slot‑Machine Deposit Overview",
+      "concept": "python.project.overview",
+      "objective": "Understand the overall goal of the slot‑machine deposit program",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.basics.variables",
+        "python.basics.input_output"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Write down the three steps this program will perform, in your own words."
+      },
+      "video_url": "/meals-data/videos/meal_01_what_we_ll_build.mp4",
+      "timing_url": "/meals-data/timing/meal_01_what_we_ll_build.timing.json",
+      "duration_sec": 29.688
+    },
+    {
+      "id": "meal_02_variables_and_basic_types",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 2,
+        "total": 17,
+        "previous_id": "meal_01_what_we_ll_build",
+        "next_id": "meal_03_printing_and_getting_input"
+      },
+      "generated_at": 0,
+      "title": "Variables and Basic Types",
+      "concept": "python.basics.variables",
+      "objective": "Create and store values using variables, strings, and integers",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.basics.input_output",
+        "python.functions.define"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add a variable for the bet amount, read it, and include it in the printed summary.",
+        "hint": "Use input, convert to int, and concatenate in the print statement."
+      },
+      "video_url": "/meals-data/videos/meal_02_variables_and_basic_types.mp4",
+      "timing_url": "/meals-data/timing/meal_02_variables_and_basic_types.timing.json",
+      "duration_sec": 36.312
+    },
+    {
+      "id": "meal_03_printing_and_getting_input",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 3,
+        "total": 17,
+        "previous_id": "meal_02_variables_and_basic_types",
+        "next_id": "meal_04_defining_a_function"
+      },
+      "generated_at": 0,
+      "title": "Printing messages and reading user input",
+      "concept": "python.basics.input_output",
+      "objective": "Use print to display text and input to read user text",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.basics.print"
+      ],
+      "next_concepts": [
+        "python.functions.define",
+        "python.functions.parameters"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Try changing the prompt and printing a greeting."
+      },
+      "video_url": "/meals-data/videos/meal_03_printing_and_getting_input.mp4",
+      "timing_url": "/meals-data/timing/meal_03_printing_and_getting_input.timing.json",
+      "duration_sec": 33.408
+    },
+    {
+      "id": "meal_04_defining_a_function",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 4,
+        "total": 17,
+        "previous_id": "meal_03_printing_and_getting_input",
+        "next_id": "meal_05_calling_a_function"
+      },
+      "generated_at": 0,
+      "title": "Defining a Reusable Function",
+      "concept": "python.functions.define",
+      "objective": "Write a reusable block of code using the def keyword",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.basics.variables"
+      ],
+      "next_concepts": [
+        "python.functions.parameters",
+        "python.control.while"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Create a function that takes a name and prints a greeting.",
+        "hint": "Use def, a parameter for the name, and print inside the function."
+      },
+      "video_url": "/meals-data/videos/meal_04_defining_a_function.mp4",
+      "timing_url": "/meals-data/timing/meal_04_defining_a_function.timing.json",
+      "duration_sec": 56.376
+    },
+    {
+      "id": "meal_05_calling_a_function",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 5,
+        "total": 17,
+        "previous_id": "meal_04_defining_a_function",
+        "next_id": "meal_06_while_loops_for_repetition"
+      },
+      "generated_at": 0,
+      "title": "Calling a Function",
+      "concept": "python.functions.parameters",
+      "objective": "Execute a previously defined function and use its result",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.functions.define"
+      ],
+      "next_concepts": [
+        "python.control.while",
+        "python.basics.strings"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Write a function that returns the square of a number and call it",
+        "hint": "Use the ** operator to square the input"
+      },
+      "video_url": "/meals-data/videos/meal_05_calling_a_function.mp4",
+      "timing_url": "/meals-data/timing/meal_05_calling_a_function.timing.json",
+      "duration_sec": 30.792
+    },
+    {
+      "id": "meal_06_while_loops_for_repetition",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 6,
+        "total": 17,
+        "previous_id": "meal_05_calling_a_function",
+        "next_id": "meal_07_checking_digits_and_converting_types"
+      },
+      "generated_at": 0,
+      "title": "While Loops for Repetition",
+      "concept": "python.control.while",
+      "objective": "Repeat a block of code until a condition changes",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.control.if"
+      ],
+      "next_concepts": [
+        "python.basics.strings",
+        "python.basics.operators"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Try changing the condition to stop after three attempts.",
+        "hint": "Add a counter variable that increments each loop."
+      },
+      "video_url": "/meals-data/videos/meal_06_while_loops_for_repetition.mp4",
+      "timing_url": "/meals-data/timing/meal_06_while_loops_for_repetition.timing.json",
+      "duration_sec": 43.2
+    },
+    {
+      "id": "meal_07_checking_digits_and_converting_types",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 7,
+        "total": 17,
+        "previous_id": "meal_06_while_loops_for_repetition",
+        "next_id": "meal_08_comparisons_and_positive_checks"
+      },
+      "generated_at": 0,
+      "title": "Checking Digits and Converting Types",
+      "concept": "python.basics.strings",
+      "objective": "Verify a string is numeric with isdigit and convert it to an integer",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.basics.data_types"
+      ],
+      "next_concepts": [
+        "python.basics.operators",
+        "python.functions.define"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Write a function that asks for a bet amount and validates it the same way.",
+        "hint": "Reuse the isdigit check before converting."
+      },
+      "video_url": "/meals-data/videos/meal_07_checking_digits_and_converting_types.mp4",
+      "timing_url": "/meals-data/timing/meal_07_checking_digits_and_converting_types.timing.json",
+      "duration_sec": 20.904
+    },
+    {
+      "id": "meal_08_comparisons_and_positive_checks",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 8,
+        "total": 17,
+        "previous_id": "meal_07_checking_digits_and_converting_types",
+        "next_id": "meal_09_deposit_function_full_validation"
+      },
+      "generated_at": 0,
+      "title": "Using Comparison Operators to Enforce Positive Values",
+      "concept": "python.basics.operators",
+      "objective": "Compare numbers and ensure a value is greater than zero",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.basics.data_types"
+      ],
+      "next_concepts": [
+        "python.functions.define",
+        "python.basics.variables"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Write a check that only accepts ages over 13 and prints a welcome message.",
+        "hint": "Use the greater than operator with the entered age."
+      },
+      "video_url": "/meals-data/videos/meal_08_comparisons_and_positive_checks.mp4",
+      "timing_url": "/meals-data/timing/meal_08_comparisons_and_positive_checks.timing.json",
+      "duration_sec": 42.216
+    },
+    {
+      "id": "meal_09_deposit_function_full_validation",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 9,
+        "total": 17,
+        "previous_id": "meal_08_comparisons_and_positive_checks",
+        "next_id": "meal_10_global_constants"
+      },
+      "generated_at": 0,
+      "title": "Deposit Function – Full Validation",
+      "concept": "python.functions.define",
+      "objective": "Create a deposit() function that repeatedly asks for a positive numeric amount and returns it.",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.basics.variables"
+      ],
+      "next_concepts": [
+        "python.basics.variables",
+        "python.control.if"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add a second function that asks for a bet amount using the same pattern.",
+        "hint": "Copy the deposit function and rename it, changing the prompt text."
+      },
+      "video_url": "/meals-data/videos/meal_09_deposit_function_full_validation.mp4",
+      "timing_url": "/meals-data/timing/meal_09_deposit_function_full_validation.timing.json",
+      "duration_sec": 57.864
+    },
+    {
+      "id": "meal_10_global_constants",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 10,
+        "total": 17,
+        "previous_id": "meal_09_deposit_function_full_validation",
+        "next_id": "meal_11_choosing_number_of_lines"
+      },
+      "generated_at": 0,
+      "title": "Define Global Constants for Settings",
+      "concept": "python.basics.variables",
+      "objective": "Define configuration values in all caps at the top of the file",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.control.if",
+        "python.control.if"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add a new constant called MAX_SPIN and use it in a print statement.",
+        "hint": "Define MAX_SPIN = 5 and print it after the other constants."
+      },
+      "video_url": "/meals-data/videos/meal_10_global_constants.mp4",
+      "timing_url": "/meals-data/timing/meal_10_global_constants.timing.json",
+      "duration_sec": 43.152
+    },
+    {
+      "id": "meal_11_choosing_number_of_lines",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 11,
+        "total": 17,
+        "previous_id": "meal_10_global_constants",
+        "next_id": "meal_12_bet_per_line_validation"
+      },
+      "generated_at": 0,
+      "title": "Choosing Number of Lines",
+      "concept": "python.control.if",
+      "objective": "Prompt for 1‑3 lines, validate with a while loop and chained comparisons",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.basics.operators"
+      ],
+      "next_concepts": [
+        "python.control.if",
+        "python.basics.print"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Modify the function to allow betting on up to five lines.",
+        "hint": "Just change the MAX_LINES constant."
+      },
+      "video_url": "/meals-data/videos/meal_11_choosing_number_of_lines.mp4",
+      "timing_url": "/meals-data/timing/meal_11_choosing_number_of_lines.timing.json",
+      "duration_sec": 39.528
+    },
+    {
+      "id": "meal_12_bet_per_line_validation",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 12,
+        "total": 17,
+        "previous_id": "meal_11_choosing_number_of_lines",
+        "next_id": "meal_13_printing_a_bet_summary"
+      },
+      "generated_at": 0,
+      "title": "Bet Per Line Validation",
+      "concept": "python.control.if",
+      "objective": "Prompt for a bet amount per line, ensure it is within limits and does not exceed the balance",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.basics.operators"
+      ],
+      "next_concepts": [
+        "python.basics.print",
+        "python.data.dicts"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Modify the minimum bet value and observe how the validation reacts."
+      },
+      "video_url": "/meals-data/videos/meal_12_bet_per_line_validation.mp4",
+      "timing_url": "/meals-data/timing/meal_12_bet_per_line_validation.timing.json",
+      "duration_sec": 50.4
+    },
+    {
+      "id": "meal_13_printing_a_bet_summary",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 13,
+        "total": 17,
+        "previous_id": "meal_12_bet_per_line_validation",
+        "next_id": "meal_14_symbol_count_dictionary"
+      },
+      "generated_at": 0,
+      "title": "Printing a Bet Summary",
+      "concept": "python.basics.print",
+      "objective": "Display the chosen lines and bet amount using an f‑string",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "next_concepts": [
+        "python.data.dicts",
+        "python.data.lists"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Try changing the bet amount and see how the printed summary updates."
+      },
+      "video_url": "/meals-data/videos/meal_13_printing_a_bet_summary.mp4",
+      "timing_url": "/meals-data/timing/meal_13_printing_a_bet_summary.timing.json",
+      "duration_sec": 27.864
+    },
+    {
+      "id": "meal_14_symbol_count_dictionary",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 14,
+        "total": 17,
+        "previous_id": "meal_13_printing_a_bet_summary",
+        "next_id": "meal_15_generating_a_random_spin"
+      },
+      "generated_at": 0,
+      "title": "Create a Symbol Count Dictionary for the Slot Machine",
+      "concept": "python.data.dicts",
+      "objective": "Build a dictionary that maps each slot symbol to the number of times it appears on a reel",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.data.lists"
+      ],
+      "next_concepts": [
+        "python.data.lists",
+        "python.control.for"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Add a second reel list and extend the dictionary to count symbols across both reels.",
+        "hint": "Create a second symbols list and repeat the counting loop, updating the same dictionary."
+      },
+      "video_url": "/meals-data/videos/meal_14_symbol_count_dictionary.mp4",
+      "timing_url": "/meals-data/timing/meal_14_symbol_count_dictionary.timing.json",
+      "duration_sec": 30.096
+    },
+    {
+      "id": "meal_15_generating_a_random_spin",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 15,
+        "total": 17,
+        "previous_id": "meal_14_symbol_count_dictionary",
+        "next_id": "meal_16_transposing_and_printing_the_spin"
+      },
+      "generated_at": 0,
+      "title": "Generating a Random Slot Machine Spin",
+      "concept": "python.data.lists",
+      "objective": "Build columns of random symbols without repeats using lists and random.choice",
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "python.basics.data_types"
+      ],
+      "next_concepts": [
+        "python.control.for",
+        "python.functions.define"
+      ],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Try changing the number of columns or symbols to see different results.",
+        "hint": "Adjust the columns argument or add new symbols to the dictionary."
+      },
+      "video_url": "/meals-data/videos/meal_15_generating_a_random_spin.mp4",
+      "timing_url": "/meals-data/timing/meal_15_generating_a_random_spin.timing.json",
+      "duration_sec": 49.08
+    },
+    {
+      "id": "meal_17_main_entry_point",
+      "series": {
+        "title": "Build a Simple Slot‑Machine Deposit App",
+        "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot‑machine spin",
+        "order": 17,
+        "total": 17,
+        "previous_id": "meal_16_transposing_and_printing_the_spin",
+        "next_id": null
+      },
+      "generated_at": 0,
+      "title": "Wrap the Slot Machine Flow in a main() Function",
+      "concept": "python.functions.define",
+      "objective": "Encapsulate the entire program flow inside a main function and invoke it.",
+      "difficulty": "beginner",
+      "prerequisites": [
+        "python.basics.variables"
+      ],
+      "next_concepts": [],
+      "practice": {
+        "kind": "write_code",
+        "prompt": "Try adding a welcome message inside main before the deposit step.",
+        "hint": "Use a print statement at the start of main."
+      },
+      "video_url": "/meals-data/videos/meal_17_main_entry_point.mp4",
+      "timing_url": "/meals-data/timing/meal_17_main_entry_point.timing.json",
+      "duration_sec": 33.792
+    }
+  ]
+}

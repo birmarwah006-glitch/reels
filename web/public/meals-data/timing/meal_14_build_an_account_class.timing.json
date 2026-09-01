@@ -1,0 +1,817 @@
+{
+  "meal_id": "meal_14_build_an_account_class",
+  "audio": "meal_14_build_an_account_class.mp3",
+  "duration": 42.864,
+  "alignment": "whisper",
+  "anchors": {
+    "What happens when you spend more than you have?": 0.0,
+    "How to track money with debit and credit methods?": 2.9,
+    "The Account class will hold the current balance as an instance attribute.": 12.58,
+    "Now let's see the code.": 29.56,
+    "Running this prints the balance after each operation.": 31.54,
+    "An Account object lets you safely modify and view its balance.": 34.08,
+    "Create an Account and try withdrawing more than the balance.": 38.26
+  },
+  "captions": [
+    {
+      "text": "What happens when you spend",
+      "start": 0.0,
+      "end": 1.46,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.3
+        },
+        {
+          "w": "happens",
+          "start": 0.3,
+          "end": 0.72
+        },
+        {
+          "w": "when",
+          "start": 0.72,
+          "end": 1.02
+        },
+        {
+          "w": "you",
+          "start": 1.02,
+          "end": 1.2
+        },
+        {
+          "w": "spend",
+          "start": 1.2,
+          "end": 1.46
+        }
+      ]
+    },
+    {
+      "text": "more than you have? How",
+      "start": 1.46,
+      "end": 3.0,
+      "words": [
+        {
+          "w": "more",
+          "start": 1.46,
+          "end": 1.82
+        },
+        {
+          "w": "than",
+          "start": 1.82,
+          "end": 2.04
+        },
+        {
+          "w": "you",
+          "start": 2.04,
+          "end": 2.2
+        },
+        {
+          "w": "have?",
+          "start": 2.2,
+          "end": 2.6
+        },
+        {
+          "w": "How",
+          "start": 2.9,
+          "end": 3.0
+        }
+      ]
+    },
+    {
+      "text": "to track money with debit",
+      "start": 3.0,
+      "end": 4.26,
+      "words": [
+        {
+          "w": "to",
+          "start": 3.0,
+          "end": 3.16
+        },
+        {
+          "w": "track",
+          "start": 3.16,
+          "end": 3.42
+        },
+        {
+          "w": "money",
+          "start": 3.42,
+          "end": 3.68
+        },
+        {
+          "w": "with",
+          "start": 3.68,
+          "end": 3.96
+        },
+        {
+          "w": "debit",
+          "start": 3.96,
+          "end": 4.26
+        }
+      ]
+    },
+    {
+      "text": "and credit methods? Imagine a",
+      "start": 4.26,
+      "end": 6.3,
+      "words": [
+        {
+          "w": "and",
+          "start": 4.26,
+          "end": 4.54
+        },
+        {
+          "w": "credit",
+          "start": 4.54,
+          "end": 4.78
+        },
+        {
+          "w": "methods?",
+          "start": 4.78,
+          "end": 5.22
+        },
+        {
+          "w": "Imagine",
+          "start": 5.82,
+          "end": 6.06
+        },
+        {
+          "w": "a",
+          "start": 6.06,
+          "end": 6.3
+        }
+      ]
+    },
+    {
+      "text": "bank account you can add",
+      "start": 6.3,
+      "end": 7.56,
+      "words": [
+        {
+          "w": "bank",
+          "start": 6.3,
+          "end": 6.5
+        },
+        {
+          "w": "account",
+          "start": 6.5,
+          "end": 6.86
+        },
+        {
+          "w": "you",
+          "start": 6.86,
+          "end": 7.02
+        },
+        {
+          "w": "can",
+          "start": 7.02,
+          "end": 7.34
+        },
+        {
+          "w": "add",
+          "start": 7.34,
+          "end": 7.56
+        }
+      ]
+    },
+    {
+      "text": "or remove money from. In",
+      "start": 7.56,
+      "end": 9.38,
+      "words": [
+        {
+          "w": "or",
+          "start": 7.56,
+          "end": 7.88
+        },
+        {
+          "w": "remove",
+          "start": 7.88,
+          "end": 8.12
+        },
+        {
+          "w": "money",
+          "start": 8.12,
+          "end": 8.44
+        },
+        {
+          "w": "from.",
+          "start": 8.44,
+          "end": 8.9
+        },
+        {
+          "w": "In",
+          "start": 9.2,
+          "end": 9.38
+        }
+      ]
+    },
+    {
+      "text": "Python, a class is a",
+      "start": 9.38,
+      "end": 10.82,
+      "words": [
+        {
+          "w": "Python,",
+          "start": 9.38,
+          "end": 9.76
+        },
+        {
+          "w": "a",
+          "start": 10.06,
+          "end": 10.16
+        },
+        {
+          "w": "class",
+          "start": 10.16,
+          "end": 10.44
+        },
+        {
+          "w": "is",
+          "start": 10.44,
+          "end": 10.7
+        },
+        {
+          "w": "a",
+          "start": 10.7,
+          "end": 10.82
+        }
+      ]
+    },
+    {
+      "text": "blueprint for such objects. The",
+      "start": 10.82,
+      "end": 12.7,
+      "words": [
+        {
+          "w": "blueprint",
+          "start": 10.82,
+          "end": 11.12
+        },
+        {
+          "w": "for",
+          "start": 11.12,
+          "end": 11.46
+        },
+        {
+          "w": "such",
+          "start": 11.46,
+          "end": 11.7
+        },
+        {
+          "w": "objects.",
+          "start": 11.7,
+          "end": 12.14
+        },
+        {
+          "w": "The",
+          "start": 12.58,
+          "end": 12.7
+        }
+      ]
+    },
+    {
+      "text": "Account class will hold the",
+      "start": 12.7,
+      "end": 14.04,
+      "words": [
+        {
+          "w": "Account",
+          "start": 12.7,
+          "end": 13.02
+        },
+        {
+          "w": "class",
+          "start": 13.02,
+          "end": 13.34
+        },
+        {
+          "w": "will",
+          "start": 13.34,
+          "end": 13.58
+        },
+        {
+          "w": "hold",
+          "start": 13.58,
+          "end": 13.84
+        },
+        {
+          "w": "the",
+          "start": 13.84,
+          "end": 14.04
+        }
+      ]
+    },
+    {
+      "text": "current balance as an instance",
+      "start": 14.04,
+      "end": 15.44,
+      "words": [
+        {
+          "w": "current",
+          "start": 14.04,
+          "end": 14.26
+        },
+        {
+          "w": "balance",
+          "start": 14.26,
+          "end": 14.64
+        },
+        {
+          "w": "as",
+          "start": 14.64,
+          "end": 15.0
+        },
+        {
+          "w": "an",
+          "start": 15.0,
+          "end": 15.2
+        },
+        {
+          "w": "instance",
+          "start": 15.2,
+          "end": 15.44
+        }
+      ]
+    },
+    {
+      "text": "attribute. Its constructor runs when",
+      "start": 15.44,
+      "end": 17.78,
+      "words": [
+        {
+          "w": "attribute.",
+          "start": 15.44,
+          "end": 15.98
+        },
+        {
+          "w": "Its",
+          "start": 16.48,
+          "end": 16.64
+        },
+        {
+          "w": "constructor",
+          "start": 16.64,
+          "end": 17.06
+        },
+        {
+          "w": "runs",
+          "start": 17.06,
+          "end": 17.48
+        },
+        {
+          "w": "when",
+          "start": 17.48,
+          "end": 17.78
+        }
+      ]
+    },
+    {
+      "text": "you create a new account",
+      "start": 17.78,
+      "end": 18.84,
+      "words": [
+        {
+          "w": "you",
+          "start": 17.78,
+          "end": 17.88
+        },
+        {
+          "w": "create",
+          "start": 17.88,
+          "end": 18.14
+        },
+        {
+          "w": "a",
+          "start": 18.14,
+          "end": 18.34
+        },
+        {
+          "w": "new",
+          "start": 18.34,
+          "end": 18.48
+        },
+        {
+          "w": "account",
+          "start": 18.48,
+          "end": 18.84
+        }
+      ]
+    },
+    {
+      "text": "and sets the balance to",
+      "start": 18.84,
+      "end": 20.0,
+      "words": [
+        {
+          "w": "and",
+          "start": 18.84,
+          "end": 19.1
+        },
+        {
+          "w": "sets",
+          "start": 19.1,
+          "end": 19.3
+        },
+        {
+          "w": "the",
+          "start": 19.3,
+          "end": 19.54
+        },
+        {
+          "w": "balance",
+          "start": 19.54,
+          "end": 19.78
+        },
+        {
+          "w": "to",
+          "start": 19.78,
+          "end": 20.0
+        }
+      ]
+    },
+    {
+      "text": "zero. The debit method subtracts",
+      "start": 20.0,
+      "end": 22.22,
+      "words": [
+        {
+          "w": "zero.",
+          "start": 20.0,
+          "end": 20.38
+        },
+        {
+          "w": "The",
+          "start": 20.76,
+          "end": 20.96
+        },
+        {
+          "w": "debit",
+          "start": 20.96,
+          "end": 21.18
+        },
+        {
+          "w": "method",
+          "start": 21.18,
+          "end": 21.58
+        },
+        {
+          "w": "subtracts",
+          "start": 21.58,
+          "end": 22.22
+        }
+      ]
+    },
+    {
+      "text": "an amount, but only if",
+      "start": 22.22,
+      "end": 23.9,
+      "words": [
+        {
+          "w": "an",
+          "start": 22.22,
+          "end": 22.3
+        },
+        {
+          "w": "amount,",
+          "start": 22.3,
+          "end": 22.66
+        },
+        {
+          "w": "but",
+          "start": 23.16,
+          "end": 23.34
+        },
+        {
+          "w": "only",
+          "start": 23.34,
+          "end": 23.66
+        },
+        {
+          "w": "if",
+          "start": 23.66,
+          "end": 23.9
+        }
+      ]
+    },
+    {
+      "text": "enough funds exist. The credit",
+      "start": 23.9,
+      "end": 25.84,
+      "words": [
+        {
+          "w": "enough",
+          "start": 23.9,
+          "end": 24.08
+        },
+        {
+          "w": "funds",
+          "start": 24.08,
+          "end": 24.48
+        },
+        {
+          "w": "exist.",
+          "start": 24.48,
+          "end": 25.0
+        },
+        {
+          "w": "The",
+          "start": 25.44,
+          "end": 25.6
+        },
+        {
+          "w": "credit",
+          "start": 25.6,
+          "end": 25.84
+        }
+      ]
+    },
+    {
+      "text": "method adds an amount. The",
+      "start": 25.84,
+      "end": 27.76,
+      "words": [
+        {
+          "w": "method",
+          "start": 25.84,
+          "end": 26.28
+        },
+        {
+          "w": "adds",
+          "start": 26.28,
+          "end": 26.66
+        },
+        {
+          "w": "an",
+          "start": 26.66,
+          "end": 26.86
+        },
+        {
+          "w": "amount.",
+          "start": 26.86,
+          "end": 27.22
+        },
+        {
+          "w": "The",
+          "start": 27.22,
+          "end": 27.76
+        }
+      ]
+    },
+    {
+      "text": "get_balance method prints the current",
+      "start": 27.76,
+      "end": 29.14,
+      "words": [
+        {
+          "w": "get_balance",
+          "start": 27.76,
+          "end": 28.0
+        },
+        {
+          "w": "method",
+          "start": 28.0,
+          "end": 28.24
+        },
+        {
+          "w": "prints",
+          "start": 28.24,
+          "end": 28.44
+        },
+        {
+          "w": "the",
+          "start": 28.44,
+          "end": 28.76
+        },
+        {
+          "w": "current",
+          "start": 28.76,
+          "end": 29.14
+        }
+      ]
+    },
+    {
+      "text": "balance. Now let's see the",
+      "start": 29.14,
+      "end": 31.28,
+      "words": [
+        {
+          "w": "balance.",
+          "start": 29.14,
+          "end": 29.56
+        },
+        {
+          "w": "Now",
+          "start": 29.56,
+          "end": 29.84
+        },
+        {
+          "w": "let's",
+          "start": 29.84,
+          "end": 30.1
+        },
+        {
+          "w": "see",
+          "start": 30.1,
+          "end": 30.54
+        },
+        {
+          "w": "the",
+          "start": 31.08,
+          "end": 31.28
+        }
+      ]
+    },
+    {
+      "text": "code. Running this prints the",
+      "start": 31.28,
+      "end": 32.88,
+      "words": [
+        {
+          "w": "code.",
+          "start": 31.28,
+          "end": 31.54
+        },
+        {
+          "w": "Running",
+          "start": 31.54,
+          "end": 31.68
+        },
+        {
+          "w": "this",
+          "start": 31.68,
+          "end": 31.88
+        },
+        {
+          "w": "prints",
+          "start": 31.88,
+          "end": 32.18
+        },
+        {
+          "w": "the",
+          "start": 32.68,
+          "end": 32.88
+        }
+      ]
+    },
+    {
+      "text": "balance after each operation. An",
+      "start": 32.88,
+      "end": 34.52,
+      "words": [
+        {
+          "w": "balance",
+          "start": 32.88,
+          "end": 33.18
+        },
+        {
+          "w": "after",
+          "start": 33.18,
+          "end": 33.48
+        },
+        {
+          "w": "each",
+          "start": 33.48,
+          "end": 33.72
+        },
+        {
+          "w": "operation.",
+          "start": 33.72,
+          "end": 34.08
+        },
+        {
+          "w": "An",
+          "start": 34.08,
+          "end": 34.52
+        }
+      ]
+    },
+    {
+      "text": "Account object lets you safely",
+      "start": 34.52,
+      "end": 36.66,
+      "words": [
+        {
+          "w": "Account",
+          "start": 34.52,
+          "end": 34.78
+        },
+        {
+          "w": "object",
+          "start": 34.78,
+          "end": 35.34
+        },
+        {
+          "w": "lets",
+          "start": 35.86,
+          "end": 35.94
+        },
+        {
+          "w": "you",
+          "start": 35.94,
+          "end": 36.2
+        },
+        {
+          "w": "safely",
+          "start": 36.2,
+          "end": 36.66
+        }
+      ]
+    },
+    {
+      "text": "modify and view its balance.",
+      "start": 36.66,
+      "end": 38.26,
+      "words": [
+        {
+          "w": "modify",
+          "start": 36.66,
+          "end": 36.94
+        },
+        {
+          "w": "and",
+          "start": 36.94,
+          "end": 37.16
+        },
+        {
+          "w": "view",
+          "start": 37.16,
+          "end": 37.48
+        },
+        {
+          "w": "its",
+          "start": 37.48,
+          "end": 37.94
+        },
+        {
+          "w": "balance.",
+          "start": 37.94,
+          "end": 38.26
+        }
+      ]
+    },
+    {
+      "text": "Create an Account and try",
+      "start": 38.26,
+      "end": 40.04,
+      "words": [
+        {
+          "w": "Create",
+          "start": 38.26,
+          "end": 38.42
+        },
+        {
+          "w": "an",
+          "start": 38.42,
+          "end": 38.64
+        },
+        {
+          "w": "Account",
+          "start": 38.64,
+          "end": 39.04
+        },
+        {
+          "w": "and",
+          "start": 39.58,
+          "end": 39.82
+        },
+        {
+          "w": "try",
+          "start": 39.82,
+          "end": 40.04
+        }
+      ]
+    },
+    {
+      "text": "withdrawing more than the balance.",
+      "start": 40.04,
+      "end": 41.48,
+      "words": [
+        {
+          "w": "withdrawing",
+          "start": 40.04,
+          "end": 40.38
+        },
+        {
+          "w": "more",
+          "start": 40.38,
+          "end": 40.68
+        },
+        {
+          "w": "than",
+          "start": 40.68,
+          "end": 40.92
+        },
+        {
+          "w": "the",
+          "start": 40.92,
+          "end": 41.16
+        },
+        {
+          "w": "balance.",
+          "start": 41.16,
+          "end": 41.48
+        }
+      ]
+    }
+  ]
+}

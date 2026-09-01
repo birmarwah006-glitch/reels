@@ -1,0 +1,217 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_18_conditional_statements_if_else",
+    "title": "Using if, else if, and else in C",
+    "concept": "python.control.if",
+    "objective": "Apply if, else if, and else to choose actions based on variable values",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "python.control.for"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "if",
+      "else",
+      "&&",
+      "||"
+    ],
+    "assumes": [
+      "variables"
+    ],
+    "voice": {
+      "script": "Can a program choose its own path? How do you make decisions in C? Imagine you have a number and you want different messages for positive, negative, or zero. First we include the standard input output library, which gives us the printf and scanf functions. Then we start the main function, the entry point of every C program. Inside we declare an integer variable called value. We ask the user to type a number, and read it with scanf. Now comes the decision point. We write an if statement that checks whether value is greater than zero. If that condition is true, we print that the number is positive. Otherwise we add an else if that checks if value is less than zero, and print that it is negative. Finally the else clause handles the remaining case, zero, and prints that the number is zero. The program then returns zero to indicate successful execution.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Can a program choose its own path?"
+        },
+        "narration_anchor": "Can a program choose its own path?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you make decisions in C?"
+        },
+        "narration_anchor": "How do you make decisions in C?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Read number",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "value > 0 ?",
+              "kind": "decision"
+            },
+            {
+              "id": "c",
+              "label": "Positive",
+              "kind": "output"
+            },
+            {
+              "id": "d",
+              "label": "value < 0 ?",
+              "kind": "decision"
+            },
+            {
+              "id": "e",
+              "label": "Negative",
+              "kind": "output"
+            },
+            {
+              "id": "f",
+              "label": "Zero",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "yes"
+            },
+            {
+              "from": "b",
+              "to": "d",
+              "label": "no"
+            },
+            {
+              "from": "d",
+              "to": "e",
+              "label": "yes"
+            },
+            {
+              "from": "d",
+              "to": "f",
+              "label": "no"
+            }
+          ]
+        },
+        "narration_anchor": "Now comes the decision point."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "c",
+          "filename": "main.c",
+          "code": "#include <stdio.h>\nint main() {\n    int value;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &value);\n    if (value > 0) {\n        printf(\"The number is positive.\\n\");\n    } else if (value < 0) {\n        printf(\"The number is negative.\\n\");\n    } else {\n        printf(\"The number is zero.\\n\");\n    }\n    return 0;\n}\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "#include <stdio.h>\nint main() {\n    int value;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &value);\n    if (value > 0) {\n        printf(\"The number is positive.\\n\");\n    } else if (value < 0) {\n        printf(\"The number is negative.\\n\");\n    } else {\n        printf(\"The number is zero.\\n\");\n    }\n    return 0;\n}",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "if (value > 0)"
+            }
+          ]
+        },
+        "narration_anchor": "Now comes the decision point."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "a.out",
+          "stdin": [
+            "5"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:40+00:00",
+            "stdout": "Enter a number: The number is positive.\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "The program then returns zero to indicate successful execution.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Use if, else if, and else to direct program flow based on conditions."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write a program that categorizes ages as child, teen, or adult using if else."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write a program that categorizes ages as child, teen, or adult using if else.",
+      "hint": "Check age ranges with greater\u2011than and less\u2011than comparisons."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 18,
+      "total": 22,
+      "previous_id": "meal_17_defining_and_calling_functions",
+      "next_id": "meal_19_switch_statements_and_structs"
+    }
+  }
+}

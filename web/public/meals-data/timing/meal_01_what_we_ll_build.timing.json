@@ -1,0 +1,652 @@
+{
+  "meal_id": "meal_01_what_we_ll_build",
+  "audio": "meal_01_what_we_ll_build.mp3",
+  "duration": 29.688,
+  "alignment": "whisper",
+  "anchors": {
+    "What if you could turn a simple deposit into a slot\u2011machine game?": 0.0,
+    "Our goal is to build a program that asks for a deposit, lets you choose how many lines to bet and how much to wager, prints a summary of the bet, and then displays a random slot\u2011machine spin.": 15.42
+  },
+  "captions": [
+    {
+      "text": "What if you could turn",
+      "start": 0.0,
+      "end": 1.12,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.34
+        },
+        {
+          "w": "if",
+          "start": 0.34,
+          "end": 0.54
+        },
+        {
+          "w": "you",
+          "start": 0.54,
+          "end": 0.64
+        },
+        {
+          "w": "could",
+          "start": 0.64,
+          "end": 0.88
+        },
+        {
+          "w": "turn",
+          "start": 0.88,
+          "end": 1.12
+        }
+      ]
+    },
+    {
+      "text": "a simple deposit into a",
+      "start": 1.12,
+      "end": 2.76,
+      "words": [
+        {
+          "w": "a",
+          "start": 1.12,
+          "end": 1.38
+        },
+        {
+          "w": "simple",
+          "start": 1.38,
+          "end": 1.62
+        },
+        {
+          "w": "deposit",
+          "start": 1.62,
+          "end": 2.18
+        },
+        {
+          "w": "into",
+          "start": 2.18,
+          "end": 2.56
+        },
+        {
+          "w": "a",
+          "start": 2.56,
+          "end": 2.76
+        }
+      ]
+    },
+    {
+      "text": "slot\u2011machine game? That hook grabs",
+      "start": 2.76,
+      "end": 4.42,
+      "words": [
+        {
+          "w": "slot\u2011machine",
+          "start": 2.76,
+          "end": 2.94
+        },
+        {
+          "w": "game?",
+          "start": 2.94,
+          "end": 3.22
+        },
+        {
+          "w": "That",
+          "start": 3.22,
+          "end": 3.66
+        },
+        {
+          "w": "hook",
+          "start": 3.98,
+          "end": 4.16
+        },
+        {
+          "w": "grabs",
+          "start": 4.16,
+          "end": 4.42
+        }
+      ]
+    },
+    {
+      "text": "your curiosity. A project is",
+      "start": 4.42,
+      "end": 6.64,
+      "words": [
+        {
+          "w": "your",
+          "start": 4.42,
+          "end": 4.72
+        },
+        {
+          "w": "curiosity.",
+          "start": 4.72,
+          "end": 5.04
+        },
+        {
+          "w": "A",
+          "start": 5.04,
+          "end": 5.5
+        },
+        {
+          "w": "project",
+          "start": 6.22,
+          "end": 6.32
+        },
+        {
+          "w": "is",
+          "start": 6.32,
+          "end": 6.64
+        }
+      ]
+    },
+    {
+      "text": "the complete application you are",
+      "start": 6.64,
+      "end": 8.3,
+      "words": [
+        {
+          "w": "the",
+          "start": 6.64,
+          "end": 6.96
+        },
+        {
+          "w": "complete",
+          "start": 6.96,
+          "end": 7.16
+        },
+        {
+          "w": "application",
+          "start": 7.16,
+          "end": 7.46
+        },
+        {
+          "w": "you",
+          "start": 7.46,
+          "end": 7.98
+        },
+        {
+          "w": "are",
+          "start": 7.98,
+          "end": 8.3
+        }
+      ]
+    },
+    {
+      "text": "creating, everything from asking for",
+      "start": 8.3,
+      "end": 10.26,
+      "words": [
+        {
+          "w": "creating,",
+          "start": 8.3,
+          "end": 8.44
+        },
+        {
+          "w": "everything",
+          "start": 8.44,
+          "end": 8.84
+        },
+        {
+          "w": "from",
+          "start": 9.38,
+          "end": 9.66
+        },
+        {
+          "w": "asking",
+          "start": 9.66,
+          "end": 10.0
+        },
+        {
+          "w": "for",
+          "start": 10.0,
+          "end": 10.26
+        }
+      ]
+    },
+    {
+      "text": "money to showing a spin.",
+      "start": 10.26,
+      "end": 11.44,
+      "words": [
+        {
+          "w": "money",
+          "start": 10.26,
+          "end": 10.54
+        },
+        {
+          "w": "to",
+          "start": 10.54,
+          "end": 10.76
+        },
+        {
+          "w": "showing",
+          "start": 10.76,
+          "end": 10.98
+        },
+        {
+          "w": "a",
+          "start": 10.98,
+          "end": 11.2
+        },
+        {
+          "w": "spin.",
+          "start": 11.2,
+          "end": 11.44
+        }
+      ]
+    },
+    {
+      "text": "A script is a single",
+      "start": 11.44,
+      "end": 13.02,
+      "words": [
+        {
+          "w": "A",
+          "start": 11.44,
+          "end": 11.64
+        },
+        {
+          "w": "script",
+          "start": 12.12,
+          "end": 12.26
+        },
+        {
+          "w": "is",
+          "start": 12.26,
+          "end": 12.48
+        },
+        {
+          "w": "a",
+          "start": 12.48,
+          "end": 12.78
+        },
+        {
+          "w": "single",
+          "start": 12.78,
+          "end": 13.02
+        }
+      ]
+    },
+    {
+      "text": "Python file that runs the",
+      "start": 13.02,
+      "end": 14.52,
+      "words": [
+        {
+          "w": "Python",
+          "start": 13.02,
+          "end": 13.2
+        },
+        {
+          "w": "file",
+          "start": 13.2,
+          "end": 13.6
+        },
+        {
+          "w": "that",
+          "start": 13.6,
+          "end": 14.04
+        },
+        {
+          "w": "runs",
+          "start": 14.04,
+          "end": 14.32
+        },
+        {
+          "w": "the",
+          "start": 14.32,
+          "end": 14.52
+        }
+      ]
+    },
+    {
+      "text": "steps of that project. Our",
+      "start": 14.52,
+      "end": 15.84,
+      "words": [
+        {
+          "w": "steps",
+          "start": 14.52,
+          "end": 14.8
+        },
+        {
+          "w": "of",
+          "start": 14.8,
+          "end": 15.02
+        },
+        {
+          "w": "that",
+          "start": 15.02,
+          "end": 15.22
+        },
+        {
+          "w": "project.",
+          "start": 15.22,
+          "end": 15.42
+        },
+        {
+          "w": "Our",
+          "start": 15.42,
+          "end": 15.84
+        }
+      ]
+    },
+    {
+      "text": "goal is to build a",
+      "start": 16.26,
+      "end": 17.26,
+      "words": [
+        {
+          "w": "goal",
+          "start": 16.26,
+          "end": 16.52
+        },
+        {
+          "w": "is",
+          "start": 16.52,
+          "end": 16.74
+        },
+        {
+          "w": "to",
+          "start": 16.74,
+          "end": 17.0
+        },
+        {
+          "w": "build",
+          "start": 17.0,
+          "end": 17.1
+        },
+        {
+          "w": "a",
+          "start": 17.1,
+          "end": 17.26
+        }
+      ]
+    },
+    {
+      "text": "program that asks for a",
+      "start": 17.26,
+      "end": 18.56,
+      "words": [
+        {
+          "w": "program",
+          "start": 17.26,
+          "end": 17.52
+        },
+        {
+          "w": "that",
+          "start": 17.52,
+          "end": 17.8
+        },
+        {
+          "w": "asks",
+          "start": 17.8,
+          "end": 18.12
+        },
+        {
+          "w": "for",
+          "start": 18.12,
+          "end": 18.32
+        },
+        {
+          "w": "a",
+          "start": 18.32,
+          "end": 18.56
+        }
+      ]
+    },
+    {
+      "text": "deposit, lets you choose how",
+      "start": 18.56,
+      "end": 20.06,
+      "words": [
+        {
+          "w": "deposit,",
+          "start": 18.56,
+          "end": 18.68
+        },
+        {
+          "w": "lets",
+          "start": 18.68,
+          "end": 19.1
+        },
+        {
+          "w": "you",
+          "start": 19.54,
+          "end": 19.68
+        },
+        {
+          "w": "choose",
+          "start": 19.68,
+          "end": 19.82
+        },
+        {
+          "w": "how",
+          "start": 19.82,
+          "end": 20.06
+        }
+      ]
+    },
+    {
+      "text": "many lines to bet and",
+      "start": 20.06,
+      "end": 21.06,
+      "words": [
+        {
+          "w": "many",
+          "start": 20.06,
+          "end": 20.24
+        },
+        {
+          "w": "lines",
+          "start": 20.24,
+          "end": 20.42
+        },
+        {
+          "w": "to",
+          "start": 20.42,
+          "end": 20.72
+        },
+        {
+          "w": "bet",
+          "start": 20.72,
+          "end": 20.88
+        },
+        {
+          "w": "and",
+          "start": 20.88,
+          "end": 21.06
+        }
+      ]
+    },
+    {
+      "text": "how much to wager, prints",
+      "start": 21.06,
+      "end": 22.16,
+      "words": [
+        {
+          "w": "how",
+          "start": 21.06,
+          "end": 21.28
+        },
+        {
+          "w": "much",
+          "start": 21.28,
+          "end": 21.4
+        },
+        {
+          "w": "to",
+          "start": 21.4,
+          "end": 21.6
+        },
+        {
+          "w": "wager,",
+          "start": 21.6,
+          "end": 21.76
+        },
+        {
+          "w": "prints",
+          "start": 21.76,
+          "end": 22.16
+        }
+      ]
+    },
+    {
+      "text": "a summary of the bet,",
+      "start": 22.6,
+      "end": 23.4,
+      "words": [
+        {
+          "w": "a",
+          "start": 22.6,
+          "end": 22.7
+        },
+        {
+          "w": "summary",
+          "start": 22.7,
+          "end": 22.9
+        },
+        {
+          "w": "of",
+          "start": 22.9,
+          "end": 23.1
+        },
+        {
+          "w": "the",
+          "start": 23.1,
+          "end": 23.32
+        },
+        {
+          "w": "bet,",
+          "start": 23.32,
+          "end": 23.4
+        }
+      ]
+    },
+    {
+      "text": "and then displays a random",
+      "start": 23.4,
+      "end": 24.92,
+      "words": [
+        {
+          "w": "and",
+          "start": 23.4,
+          "end": 23.72
+        },
+        {
+          "w": "then",
+          "start": 24.08,
+          "end": 24.2
+        },
+        {
+          "w": "displays",
+          "start": 24.2,
+          "end": 24.4
+        },
+        {
+          "w": "a",
+          "start": 24.4,
+          "end": 24.64
+        },
+        {
+          "w": "random",
+          "start": 24.64,
+          "end": 24.92
+        }
+      ]
+    },
+    {
+      "text": "slot\u2011machine spin. This gives you",
+      "start": 24.92,
+      "end": 26.58,
+      "words": [
+        {
+          "w": "slot\u2011machine",
+          "start": 24.92,
+          "end": 25.14
+        },
+        {
+          "w": "spin.",
+          "start": 25.14,
+          "end": 25.4
+        },
+        {
+          "w": "This",
+          "start": 25.4,
+          "end": 25.64
+        },
+        {
+          "w": "gives",
+          "start": 25.64,
+          "end": 25.96
+        },
+        {
+          "w": "you",
+          "start": 26.4,
+          "end": 26.58
+        }
+      ]
+    },
+    {
+      "text": "a clear picture of what",
+      "start": 26.58,
+      "end": 27.84,
+      "words": [
+        {
+          "w": "a",
+          "start": 26.58,
+          "end": 26.78
+        },
+        {
+          "w": "clear",
+          "start": 26.78,
+          "end": 27.06
+        },
+        {
+          "w": "picture",
+          "start": 27.06,
+          "end": 27.22
+        },
+        {
+          "w": "of",
+          "start": 27.22,
+          "end": 27.44
+        },
+        {
+          "w": "what",
+          "start": 27.44,
+          "end": 27.84
+        }
+      ]
+    },
+    {
+      "text": "the finished app will do.",
+      "start": 27.84,
+      "end": 28.96,
+      "words": [
+        {
+          "w": "the",
+          "start": 27.84,
+          "end": 28.12
+        },
+        {
+          "w": "finished",
+          "start": 28.12,
+          "end": 28.26
+        },
+        {
+          "w": "app",
+          "start": 28.26,
+          "end": 28.44
+        },
+        {
+          "w": "will",
+          "start": 28.44,
+          "end": 28.7
+        },
+        {
+          "w": "do.",
+          "start": 28.7,
+          "end": 28.96
+        }
+      ]
+    }
+  ]
+}

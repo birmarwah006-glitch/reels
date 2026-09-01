@@ -1,0 +1,180 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_09_priority_queue_in_scheduling",
+    "title": "Priority Queue in Process Scheduling",
+    "concept": "python.project.overview",
+    "objective": "Describe why a priority queue is needed to order ready processes",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.project.overview",
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "priority queue"
+    ],
+    "assumes": [
+      "state transition"
+    ],
+    "voice": {
+      "script": "Why does your phone sometimes feel faster than other apps? How does the system decide which process runs next? When many processes are ready, the scheduler needs a way to pick the most important one first. A priority queue orders processes by importance. It works like a line where each person has a number, and the smallest number goes first. Here is a tiny program that uses a priority queue to pick the next process. It creates a list of (priority, name) pairs, adds them to the queue, and then removes them one by one, printing the name each time. Running it shows the highest priority process runs first. The diagram shows processes entering the queue and leaving in priority order. Remember: a priority queue lets the scheduler pick the most important ready process. Try changing the priorities and see how the order changes.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Why does your phone sometimes feel faster than other apps?"
+        },
+        "narration_anchor": "Why does your phone sometimes feel faster than other apps?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How does the system decide which process runs next?"
+        },
+        "narration_anchor": "How does the system decide which process runs next?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Ready processes",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Priority queue",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Scheduler selects",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "enqueued by priority"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "dequeue highest"
+            }
+          ]
+        },
+        "narration_anchor": "A priority queue orders processes by importance."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "import heapq\n\nprocesses = [(2, \"browser\"), (1, \"music\"), (3, \"game\")]\nqueue = []\nfor p in processes:\n    heapq.heappush(queue, p)\nwhile queue:\n    priority, name = heapq.heappop(queue)\n    print(name)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "import heapq\n\nprocesses = [(2, \"browser\"), (1, \"music\"), (3, \"game\")]\nqueue = []\nfor p in processes:\n    heapq.heappush(queue, p)\nwhile queue:\n    priority, name = heapq.heappop(queue)\n    print(name)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "heapq.heappush"
+            }
+          ]
+        },
+        "narration_anchor": "Here is a tiny program that uses a priority queue to pick the next process."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "/opt/homebrew/opt/python@3.14/bin/python3.14 main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:33+00:00",
+            "stdout": "music\nbrowser\ngame\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running it shows the highest priority process runs first.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "A priority queue lets the scheduler always run the most important ready process first."
+        },
+        "narration_anchor": "Remember: a priority queue lets the scheduler pick the most important ready process.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Modify the priority values and observe how the execution order changes."
+        },
+        "narration_anchor": "Try changing the priorities and see how the order changes.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Modify the priority values and observe how the execution order changes.",
+      "hint": "Lower numbers mean higher priority."
+    },
+    "series": {
+      "title": "CPU Virtualization Basics",
+      "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+      "order": 9,
+      "total": 12,
+      "previous_id": "meal_08_why_states_change",
+      "next_id": "meal_10_policy_vs_mechanism"
+    }
+  }
+}

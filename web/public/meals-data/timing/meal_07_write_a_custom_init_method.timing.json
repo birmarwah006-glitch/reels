@@ -1,0 +1,774 @@
+{
+  "meal_id": "meal_07_write_a_custom_init_method",
+  "audio": "meal_07_write_a_custom_init_method.mp3",
+  "duration": 43.56,
+  "alignment": "whisper",
+  "anchors": {
+    "What if you could give every student a name the moment they\u2019re created?": 0.0,
+    "How do you store a name inside each new object?": 3.96,
+    "self is like saying \u201cmyself\u201d": 7.06,
+    "Here\u2019s the code that defines the class": 9.22,
+    "The __init__ method lets you set up each instance when it\u2019s made.": 31.24,
+    "Create a Book class that stores title and author using __init__.": 36.2
+  },
+  "captions": [
+    {
+      "text": "What if you could give",
+      "start": 0.0,
+      "end": 1.02,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.28
+        },
+        {
+          "w": "if",
+          "start": 0.28,
+          "end": 0.48
+        },
+        {
+          "w": "you",
+          "start": 0.48,
+          "end": 0.56
+        },
+        {
+          "w": "could",
+          "start": 0.56,
+          "end": 0.76
+        },
+        {
+          "w": "give",
+          "start": 0.76,
+          "end": 1.02
+        }
+      ]
+    },
+    {
+      "text": "every student a name the",
+      "start": 1.02,
+      "end": 2.44,
+      "words": [
+        {
+          "w": "every",
+          "start": 1.02,
+          "end": 1.4
+        },
+        {
+          "w": "student",
+          "start": 1.4,
+          "end": 1.74
+        },
+        {
+          "w": "a",
+          "start": 1.74,
+          "end": 2.02
+        },
+        {
+          "w": "name",
+          "start": 2.02,
+          "end": 2.24
+        },
+        {
+          "w": "the",
+          "start": 2.24,
+          "end": 2.44
+        }
+      ]
+    },
+    {
+      "text": "moment they\u2019re created? How do",
+      "start": 2.44,
+      "end": 4.28,
+      "words": [
+        {
+          "w": "moment",
+          "start": 2.44,
+          "end": 2.76
+        },
+        {
+          "w": "they\u2019re",
+          "start": 2.76,
+          "end": 3.04
+        },
+        {
+          "w": "created?",
+          "start": 3.04,
+          "end": 3.46
+        },
+        {
+          "w": "How",
+          "start": 3.96,
+          "end": 4.06
+        },
+        {
+          "w": "do",
+          "start": 4.06,
+          "end": 4.28
+        }
+      ]
+    },
+    {
+      "text": "you store a name inside",
+      "start": 4.28,
+      "end": 5.5,
+      "words": [
+        {
+          "w": "you",
+          "start": 4.28,
+          "end": 4.36
+        },
+        {
+          "w": "store",
+          "start": 4.36,
+          "end": 4.62
+        },
+        {
+          "w": "a",
+          "start": 4.62,
+          "end": 4.82
+        },
+        {
+          "w": "name",
+          "start": 4.82,
+          "end": 5.06
+        },
+        {
+          "w": "inside",
+          "start": 5.06,
+          "end": 5.5
+        }
+      ]
+    },
+    {
+      "text": "each new object? self is",
+      "start": 5.5,
+      "end": 7.48,
+      "words": [
+        {
+          "w": "each",
+          "start": 5.5,
+          "end": 5.86
+        },
+        {
+          "w": "new",
+          "start": 5.86,
+          "end": 6.08
+        },
+        {
+          "w": "object?",
+          "start": 6.08,
+          "end": 6.48
+        },
+        {
+          "w": "self",
+          "start": 7.06,
+          "end": 7.26
+        },
+        {
+          "w": "is",
+          "start": 7.26,
+          "end": 7.48
+        }
+      ]
+    },
+    {
+      "text": "like saying \u201cmyself\u201d. Here\u2019s the",
+      "start": 7.48,
+      "end": 9.6,
+      "words": [
+        {
+          "w": "like",
+          "start": 7.48,
+          "end": 7.76
+        },
+        {
+          "w": "saying",
+          "start": 7.76,
+          "end": 7.98
+        },
+        {
+          "w": "\u201cmyself\u201d.",
+          "start": 7.98,
+          "end": 8.58
+        },
+        {
+          "w": "Here\u2019s",
+          "start": 9.22,
+          "end": 9.44
+        },
+        {
+          "w": "the",
+          "start": 9.44,
+          "end": 9.6
+        }
+      ]
+    },
+    {
+      "text": "code that defines the class.",
+      "start": 9.6,
+      "end": 11.16,
+      "words": [
+        {
+          "w": "code",
+          "start": 9.6,
+          "end": 9.88
+        },
+        {
+          "w": "that",
+          "start": 9.88,
+          "end": 10.18
+        },
+        {
+          "w": "defines",
+          "start": 10.18,
+          "end": 10.5
+        },
+        {
+          "w": "the",
+          "start": 10.5,
+          "end": 10.78
+        },
+        {
+          "w": "class.",
+          "start": 10.78,
+          "end": 11.16
+        }
+      ]
+    },
+    {
+      "text": "The __init__ method takes two",
+      "start": 11.54,
+      "end": 12.88,
+      "words": [
+        {
+          "w": "The",
+          "start": 11.54,
+          "end": 11.7
+        },
+        {
+          "w": "__init__",
+          "start": 11.7,
+          "end": 12.0
+        },
+        {
+          "w": "method",
+          "start": 12.0,
+          "end": 12.46
+        },
+        {
+          "w": "takes",
+          "start": 12.46,
+          "end": 12.66
+        },
+        {
+          "w": "two",
+          "start": 12.66,
+          "end": 12.88
+        }
+      ]
+    },
+    {
+      "text": "parameters: self and a name",
+      "start": 12.88,
+      "end": 14.78,
+      "words": [
+        {
+          "w": "parameters:",
+          "start": 12.88,
+          "end": 13.26
+        },
+        {
+          "w": "self",
+          "start": 13.26,
+          "end": 13.88
+        },
+        {
+          "w": "and",
+          "start": 13.88,
+          "end": 14.2
+        },
+        {
+          "w": "a",
+          "start": 14.2,
+          "end": 14.48
+        },
+        {
+          "w": "name",
+          "start": 14.48,
+          "end": 14.78
+        }
+      ]
+    },
+    {
+      "text": "supplied when we create the",
+      "start": 15.9,
+      "end": 16.98,
+      "words": [
+        {
+          "w": "supplied",
+          "start": 15.9,
+          "end": 16.08
+        },
+        {
+          "w": "when",
+          "start": 16.08,
+          "end": 16.28
+        },
+        {
+          "w": "we",
+          "start": 16.28,
+          "end": 16.46
+        },
+        {
+          "w": "create",
+          "start": 16.46,
+          "end": 16.64
+        },
+        {
+          "w": "the",
+          "start": 16.64,
+          "end": 16.98
+        }
+      ]
+    },
+    {
+      "text": "object. Inside it we assign",
+      "start": 16.98,
+      "end": 18.28,
+      "words": [
+        {
+          "w": "object.",
+          "start": 16.98,
+          "end": 17.26
+        },
+        {
+          "w": "Inside",
+          "start": 17.26,
+          "end": 17.4
+        },
+        {
+          "w": "it",
+          "start": 17.4,
+          "end": 17.62
+        },
+        {
+          "w": "we",
+          "start": 17.62,
+          "end": 17.84
+        },
+        {
+          "w": "assign",
+          "start": 17.84,
+          "end": 18.28
+        }
+      ]
+    },
+    {
+      "text": "the name to an attribute",
+      "start": 18.76,
+      "end": 19.96,
+      "words": [
+        {
+          "w": "the",
+          "start": 18.76,
+          "end": 19.02
+        },
+        {
+          "w": "name",
+          "start": 19.02,
+          "end": 19.24
+        },
+        {
+          "w": "to",
+          "start": 19.24,
+          "end": 19.4
+        },
+        {
+          "w": "an",
+          "start": 19.4,
+          "end": 19.74
+        },
+        {
+          "w": "attribute",
+          "start": 19.74,
+          "end": 19.96
+        }
+      ]
+    },
+    {
+      "text": "on self, so each instance",
+      "start": 19.96,
+      "end": 21.26,
+      "words": [
+        {
+          "w": "on",
+          "start": 19.96,
+          "end": 20.24
+        },
+        {
+          "w": "self,",
+          "start": 20.24,
+          "end": 20.44
+        },
+        {
+          "w": "so",
+          "start": 20.44,
+          "end": 20.62
+        },
+        {
+          "w": "each",
+          "start": 20.62,
+          "end": 20.9
+        },
+        {
+          "w": "instance",
+          "start": 20.9,
+          "end": 21.26
+        }
+      ]
+    },
+    {
+      "text": "remembers its own name. Finally",
+      "start": 21.26,
+      "end": 22.9,
+      "words": [
+        {
+          "w": "remembers",
+          "start": 21.26,
+          "end": 21.54
+        },
+        {
+          "w": "its",
+          "start": 21.54,
+          "end": 21.88
+        },
+        {
+          "w": "own",
+          "start": 21.88,
+          "end": 22.08
+        },
+        {
+          "w": "name.",
+          "start": 22.08,
+          "end": 22.46
+        },
+        {
+          "w": "Finally",
+          "start": 22.46,
+          "end": 22.9
+        }
+      ]
+    },
+    {
+      "text": "we create a Student called",
+      "start": 22.9,
+      "end": 24.7,
+      "words": [
+        {
+          "w": "we",
+          "start": 22.9,
+          "end": 23.24
+        },
+        {
+          "w": "create",
+          "start": 23.24,
+          "end": 23.4
+        },
+        {
+          "w": "a",
+          "start": 23.4,
+          "end": 23.94
+        },
+        {
+          "w": "Student",
+          "start": 24.14,
+          "end": 24.44
+        },
+        {
+          "w": "called",
+          "start": 24.44,
+          "end": 24.7
+        }
+      ]
+    },
+    {
+      "text": "Alice and print her stored",
+      "start": 24.7,
+      "end": 26.18,
+      "words": [
+        {
+          "w": "Alice",
+          "start": 24.7,
+          "end": 25.02
+        },
+        {
+          "w": "and",
+          "start": 25.02,
+          "end": 25.18
+        },
+        {
+          "w": "print",
+          "start": 25.18,
+          "end": 25.46
+        },
+        {
+          "w": "her",
+          "start": 25.46,
+          "end": 25.82
+        },
+        {
+          "w": "stored",
+          "start": 25.82,
+          "end": 26.18
+        }
+      ]
+    },
+    {
+      "text": "name. Running this prints Alice,",
+      "start": 26.18,
+      "end": 27.72,
+      "words": [
+        {
+          "w": "name.",
+          "start": 26.18,
+          "end": 26.48
+        },
+        {
+          "w": "Running",
+          "start": 26.48,
+          "end": 26.68
+        },
+        {
+          "w": "this",
+          "start": 26.68,
+          "end": 26.96
+        },
+        {
+          "w": "prints",
+          "start": 26.96,
+          "end": 27.22
+        },
+        {
+          "w": "Alice,",
+          "start": 27.22,
+          "end": 27.72
+        }
+      ]
+    },
+    {
+      "text": "showing that the name was",
+      "start": 27.72,
+      "end": 30.1,
+      "words": [
+        {
+          "w": "showing",
+          "start": 27.72,
+          "end": 28.22
+        },
+        {
+          "w": "that",
+          "start": 28.22,
+          "end": 28.5
+        },
+        {
+          "w": "the",
+          "start": 28.5,
+          "end": 28.84
+        },
+        {
+          "w": "name",
+          "start": 28.84,
+          "end": 29.32
+        },
+        {
+          "w": "was",
+          "start": 29.9,
+          "end": 30.1
+        }
+      ]
+    },
+    {
+      "text": "saved on that particular object.",
+      "start": 30.1,
+      "end": 31.24,
+      "words": [
+        {
+          "w": "saved",
+          "start": 30.1,
+          "end": 30.34
+        },
+        {
+          "w": "on",
+          "start": 30.34,
+          "end": 30.46
+        },
+        {
+          "w": "that",
+          "start": 30.46,
+          "end": 30.68
+        },
+        {
+          "w": "particular",
+          "start": 30.68,
+          "end": 30.96
+        },
+        {
+          "w": "object.",
+          "start": 30.96,
+          "end": 31.24
+        }
+      ]
+    },
+    {
+      "text": "The __init__ method lets you",
+      "start": 31.24,
+      "end": 33.2,
+      "words": [
+        {
+          "w": "The",
+          "start": 31.24,
+          "end": 31.52
+        },
+        {
+          "w": "__init__",
+          "start": 31.52,
+          "end": 31.72
+        },
+        {
+          "w": "method",
+          "start": 31.72,
+          "end": 32.1
+        },
+        {
+          "w": "lets",
+          "start": 32.1,
+          "end": 32.6
+        },
+        {
+          "w": "you",
+          "start": 33.1,
+          "end": 33.2
+        }
+      ]
+    },
+    {
+      "text": "set up each instance when",
+      "start": 33.2,
+      "end": 35.6,
+      "words": [
+        {
+          "w": "set",
+          "start": 33.2,
+          "end": 33.52
+        },
+        {
+          "w": "up",
+          "start": 33.52,
+          "end": 34.08
+        },
+        {
+          "w": "each",
+          "start": 34.08,
+          "end": 34.34
+        },
+        {
+          "w": "instance",
+          "start": 34.34,
+          "end": 34.84
+        },
+        {
+          "w": "when",
+          "start": 34.84,
+          "end": 35.6
+        }
+      ]
+    },
+    {
+      "text": "it\u2019s made. Create a Book",
+      "start": 35.6,
+      "end": 36.78,
+      "words": [
+        {
+          "w": "it\u2019s",
+          "start": 35.6,
+          "end": 36.02
+        },
+        {
+          "w": "made.",
+          "start": 36.02,
+          "end": 36.2
+        },
+        {
+          "w": "Create",
+          "start": 36.2,
+          "end": 36.34
+        },
+        {
+          "w": "a",
+          "start": 36.34,
+          "end": 36.6
+        },
+        {
+          "w": "Book",
+          "start": 36.6,
+          "end": 36.78
+        }
+      ]
+    },
+    {
+      "text": "class that stores title and",
+      "start": 36.78,
+      "end": 38.64,
+      "words": [
+        {
+          "w": "class",
+          "start": 36.78,
+          "end": 37.22
+        },
+        {
+          "w": "that",
+          "start": 37.22,
+          "end": 37.52
+        },
+        {
+          "w": "stores",
+          "start": 37.52,
+          "end": 37.68
+        },
+        {
+          "w": "title",
+          "start": 37.68,
+          "end": 38.06
+        },
+        {
+          "w": "and",
+          "start": 38.48,
+          "end": 38.64
+        }
+      ]
+    },
+    {
+      "text": "author using __init__.",
+      "start": 38.64,
+      "end": 39.36,
+      "words": [
+        {
+          "w": "author",
+          "start": 38.64,
+          "end": 38.84
+        },
+        {
+          "w": "using",
+          "start": 38.84,
+          "end": 39.0
+        },
+        {
+          "w": "__init__.",
+          "start": 39.0,
+          "end": 39.36
+        }
+      ]
+    }
+  ]
+}

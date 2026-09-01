@@ -1,0 +1,858 @@
+{
+  "meal_id": "meal_02_declare_integer_variables",
+  "audio": "meal_02_declare_integer_variables.mp3",
+  "duration": 42.336,
+  "alignment": "whisper",
+  "anchors": {
+    "What if you could store a number in a labeled box?": 0.0,
+    "How do you create a place to hold an integer in C?": 7.0,
+    "Remember: a variable declaration reserves a box of a specific type.": 35.28,
+    "Try declaring a variable named total to hold the sum.": 39.32
+  },
+  "captions": [
+    {
+      "text": "What if you could store",
+      "start": 0.0,
+      "end": 1.14,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.28
+        },
+        {
+          "w": "if",
+          "start": 0.28,
+          "end": 0.5
+        },
+        {
+          "w": "you",
+          "start": 0.5,
+          "end": 0.58
+        },
+        {
+          "w": "could",
+          "start": 0.58,
+          "end": 0.82
+        },
+        {
+          "w": "store",
+          "start": 0.82,
+          "end": 1.14
+        }
+      ]
+    },
+    {
+      "text": "a number in a labeled",
+      "start": 1.14,
+      "end": 2.34,
+      "words": [
+        {
+          "w": "a",
+          "start": 1.14,
+          "end": 1.38
+        },
+        {
+          "w": "number",
+          "start": 1.38,
+          "end": 1.66
+        },
+        {
+          "w": "in",
+          "start": 1.66,
+          "end": 2.02
+        },
+        {
+          "w": "a",
+          "start": 2.02,
+          "end": 2.08
+        },
+        {
+          "w": "labeled",
+          "start": 2.08,
+          "end": 2.34
+        }
+      ]
+    },
+    {
+      "text": "box? In C, a variable",
+      "start": 2.34,
+      "end": 4.6,
+      "words": [
+        {
+          "w": "box?",
+          "start": 2.34,
+          "end": 2.82
+        },
+        {
+          "w": "In",
+          "start": 3.26,
+          "end": 3.42
+        },
+        {
+          "w": "C,",
+          "start": 3.42,
+          "end": 3.74
+        },
+        {
+          "w": "a",
+          "start": 4.06,
+          "end": 4.26
+        },
+        {
+          "w": "variable",
+          "start": 4.26,
+          "end": 4.6
+        }
+      ]
+    },
+    {
+      "text": "is a labeled box with",
+      "start": 4.6,
+      "end": 5.92,
+      "words": [
+        {
+          "w": "is",
+          "start": 4.6,
+          "end": 4.94
+        },
+        {
+          "w": "a",
+          "start": 4.94,
+          "end": 5.1
+        },
+        {
+          "w": "labeled",
+          "start": 5.1,
+          "end": 5.3
+        },
+        {
+          "w": "box",
+          "start": 5.3,
+          "end": 5.66
+        },
+        {
+          "w": "with",
+          "start": 5.66,
+          "end": 5.92
+        }
+      ]
+    },
+    {
+      "text": "a fixed type. How do",
+      "start": 5.92,
+      "end": 7.3,
+      "words": [
+        {
+          "w": "a",
+          "start": 5.92,
+          "end": 6.06
+        },
+        {
+          "w": "fixed",
+          "start": 6.06,
+          "end": 6.22
+        },
+        {
+          "w": "type.",
+          "start": 6.22,
+          "end": 6.58
+        },
+        {
+          "w": "How",
+          "start": 7.0,
+          "end": 7.12
+        },
+        {
+          "w": "do",
+          "start": 7.12,
+          "end": 7.3
+        }
+      ]
+    },
+    {
+      "text": "you create a place to",
+      "start": 7.3,
+      "end": 8.3,
+      "words": [
+        {
+          "w": "you",
+          "start": 7.3,
+          "end": 7.3
+        },
+        {
+          "w": "create",
+          "start": 7.3,
+          "end": 7.58
+        },
+        {
+          "w": "a",
+          "start": 7.58,
+          "end": 7.78
+        },
+        {
+          "w": "place",
+          "start": 7.78,
+          "end": 8.04
+        },
+        {
+          "w": "to",
+          "start": 8.04,
+          "end": 8.3
+        }
+      ]
+    },
+    {
+      "text": "hold an integer in C?",
+      "start": 8.3,
+      "end": 9.62,
+      "words": [
+        {
+          "w": "hold",
+          "start": 8.3,
+          "end": 8.48
+        },
+        {
+          "w": "an",
+          "start": 8.48,
+          "end": 8.72
+        },
+        {
+          "w": "integer",
+          "start": 8.72,
+          "end": 9.02
+        },
+        {
+          "w": "in",
+          "start": 9.02,
+          "end": 9.36
+        },
+        {
+          "w": "C?",
+          "start": 9.36,
+          "end": 9.62
+        }
+      ]
+    },
+    {
+      "text": "First, you tell the computer",
+      "start": 10.06,
+      "end": 11.4,
+      "words": [
+        {
+          "w": "First,",
+          "start": 10.06,
+          "end": 10.42
+        },
+        {
+          "w": "you",
+          "start": 10.58,
+          "end": 10.7
+        },
+        {
+          "w": "tell",
+          "start": 10.7,
+          "end": 10.88
+        },
+        {
+          "w": "the",
+          "start": 10.88,
+          "end": 11.1
+        },
+        {
+          "w": "computer",
+          "start": 11.1,
+          "end": 11.4
+        }
+      ]
+    },
+    {
+      "text": "the kind of box you",
+      "start": 11.4,
+      "end": 12.36,
+      "words": [
+        {
+          "w": "the",
+          "start": 11.4,
+          "end": 11.68
+        },
+        {
+          "w": "kind",
+          "start": 11.68,
+          "end": 11.82
+        },
+        {
+          "w": "of",
+          "start": 11.82,
+          "end": 11.96
+        },
+        {
+          "w": "box",
+          "start": 11.96,
+          "end": 12.18
+        },
+        {
+          "w": "you",
+          "start": 12.18,
+          "end": 12.36
+        }
+      ]
+    },
+    {
+      "text": "need. The word int means",
+      "start": 12.36,
+      "end": 13.9,
+      "words": [
+        {
+          "w": "need.",
+          "start": 12.36,
+          "end": 12.64
+        },
+        {
+          "w": "The",
+          "start": 13.04,
+          "end": 13.22
+        },
+        {
+          "w": "word",
+          "start": 13.22,
+          "end": 13.4
+        },
+        {
+          "w": "int",
+          "start": 13.4,
+          "end": 13.64
+        },
+        {
+          "w": "means",
+          "start": 13.64,
+          "end": 13.9
+        }
+      ]
+    },
+    {
+      "text": "the box will store whole",
+      "start": 13.9,
+      "end": 15.18,
+      "words": [
+        {
+          "w": "the",
+          "start": 13.9,
+          "end": 14.16
+        },
+        {
+          "w": "box",
+          "start": 14.16,
+          "end": 14.4
+        },
+        {
+          "w": "will",
+          "start": 14.4,
+          "end": 14.68
+        },
+        {
+          "w": "store",
+          "start": 14.68,
+          "end": 14.9
+        },
+        {
+          "w": "whole",
+          "start": 14.9,
+          "end": 15.18
+        }
+      ]
+    },
+    {
+      "text": "numbers. Then you give the",
+      "start": 15.18,
+      "end": 16.74,
+      "words": [
+        {
+          "w": "numbers.",
+          "start": 15.18,
+          "end": 15.62
+        },
+        {
+          "w": "Then",
+          "start": 16.08,
+          "end": 16.28
+        },
+        {
+          "w": "you",
+          "start": 16.28,
+          "end": 16.38
+        },
+        {
+          "w": "give",
+          "start": 16.38,
+          "end": 16.56
+        },
+        {
+          "w": "the",
+          "start": 16.56,
+          "end": 16.74
+        }
+      ]
+    },
+    {
+      "text": "box a name, like a",
+      "start": 16.74,
+      "end": 17.86,
+      "words": [
+        {
+          "w": "box",
+          "start": 16.74,
+          "end": 16.98
+        },
+        {
+          "w": "a",
+          "start": 16.98,
+          "end": 17.2
+        },
+        {
+          "w": "name,",
+          "start": 17.2,
+          "end": 17.44
+        },
+        {
+          "w": "like",
+          "start": 17.44,
+          "end": 17.72
+        },
+        {
+          "w": "a",
+          "start": 17.72,
+          "end": 17.86
+        }
+      ]
+    },
+    {
+      "text": "label you can read later.",
+      "start": 17.86,
+      "end": 18.96,
+      "words": [
+        {
+          "w": "label",
+          "start": 17.86,
+          "end": 18.06
+        },
+        {
+          "w": "you",
+          "start": 18.06,
+          "end": 18.24
+        },
+        {
+          "w": "can",
+          "start": 18.24,
+          "end": 18.44
+        },
+        {
+          "w": "read",
+          "start": 18.44,
+          "end": 18.64
+        },
+        {
+          "w": "later.",
+          "start": 18.64,
+          "end": 18.96
+        }
+      ]
+    },
+    {
+      "text": "Now we write the declarations.",
+      "start": 19.4,
+      "end": 21.08,
+      "words": [
+        {
+          "w": "Now",
+          "start": 19.4,
+          "end": 19.66
+        },
+        {
+          "w": "we",
+          "start": 19.66,
+          "end": 19.9
+        },
+        {
+          "w": "write",
+          "start": 19.9,
+          "end": 20.14
+        },
+        {
+          "w": "the",
+          "start": 20.14,
+          "end": 20.4
+        },
+        {
+          "w": "declarations.",
+          "start": 20.4,
+          "end": 21.08
+        }
+      ]
+    },
+    {
+      "text": "For example, int a; creates",
+      "start": 21.6,
+      "end": 23.92,
+      "words": [
+        {
+          "w": "For",
+          "start": 21.6,
+          "end": 21.74
+        },
+        {
+          "w": "example,",
+          "start": 21.74,
+          "end": 22.2
+        },
+        {
+          "w": "int",
+          "start": 22.48,
+          "end": 22.74
+        },
+        {
+          "w": "a;",
+          "start": 22.74,
+          "end": 23.4
+        },
+        {
+          "w": "creates",
+          "start": 23.4,
+          "end": 23.92
+        }
+      ]
+    },
+    {
+      "text": "a box named a that",
+      "start": 23.92,
+      "end": 25.06,
+      "words": [
+        {
+          "w": "a",
+          "start": 23.92,
+          "end": 24.14
+        },
+        {
+          "w": "box",
+          "start": 24.14,
+          "end": 24.44
+        },
+        {
+          "w": "named",
+          "start": 24.44,
+          "end": 24.68
+        },
+        {
+          "w": "a",
+          "start": 24.68,
+          "end": 24.88
+        },
+        {
+          "w": "that",
+          "start": 24.88,
+          "end": 25.06
+        }
+      ]
+    },
+    {
+      "text": "can hold an integer. You",
+      "start": 25.06,
+      "end": 26.6,
+      "words": [
+        {
+          "w": "can",
+          "start": 25.06,
+          "end": 25.26
+        },
+        {
+          "w": "hold",
+          "start": 25.26,
+          "end": 25.48
+        },
+        {
+          "w": "an",
+          "start": 25.48,
+          "end": 25.72
+        },
+        {
+          "w": "integer.",
+          "start": 25.72,
+          "end": 26.06
+        },
+        {
+          "w": "You",
+          "start": 26.06,
+          "end": 26.6
+        }
+      ]
+    },
+    {
+      "text": "can also declare several boxes",
+      "start": 26.6,
+      "end": 28.18,
+      "words": [
+        {
+          "w": "can",
+          "start": 26.6,
+          "end": 26.98
+        },
+        {
+          "w": "also",
+          "start": 26.98,
+          "end": 27.06
+        },
+        {
+          "w": "declare",
+          "start": 27.06,
+          "end": 27.36
+        },
+        {
+          "w": "several",
+          "start": 27.36,
+          "end": 27.82
+        },
+        {
+          "w": "boxes",
+          "start": 27.82,
+          "end": 28.18
+        }
+      ]
+    },
+    {
+      "text": "at once, like int b,",
+      "start": 28.18,
+      "end": 31.06,
+      "words": [
+        {
+          "w": "at",
+          "start": 28.18,
+          "end": 28.5
+        },
+        {
+          "w": "once,",
+          "start": 28.5,
+          "end": 28.94
+        },
+        {
+          "w": "like",
+          "start": 29.28,
+          "end": 29.56
+        },
+        {
+          "w": "int",
+          "start": 29.56,
+          "end": 30.3
+        },
+        {
+          "w": "b,",
+          "start": 30.64,
+          "end": 31.06
+        }
+      ]
+    },
+    {
+      "text": "c;. Each name points to",
+      "start": 31.28,
+      "end": 32.6,
+      "words": [
+        {
+          "w": "c;.",
+          "start": 31.28,
+          "end": 31.54
+        },
+        {
+          "w": "Each",
+          "start": 31.54,
+          "end": 31.8
+        },
+        {
+          "w": "name",
+          "start": 31.8,
+          "end": 32.18
+        },
+        {
+          "w": "points",
+          "start": 32.18,
+          "end": 32.38
+        },
+        {
+          "w": "to",
+          "start": 32.38,
+          "end": 32.6
+        }
+      ]
+    },
+    {
+      "text": "its own spot in memory.",
+      "start": 32.6,
+      "end": 34.56,
+      "words": [
+        {
+          "w": "its",
+          "start": 32.6,
+          "end": 32.8
+        },
+        {
+          "w": "own",
+          "start": 32.8,
+          "end": 33.06
+        },
+        {
+          "w": "spot",
+          "start": 33.06,
+          "end": 33.28
+        },
+        {
+          "w": "in",
+          "start": 33.28,
+          "end": 33.66
+        },
+        {
+          "w": "memory.",
+          "start": 34.56,
+          "end": 34.56
+        }
+      ]
+    },
+    {
+      "text": "Remember: a variable declaration reserves",
+      "start": 35.28,
+      "end": 37.2,
+      "words": [
+        {
+          "w": "Remember:",
+          "start": 35.28,
+          "end": 35.34
+        },
+        {
+          "w": "a",
+          "start": 35.34,
+          "end": 35.66
+        },
+        {
+          "w": "variable",
+          "start": 35.66,
+          "end": 36.32
+        },
+        {
+          "w": "declaration",
+          "start": 36.32,
+          "end": 36.92
+        },
+        {
+          "w": "reserves",
+          "start": 36.92,
+          "end": 37.2
+        }
+      ]
+    },
+    {
+      "text": "a box of a specific",
+      "start": 37.2,
+      "end": 38.68,
+      "words": [
+        {
+          "w": "a",
+          "start": 37.2,
+          "end": 37.5
+        },
+        {
+          "w": "box",
+          "start": 37.5,
+          "end": 37.7
+        },
+        {
+          "w": "of",
+          "start": 37.7,
+          "end": 37.88
+        },
+        {
+          "w": "a",
+          "start": 37.88,
+          "end": 38.2
+        },
+        {
+          "w": "specific",
+          "start": 38.2,
+          "end": 38.68
+        }
+      ]
+    },
+    {
+      "text": "type. Try declaring a variable",
+      "start": 39.1,
+      "end": 40.72,
+      "words": [
+        {
+          "w": "type.",
+          "start": 39.1,
+          "end": 39.32
+        },
+        {
+          "w": "Try",
+          "start": 39.32,
+          "end": 39.78
+        },
+        {
+          "w": "declaring",
+          "start": 39.78,
+          "end": 40.1
+        },
+        {
+          "w": "a",
+          "start": 40.1,
+          "end": 40.36
+        },
+        {
+          "w": "variable",
+          "start": 40.36,
+          "end": 40.72
+        }
+      ]
+    },
+    {
+      "text": "named total to hold the",
+      "start": 40.72,
+      "end": 42.0,
+      "words": [
+        {
+          "w": "named",
+          "start": 40.72,
+          "end": 41.08
+        },
+        {
+          "w": "total",
+          "start": 41.08,
+          "end": 41.34
+        },
+        {
+          "w": "to",
+          "start": 41.34,
+          "end": 41.56
+        },
+        {
+          "w": "hold",
+          "start": 41.56,
+          "end": 41.84
+        },
+        {
+          "w": "the",
+          "start": 41.84,
+          "end": 42.0
+        }
+      ]
+    },
+    {
+      "text": "sum.",
+      "start": 41.84,
+      "end": 42.0,
+      "words": [
+        {
+          "w": "sum.",
+          "start": 41.84,
+          "end": 42.0
+        }
+      ]
+    }
+  ]
+}

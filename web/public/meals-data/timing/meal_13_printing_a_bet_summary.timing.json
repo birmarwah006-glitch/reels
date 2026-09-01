@@ -1,0 +1,573 @@
+{
+  "meal_id": "meal_13_printing_a_bet_summary",
+  "audio": "meal_13_printing_a_bet_summary.mp3",
+  "duration": 27.864,
+  "alignment": "whisper",
+  "anchors": {
+    "What if you could see your bet at a glance?": 0.0,
+    "How do you show the chosen lines and bet amount?": 2.52,
+    "We use Python\u2019s print function with an f\u2011string to format the message.": 5.36,
+    "Here\u2019s the code that builds and prints the summary.": 8.5,
+    "Running the program displays a clear summary of your bet.": 11.5,
+    "An f\u2011string lets you embed variables directly inside a printed message.": 18.62,
+    "Try changing the bet amount and see how the printed summary updates.": 22.84
+  },
+  "captions": [
+    {
+      "text": "What if you could see",
+      "start": 0.0,
+      "end": 0.9,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.28
+        },
+        {
+          "w": "if",
+          "start": 0.28,
+          "end": 0.46
+        },
+        {
+          "w": "you",
+          "start": 0.46,
+          "end": 0.52
+        },
+        {
+          "w": "could",
+          "start": 0.52,
+          "end": 0.76
+        },
+        {
+          "w": "see",
+          "start": 0.76,
+          "end": 0.9
+        }
+      ]
+    },
+    {
+      "text": "your bet at a glance?",
+      "start": 0.9,
+      "end": 2.06,
+      "words": [
+        {
+          "w": "your",
+          "start": 0.9,
+          "end": 1.16
+        },
+        {
+          "w": "bet",
+          "start": 1.16,
+          "end": 1.32
+        },
+        {
+          "w": "at",
+          "start": 1.32,
+          "end": 1.58
+        },
+        {
+          "w": "a",
+          "start": 1.58,
+          "end": 1.7
+        },
+        {
+          "w": "glance?",
+          "start": 1.7,
+          "end": 2.06
+        }
+      ]
+    },
+    {
+      "text": "How do you show the",
+      "start": 2.52,
+      "end": 3.32,
+      "words": [
+        {
+          "w": "How",
+          "start": 2.52,
+          "end": 2.66
+        },
+        {
+          "w": "do",
+          "start": 2.66,
+          "end": 2.88
+        },
+        {
+          "w": "you",
+          "start": 2.88,
+          "end": 2.9
+        },
+        {
+          "w": "show",
+          "start": 2.9,
+          "end": 3.12
+        },
+        {
+          "w": "the",
+          "start": 3.12,
+          "end": 3.32
+        }
+      ]
+    },
+    {
+      "text": "chosen lines and bet amount?",
+      "start": 3.32,
+      "end": 4.88,
+      "words": [
+        {
+          "w": "chosen",
+          "start": 3.32,
+          "end": 3.62
+        },
+        {
+          "w": "lines",
+          "start": 3.62,
+          "end": 4.04
+        },
+        {
+          "w": "and",
+          "start": 4.04,
+          "end": 4.38
+        },
+        {
+          "w": "bet",
+          "start": 4.38,
+          "end": 4.52
+        },
+        {
+          "w": "amount?",
+          "start": 4.52,
+          "end": 4.88
+        }
+      ]
+    },
+    {
+      "text": "We use Python\u2019s print function",
+      "start": 5.36,
+      "end": 6.86,
+      "words": [
+        {
+          "w": "We",
+          "start": 5.36,
+          "end": 5.42
+        },
+        {
+          "w": "use",
+          "start": 5.42,
+          "end": 5.7
+        },
+        {
+          "w": "Python\u2019s",
+          "start": 5.7,
+          "end": 6.3
+        },
+        {
+          "w": "print",
+          "start": 6.3,
+          "end": 6.5
+        },
+        {
+          "w": "function",
+          "start": 6.5,
+          "end": 6.86
+        }
+      ]
+    },
+    {
+      "text": "with an f\u2011string to format",
+      "start": 6.86,
+      "end": 8.02,
+      "words": [
+        {
+          "w": "with",
+          "start": 6.86,
+          "end": 7.16
+        },
+        {
+          "w": "an",
+          "start": 7.16,
+          "end": 7.36
+        },
+        {
+          "w": "f\u2011string",
+          "start": 7.36,
+          "end": 7.5
+        },
+        {
+          "w": "to",
+          "start": 7.5,
+          "end": 7.72
+        },
+        {
+          "w": "format",
+          "start": 7.72,
+          "end": 8.02
+        }
+      ]
+    },
+    {
+      "text": "the message. Here\u2019s the code",
+      "start": 8.02,
+      "end": 9.86,
+      "words": [
+        {
+          "w": "the",
+          "start": 8.02,
+          "end": 8.28
+        },
+        {
+          "w": "message.",
+          "start": 8.28,
+          "end": 8.5
+        },
+        {
+          "w": "Here\u2019s",
+          "start": 8.5,
+          "end": 8.92
+        },
+        {
+          "w": "the",
+          "start": 9.38,
+          "end": 9.68
+        },
+        {
+          "w": "code",
+          "start": 9.68,
+          "end": 9.86
+        }
+      ]
+    },
+    {
+      "text": "that builds and prints the",
+      "start": 9.86,
+      "end": 11.24,
+      "words": [
+        {
+          "w": "that",
+          "start": 9.86,
+          "end": 10.12
+        },
+        {
+          "w": "builds",
+          "start": 10.12,
+          "end": 10.38
+        },
+        {
+          "w": "and",
+          "start": 10.38,
+          "end": 10.66
+        },
+        {
+          "w": "prints",
+          "start": 10.66,
+          "end": 10.98
+        },
+        {
+          "w": "the",
+          "start": 10.98,
+          "end": 11.24
+        }
+      ]
+    },
+    {
+      "text": "summary. Running the program displays",
+      "start": 11.24,
+      "end": 13.18,
+      "words": [
+        {
+          "w": "summary.",
+          "start": 11.24,
+          "end": 11.5
+        },
+        {
+          "w": "Running",
+          "start": 11.5,
+          "end": 11.82
+        },
+        {
+          "w": "the",
+          "start": 12.38,
+          "end": 12.52
+        },
+        {
+          "w": "program",
+          "start": 12.52,
+          "end": 12.8
+        },
+        {
+          "w": "displays",
+          "start": 12.8,
+          "end": 13.18
+        }
+      ]
+    },
+    {
+      "text": "a clear summary of your",
+      "start": 13.18,
+      "end": 14.9,
+      "words": [
+        {
+          "w": "a",
+          "start": 13.18,
+          "end": 13.66
+        },
+        {
+          "w": "clear",
+          "start": 13.66,
+          "end": 14.06
+        },
+        {
+          "w": "summary",
+          "start": 14.06,
+          "end": 14.3
+        },
+        {
+          "w": "of",
+          "start": 14.3,
+          "end": 14.66
+        },
+        {
+          "w": "your",
+          "start": 14.66,
+          "end": 14.9
+        }
+      ]
+    },
+    {
+      "text": "bet. The output line shows",
+      "start": 14.9,
+      "end": 16.52,
+      "words": [
+        {
+          "w": "bet.",
+          "start": 14.9,
+          "end": 15.08
+        },
+        {
+          "w": "The",
+          "start": 15.08,
+          "end": 15.34
+        },
+        {
+          "w": "output",
+          "start": 15.74,
+          "end": 15.9
+        },
+        {
+          "w": "line",
+          "start": 15.9,
+          "end": 16.12
+        },
+        {
+          "w": "shows",
+          "start": 16.12,
+          "end": 16.52
+        }
+      ]
+    },
+    {
+      "text": "the number of lines and",
+      "start": 16.52,
+      "end": 17.82,
+      "words": [
+        {
+          "w": "the",
+          "start": 16.52,
+          "end": 16.86
+        },
+        {
+          "w": "number",
+          "start": 16.86,
+          "end": 17.08
+        },
+        {
+          "w": "of",
+          "start": 17.08,
+          "end": 17.24
+        },
+        {
+          "w": "lines",
+          "start": 17.24,
+          "end": 17.48
+        },
+        {
+          "w": "and",
+          "start": 17.48,
+          "end": 17.82
+        }
+      ]
+    },
+    {
+      "text": "total bet together. An f\u2011string",
+      "start": 17.82,
+      "end": 19.68,
+      "words": [
+        {
+          "w": "total",
+          "start": 17.82,
+          "end": 18.14
+        },
+        {
+          "w": "bet",
+          "start": 18.14,
+          "end": 18.38
+        },
+        {
+          "w": "together.",
+          "start": 18.38,
+          "end": 18.62
+        },
+        {
+          "w": "An",
+          "start": 18.62,
+          "end": 19.08
+        },
+        {
+          "w": "f\u2011string",
+          "start": 19.52,
+          "end": 19.68
+        }
+      ]
+    },
+    {
+      "text": "lets you embed variables directly",
+      "start": 19.68,
+      "end": 20.9,
+      "words": [
+        {
+          "w": "lets",
+          "start": 19.68,
+          "end": 19.86
+        },
+        {
+          "w": "you",
+          "start": 19.86,
+          "end": 20.1
+        },
+        {
+          "w": "embed",
+          "start": 20.1,
+          "end": 20.36
+        },
+        {
+          "w": "variables",
+          "start": 20.36,
+          "end": 20.6
+        },
+        {
+          "w": "directly",
+          "start": 20.6,
+          "end": 20.9
+        }
+      ]
+    },
+    {
+      "text": "inside a printed message. Try",
+      "start": 20.9,
+      "end": 23.04,
+      "words": [
+        {
+          "w": "inside",
+          "start": 20.9,
+          "end": 21.44
+        },
+        {
+          "w": "a",
+          "start": 21.44,
+          "end": 22.02
+        },
+        {
+          "w": "printed",
+          "start": 22.02,
+          "end": 22.6
+        },
+        {
+          "w": "message.",
+          "start": 22.6,
+          "end": 22.84
+        },
+        {
+          "w": "Try",
+          "start": 22.84,
+          "end": 23.04
+        }
+      ]
+    },
+    {
+      "text": "changing the bet amount and",
+      "start": 23.04,
+      "end": 25.16,
+      "words": [
+        {
+          "w": "changing",
+          "start": 23.04,
+          "end": 23.54
+        },
+        {
+          "w": "the",
+          "start": 24.04,
+          "end": 24.34
+        },
+        {
+          "w": "bet",
+          "start": 24.34,
+          "end": 24.76
+        },
+        {
+          "w": "amount",
+          "start": 24.76,
+          "end": 25.02
+        },
+        {
+          "w": "and",
+          "start": 25.02,
+          "end": 25.16
+        }
+      ]
+    },
+    {
+      "text": "see how the printed summary",
+      "start": 25.16,
+      "end": 26.38,
+      "words": [
+        {
+          "w": "see",
+          "start": 25.16,
+          "end": 25.5
+        },
+        {
+          "w": "how",
+          "start": 25.5,
+          "end": 25.78
+        },
+        {
+          "w": "the",
+          "start": 25.78,
+          "end": 26.0
+        },
+        {
+          "w": "printed",
+          "start": 26.0,
+          "end": 26.24
+        },
+        {
+          "w": "summary",
+          "start": 26.24,
+          "end": 26.38
+        }
+      ]
+    },
+    {
+      "text": "updates.",
+      "start": 26.38,
+      "end": 26.68,
+      "words": [
+        {
+          "w": "updates.",
+          "start": 26.38,
+          "end": 26.68
+        }
+      ]
+    }
+  ]
+}

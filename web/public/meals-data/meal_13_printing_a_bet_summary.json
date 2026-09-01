@@ -1,0 +1,173 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_13_printing_a_bet_summary",
+    "title": "Printing a Bet Summary",
+    "concept": "python.basics.print",
+    "objective": "Display the chosen lines and bet amount using an f\u2011string",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.data.dicts",
+      "python.data.lists"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [],
+    "assumes": [
+      "get_number_of_lines",
+      "get_bet",
+      "f-strings"
+    ],
+    "voice": {
+      "script": "What if you could see your bet at a glance? How do you show the chosen lines and bet amount? We use Python\u2019s print function with an f\u2011string to format the message. Here\u2019s the code that builds and prints the summary. Running the program displays a clear summary of your bet. The output line shows the number of lines and total bet together. An f\u2011string lets you embed variables directly inside a printed message. Try changing the bet amount and see how the printed summary updates.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could see your bet at a glance?"
+        },
+        "narration_anchor": "What if you could see your bet at a glance?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you show the chosen lines and bet amount?"
+        },
+        "narration_anchor": "How do you show the chosen lines and bet amount?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Get user input",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Print summary",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "uses f\u2011string"
+            }
+          ]
+        },
+        "narration_anchor": "We use Python\u2019s print function with an f\u2011string to format the message."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "def get_number_of_lines():\n    return int(input(\"Enter number of lines (1-3): \"))\n\ndef get_bet():\n    return int(input(\"Enter bet per line: \"))\n\nlines = get_number_of_lines()\nbet_per_line = get_bet()\ntotal = lines * bet_per_line\nprint(f\"You bet {bet_per_line} per line on {lines} lines, total {total}.\")\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "def get_number_of_lines():\n    return int(input(\"Enter number of lines (1-3): \"))\n\ndef get_bet():\n    return int(input(\"Enter bet per line: \"))\n\nlines = get_number_of_lines()\nbet_per_line = get_bet()\ntotal = lines * bet_per_line\nprint(f\"You bet {bet_per_line} per line on {lines} lines, total {total}.\")",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "f\"You bet {bet_per_line} per line on {lines} lines, total {total}.\""
+            }
+          ]
+        },
+        "narration_anchor": "Here\u2019s the code that builds and prints the summary."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [
+            "2",
+            "5"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:37+00:00",
+            "stdout": "Enter number of lines (1-3): Enter bet per line: You bet 5 per line on 2 lines, total 10.\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running the program displays a clear summary of your bet.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "An f\u2011string lets you embed variables directly inside a printed message."
+        },
+        "narration_anchor": "An f\u2011string lets you embed variables directly inside a printed message.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Try changing the bet amount and see how the printed summary updates."
+        },
+        "narration_anchor": "Try changing the bet amount and see how the printed summary updates.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Try changing the bet amount and see how the printed summary updates."
+    },
+    "series": {
+      "title": "Build a Simple Slot\u2011Machine Deposit App",
+      "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot\u2011machine spin",
+      "order": 13,
+      "total": 17,
+      "previous_id": "meal_12_bet_per_line_validation",
+      "next_id": "meal_14_symbol_count_dictionary"
+    }
+  }
+}

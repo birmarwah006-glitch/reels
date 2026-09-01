@@ -1,0 +1,199 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_06_write_an_if_elif_else_chain",
+    "title": "Write an if\u2011elif\u2011else chain",
+    "concept": "python.control.if",
+    "objective": "You can structure multiple conditions using if, elif, and else",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.basics.operators"
+    ],
+    "next_concepts": [
+      "python.basics.print",
+      "python.basics.print"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "if",
+      "elif",
+      "else"
+    ],
+    "assumes": [
+      "input",
+      "list"
+    ],
+    "voice": {
+      "script": "What decides who wins in rock paper scissors? How do we compare the player and computer moves? An if statement checks a condition and runs code when it\u2019s true. Elif means otherwise if, letting us test another condition only when the previous one was false. Else catches any remaining cases when none of the earlier conditions matched. Now we write the if\u2011elif\u2011else block: If both choices are the same, it is a tie. If the player chose rock and the computer chose scissors, the player wins. Otherwise, the computer wins. Use if, elif, and else to handle multiple exclusive outcomes. Add the missing win conditions for paper and scissors to the chain.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What decides who wins in rock paper scissors?"
+        },
+        "narration_anchor": "What decides who wins in rock paper scissors?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do we compare the player and computer moves?"
+        },
+        "narration_anchor": "How do we compare the player and computer moves?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "player vs computer",
+              "kind": "decision"
+            },
+            {
+              "id": "b",
+              "label": "Tie",
+              "kind": "output"
+            },
+            {
+              "id": "c",
+              "label": "Player wins",
+              "kind": "output"
+            },
+            {
+              "id": "d",
+              "label": "Computer wins",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "same move"
+            },
+            {
+              "from": "a",
+              "to": "c",
+              "label": "player beats computer"
+            },
+            {
+              "from": "a",
+              "to": "d",
+              "label": "otherwise"
+            }
+          ]
+        },
+        "narration_anchor": "An if statement checks a condition and runs code when it\u2019s true."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "import random\nmoves = ['rock', 'paper', 'scissors']\nuser_choice = input('Enter rock, paper, or scissors: ').strip().lower()\ncomputer_choice = random.choice(moves)\nprint(f'Computer chose {computer_choice}')\n# Decision chain\nif user_choice == computer_choice:\n    print('Tie!')\nelif user_choice == 'rock' and computer_choice == 'scissors':\n    print('You win!')\nelse:\n    print('Computer wins!')\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "import random\nmoves = ['rock', 'paper', 'scissors']\nuser_choice = input('Enter rock, paper, or scissors: ').strip().lower()\ncomputer_choice = random.choice(moves)\nprint(f'Computer chose {computer_choice}')\n# Decision chain\nif user_choice == computer_choice:\n    print('Tie!')\nelif user_choice == 'rock' and computer_choice == 'scissors':\n    print('You win!')\nelse:\n    print('Computer wins!')",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "if user_choice == computer_choice:"
+            }
+          ]
+        },
+        "narration_anchor": "Now we write the if\u2011elif\u2011else block:"
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [
+            "rock"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:32+00:00",
+            "stdout": "Enter rock, paper, or scissors: Computer chose rock\nTie!\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Use if, elif, and else to handle multiple exclusive outcomes."
+        },
+        "narration_anchor": "Use if, elif, and else to handle multiple exclusive outcomes.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Add the missing win conditions for paper and scissors to the chain."
+        },
+        "narration_anchor": "Add the missing win conditions for paper and scissors to the chain.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Add the missing win conditions for paper and scissors to the chain.",
+      "hint": "Check each player move against the move it defeats."
+    },
+    "series": {
+      "title": "Build a Rock\u2011Paper\u2011Scissors Game",
+      "artifact": "A command\u2011line rock\u2011paper\u2011scissors game you can run in the terminal",
+      "order": 6,
+      "total": 10,
+      "previous_id": "meal_05_pick_a_random_computer_move",
+      "next_id": "meal_07_detect_a_tie"
+    }
+  }
+}

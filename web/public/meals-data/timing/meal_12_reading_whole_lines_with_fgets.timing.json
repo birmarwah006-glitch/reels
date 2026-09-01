@@ -1,0 +1,1120 @@
+{
+  "meal_id": "meal_12_reading_whole_lines_with_fgets",
+  "audio": "meal_12_reading_whole_lines_with_fgets.mp3",
+  "duration": 53.328,
+  "alignment": "whisper",
+  "anchors": {
+    "What if you could capture an entire sentence from the user, spaces and all?": 3.44,
+    "How do you read a full line of text in C?": 14.68,
+    "The solution is a function called fgets.": 17.38,
+    "Remember to make the array a little larger than the expected line so the newline and a terminating character fit.": 41.74,
+    "Try writing a program that uses fgets to read a line and then prints its length.": 47.56
+  },
+  "captions": [
+    {
+      "text": "You ever typed a whole",
+      "start": 0.0,
+      "end": 1.04,
+      "words": [
+        {
+          "w": "You",
+          "start": 0.0,
+          "end": 0.22
+        },
+        {
+          "w": "ever",
+          "start": 0.22,
+          "end": 0.46
+        },
+        {
+          "w": "typed",
+          "start": 0.46,
+          "end": 0.68
+        },
+        {
+          "w": "a",
+          "start": 0.68,
+          "end": 0.86
+        },
+        {
+          "w": "whole",
+          "start": 0.86,
+          "end": 1.04
+        }
+      ]
+    },
+    {
+      "text": "sentence but only got the",
+      "start": 1.04,
+      "end": 2.34,
+      "words": [
+        {
+          "w": "sentence",
+          "start": 1.04,
+          "end": 1.42
+        },
+        {
+          "w": "but",
+          "start": 1.62,
+          "end": 1.72
+        },
+        {
+          "w": "only",
+          "start": 1.72,
+          "end": 1.98
+        },
+        {
+          "w": "got",
+          "start": 1.98,
+          "end": 2.18
+        },
+        {
+          "w": "the",
+          "start": 2.18,
+          "end": 2.34
+        }
+      ]
+    },
+    {
+      "text": "first word? What if you",
+      "start": 2.34,
+      "end": 3.84,
+      "words": [
+        {
+          "w": "first",
+          "start": 2.34,
+          "end": 2.58
+        },
+        {
+          "w": "word?",
+          "start": 2.58,
+          "end": 2.96
+        },
+        {
+          "w": "What",
+          "start": 3.44,
+          "end": 3.6
+        },
+        {
+          "w": "if",
+          "start": 3.6,
+          "end": 3.82
+        },
+        {
+          "w": "you",
+          "start": 3.82,
+          "end": 3.84
+        }
+      ]
+    },
+    {
+      "text": "could capture an entire sentence",
+      "start": 3.84,
+      "end": 5.48,
+      "words": [
+        {
+          "w": "could",
+          "start": 3.84,
+          "end": 4.06
+        },
+        {
+          "w": "capture",
+          "start": 4.06,
+          "end": 4.4
+        },
+        {
+          "w": "an",
+          "start": 4.4,
+          "end": 4.72
+        },
+        {
+          "w": "entire",
+          "start": 4.72,
+          "end": 5.1
+        },
+        {
+          "w": "sentence",
+          "start": 5.1,
+          "end": 5.48
+        }
+      ]
+    },
+    {
+      "text": "from the user, spaces and",
+      "start": 5.48,
+      "end": 7.1,
+      "words": [
+        {
+          "w": "from",
+          "start": 5.48,
+          "end": 5.74
+        },
+        {
+          "w": "the",
+          "start": 5.74,
+          "end": 5.94
+        },
+        {
+          "w": "user,",
+          "start": 5.94,
+          "end": 6.2
+        },
+        {
+          "w": "spaces",
+          "start": 6.2,
+          "end": 6.76
+        },
+        {
+          "w": "and",
+          "start": 6.76,
+          "end": 7.1
+        }
+      ]
+    },
+    {
+      "text": "all? In C the usual",
+      "start": 7.1,
+      "end": 8.5,
+      "words": [
+        {
+          "w": "all?",
+          "start": 7.1,
+          "end": 7.48
+        },
+        {
+          "w": "In",
+          "start": 7.66,
+          "end": 7.84
+        },
+        {
+          "w": "C",
+          "start": 7.84,
+          "end": 8.0
+        },
+        {
+          "w": "the",
+          "start": 8.0,
+          "end": 8.2
+        },
+        {
+          "w": "usual",
+          "start": 8.2,
+          "end": 8.5
+        }
+      ]
+    },
+    {
+      "text": "input function stops at the",
+      "start": 8.5,
+      "end": 9.98,
+      "words": [
+        {
+          "w": "input",
+          "start": 8.5,
+          "end": 8.8
+        },
+        {
+          "w": "function",
+          "start": 8.8,
+          "end": 9.24
+        },
+        {
+          "w": "stops",
+          "start": 9.24,
+          "end": 9.6
+        },
+        {
+          "w": "at",
+          "start": 9.6,
+          "end": 9.84
+        },
+        {
+          "w": "the",
+          "start": 9.84,
+          "end": 9.98
+        }
+      ]
+    },
+    {
+      "text": "first space, so it can't",
+      "start": 9.98,
+      "end": 11.1,
+      "words": [
+        {
+          "w": "first",
+          "start": 9.98,
+          "end": 10.2
+        },
+        {
+          "w": "space,",
+          "start": 10.2,
+          "end": 10.52
+        },
+        {
+          "w": "so",
+          "start": 10.52,
+          "end": 10.78
+        },
+        {
+          "w": "it",
+          "start": 10.78,
+          "end": 10.86
+        },
+        {
+          "w": "can't",
+          "start": 10.86,
+          "end": 11.1
+        }
+      ]
+    },
+    {
+      "text": "read a full line. That's",
+      "start": 11.1,
+      "end": 12.66,
+      "words": [
+        {
+          "w": "read",
+          "start": 11.1,
+          "end": 11.3
+        },
+        {
+          "w": "a",
+          "start": 11.3,
+          "end": 11.44
+        },
+        {
+          "w": "full",
+          "start": 11.44,
+          "end": 11.6
+        },
+        {
+          "w": "line.",
+          "start": 11.6,
+          "end": 12.02
+        },
+        {
+          "w": "That's",
+          "start": 12.4,
+          "end": 12.66
+        }
+      ]
+    },
+    {
+      "text": "because it stops reading when",
+      "start": 12.66,
+      "end": 14.14,
+      "words": [
+        {
+          "w": "because",
+          "start": 12.66,
+          "end": 12.88
+        },
+        {
+          "w": "it",
+          "start": 12.88,
+          "end": 13.14
+        },
+        {
+          "w": "stops",
+          "start": 13.14,
+          "end": 13.42
+        },
+        {
+          "w": "reading",
+          "start": 13.42,
+          "end": 13.8
+        },
+        {
+          "w": "when",
+          "start": 13.8,
+          "end": 14.14
+        }
+      ]
+    },
+    {
+      "text": "it sees whitespace. How do",
+      "start": 14.14,
+      "end": 15.66,
+      "words": [
+        {
+          "w": "it",
+          "start": 14.14,
+          "end": 14.24
+        },
+        {
+          "w": "sees",
+          "start": 14.24,
+          "end": 14.44
+        },
+        {
+          "w": "whitespace.",
+          "start": 14.44,
+          "end": 14.68
+        },
+        {
+          "w": "How",
+          "start": 14.68,
+          "end": 15.12
+        },
+        {
+          "w": "do",
+          "start": 15.52,
+          "end": 15.66
+        }
+      ]
+    },
+    {
+      "text": "you read a full line",
+      "start": 15.66,
+      "end": 16.44,
+      "words": [
+        {
+          "w": "you",
+          "start": 15.66,
+          "end": 15.82
+        },
+        {
+          "w": "read",
+          "start": 15.82,
+          "end": 15.88
+        },
+        {
+          "w": "a",
+          "start": 15.88,
+          "end": 16.06
+        },
+        {
+          "w": "full",
+          "start": 16.06,
+          "end": 16.22
+        },
+        {
+          "w": "line",
+          "start": 16.22,
+          "end": 16.44
+        }
+      ]
+    },
+    {
+      "text": "of text in C? The",
+      "start": 16.44,
+      "end": 17.64,
+      "words": [
+        {
+          "w": "of",
+          "start": 16.44,
+          "end": 16.74
+        },
+        {
+          "w": "text",
+          "start": 16.74,
+          "end": 16.88
+        },
+        {
+          "w": "in",
+          "start": 16.88,
+          "end": 17.12
+        },
+        {
+          "w": "C?",
+          "start": 17.12,
+          "end": 17.38
+        },
+        {
+          "w": "The",
+          "start": 17.38,
+          "end": 17.64
+        }
+      ]
+    },
+    {
+      "text": "solution is a function called",
+      "start": 18.0,
+      "end": 19.38,
+      "words": [
+        {
+          "w": "solution",
+          "start": 18.0,
+          "end": 18.18
+        },
+        {
+          "w": "is",
+          "start": 18.18,
+          "end": 18.58
+        },
+        {
+          "w": "a",
+          "start": 18.58,
+          "end": 18.9
+        },
+        {
+          "w": "function",
+          "start": 18.9,
+          "end": 19.14
+        },
+        {
+          "w": "called",
+          "start": 19.14,
+          "end": 19.38
+        }
+      ]
+    },
+    {
+      "text": "fgets. fgets means \u201cfile get",
+      "start": 19.38,
+      "end": 22.14,
+      "words": [
+        {
+          "w": "fgets.",
+          "start": 19.38,
+          "end": 19.74
+        },
+        {
+          "w": "fgets",
+          "start": 19.74,
+          "end": 20.42
+        },
+        {
+          "w": "means",
+          "start": 20.78,
+          "end": 21.06
+        },
+        {
+          "w": "\u201cfile",
+          "start": 21.06,
+          "end": 21.54
+        },
+        {
+          "w": "get",
+          "start": 21.54,
+          "end": 22.14
+        }
+      ]
+    },
+    {
+      "text": "string\u201d. It takes three arguments:",
+      "start": 22.14,
+      "end": 23.76,
+      "words": [
+        {
+          "w": "string\u201d.",
+          "start": 22.14,
+          "end": 22.4
+        },
+        {
+          "w": "It",
+          "start": 22.4,
+          "end": 22.74
+        },
+        {
+          "w": "takes",
+          "start": 23.18,
+          "end": 23.22
+        },
+        {
+          "w": "three",
+          "start": 23.22,
+          "end": 23.46
+        },
+        {
+          "w": "arguments:",
+          "start": 23.46,
+          "end": 23.76
+        }
+      ]
+    },
+    {
+      "text": "a character array where the",
+      "start": 23.76,
+      "end": 26.04,
+      "words": [
+        {
+          "w": "a",
+          "start": 23.76,
+          "end": 24.24
+        },
+        {
+          "w": "character",
+          "start": 25.0,
+          "end": 25.16
+        },
+        {
+          "w": "array",
+          "start": 25.16,
+          "end": 25.42
+        },
+        {
+          "w": "where",
+          "start": 25.42,
+          "end": 25.82
+        },
+        {
+          "w": "the",
+          "start": 25.82,
+          "end": 26.04
+        }
+      ]
+    },
+    {
+      "text": "text will be stored, the",
+      "start": 26.04,
+      "end": 27.04,
+      "words": [
+        {
+          "w": "text",
+          "start": 26.04,
+          "end": 26.12
+        },
+        {
+          "w": "will",
+          "start": 26.12,
+          "end": 26.36
+        },
+        {
+          "w": "be",
+          "start": 26.36,
+          "end": 26.56
+        },
+        {
+          "w": "stored,",
+          "start": 26.56,
+          "end": 26.76
+        },
+        {
+          "w": "the",
+          "start": 26.76,
+          "end": 27.04
+        }
+      ]
+    },
+    {
+      "text": "maximum number of characters to",
+      "start": 27.04,
+      "end": 28.84,
+      "words": [
+        {
+          "w": "maximum",
+          "start": 27.04,
+          "end": 27.72
+        },
+        {
+          "w": "number",
+          "start": 27.72,
+          "end": 28.1
+        },
+        {
+          "w": "of",
+          "start": 28.1,
+          "end": 28.44
+        },
+        {
+          "w": "characters",
+          "start": 28.44,
+          "end": 28.58
+        },
+        {
+          "w": "to",
+          "start": 28.58,
+          "end": 28.84
+        }
+      ]
+    },
+    {
+      "text": "read, and the input stream,",
+      "start": 28.84,
+      "end": 30.48,
+      "words": [
+        {
+          "w": "read,",
+          "start": 28.84,
+          "end": 29.2
+        },
+        {
+          "w": "and",
+          "start": 29.2,
+          "end": 29.44
+        },
+        {
+          "w": "the",
+          "start": 29.44,
+          "end": 30.08
+        },
+        {
+          "w": "input",
+          "start": 30.08,
+          "end": 30.26
+        },
+        {
+          "w": "stream,",
+          "start": 30.26,
+          "end": 30.48
+        }
+      ]
+    },
+    {
+      "text": "usually stdin. It reads characters",
+      "start": 30.48,
+      "end": 32.54,
+      "words": [
+        {
+          "w": "usually",
+          "start": 30.48,
+          "end": 30.9
+        },
+        {
+          "w": "stdin.",
+          "start": 30.9,
+          "end": 31.28
+        },
+        {
+          "w": "It",
+          "start": 31.28,
+          "end": 31.92
+        },
+        {
+          "w": "reads",
+          "start": 32.14,
+          "end": 32.34
+        },
+        {
+          "w": "characters",
+          "start": 32.34,
+          "end": 32.54
+        }
+      ]
+    },
+    {
+      "text": "until it reaches a newline",
+      "start": 32.54,
+      "end": 34.12,
+      "words": [
+        {
+          "w": "until",
+          "start": 32.54,
+          "end": 33.0
+        },
+        {
+          "w": "it",
+          "start": 33.0,
+          "end": 33.38
+        },
+        {
+          "w": "reaches",
+          "start": 33.38,
+          "end": 33.6
+        },
+        {
+          "w": "a",
+          "start": 33.6,
+          "end": 33.84
+        },
+        {
+          "w": "newline",
+          "start": 33.84,
+          "end": 34.12
+        }
+      ]
+    },
+    {
+      "text": "character or the limit, whichever",
+      "start": 34.12,
+      "end": 35.26,
+      "words": [
+        {
+          "w": "character",
+          "start": 34.12,
+          "end": 34.18
+        },
+        {
+          "w": "or",
+          "start": 34.18,
+          "end": 34.44
+        },
+        {
+          "w": "the",
+          "start": 34.44,
+          "end": 34.84
+        },
+        {
+          "w": "limit,",
+          "start": 34.84,
+          "end": 35.1
+        },
+        {
+          "w": "whichever",
+          "start": 35.1,
+          "end": 35.26
+        }
+      ]
+    },
+    {
+      "text": "comes first, and it keeps",
+      "start": 35.26,
+      "end": 37.2,
+      "words": [
+        {
+          "w": "comes",
+          "start": 35.26,
+          "end": 35.48
+        },
+        {
+          "w": "first,",
+          "start": 35.48,
+          "end": 35.86
+        },
+        {
+          "w": "and",
+          "start": 35.86,
+          "end": 36.22
+        },
+        {
+          "w": "it",
+          "start": 36.22,
+          "end": 36.82
+        },
+        {
+          "w": "keeps",
+          "start": 36.82,
+          "end": 37.2
+        }
+      ]
+    },
+    {
+      "text": "the spaces inside the line.",
+      "start": 37.2,
+      "end": 38.58,
+      "words": [
+        {
+          "w": "the",
+          "start": 37.2,
+          "end": 37.42
+        },
+        {
+          "w": "spaces",
+          "start": 37.42,
+          "end": 37.58
+        },
+        {
+          "w": "inside",
+          "start": 37.58,
+          "end": 37.8
+        },
+        {
+          "w": "the",
+          "start": 37.8,
+          "end": 38.1
+        },
+        {
+          "w": "line.",
+          "start": 38.1,
+          "end": 38.58
+        }
+      ]
+    },
+    {
+      "text": "After calling fgets you have",
+      "start": 38.58,
+      "end": 40.42,
+      "words": [
+        {
+          "w": "After",
+          "start": 38.58,
+          "end": 38.78
+        },
+        {
+          "w": "calling",
+          "start": 38.78,
+          "end": 39.02
+        },
+        {
+          "w": "fgets",
+          "start": 39.58,
+          "end": 39.7
+        },
+        {
+          "w": "you",
+          "start": 39.7,
+          "end": 40.04
+        },
+        {
+          "w": "have",
+          "start": 40.04,
+          "end": 40.42
+        }
+      ]
+    },
+    {
+      "text": "the whole line ready to",
+      "start": 40.42,
+      "end": 41.48,
+      "words": [
+        {
+          "w": "the",
+          "start": 40.42,
+          "end": 40.6
+        },
+        {
+          "w": "whole",
+          "start": 40.6,
+          "end": 40.82
+        },
+        {
+          "w": "line",
+          "start": 40.82,
+          "end": 41.0
+        },
+        {
+          "w": "ready",
+          "start": 41.0,
+          "end": 41.18
+        },
+        {
+          "w": "to",
+          "start": 41.18,
+          "end": 41.48
+        }
+      ]
+    },
+    {
+      "text": "use. Remember to make the",
+      "start": 41.48,
+      "end": 43.26,
+      "words": [
+        {
+          "w": "use.",
+          "start": 41.48,
+          "end": 41.74
+        },
+        {
+          "w": "Remember",
+          "start": 41.74,
+          "end": 41.94
+        },
+        {
+          "w": "to",
+          "start": 41.94,
+          "end": 42.44
+        },
+        {
+          "w": "make",
+          "start": 42.8,
+          "end": 43.02
+        },
+        {
+          "w": "the",
+          "start": 43.02,
+          "end": 43.26
+        }
+      ]
+    },
+    {
+      "text": "array a little larger than",
+      "start": 43.26,
+      "end": 44.44,
+      "words": [
+        {
+          "w": "array",
+          "start": 43.26,
+          "end": 43.42
+        },
+        {
+          "w": "a",
+          "start": 43.42,
+          "end": 43.64
+        },
+        {
+          "w": "little",
+          "start": 43.64,
+          "end": 43.96
+        },
+        {
+          "w": "larger",
+          "start": 43.96,
+          "end": 44.24
+        },
+        {
+          "w": "than",
+          "start": 44.24,
+          "end": 44.44
+        }
+      ]
+    },
+    {
+      "text": "the expected line so the",
+      "start": 44.44,
+      "end": 46.02,
+      "words": [
+        {
+          "w": "the",
+          "start": 44.44,
+          "end": 44.76
+        },
+        {
+          "w": "expected",
+          "start": 44.76,
+          "end": 45.14
+        },
+        {
+          "w": "line",
+          "start": 45.14,
+          "end": 45.46
+        },
+        {
+          "w": "so",
+          "start": 45.46,
+          "end": 45.54
+        },
+        {
+          "w": "the",
+          "start": 45.54,
+          "end": 46.02
+        }
+      ]
+    },
+    {
+      "text": "newline and a terminating character",
+      "start": 46.02,
+      "end": 47.02,
+      "words": [
+        {
+          "w": "newline",
+          "start": 46.02,
+          "end": 46.18
+        },
+        {
+          "w": "and",
+          "start": 46.18,
+          "end": 46.4
+        },
+        {
+          "w": "a",
+          "start": 46.4,
+          "end": 46.56
+        },
+        {
+          "w": "terminating",
+          "start": 46.56,
+          "end": 46.8
+        },
+        {
+          "w": "character",
+          "start": 46.8,
+          "end": 47.02
+        }
+      ]
+    },
+    {
+      "text": "fit. Try writing a program",
+      "start": 47.02,
+      "end": 49.32,
+      "words": [
+        {
+          "w": "fit.",
+          "start": 47.02,
+          "end": 47.56
+        },
+        {
+          "w": "Try",
+          "start": 47.56,
+          "end": 47.92
+        },
+        {
+          "w": "writing",
+          "start": 47.92,
+          "end": 48.46
+        },
+        {
+          "w": "a",
+          "start": 48.82,
+          "end": 49.02
+        },
+        {
+          "w": "program",
+          "start": 49.02,
+          "end": 49.32
+        }
+      ]
+    },
+    {
+      "text": "that uses fgets to read",
+      "start": 49.32,
+      "end": 50.88,
+      "words": [
+        {
+          "w": "that",
+          "start": 49.32,
+          "end": 49.62
+        },
+        {
+          "w": "uses",
+          "start": 49.62,
+          "end": 49.98
+        },
+        {
+          "w": "fgets",
+          "start": 49.98,
+          "end": 50.3
+        },
+        {
+          "w": "to",
+          "start": 50.3,
+          "end": 50.52
+        },
+        {
+          "w": "read",
+          "start": 50.52,
+          "end": 50.88
+        }
+      ]
+    },
+    {
+      "text": "a line and then prints",
+      "start": 50.88,
+      "end": 52.02,
+      "words": [
+        {
+          "w": "a",
+          "start": 50.88,
+          "end": 51.1
+        },
+        {
+          "w": "line",
+          "start": 51.1,
+          "end": 51.34
+        },
+        {
+          "w": "and",
+          "start": 51.34,
+          "end": 51.42
+        },
+        {
+          "w": "then",
+          "start": 51.42,
+          "end": 51.74
+        },
+        {
+          "w": "prints",
+          "start": 51.74,
+          "end": 52.02
+        }
+      ]
+    },
+    {
+      "text": "its length.",
+      "start": 52.02,
+      "end": 52.4,
+      "words": [
+        {
+          "w": "its",
+          "start": 52.02,
+          "end": 52.2
+        },
+        {
+          "w": "length.",
+          "start": 52.2,
+          "end": 52.4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_15_putting_it_together",
+    "title": "Putting Student and Account classes together",
+    "concept": "python.project.pipeline",
+    "objective": "Instantiate Student and Account objects and call their methods to see OOP in action",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "next_concepts": [],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [],
+    "assumes": [
+      "object / instance",
+      "method",
+      "print"
+    ],
+    "voice": {
+      "script": "What happens when you bring a student and a bank account together? In Python, a class is a blueprint for creating objects. An object, also called an instance, is a concrete copy of that blueprint that holds its own data. A method is a function defined inside a class that works on its instance. The print function displays text on the terminal. Now let's see the code. First we create two Student instances named Alice and Bob, add a few marks to each, and ask them to print their average. Then we create an Account instance for Alice, deposit money, withdraw some, and print the balance. Running the program shows the methods in action, confirming that each object keeps its own data and responds to commands.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What happens when you bring a student and a bank account together?"
+        },
+        "narration_anchor": "What happens when you bring a student and a bank account together?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Student instance",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Account instance",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Method calls",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "c",
+              "label": "average()"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "get_balance()"
+            }
+          ]
+        },
+        "narration_anchor": "An object, also called an instance, is a concrete copy of that blueprint that holds its own data."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "class Student:\n    def __init__(self, name):\n        self.name = name\n        self.marks = []\n    def add_mark(self, mark):\n        self.marks.append(mark)\n    def average(self):\n        if not self.marks:\n            print(f\"{self.name} has no marks.\")\n            return\n        avg = sum(self.marks) / len(self.marks)\n        print(f\"{self.name}'s average is {avg}\")\n\nclass Account:\n    def __init__(self, owner):\n        self.owner = owner\n        self.balance = 0\n    def credit(self, amount):\n        self.balance += amount\n    def debit(self, amount):\n        self.balance -= amount\n    def get_balance(self):\n        print(f\"{self.owner}'s balance is {self.balance}\")\n\nalice = Student(\"Alice\")\nbob = Student(\"Bob\")\nalice.add_mark(85)\nalice.add_mark(90)\nbob.add_mark(70)\nbob.add_mark(75)\nalice.average()\nbob.average()\n\nalice_acc = Account(\"Alice\")\nalice_acc.credit(1000)\nalice_acc.debit(250)\nalice_acc.get_balance()\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "class Student:\n    def __init__(self, name):\n        self.name = name\n        self.marks = []\n    def add_mark(self, mark):\n        self.marks.append(mark)\n    def average(self):\n        if not self.marks:\n            print(f\"{self.name} has no marks.\")\n            return\n        avg = sum(self.marks) / len(self.marks)\n        print(f\"{self.name}'s average is {avg}\")\n\nclass Account:\n    def __init__(self, owner):\n        self.owner = owner\n        self.balance = 0\n    def credit(self, amount):\n        self.balance += amount\n    def debit(self, amount):\n        self.balance -= amount\n    def get_balance(self):\n        print(f\"{self.owner}'s balance is {self.balance}\")\n\nalice = Student(\"Alice\")\nbob = Student(\"Bob\")\nalice.add_mark(85)\nalice.add_mark(90)\nbob.add_mark(70)\nbob.add_mark(75)\nalice.average()\nbob.average()\n\nalice_acc = Account(\"Alice\")\nalice_acc.credit(1000)\nalice_acc.debit(250)\nalice_acc.get_balance()",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "alice.average()"
+            }
+          ]
+        },
+        "narration_anchor": "Now let's see the code."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:38+00:00",
+            "stdout": "Alice's average is 87.5\nBob's average is 72.5\nAlice's balance is 750\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running the program shows the methods in action, confirming that each object keeps its own data and responds to commands.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Objects keep their own data and respond to commands via methods."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Create a third Student, give them marks, and add a greeting method that prints a welcome message."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Create a third Student, give them marks, and add a greeting method that prints a welcome message.",
+      "hint": "Define a method that uses the name attribute inside a formatted string."
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 15,
+      "total": 15,
+      "previous_id": "meal_14_build_an_account_class",
+      "next_id": null
+    }
+  }
+}

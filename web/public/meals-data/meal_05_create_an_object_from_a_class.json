@@ -1,0 +1,171 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_05_create_an_object_from_a_class",
+    "title": "Create an object from a class (instantiate)",
+    "concept": "python.oop.classes",
+    "objective": "Instantiate an object using the class name and store it in a variable",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.functions.define"
+    ],
+    "next_concepts": [
+      "python.oop.init",
+      "python.oop.init"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "instance"
+    ],
+    "assumes": [
+      "class definition syntax",
+      "variable",
+      "print"
+    ],
+    "voice": {
+      "script": "What if you could turn a blueprint into a real car in seconds? Imagine a car company\u2019s factory line: the blueprint defines the car, the car itself is the object. How do you create a usable car from the blueprint? First, Python lets you turn a class into an actual object called an instance. An instance is the actual car built from the class blueprint. To do that, you write the class name followed by parentheses and assign it to a variable. Now we write the code to create an instance. For example, we define a Student class with a name attribute, then create a student object by calling Student with a name and storing it in a variable called alice. Running the program prints the student\u2019s name. Creating an instance brings a class to life. Try making another Student object with a different name.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could turn a blueprint into a real car in seconds?"
+        },
+        "narration_anchor": "What if you could turn a blueprint into a real car in seconds?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you create a usable car from the blueprint?"
+        },
+        "narration_anchor": "How do you create a usable car from the blueprint?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Class blueprint",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Instance (object)",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "creates"
+            }
+          ]
+        },
+        "narration_anchor": "An instance is the actual car built from the class blueprint."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "class Student:\n    def __init__(self, name):\n        self.name = name\n\nalice = Student(\"Alice\")\nprint(alice.name)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "class Student:\n    def __init__(self, name):\n        self.name = name\n\nalice = Student(\"Alice\")\nprint(alice.name)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "Student(\"Alice\")"
+            }
+          ]
+        },
+        "narration_anchor": "Now we write the code to create an instance."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:32+00:00",
+            "stdout": "Alice\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running the program prints the student\u2019s name.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Creating an instance brings a class to life."
+        },
+        "narration_anchor": "Creating an instance brings a class to life.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Create a second Student object named Bob and print his name."
+        },
+        "narration_anchor": "Try making another Student object with a different name.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Create a second Student object named Bob and print his name.",
+      "hint": "Use the same class name and assign the result to a new variable."
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 5,
+      "total": 15,
+      "previous_id": "meal_04_define_a_simple_class",
+      "next_id": "meal_06_default_constructor_init"
+    }
+  }
+}

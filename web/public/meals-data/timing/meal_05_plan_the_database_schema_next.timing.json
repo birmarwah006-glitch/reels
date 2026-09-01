@@ -1,0 +1,549 @@
+{
+  "meal_id": "meal_05_plan_the_database_schema_next",
+  "audio": "meal_05_plan_the_database_schema_next.mp3",
+  "duration": 32.184,
+  "alignment": "whisper",
+  "anchors": {
+    "What tables does a grocery store need?": 0.0,
+    "Which tables will store our products, orders, and customers?": 7.04,
+    "Now we\u2019ll outline the main tables you\u2019ll create in MySQL.": 16.64,
+    "That blueprint becomes the database schema for the next lesson.": 22.5,
+    "Your next step: List three tables you would create for the grocery app and their key columns.": 26.26
+  },
+  "captions": [
+    {
+      "text": "What tables does a grocery",
+      "start": 0.0,
+      "end": 1.46,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.34
+        },
+        {
+          "w": "tables",
+          "start": 0.34,
+          "end": 0.76
+        },
+        {
+          "w": "does",
+          "start": 0.76,
+          "end": 1.0
+        },
+        {
+          "w": "a",
+          "start": 1.0,
+          "end": 1.18
+        },
+        {
+          "w": "grocery",
+          "start": 1.18,
+          "end": 1.46
+        }
+      ]
+    },
+    {
+      "text": "store need? Imagine the app",
+      "start": 1.46,
+      "end": 3.38,
+      "words": [
+        {
+          "w": "store",
+          "start": 1.46,
+          "end": 1.84
+        },
+        {
+          "w": "need?",
+          "start": 1.84,
+          "end": 2.34
+        },
+        {
+          "w": "Imagine",
+          "start": 2.72,
+          "end": 2.96
+        },
+        {
+          "w": "the",
+          "start": 2.96,
+          "end": 3.28
+        },
+        {
+          "w": "app",
+          "start": 3.28,
+          "end": 3.38
+        }
+      ]
+    },
+    {
+      "text": "as a library; the books",
+      "start": 3.38,
+      "end": 5.1,
+      "words": [
+        {
+          "w": "as",
+          "start": 3.38,
+          "end": 3.64
+        },
+        {
+          "w": "a",
+          "start": 3.64,
+          "end": 3.72
+        },
+        {
+          "w": "library;",
+          "start": 3.72,
+          "end": 4.16
+        },
+        {
+          "w": "the",
+          "start": 4.74,
+          "end": 4.84
+        },
+        {
+          "w": "books",
+          "start": 4.84,
+          "end": 5.1
+        }
+      ]
+    },
+    {
+      "text": "are data stored in tables.",
+      "start": 5.1,
+      "end": 6.52,
+      "words": [
+        {
+          "w": "are",
+          "start": 5.1,
+          "end": 5.34
+        },
+        {
+          "w": "data",
+          "start": 5.34,
+          "end": 5.66
+        },
+        {
+          "w": "stored",
+          "start": 5.66,
+          "end": 5.94
+        },
+        {
+          "w": "in",
+          "start": 5.94,
+          "end": 6.18
+        },
+        {
+          "w": "tables.",
+          "start": 6.18,
+          "end": 6.52
+        }
+      ]
+    },
+    {
+      "text": "Which tables will store our",
+      "start": 7.04,
+      "end": 8.36,
+      "words": [
+        {
+          "w": "Which",
+          "start": 7.04,
+          "end": 7.22
+        },
+        {
+          "w": "tables",
+          "start": 7.22,
+          "end": 7.52
+        },
+        {
+          "w": "will",
+          "start": 7.52,
+          "end": 7.84
+        },
+        {
+          "w": "store",
+          "start": 7.84,
+          "end": 8.08
+        },
+        {
+          "w": "our",
+          "start": 8.08,
+          "end": 8.36
+        }
+      ]
+    },
+    {
+      "text": "products, orders, and customers? First,",
+      "start": 8.36,
+      "end": 11.34,
+      "words": [
+        {
+          "w": "products,",
+          "start": 8.36,
+          "end": 8.82
+        },
+        {
+          "w": "orders,",
+          "start": 9.2,
+          "end": 9.52
+        },
+        {
+          "w": "and",
+          "start": 9.52,
+          "end": 9.9
+        },
+        {
+          "w": "customers?",
+          "start": 9.9,
+          "end": 10.38
+        },
+        {
+          "w": "First,",
+          "start": 11.24,
+          "end": 11.34
+        }
+      ]
+    },
+    {
+      "text": "identify the core entities: products,",
+      "start": 11.94,
+      "end": 14.38,
+      "words": [
+        {
+          "w": "identify",
+          "start": 11.94,
+          "end": 12.24
+        },
+        {
+          "w": "the",
+          "start": 12.24,
+          "end": 12.6
+        },
+        {
+          "w": "core",
+          "start": 12.6,
+          "end": 12.8
+        },
+        {
+          "w": "entities:",
+          "start": 12.8,
+          "end": 13.26
+        },
+        {
+          "w": "products,",
+          "start": 14.08,
+          "end": 14.38
+        }
+      ]
+    },
+    {
+      "text": "customers, orders. Now we\u2019ll outline",
+      "start": 14.96,
+      "end": 17.46,
+      "words": [
+        {
+          "w": "customers,",
+          "start": 14.96,
+          "end": 15.28
+        },
+        {
+          "w": "orders.",
+          "start": 15.72,
+          "end": 16.08
+        },
+        {
+          "w": "Now",
+          "start": 16.64,
+          "end": 16.82
+        },
+        {
+          "w": "we\u2019ll",
+          "start": 16.82,
+          "end": 17.1
+        },
+        {
+          "w": "outline",
+          "start": 17.1,
+          "end": 17.46
+        }
+      ]
+    },
+    {
+      "text": "the main tables you\u2019ll create",
+      "start": 17.46,
+      "end": 18.88,
+      "words": [
+        {
+          "w": "the",
+          "start": 17.46,
+          "end": 17.7
+        },
+        {
+          "w": "main",
+          "start": 17.7,
+          "end": 17.94
+        },
+        {
+          "w": "tables",
+          "start": 17.94,
+          "end": 18.26
+        },
+        {
+          "w": "you\u2019ll",
+          "start": 18.26,
+          "end": 18.52
+        },
+        {
+          "w": "create",
+          "start": 18.52,
+          "end": 18.88
+        }
+      ]
+    },
+    {
+      "text": "in MySQL. Each table gets",
+      "start": 18.88,
+      "end": 20.76,
+      "words": [
+        {
+          "w": "in",
+          "start": 18.88,
+          "end": 19.12
+        },
+        {
+          "w": "MySQL.",
+          "start": 19.12,
+          "end": 19.26
+        },
+        {
+          "w": "Each",
+          "start": 19.26,
+          "end": 19.66
+        },
+        {
+          "w": "table",
+          "start": 20.18,
+          "end": 20.42
+        },
+        {
+          "w": "gets",
+          "start": 20.42,
+          "end": 20.76
+        }
+      ]
+    },
+    {
+      "text": "a primary key and relevant",
+      "start": 20.76,
+      "end": 22.2,
+      "words": [
+        {
+          "w": "a",
+          "start": 20.76,
+          "end": 20.98
+        },
+        {
+          "w": "primary",
+          "start": 20.98,
+          "end": 21.24
+        },
+        {
+          "w": "key",
+          "start": 21.24,
+          "end": 21.48
+        },
+        {
+          "w": "and",
+          "start": 21.48,
+          "end": 21.96
+        },
+        {
+          "w": "relevant",
+          "start": 21.96,
+          "end": 22.2
+        }
+      ]
+    },
+    {
+      "text": "columns. That blueprint becomes the",
+      "start": 22.2,
+      "end": 24.52,
+      "words": [
+        {
+          "w": "columns.",
+          "start": 22.2,
+          "end": 22.5
+        },
+        {
+          "w": "That",
+          "start": 22.5,
+          "end": 23.04
+        },
+        {
+          "w": "blueprint",
+          "start": 23.46,
+          "end": 23.68
+        },
+        {
+          "w": "becomes",
+          "start": 23.68,
+          "end": 24.06
+        },
+        {
+          "w": "the",
+          "start": 24.06,
+          "end": 24.52
+        }
+      ]
+    },
+    {
+      "text": "database schema for the next",
+      "start": 24.52,
+      "end": 26.08,
+      "words": [
+        {
+          "w": "database",
+          "start": 24.52,
+          "end": 24.82
+        },
+        {
+          "w": "schema",
+          "start": 24.82,
+          "end": 25.18
+        },
+        {
+          "w": "for",
+          "start": 25.18,
+          "end": 25.62
+        },
+        {
+          "w": "the",
+          "start": 25.62,
+          "end": 25.94
+        },
+        {
+          "w": "next",
+          "start": 25.94,
+          "end": 26.08
+        }
+      ]
+    },
+    {
+      "text": "lesson. Your next step: List",
+      "start": 26.08,
+      "end": 27.9,
+      "words": [
+        {
+          "w": "lesson.",
+          "start": 26.08,
+          "end": 26.26
+        },
+        {
+          "w": "Your",
+          "start": 26.26,
+          "end": 26.66
+        },
+        {
+          "w": "next",
+          "start": 26.66,
+          "end": 27.22
+        },
+        {
+          "w": "step:",
+          "start": 27.22,
+          "end": 27.48
+        },
+        {
+          "w": "List",
+          "start": 27.48,
+          "end": 27.9
+        }
+      ]
+    },
+    {
+      "text": "three tables you would create",
+      "start": 28.52,
+      "end": 29.66,
+      "words": [
+        {
+          "w": "three",
+          "start": 28.52,
+          "end": 28.7
+        },
+        {
+          "w": "tables",
+          "start": 28.7,
+          "end": 29.02
+        },
+        {
+          "w": "you",
+          "start": 29.02,
+          "end": 29.28
+        },
+        {
+          "w": "would",
+          "start": 29.28,
+          "end": 29.5
+        },
+        {
+          "w": "create",
+          "start": 29.5,
+          "end": 29.66
+        }
+      ]
+    },
+    {
+      "text": "for the grocery app and",
+      "start": 29.66,
+      "end": 30.86,
+      "words": [
+        {
+          "w": "for",
+          "start": 29.66,
+          "end": 29.94
+        },
+        {
+          "w": "the",
+          "start": 29.94,
+          "end": 30.16
+        },
+        {
+          "w": "grocery",
+          "start": 30.16,
+          "end": 30.28
+        },
+        {
+          "w": "app",
+          "start": 30.28,
+          "end": 30.54
+        },
+        {
+          "w": "and",
+          "start": 30.54,
+          "end": 30.86
+        }
+      ]
+    },
+    {
+      "text": "their key columns.",
+      "start": 30.86,
+      "end": 31.48,
+      "words": [
+        {
+          "w": "their",
+          "start": 30.86,
+          "end": 31.08
+        },
+        {
+          "w": "key",
+          "start": 31.08,
+          "end": 31.28
+        },
+        {
+          "w": "columns.",
+          "start": 31.28,
+          "end": 31.48
+        }
+      ]
+    }
+  ]
+}

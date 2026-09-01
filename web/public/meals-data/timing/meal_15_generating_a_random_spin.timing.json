@@ -1,0 +1,930 @@
+{
+  "meal_id": "meal_15_generating_a_random_spin",
+  "audio": "meal_15_generating_a_random_spin.mp3",
+  "duration": 49.08,
+  "alignment": "whisper",
+  "anchors": {
+    "What if every spin was truly random?": 0.0,
+    "How do we generate columns of symbols without repeats?": 2.68,
+    "First, we need a function that creates the spin. We'll call it get_slot_machine_spin.": 6.1,
+    "Now let's write the function.": 26.44,
+    "Running the script prints three columns of symbols.": 36.18,
+    "A list lets you collect random symbols for each reel.": 38.88,
+    "Try changing the number of columns or symbols to see different results.": 42.44
+  },
+  "captions": [
+    {
+      "text": "What if every spin was",
+      "start": 0.0,
+      "end": 1.42,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.26
+        },
+        {
+          "w": "if",
+          "start": 0.26,
+          "end": 0.5
+        },
+        {
+          "w": "every",
+          "start": 0.5,
+          "end": 0.82
+        },
+        {
+          "w": "spin",
+          "start": 0.82,
+          "end": 1.08
+        },
+        {
+          "w": "was",
+          "start": 1.08,
+          "end": 1.42
+        }
+      ]
+    },
+    {
+      "text": "truly random? How do we",
+      "start": 1.42,
+      "end": 3.14,
+      "words": [
+        {
+          "w": "truly",
+          "start": 1.42,
+          "end": 1.74
+        },
+        {
+          "w": "random?",
+          "start": 1.74,
+          "end": 2.18
+        },
+        {
+          "w": "How",
+          "start": 2.68,
+          "end": 2.82
+        },
+        {
+          "w": "do",
+          "start": 2.82,
+          "end": 2.94
+        },
+        {
+          "w": "we",
+          "start": 2.94,
+          "end": 3.14
+        }
+      ]
+    },
+    {
+      "text": "generate columns of symbols without",
+      "start": 3.14,
+      "end": 5.06,
+      "words": [
+        {
+          "w": "generate",
+          "start": 3.14,
+          "end": 3.54
+        },
+        {
+          "w": "columns",
+          "start": 3.54,
+          "end": 4.0
+        },
+        {
+          "w": "of",
+          "start": 4.0,
+          "end": 4.28
+        },
+        {
+          "w": "symbols",
+          "start": 4.28,
+          "end": 4.62
+        },
+        {
+          "w": "without",
+          "start": 4.62,
+          "end": 5.06
+        }
+      ]
+    },
+    {
+      "text": "repeats? First, we need a",
+      "start": 5.06,
+      "end": 7.02,
+      "words": [
+        {
+          "w": "repeats?",
+          "start": 5.06,
+          "end": 5.58
+        },
+        {
+          "w": "First,",
+          "start": 6.1,
+          "end": 6.42
+        },
+        {
+          "w": "we",
+          "start": 6.62,
+          "end": 6.68
+        },
+        {
+          "w": "need",
+          "start": 6.68,
+          "end": 6.9
+        },
+        {
+          "w": "a",
+          "start": 6.9,
+          "end": 7.02
+        }
+      ]
+    },
+    {
+      "text": "function that creates the spin.",
+      "start": 7.02,
+      "end": 8.52,
+      "words": [
+        {
+          "w": "function",
+          "start": 7.02,
+          "end": 7.36
+        },
+        {
+          "w": "that",
+          "start": 7.36,
+          "end": 7.68
+        },
+        {
+          "w": "creates",
+          "start": 7.68,
+          "end": 7.98
+        },
+        {
+          "w": "the",
+          "start": 7.98,
+          "end": 8.24
+        },
+        {
+          "w": "spin.",
+          "start": 8.24,
+          "end": 8.52
+        }
+      ]
+    },
+    {
+      "text": "We'll call it get_slot_machine_spin. This",
+      "start": 8.98,
+      "end": 10.2,
+      "words": [
+        {
+          "w": "We'll",
+          "start": 8.98,
+          "end": 9.14
+        },
+        {
+          "w": "call",
+          "start": 9.14,
+          "end": 9.36
+        },
+        {
+          "w": "it",
+          "start": 9.36,
+          "end": 9.56
+        },
+        {
+          "w": "get_slot_machine_spin.",
+          "start": 9.56,
+          "end": 9.84
+        },
+        {
+          "w": "This",
+          "start": 9.84,
+          "end": 10.2
+        }
+      ]
+    },
+    {
+      "text": "function will take the symbol",
+      "start": 10.2,
+      "end": 12.22,
+      "words": [
+        {
+          "w": "function",
+          "start": 10.2,
+          "end": 10.64
+        },
+        {
+          "w": "will",
+          "start": 10.64,
+          "end": 11.06
+        },
+        {
+          "w": "take",
+          "start": 11.06,
+          "end": 11.4
+        },
+        {
+          "w": "the",
+          "start": 11.4,
+          "end": 11.78
+        },
+        {
+          "w": "symbol",
+          "start": 11.78,
+          "end": 12.22
+        }
+      ]
+    },
+    {
+      "text": "counts dictionary and the number",
+      "start": 12.68,
+      "end": 13.98,
+      "words": [
+        {
+          "w": "counts",
+          "start": 12.68,
+          "end": 12.86
+        },
+        {
+          "w": "dictionary",
+          "start": 12.86,
+          "end": 13.22
+        },
+        {
+          "w": "and",
+          "start": 13.22,
+          "end": 13.52
+        },
+        {
+          "w": "the",
+          "start": 13.52,
+          "end": 13.74
+        },
+        {
+          "w": "number",
+          "start": 13.74,
+          "end": 13.98
+        }
+      ]
+    },
+    {
+      "text": "of columns we want. Inside,",
+      "start": 13.98,
+      "end": 15.54,
+      "words": [
+        {
+          "w": "of",
+          "start": 13.98,
+          "end": 14.22
+        },
+        {
+          "w": "columns",
+          "start": 14.22,
+          "end": 14.66
+        },
+        {
+          "w": "we",
+          "start": 14.66,
+          "end": 14.92
+        },
+        {
+          "w": "want.",
+          "start": 14.92,
+          "end": 15.36
+        },
+        {
+          "w": "Inside,",
+          "start": 15.36,
+          "end": 15.54
+        }
+      ]
+    },
+    {
+      "text": "we build each column by",
+      "start": 15.54,
+      "end": 16.88,
+      "words": [
+        {
+          "w": "we",
+          "start": 15.54,
+          "end": 15.68
+        },
+        {
+          "w": "build",
+          "start": 15.68,
+          "end": 15.92
+        },
+        {
+          "w": "each",
+          "start": 15.92,
+          "end": 16.14
+        },
+        {
+          "w": "column",
+          "start": 16.14,
+          "end": 16.4
+        },
+        {
+          "w": "by",
+          "start": 16.4,
+          "end": 16.88
+        }
+      ]
+    },
+    {
+      "text": "picking three symbols at random,",
+      "start": 17.26,
+      "end": 18.74,
+      "words": [
+        {
+          "w": "picking",
+          "start": 17.26,
+          "end": 17.52
+        },
+        {
+          "w": "three",
+          "start": 17.74,
+          "end": 17.88
+        },
+        {
+          "w": "symbols",
+          "start": 17.88,
+          "end": 18.12
+        },
+        {
+          "w": "at",
+          "start": 18.12,
+          "end": 18.44
+        },
+        {
+          "w": "random,",
+          "start": 18.44,
+          "end": 18.74
+        }
+      ]
+    },
+    {
+      "text": "making sure we don't pick",
+      "start": 18.74,
+      "end": 20.12,
+      "words": [
+        {
+          "w": "making",
+          "start": 18.74,
+          "end": 18.96
+        },
+        {
+          "w": "sure",
+          "start": 18.96,
+          "end": 19.22
+        },
+        {
+          "w": "we",
+          "start": 19.22,
+          "end": 19.56
+        },
+        {
+          "w": "don't",
+          "start": 19.56,
+          "end": 19.84
+        },
+        {
+          "w": "pick",
+          "start": 19.84,
+          "end": 20.12
+        }
+      ]
+    },
+    {
+      "text": "the same symbol twice in",
+      "start": 20.12,
+      "end": 21.78,
+      "words": [
+        {
+          "w": "the",
+          "start": 20.12,
+          "end": 20.46
+        },
+        {
+          "w": "same",
+          "start": 20.96,
+          "end": 21.2
+        },
+        {
+          "w": "symbol",
+          "start": 21.2,
+          "end": 21.44
+        },
+        {
+          "w": "twice",
+          "start": 21.44,
+          "end": 21.56
+        },
+        {
+          "w": "in",
+          "start": 21.56,
+          "end": 21.78
+        }
+      ]
+    },
+    {
+      "text": "that column. We use random.choice",
+      "start": 21.78,
+      "end": 23.02,
+      "words": [
+        {
+          "w": "that",
+          "start": 21.78,
+          "end": 21.98
+        },
+        {
+          "w": "column.",
+          "start": 21.98,
+          "end": 22.2
+        },
+        {
+          "w": "We",
+          "start": 22.2,
+          "end": 22.4
+        },
+        {
+          "w": "use",
+          "start": 22.4,
+          "end": 22.7
+        },
+        {
+          "w": "random.choice",
+          "start": 22.7,
+          "end": 23.02
+        }
+      ]
+    },
+    {
+      "text": "to select a symbol from",
+      "start": 23.02,
+      "end": 24.5,
+      "words": [
+        {
+          "w": "to",
+          "start": 23.02,
+          "end": 23.24
+        },
+        {
+          "w": "select",
+          "start": 23.24,
+          "end": 23.44
+        },
+        {
+          "w": "a",
+          "start": 23.44,
+          "end": 23.7
+        },
+        {
+          "w": "symbol",
+          "start": 24.04,
+          "end": 24.24
+        },
+        {
+          "w": "from",
+          "start": 24.24,
+          "end": 24.5
+        }
+      ]
+    },
+    {
+      "text": "a list that reflects its",
+      "start": 24.5,
+      "end": 26.18,
+      "words": [
+        {
+          "w": "a",
+          "start": 24.5,
+          "end": 24.84
+        },
+        {
+          "w": "list",
+          "start": 24.84,
+          "end": 25.5
+        },
+        {
+          "w": "that",
+          "start": 25.5,
+          "end": 25.72
+        },
+        {
+          "w": "reflects",
+          "start": 25.72,
+          "end": 25.98
+        },
+        {
+          "w": "its",
+          "start": 25.98,
+          "end": 26.18
+        }
+      ]
+    },
+    {
+      "text": "frequency. Now let's write the",
+      "start": 26.18,
+      "end": 27.44,
+      "words": [
+        {
+          "w": "frequency.",
+          "start": 26.18,
+          "end": 26.44
+        },
+        {
+          "w": "Now",
+          "start": 26.44,
+          "end": 26.74
+        },
+        {
+          "w": "let's",
+          "start": 26.74,
+          "end": 26.86
+        },
+        {
+          "w": "write",
+          "start": 26.86,
+          "end": 27.12
+        },
+        {
+          "w": "the",
+          "start": 27.12,
+          "end": 27.44
+        }
+      ]
+    },
+    {
+      "text": "function. Each column is built",
+      "start": 27.44,
+      "end": 29.54,
+      "words": [
+        {
+          "w": "function.",
+          "start": 27.44,
+          "end": 27.76
+        },
+        {
+          "w": "Each",
+          "start": 27.76,
+          "end": 28.06
+        },
+        {
+          "w": "column",
+          "start": 28.06,
+          "end": 28.42
+        },
+        {
+          "w": "is",
+          "start": 28.42,
+          "end": 29.18
+        },
+        {
+          "w": "built",
+          "start": 29.18,
+          "end": 29.54
+        }
+      ]
+    },
+    {
+      "text": "by looping three times and",
+      "start": 29.54,
+      "end": 31.36,
+      "words": [
+        {
+          "w": "by",
+          "start": 29.54,
+          "end": 29.78
+        },
+        {
+          "w": "looping",
+          "start": 29.78,
+          "end": 29.96
+        },
+        {
+          "w": "three",
+          "start": 29.96,
+          "end": 30.4
+        },
+        {
+          "w": "times",
+          "start": 30.9,
+          "end": 31.08
+        },
+        {
+          "w": "and",
+          "start": 31.08,
+          "end": 31.36
+        }
+      ]
+    },
+    {
+      "text": "adding a chosen symbol to",
+      "start": 31.36,
+      "end": 32.58,
+      "words": [
+        {
+          "w": "adding",
+          "start": 31.36,
+          "end": 31.6
+        },
+        {
+          "w": "a",
+          "start": 31.6,
+          "end": 31.78
+        },
+        {
+          "w": "chosen",
+          "start": 31.78,
+          "end": 32.02
+        },
+        {
+          "w": "symbol",
+          "start": 32.02,
+          "end": 32.36
+        },
+        {
+          "w": "to",
+          "start": 32.36,
+          "end": 32.58
+        }
+      ]
+    },
+    {
+      "text": "a temporary list, then we",
+      "start": 32.58,
+      "end": 33.94,
+      "words": [
+        {
+          "w": "a",
+          "start": 32.58,
+          "end": 32.94
+        },
+        {
+          "w": "temporary",
+          "start": 32.94,
+          "end": 33.2
+        },
+        {
+          "w": "list,",
+          "start": 33.2,
+          "end": 33.44
+        },
+        {
+          "w": "then",
+          "start": 33.44,
+          "end": 33.7
+        },
+        {
+          "w": "we",
+          "start": 33.7,
+          "end": 33.94
+        }
+      ]
+    },
+    {
+      "text": "collect all columns into a",
+      "start": 33.94,
+      "end": 35.28,
+      "words": [
+        {
+          "w": "collect",
+          "start": 33.94,
+          "end": 34.24
+        },
+        {
+          "w": "all",
+          "start": 34.24,
+          "end": 34.48
+        },
+        {
+          "w": "columns",
+          "start": 34.48,
+          "end": 34.62
+        },
+        {
+          "w": "into",
+          "start": 34.62,
+          "end": 34.88
+        },
+        {
+          "w": "a",
+          "start": 34.88,
+          "end": 35.28
+        }
+      ]
+    },
+    {
+      "text": "master list. Running the script",
+      "start": 35.96,
+      "end": 37.1,
+      "words": [
+        {
+          "w": "master",
+          "start": 35.96,
+          "end": 36.0
+        },
+        {
+          "w": "list.",
+          "start": 36.0,
+          "end": 36.18
+        },
+        {
+          "w": "Running",
+          "start": 36.18,
+          "end": 36.46
+        },
+        {
+          "w": "the",
+          "start": 36.46,
+          "end": 36.74
+        },
+        {
+          "w": "script",
+          "start": 36.74,
+          "end": 37.1
+        }
+      ]
+    },
+    {
+      "text": "prints three columns of symbols.",
+      "start": 37.1,
+      "end": 38.88,
+      "words": [
+        {
+          "w": "prints",
+          "start": 37.1,
+          "end": 37.38
+        },
+        {
+          "w": "three",
+          "start": 37.38,
+          "end": 37.58
+        },
+        {
+          "w": "columns",
+          "start": 37.58,
+          "end": 37.78
+        },
+        {
+          "w": "of",
+          "start": 37.78,
+          "end": 38.2
+        },
+        {
+          "w": "symbols.",
+          "start": 38.72,
+          "end": 38.88
+        }
+      ]
+    },
+    {
+      "text": "A list lets you collect",
+      "start": 38.88,
+      "end": 40.64,
+      "words": [
+        {
+          "w": "A",
+          "start": 38.88,
+          "end": 39.18
+        },
+        {
+          "w": "list",
+          "start": 39.18,
+          "end": 39.46
+        },
+        {
+          "w": "lets",
+          "start": 39.46,
+          "end": 39.86
+        },
+        {
+          "w": "you",
+          "start": 39.86,
+          "end": 40.28
+        },
+        {
+          "w": "collect",
+          "start": 40.28,
+          "end": 40.64
+        }
+      ]
+    },
+    {
+      "text": "random symbols for each reel.",
+      "start": 40.64,
+      "end": 42.44,
+      "words": [
+        {
+          "w": "random",
+          "start": 40.64,
+          "end": 40.86
+        },
+        {
+          "w": "symbols",
+          "start": 40.86,
+          "end": 41.26
+        },
+        {
+          "w": "for",
+          "start": 41.84,
+          "end": 41.86
+        },
+        {
+          "w": "each",
+          "start": 41.86,
+          "end": 42.16
+        },
+        {
+          "w": "reel.",
+          "start": 42.16,
+          "end": 42.44
+        }
+      ]
+    },
+    {
+      "text": "Try changing the number of",
+      "start": 42.44,
+      "end": 44.1,
+      "words": [
+        {
+          "w": "Try",
+          "start": 42.44,
+          "end": 42.64
+        },
+        {
+          "w": "changing",
+          "start": 42.64,
+          "end": 43.0
+        },
+        {
+          "w": "the",
+          "start": 43.0,
+          "end": 43.34
+        },
+        {
+          "w": "number",
+          "start": 43.34,
+          "end": 43.76
+        },
+        {
+          "w": "of",
+          "start": 43.76,
+          "end": 44.1
+        }
+      ]
+    },
+    {
+      "text": "columns or symbols to see",
+      "start": 44.1,
+      "end": 46.0,
+      "words": [
+        {
+          "w": "columns",
+          "start": 44.1,
+          "end": 44.26
+        },
+        {
+          "w": "or",
+          "start": 44.26,
+          "end": 44.62
+        },
+        {
+          "w": "symbols",
+          "start": 45.06,
+          "end": 45.36
+        },
+        {
+          "w": "to",
+          "start": 45.36,
+          "end": 45.74
+        },
+        {
+          "w": "see",
+          "start": 45.74,
+          "end": 46.0
+        }
+      ]
+    },
+    {
+      "text": "different results.",
+      "start": 46.0,
+      "end": 46.44,
+      "words": [
+        {
+          "w": "different",
+          "start": 46.0,
+          "end": 46.16
+        },
+        {
+          "w": "results.",
+          "start": 46.16,
+          "end": 46.44
+        }
+      ]
+    }
+  ]
+}

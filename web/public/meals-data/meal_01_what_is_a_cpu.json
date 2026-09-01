@@ -1,0 +1,116 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_01_what_is_a_cpu",
+    "title": "What is a CPU?",
+    "concept": "python.project.overview",
+    "objective": "Identify the CPU as the computer's brain",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.project.overview",
+      "python.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "CPU",
+      "virtualization"
+    ],
+    "assumes": [],
+    "voice": {
+      "script": "What makes a computer think? The CPU, or central processing unit, is the part that carries out every instruction, just like a brain processes thoughts. Virtualization means the CPU can pretend to be many separate brains, each handling its own program. The CPU reads instructions from memory, does the work, and writes results back. This is why we say a CPU is the computer\u2019s brain. Imagine the memory as a bookshelf where the CPU pulls the pages it needs to read.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What makes a computer think?"
+        },
+        "narration_anchor": "What makes a computer think?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "CPU processes instructions",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Memory stores data",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Virtualization splits CPU",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "reads from"
+            },
+            {
+              "from": "a",
+              "to": "c",
+              "label": "enables"
+            }
+          ]
+        },
+        "narration_anchor": "The CPU, or central processing unit, is the part that carries out every instruction, just like a brain processes thoughts."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Remember: the CPU is the computer\u2019s brain."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Draw a simple diagram showing a CPU connected to memory and labeled as the brain."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Draw a simple diagram showing a CPU connected to memory and labeled as the brain."
+    },
+    "series": {
+      "title": "CPU Virtualization Basics",
+      "artifact": "a mental model of how an OS schedules multiple processes on one CPU",
+      "order": 1,
+      "total": 12,
+      "previous_id": null,
+      "next_id": "meal_02_why_virtualize_a_cpu"
+    }
+  }
+}

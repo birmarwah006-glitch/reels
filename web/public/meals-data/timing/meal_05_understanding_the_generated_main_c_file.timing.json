@@ -1,0 +1,808 @@
+{
+  "meal_id": "meal_05_understanding_the_generated_main_c_file",
+  "audio": "meal_05_understanding_the_generated_main_c_file.mp3",
+  "duration": 41.784,
+  "alignment": "whisper",
+  "anchors": {
+    "Why does every new C file start with those two lines?": 0.0,
+    "The #include line brings in library code.": 26.56,
+    "Remember, #include supplies tools and main is where your program starts.": 31.98
+  },
+  "captions": [
+    {
+      "text": "Why does every new C",
+      "start": 0.0,
+      "end": 1.26,
+      "words": [
+        {
+          "w": "Why",
+          "start": 0.0,
+          "end": 0.34
+        },
+        {
+          "w": "does",
+          "start": 0.34,
+          "end": 0.54
+        },
+        {
+          "w": "every",
+          "start": 0.54,
+          "end": 0.82
+        },
+        {
+          "w": "new",
+          "start": 0.82,
+          "end": 1.02
+        },
+        {
+          "w": "C",
+          "start": 1.02,
+          "end": 1.26
+        }
+      ]
+    },
+    {
+      "text": "file start with those two",
+      "start": 1.26,
+      "end": 2.48,
+      "words": [
+        {
+          "w": "file",
+          "start": 1.26,
+          "end": 1.56
+        },
+        {
+          "w": "start",
+          "start": 1.56,
+          "end": 1.88
+        },
+        {
+          "w": "with",
+          "start": 1.88,
+          "end": 2.12
+        },
+        {
+          "w": "those",
+          "start": 2.12,
+          "end": 2.3
+        },
+        {
+          "w": "two",
+          "start": 2.3,
+          "end": 2.48
+        }
+      ]
+    },
+    {
+      "text": "lines? The IDE writes a",
+      "start": 2.48,
+      "end": 4.38,
+      "words": [
+        {
+          "w": "lines?",
+          "start": 2.48,
+          "end": 2.84
+        },
+        {
+          "w": "The",
+          "start": 3.28,
+          "end": 3.48
+        },
+        {
+          "w": "IDE",
+          "start": 3.48,
+          "end": 3.84
+        },
+        {
+          "w": "writes",
+          "start": 3.84,
+          "end": 4.14
+        },
+        {
+          "w": "a",
+          "start": 4.14,
+          "end": 4.38
+        }
+      ]
+    },
+    {
+      "text": "line that begins with a",
+      "start": 4.38,
+      "end": 5.72,
+      "words": [
+        {
+          "w": "line",
+          "start": 4.38,
+          "end": 4.66
+        },
+        {
+          "w": "that",
+          "start": 4.66,
+          "end": 4.92
+        },
+        {
+          "w": "begins",
+          "start": 4.92,
+          "end": 5.22
+        },
+        {
+          "w": "with",
+          "start": 5.22,
+          "end": 5.52
+        },
+        {
+          "w": "a",
+          "start": 5.52,
+          "end": 5.72
+        }
+      ]
+    },
+    {
+      "text": "hash sign and the word",
+      "start": 5.72,
+      "end": 6.72,
+      "words": [
+        {
+          "w": "hash",
+          "start": 5.72,
+          "end": 5.88
+        },
+        {
+          "w": "sign",
+          "start": 5.88,
+          "end": 6.2
+        },
+        {
+          "w": "and",
+          "start": 6.2,
+          "end": 6.48
+        },
+        {
+          "w": "the",
+          "start": 6.48,
+          "end": 6.56
+        },
+        {
+          "w": "word",
+          "start": 6.56,
+          "end": 6.72
+        }
+      ]
+    },
+    {
+      "text": "include. That line tells the",
+      "start": 6.72,
+      "end": 8.66,
+      "words": [
+        {
+          "w": "include.",
+          "start": 6.72,
+          "end": 7.16
+        },
+        {
+          "w": "That",
+          "start": 7.64,
+          "end": 7.88
+        },
+        {
+          "w": "line",
+          "start": 7.88,
+          "end": 8.14
+        },
+        {
+          "w": "tells",
+          "start": 8.14,
+          "end": 8.44
+        },
+        {
+          "w": "the",
+          "start": 8.44,
+          "end": 8.66
+        }
+      ]
+    },
+    {
+      "text": "compiler to copy code from",
+      "start": 8.66,
+      "end": 10.02,
+      "words": [
+        {
+          "w": "compiler",
+          "start": 8.66,
+          "end": 8.92
+        },
+        {
+          "w": "to",
+          "start": 8.92,
+          "end": 9.24
+        },
+        {
+          "w": "copy",
+          "start": 9.24,
+          "end": 9.5
+        },
+        {
+          "w": "code",
+          "start": 9.5,
+          "end": 9.78
+        },
+        {
+          "w": "from",
+          "start": 9.78,
+          "end": 10.02
+        }
+      ]
+    },
+    {
+      "text": "a library, so you can",
+      "start": 10.02,
+      "end": 11.24,
+      "words": [
+        {
+          "w": "a",
+          "start": 10.02,
+          "end": 10.1
+        },
+        {
+          "w": "library,",
+          "start": 10.1,
+          "end": 10.46
+        },
+        {
+          "w": "so",
+          "start": 10.46,
+          "end": 11.0
+        },
+        {
+          "w": "you",
+          "start": 11.0,
+          "end": 11.1
+        },
+        {
+          "w": "can",
+          "start": 11.1,
+          "end": 11.24
+        }
+      ]
+    },
+    {
+      "text": "use functions like printf. Next,",
+      "start": 11.24,
+      "end": 13.46,
+      "words": [
+        {
+          "w": "use",
+          "start": 11.24,
+          "end": 11.46
+        },
+        {
+          "w": "functions",
+          "start": 11.46,
+          "end": 11.84
+        },
+        {
+          "w": "like",
+          "start": 11.84,
+          "end": 12.18
+        },
+        {
+          "w": "printf.",
+          "start": 12.18,
+          "end": 12.86
+        },
+        {
+          "w": "Next,",
+          "start": 13.18,
+          "end": 13.46
+        }
+      ]
+    },
+    {
+      "text": "the IDE adds the main",
+      "start": 13.64,
+      "end": 14.88,
+      "words": [
+        {
+          "w": "the",
+          "start": 13.64,
+          "end": 13.82
+        },
+        {
+          "w": "IDE",
+          "start": 13.82,
+          "end": 14.14
+        },
+        {
+          "w": "adds",
+          "start": 14.14,
+          "end": 14.48
+        },
+        {
+          "w": "the",
+          "start": 14.48,
+          "end": 14.66
+        },
+        {
+          "w": "main",
+          "start": 14.66,
+          "end": 14.88
+        }
+      ]
+    },
+    {
+      "text": "function. This is the entry",
+      "start": 14.88,
+      "end": 16.54,
+      "words": [
+        {
+          "w": "function.",
+          "start": 14.88,
+          "end": 15.28
+        },
+        {
+          "w": "This",
+          "start": 15.72,
+          "end": 15.88
+        },
+        {
+          "w": "is",
+          "start": 15.88,
+          "end": 16.12
+        },
+        {
+          "w": "the",
+          "start": 16.12,
+          "end": 16.32
+        },
+        {
+          "w": "entry",
+          "start": 16.32,
+          "end": 16.54
+        }
+      ]
+    },
+    {
+      "text": "point where the operating system",
+      "start": 16.54,
+      "end": 18.12,
+      "words": [
+        {
+          "w": "point",
+          "start": 16.54,
+          "end": 16.88
+        },
+        {
+          "w": "where",
+          "start": 16.88,
+          "end": 17.16
+        },
+        {
+          "w": "the",
+          "start": 17.16,
+          "end": 17.42
+        },
+        {
+          "w": "operating",
+          "start": 17.42,
+          "end": 17.68
+        },
+        {
+          "w": "system",
+          "start": 17.68,
+          "end": 18.12
+        }
+      ]
+    },
+    {
+      "text": "hands control to your program.",
+      "start": 18.12,
+      "end": 19.7,
+      "words": [
+        {
+          "w": "hands",
+          "start": 18.12,
+          "end": 18.46
+        },
+        {
+          "w": "control",
+          "start": 18.46,
+          "end": 18.86
+        },
+        {
+          "w": "to",
+          "start": 18.86,
+          "end": 19.12
+        },
+        {
+          "w": "your",
+          "start": 19.12,
+          "end": 19.28
+        },
+        {
+          "w": "program.",
+          "start": 19.28,
+          "end": 19.7
+        }
+      ]
+    },
+    {
+      "text": "Inside the braces you will",
+      "start": 20.26,
+      "end": 21.48,
+      "words": [
+        {
+          "w": "Inside",
+          "start": 20.26,
+          "end": 20.48
+        },
+        {
+          "w": "the",
+          "start": 20.48,
+          "end": 20.7
+        },
+        {
+          "w": "braces",
+          "start": 20.7,
+          "end": 21.0
+        },
+        {
+          "w": "you",
+          "start": 21.0,
+          "end": 21.24
+        },
+        {
+          "w": "will",
+          "start": 21.24,
+          "end": 21.48
+        }
+      ]
+    },
+    {
+      "text": "see a return statement that",
+      "start": 21.48,
+      "end": 22.92,
+      "words": [
+        {
+          "w": "see",
+          "start": 21.48,
+          "end": 21.66
+        },
+        {
+          "w": "a",
+          "start": 21.66,
+          "end": 21.88
+        },
+        {
+          "w": "return",
+          "start": 21.88,
+          "end": 22.2
+        },
+        {
+          "w": "statement",
+          "start": 22.2,
+          "end": 22.56
+        },
+        {
+          "w": "that",
+          "start": 22.56,
+          "end": 22.92
+        }
+      ]
+    },
+    {
+      "text": "sends a value back to",
+      "start": 22.92,
+      "end": 24.0,
+      "words": [
+        {
+          "w": "sends",
+          "start": 22.92,
+          "end": 23.08
+        },
+        {
+          "w": "a",
+          "start": 23.08,
+          "end": 23.4
+        },
+        {
+          "w": "value",
+          "start": 23.4,
+          "end": 23.58
+        },
+        {
+          "w": "back",
+          "start": 23.58,
+          "end": 23.82
+        },
+        {
+          "w": "to",
+          "start": 23.82,
+          "end": 24.0
+        }
+      ]
+    },
+    {
+      "text": "the system. Here is the",
+      "start": 24.0,
+      "end": 25.62,
+      "words": [
+        {
+          "w": "the",
+          "start": 24.0,
+          "end": 24.1
+        },
+        {
+          "w": "system.",
+          "start": 24.1,
+          "end": 24.5
+        },
+        {
+          "w": "Here",
+          "start": 24.9,
+          "end": 25.1
+        },
+        {
+          "w": "is",
+          "start": 25.1,
+          "end": 25.42
+        },
+        {
+          "w": "the",
+          "start": 25.42,
+          "end": 25.62
+        }
+      ]
+    },
+    {
+      "text": "generated file. The #include line",
+      "start": 25.62,
+      "end": 27.92,
+      "words": [
+        {
+          "w": "generated",
+          "start": 25.62,
+          "end": 26.0
+        },
+        {
+          "w": "file.",
+          "start": 26.0,
+          "end": 26.56
+        },
+        {
+          "w": "The",
+          "start": 26.56,
+          "end": 27.06
+        },
+        {
+          "w": "#include",
+          "start": 27.06,
+          "end": 27.46
+        },
+        {
+          "w": "line",
+          "start": 27.46,
+          "end": 27.92
+        }
+      ]
+    },
+    {
+      "text": "brings in library code. The",
+      "start": 27.92,
+      "end": 29.66,
+      "words": [
+        {
+          "w": "brings",
+          "start": 27.92,
+          "end": 28.28
+        },
+        {
+          "w": "in",
+          "start": 28.28,
+          "end": 28.6
+        },
+        {
+          "w": "library",
+          "start": 28.6,
+          "end": 28.94
+        },
+        {
+          "w": "code.",
+          "start": 28.94,
+          "end": 29.2
+        },
+        {
+          "w": "The",
+          "start": 29.2,
+          "end": 29.66
+        }
+      ]
+    },
+    {
+      "text": "main function marks where execution",
+      "start": 30.12,
+      "end": 31.48,
+      "words": [
+        {
+          "w": "main",
+          "start": 30.12,
+          "end": 30.18
+        },
+        {
+          "w": "function",
+          "start": 30.18,
+          "end": 30.4
+        },
+        {
+          "w": "marks",
+          "start": 30.4,
+          "end": 30.78
+        },
+        {
+          "w": "where",
+          "start": 30.78,
+          "end": 31.1
+        },
+        {
+          "w": "execution",
+          "start": 31.1,
+          "end": 31.48
+        }
+      ]
+    },
+    {
+      "text": "begins. Remember, #include supplies tools",
+      "start": 31.48,
+      "end": 34.64,
+      "words": [
+        {
+          "w": "begins.",
+          "start": 31.48,
+          "end": 31.98
+        },
+        {
+          "w": "Remember,",
+          "start": 31.98,
+          "end": 32.66
+        },
+        {
+          "w": "#include",
+          "start": 33.22,
+          "end": 33.52
+        },
+        {
+          "w": "supplies",
+          "start": 33.88,
+          "end": 34.16
+        },
+        {
+          "w": "tools",
+          "start": 34.16,
+          "end": 34.64
+        }
+      ]
+    },
+    {
+      "text": "and main is where your",
+      "start": 34.64,
+      "end": 36.2,
+      "words": [
+        {
+          "w": "and",
+          "start": 34.64,
+          "end": 35.02
+        },
+        {
+          "w": "main",
+          "start": 35.02,
+          "end": 35.48
+        },
+        {
+          "w": "is",
+          "start": 35.48,
+          "end": 35.74
+        },
+        {
+          "w": "where",
+          "start": 35.74,
+          "end": 35.98
+        },
+        {
+          "w": "your",
+          "start": 35.98,
+          "end": 36.2
+        }
+      ]
+    },
+    {
+      "text": "program starts. Now, open a",
+      "start": 36.2,
+      "end": 38.18,
+      "words": [
+        {
+          "w": "program",
+          "start": 36.2,
+          "end": 36.4
+        },
+        {
+          "w": "starts.",
+          "start": 36.4,
+          "end": 36.7
+        },
+        {
+          "w": "Now,",
+          "start": 36.7,
+          "end": 37.0
+        },
+        {
+          "w": "open",
+          "start": 37.0,
+          "end": 37.4
+        },
+        {
+          "w": "a",
+          "start": 37.94,
+          "end": 38.18
+        }
+      ]
+    },
+    {
+      "text": "new project and locate these",
+      "start": 38.18,
+      "end": 39.44,
+      "words": [
+        {
+          "w": "new",
+          "start": 38.18,
+          "end": 38.4
+        },
+        {
+          "w": "project",
+          "start": 38.4,
+          "end": 38.6
+        },
+        {
+          "w": "and",
+          "start": 38.6,
+          "end": 38.76
+        },
+        {
+          "w": "locate",
+          "start": 38.76,
+          "end": 39.14
+        },
+        {
+          "w": "these",
+          "start": 39.14,
+          "end": 39.44
+        }
+      ]
+    },
+    {
+      "text": "two parts in main.c.",
+      "start": 39.44,
+      "end": 40.54,
+      "words": [
+        {
+          "w": "two",
+          "start": 39.44,
+          "end": 39.76
+        },
+        {
+          "w": "parts",
+          "start": 39.76,
+          "end": 40.02
+        },
+        {
+          "w": "in",
+          "start": 40.02,
+          "end": 40.22
+        },
+        {
+          "w": "main.c.",
+          "start": 40.22,
+          "end": 40.54
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_20_loops_while_and_for",
+    "title": "Loops: while and for in C",
+    "concept": "python.control.for",
+    "objective": "Write while and for loops to repeat actions",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "while",
+      "for"
+    ],
+    "assumes": [
+      "variables"
+    ],
+    "voice": {
+      "script": "What if you could tell the computer to count to ten on its own? A while loop repeats as long as a condition stays true. It checks the condition before each pass, so the body may never run if the condition is false at the start. Now see the code: The program first sets a counter to one, then while the counter is less than or equal to five it prints the counter and adds one. After that it uses a for loop that declares a new counter, checks it against five, prints it, and increments it automatically. Running this program prints the numbers twice. Imagine a circle that loops back to the start each time. Use while when you only need a condition, for when you have a clear start, end, and step. Write a while loop that sums numbers until the total exceeds 100.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could tell the computer to count to ten on its own?"
+        },
+        "narration_anchor": "What if you could tell the computer to count to ten on its own?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "while loop repeats while condition true",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "for loop combines init, test, update",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "next concept"
+            }
+          ]
+        },
+        "narration_anchor": "A while loop repeats as long as a condition stays true."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "c",
+          "filename": "main.c",
+          "code": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i <= 5) {\n        printf(\"%d \", i);\n        i++;\n    }\n    printf(\"\\n\");\n    for (int j = 1; j <= 5; j++) {\n        printf(\"%d \", j);\n    }\n    printf(\"\\n\");\n    return 0;\n}\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i <= 5) {\n        printf(\"%d \", i);\n        i++;\n    }\n    printf(\"\\n\");\n    for (int j = 1; j <= 5; j++) {\n        printf(\"%d \", j);\n    }\n    printf(\"\\n\");\n    return 0;\n}",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "for (int j = 1; j <= 5; j++)"
+            }
+          ]
+        },
+        "narration_anchor": "Now see the code:"
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "a.out",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:41+00:00",
+            "stdout": "1 2 3 4 5 \n1 2 3 4 5 \n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running this program prints the numbers twice.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Use while when you only need a condition, for when you have a clear start, end, and step."
+        },
+        "narration_anchor": "Use while when you only need a condition, for when you have a clear start, end, and step.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write a while loop that sums numbers until the total exceeds 100."
+        },
+        "narration_anchor": "Write a while loop that sums numbers until the total exceeds 100.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write a while loop that sums numbers until the total exceeds 100.",
+      "hint": "Add each number to a total and stop when the total is greater than one hundred."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 20,
+      "total": 22,
+      "previous_id": "meal_19_switch_statements_and_structs",
+      "next_id": "meal_21_building_a_simple_calculator"
+    }
+  }
+}

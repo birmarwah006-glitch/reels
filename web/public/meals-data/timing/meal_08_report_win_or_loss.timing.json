@@ -1,0 +1,555 @@
+{
+  "meal_id": "meal_08_report_win_or_loss",
+  "audio": "meal_08_report_win_or_loss.mp3",
+  "duration": 27.648,
+  "alignment": "whisper",
+  "anchors": {
+    "Ever wondered why some games just tell you if you won or lost?": 0.0,
+    "result variable that already tells us if it's a win or a loss": 6.44,
+    "if result equals win, we print a victory message": 12.24,
+    "Running this prints the appropriate line in the terminal.": 17.82,
+    "The conditional decides which message to show based on result.": 20.9,
+    "Change the result variable to test both outcomes.": 24.56
+  },
+  "captions": [
+    {
+      "text": "Ever wondered why some games",
+      "start": 0.0,
+      "end": 1.46,
+      "words": [
+        {
+          "w": "Ever",
+          "start": 0.0,
+          "end": 0.42
+        },
+        {
+          "w": "wondered",
+          "start": 0.42,
+          "end": 0.68
+        },
+        {
+          "w": "why",
+          "start": 0.68,
+          "end": 0.96
+        },
+        {
+          "w": "some",
+          "start": 0.96,
+          "end": 1.16
+        },
+        {
+          "w": "games",
+          "start": 1.16,
+          "end": 1.46
+        }
+      ]
+    },
+    {
+      "text": "just tell you if you",
+      "start": 1.46,
+      "end": 2.54,
+      "words": [
+        {
+          "w": "just",
+          "start": 1.46,
+          "end": 1.8
+        },
+        {
+          "w": "tell",
+          "start": 1.8,
+          "end": 1.96
+        },
+        {
+          "w": "you",
+          "start": 1.96,
+          "end": 2.16
+        },
+        {
+          "w": "if",
+          "start": 2.16,
+          "end": 2.28
+        },
+        {
+          "w": "you",
+          "start": 2.28,
+          "end": 2.54
+        }
+      ]
+    },
+    {
+      "text": "won or lost? That's what",
+      "start": 2.54,
+      "end": 4.1,
+      "words": [
+        {
+          "w": "won",
+          "start": 2.54,
+          "end": 2.68
+        },
+        {
+          "w": "or",
+          "start": 2.68,
+          "end": 2.88
+        },
+        {
+          "w": "lost?",
+          "start": 2.88,
+          "end": 3.26
+        },
+        {
+          "w": "That's",
+          "start": 3.7,
+          "end": 3.98
+        },
+        {
+          "w": "what",
+          "start": 3.98,
+          "end": 4.1
+        }
+      ]
+    },
+    {
+      "text": "we'll solve now. First we",
+      "start": 4.1,
+      "end": 5.84,
+      "words": [
+        {
+          "w": "we'll",
+          "start": 4.1,
+          "end": 4.36
+        },
+        {
+          "w": "solve",
+          "start": 4.36,
+          "end": 4.6
+        },
+        {
+          "w": "now.",
+          "start": 4.6,
+          "end": 5.06
+        },
+        {
+          "w": "First",
+          "start": 5.4,
+          "end": 5.66
+        },
+        {
+          "w": "we",
+          "start": 5.82,
+          "end": 5.84
+        }
+      ]
+    },
+    {
+      "text": "look at the result variable",
+      "start": 5.84,
+      "end": 7.14,
+      "words": [
+        {
+          "w": "look",
+          "start": 5.84,
+          "end": 6.04
+        },
+        {
+          "w": "at",
+          "start": 6.04,
+          "end": 6.3
+        },
+        {
+          "w": "the",
+          "start": 6.3,
+          "end": 6.44
+        },
+        {
+          "w": "result",
+          "start": 6.44,
+          "end": 6.66
+        },
+        {
+          "w": "variable",
+          "start": 6.66,
+          "end": 7.14
+        }
+      ]
+    },
+    {
+      "text": "that already tells us if",
+      "start": 7.14,
+      "end": 8.44,
+      "words": [
+        {
+          "w": "that",
+          "start": 7.14,
+          "end": 7.52
+        },
+        {
+          "w": "already",
+          "start": 7.52,
+          "end": 7.76
+        },
+        {
+          "w": "tells",
+          "start": 7.76,
+          "end": 8.04
+        },
+        {
+          "w": "us",
+          "start": 8.04,
+          "end": 8.3
+        },
+        {
+          "w": "if",
+          "start": 8.3,
+          "end": 8.44
+        }
+      ]
+    },
+    {
+      "text": "it's a win or a",
+      "start": 8.44,
+      "end": 9.4,
+      "words": [
+        {
+          "w": "it's",
+          "start": 8.44,
+          "end": 8.66
+        },
+        {
+          "w": "a",
+          "start": 8.66,
+          "end": 8.76
+        },
+        {
+          "w": "win",
+          "start": 8.76,
+          "end": 8.96
+        },
+        {
+          "w": "or",
+          "start": 8.96,
+          "end": 9.28
+        },
+        {
+          "w": "a",
+          "start": 9.28,
+          "end": 9.4
+        }
+      ]
+    },
+    {
+      "text": "loss. Then we use a",
+      "start": 9.4,
+      "end": 10.94,
+      "words": [
+        {
+          "w": "loss.",
+          "start": 9.4,
+          "end": 9.72
+        },
+        {
+          "w": "Then",
+          "start": 10.12,
+          "end": 10.34
+        },
+        {
+          "w": "we",
+          "start": 10.34,
+          "end": 10.44
+        },
+        {
+          "w": "use",
+          "start": 10.44,
+          "end": 10.7
+        },
+        {
+          "w": "a",
+          "start": 10.7,
+          "end": 10.94
+        }
+      ]
+    },
+    {
+      "text": "simple conditional: if result equals",
+      "start": 10.94,
+      "end": 13.06,
+      "words": [
+        {
+          "w": "simple",
+          "start": 10.94,
+          "end": 11.14
+        },
+        {
+          "w": "conditional:",
+          "start": 11.14,
+          "end": 11.62
+        },
+        {
+          "w": "if",
+          "start": 12.24,
+          "end": 12.4
+        },
+        {
+          "w": "result",
+          "start": 12.4,
+          "end": 12.72
+        },
+        {
+          "w": "equals",
+          "start": 12.72,
+          "end": 13.06
+        }
+      ]
+    },
+    {
+      "text": "win, we print a victory",
+      "start": 13.06,
+      "end": 14.6,
+      "words": [
+        {
+          "w": "win,",
+          "start": 13.06,
+          "end": 13.5
+        },
+        {
+          "w": "we",
+          "start": 13.86,
+          "end": 14.02
+        },
+        {
+          "w": "print",
+          "start": 14.02,
+          "end": 14.18
+        },
+        {
+          "w": "a",
+          "start": 14.18,
+          "end": 14.42
+        },
+        {
+          "w": "victory",
+          "start": 14.42,
+          "end": 14.6
+        }
+      ]
+    },
+    {
+      "text": "message, otherwise we print a",
+      "start": 14.6,
+      "end": 16.74,
+      "words": [
+        {
+          "w": "message,",
+          "start": 14.6,
+          "end": 15.08
+        },
+        {
+          "w": "otherwise",
+          "start": 15.64,
+          "end": 15.94
+        },
+        {
+          "w": "we",
+          "start": 16.12,
+          "end": 16.28
+        },
+        {
+          "w": "print",
+          "start": 16.28,
+          "end": 16.5
+        },
+        {
+          "w": "a",
+          "start": 16.5,
+          "end": 16.74
+        }
+      ]
+    },
+    {
+      "text": "loss prompt. Running this prints",
+      "start": 16.74,
+      "end": 18.62,
+      "words": [
+        {
+          "w": "loss",
+          "start": 16.74,
+          "end": 16.94
+        },
+        {
+          "w": "prompt.",
+          "start": 16.94,
+          "end": 17.32
+        },
+        {
+          "w": "Running",
+          "start": 17.82,
+          "end": 17.98
+        },
+        {
+          "w": "this",
+          "start": 17.98,
+          "end": 18.3
+        },
+        {
+          "w": "prints",
+          "start": 18.3,
+          "end": 18.62
+        }
+      ]
+    },
+    {
+      "text": "the appropriate line in the",
+      "start": 18.62,
+      "end": 20.02,
+      "words": [
+        {
+          "w": "the",
+          "start": 18.62,
+          "end": 18.86
+        },
+        {
+          "w": "appropriate",
+          "start": 18.86,
+          "end": 19.22
+        },
+        {
+          "w": "line",
+          "start": 19.22,
+          "end": 19.7
+        },
+        {
+          "w": "in",
+          "start": 19.7,
+          "end": 19.92
+        },
+        {
+          "w": "the",
+          "start": 19.92,
+          "end": 20.02
+        }
+      ]
+    },
+    {
+      "text": "terminal. The conditional decides which",
+      "start": 20.02,
+      "end": 22.26,
+      "words": [
+        {
+          "w": "terminal.",
+          "start": 20.02,
+          "end": 20.36
+        },
+        {
+          "w": "The",
+          "start": 20.9,
+          "end": 21.04
+        },
+        {
+          "w": "conditional",
+          "start": 21.04,
+          "end": 21.4
+        },
+        {
+          "w": "decides",
+          "start": 21.4,
+          "end": 21.84
+        },
+        {
+          "w": "which",
+          "start": 21.84,
+          "end": 22.26
+        }
+      ]
+    },
+    {
+      "text": "message to show based on",
+      "start": 22.26,
+      "end": 23.68,
+      "words": [
+        {
+          "w": "message",
+          "start": 22.26,
+          "end": 22.58
+        },
+        {
+          "w": "to",
+          "start": 22.58,
+          "end": 22.88
+        },
+        {
+          "w": "show",
+          "start": 22.88,
+          "end": 23.14
+        },
+        {
+          "w": "based",
+          "start": 23.14,
+          "end": 23.46
+        },
+        {
+          "w": "on",
+          "start": 23.46,
+          "end": 23.68
+        }
+      ]
+    },
+    {
+      "text": "result. Change the result variable",
+      "start": 23.68,
+      "end": 25.92,
+      "words": [
+        {
+          "w": "result.",
+          "start": 23.68,
+          "end": 24.1
+        },
+        {
+          "w": "Change",
+          "start": 24.56,
+          "end": 24.86
+        },
+        {
+          "w": "the",
+          "start": 24.86,
+          "end": 25.12
+        },
+        {
+          "w": "result",
+          "start": 25.12,
+          "end": 25.48
+        },
+        {
+          "w": "variable",
+          "start": 25.48,
+          "end": 25.92
+        }
+      ]
+    },
+    {
+      "text": "to test both outcomes.",
+      "start": 25.92,
+      "end": 27.16,
+      "words": [
+        {
+          "w": "to",
+          "start": 25.92,
+          "end": 26.18
+        },
+        {
+          "w": "test",
+          "start": 26.18,
+          "end": 26.46
+        },
+        {
+          "w": "both",
+          "start": 26.46,
+          "end": 26.8
+        },
+        {
+          "w": "outcomes.",
+          "start": 26.8,
+          "end": 27.16
+        }
+      ]
+    }
+  ]
+}

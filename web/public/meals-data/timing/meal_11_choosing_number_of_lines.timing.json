@@ -1,0 +1,710 @@
+{
+  "meal_id": "meal_11_choosing_number_of_lines",
+  "audio": "meal_11_choosing_number_of_lines.mp3",
+  "duration": 39.528,
+  "alignment": "estimated",
+  "anchors": {
+    "How many lines should you bet on?": 0.0
+  },
+  "captions": [
+    {
+      "text": "How many lines should you",
+      "start": 0.0,
+      "end": 1.813,
+      "words": [
+        {
+          "w": "How",
+          "start": 0.0,
+          "end": 0.363
+        },
+        {
+          "w": "many",
+          "start": 0.363,
+          "end": 0.725
+        },
+        {
+          "w": "lines",
+          "start": 0.725,
+          "end": 1.088
+        },
+        {
+          "w": "should",
+          "start": 1.088,
+          "end": 1.451
+        },
+        {
+          "w": "you",
+          "start": 1.451,
+          "end": 1.813
+        }
+      ]
+    },
+    {
+      "text": "bet on? You need to",
+      "start": 1.813,
+      "end": 3.626,
+      "words": [
+        {
+          "w": "bet",
+          "start": 1.813,
+          "end": 2.176
+        },
+        {
+          "w": "on?",
+          "start": 2.176,
+          "end": 2.538
+        },
+        {
+          "w": "You",
+          "start": 2.538,
+          "end": 2.901
+        },
+        {
+          "w": "need",
+          "start": 2.901,
+          "end": 3.264
+        },
+        {
+          "w": "to",
+          "start": 3.264,
+          "end": 3.626
+        }
+      ]
+    },
+    {
+      "text": "pick a number between one",
+      "start": 3.626,
+      "end": 5.44,
+      "words": [
+        {
+          "w": "pick",
+          "start": 3.626,
+          "end": 3.989
+        },
+        {
+          "w": "a",
+          "start": 3.989,
+          "end": 4.352
+        },
+        {
+          "w": "number",
+          "start": 4.352,
+          "end": 4.714
+        },
+        {
+          "w": "between",
+          "start": 4.714,
+          "end": 5.077
+        },
+        {
+          "w": "one",
+          "start": 5.077,
+          "end": 5.44
+        }
+      ]
+    },
+    {
+      "text": "and three. First, we define",
+      "start": 5.44,
+      "end": 7.253,
+      "words": [
+        {
+          "w": "and",
+          "start": 5.44,
+          "end": 5.802
+        },
+        {
+          "w": "three.",
+          "start": 5.802,
+          "end": 6.165
+        },
+        {
+          "w": "First,",
+          "start": 6.165,
+          "end": 6.528
+        },
+        {
+          "w": "we",
+          "start": 6.528,
+          "end": 6.89
+        },
+        {
+          "w": "define",
+          "start": 6.89,
+          "end": 7.253
+        }
+      ]
+    },
+    {
+      "text": "MIN_LINES and MAX_LINES as the",
+      "start": 7.253,
+      "end": 9.066,
+      "words": [
+        {
+          "w": "MIN_LINES",
+          "start": 7.253,
+          "end": 7.615
+        },
+        {
+          "w": "and",
+          "start": 7.615,
+          "end": 7.978
+        },
+        {
+          "w": "MAX_LINES",
+          "start": 7.978,
+          "end": 8.341
+        },
+        {
+          "w": "as",
+          "start": 8.341,
+          "end": 8.703
+        },
+        {
+          "w": "the",
+          "start": 8.703,
+          "end": 9.066
+        }
+      ]
+    },
+    {
+      "text": "smallest and largest allowed lines.",
+      "start": 9.066,
+      "end": 10.879,
+      "words": [
+        {
+          "w": "smallest",
+          "start": 9.066,
+          "end": 9.429
+        },
+        {
+          "w": "and",
+          "start": 9.429,
+          "end": 9.791
+        },
+        {
+          "w": "largest",
+          "start": 9.791,
+          "end": 10.154
+        },
+        {
+          "w": "allowed",
+          "start": 10.154,
+          "end": 10.517
+        },
+        {
+          "w": "lines.",
+          "start": 10.517,
+          "end": 10.879
+        }
+      ]
+    },
+    {
+      "text": "Then we write a function",
+      "start": 10.879,
+      "end": 12.692,
+      "words": [
+        {
+          "w": "Then",
+          "start": 10.879,
+          "end": 11.242
+        },
+        {
+          "w": "we",
+          "start": 11.242,
+          "end": 11.605
+        },
+        {
+          "w": "write",
+          "start": 11.605,
+          "end": 11.967
+        },
+        {
+          "w": "a",
+          "start": 11.967,
+          "end": 12.33
+        },
+        {
+          "w": "function",
+          "start": 12.33,
+          "end": 12.692
+        }
+      ]
+    },
+    {
+      "text": "called get_number_of_lines. Inside, we ask",
+      "start": 12.692,
+      "end": 14.506,
+      "words": [
+        {
+          "w": "called",
+          "start": 12.692,
+          "end": 13.055
+        },
+        {
+          "w": "get_number_of_lines.",
+          "start": 13.055,
+          "end": 13.418
+        },
+        {
+          "w": "Inside,",
+          "start": 13.418,
+          "end": 13.78
+        },
+        {
+          "w": "we",
+          "start": 13.78,
+          "end": 14.143
+        },
+        {
+          "w": "ask",
+          "start": 14.143,
+          "end": 14.506
+        }
+      ]
+    },
+    {
+      "text": "the player to type a",
+      "start": 14.506,
+      "end": 16.319,
+      "words": [
+        {
+          "w": "the",
+          "start": 14.506,
+          "end": 14.868
+        },
+        {
+          "w": "player",
+          "start": 14.868,
+          "end": 15.231
+        },
+        {
+          "w": "to",
+          "start": 15.231,
+          "end": 15.594
+        },
+        {
+          "w": "type",
+          "start": 15.594,
+          "end": 15.956
+        },
+        {
+          "w": "a",
+          "start": 15.956,
+          "end": 16.319
+        }
+      ]
+    },
+    {
+      "text": "number. While the input isn\u2019t",
+      "start": 16.319,
+      "end": 18.132,
+      "words": [
+        {
+          "w": "number.",
+          "start": 16.319,
+          "end": 16.682
+        },
+        {
+          "w": "While",
+          "start": 16.682,
+          "end": 17.044
+        },
+        {
+          "w": "the",
+          "start": 17.044,
+          "end": 17.407
+        },
+        {
+          "w": "input",
+          "start": 17.407,
+          "end": 17.769
+        },
+        {
+          "w": "isn\u2019t",
+          "start": 17.769,
+          "end": 18.132
+        }
+      ]
+    },
+    {
+      "text": "a digit or isn\u2019t between",
+      "start": 18.132,
+      "end": 19.945,
+      "words": [
+        {
+          "w": "a",
+          "start": 18.132,
+          "end": 18.495
+        },
+        {
+          "w": "digit",
+          "start": 18.495,
+          "end": 18.857
+        },
+        {
+          "w": "or",
+          "start": 18.857,
+          "end": 19.22
+        },
+        {
+          "w": "isn\u2019t",
+          "start": 19.22,
+          "end": 19.583
+        },
+        {
+          "w": "between",
+          "start": 19.583,
+          "end": 19.945
+        }
+      ]
+    },
+    {
+      "text": "MIN_LINES and MAX_LINES, we repeat",
+      "start": 19.945,
+      "end": 21.759,
+      "words": [
+        {
+          "w": "MIN_LINES",
+          "start": 19.945,
+          "end": 20.308
+        },
+        {
+          "w": "and",
+          "start": 20.308,
+          "end": 20.671
+        },
+        {
+          "w": "MAX_LINES,",
+          "start": 20.671,
+          "end": 21.033
+        },
+        {
+          "w": "we",
+          "start": 21.033,
+          "end": 21.396
+        },
+        {
+          "w": "repeat",
+          "start": 21.396,
+          "end": 21.759
+        }
+      ]
+    },
+    {
+      "text": "the question. The chained comparison",
+      "start": 21.759,
+      "end": 23.572,
+      "words": [
+        {
+          "w": "the",
+          "start": 21.759,
+          "end": 22.121
+        },
+        {
+          "w": "question.",
+          "start": 22.121,
+          "end": 22.484
+        },
+        {
+          "w": "The",
+          "start": 22.484,
+          "end": 22.846
+        },
+        {
+          "w": "chained",
+          "start": 22.846,
+          "end": 23.209
+        },
+        {
+          "w": "comparison",
+          "start": 23.209,
+          "end": 23.572
+        }
+      ]
+    },
+    {
+      "text": "MIN_LINES is at most lines",
+      "start": 23.572,
+      "end": 25.385,
+      "words": [
+        {
+          "w": "MIN_LINES",
+          "start": 23.572,
+          "end": 23.934
+        },
+        {
+          "w": "is",
+          "start": 23.934,
+          "end": 24.297
+        },
+        {
+          "w": "at",
+          "start": 24.297,
+          "end": 24.66
+        },
+        {
+          "w": "most",
+          "start": 24.66,
+          "end": 25.022
+        },
+        {
+          "w": "lines",
+          "start": 25.022,
+          "end": 25.385
+        }
+      ]
+    },
+    {
+      "text": "is at most MAX_LINES checks",
+      "start": 25.385,
+      "end": 27.198,
+      "words": [
+        {
+          "w": "is",
+          "start": 25.385,
+          "end": 25.748
+        },
+        {
+          "w": "at",
+          "start": 25.748,
+          "end": 26.11
+        },
+        {
+          "w": "most",
+          "start": 26.11,
+          "end": 26.473
+        },
+        {
+          "w": "MAX_LINES",
+          "start": 26.473,
+          "end": 26.836
+        },
+        {
+          "w": "checks",
+          "start": 26.836,
+          "end": 27.198
+        }
+      ]
+    },
+    {
+      "text": "that the value falls inside",
+      "start": 27.198,
+      "end": 29.011,
+      "words": [
+        {
+          "w": "that",
+          "start": 27.198,
+          "end": 27.561
+        },
+        {
+          "w": "the",
+          "start": 27.561,
+          "end": 27.923
+        },
+        {
+          "w": "value",
+          "start": 27.923,
+          "end": 28.286
+        },
+        {
+          "w": "falls",
+          "start": 28.286,
+          "end": 28.649
+        },
+        {
+          "w": "inside",
+          "start": 28.649,
+          "end": 29.011
+        }
+      ]
+    },
+    {
+      "text": "the range. Once we have",
+      "start": 29.011,
+      "end": 30.825,
+      "words": [
+        {
+          "w": "the",
+          "start": 29.011,
+          "end": 29.374
+        },
+        {
+          "w": "range.",
+          "start": 29.374,
+          "end": 29.737
+        },
+        {
+          "w": "Once",
+          "start": 29.737,
+          "end": 30.099
+        },
+        {
+          "w": "we",
+          "start": 30.099,
+          "end": 30.462
+        },
+        {
+          "w": "have",
+          "start": 30.462,
+          "end": 30.825
+        }
+      ]
+    },
+    {
+      "text": "a good number, we return",
+      "start": 30.825,
+      "end": 32.638,
+      "words": [
+        {
+          "w": "a",
+          "start": 30.825,
+          "end": 31.187
+        },
+        {
+          "w": "good",
+          "start": 31.187,
+          "end": 31.55
+        },
+        {
+          "w": "number,",
+          "start": 31.55,
+          "end": 31.913
+        },
+        {
+          "w": "we",
+          "start": 31.913,
+          "end": 32.275
+        },
+        {
+          "w": "return",
+          "start": 32.275,
+          "end": 32.638
+        }
+      ]
+    },
+    {
+      "text": "it. Finally, we call the",
+      "start": 32.638,
+      "end": 34.451,
+      "words": [
+        {
+          "w": "it.",
+          "start": 32.638,
+          "end": 33.0
+        },
+        {
+          "w": "Finally,",
+          "start": 33.0,
+          "end": 33.363
+        },
+        {
+          "w": "we",
+          "start": 33.363,
+          "end": 33.726
+        },
+        {
+          "w": "call",
+          "start": 33.726,
+          "end": 34.088
+        },
+        {
+          "w": "the",
+          "start": 34.088,
+          "end": 34.451
+        }
+      ]
+    },
+    {
+      "text": "function and print a short",
+      "start": 34.451,
+      "end": 36.264,
+      "words": [
+        {
+          "w": "function",
+          "start": 34.451,
+          "end": 34.814
+        },
+        {
+          "w": "and",
+          "start": 34.814,
+          "end": 35.176
+        },
+        {
+          "w": "print",
+          "start": 35.176,
+          "end": 35.539
+        },
+        {
+          "w": "a",
+          "start": 35.539,
+          "end": 35.902
+        },
+        {
+          "w": "short",
+          "start": 35.902,
+          "end": 36.264
+        }
+      ]
+    },
+    {
+      "text": "summary that shows how many",
+      "start": 36.264,
+      "end": 38.077,
+      "words": [
+        {
+          "w": "summary",
+          "start": 36.264,
+          "end": 36.627
+        },
+        {
+          "w": "that",
+          "start": 36.627,
+          "end": 36.99
+        },
+        {
+          "w": "shows",
+          "start": 36.99,
+          "end": 37.352
+        },
+        {
+          "w": "how",
+          "start": 37.352,
+          "end": 37.715
+        },
+        {
+          "w": "many",
+          "start": 37.715,
+          "end": 38.077
+        }
+      ]
+    },
+    {
+      "text": "lines you will play.",
+      "start": 38.077,
+      "end": 39.528,
+      "words": [
+        {
+          "w": "lines",
+          "start": 38.077,
+          "end": 38.44
+        },
+        {
+          "w": "you",
+          "start": 38.44,
+          "end": 38.803
+        },
+        {
+          "w": "will",
+          "start": 38.803,
+          "end": 39.165
+        },
+        {
+          "w": "play.",
+          "start": 39.165,
+          "end": 39.528
+        }
+      ]
+    }
+  ]
+}

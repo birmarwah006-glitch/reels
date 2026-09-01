@@ -1,0 +1,746 @@
+{
+  "meal_id": "meal_input_output",
+  "audio": "meal_input_output.mp3",
+  "duration": 37.032,
+  "alignment": "whisper",
+  "anchors": {
+    "How does Python actually talk to you?": 0.0,
+    "Every program needs a way to receive information and a way to give it back.": 2.38,
+    "Python has two built-ins for exactly that.": 6.78,
+    "The input function pauses your program and waits for the user to type something.": 8.76,
+    "Whatever they type comes back as text, and we store it in a variable called name.": 12.98,
+    "Then the print function takes that value and displays it.": 17.68,
+    "So the data flows in one direction.": 20.98,
+    "Input brings it in, the variable holds it, print sends it back out.": 23.2,
+    "Remember: input gets information in, print sends information out.": 27.5,
+    "Write a program that asks for your age and prints it back.": 32.94
+  },
+  "captions": [
+    {
+      "text": "How does Python actually talk",
+      "start": 0.0,
+      "end": 1.64,
+      "words": [
+        {
+          "w": "How",
+          "start": 0.0,
+          "end": 0.28
+        },
+        {
+          "w": "does",
+          "start": 0.28,
+          "end": 0.48
+        },
+        {
+          "w": "Python",
+          "start": 0.48,
+          "end": 0.9
+        },
+        {
+          "w": "actually",
+          "start": 0.9,
+          "end": 1.38
+        },
+        {
+          "w": "talk",
+          "start": 1.38,
+          "end": 1.64
+        }
+      ]
+    },
+    {
+      "text": "to you? Every program needs",
+      "start": 1.64,
+      "end": 3.42,
+      "words": [
+        {
+          "w": "to",
+          "start": 1.64,
+          "end": 1.82
+        },
+        {
+          "w": "you?",
+          "start": 1.82,
+          "end": 2.16
+        },
+        {
+          "w": "Every",
+          "start": 2.38,
+          "end": 2.66
+        },
+        {
+          "w": "program",
+          "start": 2.66,
+          "end": 3.16
+        },
+        {
+          "w": "needs",
+          "start": 3.16,
+          "end": 3.42
+        }
+      ]
+    },
+    {
+      "text": "a way to receive information",
+      "start": 3.42,
+      "end": 4.8,
+      "words": [
+        {
+          "w": "a",
+          "start": 3.42,
+          "end": 3.64
+        },
+        {
+          "w": "way",
+          "start": 3.64,
+          "end": 3.78
+        },
+        {
+          "w": "to",
+          "start": 3.78,
+          "end": 3.98
+        },
+        {
+          "w": "receive",
+          "start": 3.98,
+          "end": 4.32
+        },
+        {
+          "w": "information",
+          "start": 4.32,
+          "end": 4.8
+        }
+      ]
+    },
+    {
+      "text": "and a way to give",
+      "start": 4.8,
+      "end": 5.72,
+      "words": [
+        {
+          "w": "and",
+          "start": 4.8,
+          "end": 5.3
+        },
+        {
+          "w": "a",
+          "start": 5.3,
+          "end": 5.44
+        },
+        {
+          "w": "way",
+          "start": 5.44,
+          "end": 5.48
+        },
+        {
+          "w": "to",
+          "start": 5.48,
+          "end": 5.6
+        },
+        {
+          "w": "give",
+          "start": 5.6,
+          "end": 5.72
+        }
+      ]
+    },
+    {
+      "text": "it back. Python has two",
+      "start": 5.72,
+      "end": 7.62,
+      "words": [
+        {
+          "w": "it",
+          "start": 5.72,
+          "end": 5.92
+        },
+        {
+          "w": "back.",
+          "start": 5.92,
+          "end": 6.22
+        },
+        {
+          "w": "Python",
+          "start": 6.78,
+          "end": 7.04
+        },
+        {
+          "w": "has",
+          "start": 7.04,
+          "end": 7.34
+        },
+        {
+          "w": "two",
+          "start": 7.34,
+          "end": 7.62
+        }
+      ]
+    },
+    {
+      "text": "built-ins for exactly that. The",
+      "start": 7.62,
+      "end": 9.28,
+      "words": [
+        {
+          "w": "built-ins",
+          "start": 7.62,
+          "end": 7.86
+        },
+        {
+          "w": "for",
+          "start": 7.86,
+          "end": 8.08
+        },
+        {
+          "w": "exactly",
+          "start": 8.08,
+          "end": 8.4
+        },
+        {
+          "w": "that.",
+          "start": 8.4,
+          "end": 8.76
+        },
+        {
+          "w": "The",
+          "start": 8.76,
+          "end": 9.28
+        }
+      ]
+    },
+    {
+      "text": "input function pauses your program",
+      "start": 9.56,
+      "end": 11.0,
+      "words": [
+        {
+          "w": "input",
+          "start": 9.56,
+          "end": 9.74
+        },
+        {
+          "w": "function",
+          "start": 9.74,
+          "end": 9.92
+        },
+        {
+          "w": "pauses",
+          "start": 9.92,
+          "end": 10.36
+        },
+        {
+          "w": "your",
+          "start": 10.36,
+          "end": 10.76
+        },
+        {
+          "w": "program",
+          "start": 10.76,
+          "end": 11.0
+        }
+      ]
+    },
+    {
+      "text": "and waits for the user",
+      "start": 11.0,
+      "end": 12.28,
+      "words": [
+        {
+          "w": "and",
+          "start": 11.0,
+          "end": 11.4
+        },
+        {
+          "w": "waits",
+          "start": 11.4,
+          "end": 11.72
+        },
+        {
+          "w": "for",
+          "start": 11.72,
+          "end": 11.9
+        },
+        {
+          "w": "the",
+          "start": 11.9,
+          "end": 12.14
+        },
+        {
+          "w": "user",
+          "start": 12.14,
+          "end": 12.28
+        }
+      ]
+    },
+    {
+      "text": "to type something. Whatever they",
+      "start": 12.28,
+      "end": 13.98,
+      "words": [
+        {
+          "w": "to",
+          "start": 12.28,
+          "end": 12.54
+        },
+        {
+          "w": "type",
+          "start": 12.54,
+          "end": 12.74
+        },
+        {
+          "w": "something.",
+          "start": 12.74,
+          "end": 12.98
+        },
+        {
+          "w": "Whatever",
+          "start": 12.98,
+          "end": 13.46
+        },
+        {
+          "w": "they",
+          "start": 13.8,
+          "end": 13.98
+        }
+      ]
+    },
+    {
+      "text": "type comes back as text,",
+      "start": 13.98,
+      "end": 15.18,
+      "words": [
+        {
+          "w": "type",
+          "start": 13.98,
+          "end": 14.18
+        },
+        {
+          "w": "comes",
+          "start": 14.18,
+          "end": 14.44
+        },
+        {
+          "w": "back",
+          "start": 14.44,
+          "end": 14.72
+        },
+        {
+          "w": "as",
+          "start": 14.72,
+          "end": 14.98
+        },
+        {
+          "w": "text,",
+          "start": 14.98,
+          "end": 15.18
+        }
+      ]
+    },
+    {
+      "text": "and we store it in",
+      "start": 15.18,
+      "end": 16.84,
+      "words": [
+        {
+          "w": "and",
+          "start": 15.18,
+          "end": 15.58
+        },
+        {
+          "w": "we",
+          "start": 16.0,
+          "end": 16.16
+        },
+        {
+          "w": "store",
+          "start": 16.16,
+          "end": 16.34
+        },
+        {
+          "w": "it",
+          "start": 16.34,
+          "end": 16.56
+        },
+        {
+          "w": "in",
+          "start": 16.56,
+          "end": 16.84
+        }
+      ]
+    },
+    {
+      "text": "a variable called name. Then",
+      "start": 16.84,
+      "end": 18.04,
+      "words": [
+        {
+          "w": "a",
+          "start": 16.84,
+          "end": 16.94
+        },
+        {
+          "w": "variable",
+          "start": 16.94,
+          "end": 17.04
+        },
+        {
+          "w": "called",
+          "start": 17.04,
+          "end": 17.34
+        },
+        {
+          "w": "name.",
+          "start": 17.34,
+          "end": 17.68
+        },
+        {
+          "w": "Then",
+          "start": 17.68,
+          "end": 18.04
+        }
+      ]
+    },
+    {
+      "text": "the print function takes that",
+      "start": 18.5,
+      "end": 19.76,
+      "words": [
+        {
+          "w": "the",
+          "start": 18.5,
+          "end": 18.68
+        },
+        {
+          "w": "print",
+          "start": 18.68,
+          "end": 18.84
+        },
+        {
+          "w": "function",
+          "start": 18.84,
+          "end": 19.04
+        },
+        {
+          "w": "takes",
+          "start": 19.04,
+          "end": 19.46
+        },
+        {
+          "w": "that",
+          "start": 19.46,
+          "end": 19.76
+        }
+      ]
+    },
+    {
+      "text": "value and displays it. So",
+      "start": 19.76,
+      "end": 21.48,
+      "words": [
+        {
+          "w": "value",
+          "start": 19.76,
+          "end": 20.06
+        },
+        {
+          "w": "and",
+          "start": 20.06,
+          "end": 20.38
+        },
+        {
+          "w": "displays",
+          "start": 20.38,
+          "end": 20.68
+        },
+        {
+          "w": "it.",
+          "start": 20.68,
+          "end": 20.98
+        },
+        {
+          "w": "So",
+          "start": 20.98,
+          "end": 21.48
+        }
+      ]
+    },
+    {
+      "text": "the data flows in one",
+      "start": 21.78,
+      "end": 22.96,
+      "words": [
+        {
+          "w": "the",
+          "start": 21.78,
+          "end": 21.92
+        },
+        {
+          "w": "data",
+          "start": 21.92,
+          "end": 22.04
+        },
+        {
+          "w": "flows",
+          "start": 22.04,
+          "end": 22.3
+        },
+        {
+          "w": "in",
+          "start": 22.3,
+          "end": 22.66
+        },
+        {
+          "w": "one",
+          "start": 22.66,
+          "end": 22.96
+        }
+      ]
+    },
+    {
+      "text": "direction. Input brings it in,",
+      "start": 22.96,
+      "end": 24.98,
+      "words": [
+        {
+          "w": "direction.",
+          "start": 22.96,
+          "end": 23.2
+        },
+        {
+          "w": "Input",
+          "start": 23.2,
+          "end": 23.66
+        },
+        {
+          "w": "brings",
+          "start": 24.2,
+          "end": 24.48
+        },
+        {
+          "w": "it",
+          "start": 24.48,
+          "end": 24.82
+        },
+        {
+          "w": "in,",
+          "start": 24.82,
+          "end": 24.98
+        }
+      ]
+    },
+    {
+      "text": "the variable holds it, print",
+      "start": 24.98,
+      "end": 26.42,
+      "words": [
+        {
+          "w": "the",
+          "start": 24.98,
+          "end": 25.22
+        },
+        {
+          "w": "variable",
+          "start": 25.22,
+          "end": 25.38
+        },
+        {
+          "w": "holds",
+          "start": 25.38,
+          "end": 25.74
+        },
+        {
+          "w": "it,",
+          "start": 25.74,
+          "end": 26.02
+        },
+        {
+          "w": "print",
+          "start": 26.02,
+          "end": 26.42
+        }
+      ]
+    },
+    {
+      "text": "sends it back out. Remember:",
+      "start": 26.64,
+      "end": 27.98,
+      "words": [
+        {
+          "w": "sends",
+          "start": 26.64,
+          "end": 26.86
+        },
+        {
+          "w": "it",
+          "start": 26.86,
+          "end": 27.1
+        },
+        {
+          "w": "back",
+          "start": 27.1,
+          "end": 27.3
+        },
+        {
+          "w": "out.",
+          "start": 27.3,
+          "end": 27.5
+        },
+        {
+          "w": "Remember:",
+          "start": 27.5,
+          "end": 27.98
+        }
+      ]
+    },
+    {
+      "text": "input gets information in, print",
+      "start": 27.98,
+      "end": 30.78,
+      "words": [
+        {
+          "w": "input",
+          "start": 27.98,
+          "end": 28.66
+        },
+        {
+          "w": "gets",
+          "start": 29.14,
+          "end": 29.3
+        },
+        {
+          "w": "information",
+          "start": 29.3,
+          "end": 29.66
+        },
+        {
+          "w": "in,",
+          "start": 29.66,
+          "end": 30.26
+        },
+        {
+          "w": "print",
+          "start": 30.26,
+          "end": 30.78
+        }
+      ]
+    },
+    {
+      "text": "sends information out. Now you",
+      "start": 30.78,
+      "end": 32.74,
+      "words": [
+        {
+          "w": "sends",
+          "start": 30.78,
+          "end": 31.02
+        },
+        {
+          "w": "information",
+          "start": 31.02,
+          "end": 31.28
+        },
+        {
+          "w": "out.",
+          "start": 31.28,
+          "end": 31.74
+        },
+        {
+          "w": "Now",
+          "start": 31.74,
+          "end": 32.28
+        },
+        {
+          "w": "you",
+          "start": 32.6,
+          "end": 32.74
+        }
+      ]
+    },
+    {
+      "text": "try. Write a program that",
+      "start": 32.74,
+      "end": 34.42,
+      "words": [
+        {
+          "w": "try.",
+          "start": 32.74,
+          "end": 32.94
+        },
+        {
+          "w": "Write",
+          "start": 32.94,
+          "end": 33.3
+        },
+        {
+          "w": "a",
+          "start": 33.74,
+          "end": 33.9
+        },
+        {
+          "w": "program",
+          "start": 33.9,
+          "end": 34.1
+        },
+        {
+          "w": "that",
+          "start": 34.1,
+          "end": 34.42
+        }
+      ]
+    },
+    {
+      "text": "asks for your age and",
+      "start": 34.42,
+      "end": 35.7,
+      "words": [
+        {
+          "w": "asks",
+          "start": 34.42,
+          "end": 34.78
+        },
+        {
+          "w": "for",
+          "start": 34.78,
+          "end": 35.04
+        },
+        {
+          "w": "your",
+          "start": 35.04,
+          "end": 35.28
+        },
+        {
+          "w": "age",
+          "start": 35.28,
+          "end": 35.44
+        },
+        {
+          "w": "and",
+          "start": 35.44,
+          "end": 35.7
+        }
+      ]
+    },
+    {
+      "text": "prints it back.",
+      "start": 35.7,
+      "end": 36.36,
+      "words": [
+        {
+          "w": "prints",
+          "start": 35.7,
+          "end": 35.98
+        },
+        {
+          "w": "it",
+          "start": 35.98,
+          "end": 36.18
+        },
+        {
+          "w": "back.",
+          "start": 36.18,
+          "end": 36.36
+        }
+      ]
+    }
+  ]
+}

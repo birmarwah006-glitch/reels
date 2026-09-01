@@ -1,0 +1,581 @@
+{
+  "meal_id": "meal_04_define_a_simple_class",
+  "audio": "meal_04_define_a_simple_class.mp3",
+  "duration": 27.072,
+  "alignment": "whisper",
+  "anchors": {
+    "What if you could build a factory that makes anything you imagine?": 0.0,
+    "How do you write a blueprint for a new kind of object?": 3.68,
+    "In Python, the class keyword tells Python to start a blueprint definition.": 6.86,
+    "An empty class is just the keyword and a name, ready to be filled.": 19.7,
+    "Try writing a class called Student with no contents.": 24.0
+  },
+  "captions": [
+    {
+      "text": "What if you could build",
+      "start": 0.0,
+      "end": 1.08,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.36
+        },
+        {
+          "w": "if",
+          "start": 0.36,
+          "end": 0.54
+        },
+        {
+          "w": "you",
+          "start": 0.54,
+          "end": 0.62
+        },
+        {
+          "w": "could",
+          "start": 0.62,
+          "end": 0.84
+        },
+        {
+          "w": "build",
+          "start": 0.84,
+          "end": 1.08
+        }
+      ]
+    },
+    {
+      "text": "a factory that makes anything",
+      "start": 1.08,
+      "end": 2.58,
+      "words": [
+        {
+          "w": "a",
+          "start": 1.08,
+          "end": 1.42
+        },
+        {
+          "w": "factory",
+          "start": 1.42,
+          "end": 1.66
+        },
+        {
+          "w": "that",
+          "start": 1.66,
+          "end": 1.96
+        },
+        {
+          "w": "makes",
+          "start": 1.96,
+          "end": 2.22
+        },
+        {
+          "w": "anything",
+          "start": 2.22,
+          "end": 2.58
+        }
+      ]
+    },
+    {
+      "text": "you imagine? How do you",
+      "start": 2.58,
+      "end": 4.12,
+      "words": [
+        {
+          "w": "you",
+          "start": 2.58,
+          "end": 2.84
+        },
+        {
+          "w": "imagine?",
+          "start": 2.84,
+          "end": 3.24
+        },
+        {
+          "w": "How",
+          "start": 3.68,
+          "end": 3.86
+        },
+        {
+          "w": "do",
+          "start": 3.86,
+          "end": 4.04
+        },
+        {
+          "w": "you",
+          "start": 4.04,
+          "end": 4.12
+        }
+      ]
+    },
+    {
+      "text": "write a blueprint for a",
+      "start": 4.12,
+      "end": 5.46,
+      "words": [
+        {
+          "w": "write",
+          "start": 4.12,
+          "end": 4.32
+        },
+        {
+          "w": "a",
+          "start": 4.32,
+          "end": 4.5
+        },
+        {
+          "w": "blueprint",
+          "start": 4.5,
+          "end": 4.82
+        },
+        {
+          "w": "for",
+          "start": 4.82,
+          "end": 5.28
+        },
+        {
+          "w": "a",
+          "start": 5.28,
+          "end": 5.46
+        }
+      ]
+    },
+    {
+      "text": "new kind of object? In",
+      "start": 5.46,
+      "end": 6.98,
+      "words": [
+        {
+          "w": "new",
+          "start": 5.46,
+          "end": 5.64
+        },
+        {
+          "w": "kind",
+          "start": 5.64,
+          "end": 5.86
+        },
+        {
+          "w": "of",
+          "start": 5.86,
+          "end": 6.0
+        },
+        {
+          "w": "object?",
+          "start": 6.0,
+          "end": 6.38
+        },
+        {
+          "w": "In",
+          "start": 6.86,
+          "end": 6.98
+        }
+      ]
+    },
+    {
+      "text": "Python, the class keyword tells",
+      "start": 6.98,
+      "end": 8.7,
+      "words": [
+        {
+          "w": "Python,",
+          "start": 6.98,
+          "end": 7.34
+        },
+        {
+          "w": "the",
+          "start": 7.64,
+          "end": 7.74
+        },
+        {
+          "w": "class",
+          "start": 7.74,
+          "end": 8.0
+        },
+        {
+          "w": "keyword",
+          "start": 8.0,
+          "end": 8.32
+        },
+        {
+          "w": "tells",
+          "start": 8.32,
+          "end": 8.7
+        }
+      ]
+    },
+    {
+      "text": "Python to start a blueprint",
+      "start": 8.7,
+      "end": 10.22,
+      "words": [
+        {
+          "w": "Python",
+          "start": 8.7,
+          "end": 9.14
+        },
+        {
+          "w": "to",
+          "start": 9.14,
+          "end": 9.46
+        },
+        {
+          "w": "start",
+          "start": 9.46,
+          "end": 9.7
+        },
+        {
+          "w": "a",
+          "start": 9.7,
+          "end": 9.92
+        },
+        {
+          "w": "blueprint",
+          "start": 9.92,
+          "end": 10.22
+        }
+      ]
+    },
+    {
+      "text": "definition. Think of it like",
+      "start": 10.22,
+      "end": 12.02,
+      "words": [
+        {
+          "w": "definition.",
+          "start": 10.22,
+          "end": 10.76
+        },
+        {
+          "w": "Think",
+          "start": 11.3,
+          "end": 11.48
+        },
+        {
+          "w": "of",
+          "start": 11.48,
+          "end": 11.64
+        },
+        {
+          "w": "it",
+          "start": 11.64,
+          "end": 11.8
+        },
+        {
+          "w": "like",
+          "start": 11.8,
+          "end": 12.02
+        }
+      ]
+    },
+    {
+      "text": "setting up a factory called",
+      "start": 12.02,
+      "end": 13.16,
+      "words": [
+        {
+          "w": "setting",
+          "start": 12.02,
+          "end": 12.24
+        },
+        {
+          "w": "up",
+          "start": 12.24,
+          "end": 12.48
+        },
+        {
+          "w": "a",
+          "start": 12.48,
+          "end": 12.6
+        },
+        {
+          "w": "factory",
+          "start": 12.6,
+          "end": 12.86
+        },
+        {
+          "w": "called",
+          "start": 12.86,
+          "end": 13.16
+        }
+      ]
+    },
+    {
+      "text": "Car where each car will",
+      "start": 13.16,
+      "end": 14.56,
+      "words": [
+        {
+          "w": "Car",
+          "start": 13.16,
+          "end": 13.52
+        },
+        {
+          "w": "where",
+          "start": 13.52,
+          "end": 13.78
+        },
+        {
+          "w": "each",
+          "start": 13.78,
+          "end": 14.02
+        },
+        {
+          "w": "car",
+          "start": 14.02,
+          "end": 14.3
+        },
+        {
+          "w": "will",
+          "start": 14.3,
+          "end": 14.56
+        }
+      ]
+    },
+    {
+      "text": "be built later. pass. That",
+      "start": 14.56,
+      "end": 16.52,
+      "words": [
+        {
+          "w": "be",
+          "start": 14.56,
+          "end": 14.62
+        },
+        {
+          "w": "built",
+          "start": 14.62,
+          "end": 14.86
+        },
+        {
+          "w": "later.",
+          "start": 14.86,
+          "end": 15.24
+        },
+        {
+          "w": "pass.",
+          "start": 15.74,
+          "end": 15.88
+        },
+        {
+          "w": "That",
+          "start": 16.32,
+          "end": 16.52
+        }
+      ]
+    },
+    {
+      "text": "single line defines a new",
+      "start": 16.52,
+      "end": 17.98,
+      "words": [
+        {
+          "w": "single",
+          "start": 16.52,
+          "end": 16.82
+        },
+        {
+          "w": "line",
+          "start": 16.82,
+          "end": 17.12
+        },
+        {
+          "w": "defines",
+          "start": 17.12,
+          "end": 17.56
+        },
+        {
+          "w": "a",
+          "start": 17.56,
+          "end": 17.86
+        },
+        {
+          "w": "new",
+          "start": 17.86,
+          "end": 17.98
+        }
+      ]
+    },
+    {
+      "text": "type you can use later.",
+      "start": 17.98,
+      "end": 19.22,
+      "words": [
+        {
+          "w": "type",
+          "start": 17.98,
+          "end": 18.3
+        },
+        {
+          "w": "you",
+          "start": 18.3,
+          "end": 18.48
+        },
+        {
+          "w": "can",
+          "start": 18.48,
+          "end": 18.64
+        },
+        {
+          "w": "use",
+          "start": 18.64,
+          "end": 18.9
+        },
+        {
+          "w": "later.",
+          "start": 18.9,
+          "end": 19.22
+        }
+      ]
+    },
+    {
+      "text": "An empty class is just",
+      "start": 19.7,
+      "end": 20.86,
+      "words": [
+        {
+          "w": "An",
+          "start": 19.7,
+          "end": 19.84
+        },
+        {
+          "w": "empty",
+          "start": 19.84,
+          "end": 20.04
+        },
+        {
+          "w": "class",
+          "start": 20.04,
+          "end": 20.38
+        },
+        {
+          "w": "is",
+          "start": 20.38,
+          "end": 20.6
+        },
+        {
+          "w": "just",
+          "start": 20.6,
+          "end": 20.86
+        }
+      ]
+    },
+    {
+      "text": "the keyword and a name,",
+      "start": 20.86,
+      "end": 22.16,
+      "words": [
+        {
+          "w": "the",
+          "start": 20.86,
+          "end": 21.0
+        },
+        {
+          "w": "keyword",
+          "start": 21.0,
+          "end": 21.32
+        },
+        {
+          "w": "and",
+          "start": 21.32,
+          "end": 21.68
+        },
+        {
+          "w": "a",
+          "start": 21.68,
+          "end": 21.84
+        },
+        {
+          "w": "name,",
+          "start": 21.84,
+          "end": 22.16
+        }
+      ]
+    },
+    {
+      "text": "ready to be filled. Try",
+      "start": 22.7,
+      "end": 24.24,
+      "words": [
+        {
+          "w": "ready",
+          "start": 22.7,
+          "end": 22.82
+        },
+        {
+          "w": "to",
+          "start": 22.82,
+          "end": 23.02
+        },
+        {
+          "w": "be",
+          "start": 23.02,
+          "end": 23.2
+        },
+        {
+          "w": "filled.",
+          "start": 23.2,
+          "end": 23.5
+        },
+        {
+          "w": "Try",
+          "start": 24.0,
+          "end": 24.24
+        }
+      ]
+    },
+    {
+      "text": "writing a class called Student",
+      "start": 24.24,
+      "end": 25.74,
+      "words": [
+        {
+          "w": "writing",
+          "start": 24.24,
+          "end": 24.54
+        },
+        {
+          "w": "a",
+          "start": 24.54,
+          "end": 24.78
+        },
+        {
+          "w": "class",
+          "start": 24.78,
+          "end": 25.06
+        },
+        {
+          "w": "called",
+          "start": 25.06,
+          "end": 25.38
+        },
+        {
+          "w": "Student",
+          "start": 25.38,
+          "end": 25.74
+        }
+      ]
+    },
+    {
+      "text": "with no contents.",
+      "start": 25.74,
+      "end": 26.64,
+      "words": [
+        {
+          "w": "with",
+          "start": 25.74,
+          "end": 26.02
+        },
+        {
+          "w": "no",
+          "start": 26.02,
+          "end": 26.26
+        },
+        {
+          "w": "contents.",
+          "start": 26.26,
+          "end": 26.64
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,890 @@
+{
+  "meal_id": "meal_12_static_method",
+  "audio": "meal_12_static_method.mp3",
+  "duration": 46.416,
+  "alignment": "whisper",
+  "anchors": {
+    "What if you could call a function without an object?": 0.0,
+    "In Python you add the @staticmethod decorator before a function inside a class.": 5.58,
+    "Here\u2019s a tiny class.": 15.08,
+    "Running the program prints the greeting and then prints that twenty is adult: True.": 38.98
+  },
+  "captions": [
+    {
+      "text": "What if you could call",
+      "start": 0.0,
+      "end": 0.96,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.3
+        },
+        {
+          "w": "if",
+          "start": 0.3,
+          "end": 0.52
+        },
+        {
+          "w": "you",
+          "start": 0.52,
+          "end": 0.56
+        },
+        {
+          "w": "could",
+          "start": 0.56,
+          "end": 0.8
+        },
+        {
+          "w": "call",
+          "start": 0.8,
+          "end": 0.96
+        }
+      ]
+    },
+    {
+      "text": "a function without an object?",
+      "start": 0.96,
+      "end": 2.62,
+      "words": [
+        {
+          "w": "a",
+          "start": 0.96,
+          "end": 1.16
+        },
+        {
+          "w": "function",
+          "start": 1.16,
+          "end": 1.52
+        },
+        {
+          "w": "without",
+          "start": 1.52,
+          "end": 1.92
+        },
+        {
+          "w": "an",
+          "start": 1.92,
+          "end": 2.26
+        },
+        {
+          "w": "object?",
+          "start": 2.26,
+          "end": 2.62
+        }
+      ]
+    },
+    {
+      "text": "That's what a static method",
+      "start": 3.1,
+      "end": 4.36,
+      "words": [
+        {
+          "w": "That's",
+          "start": 3.1,
+          "end": 3.38
+        },
+        {
+          "w": "what",
+          "start": 3.38,
+          "end": 3.52
+        },
+        {
+          "w": "a",
+          "start": 3.52,
+          "end": 3.72
+        },
+        {
+          "w": "static",
+          "start": 3.72,
+          "end": 4.0
+        },
+        {
+          "w": "method",
+          "start": 4.0,
+          "end": 4.36
+        }
+      ]
+    },
+    {
+      "text": "lets you do. In Python",
+      "start": 4.36,
+      "end": 6.0,
+      "words": [
+        {
+          "w": "lets",
+          "start": 4.36,
+          "end": 4.64
+        },
+        {
+          "w": "you",
+          "start": 4.64,
+          "end": 4.84
+        },
+        {
+          "w": "do.",
+          "start": 4.84,
+          "end": 5.24
+        },
+        {
+          "w": "In",
+          "start": 5.58,
+          "end": 5.68
+        },
+        {
+          "w": "Python",
+          "start": 5.68,
+          "end": 6.0
+        }
+      ]
+    },
+    {
+      "text": "you add the @staticmethod decorator",
+      "start": 6.34,
+      "end": 7.62,
+      "words": [
+        {
+          "w": "you",
+          "start": 6.34,
+          "end": 6.4
+        },
+        {
+          "w": "add",
+          "start": 6.4,
+          "end": 6.6
+        },
+        {
+          "w": "the",
+          "start": 6.6,
+          "end": 6.84
+        },
+        {
+          "w": "@staticmethod",
+          "start": 6.84,
+          "end": 7.22
+        },
+        {
+          "w": "decorator",
+          "start": 7.22,
+          "end": 7.62
+        }
+      ]
+    },
+    {
+      "text": "before a function inside a",
+      "start": 7.62,
+      "end": 9.34,
+      "words": [
+        {
+          "w": "before",
+          "start": 7.62,
+          "end": 8.14
+        },
+        {
+          "w": "a",
+          "start": 8.14,
+          "end": 8.46
+        },
+        {
+          "w": "function",
+          "start": 8.46,
+          "end": 8.74
+        },
+        {
+          "w": "inside",
+          "start": 8.74,
+          "end": 8.96
+        },
+        {
+          "w": "a",
+          "start": 8.96,
+          "end": 9.34
+        }
+      ]
+    },
+    {
+      "text": "class. The decorator tells Python",
+      "start": 9.34,
+      "end": 11.2,
+      "words": [
+        {
+          "w": "class.",
+          "start": 9.34,
+          "end": 9.52
+        },
+        {
+          "w": "The",
+          "start": 9.52,
+          "end": 9.9
+        },
+        {
+          "w": "decorator",
+          "start": 10.34,
+          "end": 10.46
+        },
+        {
+          "w": "tells",
+          "start": 10.46,
+          "end": 10.88
+        },
+        {
+          "w": "Python",
+          "start": 10.88,
+          "end": 11.2
+        }
+      ]
+    },
+    {
+      "text": "this method doesn't need the",
+      "start": 11.2,
+      "end": 12.82,
+      "words": [
+        {
+          "w": "this",
+          "start": 11.2,
+          "end": 11.66
+        },
+        {
+          "w": "method",
+          "start": 11.66,
+          "end": 11.92
+        },
+        {
+          "w": "doesn't",
+          "start": 11.92,
+          "end": 12.26
+        },
+        {
+          "w": "need",
+          "start": 12.26,
+          "end": 12.58
+        },
+        {
+          "w": "the",
+          "start": 12.58,
+          "end": 12.82
+        }
+      ]
+    },
+    {
+      "text": "instance, so you can call",
+      "start": 12.82,
+      "end": 14.22,
+      "words": [
+        {
+          "w": "instance,",
+          "start": 12.82,
+          "end": 13.04
+        },
+        {
+          "w": "so",
+          "start": 13.04,
+          "end": 13.44
+        },
+        {
+          "w": "you",
+          "start": 13.76,
+          "end": 13.98
+        },
+        {
+          "w": "can",
+          "start": 13.98,
+          "end": 14.02
+        },
+        {
+          "w": "call",
+          "start": 14.02,
+          "end": 14.22
+        }
+      ]
+    },
+    {
+      "text": "it on the class itself.",
+      "start": 14.22,
+      "end": 15.08,
+      "words": [
+        {
+          "w": "it",
+          "start": 14.22,
+          "end": 14.36
+        },
+        {
+          "w": "on",
+          "start": 14.36,
+          "end": 14.56
+        },
+        {
+          "w": "the",
+          "start": 14.56,
+          "end": 14.74
+        },
+        {
+          "w": "class",
+          "start": 14.74,
+          "end": 14.86
+        },
+        {
+          "w": "itself.",
+          "start": 14.86,
+          "end": 15.08
+        }
+      ]
+    },
+    {
+      "text": "Here\u2019s a tiny class. We",
+      "start": 15.08,
+      "end": 17.12,
+      "words": [
+        {
+          "w": "Here\u2019s",
+          "start": 15.08,
+          "end": 15.54
+        },
+        {
+          "w": "a",
+          "start": 16.0,
+          "end": 16.28
+        },
+        {
+          "w": "tiny",
+          "start": 16.28,
+          "end": 16.42
+        },
+        {
+          "w": "class.",
+          "start": 16.42,
+          "end": 16.64
+        },
+        {
+          "w": "We",
+          "start": 16.64,
+          "end": 17.12
+        }
+      ]
+    },
+    {
+      "text": "define class Student. Inside we",
+      "start": 17.54,
+      "end": 19.68,
+      "words": [
+        {
+          "w": "define",
+          "start": 17.54,
+          "end": 17.64
+        },
+        {
+          "w": "class",
+          "start": 17.64,
+          "end": 18.04
+        },
+        {
+          "w": "Student.",
+          "start": 18.04,
+          "end": 18.44
+        },
+        {
+          "w": "Inside",
+          "start": 18.44,
+          "end": 18.82
+        },
+        {
+          "w": "we",
+          "start": 19.4,
+          "end": 19.68
+        }
+      ]
+    },
+    {
+      "text": "put a regular method greet",
+      "start": 19.86,
+      "end": 20.9,
+      "words": [
+        {
+          "w": "put",
+          "start": 19.86,
+          "end": 19.86
+        },
+        {
+          "w": "a",
+          "start": 19.86,
+          "end": 20.08
+        },
+        {
+          "w": "regular",
+          "start": 20.08,
+          "end": 20.3
+        },
+        {
+          "w": "method",
+          "start": 20.3,
+          "end": 20.56
+        },
+        {
+          "w": "greet",
+          "start": 20.56,
+          "end": 20.9
+        }
+      ]
+    },
+    {
+      "text": "that prints a greeting using",
+      "start": 20.9,
+      "end": 22.22,
+      "words": [
+        {
+          "w": "that",
+          "start": 20.9,
+          "end": 21.22
+        },
+        {
+          "w": "prints",
+          "start": 21.22,
+          "end": 21.44
+        },
+        {
+          "w": "a",
+          "start": 21.44,
+          "end": 21.76
+        },
+        {
+          "w": "greeting",
+          "start": 21.76,
+          "end": 21.98
+        },
+        {
+          "w": "using",
+          "start": 21.98,
+          "end": 22.22
+        }
+      ]
+    },
+    {
+      "text": "self.name. Then we add @staticmethod",
+      "start": 22.22,
+      "end": 24.12,
+      "words": [
+        {
+          "w": "self.name.",
+          "start": 22.22,
+          "end": 22.62
+        },
+        {
+          "w": "Then",
+          "start": 22.62,
+          "end": 22.94
+        },
+        {
+          "w": "we",
+          "start": 22.94,
+          "end": 23.18
+        },
+        {
+          "w": "add",
+          "start": 23.18,
+          "end": 23.5
+        },
+        {
+          "w": "@staticmethod",
+          "start": 23.88,
+          "end": 24.12
+        }
+      ]
+    },
+    {
+      "text": "above a method eligible that",
+      "start": 24.12,
+      "end": 25.42,
+      "words": [
+        {
+          "w": "above",
+          "start": 24.12,
+          "end": 24.36
+        },
+        {
+          "w": "a",
+          "start": 24.36,
+          "end": 24.54
+        },
+        {
+          "w": "method",
+          "start": 24.54,
+          "end": 24.76
+        },
+        {
+          "w": "eligible",
+          "start": 24.76,
+          "end": 25.02
+        },
+        {
+          "w": "that",
+          "start": 25.02,
+          "end": 25.42
+        }
+      ]
+    },
+    {
+      "text": "receives an age and returns",
+      "start": 25.42,
+      "end": 26.9,
+      "words": [
+        {
+          "w": "receives",
+          "start": 25.42,
+          "end": 25.66
+        },
+        {
+          "w": "an",
+          "start": 25.66,
+          "end": 25.92
+        },
+        {
+          "w": "age",
+          "start": 25.92,
+          "end": 26.08
+        },
+        {
+          "w": "and",
+          "start": 26.08,
+          "end": 26.52
+        },
+        {
+          "w": "returns",
+          "start": 26.52,
+          "end": 26.9
+        }
+      ]
+    },
+    {
+      "text": "True if age is at",
+      "start": 26.9,
+      "end": 28.26,
+      "words": [
+        {
+          "w": "True",
+          "start": 26.9,
+          "end": 27.18
+        },
+        {
+          "w": "if",
+          "start": 27.18,
+          "end": 27.48
+        },
+        {
+          "w": "age",
+          "start": 27.48,
+          "end": 27.72
+        },
+        {
+          "w": "is",
+          "start": 27.72,
+          "end": 27.96
+        },
+        {
+          "w": "at",
+          "start": 27.96,
+          "end": 28.26
+        }
+      ]
+    },
+    {
+      "text": "least eighteen. Because it has",
+      "start": 28.26,
+      "end": 29.46,
+      "words": [
+        {
+          "w": "least",
+          "start": 28.26,
+          "end": 28.6
+        },
+        {
+          "w": "eighteen.",
+          "start": 28.6,
+          "end": 28.84
+        },
+        {
+          "w": "Because",
+          "start": 28.84,
+          "end": 29.12
+        },
+        {
+          "w": "it",
+          "start": 29.12,
+          "end": 29.36
+        },
+        {
+          "w": "has",
+          "start": 29.36,
+          "end": 29.46
+        }
+      ]
+    },
+    {
+      "text": "no self, we call Student.eligible(20)",
+      "start": 29.46,
+      "end": 31.12,
+      "words": [
+        {
+          "w": "no",
+          "start": 29.46,
+          "end": 29.7
+        },
+        {
+          "w": "self,",
+          "start": 29.7,
+          "end": 30.1
+        },
+        {
+          "w": "we",
+          "start": 30.56,
+          "end": 30.76
+        },
+        {
+          "w": "call",
+          "start": 30.76,
+          "end": 30.9
+        },
+        {
+          "w": "Student.eligible(20)",
+          "start": 30.9,
+          "end": 31.12
+        }
+      ]
+    },
+    {
+      "text": "and it returns True. We",
+      "start": 31.12,
+      "end": 32.4,
+      "words": [
+        {
+          "w": "and",
+          "start": 31.12,
+          "end": 31.4
+        },
+        {
+          "w": "it",
+          "start": 31.4,
+          "end": 31.68
+        },
+        {
+          "w": "returns",
+          "start": 31.68,
+          "end": 31.84
+        },
+        {
+          "w": "True.",
+          "start": 31.84,
+          "end": 32.08
+        },
+        {
+          "w": "We",
+          "start": 32.08,
+          "end": 32.4
+        }
+      ]
+    },
+    {
+      "text": "also create a Student object",
+      "start": 32.4,
+      "end": 34.82,
+      "words": [
+        {
+          "w": "also",
+          "start": 32.4,
+          "end": 33.14
+        },
+        {
+          "w": "create",
+          "start": 33.14,
+          "end": 33.72
+        },
+        {
+          "w": "a",
+          "start": 33.72,
+          "end": 34.3
+        },
+        {
+          "w": "Student",
+          "start": 34.3,
+          "end": 34.48
+        },
+        {
+          "w": "object",
+          "start": 34.48,
+          "end": 34.82
+        }
+      ]
+    },
+    {
+      "text": "named Alice and call alice.greet()",
+      "start": 34.82,
+      "end": 36.7,
+      "words": [
+        {
+          "w": "named",
+          "start": 34.82,
+          "end": 35.28
+        },
+        {
+          "w": "Alice",
+          "start": 35.76,
+          "end": 35.8
+        },
+        {
+          "w": "and",
+          "start": 35.8,
+          "end": 36.12
+        },
+        {
+          "w": "call",
+          "start": 36.12,
+          "end": 36.4
+        },
+        {
+          "w": "alice.greet()",
+          "start": 36.4,
+          "end": 36.7
+        }
+      ]
+    },
+    {
+      "text": "to show the normal method",
+      "start": 36.7,
+      "end": 38.36,
+      "words": [
+        {
+          "w": "to",
+          "start": 36.7,
+          "end": 36.92
+        },
+        {
+          "w": "show",
+          "start": 36.92,
+          "end": 37.36
+        },
+        {
+          "w": "the",
+          "start": 37.36,
+          "end": 37.7
+        },
+        {
+          "w": "normal",
+          "start": 37.7,
+          "end": 38.04
+        },
+        {
+          "w": "method",
+          "start": 38.04,
+          "end": 38.36
+        }
+      ]
+    },
+    {
+      "text": "still works. Running the program",
+      "start": 38.36,
+      "end": 40.26,
+      "words": [
+        {
+          "w": "still",
+          "start": 38.36,
+          "end": 38.68
+        },
+        {
+          "w": "works.",
+          "start": 38.68,
+          "end": 38.98
+        },
+        {
+          "w": "Running",
+          "start": 38.98,
+          "end": 39.44
+        },
+        {
+          "w": "the",
+          "start": 39.44,
+          "end": 40.06
+        },
+        {
+          "w": "program",
+          "start": 40.06,
+          "end": 40.26
+        }
+      ]
+    },
+    {
+      "text": "prints the greeting and then",
+      "start": 40.26,
+      "end": 41.74,
+      "words": [
+        {
+          "w": "prints",
+          "start": 40.26,
+          "end": 40.44
+        },
+        {
+          "w": "the",
+          "start": 40.44,
+          "end": 40.7
+        },
+        {
+          "w": "greeting",
+          "start": 40.7,
+          "end": 41.0
+        },
+        {
+          "w": "and",
+          "start": 41.0,
+          "end": 41.28
+        },
+        {
+          "w": "then",
+          "start": 41.28,
+          "end": 41.74
+        }
+      ]
+    },
+    {
+      "text": "prints that twenty is adult:",
+      "start": 42.16,
+      "end": 43.46,
+      "words": [
+        {
+          "w": "prints",
+          "start": 42.16,
+          "end": 42.3
+        },
+        {
+          "w": "that",
+          "start": 42.3,
+          "end": 42.6
+        },
+        {
+          "w": "twenty",
+          "start": 42.6,
+          "end": 42.94
+        },
+        {
+          "w": "is",
+          "start": 42.94,
+          "end": 43.26
+        },
+        {
+          "w": "adult:",
+          "start": 43.26,
+          "end": 43.46
+        }
+      ]
+    },
+    {
+      "text": "True.",
+      "start": 43.46,
+      "end": 43.74,
+      "words": [
+        {
+          "w": "True.",
+          "start": 43.46,
+          "end": 43.74
+        }
+      ]
+    }
+  ]
+}

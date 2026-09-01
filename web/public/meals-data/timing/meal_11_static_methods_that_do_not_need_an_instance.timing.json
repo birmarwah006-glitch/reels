@@ -1,0 +1,747 @@
+{
+  "meal_id": "meal_11_static_methods_that_do_not_need_an_instance",
+  "audio": "meal_11_static_methods_that_do_not_need_an_instance.mp3",
+  "duration": 42.792,
+  "alignment": "whisper",
+  "anchors": {
+    "What if you could call a function on a class without creating any student?": 0.0,
+    "How do you define a function that belongs to the class itself?": 4.22,
+    "Here is the class with a static hello method.": 16.6,
+    "Running Student.hello() prints hello to the screen.": 25.52,
+    "Static methods live on the class and don\u2019t need an instance.": 32.5,
+    "Try adding another static method that returns the college name.": 36.24
+  },
+  "captions": [
+    {
+      "text": "What if you could call",
+      "start": 0.0,
+      "end": 0.98,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.34
+        },
+        {
+          "w": "if",
+          "start": 0.34,
+          "end": 0.54
+        },
+        {
+          "w": "you",
+          "start": 0.54,
+          "end": 0.62
+        },
+        {
+          "w": "could",
+          "start": 0.62,
+          "end": 0.84
+        },
+        {
+          "w": "call",
+          "start": 0.84,
+          "end": 0.98
+        }
+      ]
+    },
+    {
+      "text": "a function on a class",
+      "start": 0.98,
+      "end": 2.26,
+      "words": [
+        {
+          "w": "a",
+          "start": 0.98,
+          "end": 1.18
+        },
+        {
+          "w": "function",
+          "start": 1.18,
+          "end": 1.54
+        },
+        {
+          "w": "on",
+          "start": 1.54,
+          "end": 1.82
+        },
+        {
+          "w": "a",
+          "start": 1.82,
+          "end": 1.94
+        },
+        {
+          "w": "class",
+          "start": 1.94,
+          "end": 2.26
+        }
+      ]
+    },
+    {
+      "text": "without creating any student? How",
+      "start": 2.26,
+      "end": 4.34,
+      "words": [
+        {
+          "w": "without",
+          "start": 2.26,
+          "end": 2.62
+        },
+        {
+          "w": "creating",
+          "start": 2.62,
+          "end": 3.02
+        },
+        {
+          "w": "any",
+          "start": 3.02,
+          "end": 3.36
+        },
+        {
+          "w": "student?",
+          "start": 3.36,
+          "end": 3.7
+        },
+        {
+          "w": "How",
+          "start": 4.22,
+          "end": 4.34
+        }
+      ]
+    },
+    {
+      "text": "do you define a function",
+      "start": 4.34,
+      "end": 5.6,
+      "words": [
+        {
+          "w": "do",
+          "start": 4.34,
+          "end": 4.5
+        },
+        {
+          "w": "you",
+          "start": 4.5,
+          "end": 4.6
+        },
+        {
+          "w": "define",
+          "start": 4.6,
+          "end": 4.94
+        },
+        {
+          "w": "a",
+          "start": 4.94,
+          "end": 5.2
+        },
+        {
+          "w": "function",
+          "start": 5.2,
+          "end": 5.6
+        }
+      ]
+    },
+    {
+      "text": "that belongs to the class",
+      "start": 5.6,
+      "end": 6.84,
+      "words": [
+        {
+          "w": "that",
+          "start": 5.6,
+          "end": 5.92
+        },
+        {
+          "w": "belongs",
+          "start": 5.92,
+          "end": 6.2
+        },
+        {
+          "w": "to",
+          "start": 6.2,
+          "end": 6.48
+        },
+        {
+          "w": "the",
+          "start": 6.48,
+          "end": 6.6
+        },
+        {
+          "w": "class",
+          "start": 6.6,
+          "end": 6.84
+        }
+      ]
+    },
+    {
+      "text": "itself? In Python you use",
+      "start": 6.84,
+      "end": 8.96,
+      "words": [
+        {
+          "w": "itself?",
+          "start": 6.84,
+          "end": 7.36
+        },
+        {
+          "w": "In",
+          "start": 7.84,
+          "end": 7.96
+        },
+        {
+          "w": "Python",
+          "start": 7.96,
+          "end": 8.34
+        },
+        {
+          "w": "you",
+          "start": 8.6,
+          "end": 8.6
+        },
+        {
+          "w": "use",
+          "start": 8.6,
+          "end": 8.96
+        }
+      ]
+    },
+    {
+      "text": "the @staticmethod decorator. The @staticmethod",
+      "start": 8.96,
+      "end": 10.66,
+      "words": [
+        {
+          "w": "the",
+          "start": 8.96,
+          "end": 9.22
+        },
+        {
+          "w": "@staticmethod",
+          "start": 9.22,
+          "end": 9.44
+        },
+        {
+          "w": "decorator.",
+          "start": 9.44,
+          "end": 9.72
+        },
+        {
+          "w": "The",
+          "start": 9.72,
+          "end": 10.06
+        },
+        {
+          "w": "@staticmethod",
+          "start": 10.06,
+          "end": 10.66
+        }
+      ]
+    },
+    {
+      "text": "decorator marks a function as",
+      "start": 11.14,
+      "end": 12.54,
+      "words": [
+        {
+          "w": "decorator",
+          "start": 11.14,
+          "end": 11.24
+        },
+        {
+          "w": "marks",
+          "start": 11.24,
+          "end": 11.4
+        },
+        {
+          "w": "a",
+          "start": 11.4,
+          "end": 11.7
+        },
+        {
+          "w": "function",
+          "start": 11.7,
+          "end": 12.0
+        },
+        {
+          "w": "as",
+          "start": 12.0,
+          "end": 12.54
+        }
+      ]
+    },
+    {
+      "text": "a static method, meaning it",
+      "start": 12.54,
+      "end": 13.82,
+      "words": [
+        {
+          "w": "a",
+          "start": 12.54,
+          "end": 12.8
+        },
+        {
+          "w": "static",
+          "start": 12.8,
+          "end": 13.0
+        },
+        {
+          "w": "method,",
+          "start": 13.0,
+          "end": 13.32
+        },
+        {
+          "w": "meaning",
+          "start": 13.32,
+          "end": 13.62
+        },
+        {
+          "w": "it",
+          "start": 13.62,
+          "end": 13.82
+        }
+      ]
+    },
+    {
+      "text": "receives no automatic reference to",
+      "start": 13.82,
+      "end": 15.76,
+      "words": [
+        {
+          "w": "receives",
+          "start": 13.82,
+          "end": 14.02
+        },
+        {
+          "w": "no",
+          "start": 14.02,
+          "end": 14.44
+        },
+        {
+          "w": "automatic",
+          "start": 15.08,
+          "end": 15.22
+        },
+        {
+          "w": "reference",
+          "start": 15.22,
+          "end": 15.5
+        },
+        {
+          "w": "to",
+          "start": 15.5,
+          "end": 15.76
+        }
+      ]
+    },
+    {
+      "text": "an object. Here is the",
+      "start": 15.76,
+      "end": 17.5,
+      "words": [
+        {
+          "w": "an",
+          "start": 15.76,
+          "end": 16.26
+        },
+        {
+          "w": "object.",
+          "start": 16.26,
+          "end": 16.6
+        },
+        {
+          "w": "Here",
+          "start": 16.6,
+          "end": 17.06
+        },
+        {
+          "w": "is",
+          "start": 17.06,
+          "end": 17.34
+        },
+        {
+          "w": "the",
+          "start": 17.34,
+          "end": 17.5
+        }
+      ]
+    },
+    {
+      "text": "class with a static hello",
+      "start": 17.5,
+      "end": 19.34,
+      "words": [
+        {
+          "w": "class",
+          "start": 17.5,
+          "end": 17.86
+        },
+        {
+          "w": "with",
+          "start": 18.28,
+          "end": 18.56
+        },
+        {
+          "w": "a",
+          "start": 18.56,
+          "end": 18.88
+        },
+        {
+          "w": "static",
+          "start": 18.88,
+          "end": 19.04
+        },
+        {
+          "w": "hello",
+          "start": 19.04,
+          "end": 19.34
+        }
+      ]
+    },
+    {
+      "text": "method. class Student: @staticmethod def",
+      "start": 19.34,
+      "end": 20.72,
+      "words": [
+        {
+          "w": "method.",
+          "start": 19.34,
+          "end": 19.6
+        },
+        {
+          "w": "class",
+          "start": 19.6,
+          "end": 19.8
+        },
+        {
+          "w": "Student:",
+          "start": 19.8,
+          "end": 20.04
+        },
+        {
+          "w": "@staticmethod",
+          "start": 20.04,
+          "end": 20.34
+        },
+        {
+          "w": "def",
+          "start": 20.34,
+          "end": 20.72
+        }
+      ]
+    },
+    {
+      "text": "hello(): print('hello') Now we call",
+      "start": 21.22,
+      "end": 22.66,
+      "words": [
+        {
+          "w": "hello():",
+          "start": 21.22,
+          "end": 21.48
+        },
+        {
+          "w": "print('hello')",
+          "start": 21.48,
+          "end": 21.78
+        },
+        {
+          "w": "Now",
+          "start": 21.78,
+          "end": 22.04
+        },
+        {
+          "w": "we",
+          "start": 22.04,
+          "end": 22.34
+        },
+        {
+          "w": "call",
+          "start": 22.34,
+          "end": 22.66
+        }
+      ]
+    },
+    {
+      "text": "it directly on the class:",
+      "start": 22.8,
+      "end": 25.38,
+      "words": [
+        {
+          "w": "it",
+          "start": 22.8,
+          "end": 22.96
+        },
+        {
+          "w": "directly",
+          "start": 22.96,
+          "end": 23.4
+        },
+        {
+          "w": "on",
+          "start": 23.66,
+          "end": 23.9
+        },
+        {
+          "w": "the",
+          "start": 24.34,
+          "end": 24.54
+        },
+        {
+          "w": "class:",
+          "start": 25.18,
+          "end": 25.38
+        }
+      ]
+    },
+    {
+      "text": "Student.hello() Running Student.hello() prints hello",
+      "start": 25.38,
+      "end": 26.38,
+      "words": [
+        {
+          "w": "Student.hello()",
+          "start": 25.38,
+          "end": 25.52
+        },
+        {
+          "w": "Running",
+          "start": 25.52,
+          "end": 25.72
+        },
+        {
+          "w": "Student.hello()",
+          "start": 25.72,
+          "end": 25.8
+        },
+        {
+          "w": "prints",
+          "start": 25.8,
+          "end": 26.1
+        },
+        {
+          "w": "hello",
+          "start": 26.1,
+          "end": 26.38
+        }
+      ]
+    },
+    {
+      "text": "to the screen. Notice we",
+      "start": 26.38,
+      "end": 29.18,
+      "words": [
+        {
+          "w": "to",
+          "start": 26.38,
+          "end": 26.48
+        },
+        {
+          "w": "the",
+          "start": 26.48,
+          "end": 26.96
+        },
+        {
+          "w": "screen.",
+          "start": 26.96,
+          "end": 27.74
+        },
+        {
+          "w": "Notice",
+          "start": 27.74,
+          "end": 28.58
+        },
+        {
+          "w": "we",
+          "start": 29.06,
+          "end": 29.18
+        }
+      ]
+    },
+    {
+      "text": "never wrote self or made",
+      "start": 29.18,
+      "end": 31.44,
+      "words": [
+        {
+          "w": "never",
+          "start": 29.18,
+          "end": 29.56
+        },
+        {
+          "w": "wrote",
+          "start": 29.56,
+          "end": 30.44
+        },
+        {
+          "w": "self",
+          "start": 30.74,
+          "end": 30.9
+        },
+        {
+          "w": "or",
+          "start": 30.9,
+          "end": 31.18
+        },
+        {
+          "w": "made",
+          "start": 31.18,
+          "end": 31.44
+        }
+      ]
+    },
+    {
+      "text": "a Student instance. Static methods",
+      "start": 31.44,
+      "end": 33.04,
+      "words": [
+        {
+          "w": "a",
+          "start": 31.44,
+          "end": 31.5
+        },
+        {
+          "w": "Student",
+          "start": 31.5,
+          "end": 31.98
+        },
+        {
+          "w": "instance.",
+          "start": 32.34,
+          "end": 32.5
+        },
+        {
+          "w": "Static",
+          "start": 32.5,
+          "end": 32.8
+        },
+        {
+          "w": "methods",
+          "start": 32.8,
+          "end": 33.04
+        }
+      ]
+    },
+    {
+      "text": "live on the class and",
+      "start": 33.04,
+      "end": 34.36,
+      "words": [
+        {
+          "w": "live",
+          "start": 33.04,
+          "end": 33.34
+        },
+        {
+          "w": "on",
+          "start": 33.34,
+          "end": 33.72
+        },
+        {
+          "w": "the",
+          "start": 33.72,
+          "end": 33.98
+        },
+        {
+          "w": "class",
+          "start": 33.98,
+          "end": 34.22
+        },
+        {
+          "w": "and",
+          "start": 34.22,
+          "end": 34.36
+        }
+      ]
+    },
+    {
+      "text": "don\u2019t need an instance. Try",
+      "start": 34.36,
+      "end": 36.62,
+      "words": [
+        {
+          "w": "don\u2019t",
+          "start": 34.36,
+          "end": 34.56
+        },
+        {
+          "w": "need",
+          "start": 34.56,
+          "end": 35.1
+        },
+        {
+          "w": "an",
+          "start": 35.66,
+          "end": 35.88
+        },
+        {
+          "w": "instance.",
+          "start": 35.88,
+          "end": 36.24
+        },
+        {
+          "w": "Try",
+          "start": 36.24,
+          "end": 36.62
+        }
+      ]
+    },
+    {
+      "text": "adding another static method that",
+      "start": 36.62,
+      "end": 37.74,
+      "words": [
+        {
+          "w": "adding",
+          "start": 36.62,
+          "end": 36.84
+        },
+        {
+          "w": "another",
+          "start": 36.84,
+          "end": 36.96
+        },
+        {
+          "w": "static",
+          "start": 36.96,
+          "end": 37.3
+        },
+        {
+          "w": "method",
+          "start": 37.3,
+          "end": 37.52
+        },
+        {
+          "w": "that",
+          "start": 37.52,
+          "end": 37.74
+        }
+      ]
+    },
+    {
+      "text": "returns the college name.",
+      "start": 37.74,
+      "end": 39.36,
+      "words": [
+        {
+          "w": "returns",
+          "start": 37.74,
+          "end": 37.98
+        },
+        {
+          "w": "the",
+          "start": 37.98,
+          "end": 38.14
+        },
+        {
+          "w": "college",
+          "start": 38.14,
+          "end": 38.62
+        },
+        {
+          "w": "name.",
+          "start": 39.14,
+          "end": 39.36
+        }
+      ]
+    }
+  ]
+}

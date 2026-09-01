@@ -1,0 +1,554 @@
+{
+  "meal_id": "meal_03_setting_gcc_as_the_default_compiler",
+  "audio": "meal_03_setting_gcc_as_the_default_compiler.mp3",
+  "duration": 31.944,
+  "alignment": "whisper",
+  "anchors": {
+    "Which compiler is actually building your C program?": 0.0,
+    "How do you make Code::Blocks use GNU GCC by default?": 3.42,
+    "The GNU Compiler Collection, or GCC, is the free, widely used compiler that turns C into machine instructions.": 6.52,
+    "Every new project will now compile with GCC by default.": 22.92,
+    "Try creating a new project and verify the compiler listed at the top.": 26.5
+  },
+  "captions": [
+    {
+      "text": "Which compiler is actually building",
+      "start": 0.0,
+      "end": 1.9,
+      "words": [
+        {
+          "w": "Which",
+          "start": 0.0,
+          "end": 0.32
+        },
+        {
+          "w": "compiler",
+          "start": 0.32,
+          "end": 0.86
+        },
+        {
+          "w": "is",
+          "start": 0.86,
+          "end": 1.18
+        },
+        {
+          "w": "actually",
+          "start": 1.18,
+          "end": 1.52
+        },
+        {
+          "w": "building",
+          "start": 1.52,
+          "end": 1.9
+        }
+      ]
+    },
+    {
+      "text": "your C program? How do",
+      "start": 1.9,
+      "end": 3.56,
+      "words": [
+        {
+          "w": "your",
+          "start": 1.9,
+          "end": 2.2
+        },
+        {
+          "w": "C",
+          "start": 2.2,
+          "end": 2.4
+        },
+        {
+          "w": "program?",
+          "start": 2.4,
+          "end": 2.84
+        },
+        {
+          "w": "How",
+          "start": 3.42,
+          "end": 3.44
+        },
+        {
+          "w": "do",
+          "start": 3.44,
+          "end": 3.56
+        }
+      ]
+    },
+    {
+      "text": "you make Code::Blocks use GNU",
+      "start": 3.56,
+      "end": 5.4,
+      "words": [
+        {
+          "w": "you",
+          "start": 3.56,
+          "end": 3.64
+        },
+        {
+          "w": "make",
+          "start": 3.64,
+          "end": 3.84
+        },
+        {
+          "w": "Code::Blocks",
+          "start": 3.84,
+          "end": 4.26
+        },
+        {
+          "w": "use",
+          "start": 4.96,
+          "end": 5.16
+        },
+        {
+          "w": "GNU",
+          "start": 5.16,
+          "end": 5.4
+        }
+      ]
+    },
+    {
+      "text": "GCC by default? The GNU",
+      "start": 5.4,
+      "end": 7.48,
+      "words": [
+        {
+          "w": "GCC",
+          "start": 5.4,
+          "end": 5.68
+        },
+        {
+          "w": "by",
+          "start": 5.68,
+          "end": 6.14
+        },
+        {
+          "w": "default?",
+          "start": 6.14,
+          "end": 6.52
+        },
+        {
+          "w": "The",
+          "start": 6.52,
+          "end": 6.92
+        },
+        {
+          "w": "GNU",
+          "start": 7.46,
+          "end": 7.48
+        }
+      ]
+    },
+    {
+      "text": "Compiler Collection, or GCC, is",
+      "start": 7.48,
+      "end": 9.5,
+      "words": [
+        {
+          "w": "Compiler",
+          "start": 7.48,
+          "end": 7.72
+        },
+        {
+          "w": "Collection,",
+          "start": 7.72,
+          "end": 8.1
+        },
+        {
+          "w": "or",
+          "start": 8.1,
+          "end": 8.6
+        },
+        {
+          "w": "GCC,",
+          "start": 8.6,
+          "end": 8.9
+        },
+        {
+          "w": "is",
+          "start": 8.9,
+          "end": 9.5
+        }
+      ]
+    },
+    {
+      "text": "the free, widely used compiler",
+      "start": 9.5,
+      "end": 11.36,
+      "words": [
+        {
+          "w": "the",
+          "start": 9.5,
+          "end": 10.06
+        },
+        {
+          "w": "free,",
+          "start": 10.06,
+          "end": 10.32
+        },
+        {
+          "w": "widely",
+          "start": 10.32,
+          "end": 10.7
+        },
+        {
+          "w": "used",
+          "start": 10.7,
+          "end": 11.02
+        },
+        {
+          "w": "compiler",
+          "start": 11.02,
+          "end": 11.36
+        }
+      ]
+    },
+    {
+      "text": "that turns C into machine",
+      "start": 11.36,
+      "end": 12.92,
+      "words": [
+        {
+          "w": "that",
+          "start": 11.36,
+          "end": 11.76
+        },
+        {
+          "w": "turns",
+          "start": 11.76,
+          "end": 12.06
+        },
+        {
+          "w": "C",
+          "start": 12.06,
+          "end": 12.32
+        },
+        {
+          "w": "into",
+          "start": 12.32,
+          "end": 12.68
+        },
+        {
+          "w": "machine",
+          "start": 12.68,
+          "end": 12.92
+        }
+      ]
+    },
+    {
+      "text": "instructions. Open the Settings menu,",
+      "start": 12.92,
+      "end": 14.94,
+      "words": [
+        {
+          "w": "instructions.",
+          "start": 12.92,
+          "end": 13.22
+        },
+        {
+          "w": "Open",
+          "start": 13.22,
+          "end": 13.84
+        },
+        {
+          "w": "the",
+          "start": 14.34,
+          "end": 14.52
+        },
+        {
+          "w": "Settings",
+          "start": 14.52,
+          "end": 14.76
+        },
+        {
+          "w": "menu,",
+          "start": 14.76,
+          "end": 14.94
+        }
+      ]
+    },
+    {
+      "text": "pick Compiler, then choose GNU",
+      "start": 14.94,
+      "end": 17.6,
+      "words": [
+        {
+          "w": "pick",
+          "start": 14.94,
+          "end": 15.36
+        },
+        {
+          "w": "Compiler,",
+          "start": 15.8,
+          "end": 15.98
+        },
+        {
+          "w": "then",
+          "start": 15.98,
+          "end": 16.4
+        },
+        {
+          "w": "choose",
+          "start": 17.16,
+          "end": 17.38
+        },
+        {
+          "w": "GNU",
+          "start": 17.38,
+          "end": 17.6
+        }
+      ]
+    },
+    {
+      "text": "GCC from the drop\u2011down list",
+      "start": 17.6,
+      "end": 19.16,
+      "words": [
+        {
+          "w": "GCC",
+          "start": 17.6,
+          "end": 17.9
+        },
+        {
+          "w": "from",
+          "start": 17.9,
+          "end": 18.46
+        },
+        {
+          "w": "the",
+          "start": 18.46,
+          "end": 18.76
+        },
+        {
+          "w": "drop\u2011down",
+          "start": 18.76,
+          "end": 18.96
+        },
+        {
+          "w": "list",
+          "start": 18.96,
+          "end": 19.16
+        }
+      ]
+    },
+    {
+      "text": "at the top. Click Set",
+      "start": 19.16,
+      "end": 20.46,
+      "words": [
+        {
+          "w": "at",
+          "start": 19.16,
+          "end": 19.4
+        },
+        {
+          "w": "the",
+          "start": 19.4,
+          "end": 19.7
+        },
+        {
+          "w": "top.",
+          "start": 19.7,
+          "end": 19.98
+        },
+        {
+          "w": "Click",
+          "start": 19.98,
+          "end": 20.12
+        },
+        {
+          "w": "Set",
+          "start": 20.12,
+          "end": 20.46
+        }
+      ]
+    },
+    {
+      "text": "as default, then Apply and",
+      "start": 20.68,
+      "end": 22.56,
+      "words": [
+        {
+          "w": "as",
+          "start": 20.68,
+          "end": 20.96
+        },
+        {
+          "w": "default,",
+          "start": 20.96,
+          "end": 21.16
+        },
+        {
+          "w": "then",
+          "start": 21.16,
+          "end": 21.44
+        },
+        {
+          "w": "Apply",
+          "start": 21.44,
+          "end": 21.86
+        },
+        {
+          "w": "and",
+          "start": 22.4,
+          "end": 22.56
+        }
+      ]
+    },
+    {
+      "text": "OK. Every new project will",
+      "start": 22.56,
+      "end": 24.36,
+      "words": [
+        {
+          "w": "OK.",
+          "start": 22.56,
+          "end": 22.92
+        },
+        {
+          "w": "Every",
+          "start": 22.92,
+          "end": 23.16
+        },
+        {
+          "w": "new",
+          "start": 23.16,
+          "end": 23.48
+        },
+        {
+          "w": "project",
+          "start": 23.88,
+          "end": 24.14
+        },
+        {
+          "w": "will",
+          "start": 24.14,
+          "end": 24.36
+        }
+      ]
+    },
+    {
+      "text": "now compile with GCC by",
+      "start": 24.36,
+      "end": 25.96,
+      "words": [
+        {
+          "w": "now",
+          "start": 24.36,
+          "end": 24.74
+        },
+        {
+          "w": "compile",
+          "start": 24.74,
+          "end": 25.06
+        },
+        {
+          "w": "with",
+          "start": 25.06,
+          "end": 25.26
+        },
+        {
+          "w": "GCC",
+          "start": 25.26,
+          "end": 25.64
+        },
+        {
+          "w": "by",
+          "start": 25.64,
+          "end": 25.96
+        }
+      ]
+    },
+    {
+      "text": "default. Try creating a new",
+      "start": 25.96,
+      "end": 28.3,
+      "words": [
+        {
+          "w": "default.",
+          "start": 25.96,
+          "end": 26.5
+        },
+        {
+          "w": "Try",
+          "start": 26.5,
+          "end": 26.74
+        },
+        {
+          "w": "creating",
+          "start": 26.74,
+          "end": 27.16
+        },
+        {
+          "w": "a",
+          "start": 27.16,
+          "end": 27.94
+        },
+        {
+          "w": "new",
+          "start": 27.94,
+          "end": 28.3
+        }
+      ]
+    },
+    {
+      "text": "project and verify the compiler",
+      "start": 28.3,
+      "end": 29.9,
+      "words": [
+        {
+          "w": "project",
+          "start": 28.3,
+          "end": 28.54
+        },
+        {
+          "w": "and",
+          "start": 28.54,
+          "end": 28.72
+        },
+        {
+          "w": "verify",
+          "start": 28.72,
+          "end": 29.18
+        },
+        {
+          "w": "the",
+          "start": 29.18,
+          "end": 29.54
+        },
+        {
+          "w": "compiler",
+          "start": 29.54,
+          "end": 29.9
+        }
+      ]
+    },
+    {
+      "text": "listed at the top.",
+      "start": 29.9,
+      "end": 31.24,
+      "words": [
+        {
+          "w": "listed",
+          "start": 29.9,
+          "end": 30.2
+        },
+        {
+          "w": "at",
+          "start": 30.2,
+          "end": 30.52
+        },
+        {
+          "w": "the",
+          "start": 30.52,
+          "end": 30.96
+        },
+        {
+          "w": "top.",
+          "start": 30.96,
+          "end": 31.24
+        }
+      ]
+    }
+  ]
+}

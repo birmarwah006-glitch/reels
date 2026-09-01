@@ -1,0 +1,209 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_04_defining_a_function",
+    "title": "Defining a Reusable Function",
+    "concept": "python.functions.define",
+    "objective": "Write a reusable block of code using the def keyword",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.basics.variables"
+    ],
+    "next_concepts": [
+      "python.functions.parameters",
+      "python.control.while"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "function",
+      "def",
+      "parameter",
+      "return"
+    ],
+    "assumes": [
+      "variable",
+      "print",
+      "input"
+    ],
+    "voice": {
+      "script": "Want to reuse code without rewriting it? How can you package actions to call them later? In Python a function is a reusable block of instructions. You create one with the def keyword, followed by a name and parentheses. Inside the parentheses you list parameters, which are placeholders for values you\u2019ll give later. The code block runs when you call the function by its name and supply arguments. If you want the function to give you something back, you use return, which sends a value to the caller. Here\u2019s the function definition: def calculate_total(bet, lines): return bet * lines. Now see the flow of a function call. First we ask the user for a bet amount and how many lines they want. Then we call calculate_total with those numbers, store the result, and print it. Running this prints the total bet. Remember: define once, call many times. For practice, write a function that greets a user by name.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Want to reuse code without rewriting it?"
+        },
+        "narration_anchor": "Want to reuse code without rewriting it?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How can you package actions to call them later?"
+        },
+        "narration_anchor": "How can you package actions to call them later?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Start",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "Define function",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Call function",
+              "kind": "decision"
+            },
+            {
+              "id": "d",
+              "label": "Return value",
+              "kind": "value"
+            },
+            {
+              "id": "e",
+              "label": "Print result",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "writes"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "ready"
+            },
+            {
+              "from": "c",
+              "to": "d",
+              "label": "executes"
+            },
+            {
+              "from": "d",
+              "to": "e",
+              "label": "uses"
+            }
+          ]
+        },
+        "narration_anchor": "In Python a function is a reusable block of instructions."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "bet = int(input())\nlines = int(input())\n\ndef calculate_total(bet, lines):\n    return bet * lines\n\ntotal = calculate_total(bet, lines)\nprint(total)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "bet = int(input())\nlines = int(input())\n\ndef calculate_total(bet, lines):\n    return bet * lines\n\ntotal = calculate_total(bet, lines)\nprint(total)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "def calculate_total"
+            }
+          ]
+        },
+        "narration_anchor": "Here\u2019s the function definition:"
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [
+            "5",
+            "3"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:32+00:00",
+            "stdout": "15\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running this prints the total bet.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Define a function once, then call it with different arguments whenever needed."
+        },
+        "narration_anchor": "Remember: define once, call many times.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Create a function that takes a name and prints a greeting."
+        },
+        "narration_anchor": "For practice, write a function that greets a user by name.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Create a function that takes a name and prints a greeting.",
+      "hint": "Use def, a parameter for the name, and print inside the function."
+    },
+    "series": {
+      "title": "Build a Simple Slot\u2011Machine Deposit App",
+      "artifact": "A runnable Python script that asks for a deposit, lets the user choose bet lines and amount, prints a bet summary, and displays a random slot\u2011machine spin",
+      "order": 4,
+      "total": 17,
+      "previous_id": "meal_03_printing_and_getting_input",
+      "next_id": "meal_05_calling_a_function"
+    }
+  }
+}

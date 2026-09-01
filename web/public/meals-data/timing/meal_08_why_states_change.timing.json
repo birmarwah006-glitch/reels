@@ -1,0 +1,679 @@
+{
+  "meal_id": "meal_08_why_states_change",
+  "audio": "meal_08_why_states_change.mp3",
+  "duration": 33.792,
+  "alignment": "whisper",
+  "anchors": {
+    "Why can\u2019t a blocked process jump straight to running?": 0.0,
+    "A state transition is simply the change from one condition to another.": 5.72
+  },
+  "captions": [
+    {
+      "text": "Why can\u2019t a blocked process",
+      "start": 0.0,
+      "end": 1.42,
+      "words": [
+        {
+          "w": "Why",
+          "start": 0.0,
+          "end": 0.32
+        },
+        {
+          "w": "can\u2019t",
+          "start": 0.32,
+          "end": 0.58
+        },
+        {
+          "w": "a",
+          "start": 0.58,
+          "end": 0.72
+        },
+        {
+          "w": "blocked",
+          "start": 0.72,
+          "end": 1.0
+        },
+        {
+          "w": "process",
+          "start": 1.0,
+          "end": 1.42
+        }
+      ]
+    },
+    {
+      "text": "jump straight to running? A",
+      "start": 1.42,
+      "end": 3.42,
+      "words": [
+        {
+          "w": "jump",
+          "start": 1.42,
+          "end": 1.8
+        },
+        {
+          "w": "straight",
+          "start": 1.8,
+          "end": 2.08
+        },
+        {
+          "w": "to",
+          "start": 2.08,
+          "end": 2.26
+        },
+        {
+          "w": "running?",
+          "start": 2.26,
+          "end": 2.6
+        },
+        {
+          "w": "A",
+          "start": 3.14,
+          "end": 3.42
+        }
+      ]
+    },
+    {
+      "text": "process moves through defined states.",
+      "start": 3.42,
+      "end": 5.72,
+      "words": [
+        {
+          "w": "process",
+          "start": 3.42,
+          "end": 3.88
+        },
+        {
+          "w": "moves",
+          "start": 3.88,
+          "end": 4.22
+        },
+        {
+          "w": "through",
+          "start": 4.22,
+          "end": 4.6
+        },
+        {
+          "w": "defined",
+          "start": 4.6,
+          "end": 5.12
+        },
+        {
+          "w": "states.",
+          "start": 5.66,
+          "end": 5.72
+        }
+      ]
+    },
+    {
+      "text": "A state transition is simply",
+      "start": 5.72,
+      "end": 7.32,
+      "words": [
+        {
+          "w": "A",
+          "start": 5.72,
+          "end": 5.94
+        },
+        {
+          "w": "state",
+          "start": 5.94,
+          "end": 6.38
+        },
+        {
+          "w": "transition",
+          "start": 6.38,
+          "end": 6.78
+        },
+        {
+          "w": "is",
+          "start": 6.78,
+          "end": 7.06
+        },
+        {
+          "w": "simply",
+          "start": 7.06,
+          "end": 7.32
+        }
+      ]
+    },
+    {
+      "text": "the change from one condition",
+      "start": 7.32,
+      "end": 8.88,
+      "words": [
+        {
+          "w": "the",
+          "start": 7.32,
+          "end": 7.64
+        },
+        {
+          "w": "change",
+          "start": 7.64,
+          "end": 7.98
+        },
+        {
+          "w": "from",
+          "start": 7.98,
+          "end": 8.26
+        },
+        {
+          "w": "one",
+          "start": 8.26,
+          "end": 8.56
+        },
+        {
+          "w": "condition",
+          "start": 8.56,
+          "end": 8.88
+        }
+      ]
+    },
+    {
+      "text": "to another. When a process",
+      "start": 8.88,
+      "end": 10.56,
+      "words": [
+        {
+          "w": "to",
+          "start": 8.88,
+          "end": 9.22
+        },
+        {
+          "w": "another.",
+          "start": 9.68,
+          "end": 9.82
+        },
+        {
+          "w": "When",
+          "start": 9.82,
+          "end": 10.0
+        },
+        {
+          "w": "a",
+          "start": 10.0,
+          "end": 10.26
+        },
+        {
+          "w": "process",
+          "start": 10.26,
+          "end": 10.56
+        }
+      ]
+    },
+    {
+      "text": "is blocked, it is waiting",
+      "start": 10.56,
+      "end": 11.8,
+      "words": [
+        {
+          "w": "is",
+          "start": 10.56,
+          "end": 10.84
+        },
+        {
+          "w": "blocked,",
+          "start": 11.04,
+          "end": 11.06
+        },
+        {
+          "w": "it",
+          "start": 11.06,
+          "end": 11.26
+        },
+        {
+          "w": "is",
+          "start": 11.26,
+          "end": 11.54
+        },
+        {
+          "w": "waiting",
+          "start": 11.54,
+          "end": 11.8
+        }
+      ]
+    },
+    {
+      "text": "for some event, like input",
+      "start": 11.8,
+      "end": 13.26,
+      "words": [
+        {
+          "w": "for",
+          "start": 11.8,
+          "end": 11.98
+        },
+        {
+          "w": "some",
+          "start": 11.98,
+          "end": 12.28
+        },
+        {
+          "w": "event,",
+          "start": 12.28,
+          "end": 12.64
+        },
+        {
+          "w": "like",
+          "start": 12.64,
+          "end": 12.92
+        },
+        {
+          "w": "input",
+          "start": 12.92,
+          "end": 13.26
+        }
+      ]
+    },
+    {
+      "text": "or a lock. It cannot",
+      "start": 13.26,
+      "end": 15.14,
+      "words": [
+        {
+          "w": "or",
+          "start": 13.26,
+          "end": 13.42
+        },
+        {
+          "w": "a",
+          "start": 13.42,
+          "end": 13.64
+        },
+        {
+          "w": "lock.",
+          "start": 14.14,
+          "end": 14.38
+        },
+        {
+          "w": "It",
+          "start": 14.38,
+          "end": 14.74
+        },
+        {
+          "w": "cannot",
+          "start": 14.74,
+          "end": 15.14
+        }
+      ]
+    },
+    {
+      "text": "run because the needed resource",
+      "start": 15.14,
+      "end": 16.9,
+      "words": [
+        {
+          "w": "run",
+          "start": 15.14,
+          "end": 15.4
+        },
+        {
+          "w": "because",
+          "start": 15.4,
+          "end": 15.6
+        },
+        {
+          "w": "the",
+          "start": 15.6,
+          "end": 16.1
+        },
+        {
+          "w": "needed",
+          "start": 16.1,
+          "end": 16.46
+        },
+        {
+          "w": "resource",
+          "start": 16.46,
+          "end": 16.9
+        }
+      ]
+    },
+    {
+      "text": "isn\u2019t available. Once that event",
+      "start": 17.54,
+      "end": 19.36,
+      "words": [
+        {
+          "w": "isn\u2019t",
+          "start": 17.54,
+          "end": 17.82
+        },
+        {
+          "w": "available.",
+          "start": 17.82,
+          "end": 18.04
+        },
+        {
+          "w": "Once",
+          "start": 18.04,
+          "end": 18.2
+        },
+        {
+          "w": "that",
+          "start": 18.2,
+          "end": 18.68
+        },
+        {
+          "w": "event",
+          "start": 19.22,
+          "end": 19.36
+        }
+      ]
+    },
+    {
+      "text": "occurs, the operating system marks",
+      "start": 19.36,
+      "end": 20.9,
+      "words": [
+        {
+          "w": "occurs,",
+          "start": 19.36,
+          "end": 19.62
+        },
+        {
+          "w": "the",
+          "start": 19.62,
+          "end": 20.12
+        },
+        {
+          "w": "operating",
+          "start": 20.12,
+          "end": 20.38
+        },
+        {
+          "w": "system",
+          "start": 20.38,
+          "end": 20.58
+        },
+        {
+          "w": "marks",
+          "start": 20.58,
+          "end": 20.9
+        }
+      ]
+    },
+    {
+      "text": "the process as ready, placing",
+      "start": 20.9,
+      "end": 22.76,
+      "words": [
+        {
+          "w": "the",
+          "start": 20.9,
+          "end": 21.22
+        },
+        {
+          "w": "process",
+          "start": 21.22,
+          "end": 21.56
+        },
+        {
+          "w": "as",
+          "start": 22.2,
+          "end": 22.34
+        },
+        {
+          "w": "ready,",
+          "start": 22.34,
+          "end": 22.62
+        },
+        {
+          "w": "placing",
+          "start": 22.62,
+          "end": 22.76
+        }
+      ]
+    },
+    {
+      "text": "it in the queue of",
+      "start": 22.76,
+      "end": 23.92,
+      "words": [
+        {
+          "w": "it",
+          "start": 22.76,
+          "end": 22.88
+        },
+        {
+          "w": "in",
+          "start": 22.88,
+          "end": 23.0
+        },
+        {
+          "w": "the",
+          "start": 23.0,
+          "end": 23.2
+        },
+        {
+          "w": "queue",
+          "start": 23.2,
+          "end": 23.62
+        },
+        {
+          "w": "of",
+          "start": 23.62,
+          "end": 23.92
+        }
+      ]
+    },
+    {
+      "text": "processes that can run. Only",
+      "start": 23.92,
+      "end": 25.76,
+      "words": [
+        {
+          "w": "processes",
+          "start": 23.92,
+          "end": 24.1
+        },
+        {
+          "w": "that",
+          "start": 24.1,
+          "end": 24.4
+        },
+        {
+          "w": "can",
+          "start": 24.76,
+          "end": 25.0
+        },
+        {
+          "w": "run.",
+          "start": 25.0,
+          "end": 25.52
+        },
+        {
+          "w": "Only",
+          "start": 25.52,
+          "end": 25.76
+        }
+      ]
+    },
+    {
+      "text": "processes in the ready state",
+      "start": 25.76,
+      "end": 26.96,
+      "words": [
+        {
+          "w": "processes",
+          "start": 25.76,
+          "end": 25.82
+        },
+        {
+          "w": "in",
+          "start": 25.82,
+          "end": 26.04
+        },
+        {
+          "w": "the",
+          "start": 26.04,
+          "end": 26.36
+        },
+        {
+          "w": "ready",
+          "start": 26.36,
+          "end": 26.66
+        },
+        {
+          "w": "state",
+          "start": 26.66,
+          "end": 26.96
+        }
+      ]
+    },
+    {
+      "text": "are eligible to be scheduled",
+      "start": 26.96,
+      "end": 28.36,
+      "words": [
+        {
+          "w": "are",
+          "start": 26.96,
+          "end": 27.24
+        },
+        {
+          "w": "eligible",
+          "start": 27.24,
+          "end": 27.42
+        },
+        {
+          "w": "to",
+          "start": 27.42,
+          "end": 27.72
+        },
+        {
+          "w": "be",
+          "start": 27.72,
+          "end": 28.12
+        },
+        {
+          "w": "scheduled",
+          "start": 28.12,
+          "end": 28.36
+        }
+      ]
+    },
+    {
+      "text": "onto the CPU, so the",
+      "start": 28.36,
+      "end": 30.02,
+      "words": [
+        {
+          "w": "onto",
+          "start": 28.36,
+          "end": 28.68
+        },
+        {
+          "w": "the",
+          "start": 28.68,
+          "end": 29.3
+        },
+        {
+          "w": "CPU,",
+          "start": 29.3,
+          "end": 29.44
+        },
+        {
+          "w": "so",
+          "start": 29.44,
+          "end": 29.68
+        },
+        {
+          "w": "the",
+          "start": 29.68,
+          "end": 30.02
+        }
+      ]
+    },
+    {
+      "text": "blocked one must become ready",
+      "start": 30.02,
+      "end": 31.3,
+      "words": [
+        {
+          "w": "blocked",
+          "start": 30.02,
+          "end": 30.26
+        },
+        {
+          "w": "one",
+          "start": 30.26,
+          "end": 30.54
+        },
+        {
+          "w": "must",
+          "start": 30.54,
+          "end": 30.82
+        },
+        {
+          "w": "become",
+          "start": 30.82,
+          "end": 31.12
+        },
+        {
+          "w": "ready",
+          "start": 31.12,
+          "end": 31.3
+        }
+      ]
+    },
+    {
+      "text": "before it can run. Here\u2019s",
+      "start": 31.3,
+      "end": 32.84,
+      "words": [
+        {
+          "w": "before",
+          "start": 31.3,
+          "end": 31.46
+        },
+        {
+          "w": "it",
+          "start": 31.46,
+          "end": 31.86
+        },
+        {
+          "w": "can",
+          "start": 32.18,
+          "end": 32.5
+        },
+        {
+          "w": "run.",
+          "start": 32.5,
+          "end": 32.66
+        },
+        {
+          "w": "Here\u2019s",
+          "start": 32.66,
+          "end": 32.84
+        }
+      ]
+    },
+    {
+      "text": "the flow of states.",
+      "start": 32.84,
+      "end": 33.44,
+      "words": [
+        {
+          "w": "the",
+          "start": 32.84,
+          "end": 33.12
+        },
+        {
+          "w": "flow",
+          "start": 33.12,
+          "end": 33.44
+        },
+        {
+          "w": "of",
+          "start": 33.12,
+          "end": 33.44
+        },
+        {
+          "w": "states.",
+          "start": 33.12,
+          "end": 33.44
+        }
+      ]
+    }
+  ]
+}

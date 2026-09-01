@@ -1,0 +1,638 @@
+{
+  "meal_id": "meal_06_compile_the_program_with_gcc",
+  "audio": "meal_06_compile_the_program_with_gcc.mp3",
+  "duration": 36.024,
+  "alignment": "whisper",
+  "anchors": {
+    "How does text become a running program?": 0.0,
+    "gcc is the tool that translates source into a binary": 4.48,
+    "Compiling produces a binary you can execute": 33.04
+  },
+  "captions": [
+    {
+      "text": "How does text become a",
+      "start": 0.0,
+      "end": 1.42,
+      "words": [
+        {
+          "w": "How",
+          "start": 0.0,
+          "end": 0.28
+        },
+        {
+          "w": "does",
+          "start": 0.28,
+          "end": 0.48
+        },
+        {
+          "w": "text",
+          "start": 0.48,
+          "end": 0.82
+        },
+        {
+          "w": "become",
+          "start": 0.82,
+          "end": 1.2
+        },
+        {
+          "w": "a",
+          "start": 1.2,
+          "end": 1.42
+        }
+      ]
+    },
+    {
+      "text": "running program? That's what gcc",
+      "start": 1.42,
+      "end": 3.48,
+      "words": [
+        {
+          "w": "running",
+          "start": 1.42,
+          "end": 1.64
+        },
+        {
+          "w": "program?",
+          "start": 1.64,
+          "end": 2.2
+        },
+        {
+          "w": "That's",
+          "start": 2.66,
+          "end": 2.94
+        },
+        {
+          "w": "what",
+          "start": 2.94,
+          "end": 3.12
+        },
+        {
+          "w": "gcc",
+          "start": 3.12,
+          "end": 3.48
+        }
+      ]
+    },
+    {
+      "text": "does. gcc is the tool",
+      "start": 3.48,
+      "end": 5.68,
+      "words": [
+        {
+          "w": "does.",
+          "start": 3.48,
+          "end": 3.98
+        },
+        {
+          "w": "gcc",
+          "start": 4.48,
+          "end": 4.84
+        },
+        {
+          "w": "is",
+          "start": 4.84,
+          "end": 5.2
+        },
+        {
+          "w": "the",
+          "start": 5.2,
+          "end": 5.38
+        },
+        {
+          "w": "tool",
+          "start": 5.38,
+          "end": 5.68
+        }
+      ]
+    },
+    {
+      "text": "that translates source into a",
+      "start": 5.68,
+      "end": 7.26,
+      "words": [
+        {
+          "w": "that",
+          "start": 5.68,
+          "end": 5.96
+        },
+        {
+          "w": "translates",
+          "start": 5.96,
+          "end": 6.3
+        },
+        {
+          "w": "source",
+          "start": 6.3,
+          "end": 6.78
+        },
+        {
+          "w": "into",
+          "start": 6.78,
+          "end": 7.1
+        },
+        {
+          "w": "a",
+          "start": 7.1,
+          "end": 7.26
+        }
+      ]
+    },
+    {
+      "text": "binary. The act of turning",
+      "start": 7.26,
+      "end": 9.44,
+      "words": [
+        {
+          "w": "binary.",
+          "start": 7.26,
+          "end": 7.6
+        },
+        {
+          "w": "The",
+          "start": 8.14,
+          "end": 8.28
+        },
+        {
+          "w": "act",
+          "start": 8.28,
+          "end": 8.64
+        },
+        {
+          "w": "of",
+          "start": 8.64,
+          "end": 9.0
+        },
+        {
+          "w": "turning",
+          "start": 9.0,
+          "end": 9.44
+        }
+      ]
+    },
+    {
+      "text": "source into a binary is",
+      "start": 9.44,
+      "end": 10.82,
+      "words": [
+        {
+          "w": "source",
+          "start": 9.44,
+          "end": 9.7
+        },
+        {
+          "w": "into",
+          "start": 9.7,
+          "end": 10.0
+        },
+        {
+          "w": "a",
+          "start": 10.0,
+          "end": 10.28
+        },
+        {
+          "w": "binary",
+          "start": 10.28,
+          "end": 10.64
+        },
+        {
+          "w": "is",
+          "start": 10.64,
+          "end": 10.82
+        }
+      ]
+    },
+    {
+      "text": "called compiling. You open a",
+      "start": 10.82,
+      "end": 12.74,
+      "words": [
+        {
+          "w": "called",
+          "start": 10.82,
+          "end": 11.32
+        },
+        {
+          "w": "compiling.",
+          "start": 11.84,
+          "end": 12.02
+        },
+        {
+          "w": "You",
+          "start": 12.02,
+          "end": 12.22
+        },
+        {
+          "w": "open",
+          "start": 12.22,
+          "end": 12.38
+        },
+        {
+          "w": "a",
+          "start": 12.38,
+          "end": 12.74
+        }
+      ]
+    },
+    {
+      "text": "terminal, type gcc followed by",
+      "start": 13.22,
+      "end": 14.72,
+      "words": [
+        {
+          "w": "terminal,",
+          "start": 13.22,
+          "end": 13.36
+        },
+        {
+          "w": "type",
+          "start": 13.36,
+          "end": 13.88
+        },
+        {
+          "w": "gcc",
+          "start": 14.12,
+          "end": 14.32
+        },
+        {
+          "w": "followed",
+          "start": 14.32,
+          "end": 14.58
+        },
+        {
+          "w": "by",
+          "start": 14.58,
+          "end": 14.72
+        }
+      ]
+    },
+    {
+      "text": "the source file name, and",
+      "start": 14.72,
+      "end": 16.94,
+      "words": [
+        {
+          "w": "the",
+          "start": 14.72,
+          "end": 14.94
+        },
+        {
+          "w": "source",
+          "start": 14.94,
+          "end": 15.22
+        },
+        {
+          "w": "file",
+          "start": 15.22,
+          "end": 15.76
+        },
+        {
+          "w": "name,",
+          "start": 16.1,
+          "end": 16.26
+        },
+        {
+          "w": "and",
+          "start": 16.26,
+          "end": 16.94
+        }
+      ]
+    },
+    {
+      "text": "optionally -o and the name",
+      "start": 17.28,
+      "end": 18.02,
+      "words": [
+        {
+          "w": "optionally",
+          "start": 17.28,
+          "end": 17.48
+        },
+        {
+          "w": "-o",
+          "start": 17.48,
+          "end": 17.58
+        },
+        {
+          "w": "and",
+          "start": 17.58,
+          "end": 17.66
+        },
+        {
+          "w": "the",
+          "start": 17.66,
+          "end": 17.82
+        },
+        {
+          "w": "name",
+          "start": 17.82,
+          "end": 18.02
+        }
+      ]
+    },
+    {
+      "text": "you want for the executable.",
+      "start": 18.02,
+      "end": 19.68,
+      "words": [
+        {
+          "w": "you",
+          "start": 18.02,
+          "end": 18.2
+        },
+        {
+          "w": "want",
+          "start": 18.2,
+          "end": 18.4
+        },
+        {
+          "w": "for",
+          "start": 18.4,
+          "end": 18.52
+        },
+        {
+          "w": "the",
+          "start": 18.52,
+          "end": 18.98
+        },
+        {
+          "w": "executable.",
+          "start": 19.42,
+          "end": 19.68
+        }
+      ]
+    },
+    {
+      "text": "Now we run the compile",
+      "start": 19.68,
+      "end": 21.14,
+      "words": [
+        {
+          "w": "Now",
+          "start": 19.68,
+          "end": 19.9
+        },
+        {
+          "w": "we",
+          "start": 19.9,
+          "end": 20.14
+        },
+        {
+          "w": "run",
+          "start": 20.14,
+          "end": 20.4
+        },
+        {
+          "w": "the",
+          "start": 20.4,
+          "end": 20.66
+        },
+        {
+          "w": "compile",
+          "start": 20.66,
+          "end": 21.14
+        }
+      ]
+    },
+    {
+      "text": "command. For example, gcc add.c",
+      "start": 21.64,
+      "end": 24.3,
+      "words": [
+        {
+          "w": "command.",
+          "start": 21.64,
+          "end": 21.8
+        },
+        {
+          "w": "For",
+          "start": 21.8,
+          "end": 22.24
+        },
+        {
+          "w": "example,",
+          "start": 22.92,
+          "end": 23.26
+        },
+        {
+          "w": "gcc",
+          "start": 23.26,
+          "end": 23.74
+        },
+        {
+          "w": "add.c",
+          "start": 23.74,
+          "end": 24.3
+        }
+      ]
+    },
+    {
+      "text": "-o add creates a binary",
+      "start": 24.82,
+      "end": 26.2,
+      "words": [
+        {
+          "w": "-o",
+          "start": 24.82,
+          "end": 25.08
+        },
+        {
+          "w": "add",
+          "start": 25.08,
+          "end": 25.32
+        },
+        {
+          "w": "creates",
+          "start": 25.32,
+          "end": 25.62
+        },
+        {
+          "w": "a",
+          "start": 25.62,
+          "end": 25.96
+        },
+        {
+          "w": "binary",
+          "start": 25.96,
+          "end": 26.2
+        }
+      ]
+    },
+    {
+      "text": "called add. If the compiler",
+      "start": 26.2,
+      "end": 27.92,
+      "words": [
+        {
+          "w": "called",
+          "start": 26.2,
+          "end": 26.66
+        },
+        {
+          "w": "add.",
+          "start": 26.66,
+          "end": 26.9
+        },
+        {
+          "w": "If",
+          "start": 27.3,
+          "end": 27.44
+        },
+        {
+          "w": "the",
+          "start": 27.44,
+          "end": 27.64
+        },
+        {
+          "w": "compiler",
+          "start": 27.64,
+          "end": 27.92
+        }
+      ]
+    },
+    {
+      "text": "finds no errors, it finishes",
+      "start": 27.92,
+      "end": 29.84,
+      "words": [
+        {
+          "w": "finds",
+          "start": 27.92,
+          "end": 28.26
+        },
+        {
+          "w": "no",
+          "start": 28.26,
+          "end": 28.58
+        },
+        {
+          "w": "errors,",
+          "start": 28.58,
+          "end": 28.98
+        },
+        {
+          "w": "it",
+          "start": 28.98,
+          "end": 29.54
+        },
+        {
+          "w": "finishes",
+          "start": 29.54,
+          "end": 29.84
+        }
+      ]
+    },
+    {
+      "text": "silently and you now have",
+      "start": 29.84,
+      "end": 31.24,
+      "words": [
+        {
+          "w": "silently",
+          "start": 29.84,
+          "end": 30.3
+        },
+        {
+          "w": "and",
+          "start": 30.3,
+          "end": 30.68
+        },
+        {
+          "w": "you",
+          "start": 30.68,
+          "end": 30.82
+        },
+        {
+          "w": "now",
+          "start": 30.82,
+          "end": 31.0
+        },
+        {
+          "w": "have",
+          "start": 31.0,
+          "end": 31.24
+        }
+      ]
+    },
+    {
+      "text": "an executable you can run.",
+      "start": 31.24,
+      "end": 32.66,
+      "words": [
+        {
+          "w": "an",
+          "start": 31.24,
+          "end": 31.38
+        },
+        {
+          "w": "executable",
+          "start": 31.38,
+          "end": 31.9
+        },
+        {
+          "w": "you",
+          "start": 31.9,
+          "end": 32.06
+        },
+        {
+          "w": "can",
+          "start": 32.06,
+          "end": 32.24
+        },
+        {
+          "w": "run.",
+          "start": 32.24,
+          "end": 32.66
+        }
+      ]
+    },
+    {
+      "text": "Compiling produces a binary you",
+      "start": 33.04,
+      "end": 34.92,
+      "words": [
+        {
+          "w": "Compiling",
+          "start": 33.04,
+          "end": 33.44
+        },
+        {
+          "w": "produces",
+          "start": 33.44,
+          "end": 34.0
+        },
+        {
+          "w": "a",
+          "start": 34.0,
+          "end": 34.4
+        },
+        {
+          "w": "binary",
+          "start": 34.4,
+          "end": 34.6
+        },
+        {
+          "w": "you",
+          "start": 34.6,
+          "end": 34.92
+        }
+      ]
+    },
+    {
+      "text": "can execute.",
+      "start": 34.92,
+      "end": 35.54,
+      "words": [
+        {
+          "w": "can",
+          "start": 34.92,
+          "end": 35.2
+        },
+        {
+          "w": "execute.",
+          "start": 35.2,
+          "end": 35.54
+        }
+      ]
+    }
+  ]
+}

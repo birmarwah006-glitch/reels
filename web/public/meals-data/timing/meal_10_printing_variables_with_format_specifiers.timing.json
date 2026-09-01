@@ -1,0 +1,1026 @@
+{
+  "meal_id": "meal_10_printing_variables_with_format_specifiers",
+  "audio": "meal_10_printing_variables_with_format_specifiers.mp3",
+  "duration": 66.312,
+  "alignment": "whisper",
+  "anchors": {
+    "What if you could embed numbers inside sentences?": 0.0,
+    "How do you show variable values with printf?": 3.32,
+    "The %d specifier tells printf to insert an integer value.": 14.62,
+    "In our program we define an integer, a string, a float, and a character, then call printf with a format string that mixes text and these specifiers.": 28.22,
+    "When the program runs, the output shows each variable in place of its specifier.": 37.04,
+    "Remember: each specifier matches the type of the variable you give it.": 49.04,
+    "Now try printing your own variables using %d, %s, %f, and %c.": 58.52
+  },
+  "captions": [
+    {
+      "text": "What if you could embed",
+      "start": 0.0,
+      "end": 1.26,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.3
+        },
+        {
+          "w": "if",
+          "start": 0.3,
+          "end": 0.52
+        },
+        {
+          "w": "you",
+          "start": 0.52,
+          "end": 0.64
+        },
+        {
+          "w": "could",
+          "start": 0.64,
+          "end": 0.9
+        },
+        {
+          "w": "embed",
+          "start": 0.9,
+          "end": 1.26
+        }
+      ]
+    },
+    {
+      "text": "numbers inside sentences? How do",
+      "start": 1.26,
+      "end": 3.58,
+      "words": [
+        {
+          "w": "numbers",
+          "start": 1.26,
+          "end": 1.72
+        },
+        {
+          "w": "inside",
+          "start": 1.72,
+          "end": 2.22
+        },
+        {
+          "w": "sentences?",
+          "start": 2.22,
+          "end": 2.84
+        },
+        {
+          "w": "How",
+          "start": 3.32,
+          "end": 3.42
+        },
+        {
+          "w": "do",
+          "start": 3.42,
+          "end": 3.58
+        }
+      ]
+    },
+    {
+      "text": "you show variable values with",
+      "start": 3.58,
+      "end": 5.2,
+      "words": [
+        {
+          "w": "you",
+          "start": 3.58,
+          "end": 3.66
+        },
+        {
+          "w": "show",
+          "start": 3.66,
+          "end": 3.94
+        },
+        {
+          "w": "variable",
+          "start": 3.94,
+          "end": 4.32
+        },
+        {
+          "w": "values",
+          "start": 4.32,
+          "end": 4.82
+        },
+        {
+          "w": "with",
+          "start": 4.82,
+          "end": 5.2
+        }
+      ]
+    },
+    {
+      "text": "printf? That's what format specifiers",
+      "start": 5.2,
+      "end": 7.72,
+      "words": [
+        {
+          "w": "printf?",
+          "start": 5.2,
+          "end": 5.74
+        },
+        {
+          "w": "That's",
+          "start": 6.16,
+          "end": 6.46
+        },
+        {
+          "w": "what",
+          "start": 6.46,
+          "end": 6.62
+        },
+        {
+          "w": "format",
+          "start": 6.62,
+          "end": 7.04
+        },
+        {
+          "w": "specifiers",
+          "start": 7.04,
+          "end": 7.72
+        }
+      ]
+    },
+    {
+      "text": "let you do. Imagine you",
+      "start": 7.72,
+      "end": 9.46,
+      "words": [
+        {
+          "w": "let",
+          "start": 7.72,
+          "end": 8.04
+        },
+        {
+          "w": "you",
+          "start": 8.04,
+          "end": 8.2
+        },
+        {
+          "w": "do.",
+          "start": 8.2,
+          "end": 8.66
+        },
+        {
+          "w": "Imagine",
+          "start": 9.02,
+          "end": 9.24
+        },
+        {
+          "w": "you",
+          "start": 9.24,
+          "end": 9.46
+        }
+      ]
+    },
+    {
+      "text": "have a score, a name,",
+      "start": 9.46,
+      "end": 10.7,
+      "words": [
+        {
+          "w": "have",
+          "start": 9.46,
+          "end": 9.66
+        },
+        {
+          "w": "a",
+          "start": 9.66,
+          "end": 9.8
+        },
+        {
+          "w": "score,",
+          "start": 9.8,
+          "end": 10.06
+        },
+        {
+          "w": "a",
+          "start": 10.28,
+          "end": 10.44
+        },
+        {
+          "w": "name,",
+          "start": 10.44,
+          "end": 10.7
+        }
+      ]
+    },
+    {
+      "text": "a price, and a grade.",
+      "start": 10.92,
+      "end": 11.88,
+      "words": [
+        {
+          "w": "a",
+          "start": 10.92,
+          "end": 10.96
+        },
+        {
+          "w": "price,",
+          "start": 10.96,
+          "end": 11.26
+        },
+        {
+          "w": "and",
+          "start": 11.4,
+          "end": 11.46
+        },
+        {
+          "w": "a",
+          "start": 11.46,
+          "end": 11.6
+        },
+        {
+          "w": "grade.",
+          "start": 11.6,
+          "end": 11.88
+        }
+      ]
+    },
+    {
+      "text": "You want to print them",
+      "start": 12.32,
+      "end": 13.2,
+      "words": [
+        {
+          "w": "You",
+          "start": 12.32,
+          "end": 12.44
+        },
+        {
+          "w": "want",
+          "start": 12.44,
+          "end": 12.64
+        },
+        {
+          "w": "to",
+          "start": 12.64,
+          "end": 12.74
+        },
+        {
+          "w": "print",
+          "start": 12.74,
+          "end": 12.9
+        },
+        {
+          "w": "them",
+          "start": 12.9,
+          "end": 13.2
+        }
+      ]
+    },
+    {
+      "text": "all in one line. The",
+      "start": 13.2,
+      "end": 14.62,
+      "words": [
+        {
+          "w": "all",
+          "start": 13.2,
+          "end": 13.38
+        },
+        {
+          "w": "in",
+          "start": 13.38,
+          "end": 13.54
+        },
+        {
+          "w": "one",
+          "start": 13.54,
+          "end": 13.74
+        },
+        {
+          "w": "line.",
+          "start": 13.74,
+          "end": 14.14
+        },
+        {
+          "w": "The",
+          "start": 14.62,
+          "end": 14.62
+        }
+      ]
+    },
+    {
+      "text": "%d specifier tells printf to",
+      "start": 14.62,
+      "end": 16.78,
+      "words": [
+        {
+          "w": "%d",
+          "start": 14.62,
+          "end": 14.98
+        },
+        {
+          "w": "specifier",
+          "start": 14.98,
+          "end": 15.26
+        },
+        {
+          "w": "tells",
+          "start": 15.26,
+          "end": 15.8
+        },
+        {
+          "w": "printf",
+          "start": 15.8,
+          "end": 16.16
+        },
+        {
+          "w": "to",
+          "start": 16.16,
+          "end": 16.78
+        }
+      ]
+    },
+    {
+      "text": "insert an integer value. The",
+      "start": 16.78,
+      "end": 18.36,
+      "words": [
+        {
+          "w": "insert",
+          "start": 16.78,
+          "end": 16.98
+        },
+        {
+          "w": "an",
+          "start": 16.98,
+          "end": 17.28
+        },
+        {
+          "w": "integer",
+          "start": 17.28,
+          "end": 17.62
+        },
+        {
+          "w": "value.",
+          "start": 17.62,
+          "end": 17.88
+        },
+        {
+          "w": "The",
+          "start": 17.88,
+          "end": 18.36
+        }
+      ]
+    },
+    {
+      "text": "%s specifier inserts a string",
+      "start": 18.86,
+      "end": 20.62,
+      "words": [
+        {
+          "w": "%s",
+          "start": 18.86,
+          "end": 18.88
+        },
+        {
+          "w": "specifier",
+          "start": 18.88,
+          "end": 19.22
+        },
+        {
+          "w": "inserts",
+          "start": 19.22,
+          "end": 19.54
+        },
+        {
+          "w": "a",
+          "start": 19.54,
+          "end": 20.18
+        },
+        {
+          "w": "string",
+          "start": 20.18,
+          "end": 20.62
+        }
+      ]
+    },
+    {
+      "text": "of characters. The %f specifier",
+      "start": 20.62,
+      "end": 22.5,
+      "words": [
+        {
+          "w": "of",
+          "start": 20.62,
+          "end": 21.02
+        },
+        {
+          "w": "characters.",
+          "start": 21.02,
+          "end": 21.18
+        },
+        {
+          "w": "The",
+          "start": 21.18,
+          "end": 21.42
+        },
+        {
+          "w": "%f",
+          "start": 21.42,
+          "end": 21.9
+        },
+        {
+          "w": "specifier",
+          "start": 22.46,
+          "end": 22.5
+        }
+      ]
+    },
+    {
+      "text": "inserts a floating\u2011point number, showing",
+      "start": 22.5,
+      "end": 24.58,
+      "words": [
+        {
+          "w": "inserts",
+          "start": 22.5,
+          "end": 22.94
+        },
+        {
+          "w": "a",
+          "start": 22.94,
+          "end": 23.2
+        },
+        {
+          "w": "floating\u2011point",
+          "start": 23.2,
+          "end": 23.88
+        },
+        {
+          "w": "number,",
+          "start": 23.88,
+          "end": 24.32
+        },
+        {
+          "w": "showing",
+          "start": 24.32,
+          "end": 24.58
+        }
+      ]
+    },
+    {
+      "text": "decimals. The %c specifier inserts",
+      "start": 24.58,
+      "end": 26.98,
+      "words": [
+        {
+          "w": "decimals.",
+          "start": 24.58,
+          "end": 24.84
+        },
+        {
+          "w": "The",
+          "start": 24.84,
+          "end": 25.16
+        },
+        {
+          "w": "%c",
+          "start": 25.16,
+          "end": 25.78
+        },
+        {
+          "w": "specifier",
+          "start": 26.2,
+          "end": 26.36
+        },
+        {
+          "w": "inserts",
+          "start": 26.36,
+          "end": 26.98
+        }
+      ]
+    },
+    {
+      "text": "a single character. In our",
+      "start": 26.98,
+      "end": 29.34,
+      "words": [
+        {
+          "w": "a",
+          "start": 26.98,
+          "end": 27.48
+        },
+        {
+          "w": "single",
+          "start": 27.48,
+          "end": 27.86
+        },
+        {
+          "w": "character.",
+          "start": 27.86,
+          "end": 28.22
+        },
+        {
+          "w": "In",
+          "start": 28.22,
+          "end": 28.82
+        },
+        {
+          "w": "our",
+          "start": 28.82,
+          "end": 29.34
+        }
+      ]
+    },
+    {
+      "text": "program we define an integer,",
+      "start": 29.34,
+      "end": 31.16,
+      "words": [
+        {
+          "w": "program",
+          "start": 29.34,
+          "end": 29.72
+        },
+        {
+          "w": "we",
+          "start": 29.72,
+          "end": 29.92
+        },
+        {
+          "w": "define",
+          "start": 29.92,
+          "end": 30.4
+        },
+        {
+          "w": "an",
+          "start": 30.92,
+          "end": 31.0
+        },
+        {
+          "w": "integer,",
+          "start": 31.0,
+          "end": 31.16
+        }
+      ]
+    },
+    {
+      "text": "a string, a float, and",
+      "start": 31.16,
+      "end": 32.52,
+      "words": [
+        {
+          "w": "a",
+          "start": 31.16,
+          "end": 31.48
+        },
+        {
+          "w": "string,",
+          "start": 31.48,
+          "end": 31.66
+        },
+        {
+          "w": "a",
+          "start": 31.66,
+          "end": 31.96
+        },
+        {
+          "w": "float,",
+          "start": 31.96,
+          "end": 32.22
+        },
+        {
+          "w": "and",
+          "start": 32.22,
+          "end": 32.52
+        }
+      ]
+    },
+    {
+      "text": "a character, then call printf",
+      "start": 32.86,
+      "end": 34.06,
+      "words": [
+        {
+          "w": "a",
+          "start": 32.86,
+          "end": 32.94
+        },
+        {
+          "w": "character,",
+          "start": 32.94,
+          "end": 33.22
+        },
+        {
+          "w": "then",
+          "start": 33.5,
+          "end": 33.54
+        },
+        {
+          "w": "call",
+          "start": 33.54,
+          "end": 33.78
+        },
+        {
+          "w": "printf",
+          "start": 33.96,
+          "end": 34.06
+        }
+      ]
+    },
+    {
+      "text": "with a format string that",
+      "start": 34.06,
+      "end": 35.9,
+      "words": [
+        {
+          "w": "with",
+          "start": 34.06,
+          "end": 34.18
+        },
+        {
+          "w": "a",
+          "start": 34.18,
+          "end": 34.6
+        },
+        {
+          "w": "format",
+          "start": 35.12,
+          "end": 35.26
+        },
+        {
+          "w": "string",
+          "start": 35.26,
+          "end": 35.44
+        },
+        {
+          "w": "that",
+          "start": 35.44,
+          "end": 35.9
+        }
+      ]
+    },
+    {
+      "text": "mixes text and these specifiers.",
+      "start": 35.9,
+      "end": 37.04,
+      "words": [
+        {
+          "w": "mixes",
+          "start": 35.9,
+          "end": 36.1
+        },
+        {
+          "w": "text",
+          "start": 36.1,
+          "end": 36.32
+        },
+        {
+          "w": "and",
+          "start": 36.32,
+          "end": 36.48
+        },
+        {
+          "w": "these",
+          "start": 36.48,
+          "end": 36.84
+        },
+        {
+          "w": "specifiers.",
+          "start": 36.84,
+          "end": 37.04
+        }
+      ]
+    },
+    {
+      "text": "When the program runs, the",
+      "start": 37.04,
+      "end": 38.6,
+      "words": [
+        {
+          "w": "When",
+          "start": 37.04,
+          "end": 37.34
+        },
+        {
+          "w": "the",
+          "start": 37.34,
+          "end": 37.7
+        },
+        {
+          "w": "program",
+          "start": 37.7,
+          "end": 37.86
+        },
+        {
+          "w": "runs,",
+          "start": 37.86,
+          "end": 38.04
+        },
+        {
+          "w": "the",
+          "start": 38.04,
+          "end": 38.6
+        }
+      ]
+    },
+    {
+      "text": "output shows each variable in",
+      "start": 39.1,
+      "end": 40.72,
+      "words": [
+        {
+          "w": "output",
+          "start": 39.1,
+          "end": 39.22
+        },
+        {
+          "w": "shows",
+          "start": 39.22,
+          "end": 39.46
+        },
+        {
+          "w": "each",
+          "start": 39.46,
+          "end": 39.72
+        },
+        {
+          "w": "variable",
+          "start": 39.72,
+          "end": 40.18
+        },
+        {
+          "w": "in",
+          "start": 40.5,
+          "end": 40.72
+        }
+      ]
+    },
+    {
+      "text": "place of its specifier. The",
+      "start": 40.72,
+      "end": 42.44,
+      "words": [
+        {
+          "w": "place",
+          "start": 40.72,
+          "end": 40.96
+        },
+        {
+          "w": "of",
+          "start": 40.96,
+          "end": 41.36
+        },
+        {
+          "w": "its",
+          "start": 41.36,
+          "end": 41.74
+        },
+        {
+          "w": "specifier.",
+          "start": 41.74,
+          "end": 42.12
+        },
+        {
+          "w": "The",
+          "start": 42.12,
+          "end": 42.44
+        }
+      ]
+    },
+    {
+      "text": "output line looks like this:",
+      "start": 42.44,
+      "end": 44.2,
+      "words": [
+        {
+          "w": "output",
+          "start": 42.44,
+          "end": 42.68
+        },
+        {
+          "w": "line",
+          "start": 42.68,
+          "end": 42.86
+        },
+        {
+          "w": "looks",
+          "start": 42.86,
+          "end": 43.0
+        },
+        {
+          "w": "like",
+          "start": 43.0,
+          "end": 43.56
+        },
+        {
+          "w": "this:",
+          "start": 43.94,
+          "end": 44.2
+        }
+      ]
+    },
+    {
+      "text": "Number: 42, Name: Alice, Price:",
+      "start": 44.2,
+      "end": 45.78,
+      "words": [
+        {
+          "w": "Number:",
+          "start": 44.2,
+          "end": 44.44
+        },
+        {
+          "w": "42,",
+          "start": 44.44,
+          "end": 44.74
+        },
+        {
+          "w": "Name:",
+          "start": 44.74,
+          "end": 44.96
+        },
+        {
+          "w": "Alice,",
+          "start": 44.96,
+          "end": 45.14
+        },
+        {
+          "w": "Price:",
+          "start": 45.14,
+          "end": 45.78
+        }
+      ]
+    },
+    {
+      "text": "3.990000, Grade: A. Remember: each",
+      "start": 46.2,
+      "end": 50.1,
+      "words": [
+        {
+          "w": "3.990000,",
+          "start": 46.2,
+          "end": 46.4
+        },
+        {
+          "w": "Grade:",
+          "start": 46.4,
+          "end": 47.36
+        },
+        {
+          "w": "A.",
+          "start": 48.16,
+          "end": 48.36
+        },
+        {
+          "w": "Remember:",
+          "start": 49.04,
+          "end": 49.32
+        },
+        {
+          "w": "each",
+          "start": 49.78,
+          "end": 50.1
+        }
+      ]
+    },
+    {
+      "text": "specifier matches the type of",
+      "start": 50.6,
+      "end": 56.2,
+      "words": [
+        {
+          "w": "specifier",
+          "start": 50.6,
+          "end": 50.8
+        },
+        {
+          "w": "matches",
+          "start": 50.8,
+          "end": 53.66
+        },
+        {
+          "w": "the",
+          "start": 53.96,
+          "end": 54.14
+        },
+        {
+          "w": "type",
+          "start": 54.14,
+          "end": 55.1
+        },
+        {
+          "w": "of",
+          "start": 55.88,
+          "end": 56.2
+        }
+      ]
+    },
+    {
+      "text": "the variable you give it.",
+      "start": 56.2,
+      "end": 58.52,
+      "words": [
+        {
+          "w": "the",
+          "start": 56.2,
+          "end": 57.14
+        },
+        {
+          "w": "variable",
+          "start": 57.14,
+          "end": 57.78
+        },
+        {
+          "w": "you",
+          "start": 57.78,
+          "end": 58.1
+        },
+        {
+          "w": "give",
+          "start": 58.1,
+          "end": 58.34
+        },
+        {
+          "w": "it.",
+          "start": 58.34,
+          "end": 58.52
+        }
+      ]
+    },
+    {
+      "text": "Now try printing your own",
+      "start": 58.52,
+      "end": 59.38,
+      "words": [
+        {
+          "w": "Now",
+          "start": 58.52,
+          "end": 58.6
+        },
+        {
+          "w": "try",
+          "start": 58.6,
+          "end": 58.78
+        },
+        {
+          "w": "printing",
+          "start": 58.78,
+          "end": 59.0
+        },
+        {
+          "w": "your",
+          "start": 59.0,
+          "end": 59.22
+        },
+        {
+          "w": "own",
+          "start": 59.22,
+          "end": 59.38
+        }
+      ]
+    },
+    {
+      "text": "variables using %d, %s, %f,",
+      "start": 59.38,
+      "end": 61.16,
+      "words": [
+        {
+          "w": "variables",
+          "start": 59.38,
+          "end": 59.76
+        },
+        {
+          "w": "using",
+          "start": 60.2,
+          "end": 60.22
+        },
+        {
+          "w": "%d,",
+          "start": 60.22,
+          "end": 60.58
+        },
+        {
+          "w": "%s,",
+          "start": 60.58,
+          "end": 60.9
+        },
+        {
+          "w": "%f,",
+          "start": 60.9,
+          "end": 61.16
+        }
+      ]
+    },
+    {
+      "text": "and %c.",
+      "start": 61.16,
+      "end": 61.72,
+      "words": [
+        {
+          "w": "and",
+          "start": 61.16,
+          "end": 61.32
+        },
+        {
+          "w": "%c.",
+          "start": 61.32,
+          "end": 61.72
+        }
+      ]
+    }
+  ]
+}

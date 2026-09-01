@@ -1,0 +1,239 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_22_creating_a_number_guessing_game",
+    "title": "Build a Number\u2011Guessing Game in C",
+    "concept": "c.project.overview",
+    "objective": "Use random numbers, loops, and conditionals to create a guessing game",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "next_concepts": [],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "rand",
+      "srand",
+      "time"
+    ],
+    "assumes": [
+      "functions",
+      "if",
+      "for/while",
+      "printf",
+      "scanf"
+    ],
+    "voice": {
+      "script": "Can you guess the secret number I'm thinking of? We need a program that picks a hidden number and keeps asking the player until they find it. First we include the input output header for printing and reading, and the standard library header that gives us random tools. The function srand sets the starting point for the random generator, and we give it the current time so the sequence changes each run. The function rand then produces a pseudo\u2011random integer; we limit it to a range by using the remainder operator. In main we call srand with time, generate a target between one and one hundred, and start a loop. Inside the loop we prompt the player, read their guess, and compare it with the target. If the guess is lower we tell them to try higher, if higher we tell them to try lower, and if it matches we break out and congratulate them. Now the program begins. When the player guesses correctly the program congratulates them. Remember: srand seeds the generator, rand gives a random value, and a loop lets the player keep trying. Try changing the range or adding a guess counter for extra fun.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Can you guess the secret number I'm thinking of?"
+        },
+        "narration_anchor": "Can you guess the secret number I'm thinking of?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do we let a player keep guessing until they find a random number?"
+        }
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Seed random generator",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Generate target number",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "Prompt and read guess",
+              "kind": "actor"
+            },
+            {
+              "id": "d",
+              "label": "Compare guess",
+              "kind": "decision"
+            },
+            {
+              "id": "e",
+              "label": "Give feedback",
+              "kind": "output"
+            },
+            {
+              "id": "f",
+              "label": "Correct? End loop",
+              "kind": "decision"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "seed"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "target ready"
+            },
+            {
+              "from": "c",
+              "to": "d",
+              "label": "guess received"
+            },
+            {
+              "from": "d",
+              "to": "e",
+              "label": "too high/low"
+            },
+            {
+              "from": "d",
+              "to": "f",
+              "label": "match"
+            },
+            {
+              "from": "e",
+              "to": "c",
+              "label": "repeat"
+            },
+            {
+              "from": "f",
+              "to": "c",
+              "label": "continue"
+            },
+            {
+              "from": "f",
+              "to": "e",
+              "label": "stop"
+            }
+          ]
+        },
+        "narration_anchor": "First we include the input output header for printing and reading, and the standard library header that gives us random tools."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "c",
+          "filename": "main.c",
+          "code": "#!/usr/bin/env python3\nimport random\n\ndef main():\n    random.seed(0)\n    target = random.randint(1, 100)\n    guess = None\n    print(\"Guess a number between 1 and 100:\")\n    while guess != target:\n        try:\n            guess = int(input())\n        except EOFError:\n            break\n        if guess < target:\n            print(\"Higher!\")\n        elif guess > target:\n            print(\"Lower!\")\n        else:\n            print(\"Correct! You win!\")\n\nif __name__ == \"__main__\":\n    main()\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "#!/usr/bin/env python3\nimport random\n\ndef main():\n    random.seed(0)\n    target = random.randint(1, 100)\n    guess = None\n    print(\"Guess a number between 1 and 100:\")\n    while guess != target:\n        try:\n            guess = int(input())\n        except EOFError:\n            break\n        if guess < target:\n            print(\"Higher!\")\n        elif guess > target:\n            print(\"Lower!\")\n        else:\n            print(\"Correct! You win!\")\n\nif __name__ == \"__main__\":\n    main()",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22
+              ],
+              "speed_cps": 26
+            }
+          ]
+        },
+        "narration_anchor": "Now the program begins."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "a.out",
+          "stdin": [
+            "50",
+            "30",
+            "42"
+          ],
+          "execution": {
+            "verified": false,
+            "source": "unverified",
+            "stdout": "",
+            "stderr": "",
+            "exit_code": -1
+          }
+        },
+        "narration_anchor": "When the player guesses correctly the program congratulates them.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "srand seeds randomness, rand produces a value, and a loop repeats guesses until the correct one is found."
+        },
+        "narration_anchor": "Remember: srand seeds the generator, rand gives a random value, and a loop lets the player keep trying.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Modify the game to limit the player to ten guesses and tell them when they run out."
+        },
+        "narration_anchor": "Try changing the range or adding a guess counter for extra fun.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Modify the game to limit the player to ten guesses and tell them when they run out.",
+      "hint": "Add a counter variable that increments each loop iteration and break when it reaches ten."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 22,
+      "total": 22,
+      "previous_id": "meal_21_building_a_simple_calculator",
+      "next_id": null
+    }
+  }
+}

@@ -1,0 +1,646 @@
+{
+  "meal_id": "meal_01_what_is_a_program_and_how_to_see_output",
+  "audio": "meal_01_what_is_a_program_and_how_to_see_output.mp3",
+  "duration": 31.248,
+  "alignment": "whisper",
+  "anchors": {
+    "Ever wondered how a computer shows words on the screen?": 0.0,
+    "In Python, the built\u2011in function called print sends text to the terminal.": 3.6,
+    "Here is the line you will run:": 15.56,
+    "When you run it, the terminal shows Hello, world!": 19.44,
+    "Remember, print lets your program talk to the user.": 24.82,
+    "Now try changing the message to your name.": 27.94
+  },
+  "captions": [
+    {
+      "text": "Ever wondered how a computer",
+      "start": 0.0,
+      "end": 1.54,
+      "words": [
+        {
+          "w": "Ever",
+          "start": 0.0,
+          "end": 0.34
+        },
+        {
+          "w": "wondered",
+          "start": 0.34,
+          "end": 0.74
+        },
+        {
+          "w": "how",
+          "start": 0.74,
+          "end": 1.02
+        },
+        {
+          "w": "a",
+          "start": 1.02,
+          "end": 1.28
+        },
+        {
+          "w": "computer",
+          "start": 1.28,
+          "end": 1.54
+        }
+      ]
+    },
+    {
+      "text": "shows words on the screen?",
+      "start": 1.54,
+      "end": 3.06,
+      "words": [
+        {
+          "w": "shows",
+          "start": 1.54,
+          "end": 1.92
+        },
+        {
+          "w": "words",
+          "start": 1.92,
+          "end": 2.26
+        },
+        {
+          "w": "on",
+          "start": 2.26,
+          "end": 2.54
+        },
+        {
+          "w": "the",
+          "start": 2.54,
+          "end": 2.66
+        },
+        {
+          "w": "screen?",
+          "start": 2.66,
+          "end": 3.06
+        }
+      ]
+    },
+    {
+      "text": "In Python, the built\u2011in function",
+      "start": 3.6,
+      "end": 4.74,
+      "words": [
+        {
+          "w": "In",
+          "start": 3.6,
+          "end": 3.6
+        },
+        {
+          "w": "Python,",
+          "start": 3.6,
+          "end": 4.02
+        },
+        {
+          "w": "the",
+          "start": 4.26,
+          "end": 4.36
+        },
+        {
+          "w": "built\u2011in",
+          "start": 4.36,
+          "end": 4.58
+        },
+        {
+          "w": "function",
+          "start": 4.58,
+          "end": 4.74
+        }
+      ]
+    },
+    {
+      "text": "called print sends text to",
+      "start": 4.74,
+      "end": 6.44,
+      "words": [
+        {
+          "w": "called",
+          "start": 4.74,
+          "end": 5.08
+        },
+        {
+          "w": "print",
+          "start": 5.08,
+          "end": 5.46
+        },
+        {
+          "w": "sends",
+          "start": 5.46,
+          "end": 5.74
+        },
+        {
+          "w": "text",
+          "start": 5.74,
+          "end": 6.1
+        },
+        {
+          "w": "to",
+          "start": 6.1,
+          "end": 6.44
+        }
+      ]
+    },
+    {
+      "text": "the terminal. It takes any",
+      "start": 6.44,
+      "end": 7.98,
+      "words": [
+        {
+          "w": "the",
+          "start": 6.44,
+          "end": 6.68
+        },
+        {
+          "w": "terminal.",
+          "start": 6.68,
+          "end": 6.76
+        },
+        {
+          "w": "It",
+          "start": 6.76,
+          "end": 7.12
+        },
+        {
+          "w": "takes",
+          "start": 7.7,
+          "end": 7.72
+        },
+        {
+          "w": "any",
+          "start": 7.72,
+          "end": 7.98
+        }
+      ]
+    },
+    {
+      "text": "value you give it and",
+      "start": 7.98,
+      "end": 9.26,
+      "words": [
+        {
+          "w": "value",
+          "start": 7.98,
+          "end": 8.3
+        },
+        {
+          "w": "you",
+          "start": 8.3,
+          "end": 8.6
+        },
+        {
+          "w": "give",
+          "start": 8.6,
+          "end": 8.8
+        },
+        {
+          "w": "it",
+          "start": 8.8,
+          "end": 8.96
+        },
+        {
+          "w": "and",
+          "start": 8.96,
+          "end": 9.26
+        }
+      ]
+    },
+    {
+      "text": "writes it out as characters.",
+      "start": 9.26,
+      "end": 10.26,
+      "words": [
+        {
+          "w": "writes",
+          "start": 9.26,
+          "end": 9.4
+        },
+        {
+          "w": "it",
+          "start": 9.4,
+          "end": 9.62
+        },
+        {
+          "w": "out",
+          "start": 9.62,
+          "end": 9.86
+        },
+        {
+          "w": "as",
+          "start": 9.86,
+          "end": 10.04
+        },
+        {
+          "w": "characters.",
+          "start": 10.04,
+          "end": 10.26
+        }
+      ]
+    },
+    {
+      "text": "By default it adds a",
+      "start": 10.26,
+      "end": 12.14,
+      "words": [
+        {
+          "w": "By",
+          "start": 10.26,
+          "end": 10.74
+        },
+        {
+          "w": "default",
+          "start": 11.24,
+          "end": 11.4
+        },
+        {
+          "w": "it",
+          "start": 11.4,
+          "end": 11.72
+        },
+        {
+          "w": "adds",
+          "start": 11.84,
+          "end": 11.98
+        },
+        {
+          "w": "a",
+          "start": 11.98,
+          "end": 12.14
+        }
+      ]
+    },
+    {
+      "text": "line break after the text,",
+      "start": 12.14,
+      "end": 13.26,
+      "words": [
+        {
+          "w": "line",
+          "start": 12.14,
+          "end": 12.32
+        },
+        {
+          "w": "break",
+          "start": 12.32,
+          "end": 12.54
+        },
+        {
+          "w": "after",
+          "start": 12.54,
+          "end": 12.86
+        },
+        {
+          "w": "the",
+          "start": 12.86,
+          "end": 13.1
+        },
+        {
+          "w": "text,",
+          "start": 13.1,
+          "end": 13.26
+        }
+      ]
+    },
+    {
+      "text": "but you can change that",
+      "start": 13.26,
+      "end": 14.8,
+      "words": [
+        {
+          "w": "but",
+          "start": 13.26,
+          "end": 13.64
+        },
+        {
+          "w": "you",
+          "start": 14.1,
+          "end": 14.24
+        },
+        {
+          "w": "can",
+          "start": 14.24,
+          "end": 14.32
+        },
+        {
+          "w": "change",
+          "start": 14.32,
+          "end": 14.52
+        },
+        {
+          "w": "that",
+          "start": 14.52,
+          "end": 14.8
+        }
+      ]
+    },
+    {
+      "text": "with the end argument. Here",
+      "start": 14.8,
+      "end": 15.94,
+      "words": [
+        {
+          "w": "with",
+          "start": 14.8,
+          "end": 15.08
+        },
+        {
+          "w": "the",
+          "start": 15.08,
+          "end": 15.28
+        },
+        {
+          "w": "end",
+          "start": 15.28,
+          "end": 15.42
+        },
+        {
+          "w": "argument.",
+          "start": 15.42,
+          "end": 15.56
+        },
+        {
+          "w": "Here",
+          "start": 15.56,
+          "end": 15.94
+        }
+      ]
+    },
+    {
+      "text": "is the line you will",
+      "start": 16.44,
+      "end": 17.48,
+      "words": [
+        {
+          "w": "is",
+          "start": 16.44,
+          "end": 16.78
+        },
+        {
+          "w": "the",
+          "start": 16.78,
+          "end": 16.9
+        },
+        {
+          "w": "line",
+          "start": 16.9,
+          "end": 17.14
+        },
+        {
+          "w": "you",
+          "start": 17.14,
+          "end": 17.28
+        },
+        {
+          "w": "will",
+          "start": 17.28,
+          "end": 17.48
+        }
+      ]
+    },
+    {
+      "text": "run: print(\"Hello, world!\") When you",
+      "start": 17.48,
+      "end": 20.64,
+      "words": [
+        {
+          "w": "run:",
+          "start": 17.48,
+          "end": 17.94
+        },
+        {
+          "w": "print(\"Hello,",
+          "start": 18.46,
+          "end": 18.72
+        },
+        {
+          "w": "world!\")",
+          "start": 19.28,
+          "end": 19.44
+        },
+        {
+          "w": "When",
+          "start": 19.44,
+          "end": 19.92
+        },
+        {
+          "w": "you",
+          "start": 20.5,
+          "end": 20.64
+        }
+      ]
+    },
+    {
+      "text": "run it, the terminal shows",
+      "start": 20.64,
+      "end": 21.6,
+      "words": [
+        {
+          "w": "run",
+          "start": 20.64,
+          "end": 20.78
+        },
+        {
+          "w": "it,",
+          "start": 20.78,
+          "end": 20.94
+        },
+        {
+          "w": "the",
+          "start": 20.94,
+          "end": 21.14
+        },
+        {
+          "w": "terminal",
+          "start": 21.26,
+          "end": 21.32
+        },
+        {
+          "w": "shows",
+          "start": 21.32,
+          "end": 21.6
+        }
+      ]
+    },
+    {
+      "text": "Hello, world! You can see",
+      "start": 21.6,
+      "end": 23.52,
+      "words": [
+        {
+          "w": "Hello,",
+          "start": 21.6,
+          "end": 21.9
+        },
+        {
+          "w": "world!",
+          "start": 21.9,
+          "end": 22.24
+        },
+        {
+          "w": "You",
+          "start": 22.24,
+          "end": 22.78
+        },
+        {
+          "w": "can",
+          "start": 23.18,
+          "end": 23.34
+        },
+        {
+          "w": "see",
+          "start": 23.34,
+          "end": 23.52
+        }
+      ]
+    },
+    {
+      "text": "the result in the terminal",
+      "start": 23.52,
+      "end": 24.62,
+      "words": [
+        {
+          "w": "the",
+          "start": 23.52,
+          "end": 23.68
+        },
+        {
+          "w": "result",
+          "start": 23.68,
+          "end": 23.86
+        },
+        {
+          "w": "in",
+          "start": 23.86,
+          "end": 24.16
+        },
+        {
+          "w": "the",
+          "start": 24.16,
+          "end": 24.42
+        },
+        {
+          "w": "terminal",
+          "start": 24.42,
+          "end": 24.62
+        }
+      ]
+    },
+    {
+      "text": "window. Remember, print lets your",
+      "start": 24.62,
+      "end": 26.74,
+      "words": [
+        {
+          "w": "window.",
+          "start": 24.62,
+          "end": 24.82
+        },
+        {
+          "w": "Remember,",
+          "start": 24.82,
+          "end": 25.24
+        },
+        {
+          "w": "print",
+          "start": 25.76,
+          "end": 26.0
+        },
+        {
+          "w": "lets",
+          "start": 26.16,
+          "end": 26.5
+        },
+        {
+          "w": "your",
+          "start": 26.5,
+          "end": 26.74
+        }
+      ]
+    },
+    {
+      "text": "program talk to the user.",
+      "start": 26.74,
+      "end": 27.94,
+      "words": [
+        {
+          "w": "program",
+          "start": 26.74,
+          "end": 27.02
+        },
+        {
+          "w": "talk",
+          "start": 27.02,
+          "end": 27.38
+        },
+        {
+          "w": "to",
+          "start": 27.38,
+          "end": 27.66
+        },
+        {
+          "w": "the",
+          "start": 27.66,
+          "end": 27.88
+        },
+        {
+          "w": "user.",
+          "start": 27.88,
+          "end": 27.94
+        }
+      ]
+    },
+    {
+      "text": "Now try changing the message",
+      "start": 27.94,
+      "end": 30.06,
+      "words": [
+        {
+          "w": "Now",
+          "start": 27.94,
+          "end": 28.3
+        },
+        {
+          "w": "try",
+          "start": 28.3,
+          "end": 29.06
+        },
+        {
+          "w": "changing",
+          "start": 29.06,
+          "end": 29.38
+        },
+        {
+          "w": "the",
+          "start": 29.38,
+          "end": 29.74
+        },
+        {
+          "w": "message",
+          "start": 29.74,
+          "end": 30.06
+        }
+      ]
+    },
+    {
+      "text": "to your name.",
+      "start": 30.06,
+      "end": 30.66,
+      "words": [
+        {
+          "w": "to",
+          "start": 30.06,
+          "end": 30.26
+        },
+        {
+          "w": "your",
+          "start": 30.26,
+          "end": 30.52
+        },
+        {
+          "w": "name.",
+          "start": 30.52,
+          "end": 30.66
+        }
+      ]
+    }
+  ]
+}

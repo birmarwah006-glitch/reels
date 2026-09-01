@@ -1,0 +1,100 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_05_understanding_the_generated_main_c_file",
+    "title": "Understanding the generated main.c file",
+    "concept": "c.project.overview",
+    "objective": "Identify the default structure of the main.c file created by the IDE",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "#include",
+      "main function"
+    ],
+    "assumes": [
+      "console project"
+    ],
+    "voice": {
+      "script": "What does the blank file that Code::Blocks creates actually contain? When you start a new console project the IDE drops a starter file named main dot c. Here is the generated file: it begins with a line that starts with hash include, which tells the compiler to pull in a library of standard definitions. Below that you see the main function, the entry point where the operating system hands control to your program. The main function returns an integer value to indicate how the program finished. That's the whole default skeleton you get every time. Try creating a new project and locate the #include line and main function in the file.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What does the blank file that Code::Blocks creates actually contain?"
+        },
+        "narration_anchor": "What does the blank file that Code::Blocks creates actually contain?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Generated main.c structure",
+              "kind": "box"
+            }
+          ],
+          "edges": []
+        },
+        "narration_anchor": "hash include"
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Every new C project starts with a #include line and a main function."
+        },
+        "narration_anchor": "That's the whole default skeleton you get every time.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Create a new console project and find the #include line and main function in main.c."
+        },
+        "narration_anchor": "Try creating a new project and locate the #include line and main function in the file.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Create a new console project and find the #include line and main function in main.c.",
+      "hint": "Look for the line that begins with hash include and the function named main."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 5,
+      "total": 22,
+      "previous_id": "meal_04_creating_a_new_console_project",
+      "next_id": "meal_06_compiling_and_running_a_c_program"
+    }
+  }
+}

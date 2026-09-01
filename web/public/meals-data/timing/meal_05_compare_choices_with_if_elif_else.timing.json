@@ -1,0 +1,300 @@
+{
+  "meal_id": "meal_05_compare_choices_with_if_elif_else",
+  "audio": "meal_05_compare_choices_with_if_elif_else.mp3",
+  "duration": 18.12,
+  "alignment": "whisper",
+  "anchors": {
+    "Which move wins?": 0.0,
+    "How do we decide who wins?": 1.46,
+    "We compare the choices with if\u2011elif\u2011else.": 3.28,
+    "Now let's write the decision logic.": 5.08,
+    "The program prints the result.": 7.54,
+    "Remember: use if\u2011elif\u2011else to determine the outcome.": 11.68,
+    "Add a case for invalid input.": 14.96
+  },
+  "captions": [
+    {
+      "text": "Which move wins? How do",
+      "start": 0.0,
+      "end": 1.68,
+      "words": [
+        {
+          "w": "Which",
+          "start": 0.0,
+          "end": 0.34
+        },
+        {
+          "w": "move",
+          "start": 0.34,
+          "end": 0.62
+        },
+        {
+          "w": "wins?",
+          "start": 0.62,
+          "end": 1.04
+        },
+        {
+          "w": "How",
+          "start": 1.46,
+          "end": 1.58
+        },
+        {
+          "w": "do",
+          "start": 1.58,
+          "end": 1.68
+        }
+      ]
+    },
+    {
+      "text": "we decide who wins? We",
+      "start": 1.68,
+      "end": 3.42,
+      "words": [
+        {
+          "w": "we",
+          "start": 1.68,
+          "end": 1.86
+        },
+        {
+          "w": "decide",
+          "start": 1.86,
+          "end": 2.2
+        },
+        {
+          "w": "who",
+          "start": 2.2,
+          "end": 2.5
+        },
+        {
+          "w": "wins?",
+          "start": 2.5,
+          "end": 2.86
+        },
+        {
+          "w": "We",
+          "start": 3.28,
+          "end": 3.42
+        }
+      ]
+    },
+    {
+      "text": "compare the choices with if\u2011elif\u2011else.",
+      "start": 3.42,
+      "end": 5.08,
+      "words": [
+        {
+          "w": "compare",
+          "start": 3.42,
+          "end": 3.78
+        },
+        {
+          "w": "the",
+          "start": 3.78,
+          "end": 4.04
+        },
+        {
+          "w": "choices",
+          "start": 4.04,
+          "end": 4.42
+        },
+        {
+          "w": "with",
+          "start": 4.42,
+          "end": 4.86
+        },
+        {
+          "w": "if\u2011elif\u2011else.",
+          "start": 4.86,
+          "end": 5.08
+        }
+      ]
+    },
+    {
+      "text": "Now let's write the decision",
+      "start": 5.08,
+      "end": 7.28,
+      "words": [
+        {
+          "w": "Now",
+          "start": 5.08,
+          "end": 5.62
+        },
+        {
+          "w": "let's",
+          "start": 6.12,
+          "end": 6.36
+        },
+        {
+          "w": "write",
+          "start": 6.36,
+          "end": 6.68
+        },
+        {
+          "w": "the",
+          "start": 6.68,
+          "end": 7.0
+        },
+        {
+          "w": "decision",
+          "start": 7.0,
+          "end": 7.28
+        }
+      ]
+    },
+    {
+      "text": "logic. The program prints the",
+      "start": 7.28,
+      "end": 9.46,
+      "words": [
+        {
+          "w": "logic.",
+          "start": 7.28,
+          "end": 7.54
+        },
+        {
+          "w": "The",
+          "start": 7.54,
+          "end": 8.0
+        },
+        {
+          "w": "program",
+          "start": 8.54,
+          "end": 8.7
+        },
+        {
+          "w": "prints",
+          "start": 8.7,
+          "end": 9.08
+        },
+        {
+          "w": "the",
+          "start": 9.08,
+          "end": 9.46
+        }
+      ]
+    },
+    {
+      "text": "result. Here's the flow of",
+      "start": 9.46,
+      "end": 11.4,
+      "words": [
+        {
+          "w": "result.",
+          "start": 9.46,
+          "end": 9.68
+        },
+        {
+          "w": "Here's",
+          "start": 9.68,
+          "end": 10.14
+        },
+        {
+          "w": "the",
+          "start": 10.62,
+          "end": 11.0
+        },
+        {
+          "w": "flow",
+          "start": 11.0,
+          "end": 11.12
+        },
+        {
+          "w": "of",
+          "start": 11.12,
+          "end": 11.4
+        }
+      ]
+    },
+    {
+      "text": "decisions. Remember: use if\u2011elif\u2011else to",
+      "start": 11.4,
+      "end": 13.86,
+      "words": [
+        {
+          "w": "decisions.",
+          "start": 11.4,
+          "end": 11.68
+        },
+        {
+          "w": "Remember:",
+          "start": 11.68,
+          "end": 12.16
+        },
+        {
+          "w": "use",
+          "start": 12.76,
+          "end": 13.06
+        },
+        {
+          "w": "if\u2011elif\u2011else",
+          "start": 13.4,
+          "end": 13.54
+        },
+        {
+          "w": "to",
+          "start": 13.54,
+          "end": 13.86
+        }
+      ]
+    },
+    {
+      "text": "determine the outcome. Add a",
+      "start": 13.86,
+      "end": 15.58,
+      "words": [
+        {
+          "w": "determine",
+          "start": 13.86,
+          "end": 14.38
+        },
+        {
+          "w": "the",
+          "start": 14.38,
+          "end": 14.64
+        },
+        {
+          "w": "outcome.",
+          "start": 14.64,
+          "end": 14.96
+        },
+        {
+          "w": "Add",
+          "start": 14.96,
+          "end": 15.18
+        },
+        {
+          "w": "a",
+          "start": 15.18,
+          "end": 15.58
+        }
+      ]
+    },
+    {
+      "text": "case for invalid input.",
+      "start": 16.04,
+      "end": 16.9,
+      "words": [
+        {
+          "w": "case",
+          "start": 16.04,
+          "end": 16.22
+        },
+        {
+          "w": "for",
+          "start": 16.22,
+          "end": 16.32
+        },
+        {
+          "w": "invalid",
+          "start": 16.32,
+          "end": 16.58
+        },
+        {
+          "w": "input.",
+          "start": 16.58,
+          "end": 16.9
+        }
+      ]
+    }
+  ]
+}

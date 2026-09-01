@@ -1,0 +1,161 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_02_store_a_value_in_a_variable",
+    "title": "Store a value in a variable",
+    "concept": "python.basics.variables",
+    "objective": "Assign a value to a name so it can be reused later",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.oop.classes",
+      "python.oop.classes"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "variable"
+    ],
+    "assumes": [
+      "print"
+    ],
+    "voice": {
+      "script": "What if you could store a name and reuse it forever? How do you keep a value for later use? A variable is a named container that holds a value. You give the container a name with an equals sign, putting the value on the right side. Here\u2019s the code that creates a variable and prints it. name. Remember, a variable lets you name and reuse data. Now try this: Create a variable called age, assign your age, and print it.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could store a name and reuse it forever?"
+        },
+        "narration_anchor": "What if you could store a name and reuse it forever?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you keep a value for later use?"
+        },
+        "narration_anchor": "How do you keep a value for later use?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Variable",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Print",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "used by"
+            }
+          ]
+        },
+        "narration_anchor": "A variable is a named container that holds a value."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "student_name = \"Alice\"\nprint(student_name)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "student_name = \"Alice\"\nprint(student_name)",
+              "lines": [
+                1,
+                2
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "student_name"
+            }
+          ]
+        },
+        "narration_anchor": "Here\u2019s the code that creates a variable and prints it."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:30+00:00",
+            "stdout": "Alice\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Remember, a variable lets you name and reuse data."
+        },
+        "narration_anchor": "Remember, a variable lets you name and reuse data.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Create a variable called age, assign your age, and print it."
+        },
+        "narration_anchor": "Create a variable called age, assign your age, and print it.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Create a variable called age, assign your age, and print it."
+    },
+    "series": {
+      "title": "Intro to Python OOP",
+      "artifact": "A simple Python program that defines classes (Student, Account) with constructors, attributes, methods, and uses them",
+      "order": 2,
+      "total": 15,
+      "previous_id": "meal_01_print_text_to_the_screen",
+      "next_id": "meal_03_what_is_a_class"
+    }
+  }
+}

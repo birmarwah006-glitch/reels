@@ -1,0 +1,184 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_17_defining_and_calling_functions",
+    "title": "Defining and Calling Functions in C",
+    "concept": "python.functions.define",
+    "objective": "Create a function that returns a value and call it from main",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.control.if",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "function definition",
+      "return"
+    ],
+    "assumes": [
+      "variables",
+      "printf"
+    ],
+    "voice": {
+      "script": "What if you could reuse a calculation with just one line? How do you create a reusable block that gives back a result? A function is a little block of code that you can call whenever you need it. You define it by giving a name, specifying the type of value it will give back, and listing any inputs inside parentheses. The word return tells the program to send a value back to the place that called the function. Here's the function that adds two numbers and returns the sum. In main we ask the user for two integers, call the add function with those numbers, and store the result. Running the program prints the sum returned by the function. The flow shows the call from main into the function and back. Remember: define a function, return a value, and call it from main. Try writing a function that multiplies three numbers and returns the product.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could reuse a calculation with just one line?"
+        },
+        "narration_anchor": "What if you could reuse a calculation with just one line?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you create a reusable block that gives back a result?"
+        },
+        "narration_anchor": "How do you create a reusable block that gives back a result?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Start",
+              "kind": "actor"
+            },
+            {
+              "id": "b",
+              "label": "Call add()",
+              "kind": "value"
+            },
+            {
+              "id": "c",
+              "label": "Return sum",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b"
+            },
+            {
+              "from": "b",
+              "to": "c"
+            }
+          ]
+        },
+        "narration_anchor": "A function is a little block of code that you can call whenever you need it."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "c",
+          "filename": "main.c",
+          "code": "#include <stdio.h>\n\nint add(int a, int b) {\n    return a + b;\n}\n\nint main() {\n    int x, y;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &x, &y);\n    int sum = add(x, y);\n    printf(\"Sum is %d\\n\", sum);\n    return 0;\n}\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "#include <stdio.h>\n\nint add(int a, int b) {\n    return a + b;\n}\n\nint main() {\n    int x, y;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &x, &y);\n    int sum = add(x, y);\n    printf(\"Sum is %d\\n\", sum);\n    return 0;\n}",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "return a + b"
+            }
+          ]
+        },
+        "narration_anchor": "Here's the function that adds two numbers and returns the sum."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "a.out",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:40+00:00",
+            "stdout": "Enter two integers: Sum is 106233938\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running the program prints the sum returned by the function.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Define a function, use return to give back a value, and call it from main."
+        },
+        "narration_anchor": "Remember: define a function, return a value, and call it from main.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Write a function that multiplies three numbers and returns the product."
+        },
+        "narration_anchor": "Try writing a function that multiplies three numbers and returns the product.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Write a function that multiplies three numbers and returns the product."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 17,
+      "total": 22,
+      "previous_id": "meal_16_arrays_and_indexing",
+      "next_id": "meal_18_conditional_statements_if_else"
+    }
+  }
+}

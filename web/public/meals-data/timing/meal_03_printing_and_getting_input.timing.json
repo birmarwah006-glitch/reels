@@ -1,0 +1,705 @@
+{
+  "meal_id": "meal_03_printing_and_getting_input",
+  "audio": "meal_03_printing_and_getting_input.mp3",
+  "duration": 33.408,
+  "alignment": "whisper",
+  "anchors": {
+    "What does print actually do?": 0.0,
+    "The print function sends whatever you give it to the screen, so the user can read it.": 4.58,
+    "Now let's see a tiny program.": 15.74,
+    "When you run it, you\u2019ll see the prompt and your reply echoed.": 24.22,
+    "Use print to show and input to receive user text.": 27.56,
+    "Try changing the prompt and printing a greeting.": 30.98
+  },
+  "captions": [
+    {
+      "text": "What does print actually do?",
+      "start": 0.0,
+      "end": 1.78,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.26
+        },
+        {
+          "w": "does",
+          "start": 0.26,
+          "end": 0.48
+        },
+        {
+          "w": "print",
+          "start": 0.48,
+          "end": 0.74
+        },
+        {
+          "w": "actually",
+          "start": 0.74,
+          "end": 1.2
+        },
+        {
+          "w": "do?",
+          "start": 1.2,
+          "end": 1.78
+        }
+      ]
+    },
+    {
+      "text": "Imagine you want your program",
+      "start": 2.1,
+      "end": 3.52,
+      "words": [
+        {
+          "w": "Imagine",
+          "start": 2.1,
+          "end": 2.36
+        },
+        {
+          "w": "you",
+          "start": 2.36,
+          "end": 2.72
+        },
+        {
+          "w": "want",
+          "start": 2.72,
+          "end": 2.9
+        },
+        {
+          "w": "your",
+          "start": 2.9,
+          "end": 3.16
+        },
+        {
+          "w": "program",
+          "start": 3.16,
+          "end": 3.52
+        }
+      ]
+    },
+    {
+      "text": "to talk. The print function",
+      "start": 3.52,
+      "end": 5.3,
+      "words": [
+        {
+          "w": "to",
+          "start": 3.52,
+          "end": 3.8
+        },
+        {
+          "w": "talk.",
+          "start": 3.8,
+          "end": 4.12
+        },
+        {
+          "w": "The",
+          "start": 4.58,
+          "end": 4.68
+        },
+        {
+          "w": "print",
+          "start": 4.68,
+          "end": 4.92
+        },
+        {
+          "w": "function",
+          "start": 4.92,
+          "end": 5.3
+        }
+      ]
+    },
+    {
+      "text": "sends whatever you give it",
+      "start": 5.3,
+      "end": 6.56,
+      "words": [
+        {
+          "w": "sends",
+          "start": 5.3,
+          "end": 5.7
+        },
+        {
+          "w": "whatever",
+          "start": 5.7,
+          "end": 6.02
+        },
+        {
+          "w": "you",
+          "start": 6.02,
+          "end": 6.22
+        },
+        {
+          "w": "give",
+          "start": 6.22,
+          "end": 6.4
+        },
+        {
+          "w": "it",
+          "start": 6.4,
+          "end": 6.56
+        }
+      ]
+    },
+    {
+      "text": "to the screen, so the",
+      "start": 6.56,
+      "end": 7.62,
+      "words": [
+        {
+          "w": "to",
+          "start": 6.56,
+          "end": 6.72
+        },
+        {
+          "w": "the",
+          "start": 6.72,
+          "end": 6.82
+        },
+        {
+          "w": "screen,",
+          "start": 6.82,
+          "end": 7.12
+        },
+        {
+          "w": "so",
+          "start": 7.12,
+          "end": 7.4
+        },
+        {
+          "w": "the",
+          "start": 7.4,
+          "end": 7.62
+        }
+      ]
+    },
+    {
+      "text": "user can read it. Next,",
+      "start": 7.62,
+      "end": 9.28,
+      "words": [
+        {
+          "w": "user",
+          "start": 7.62,
+          "end": 7.84
+        },
+        {
+          "w": "can",
+          "start": 7.84,
+          "end": 8.1
+        },
+        {
+          "w": "read",
+          "start": 8.1,
+          "end": 8.26
+        },
+        {
+          "w": "it.",
+          "start": 8.26,
+          "end": 8.7
+        },
+        {
+          "w": "Next,",
+          "start": 9.04,
+          "end": 9.28
+        }
+      ]
+    },
+    {
+      "text": "input lets the program pause",
+      "start": 9.9,
+      "end": 11.22,
+      "words": [
+        {
+          "w": "input",
+          "start": 9.9,
+          "end": 10.06
+        },
+        {
+          "w": "lets",
+          "start": 10.06,
+          "end": 10.36
+        },
+        {
+          "w": "the",
+          "start": 10.36,
+          "end": 10.58
+        },
+        {
+          "w": "program",
+          "start": 10.58,
+          "end": 10.84
+        },
+        {
+          "w": "pause",
+          "start": 10.84,
+          "end": 11.22
+        }
+      ]
+    },
+    {
+      "text": "and wait for the user",
+      "start": 11.22,
+      "end": 12.3,
+      "words": [
+        {
+          "w": "and",
+          "start": 11.22,
+          "end": 11.5
+        },
+        {
+          "w": "wait",
+          "start": 11.5,
+          "end": 11.68
+        },
+        {
+          "w": "for",
+          "start": 11.68,
+          "end": 11.96
+        },
+        {
+          "w": "the",
+          "start": 11.96,
+          "end": 12.08
+        },
+        {
+          "w": "user",
+          "start": 12.08,
+          "end": 12.3
+        }
+      ]
+    },
+    {
+      "text": "to type something, returning that",
+      "start": 12.3,
+      "end": 14.3,
+      "words": [
+        {
+          "w": "to",
+          "start": 12.3,
+          "end": 12.5
+        },
+        {
+          "w": "type",
+          "start": 12.5,
+          "end": 12.68
+        },
+        {
+          "w": "something,",
+          "start": 12.68,
+          "end": 13.3
+        },
+        {
+          "w": "returning",
+          "start": 13.78,
+          "end": 14.02
+        },
+        {
+          "w": "that",
+          "start": 14.02,
+          "end": 14.3
+        }
+      ]
+    },
+    {
+      "text": "text as a string. Now",
+      "start": 14.3,
+      "end": 15.82,
+      "words": [
+        {
+          "w": "text",
+          "start": 14.3,
+          "end": 14.54
+        },
+        {
+          "w": "as",
+          "start": 14.54,
+          "end": 14.76
+        },
+        {
+          "w": "a",
+          "start": 14.76,
+          "end": 14.96
+        },
+        {
+          "w": "string.",
+          "start": 14.96,
+          "end": 15.16
+        },
+        {
+          "w": "Now",
+          "start": 15.74,
+          "end": 15.82
+        }
+      ]
+    },
+    {
+      "text": "let's see a tiny program.",
+      "start": 15.82,
+      "end": 17.26,
+      "words": [
+        {
+          "w": "let's",
+          "start": 15.82,
+          "end": 16.06
+        },
+        {
+          "w": "see",
+          "start": 16.06,
+          "end": 16.26
+        },
+        {
+          "w": "a",
+          "start": 16.26,
+          "end": 16.4
+        },
+        {
+          "w": "tiny",
+          "start": 16.4,
+          "end": 16.64
+        },
+        {
+          "w": "program.",
+          "start": 16.64,
+          "end": 17.26
+        }
+      ]
+    },
+    {
+      "text": "It prints a welcome line,",
+      "start": 17.68,
+      "end": 19.38,
+      "words": [
+        {
+          "w": "It",
+          "start": 17.68,
+          "end": 17.96
+        },
+        {
+          "w": "prints",
+          "start": 17.96,
+          "end": 18.06
+        },
+        {
+          "w": "a",
+          "start": 18.06,
+          "end": 18.26
+        },
+        {
+          "w": "welcome",
+          "start": 18.26,
+          "end": 18.66
+        },
+        {
+          "w": "line,",
+          "start": 19.16,
+          "end": 19.38
+        }
+      ]
+    },
+    {
+      "text": "then asks for your name",
+      "start": 19.38,
+      "end": 20.4,
+      "words": [
+        {
+          "w": "then",
+          "start": 19.38,
+          "end": 19.6
+        },
+        {
+          "w": "asks",
+          "start": 19.6,
+          "end": 19.84
+        },
+        {
+          "w": "for",
+          "start": 19.84,
+          "end": 19.98
+        },
+        {
+          "w": "your",
+          "start": 19.98,
+          "end": 20.16
+        },
+        {
+          "w": "name",
+          "start": 20.16,
+          "end": 20.4
+        }
+      ]
+    },
+    {
+      "text": "with input, and finally prints",
+      "start": 20.4,
+      "end": 22.1,
+      "words": [
+        {
+          "w": "with",
+          "start": 20.4,
+          "end": 20.74
+        },
+        {
+          "w": "input,",
+          "start": 21.24,
+          "end": 21.38
+        },
+        {
+          "w": "and",
+          "start": 21.38,
+          "end": 21.64
+        },
+        {
+          "w": "finally",
+          "start": 21.68,
+          "end": 21.92
+        },
+        {
+          "w": "prints",
+          "start": 21.92,
+          "end": 22.1
+        }
+      ]
+    },
+    {
+      "text": "a greeting that includes what",
+      "start": 22.1,
+      "end": 23.34,
+      "words": [
+        {
+          "w": "a",
+          "start": 22.1,
+          "end": 22.34
+        },
+        {
+          "w": "greeting",
+          "start": 22.34,
+          "end": 22.66
+        },
+        {
+          "w": "that",
+          "start": 22.66,
+          "end": 22.94
+        },
+        {
+          "w": "includes",
+          "start": 22.94,
+          "end": 23.18
+        },
+        {
+          "w": "what",
+          "start": 23.18,
+          "end": 23.34
+        }
+      ]
+    },
+    {
+      "text": "you typed. When you run",
+      "start": 23.34,
+      "end": 24.74,
+      "words": [
+        {
+          "w": "you",
+          "start": 23.34,
+          "end": 23.58
+        },
+        {
+          "w": "typed.",
+          "start": 24.02,
+          "end": 24.22
+        },
+        {
+          "w": "When",
+          "start": 24.22,
+          "end": 24.34
+        },
+        {
+          "w": "you",
+          "start": 24.34,
+          "end": 24.46
+        },
+        {
+          "w": "run",
+          "start": 24.46,
+          "end": 24.74
+        }
+      ]
+    },
+    {
+      "text": "it, you\u2019ll see the prompt",
+      "start": 24.86,
+      "end": 25.92,
+      "words": [
+        {
+          "w": "it,",
+          "start": 24.86,
+          "end": 25.02
+        },
+        {
+          "w": "you\u2019ll",
+          "start": 25.02,
+          "end": 25.14
+        },
+        {
+          "w": "see",
+          "start": 25.14,
+          "end": 25.38
+        },
+        {
+          "w": "the",
+          "start": 25.38,
+          "end": 25.64
+        },
+        {
+          "w": "prompt",
+          "start": 25.64,
+          "end": 25.92
+        }
+      ]
+    },
+    {
+      "text": "and your reply echoed. Use",
+      "start": 25.92,
+      "end": 27.8,
+      "words": [
+        {
+          "w": "and",
+          "start": 25.92,
+          "end": 26.1
+        },
+        {
+          "w": "your",
+          "start": 26.1,
+          "end": 26.38
+        },
+        {
+          "w": "reply",
+          "start": 26.38,
+          "end": 27.06
+        },
+        {
+          "w": "echoed.",
+          "start": 27.06,
+          "end": 27.56
+        },
+        {
+          "w": "Use",
+          "start": 27.56,
+          "end": 27.8
+        }
+      ]
+    },
+    {
+      "text": "print to show and input",
+      "start": 27.8,
+      "end": 29.14,
+      "words": [
+        {
+          "w": "print",
+          "start": 27.8,
+          "end": 28.04
+        },
+        {
+          "w": "to",
+          "start": 28.04,
+          "end": 28.34
+        },
+        {
+          "w": "show",
+          "start": 28.34,
+          "end": 28.62
+        },
+        {
+          "w": "and",
+          "start": 28.62,
+          "end": 28.9
+        },
+        {
+          "w": "input",
+          "start": 28.9,
+          "end": 29.14
+        }
+      ]
+    },
+    {
+      "text": "to receive user text. Try",
+      "start": 29.14,
+      "end": 31.34,
+      "words": [
+        {
+          "w": "to",
+          "start": 29.14,
+          "end": 29.46
+        },
+        {
+          "w": "receive",
+          "start": 29.46,
+          "end": 29.78
+        },
+        {
+          "w": "user",
+          "start": 29.78,
+          "end": 30.24
+        },
+        {
+          "w": "text.",
+          "start": 30.76,
+          "end": 30.98
+        },
+        {
+          "w": "Try",
+          "start": 30.98,
+          "end": 31.34
+        }
+      ]
+    },
+    {
+      "text": "changing the prompt and printing",
+      "start": 31.34,
+      "end": 32.72,
+      "words": [
+        {
+          "w": "changing",
+          "start": 31.34,
+          "end": 31.58
+        },
+        {
+          "w": "the",
+          "start": 31.58,
+          "end": 31.92
+        },
+        {
+          "w": "prompt",
+          "start": 31.92,
+          "end": 32.2
+        },
+        {
+          "w": "and",
+          "start": 32.2,
+          "end": 32.5
+        },
+        {
+          "w": "printing",
+          "start": 32.5,
+          "end": 32.72
+        }
+      ]
+    },
+    {
+      "text": "a greeting.",
+      "start": 32.72,
+      "end": 32.96,
+      "words": [
+        {
+          "w": "a",
+          "start": 32.72,
+          "end": 32.96
+        },
+        {
+          "w": "greeting.",
+          "start": 32.72,
+          "end": 32.96
+        }
+      ]
+    }
+  ]
+}

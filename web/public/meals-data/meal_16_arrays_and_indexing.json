@@ -1,0 +1,169 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_16_arrays_and_indexing",
+    "title": "Arrays and Indexing in C",
+    "concept": "c.project.overview",
+    "objective": "Declare an integer array and retrieve elements using their index",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "python.functions.define",
+      "python.control.if"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "array",
+      "indexing"
+    ],
+    "assumes": [
+      "variables"
+    ],
+    "voice": {
+      "script": "What if you could store ten scores in one line of code? How do you create and read a list of numbers in C? An array is a block of memory that holds several values of the same type, each placed next to the other. Indexing means picking one slot by its position, starting at zero for the first slot. Think of it like a row of mailboxes, each with its own number. Now let's see the code. We declare an integer array named numbers with five slots and give each slot an initial value. Then we use printf to show the value in the third slot, which we reach with index two. Running this program prints the number thirty, confirming we accessed the correct element. If you picture memory as a row of boxes, numbers[0] sits in the first box, numbers[1] in the next, and so on. Remember: an array holds many values, and you reach each one by its zero\u2011based index. Try changing the index to 4 and see what number appears.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could store ten scores in one line of code?"
+        },
+        "narration_anchor": "What if you could store ten scores in one line of code?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you create and read a list of numbers in C?"
+        },
+        "narration_anchor": "How do you create and read a list of numbers in C?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Declare array",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Access element",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "use index"
+            }
+          ]
+        },
+        "narration_anchor": "An array is a block of memory that holds several values of the same type, each placed next to the other."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "c",
+          "filename": "main.c",
+          "code": "#include <stdio.h>\n\nint main(void) {\n    int numbers[5] = {10, 20, 30, 40, 50};\n    printf(\"The third number is %d\\n\", numbers[2]);\n    return 0;\n}\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "#include <stdio.h>\n\nint main(void) {\n    int numbers[5] = {10, 20, 30, 40, 50};\n    printf(\"The third number is %d\\n\", numbers[2]);\n    return 0;\n}",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "numbers[2]"
+            }
+          ]
+        },
+        "narration_anchor": "Now let's see the code."
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "a.out",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:39+00:00",
+            "stdout": "The third number is 30\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "Running this program prints the number thirty, confirming we accessed the correct element.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Arrays store multiple values; use zero\u2011based indexes to reach each one."
+        },
+        "narration_anchor": "Remember: an array holds many values, and you reach each one by its zero\u2011based index.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Modify the program to print the value at index four instead of two."
+        },
+        "narration_anchor": "Try changing the index to 4 and see what number appears.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Modify the program to print the value at index four instead of two.",
+      "hint": "Change the index inside the brackets to 4."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 16,
+      "total": 22,
+      "previous_id": "meal_15_writing_comments",
+      "next_id": "meal_17_defining_and_calling_functions"
+    }
+  }
+}

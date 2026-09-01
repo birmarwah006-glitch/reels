@@ -1,0 +1,117 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_01_what_is_an_ide_and_why_you_need_one",
+    "title": "What is an IDE and why you need one",
+    "concept": "c.project.overview",
+    "objective": "Explain what an IDE is and why it is needed to write C programs",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "IDE"
+    ],
+    "assumes": [],
+    "voice": {
+      "script": "Ever wondered how programmers turn ideas into working programs? That's the hook. Why do you need a special editor to write C code? That's the question. An IDE is a special text editor that makes writing C programs easier. It bundles a code editor, a compiler, and tools that point out mistakes as you type. The editor lets you write source code, the compiler turns that code into an executable program, and the built\u2011in debugger helps you find why a program misbehaves. Without an IDE you would have to switch between separate programs and remember many commands, which slows you down and invites errors. Think of it as a kitchen where the stove, knives, and recipe book are all within arm's reach, so you can focus on cooking instead of hunting for tools. The key takeaway is: an IDE combines editing, compiling, and debugging in one place, making C development faster and less error\u2011prone. Now try opening a simple IDE, type a tiny C program, and press the build button to see it compile instantly.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Ever wondered how programmers turn ideas into working programs?"
+        },
+        "narration_anchor": "Ever wondered how programmers turn ideas into working programs?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "Why do you need a special editor to write C code?"
+        },
+        "narration_anchor": "Why do you need a special editor to write C code?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "IDE combines tools",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Write, compile, debug",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "provides"
+            }
+          ]
+        },
+        "narration_anchor": "An IDE is a special text editor that makes writing C programs easier."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "An IDE bundles editing, compiling, and debugging so you can write C code efficiently."
+        },
+        "narration_anchor": "The key takeaway is: an IDE combines editing, compiling, and debugging in one place, making C development faster and less error\u2011prone.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Open a free IDE, create a file named hello.c, write a main function that prints \"Hello\", and build it."
+        },
+        "narration_anchor": "Now try opening a simple IDE, type a tiny C program, and press the build button to see it compile instantly.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Open a free IDE, create a file named hello.c, write a main function that prints \"Hello\", and build it.",
+      "hint": "Look for a button labeled run or build."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 1,
+      "total": 22,
+      "previous_id": null,
+      "next_id": "meal_02_installing_code_blocks_on_windows"
+    }
+  }
+}

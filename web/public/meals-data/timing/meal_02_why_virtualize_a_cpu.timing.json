@@ -1,0 +1,864 @@
+{
+  "meal_id": "meal_02_why_virtualize_a_cpu",
+  "audio": "meal_02_why_virtualize_a_cpu.mp3",
+  "duration": 48.768,
+  "alignment": "whisper",
+  "anchors": {
+    "What if one CPU could run many apps safely?": 0.0,
+    "Why do we virtualize a CPU?": 3.18,
+    "Efficiency means the system can handle more work without adding hardware, using time slices so each program gets a turn. Security means each program runs in its own sandbox, so a mistake in one cannot affect the others.": 10.18,
+    "Virtualization lets one CPU be efficient and secure.": 40.52,
+    "Try drawing your own flow diagram of how a virtual CPU schedules tasks.": 44.2
+  },
+  "captions": [
+    {
+      "text": "What if one CPU could",
+      "start": 0.0,
+      "end": 1.48,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.32
+        },
+        {
+          "w": "if",
+          "start": 0.32,
+          "end": 0.52
+        },
+        {
+          "w": "one",
+          "start": 0.52,
+          "end": 0.78
+        },
+        {
+          "w": "CPU",
+          "start": 0.78,
+          "end": 1.16
+        },
+        {
+          "w": "could",
+          "start": 1.16,
+          "end": 1.48
+        }
+      ]
+    },
+    {
+      "text": "run many apps safely? Why",
+      "start": 1.48,
+      "end": 3.34,
+      "words": [
+        {
+          "w": "run",
+          "start": 1.48,
+          "end": 1.74
+        },
+        {
+          "w": "many",
+          "start": 1.74,
+          "end": 2.04
+        },
+        {
+          "w": "apps",
+          "start": 2.04,
+          "end": 2.32
+        },
+        {
+          "w": "safely?",
+          "start": 2.32,
+          "end": 2.72
+        },
+        {
+          "w": "Why",
+          "start": 3.18,
+          "end": 3.34
+        }
+      ]
+    },
+    {
+      "text": "do we virtualize a CPU?",
+      "start": 3.34,
+      "end": 4.74,
+      "words": [
+        {
+          "w": "do",
+          "start": 3.34,
+          "end": 3.46
+        },
+        {
+          "w": "we",
+          "start": 3.46,
+          "end": 3.66
+        },
+        {
+          "w": "virtualize",
+          "start": 3.66,
+          "end": 4.22
+        },
+        {
+          "w": "a",
+          "start": 4.22,
+          "end": 4.44
+        },
+        {
+          "w": "CPU?",
+          "start": 4.44,
+          "end": 4.74
+        }
+      ]
+    },
+    {
+      "text": "Virtualization lets a single processor",
+      "start": 5.54,
+      "end": 7.52,
+      "words": [
+        {
+          "w": "Virtualization",
+          "start": 5.54,
+          "end": 6.14
+        },
+        {
+          "w": "lets",
+          "start": 6.14,
+          "end": 6.44
+        },
+        {
+          "w": "a",
+          "start": 6.44,
+          "end": 6.68
+        },
+        {
+          "w": "single",
+          "start": 6.68,
+          "end": 6.98
+        },
+        {
+          "w": "processor",
+          "start": 6.98,
+          "end": 7.52
+        }
+      ]
+    },
+    {
+      "text": "appear as many separate processors.",
+      "start": 7.52,
+      "end": 9.56,
+      "words": [
+        {
+          "w": "appear",
+          "start": 7.52,
+          "end": 7.94
+        },
+        {
+          "w": "as",
+          "start": 7.94,
+          "end": 8.34
+        },
+        {
+          "w": "many",
+          "start": 8.34,
+          "end": 8.6
+        },
+        {
+          "w": "separate",
+          "start": 8.6,
+          "end": 8.9
+        },
+        {
+          "w": "processors.",
+          "start": 8.9,
+          "end": 9.56
+        }
+      ]
+    },
+    {
+      "text": "Efficiency means the system can",
+      "start": 10.18,
+      "end": 11.56,
+      "words": [
+        {
+          "w": "Efficiency",
+          "start": 10.18,
+          "end": 10.48
+        },
+        {
+          "w": "means",
+          "start": 10.48,
+          "end": 10.82
+        },
+        {
+          "w": "the",
+          "start": 10.82,
+          "end": 11.04
+        },
+        {
+          "w": "system",
+          "start": 11.04,
+          "end": 11.34
+        },
+        {
+          "w": "can",
+          "start": 11.34,
+          "end": 11.56
+        }
+      ]
+    },
+    {
+      "text": "handle more work without adding",
+      "start": 11.56,
+      "end": 13.04,
+      "words": [
+        {
+          "w": "handle",
+          "start": 11.56,
+          "end": 11.8
+        },
+        {
+          "w": "more",
+          "start": 11.8,
+          "end": 12.12
+        },
+        {
+          "w": "work",
+          "start": 12.12,
+          "end": 12.42
+        },
+        {
+          "w": "without",
+          "start": 12.42,
+          "end": 12.7
+        },
+        {
+          "w": "adding",
+          "start": 12.7,
+          "end": 13.04
+        }
+      ]
+    },
+    {
+      "text": "hardware, using time slices so",
+      "start": 13.04,
+      "end": 15.2,
+      "words": [
+        {
+          "w": "hardware,",
+          "start": 13.04,
+          "end": 13.5
+        },
+        {
+          "w": "using",
+          "start": 14.02,
+          "end": 14.18
+        },
+        {
+          "w": "time",
+          "start": 14.18,
+          "end": 14.54
+        },
+        {
+          "w": "slices",
+          "start": 14.54,
+          "end": 14.86
+        },
+        {
+          "w": "so",
+          "start": 14.86,
+          "end": 15.2
+        }
+      ]
+    },
+    {
+      "text": "each program gets a turn.",
+      "start": 15.2,
+      "end": 16.72,
+      "words": [
+        {
+          "w": "each",
+          "start": 15.2,
+          "end": 15.4
+        },
+        {
+          "w": "program",
+          "start": 15.4,
+          "end": 15.76
+        },
+        {
+          "w": "gets",
+          "start": 15.76,
+          "end": 16.04
+        },
+        {
+          "w": "a",
+          "start": 16.04,
+          "end": 16.32
+        },
+        {
+          "w": "turn.",
+          "start": 16.32,
+          "end": 16.72
+        }
+      ]
+    },
+    {
+      "text": "Security means each program runs",
+      "start": 17.04,
+      "end": 18.64,
+      "words": [
+        {
+          "w": "Security",
+          "start": 17.04,
+          "end": 17.22
+        },
+        {
+          "w": "means",
+          "start": 17.22,
+          "end": 17.62
+        },
+        {
+          "w": "each",
+          "start": 17.62,
+          "end": 17.98
+        },
+        {
+          "w": "program",
+          "start": 17.98,
+          "end": 18.28
+        },
+        {
+          "w": "runs",
+          "start": 18.28,
+          "end": 18.64
+        }
+      ]
+    },
+    {
+      "text": "in its own sandbox, so",
+      "start": 18.64,
+      "end": 20.34,
+      "words": [
+        {
+          "w": "in",
+          "start": 18.64,
+          "end": 18.9
+        },
+        {
+          "w": "its",
+          "start": 18.9,
+          "end": 19.08
+        },
+        {
+          "w": "own",
+          "start": 19.08,
+          "end": 19.28
+        },
+        {
+          "w": "sandbox,",
+          "start": 19.28,
+          "end": 19.7
+        },
+        {
+          "w": "so",
+          "start": 20.12,
+          "end": 20.34
+        }
+      ]
+    },
+    {
+      "text": "a mistake in one cannot",
+      "start": 20.34,
+      "end": 21.52,
+      "words": [
+        {
+          "w": "a",
+          "start": 20.34,
+          "end": 20.46
+        },
+        {
+          "w": "mistake",
+          "start": 20.46,
+          "end": 20.74
+        },
+        {
+          "w": "in",
+          "start": 20.74,
+          "end": 20.98
+        },
+        {
+          "w": "one",
+          "start": 20.98,
+          "end": 21.2
+        },
+        {
+          "w": "cannot",
+          "start": 21.2,
+          "end": 21.52
+        }
+      ]
+    },
+    {
+      "text": "affect the others. Here is",
+      "start": 21.52,
+      "end": 23.52,
+      "words": [
+        {
+          "w": "affect",
+          "start": 21.52,
+          "end": 21.86
+        },
+        {
+          "w": "the",
+          "start": 21.86,
+          "end": 22.08
+        },
+        {
+          "w": "others.",
+          "start": 22.08,
+          "end": 22.4
+        },
+        {
+          "w": "Here",
+          "start": 22.88,
+          "end": 23.16
+        },
+        {
+          "w": "is",
+          "start": 23.16,
+          "end": 23.52
+        }
+      ]
+    },
+    {
+      "text": "the flow of a virtualized",
+      "start": 23.52,
+      "end": 25.0,
+      "words": [
+        {
+          "w": "the",
+          "start": 23.52,
+          "end": 23.68
+        },
+        {
+          "w": "flow",
+          "start": 23.68,
+          "end": 23.96
+        },
+        {
+          "w": "of",
+          "start": 23.96,
+          "end": 24.26
+        },
+        {
+          "w": "a",
+          "start": 24.26,
+          "end": 24.44
+        },
+        {
+          "w": "virtualized",
+          "start": 24.44,
+          "end": 25.0
+        }
+      ]
+    },
+    {
+      "text": "CPU handling processes. First the",
+      "start": 25.0,
+      "end": 27.32,
+      "words": [
+        {
+          "w": "CPU",
+          "start": 25.0,
+          "end": 25.4
+        },
+        {
+          "w": "handling",
+          "start": 25.4,
+          "end": 25.74
+        },
+        {
+          "w": "processes.",
+          "start": 25.74,
+          "end": 26.34
+        },
+        {
+          "w": "First",
+          "start": 26.34,
+          "end": 27.06
+        },
+        {
+          "w": "the",
+          "start": 27.22,
+          "end": 27.32
+        }
+      ]
+    },
+    {
+      "text": "hypervisor receives a request to",
+      "start": 27.32,
+      "end": 29.26,
+      "words": [
+        {
+          "w": "hypervisor",
+          "start": 27.32,
+          "end": 27.94
+        },
+        {
+          "w": "receives",
+          "start": 27.94,
+          "end": 28.4
+        },
+        {
+          "w": "a",
+          "start": 28.4,
+          "end": 28.74
+        },
+        {
+          "w": "request",
+          "start": 28.74,
+          "end": 29.02
+        },
+        {
+          "w": "to",
+          "start": 29.02,
+          "end": 29.26
+        }
+      ]
+    },
+    {
+      "text": "run a program. It assigns",
+      "start": 29.26,
+      "end": 31.04,
+      "words": [
+        {
+          "w": "run",
+          "start": 29.26,
+          "end": 29.48
+        },
+        {
+          "w": "a",
+          "start": 29.48,
+          "end": 29.66
+        },
+        {
+          "w": "program.",
+          "start": 29.66,
+          "end": 30.02
+        },
+        {
+          "w": "It",
+          "start": 30.5,
+          "end": 30.62
+        },
+        {
+          "w": "assigns",
+          "start": 30.62,
+          "end": 31.04
+        }
+      ]
+    },
+    {
+      "text": "a time slice, runs the",
+      "start": 31.04,
+      "end": 32.7,
+      "words": [
+        {
+          "w": "a",
+          "start": 31.04,
+          "end": 31.14
+        },
+        {
+          "w": "time",
+          "start": 31.14,
+          "end": 31.34
+        },
+        {
+          "w": "slice,",
+          "start": 31.34,
+          "end": 31.74
+        },
+        {
+          "w": "runs",
+          "start": 32.26,
+          "end": 32.42
+        },
+        {
+          "w": "the",
+          "start": 32.42,
+          "end": 32.7
+        }
+      ]
+    },
+    {
+      "text": "program, then saves its state",
+      "start": 32.7,
+      "end": 34.66,
+      "words": [
+        {
+          "w": "program,",
+          "start": 32.7,
+          "end": 33.14
+        },
+        {
+          "w": "then",
+          "start": 33.7,
+          "end": 33.9
+        },
+        {
+          "w": "saves",
+          "start": 33.9,
+          "end": 34.12
+        },
+        {
+          "w": "its",
+          "start": 34.12,
+          "end": 34.42
+        },
+        {
+          "w": "state",
+          "start": 34.42,
+          "end": 34.66
+        }
+      ]
+    },
+    {
+      "text": "and moves to the next",
+      "start": 34.66,
+      "end": 35.68,
+      "words": [
+        {
+          "w": "and",
+          "start": 34.66,
+          "end": 34.9
+        },
+        {
+          "w": "moves",
+          "start": 34.9,
+          "end": 35.16
+        },
+        {
+          "w": "to",
+          "start": 35.16,
+          "end": 35.42
+        },
+        {
+          "w": "the",
+          "start": 35.42,
+          "end": 35.54
+        },
+        {
+          "w": "next",
+          "start": 35.54,
+          "end": 35.68
+        }
+      ]
+    },
+    {
+      "text": "request. This repeat keeps the",
+      "start": 35.68,
+      "end": 37.76,
+      "words": [
+        {
+          "w": "request.",
+          "start": 35.68,
+          "end": 36.18
+        },
+        {
+          "w": "This",
+          "start": 36.62,
+          "end": 36.84
+        },
+        {
+          "w": "repeat",
+          "start": 36.84,
+          "end": 37.18
+        },
+        {
+          "w": "keeps",
+          "start": 37.18,
+          "end": 37.52
+        },
+        {
+          "w": "the",
+          "start": 37.52,
+          "end": 37.76
+        }
+      ]
+    },
+    {
+      "text": "CPU busy and protects each",
+      "start": 37.76,
+      "end": 39.48,
+      "words": [
+        {
+          "w": "CPU",
+          "start": 37.76,
+          "end": 38.04
+        },
+        {
+          "w": "busy",
+          "start": 38.04,
+          "end": 38.44
+        },
+        {
+          "w": "and",
+          "start": 38.44,
+          "end": 38.78
+        },
+        {
+          "w": "protects",
+          "start": 38.78,
+          "end": 39.1
+        },
+        {
+          "w": "each",
+          "start": 39.1,
+          "end": 39.48
+        }
+      ]
+    },
+    {
+      "text": "program. Virtualization lets one CPU",
+      "start": 39.48,
+      "end": 42.28,
+      "words": [
+        {
+          "w": "program.",
+          "start": 39.48,
+          "end": 39.9
+        },
+        {
+          "w": "Virtualization",
+          "start": 40.52,
+          "end": 41.16
+        },
+        {
+          "w": "lets",
+          "start": 41.16,
+          "end": 41.42
+        },
+        {
+          "w": "one",
+          "start": 41.42,
+          "end": 41.9
+        },
+        {
+          "w": "CPU",
+          "start": 41.9,
+          "end": 42.28
+        }
+      ]
+    },
+    {
+      "text": "be efficient and secure. Try",
+      "start": 42.28,
+      "end": 44.46,
+      "words": [
+        {
+          "w": "be",
+          "start": 42.28,
+          "end": 42.58
+        },
+        {
+          "w": "efficient",
+          "start": 42.58,
+          "end": 42.92
+        },
+        {
+          "w": "and",
+          "start": 42.92,
+          "end": 43.26
+        },
+        {
+          "w": "secure.",
+          "start": 43.26,
+          "end": 43.7
+        },
+        {
+          "w": "Try",
+          "start": 44.2,
+          "end": 44.46
+        }
+      ]
+    },
+    {
+      "text": "drawing your own flow diagram",
+      "start": 44.46,
+      "end": 46.1,
+      "words": [
+        {
+          "w": "drawing",
+          "start": 44.46,
+          "end": 44.8
+        },
+        {
+          "w": "your",
+          "start": 44.8,
+          "end": 45.12
+        },
+        {
+          "w": "own",
+          "start": 45.12,
+          "end": 45.34
+        },
+        {
+          "w": "flow",
+          "start": 45.34,
+          "end": 45.56
+        },
+        {
+          "w": "diagram",
+          "start": 45.56,
+          "end": 46.1
+        }
+      ]
+    },
+    {
+      "text": "of how a virtual CPU",
+      "start": 46.1,
+      "end": 47.52,
+      "words": [
+        {
+          "w": "of",
+          "start": 46.1,
+          "end": 46.4
+        },
+        {
+          "w": "how",
+          "start": 46.4,
+          "end": 46.62
+        },
+        {
+          "w": "a",
+          "start": 46.62,
+          "end": 46.8
+        },
+        {
+          "w": "virtual",
+          "start": 46.8,
+          "end": 47.12
+        },
+        {
+          "w": "CPU",
+          "start": 47.12,
+          "end": 47.52
+        }
+      ]
+    },
+    {
+      "text": "schedules tasks.",
+      "start": 47.52,
+      "end": 48.4,
+      "words": [
+        {
+          "w": "schedules",
+          "start": 47.52,
+          "end": 47.98
+        },
+        {
+          "w": "tasks.",
+          "start": 47.98,
+          "end": 48.4
+        }
+      ]
+    }
+  ]
+}

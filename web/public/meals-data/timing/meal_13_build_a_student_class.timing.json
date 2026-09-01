@@ -1,0 +1,945 @@
+{
+  "meal_id": "meal_13_build_a_student_class",
+  "audio": "meal_13_build_a_student_class.mp3",
+  "duration": 50.136,
+  "alignment": "whisper",
+  "anchors": {
+    "What if you could turn a real student into a tiny program?": 0.0,
+    "How do we model a student with name and grades?": 3.66,
+    "A class is like a school blueprint, and each student we create is an object.": 6.64,
+    "Here\u2019s the Student class definition.": 11.32,
+    "Running the program prints the average of the grades.": 37.54,
+    "A class bundles data and behavior for many objects.": 40.56,
+    "Now try creating another class called Account with a balance attribute.": 43.54
+  },
+  "captions": [
+    {
+      "text": "What if you could turn",
+      "start": 0.0,
+      "end": 1.04,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.32
+        },
+        {
+          "w": "if",
+          "start": 0.32,
+          "end": 0.54
+        },
+        {
+          "w": "you",
+          "start": 0.54,
+          "end": 0.72
+        },
+        {
+          "w": "could",
+          "start": 0.72,
+          "end": 0.84
+        },
+        {
+          "w": "turn",
+          "start": 0.84,
+          "end": 1.04
+        }
+      ]
+    },
+    {
+      "text": "a real student into a",
+      "start": 1.04,
+      "end": 2.44,
+      "words": [
+        {
+          "w": "a",
+          "start": 1.04,
+          "end": 1.26
+        },
+        {
+          "w": "real",
+          "start": 1.26,
+          "end": 1.54
+        },
+        {
+          "w": "student",
+          "start": 1.54,
+          "end": 1.92
+        },
+        {
+          "w": "into",
+          "start": 1.92,
+          "end": 2.28
+        },
+        {
+          "w": "a",
+          "start": 2.28,
+          "end": 2.44
+        }
+      ]
+    },
+    {
+      "text": "tiny program? How do we",
+      "start": 2.44,
+      "end": 4.14,
+      "words": [
+        {
+          "w": "tiny",
+          "start": 2.44,
+          "end": 2.7
+        },
+        {
+          "w": "program?",
+          "start": 2.7,
+          "end": 3.22
+        },
+        {
+          "w": "How",
+          "start": 3.66,
+          "end": 3.8
+        },
+        {
+          "w": "do",
+          "start": 3.8,
+          "end": 3.92
+        },
+        {
+          "w": "we",
+          "start": 3.92,
+          "end": 4.14
+        }
+      ]
+    },
+    {
+      "text": "model a student with name",
+      "start": 4.14,
+      "end": 5.56,
+      "words": [
+        {
+          "w": "model",
+          "start": 4.14,
+          "end": 4.4
+        },
+        {
+          "w": "a",
+          "start": 4.4,
+          "end": 4.68
+        },
+        {
+          "w": "student",
+          "start": 4.68,
+          "end": 4.92
+        },
+        {
+          "w": "with",
+          "start": 4.92,
+          "end": 5.28
+        },
+        {
+          "w": "name",
+          "start": 5.28,
+          "end": 5.56
+        }
+      ]
+    },
+    {
+      "text": "and grades? A class is",
+      "start": 5.56,
+      "end": 7.26,
+      "words": [
+        {
+          "w": "and",
+          "start": 5.56,
+          "end": 5.82
+        },
+        {
+          "w": "grades?",
+          "start": 5.82,
+          "end": 6.16
+        },
+        {
+          "w": "A",
+          "start": 6.64,
+          "end": 6.76
+        },
+        {
+          "w": "class",
+          "start": 6.76,
+          "end": 7.02
+        },
+        {
+          "w": "is",
+          "start": 7.02,
+          "end": 7.26
+        }
+      ]
+    },
+    {
+      "text": "like a school blueprint, and",
+      "start": 7.26,
+      "end": 8.94,
+      "words": [
+        {
+          "w": "like",
+          "start": 7.26,
+          "end": 7.42
+        },
+        {
+          "w": "a",
+          "start": 7.42,
+          "end": 7.58
+        },
+        {
+          "w": "school",
+          "start": 7.58,
+          "end": 7.8
+        },
+        {
+          "w": "blueprint,",
+          "start": 7.8,
+          "end": 8.2
+        },
+        {
+          "w": "and",
+          "start": 8.8,
+          "end": 8.94
+        }
+      ]
+    },
+    {
+      "text": "each student we create is",
+      "start": 8.94,
+      "end": 10.28,
+      "words": [
+        {
+          "w": "each",
+          "start": 8.94,
+          "end": 9.18
+        },
+        {
+          "w": "student",
+          "start": 9.18,
+          "end": 9.52
+        },
+        {
+          "w": "we",
+          "start": 9.52,
+          "end": 9.7
+        },
+        {
+          "w": "create",
+          "start": 9.7,
+          "end": 10.04
+        },
+        {
+          "w": "is",
+          "start": 10.04,
+          "end": 10.28
+        }
+      ]
+    },
+    {
+      "text": "an object. Here\u2019s the Student",
+      "start": 10.28,
+      "end": 12.24,
+      "words": [
+        {
+          "w": "an",
+          "start": 10.28,
+          "end": 10.44
+        },
+        {
+          "w": "object.",
+          "start": 10.44,
+          "end": 10.82
+        },
+        {
+          "w": "Here\u2019s",
+          "start": 11.32,
+          "end": 11.68
+        },
+        {
+          "w": "the",
+          "start": 11.68,
+          "end": 11.86
+        },
+        {
+          "w": "Student",
+          "start": 11.86,
+          "end": 12.24
+        }
+      ]
+    },
+    {
+      "text": "class definition. Python lets us",
+      "start": 12.24,
+      "end": 14.6,
+      "words": [
+        {
+          "w": "class",
+          "start": 12.24,
+          "end": 12.56
+        },
+        {
+          "w": "definition.",
+          "start": 12.56,
+          "end": 13.14
+        },
+        {
+          "w": "Python",
+          "start": 13.72,
+          "end": 14.0
+        },
+        {
+          "w": "lets",
+          "start": 14.0,
+          "end": 14.34
+        },
+        {
+          "w": "us",
+          "start": 14.34,
+          "end": 14.6
+        }
+      ]
+    },
+    {
+      "text": "group related data and behavior",
+      "start": 14.6,
+      "end": 16.32,
+      "words": [
+        {
+          "w": "group",
+          "start": 14.6,
+          "end": 14.88
+        },
+        {
+          "w": "related",
+          "start": 14.88,
+          "end": 15.26
+        },
+        {
+          "w": "data",
+          "start": 15.26,
+          "end": 15.7
+        },
+        {
+          "w": "and",
+          "start": 15.7,
+          "end": 15.94
+        },
+        {
+          "w": "behavior",
+          "start": 15.94,
+          "end": 16.32
+        }
+      ]
+    },
+    {
+      "text": "inside a class. First we",
+      "start": 16.32,
+      "end": 18.26,
+      "words": [
+        {
+          "w": "inside",
+          "start": 16.32,
+          "end": 16.72
+        },
+        {
+          "w": "a",
+          "start": 16.72,
+          "end": 16.9
+        },
+        {
+          "w": "class.",
+          "start": 16.9,
+          "end": 17.32
+        },
+        {
+          "w": "First",
+          "start": 17.76,
+          "end": 18.0
+        },
+        {
+          "w": "we",
+          "start": 18.1,
+          "end": 18.26
+        }
+      ]
+    },
+    {
+      "text": "write the class name. Inside",
+      "start": 18.26,
+      "end": 20.1,
+      "words": [
+        {
+          "w": "write",
+          "start": 18.26,
+          "end": 18.48
+        },
+        {
+          "w": "the",
+          "start": 18.48,
+          "end": 18.68
+        },
+        {
+          "w": "class",
+          "start": 18.68,
+          "end": 18.98
+        },
+        {
+          "w": "name.",
+          "start": 18.98,
+          "end": 19.46
+        },
+        {
+          "w": "Inside",
+          "start": 19.78,
+          "end": 20.1
+        }
+      ]
+    },
+    {
+      "text": "we define an __init__ method",
+      "start": 20.1,
+      "end": 21.8,
+      "words": [
+        {
+          "w": "we",
+          "start": 20.1,
+          "end": 20.26
+        },
+        {
+          "w": "define",
+          "start": 20.26,
+          "end": 20.66
+        },
+        {
+          "w": "an",
+          "start": 20.66,
+          "end": 20.98
+        },
+        {
+          "w": "__init__",
+          "start": 20.98,
+          "end": 21.28
+        },
+        {
+          "w": "method",
+          "start": 21.28,
+          "end": 21.8
+        }
+      ]
+    },
+    {
+      "text": "that receives a name and",
+      "start": 21.8,
+      "end": 23.6,
+      "words": [
+        {
+          "w": "that",
+          "start": 21.8,
+          "end": 21.92
+        },
+        {
+          "w": "receives",
+          "start": 21.92,
+          "end": 22.1
+        },
+        {
+          "w": "a",
+          "start": 22.1,
+          "end": 22.58
+        },
+        {
+          "w": "name",
+          "start": 22.58,
+          "end": 23.22
+        },
+        {
+          "w": "and",
+          "start": 23.22,
+          "end": 23.6
+        }
+      ]
+    },
+    {
+      "text": "stores it on the instance",
+      "start": 23.6,
+      "end": 24.86,
+      "words": [
+        {
+          "w": "stores",
+          "start": 23.6,
+          "end": 23.82
+        },
+        {
+          "w": "it",
+          "start": 23.82,
+          "end": 24.06
+        },
+        {
+          "w": "on",
+          "start": 24.06,
+          "end": 24.34
+        },
+        {
+          "w": "the",
+          "start": 24.34,
+          "end": 24.64
+        },
+        {
+          "w": "instance",
+          "start": 24.64,
+          "end": 24.86
+        }
+      ]
+    },
+    {
+      "text": "as an attribute. Then we",
+      "start": 24.86,
+      "end": 26.04,
+      "words": [
+        {
+          "w": "as",
+          "start": 24.86,
+          "end": 25.16
+        },
+        {
+          "w": "an",
+          "start": 25.16,
+          "end": 25.3
+        },
+        {
+          "w": "attribute.",
+          "start": 25.3,
+          "end": 25.46
+        },
+        {
+          "w": "Then",
+          "start": 25.46,
+          "end": 25.74
+        },
+        {
+          "w": "we",
+          "start": 25.74,
+          "end": 26.04
+        }
+      ]
+    },
+    {
+      "text": "add a method called average_marks",
+      "start": 26.04,
+      "end": 27.66,
+      "words": [
+        {
+          "w": "add",
+          "start": 26.04,
+          "end": 26.18
+        },
+        {
+          "w": "a",
+          "start": 26.18,
+          "end": 26.52
+        },
+        {
+          "w": "method",
+          "start": 26.52,
+          "end": 27.26
+        },
+        {
+          "w": "called",
+          "start": 27.26,
+          "end": 27.5
+        },
+        {
+          "w": "average_marks",
+          "start": 27.5,
+          "end": 27.66
+        }
+      ]
+    },
+    {
+      "text": "that receives a list of",
+      "start": 27.66,
+      "end": 29.18,
+      "words": [
+        {
+          "w": "that",
+          "start": 27.66,
+          "end": 27.86
+        },
+        {
+          "w": "receives",
+          "start": 27.86,
+          "end": 28.0
+        },
+        {
+          "w": "a",
+          "start": 28.0,
+          "end": 28.42
+        },
+        {
+          "w": "list",
+          "start": 28.42,
+          "end": 28.72
+        },
+        {
+          "w": "of",
+          "start": 28.72,
+          "end": 29.18
+        }
+      ]
+    },
+    {
+      "text": "grades, computes their average, and",
+      "start": 29.18,
+      "end": 30.52,
+      "words": [
+        {
+          "w": "grades,",
+          "start": 29.18,
+          "end": 29.5
+        },
+        {
+          "w": "computes",
+          "start": 29.5,
+          "end": 29.82
+        },
+        {
+          "w": "their",
+          "start": 29.82,
+          "end": 30.08
+        },
+        {
+          "w": "average,",
+          "start": 30.08,
+          "end": 30.32
+        },
+        {
+          "w": "and",
+          "start": 30.32,
+          "end": 30.52
+        }
+      ]
+    },
+    {
+      "text": "prints a message. Finally we",
+      "start": 30.52,
+      "end": 32.44,
+      "words": [
+        {
+          "w": "prints",
+          "start": 30.52,
+          "end": 30.74
+        },
+        {
+          "w": "a",
+          "start": 30.74,
+          "end": 31.1
+        },
+        {
+          "w": "message.",
+          "start": 31.58,
+          "end": 31.82
+        },
+        {
+          "w": "Finally",
+          "start": 31.82,
+          "end": 32.06
+        },
+        {
+          "w": "we",
+          "start": 32.06,
+          "end": 32.44
+        }
+      ]
+    },
+    {
+      "text": "create a Student object named",
+      "start": 32.88,
+      "end": 34.58,
+      "words": [
+        {
+          "w": "create",
+          "start": 32.88,
+          "end": 33.02
+        },
+        {
+          "w": "a",
+          "start": 33.02,
+          "end": 33.22
+        },
+        {
+          "w": "Student",
+          "start": 33.22,
+          "end": 33.38
+        },
+        {
+          "w": "object",
+          "start": 33.38,
+          "end": 33.76
+        },
+        {
+          "w": "named",
+          "start": 34.32,
+          "end": 34.58
+        }
+      ]
+    },
+    {
+      "text": "Alice and ask it to",
+      "start": 34.84,
+      "end": 36.02,
+      "words": [
+        {
+          "w": "Alice",
+          "start": 34.84,
+          "end": 34.84
+        },
+        {
+          "w": "and",
+          "start": 34.84,
+          "end": 35.14
+        },
+        {
+          "w": "ask",
+          "start": 35.14,
+          "end": 35.4
+        },
+        {
+          "w": "it",
+          "start": 35.4,
+          "end": 35.62
+        },
+        {
+          "w": "to",
+          "start": 35.62,
+          "end": 36.02
+        }
+      ]
+    },
+    {
+      "text": "calculate the average of three",
+      "start": 36.02,
+      "end": 37.4,
+      "words": [
+        {
+          "w": "calculate",
+          "start": 36.02,
+          "end": 36.36
+        },
+        {
+          "w": "the",
+          "start": 36.36,
+          "end": 36.72
+        },
+        {
+          "w": "average",
+          "start": 36.72,
+          "end": 37.04
+        },
+        {
+          "w": "of",
+          "start": 37.04,
+          "end": 37.24
+        },
+        {
+          "w": "three",
+          "start": 37.24,
+          "end": 37.4
+        }
+      ]
+    },
+    {
+      "text": "marks. Running the program prints",
+      "start": 37.4,
+      "end": 38.62,
+      "words": [
+        {
+          "w": "marks.",
+          "start": 37.4,
+          "end": 37.54
+        },
+        {
+          "w": "Running",
+          "start": 37.54,
+          "end": 37.84
+        },
+        {
+          "w": "the",
+          "start": 37.84,
+          "end": 38.24
+        },
+        {
+          "w": "program",
+          "start": 38.24,
+          "end": 38.44
+        },
+        {
+          "w": "prints",
+          "start": 38.44,
+          "end": 38.62
+        }
+      ]
+    },
+    {
+      "text": "the average of the grades.",
+      "start": 38.62,
+      "end": 40.56,
+      "words": [
+        {
+          "w": "the",
+          "start": 38.62,
+          "end": 38.82
+        },
+        {
+          "w": "average",
+          "start": 38.82,
+          "end": 39.22
+        },
+        {
+          "w": "of",
+          "start": 39.76,
+          "end": 39.9
+        },
+        {
+          "w": "the",
+          "start": 39.9,
+          "end": 40.16
+        },
+        {
+          "w": "grades.",
+          "start": 40.16,
+          "end": 40.56
+        }
+      ]
+    },
+    {
+      "text": "A class bundles data and",
+      "start": 40.56,
+      "end": 41.86,
+      "words": [
+        {
+          "w": "A",
+          "start": 40.56,
+          "end": 40.92
+        },
+        {
+          "w": "class",
+          "start": 40.92,
+          "end": 41.26
+        },
+        {
+          "w": "bundles",
+          "start": 41.26,
+          "end": 41.5
+        },
+        {
+          "w": "data",
+          "start": 41.5,
+          "end": 41.78
+        },
+        {
+          "w": "and",
+          "start": 41.78,
+          "end": 41.86
+        }
+      ]
+    },
+    {
+      "text": "behavior for many objects. Now",
+      "start": 41.86,
+      "end": 43.9,
+      "words": [
+        {
+          "w": "behavior",
+          "start": 41.86,
+          "end": 42.24
+        },
+        {
+          "w": "for",
+          "start": 42.82,
+          "end": 42.88
+        },
+        {
+          "w": "many",
+          "start": 42.88,
+          "end": 43.12
+        },
+        {
+          "w": "objects.",
+          "start": 43.12,
+          "end": 43.54
+        },
+        {
+          "w": "Now",
+          "start": 43.54,
+          "end": 43.9
+        }
+      ]
+    },
+    {
+      "text": "try creating another class called",
+      "start": 43.9,
+      "end": 45.56,
+      "words": [
+        {
+          "w": "try",
+          "start": 43.9,
+          "end": 44.24
+        },
+        {
+          "w": "creating",
+          "start": 44.24,
+          "end": 44.56
+        },
+        {
+          "w": "another",
+          "start": 44.56,
+          "end": 44.94
+        },
+        {
+          "w": "class",
+          "start": 44.94,
+          "end": 45.18
+        },
+        {
+          "w": "called",
+          "start": 45.18,
+          "end": 45.56
+        }
+      ]
+    },
+    {
+      "text": "Account with a balance attribute.",
+      "start": 46.12,
+      "end": 47.88,
+      "words": [
+        {
+          "w": "Account",
+          "start": 46.12,
+          "end": 46.42
+        },
+        {
+          "w": "with",
+          "start": 46.42,
+          "end": 46.76
+        },
+        {
+          "w": "a",
+          "start": 46.76,
+          "end": 47.12
+        },
+        {
+          "w": "balance",
+          "start": 47.12,
+          "end": 47.48
+        },
+        {
+          "w": "attribute.",
+          "start": 47.48,
+          "end": 47.88
+        }
+      ]
+    }
+  ]
+}

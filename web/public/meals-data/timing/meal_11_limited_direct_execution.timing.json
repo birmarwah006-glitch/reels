@@ -1,0 +1,844 @@
+{
+  "meal_id": "meal_11_limited_direct_execution",
+  "audio": "meal_11_limited_direct_execution.mp3",
+  "duration": 44.424,
+  "alignment": "whisper",
+  "anchors": {
+    "What if your computer only stepped in when it really had to?": 0.0,
+    "When does the OS actually take control of the CPU?": 3.56,
+    "Limited direct execution means the CPU runs user code until the OS must step in.": 6.88,
+    "Here is a tiny program that simulates a process running until a timer fires.": 12.2,
+    "When the timer expires the OS switches to the next process.": 24.1,
+    "Remember: limited direct execution lets user code run freely until the OS needs to intervene.": 34.24,
+    "Add another timer event and see how the scheduler picks the next process.": 40.46
+  },
+  "captions": [
+    {
+      "text": "What if your computer only",
+      "start": 0.0,
+      "end": 1.52,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.3
+        },
+        {
+          "w": "if",
+          "start": 0.3,
+          "end": 0.5
+        },
+        {
+          "w": "your",
+          "start": 0.5,
+          "end": 0.68
+        },
+        {
+          "w": "computer",
+          "start": 0.68,
+          "end": 1.04
+        },
+        {
+          "w": "only",
+          "start": 1.04,
+          "end": 1.52
+        }
+      ]
+    },
+    {
+      "text": "stepped in when it really",
+      "start": 1.52,
+      "end": 2.7,
+      "words": [
+        {
+          "w": "stepped",
+          "start": 1.52,
+          "end": 1.72
+        },
+        {
+          "w": "in",
+          "start": 1.72,
+          "end": 2.04
+        },
+        {
+          "w": "when",
+          "start": 2.04,
+          "end": 2.24
+        },
+        {
+          "w": "it",
+          "start": 2.24,
+          "end": 2.44
+        },
+        {
+          "w": "really",
+          "start": 2.44,
+          "end": 2.7
+        }
+      ]
+    },
+    {
+      "text": "had to? When does the",
+      "start": 2.7,
+      "end": 4.12,
+      "words": [
+        {
+          "w": "had",
+          "start": 2.7,
+          "end": 2.9
+        },
+        {
+          "w": "to?",
+          "start": 2.9,
+          "end": 3.28
+        },
+        {
+          "w": "When",
+          "start": 3.56,
+          "end": 3.74
+        },
+        {
+          "w": "does",
+          "start": 3.74,
+          "end": 3.92
+        },
+        {
+          "w": "the",
+          "start": 3.92,
+          "end": 4.12
+        }
+      ]
+    },
+    {
+      "text": "OS actually take control of",
+      "start": 4.12,
+      "end": 5.84,
+      "words": [
+        {
+          "w": "OS",
+          "start": 4.12,
+          "end": 4.42
+        },
+        {
+          "w": "actually",
+          "start": 4.42,
+          "end": 4.86
+        },
+        {
+          "w": "take",
+          "start": 4.86,
+          "end": 5.12
+        },
+        {
+          "w": "control",
+          "start": 5.12,
+          "end": 5.58
+        },
+        {
+          "w": "of",
+          "start": 5.58,
+          "end": 5.84
+        }
+      ]
+    },
+    {
+      "text": "the CPU? Limited direct execution",
+      "start": 5.84,
+      "end": 8.12,
+      "words": [
+        {
+          "w": "the",
+          "start": 5.84,
+          "end": 6.02
+        },
+        {
+          "w": "CPU?",
+          "start": 6.02,
+          "end": 6.36
+        },
+        {
+          "w": "Limited",
+          "start": 6.88,
+          "end": 7.12
+        },
+        {
+          "w": "direct",
+          "start": 7.12,
+          "end": 7.62
+        },
+        {
+          "w": "execution",
+          "start": 7.62,
+          "end": 8.12
+        }
+      ]
+    },
+    {
+      "text": "means the CPU runs user",
+      "start": 8.12,
+      "end": 9.86,
+      "words": [
+        {
+          "w": "means",
+          "start": 8.12,
+          "end": 8.6
+        },
+        {
+          "w": "the",
+          "start": 8.6,
+          "end": 8.82
+        },
+        {
+          "w": "CPU",
+          "start": 8.82,
+          "end": 9.16
+        },
+        {
+          "w": "runs",
+          "start": 9.16,
+          "end": 9.5
+        },
+        {
+          "w": "user",
+          "start": 9.5,
+          "end": 9.86
+        }
+      ]
+    },
+    {
+      "text": "code until the OS must",
+      "start": 9.86,
+      "end": 11.28,
+      "words": [
+        {
+          "w": "code",
+          "start": 9.86,
+          "end": 10.24
+        },
+        {
+          "w": "until",
+          "start": 10.24,
+          "end": 10.56
+        },
+        {
+          "w": "the",
+          "start": 10.56,
+          "end": 10.82
+        },
+        {
+          "w": "OS",
+          "start": 10.82,
+          "end": 11.06
+        },
+        {
+          "w": "must",
+          "start": 11.06,
+          "end": 11.28
+        }
+      ]
+    },
+    {
+      "text": "step in. Here is a",
+      "start": 11.28,
+      "end": 12.72,
+      "words": [
+        {
+          "w": "step",
+          "start": 11.28,
+          "end": 11.52
+        },
+        {
+          "w": "in.",
+          "start": 11.52,
+          "end": 11.92
+        },
+        {
+          "w": "Here",
+          "start": 12.2,
+          "end": 12.34
+        },
+        {
+          "w": "is",
+          "start": 12.34,
+          "end": 12.58
+        },
+        {
+          "w": "a",
+          "start": 12.58,
+          "end": 12.72
+        }
+      ]
+    },
+    {
+      "text": "tiny program that simulates a",
+      "start": 12.72,
+      "end": 14.46,
+      "words": [
+        {
+          "w": "tiny",
+          "start": 12.72,
+          "end": 12.94
+        },
+        {
+          "w": "program",
+          "start": 12.94,
+          "end": 13.46
+        },
+        {
+          "w": "that",
+          "start": 13.46,
+          "end": 13.78
+        },
+        {
+          "w": "simulates",
+          "start": 13.78,
+          "end": 14.14
+        },
+        {
+          "w": "a",
+          "start": 14.14,
+          "end": 14.46
+        }
+      ]
+    },
+    {
+      "text": "process running until a timer",
+      "start": 14.46,
+      "end": 15.92,
+      "words": [
+        {
+          "w": "process",
+          "start": 14.46,
+          "end": 14.72
+        },
+        {
+          "w": "running",
+          "start": 14.72,
+          "end": 15.14
+        },
+        {
+          "w": "until",
+          "start": 15.14,
+          "end": 15.48
+        },
+        {
+          "w": "a",
+          "start": 15.48,
+          "end": 15.74
+        },
+        {
+          "w": "timer",
+          "start": 15.74,
+          "end": 15.92
+        }
+      ]
+    },
+    {
+      "text": "fires. The program loops through",
+      "start": 15.92,
+      "end": 17.88,
+      "words": [
+        {
+          "w": "fires.",
+          "start": 15.92,
+          "end": 16.4
+        },
+        {
+          "w": "The",
+          "start": 16.82,
+          "end": 16.98
+        },
+        {
+          "w": "program",
+          "start": 16.98,
+          "end": 17.32
+        },
+        {
+          "w": "loops",
+          "start": 17.32,
+          "end": 17.6
+        },
+        {
+          "w": "through",
+          "start": 17.6,
+          "end": 17.88
+        }
+      ]
+    },
+    {
+      "text": "a list of process names,",
+      "start": 17.88,
+      "end": 19.4,
+      "words": [
+        {
+          "w": "a",
+          "start": 17.88,
+          "end": 18.02
+        },
+        {
+          "w": "list",
+          "start": 18.02,
+          "end": 18.18
+        },
+        {
+          "w": "of",
+          "start": 18.18,
+          "end": 18.4
+        },
+        {
+          "w": "process",
+          "start": 18.4,
+          "end": 18.68
+        },
+        {
+          "w": "names,",
+          "start": 18.68,
+          "end": 19.4
+        }
+      ]
+    },
+    {
+      "text": "prints the current one, and",
+      "start": 19.78,
+      "end": 21.44,
+      "words": [
+        {
+          "w": "prints",
+          "start": 19.78,
+          "end": 19.9
+        },
+        {
+          "w": "the",
+          "start": 19.9,
+          "end": 20.14
+        },
+        {
+          "w": "current",
+          "start": 20.14,
+          "end": 20.36
+        },
+        {
+          "w": "one,",
+          "start": 20.36,
+          "end": 21.0
+        },
+        {
+          "w": "and",
+          "start": 21.24,
+          "end": 21.44
+        }
+      ]
+    },
+    {
+      "text": "after two iterations triggers a",
+      "start": 21.44,
+      "end": 23.1,
+      "words": [
+        {
+          "w": "after",
+          "start": 21.44,
+          "end": 21.66
+        },
+        {
+          "w": "two",
+          "start": 21.66,
+          "end": 21.9
+        },
+        {
+          "w": "iterations",
+          "start": 21.9,
+          "end": 22.3
+        },
+        {
+          "w": "triggers",
+          "start": 22.3,
+          "end": 22.8
+        },
+        {
+          "w": "a",
+          "start": 22.8,
+          "end": 23.1
+        }
+      ]
+    },
+    {
+      "text": "timer event. When the timer",
+      "start": 23.1,
+      "end": 24.72,
+      "words": [
+        {
+          "w": "timer",
+          "start": 23.1,
+          "end": 23.32
+        },
+        {
+          "w": "event.",
+          "start": 23.32,
+          "end": 23.7
+        },
+        {
+          "w": "When",
+          "start": 24.1,
+          "end": 24.28
+        },
+        {
+          "w": "the",
+          "start": 24.28,
+          "end": 24.4
+        },
+        {
+          "w": "timer",
+          "start": 24.4,
+          "end": 24.72
+        }
+      ]
+    },
+    {
+      "text": "expires the OS switches to",
+      "start": 24.72,
+      "end": 26.56,
+      "words": [
+        {
+          "w": "expires",
+          "start": 24.72,
+          "end": 25.32
+        },
+        {
+          "w": "the",
+          "start": 25.32,
+          "end": 25.64
+        },
+        {
+          "w": "OS",
+          "start": 25.64,
+          "end": 25.86
+        },
+        {
+          "w": "switches",
+          "start": 25.86,
+          "end": 26.24
+        },
+        {
+          "w": "to",
+          "start": 26.24,
+          "end": 26.56
+        }
+      ]
+    },
+    {
+      "text": "the next process. The flow",
+      "start": 26.56,
+      "end": 28.16,
+      "words": [
+        {
+          "w": "the",
+          "start": 26.56,
+          "end": 26.68
+        },
+        {
+          "w": "next",
+          "start": 26.68,
+          "end": 26.84
+        },
+        {
+          "w": "process.",
+          "start": 26.84,
+          "end": 27.36
+        },
+        {
+          "w": "The",
+          "start": 27.36,
+          "end": 27.9
+        },
+        {
+          "w": "flow",
+          "start": 27.9,
+          "end": 28.16
+        }
+      ]
+    },
+    {
+      "text": "diagram shows user code, then",
+      "start": 28.16,
+      "end": 30.2,
+      "words": [
+        {
+          "w": "diagram",
+          "start": 28.16,
+          "end": 28.62
+        },
+        {
+          "w": "shows",
+          "start": 28.62,
+          "end": 28.94
+        },
+        {
+          "w": "user",
+          "start": 28.94,
+          "end": 29.26
+        },
+        {
+          "w": "code,",
+          "start": 29.26,
+          "end": 29.7
+        },
+        {
+          "w": "then",
+          "start": 30.06,
+          "end": 30.2
+        }
+      ]
+    },
+    {
+      "text": "a timer interrupt, then the",
+      "start": 30.2,
+      "end": 31.94,
+      "words": [
+        {
+          "w": "a",
+          "start": 30.2,
+          "end": 30.3
+        },
+        {
+          "w": "timer",
+          "start": 30.3,
+          "end": 30.56
+        },
+        {
+          "w": "interrupt,",
+          "start": 30.56,
+          "end": 31.06
+        },
+        {
+          "w": "then",
+          "start": 31.64,
+          "end": 31.82
+        },
+        {
+          "w": "the",
+          "start": 31.82,
+          "end": 31.94
+        }
+      ]
+    },
+    {
+      "text": "OS scheduler, then the next",
+      "start": 31.94,
+      "end": 33.2,
+      "words": [
+        {
+          "w": "OS",
+          "start": 31.94,
+          "end": 32.18
+        },
+        {
+          "w": "scheduler,",
+          "start": 32.18,
+          "end": 32.68
+        },
+        {
+          "w": "then",
+          "start": 32.8,
+          "end": 32.88
+        },
+        {
+          "w": "the",
+          "start": 32.88,
+          "end": 32.98
+        },
+        {
+          "w": "next",
+          "start": 32.98,
+          "end": 33.2
+        }
+      ]
+    },
+    {
+      "text": "process. Remember: limited direct execution",
+      "start": 33.2,
+      "end": 36.56,
+      "words": [
+        {
+          "w": "process.",
+          "start": 33.2,
+          "end": 33.7
+        },
+        {
+          "w": "Remember:",
+          "start": 34.24,
+          "end": 34.62
+        },
+        {
+          "w": "limited",
+          "start": 35.42,
+          "end": 35.66
+        },
+        {
+          "w": "direct",
+          "start": 35.66,
+          "end": 36.08
+        },
+        {
+          "w": "execution",
+          "start": 36.08,
+          "end": 36.56
+        }
+      ]
+    },
+    {
+      "text": "lets user code run freely",
+      "start": 36.56,
+      "end": 38.3,
+      "words": [
+        {
+          "w": "lets",
+          "start": 36.56,
+          "end": 36.96
+        },
+        {
+          "w": "user",
+          "start": 36.96,
+          "end": 37.3
+        },
+        {
+          "w": "code",
+          "start": 37.3,
+          "end": 37.62
+        },
+        {
+          "w": "run",
+          "start": 37.62,
+          "end": 37.88
+        },
+        {
+          "w": "freely",
+          "start": 37.88,
+          "end": 38.3
+        }
+      ]
+    },
+    {
+      "text": "until the OS needs to",
+      "start": 38.3,
+      "end": 39.54,
+      "words": [
+        {
+          "w": "until",
+          "start": 38.3,
+          "end": 38.64
+        },
+        {
+          "w": "the",
+          "start": 38.64,
+          "end": 38.88
+        },
+        {
+          "w": "OS",
+          "start": 38.88,
+          "end": 39.1
+        },
+        {
+          "w": "needs",
+          "start": 39.1,
+          "end": 39.36
+        },
+        {
+          "w": "to",
+          "start": 39.36,
+          "end": 39.54
+        }
+      ]
+    },
+    {
+      "text": "intervene. Add another timer event",
+      "start": 39.54,
+      "end": 41.58,
+      "words": [
+        {
+          "w": "intervene.",
+          "start": 39.54,
+          "end": 39.94
+        },
+        {
+          "w": "Add",
+          "start": 40.46,
+          "end": 40.58
+        },
+        {
+          "w": "another",
+          "start": 40.58,
+          "end": 40.88
+        },
+        {
+          "w": "timer",
+          "start": 40.88,
+          "end": 41.2
+        },
+        {
+          "w": "event",
+          "start": 41.2,
+          "end": 41.58
+        }
+      ]
+    },
+    {
+      "text": "and see how the scheduler",
+      "start": 41.58,
+      "end": 42.94,
+      "words": [
+        {
+          "w": "and",
+          "start": 41.58,
+          "end": 41.9
+        },
+        {
+          "w": "see",
+          "start": 41.9,
+          "end": 42.12
+        },
+        {
+          "w": "how",
+          "start": 42.12,
+          "end": 42.32
+        },
+        {
+          "w": "the",
+          "start": 42.32,
+          "end": 42.5
+        },
+        {
+          "w": "scheduler",
+          "start": 42.5,
+          "end": 42.94
+        }
+      ]
+    },
+    {
+      "text": "picks the next process.",
+      "start": 42.94,
+      "end": 44.02,
+      "words": [
+        {
+          "w": "picks",
+          "start": 42.94,
+          "end": 43.16
+        },
+        {
+          "w": "the",
+          "start": 43.16,
+          "end": 43.4
+        },
+        {
+          "w": "next",
+          "start": 43.4,
+          "end": 43.58
+        },
+        {
+          "w": "process.",
+          "start": 43.58,
+          "end": 44.02
+        }
+      ]
+    }
+  ]
+}

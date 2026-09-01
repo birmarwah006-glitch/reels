@@ -1,0 +1,152 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_07_printing_text_with_printf",
+    "title": "Printing text with printf in C",
+    "concept": "c.project.overview",
+    "objective": "Use printf to display text on the console",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "python.basics.variables"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "printf",
+      "format specifier"
+    ],
+    "assumes": [
+      "build",
+      "run"
+    ],
+    "voice": {
+      "script": "What if you could make the computer talk? How do you show words on the screen? In C, the function called printf lets you send text to the console. A function is a reusable piece of code you can call by name. The word printf stands for print formatted, meaning it can insert values into a template. The template is a string that may contain format specifiers, like %d for a whole number. Here we call printf with a simple string: Hello, world! When the program runs, that text appears on the screen. That's all it does.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could make the computer talk?"
+        },
+        "narration_anchor": "What if you could make the computer talk?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you show words on the screen?"
+        },
+        "narration_anchor": "How do you show words on the screen?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "printf displays text",
+              "kind": "box"
+            }
+          ],
+          "edges": []
+        },
+        "narration_anchor": "The word printf stands for print formatted, meaning it can insert values into a template."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "c",
+          "filename": "main.c",
+          "code": "#include <stdio.h>\n\nint main() {\n    printf(\"Hello, world!\\n\");\n    return 0;\n}\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "#include <stdio.h>\n\nint main() {\n    printf(\"Hello, world!\\n\");\n    return 0;\n}",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "speed_cps": 26
+            }
+          ]
+        },
+        "narration_anchor": "Here we call printf with a simple string: Hello, world!"
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "a.out",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:33+00:00",
+            "stdout": "Hello, world!\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "When the program runs, that text appears on the screen.",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Use printf with a string to display text on the console"
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Change the message inside printf to greet yourself"
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Change the message inside printf to greet yourself",
+      "hint": "Replace Hello, world! with your own words"
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 7,
+      "total": 22,
+      "previous_id": "meal_06_compiling_and_running_a_c_program",
+      "next_id": "meal_08_understanding_statements_and_semicolons"
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_05_pick_a_random_computer_move",
+    "title": "Pick a random computer move",
+    "concept": "python.basics.strings",
+    "objective": "You can select a random element from the moves list",
+    "difficulty": "beginner",
+    "prerequisites": [
+      "python.basics.data_types"
+    ],
+    "next_concepts": [
+      "python.control.if",
+      "python.basics.print"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "random.choice"
+    ],
+    "assumes": [
+      "list",
+      "module"
+    ],
+    "voice": {
+      "script": "What if the computer could surprise you every round? How does the computer pick its move? We already have a list of possible moves. To let the computer choose, we use a tool called random.choice. Random is the module that gives us unpredictable behavior, and choice selects one item from a list at random. So we write a line that says computer_choice equals random dot choice of choices. This stores a random move in the variable computer_choice. Now the computer has its own hidden pick, ready for the showdown. Remember: random.choice picks one element from a list at random. Try changing the list or printing computer_choice to see different results.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if the computer could surprise you every round?"
+        },
+        "narration_anchor": "What if the computer could surprise you every round?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How does the computer pick its move?"
+        },
+        "narration_anchor": "How does the computer pick its move?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "list of moves",
+              "kind": "value"
+            },
+            {
+              "id": "b",
+              "label": "random.choice",
+              "kind": "box"
+            },
+            {
+              "id": "c",
+              "label": "computer choice",
+              "kind": "value"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "selects from"
+            },
+            {
+              "from": "b",
+              "to": "c",
+              "label": "stores in"
+            }
+          ]
+        }
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "python",
+          "filename": "main.py",
+          "code": "import random\n\nchoices = [\"rock\", \"paper\", \"scissors\"]\ncomputer_choice = random.choice(choices)\nprint(computer_choice)\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "import random\n\nchoices = [\"rock\", \"paper\", \"scissors\"]\ncomputer_choice = random.choice(choices)\nprint(computer_choice)",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "speed_cps": 26
+            },
+            {
+              "action": "highlight",
+              "text": "random.choice"
+            }
+          ]
+        },
+        "narration_anchor": "computer_choice equals random dot choice of choices"
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "python main.py",
+          "stdin": [],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:32+00:00",
+            "stdout": "paper\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "random.choice picks one element from a list at random"
+        },
+        "narration_anchor": "random.choice picks one element from a list at random.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Modify the list or print the computer_choice variable to see different outcomes"
+        },
+        "narration_anchor": "Try changing the list or printing computer_choice to see different results.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Modify the list or print the computer_choice variable to see different outcomes"
+    },
+    "series": {
+      "title": "Build a Rock\u2011Paper\u2011Scissors Game",
+      "artifact": "A command\u2011line rock\u2011paper\u2011scissors game you can run in the terminal",
+      "order": 5,
+      "total": 10,
+      "previous_id": "meal_04_read_the_player_s_choice",
+      "next_id": "meal_06_write_an_if_elif_else_chain"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_01_identify_the_main_function",
+    "title": "Identify the main function in C",
+    "concept": "python.project.overview",
+    "objective": "Recognize the int main() function that starts every C program",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.basics.variables",
+      "c.basics.scanf"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "main",
+      "function",
+      "int return type"
+    ],
+    "assumes": [],
+    "voice": {
+      "script": "What starts every C program? In C, the first thing the computer looks for is a function named int main. A function is a named block of instructions that can be run. The word int tells the computer that this function will give back a whole number when it finishes. That returned number is called the return value, and the operating system uses it to know if the program succeeded. So int main() is the entry point, the place where execution begins.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What starts every C program?"
+        },
+        "narration_anchor": "What starts every C program?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Program start",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "int main()",
+              "kind": "actor"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "calls"
+            }
+          ]
+        },
+        "narration_anchor": "int main()"
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "The int main() function is the entry point that returns an integer."
+        },
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Add a comment above int main() describing its purpose."
+        },
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Add a comment above int main() describing its purpose.",
+      "hint": "Mention that it is where the program begins."
+    },
+    "series": {
+      "title": "Add Two Numbers in C",
+      "artifact": "A compiled C program that reads two integers, adds them, and prints the sum",
+      "order": 1,
+      "total": 7,
+      "previous_id": null,
+      "next_id": "meal_02_declare_integer_variables"
+    }
+  }
+}

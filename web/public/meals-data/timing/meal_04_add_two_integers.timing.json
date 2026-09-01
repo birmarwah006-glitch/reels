@@ -1,0 +1,765 @@
+{
+  "meal_id": "meal_04_add_two_integers",
+  "audio": "meal_04_add_two_integers.mp3",
+  "duration": 40.296,
+  "alignment": "whisper",
+  "anchors": {
+    "What happens when you add two numbers in code?": 0.0,
+    "How do you store the sum of two integers?": 2.94,
+    "The addition operator, a plus sign, tells Python to calculate the total of those values.": 8.74,
+    "So we write a new variable called total and assign it the sum of the first two variables.": 14.4,
+    "When the program runs, it prints the total so you can see the answer.": 22.38,
+    "Remember: the plus sign adds two integers and gives a new integer.": 32.54,
+    "Now try changing the numbers and see a different sum.": 37.28
+  },
+  "captions": [
+    {
+      "text": "What happens when you add",
+      "start": 0.0,
+      "end": 1.4,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.3
+        },
+        {
+          "w": "happens",
+          "start": 0.3,
+          "end": 0.74
+        },
+        {
+          "w": "when",
+          "start": 0.74,
+          "end": 1.06
+        },
+        {
+          "w": "you",
+          "start": 1.06,
+          "end": 1.24
+        },
+        {
+          "w": "add",
+          "start": 1.24,
+          "end": 1.4
+        }
+      ]
+    },
+    {
+      "text": "two numbers in code? How",
+      "start": 1.4,
+      "end": 3.06,
+      "words": [
+        {
+          "w": "two",
+          "start": 1.4,
+          "end": 1.62
+        },
+        {
+          "w": "numbers",
+          "start": 1.62,
+          "end": 1.94
+        },
+        {
+          "w": "in",
+          "start": 1.94,
+          "end": 2.24
+        },
+        {
+          "w": "code?",
+          "start": 2.24,
+          "end": 2.5
+        },
+        {
+          "w": "How",
+          "start": 2.94,
+          "end": 3.06
+        }
+      ]
+    },
+    {
+      "text": "do you store the sum",
+      "start": 3.06,
+      "end": 4.06,
+      "words": [
+        {
+          "w": "do",
+          "start": 3.06,
+          "end": 3.3
+        },
+        {
+          "w": "you",
+          "start": 3.3,
+          "end": 3.36
+        },
+        {
+          "w": "store",
+          "start": 3.36,
+          "end": 3.66
+        },
+        {
+          "w": "the",
+          "start": 3.66,
+          "end": 3.88
+        },
+        {
+          "w": "sum",
+          "start": 3.88,
+          "end": 4.06
+        }
+      ]
+    },
+    {
+      "text": "of two integers? You already",
+      "start": 4.06,
+      "end": 5.78,
+      "words": [
+        {
+          "w": "of",
+          "start": 4.06,
+          "end": 4.18
+        },
+        {
+          "w": "two",
+          "start": 4.18,
+          "end": 4.46
+        },
+        {
+          "w": "integers?",
+          "start": 4.46,
+          "end": 4.76
+        },
+        {
+          "w": "You",
+          "start": 5.46,
+          "end": 5.5
+        },
+        {
+          "w": "already",
+          "start": 5.5,
+          "end": 5.78
+        }
+      ]
+    },
+    {
+      "text": "have two integer variables holding",
+      "start": 5.78,
+      "end": 7.76,
+      "words": [
+        {
+          "w": "have",
+          "start": 5.78,
+          "end": 6.14
+        },
+        {
+          "w": "two",
+          "start": 6.14,
+          "end": 6.48
+        },
+        {
+          "w": "integer",
+          "start": 6.48,
+          "end": 6.8
+        },
+        {
+          "w": "variables",
+          "start": 6.8,
+          "end": 7.34
+        },
+        {
+          "w": "holding",
+          "start": 7.34,
+          "end": 7.76
+        }
+      ]
+    },
+    {
+      "text": "values. The addition operator, a",
+      "start": 7.76,
+      "end": 10.2,
+      "words": [
+        {
+          "w": "values.",
+          "start": 7.76,
+          "end": 8.26
+        },
+        {
+          "w": "The",
+          "start": 8.74,
+          "end": 8.8
+        },
+        {
+          "w": "addition",
+          "start": 8.8,
+          "end": 9.1
+        },
+        {
+          "w": "operator,",
+          "start": 9.1,
+          "end": 9.58
+        },
+        {
+          "w": "a",
+          "start": 10.08,
+          "end": 10.2
+        }
+      ]
+    },
+    {
+      "text": "plus sign, tells Python to",
+      "start": 10.2,
+      "end": 12.22,
+      "words": [
+        {
+          "w": "plus",
+          "start": 10.2,
+          "end": 10.4
+        },
+        {
+          "w": "sign,",
+          "start": 10.4,
+          "end": 11.02
+        },
+        {
+          "w": "tells",
+          "start": 11.34,
+          "end": 11.5
+        },
+        {
+          "w": "Python",
+          "start": 11.5,
+          "end": 11.92
+        },
+        {
+          "w": "to",
+          "start": 11.92,
+          "end": 12.22
+        }
+      ]
+    },
+    {
+      "text": "calculate the total of those",
+      "start": 12.22,
+      "end": 13.46,
+      "words": [
+        {
+          "w": "calculate",
+          "start": 12.22,
+          "end": 12.48
+        },
+        {
+          "w": "the",
+          "start": 12.48,
+          "end": 12.8
+        },
+        {
+          "w": "total",
+          "start": 12.8,
+          "end": 13.06
+        },
+        {
+          "w": "of",
+          "start": 13.06,
+          "end": 13.22
+        },
+        {
+          "w": "those",
+          "start": 13.22,
+          "end": 13.46
+        }
+      ]
+    },
+    {
+      "text": "values. So we write a",
+      "start": 13.46,
+      "end": 15.04,
+      "words": [
+        {
+          "w": "values.",
+          "start": 13.46,
+          "end": 13.86
+        },
+        {
+          "w": "So",
+          "start": 14.4,
+          "end": 14.46
+        },
+        {
+          "w": "we",
+          "start": 14.46,
+          "end": 14.62
+        },
+        {
+          "w": "write",
+          "start": 14.62,
+          "end": 14.84
+        },
+        {
+          "w": "a",
+          "start": 14.84,
+          "end": 15.04
+        }
+      ]
+    },
+    {
+      "text": "new variable called total and",
+      "start": 15.04,
+      "end": 16.6,
+      "words": [
+        {
+          "w": "new",
+          "start": 15.04,
+          "end": 15.2
+        },
+        {
+          "w": "variable",
+          "start": 15.2,
+          "end": 15.54
+        },
+        {
+          "w": "called",
+          "start": 15.54,
+          "end": 15.86
+        },
+        {
+          "w": "total",
+          "start": 15.86,
+          "end": 16.24
+        },
+        {
+          "w": "and",
+          "start": 16.24,
+          "end": 16.6
+        }
+      ]
+    },
+    {
+      "text": "assign it the sum of",
+      "start": 16.6,
+      "end": 17.52,
+      "words": [
+        {
+          "w": "assign",
+          "start": 16.6,
+          "end": 16.88
+        },
+        {
+          "w": "it",
+          "start": 16.88,
+          "end": 17.12
+        },
+        {
+          "w": "the",
+          "start": 17.12,
+          "end": 17.24
+        },
+        {
+          "w": "sum",
+          "start": 17.24,
+          "end": 17.4
+        },
+        {
+          "w": "of",
+          "start": 17.4,
+          "end": 17.52
+        }
+      ]
+    },
+    {
+      "text": "the first two variables. This",
+      "start": 17.52,
+      "end": 19.2,
+      "words": [
+        {
+          "w": "the",
+          "start": 17.52,
+          "end": 17.58
+        },
+        {
+          "w": "first",
+          "start": 17.58,
+          "end": 17.82
+        },
+        {
+          "w": "two",
+          "start": 17.82,
+          "end": 18.02
+        },
+        {
+          "w": "variables.",
+          "start": 18.02,
+          "end": 18.48
+        },
+        {
+          "w": "This",
+          "start": 19.0,
+          "end": 19.2
+        }
+      ]
+    },
+    {
+      "text": "line performs the addition and",
+      "start": 19.2,
+      "end": 21.0,
+      "words": [
+        {
+          "w": "line",
+          "start": 19.2,
+          "end": 19.52
+        },
+        {
+          "w": "performs",
+          "start": 19.52,
+          "end": 19.94
+        },
+        {
+          "w": "the",
+          "start": 19.94,
+          "end": 20.24
+        },
+        {
+          "w": "addition",
+          "start": 20.24,
+          "end": 20.58
+        },
+        {
+          "w": "and",
+          "start": 20.58,
+          "end": 21.0
+        }
+      ]
+    },
+    {
+      "text": "stores the result. When the",
+      "start": 21.0,
+      "end": 22.74,
+      "words": [
+        {
+          "w": "stores",
+          "start": 21.0,
+          "end": 21.28
+        },
+        {
+          "w": "the",
+          "start": 21.28,
+          "end": 21.52
+        },
+        {
+          "w": "result.",
+          "start": 21.52,
+          "end": 21.9
+        },
+        {
+          "w": "When",
+          "start": 22.38,
+          "end": 22.52
+        },
+        {
+          "w": "the",
+          "start": 22.52,
+          "end": 22.74
+        }
+      ]
+    },
+    {
+      "text": "program runs, it prints the",
+      "start": 22.74,
+      "end": 24.24,
+      "words": [
+        {
+          "w": "program",
+          "start": 22.74,
+          "end": 23.02
+        },
+        {
+          "w": "runs,",
+          "start": 23.02,
+          "end": 23.44
+        },
+        {
+          "w": "it",
+          "start": 23.54,
+          "end": 23.76
+        },
+        {
+          "w": "prints",
+          "start": 23.76,
+          "end": 24.0
+        },
+        {
+          "w": "the",
+          "start": 24.0,
+          "end": 24.24
+        }
+      ]
+    },
+    {
+      "text": "total so you can see",
+      "start": 24.24,
+      "end": 25.2,
+      "words": [
+        {
+          "w": "total",
+          "start": 24.24,
+          "end": 24.5
+        },
+        {
+          "w": "so",
+          "start": 24.5,
+          "end": 24.8
+        },
+        {
+          "w": "you",
+          "start": 24.8,
+          "end": 24.86
+        },
+        {
+          "w": "can",
+          "start": 24.86,
+          "end": 25.06
+        },
+        {
+          "w": "see",
+          "start": 25.06,
+          "end": 25.2
+        }
+      ]
+    },
+    {
+      "text": "the answer. The flow looks",
+      "start": 25.2,
+      "end": 26.8,
+      "words": [
+        {
+          "w": "the",
+          "start": 25.2,
+          "end": 25.4
+        },
+        {
+          "w": "answer.",
+          "start": 25.4,
+          "end": 25.74
+        },
+        {
+          "w": "The",
+          "start": 26.16,
+          "end": 26.34
+        },
+        {
+          "w": "flow",
+          "start": 26.34,
+          "end": 26.54
+        },
+        {
+          "w": "looks",
+          "start": 26.54,
+          "end": 26.8
+        }
+      ]
+    },
+    {
+      "text": "like: start, read numbers, add",
+      "start": 26.8,
+      "end": 30.0,
+      "words": [
+        {
+          "w": "like:",
+          "start": 26.8,
+          "end": 27.44
+        },
+        {
+          "w": "start,",
+          "start": 27.68,
+          "end": 27.94
+        },
+        {
+          "w": "read",
+          "start": 28.58,
+          "end": 28.74
+        },
+        {
+          "w": "numbers,",
+          "start": 28.74,
+          "end": 29.16
+        },
+        {
+          "w": "add",
+          "start": 29.16,
+          "end": 30.0
+        }
+      ]
+    },
+    {
+      "text": "them, display result, end. Remember:",
+      "start": 30.0,
+      "end": 33.22,
+      "words": [
+        {
+          "w": "them,",
+          "start": 30.0,
+          "end": 30.44
+        },
+        {
+          "w": "display",
+          "start": 30.7,
+          "end": 31.0
+        },
+        {
+          "w": "result,",
+          "start": 31.0,
+          "end": 31.44
+        },
+        {
+          "w": "end.",
+          "start": 32.18,
+          "end": 32.54
+        },
+        {
+          "w": "Remember:",
+          "start": 32.54,
+          "end": 33.22
+        }
+      ]
+    },
+    {
+      "text": "the plus sign adds two",
+      "start": 33.92,
+      "end": 35.16,
+      "words": [
+        {
+          "w": "the",
+          "start": 33.92,
+          "end": 34.04
+        },
+        {
+          "w": "plus",
+          "start": 34.04,
+          "end": 34.3
+        },
+        {
+          "w": "sign",
+          "start": 34.3,
+          "end": 34.64
+        },
+        {
+          "w": "adds",
+          "start": 34.64,
+          "end": 34.9
+        },
+        {
+          "w": "two",
+          "start": 34.9,
+          "end": 35.16
+        }
+      ]
+    },
+    {
+      "text": "integers and gives a new",
+      "start": 35.16,
+      "end": 36.38,
+      "words": [
+        {
+          "w": "integers",
+          "start": 35.16,
+          "end": 35.46
+        },
+        {
+          "w": "and",
+          "start": 35.46,
+          "end": 35.86
+        },
+        {
+          "w": "gives",
+          "start": 35.86,
+          "end": 36.04
+        },
+        {
+          "w": "a",
+          "start": 36.04,
+          "end": 36.26
+        },
+        {
+          "w": "new",
+          "start": 36.26,
+          "end": 36.38
+        }
+      ]
+    },
+    {
+      "text": "integer. Now try changing the",
+      "start": 36.38,
+      "end": 38.44,
+      "words": [
+        {
+          "w": "integer.",
+          "start": 36.38,
+          "end": 36.74
+        },
+        {
+          "w": "Now",
+          "start": 37.28,
+          "end": 37.54
+        },
+        {
+          "w": "try",
+          "start": 37.54,
+          "end": 37.82
+        },
+        {
+          "w": "changing",
+          "start": 37.82,
+          "end": 38.16
+        },
+        {
+          "w": "the",
+          "start": 38.16,
+          "end": 38.44
+        }
+      ]
+    },
+    {
+      "text": "numbers and see a different",
+      "start": 38.44,
+      "end": 39.66,
+      "words": [
+        {
+          "w": "numbers",
+          "start": 38.44,
+          "end": 38.72
+        },
+        {
+          "w": "and",
+          "start": 38.72,
+          "end": 39.04
+        },
+        {
+          "w": "see",
+          "start": 39.04,
+          "end": 39.24
+        },
+        {
+          "w": "a",
+          "start": 39.24,
+          "end": 39.36
+        },
+        {
+          "w": "different",
+          "start": 39.36,
+          "end": 39.66
+        }
+      ]
+    },
+    {
+      "text": "sum.",
+      "start": 39.66,
+      "end": 39.98,
+      "words": [
+        {
+          "w": "sum.",
+          "start": 39.66,
+          "end": 39.98
+        }
+      ]
+    }
+  ]
+}

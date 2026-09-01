@@ -1,0 +1,541 @@
+{
+  "meal_id": "meal_01_identify_the_main_function",
+  "audio": "meal_01_identify_the_main_function.mp3",
+  "duration": 25.968,
+  "alignment": "whisper",
+  "anchors": {
+    "What starts every C program?": 0.0,
+    "int main()": 21.5
+  },
+  "captions": [
+    {
+      "text": "What starts every C program?",
+      "start": 0.0,
+      "end": 1.78,
+      "words": [
+        {
+          "w": "What",
+          "start": 0.0,
+          "end": 0.34
+        },
+        {
+          "w": "starts",
+          "start": 0.34,
+          "end": 0.68
+        },
+        {
+          "w": "every",
+          "start": 0.68,
+          "end": 1.06
+        },
+        {
+          "w": "C",
+          "start": 1.06,
+          "end": 1.34
+        },
+        {
+          "w": "program?",
+          "start": 1.34,
+          "end": 1.78
+        }
+      ]
+    },
+    {
+      "text": "In C, the first thing",
+      "start": 2.38,
+      "end": 3.38,
+      "words": [
+        {
+          "w": "In",
+          "start": 2.38,
+          "end": 2.46
+        },
+        {
+          "w": "C,",
+          "start": 2.46,
+          "end": 2.64
+        },
+        {
+          "w": "the",
+          "start": 2.84,
+          "end": 2.94
+        },
+        {
+          "w": "first",
+          "start": 2.94,
+          "end": 3.16
+        },
+        {
+          "w": "thing",
+          "start": 3.16,
+          "end": 3.38
+        }
+      ]
+    },
+    {
+      "text": "the computer looks for is",
+      "start": 3.38,
+      "end": 4.6,
+      "words": [
+        {
+          "w": "the",
+          "start": 3.38,
+          "end": 3.56
+        },
+        {
+          "w": "computer",
+          "start": 3.56,
+          "end": 3.78
+        },
+        {
+          "w": "looks",
+          "start": 3.78,
+          "end": 4.08
+        },
+        {
+          "w": "for",
+          "start": 4.08,
+          "end": 4.4
+        },
+        {
+          "w": "is",
+          "start": 4.4,
+          "end": 4.6
+        }
+      ]
+    },
+    {
+      "text": "a function named int main.",
+      "start": 4.6,
+      "end": 5.88,
+      "words": [
+        {
+          "w": "a",
+          "start": 4.6,
+          "end": 4.84
+        },
+        {
+          "w": "function",
+          "start": 4.84,
+          "end": 5.04
+        },
+        {
+          "w": "named",
+          "start": 5.04,
+          "end": 5.36
+        },
+        {
+          "w": "int",
+          "start": 5.36,
+          "end": 5.6
+        },
+        {
+          "w": "main.",
+          "start": 5.6,
+          "end": 5.88
+        }
+      ]
+    },
+    {
+      "text": "A function is a named",
+      "start": 6.42,
+      "end": 7.5,
+      "words": [
+        {
+          "w": "A",
+          "start": 6.42,
+          "end": 6.48
+        },
+        {
+          "w": "function",
+          "start": 6.48,
+          "end": 6.82
+        },
+        {
+          "w": "is",
+          "start": 6.82,
+          "end": 7.12
+        },
+        {
+          "w": "a",
+          "start": 7.12,
+          "end": 7.26
+        },
+        {
+          "w": "named",
+          "start": 7.26,
+          "end": 7.5
+        }
+      ]
+    },
+    {
+      "text": "block of instructions that can",
+      "start": 7.5,
+      "end": 9.2,
+      "words": [
+        {
+          "w": "block",
+          "start": 7.5,
+          "end": 7.9
+        },
+        {
+          "w": "of",
+          "start": 7.9,
+          "end": 8.2
+        },
+        {
+          "w": "instructions",
+          "start": 8.2,
+          "end": 8.68
+        },
+        {
+          "w": "that",
+          "start": 8.68,
+          "end": 9.02
+        },
+        {
+          "w": "can",
+          "start": 9.02,
+          "end": 9.2
+        }
+      ]
+    },
+    {
+      "text": "be run. The word int",
+      "start": 9.2,
+      "end": 10.8,
+      "words": [
+        {
+          "w": "be",
+          "start": 9.2,
+          "end": 9.4
+        },
+        {
+          "w": "run.",
+          "start": 9.4,
+          "end": 9.64
+        },
+        {
+          "w": "The",
+          "start": 10.04,
+          "end": 10.22
+        },
+        {
+          "w": "word",
+          "start": 10.22,
+          "end": 10.42
+        },
+        {
+          "w": "int",
+          "start": 10.42,
+          "end": 10.8
+        }
+      ]
+    },
+    {
+      "text": "tells the computer that this",
+      "start": 10.8,
+      "end": 12.26,
+      "words": [
+        {
+          "w": "tells",
+          "start": 10.8,
+          "end": 11.12
+        },
+        {
+          "w": "the",
+          "start": 11.12,
+          "end": 11.46
+        },
+        {
+          "w": "computer",
+          "start": 11.46,
+          "end": 11.72
+        },
+        {
+          "w": "that",
+          "start": 11.72,
+          "end": 11.96
+        },
+        {
+          "w": "this",
+          "start": 11.96,
+          "end": 12.26
+        }
+      ]
+    },
+    {
+      "text": "function will give back a",
+      "start": 12.26,
+      "end": 13.3,
+      "words": [
+        {
+          "w": "function",
+          "start": 12.26,
+          "end": 12.5
+        },
+        {
+          "w": "will",
+          "start": 12.5,
+          "end": 12.68
+        },
+        {
+          "w": "give",
+          "start": 12.68,
+          "end": 12.98
+        },
+        {
+          "w": "back",
+          "start": 12.98,
+          "end": 13.14
+        },
+        {
+          "w": "a",
+          "start": 13.14,
+          "end": 13.3
+        }
+      ]
+    },
+    {
+      "text": "whole number when it finishes.",
+      "start": 13.3,
+      "end": 15.1,
+      "words": [
+        {
+          "w": "whole",
+          "start": 13.3,
+          "end": 13.6
+        },
+        {
+          "w": "number",
+          "start": 13.6,
+          "end": 13.88
+        },
+        {
+          "w": "when",
+          "start": 13.88,
+          "end": 14.0
+        },
+        {
+          "w": "it",
+          "start": 14.0,
+          "end": 14.42
+        },
+        {
+          "w": "finishes.",
+          "start": 14.94,
+          "end": 15.1
+        }
+      ]
+    },
+    {
+      "text": "That returned number is called",
+      "start": 15.1,
+      "end": 16.34,
+      "words": [
+        {
+          "w": "That",
+          "start": 15.1,
+          "end": 15.38
+        },
+        {
+          "w": "returned",
+          "start": 15.38,
+          "end": 15.68
+        },
+        {
+          "w": "number",
+          "start": 15.68,
+          "end": 15.96
+        },
+        {
+          "w": "is",
+          "start": 15.96,
+          "end": 16.14
+        },
+        {
+          "w": "called",
+          "start": 16.14,
+          "end": 16.34
+        }
+      ]
+    },
+    {
+      "text": "the return value, and the",
+      "start": 16.34,
+      "end": 18.1,
+      "words": [
+        {
+          "w": "the",
+          "start": 16.34,
+          "end": 16.58
+        },
+        {
+          "w": "return",
+          "start": 16.58,
+          "end": 17.0
+        },
+        {
+          "w": "value,",
+          "start": 17.56,
+          "end": 17.7
+        },
+        {
+          "w": "and",
+          "start": 17.7,
+          "end": 17.92
+        },
+        {
+          "w": "the",
+          "start": 17.92,
+          "end": 18.1
+        }
+      ]
+    },
+    {
+      "text": "operating system uses it to",
+      "start": 18.1,
+      "end": 19.5,
+      "words": [
+        {
+          "w": "operating",
+          "start": 18.1,
+          "end": 18.58
+        },
+        {
+          "w": "system",
+          "start": 18.58,
+          "end": 18.88
+        },
+        {
+          "w": "uses",
+          "start": 18.88,
+          "end": 19.12
+        },
+        {
+          "w": "it",
+          "start": 19.12,
+          "end": 19.22
+        },
+        {
+          "w": "to",
+          "start": 19.22,
+          "end": 19.5
+        }
+      ]
+    },
+    {
+      "text": "know if the program succeeded.",
+      "start": 19.5,
+      "end": 21.36,
+      "words": [
+        {
+          "w": "know",
+          "start": 19.5,
+          "end": 19.68
+        },
+        {
+          "w": "if",
+          "start": 19.68,
+          "end": 19.9
+        },
+        {
+          "w": "the",
+          "start": 19.9,
+          "end": 20.12
+        },
+        {
+          "w": "program",
+          "start": 20.12,
+          "end": 20.58
+        },
+        {
+          "w": "succeeded.",
+          "start": 21.16,
+          "end": 21.36
+        }
+      ]
+    },
+    {
+      "text": "So int main() is the",
+      "start": 21.36,
+      "end": 22.94,
+      "words": [
+        {
+          "w": "So",
+          "start": 21.36,
+          "end": 21.5
+        },
+        {
+          "w": "int",
+          "start": 21.5,
+          "end": 21.88
+        },
+        {
+          "w": "main()",
+          "start": 21.88,
+          "end": 22.48
+        },
+        {
+          "w": "is",
+          "start": 22.48,
+          "end": 22.74
+        },
+        {
+          "w": "the",
+          "start": 22.74,
+          "end": 22.94
+        }
+      ]
+    },
+    {
+      "text": "entry point, the place where",
+      "start": 22.94,
+      "end": 25.02,
+      "words": [
+        {
+          "w": "entry",
+          "start": 22.94,
+          "end": 23.4
+        },
+        {
+          "w": "point,",
+          "start": 23.82,
+          "end": 23.98
+        },
+        {
+          "w": "the",
+          "start": 23.98,
+          "end": 24.22
+        },
+        {
+          "w": "place",
+          "start": 24.22,
+          "end": 24.5
+        },
+        {
+          "w": "where",
+          "start": 24.5,
+          "end": 25.02
+        }
+      ]
+    },
+    {
+      "text": "execution begins.",
+      "start": 25.02,
+      "end": 25.5,
+      "words": [
+        {
+          "w": "execution",
+          "start": 25.02,
+          "end": 25.5
+        },
+        {
+          "w": "begins.",
+          "start": 25.02,
+          "end": 25.5
+        }
+      ]
+    }
+  ]
+}

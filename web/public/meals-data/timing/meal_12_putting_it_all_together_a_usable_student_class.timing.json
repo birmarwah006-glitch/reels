@@ -1,0 +1,1030 @@
+{
+  "meal_id": "meal_12_putting_it_all_together_a_usable_student_class",
+  "audio": "meal_12_putting_it_all_together_a_usable_student_class.mp3",
+  "duration": 58.896,
+  "alignment": "whisper",
+  "anchors": {
+    "Can a single class handle greetings, data, and calculations?": 0.0,
+    "First, a class groups related behavior and data under one name.": 5.82,
+    "Now we create two Student objects with their names and marks.": 34.5,
+    "The output shows the welcome messages, each student's average, and the generic hello.": 42.62,
+    "A class can combine shared data, instance data, calculations, and static helpers in one place.": 47.74,
+    "Add a method that prints the student's name and their highest mark.": 54.02
+  },
+  "captions": [
+    {
+      "text": "Can a single class handle",
+      "start": 0.0,
+      "end": 1.36,
+      "words": [
+        {
+          "w": "Can",
+          "start": 0.0,
+          "end": 0.26
+        },
+        {
+          "w": "a",
+          "start": 0.26,
+          "end": 0.44
+        },
+        {
+          "w": "single",
+          "start": 0.44,
+          "end": 0.7
+        },
+        {
+          "w": "class",
+          "start": 0.7,
+          "end": 1.06
+        },
+        {
+          "w": "handle",
+          "start": 1.06,
+          "end": 1.36
+        }
+      ]
+    },
+    {
+      "text": "greetings, data, and calculations? That's",
+      "start": 1.36,
+      "end": 4.58,
+      "words": [
+        {
+          "w": "greetings,",
+          "start": 1.36,
+          "end": 1.78
+        },
+        {
+          "w": "data,",
+          "start": 2.36,
+          "end": 2.68
+        },
+        {
+          "w": "and",
+          "start": 3.04,
+          "end": 3.16
+        },
+        {
+          "w": "calculations?",
+          "start": 3.16,
+          "end": 3.6
+        },
+        {
+          "w": "That's",
+          "start": 4.3,
+          "end": 4.58
+        }
+      ]
+    },
+    {
+      "text": "what we'll build. First, a",
+      "start": 4.58,
+      "end": 6.5,
+      "words": [
+        {
+          "w": "what",
+          "start": 4.58,
+          "end": 4.7
+        },
+        {
+          "w": "we'll",
+          "start": 4.7,
+          "end": 4.94
+        },
+        {
+          "w": "build.",
+          "start": 4.94,
+          "end": 5.26
+        },
+        {
+          "w": "First,",
+          "start": 5.82,
+          "end": 6.14
+        },
+        {
+          "w": "a",
+          "start": 6.34,
+          "end": 6.5
+        }
+      ]
+    },
+    {
+      "text": "class groups related behavior and",
+      "start": 6.5,
+      "end": 8.18,
+      "words": [
+        {
+          "w": "class",
+          "start": 6.5,
+          "end": 6.74
+        },
+        {
+          "w": "groups",
+          "start": 6.74,
+          "end": 7.08
+        },
+        {
+          "w": "related",
+          "start": 7.08,
+          "end": 7.46
+        },
+        {
+          "w": "behavior",
+          "start": 7.46,
+          "end": 7.92
+        },
+        {
+          "w": "and",
+          "start": 7.92,
+          "end": 8.18
+        }
+      ]
+    },
+    {
+      "text": "data under one name. A",
+      "start": 8.18,
+      "end": 9.88,
+      "words": [
+        {
+          "w": "data",
+          "start": 8.18,
+          "end": 8.48
+        },
+        {
+          "w": "under",
+          "start": 8.48,
+          "end": 8.82
+        },
+        {
+          "w": "one",
+          "start": 8.82,
+          "end": 9.0
+        },
+        {
+          "w": "name.",
+          "start": 9.0,
+          "end": 9.32
+        },
+        {
+          "w": "A",
+          "start": 9.84,
+          "end": 9.88
+        }
+      ]
+    },
+    {
+      "text": "class attribute stores information shared",
+      "start": 9.88,
+      "end": 11.96,
+      "words": [
+        {
+          "w": "class",
+          "start": 9.88,
+          "end": 10.2
+        },
+        {
+          "w": "attribute",
+          "start": 10.2,
+          "end": 10.58
+        },
+        {
+          "w": "stores",
+          "start": 10.58,
+          "end": 11.0
+        },
+        {
+          "w": "information",
+          "start": 11.0,
+          "end": 11.54
+        },
+        {
+          "w": "shared",
+          "start": 11.54,
+          "end": 11.96
+        }
+      ]
+    },
+    {
+      "text": "by every student, like the",
+      "start": 11.96,
+      "end": 13.8,
+      "words": [
+        {
+          "w": "by",
+          "start": 11.96,
+          "end": 12.2
+        },
+        {
+          "w": "every",
+          "start": 12.2,
+          "end": 12.54
+        },
+        {
+          "w": "student,",
+          "start": 12.54,
+          "end": 12.9
+        },
+        {
+          "w": "like",
+          "start": 13.46,
+          "end": 13.58
+        },
+        {
+          "w": "the",
+          "start": 13.58,
+          "end": 13.8
+        }
+      ]
+    },
+    {
+      "text": "college name. The __init__ method",
+      "start": 13.8,
+      "end": 15.96,
+      "words": [
+        {
+          "w": "college",
+          "start": 13.8,
+          "end": 14.04
+        },
+        {
+          "w": "name.",
+          "start": 14.04,
+          "end": 14.38
+        },
+        {
+          "w": "The",
+          "start": 14.74,
+          "end": 14.96
+        },
+        {
+          "w": "__init__",
+          "start": 14.96,
+          "end": 15.28
+        },
+        {
+          "w": "method",
+          "start": 15.28,
+          "end": 15.96
+        }
+      ]
+    },
+    {
+      "text": "runs when we create a",
+      "start": 15.96,
+      "end": 17.9,
+      "words": [
+        {
+          "w": "runs",
+          "start": 15.96,
+          "end": 16.22
+        },
+        {
+          "w": "when",
+          "start": 16.22,
+          "end": 16.8
+        },
+        {
+          "w": "we",
+          "start": 16.8,
+          "end": 17.34
+        },
+        {
+          "w": "create",
+          "start": 17.34,
+          "end": 17.58
+        },
+        {
+          "w": "a",
+          "start": 17.58,
+          "end": 17.9
+        }
+      ]
+    },
+    {
+      "text": "new student, storing the given",
+      "start": 17.9,
+      "end": 18.96,
+      "words": [
+        {
+          "w": "new",
+          "start": 17.9,
+          "end": 18.16
+        },
+        {
+          "w": "student,",
+          "start": 18.16,
+          "end": 18.32
+        },
+        {
+          "w": "storing",
+          "start": 18.32,
+          "end": 18.6
+        },
+        {
+          "w": "the",
+          "start": 18.6,
+          "end": 18.8
+        },
+        {
+          "w": "given",
+          "start": 18.8,
+          "end": 18.96
+        }
+      ]
+    },
+    {
+      "text": "name and list of marks,",
+      "start": 18.96,
+      "end": 20.9,
+      "words": [
+        {
+          "w": "name",
+          "start": 18.96,
+          "end": 19.52
+        },
+        {
+          "w": "and",
+          "start": 20.04,
+          "end": 20.18
+        },
+        {
+          "w": "list",
+          "start": 20.18,
+          "end": 20.36
+        },
+        {
+          "w": "of",
+          "start": 20.36,
+          "end": 20.58
+        },
+        {
+          "w": "marks,",
+          "start": 20.58,
+          "end": 20.9
+        }
+      ]
+    },
+    {
+      "text": "and prints a message confirming",
+      "start": 20.9,
+      "end": 22.42,
+      "words": [
+        {
+          "w": "and",
+          "start": 20.9,
+          "end": 21.14
+        },
+        {
+          "w": "prints",
+          "start": 21.14,
+          "end": 21.3
+        },
+        {
+          "w": "a",
+          "start": 21.3,
+          "end": 21.52
+        },
+        {
+          "w": "message",
+          "start": 21.52,
+          "end": 21.94
+        },
+        {
+          "w": "confirming",
+          "start": 21.94,
+          "end": 22.42
+        }
+      ]
+    },
+    {
+      "text": "the addition. The average method",
+      "start": 22.42,
+      "end": 23.76,
+      "words": [
+        {
+          "w": "the",
+          "start": 22.42,
+          "end": 22.62
+        },
+        {
+          "w": "addition.",
+          "start": 22.62,
+          "end": 22.84
+        },
+        {
+          "w": "The",
+          "start": 22.84,
+          "end": 23.12
+        },
+        {
+          "w": "average",
+          "start": 23.12,
+          "end": 23.5
+        },
+        {
+          "w": "method",
+          "start": 23.5,
+          "end": 23.76
+        }
+      ]
+    },
+    {
+      "text": "looks at the marks list,",
+      "start": 23.76,
+      "end": 25.58,
+      "words": [
+        {
+          "w": "looks",
+          "start": 23.76,
+          "end": 24.1
+        },
+        {
+          "w": "at",
+          "start": 24.48,
+          "end": 24.66
+        },
+        {
+          "w": "the",
+          "start": 24.66,
+          "end": 24.92
+        },
+        {
+          "w": "marks",
+          "start": 24.92,
+          "end": 25.28
+        },
+        {
+          "w": "list,",
+          "start": 25.28,
+          "end": 25.58
+        }
+      ]
+    },
+    {
+      "text": "adds them together, divides by",
+      "start": 25.58,
+      "end": 27.28,
+      "words": [
+        {
+          "w": "adds",
+          "start": 25.58,
+          "end": 25.8
+        },
+        {
+          "w": "them",
+          "start": 25.8,
+          "end": 25.92
+        },
+        {
+          "w": "together,",
+          "start": 25.92,
+          "end": 26.14
+        },
+        {
+          "w": "divides",
+          "start": 26.14,
+          "end": 26.7
+        },
+        {
+          "w": "by",
+          "start": 26.7,
+          "end": 27.28
+        }
+      ]
+    },
+    {
+      "text": "the count, and prints the",
+      "start": 27.28,
+      "end": 29.04,
+      "words": [
+        {
+          "w": "the",
+          "start": 27.28,
+          "end": 27.52
+        },
+        {
+          "w": "count,",
+          "start": 27.52,
+          "end": 27.96
+        },
+        {
+          "w": "and",
+          "start": 28.5,
+          "end": 28.6
+        },
+        {
+          "w": "prints",
+          "start": 28.6,
+          "end": 28.92
+        },
+        {
+          "w": "the",
+          "start": 28.92,
+          "end": 29.04
+        }
+      ]
+    },
+    {
+      "text": "result. A static method doesn't",
+      "start": 29.04,
+      "end": 30.76,
+      "words": [
+        {
+          "w": "result.",
+          "start": 29.04,
+          "end": 29.42
+        },
+        {
+          "w": "A",
+          "start": 29.8,
+          "end": 29.94
+        },
+        {
+          "w": "static",
+          "start": 29.94,
+          "end": 30.18
+        },
+        {
+          "w": "method",
+          "start": 30.18,
+          "end": 30.36
+        },
+        {
+          "w": "doesn't",
+          "start": 30.36,
+          "end": 30.76
+        }
+      ]
+    },
+    {
+      "text": "need any particular student, it",
+      "start": 31.32,
+      "end": 32.66,
+      "words": [
+        {
+          "w": "need",
+          "start": 31.32,
+          "end": 31.34
+        },
+        {
+          "w": "any",
+          "start": 31.34,
+          "end": 31.62
+        },
+        {
+          "w": "particular",
+          "start": 31.62,
+          "end": 32.0
+        },
+        {
+          "w": "student,",
+          "start": 32.0,
+          "end": 32.34
+        },
+        {
+          "w": "it",
+          "start": 32.34,
+          "end": 32.66
+        }
+      ]
+    },
+    {
+      "text": "simply prints a greeting. Now",
+      "start": 32.66,
+      "end": 34.74,
+      "words": [
+        {
+          "w": "simply",
+          "start": 32.66,
+          "end": 32.98
+        },
+        {
+          "w": "prints",
+          "start": 32.98,
+          "end": 33.44
+        },
+        {
+          "w": "a",
+          "start": 33.44,
+          "end": 33.84
+        },
+        {
+          "w": "greeting.",
+          "start": 34.38,
+          "end": 34.5
+        },
+        {
+          "w": "Now",
+          "start": 34.5,
+          "end": 34.74
+        }
+      ]
+    },
+    {
+      "text": "we create two Student objects",
+      "start": 34.74,
+      "end": 36.44,
+      "words": [
+        {
+          "w": "we",
+          "start": 34.74,
+          "end": 35.0
+        },
+        {
+          "w": "create",
+          "start": 35.0,
+          "end": 35.22
+        },
+        {
+          "w": "two",
+          "start": 35.22,
+          "end": 35.5
+        },
+        {
+          "w": "Student",
+          "start": 36.02,
+          "end": 36.26
+        },
+        {
+          "w": "objects",
+          "start": 36.26,
+          "end": 36.44
+        }
+      ]
+    },
+    {
+      "text": "with their names and marks.",
+      "start": 36.44,
+      "end": 38.1,
+      "words": [
+        {
+          "w": "with",
+          "start": 36.44,
+          "end": 36.78
+        },
+        {
+          "w": "their",
+          "start": 36.78,
+          "end": 37.06
+        },
+        {
+          "w": "names",
+          "start": 37.06,
+          "end": 37.38
+        },
+        {
+          "w": "and",
+          "start": 37.38,
+          "end": 37.78
+        },
+        {
+          "w": "marks.",
+          "start": 37.78,
+          "end": 38.1
+        }
+      ]
+    },
+    {
+      "text": "We call each object's average",
+      "start": 38.1,
+      "end": 39.7,
+      "words": [
+        {
+          "w": "We",
+          "start": 38.1,
+          "end": 38.3
+        },
+        {
+          "w": "call",
+          "start": 38.3,
+          "end": 38.58
+        },
+        {
+          "w": "each",
+          "start": 38.58,
+          "end": 38.8
+        },
+        {
+          "w": "object's",
+          "start": 38.8,
+          "end": 39.18
+        },
+        {
+          "w": "average",
+          "start": 39.56,
+          "end": 39.7
+        }
+      ]
+    },
+    {
+      "text": "method, and finally we call",
+      "start": 39.7,
+      "end": 41.4,
+      "words": [
+        {
+          "w": "method,",
+          "start": 39.7,
+          "end": 39.98
+        },
+        {
+          "w": "and",
+          "start": 39.98,
+          "end": 40.28
+        },
+        {
+          "w": "finally",
+          "start": 40.28,
+          "end": 40.78
+        },
+        {
+          "w": "we",
+          "start": 40.78,
+          "end": 41.0
+        },
+        {
+          "w": "call",
+          "start": 41.0,
+          "end": 41.4
+        }
+      ]
+    },
+    {
+      "text": "the static greeting. The output",
+      "start": 41.88,
+      "end": 43.0,
+      "words": [
+        {
+          "w": "the",
+          "start": 41.88,
+          "end": 42.04
+        },
+        {
+          "w": "static",
+          "start": 42.04,
+          "end": 42.36
+        },
+        {
+          "w": "greeting.",
+          "start": 42.36,
+          "end": 42.62
+        },
+        {
+          "w": "The",
+          "start": 42.62,
+          "end": 42.76
+        },
+        {
+          "w": "output",
+          "start": 42.76,
+          "end": 43.0
+        }
+      ]
+    },
+    {
+      "text": "shows the welcome messages, each",
+      "start": 43.0,
+      "end": 44.84,
+      "words": [
+        {
+          "w": "shows",
+          "start": 43.0,
+          "end": 43.26
+        },
+        {
+          "w": "the",
+          "start": 43.26,
+          "end": 43.62
+        },
+        {
+          "w": "welcome",
+          "start": 44.08,
+          "end": 44.24
+        },
+        {
+          "w": "messages,",
+          "start": 44.24,
+          "end": 44.48
+        },
+        {
+          "w": "each",
+          "start": 44.48,
+          "end": 44.84
+        }
+      ]
+    },
+    {
+      "text": "student's average, and the generic",
+      "start": 44.84,
+      "end": 47.12,
+      "words": [
+        {
+          "w": "student's",
+          "start": 44.84,
+          "end": 45.02
+        },
+        {
+          "w": "average,",
+          "start": 45.02,
+          "end": 45.28
+        },
+        {
+          "w": "and",
+          "start": 45.28,
+          "end": 45.72
+        },
+        {
+          "w": "the",
+          "start": 46.4,
+          "end": 46.64
+        },
+        {
+          "w": "generic",
+          "start": 46.64,
+          "end": 47.12
+        }
+      ]
+    },
+    {
+      "text": "hello. A class can combine",
+      "start": 47.12,
+      "end": 48.86,
+      "words": [
+        {
+          "w": "hello.",
+          "start": 47.12,
+          "end": 47.48
+        },
+        {
+          "w": "A",
+          "start": 47.74,
+          "end": 48.06
+        },
+        {
+          "w": "class",
+          "start": 48.06,
+          "end": 48.2
+        },
+        {
+          "w": "can",
+          "start": 48.2,
+          "end": 48.46
+        },
+        {
+          "w": "combine",
+          "start": 48.46,
+          "end": 48.86
+        }
+      ]
+    },
+    {
+      "text": "shared data, instance data, calculations,",
+      "start": 49.3,
+      "end": 50.6,
+      "words": [
+        {
+          "w": "shared",
+          "start": 49.3,
+          "end": 49.48
+        },
+        {
+          "w": "data,",
+          "start": 49.48,
+          "end": 49.72
+        },
+        {
+          "w": "instance",
+          "start": 49.72,
+          "end": 49.96
+        },
+        {
+          "w": "data,",
+          "start": 49.96,
+          "end": 50.28
+        },
+        {
+          "w": "calculations,",
+          "start": 50.28,
+          "end": 50.6
+        }
+      ]
+    },
+    {
+      "text": "and static helpers in one",
+      "start": 50.6,
+      "end": 53.78,
+      "words": [
+        {
+          "w": "and",
+          "start": 50.6,
+          "end": 51.22
+        },
+        {
+          "w": "static",
+          "start": 51.6,
+          "end": 51.82
+        },
+        {
+          "w": "helpers",
+          "start": 51.82,
+          "end": 52.4
+        },
+        {
+          "w": "in",
+          "start": 52.8,
+          "end": 53.2
+        },
+        {
+          "w": "one",
+          "start": 53.62,
+          "end": 53.78
+        }
+      ]
+    },
+    {
+      "text": "place. Add a method that",
+      "start": 53.78,
+      "end": 55.18,
+      "words": [
+        {
+          "w": "place.",
+          "start": 53.78,
+          "end": 54.02
+        },
+        {
+          "w": "Add",
+          "start": 54.02,
+          "end": 54.48
+        },
+        {
+          "w": "a",
+          "start": 54.48,
+          "end": 54.66
+        },
+        {
+          "w": "method",
+          "start": 54.66,
+          "end": 54.84
+        },
+        {
+          "w": "that",
+          "start": 54.84,
+          "end": 55.18
+        }
+      ]
+    },
+    {
+      "text": "prints the student's name and",
+      "start": 55.18,
+      "end": 56.66,
+      "words": [
+        {
+          "w": "prints",
+          "start": 55.18,
+          "end": 55.84
+        },
+        {
+          "w": "the",
+          "start": 55.84,
+          "end": 55.92
+        },
+        {
+          "w": "student's",
+          "start": 55.92,
+          "end": 56.18
+        },
+        {
+          "w": "name",
+          "start": 56.18,
+          "end": 56.44
+        },
+        {
+          "w": "and",
+          "start": 56.44,
+          "end": 56.66
+        }
+      ]
+    },
+    {
+      "text": "their highest mark.",
+      "start": 56.66,
+      "end": 57.54,
+      "words": [
+        {
+          "w": "their",
+          "start": 56.66,
+          "end": 56.92
+        },
+        {
+          "w": "highest",
+          "start": 56.92,
+          "end": 57.18
+        },
+        {
+          "w": "mark.",
+          "start": 57.18,
+          "end": 57.54
+        }
+      ]
+    }
+  ]
+}

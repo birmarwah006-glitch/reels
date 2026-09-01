@@ -1,0 +1,1024 @@
+{
+  "meal_id": "meal_06_process_control_block_pcb",
+  "audio": "meal_06_process_control_block_pcb.mp3",
+  "duration": 54.528,
+  "alignment": "whisper",
+  "anchors": {
+    "Ever wonder how the OS remembers each running program?": 0.0,
+    "How does the system keep track of a process\u2019s state?": 3.54,
+    "The PCB is a data structure that the operating system creates for every process.": 8.38,
+    "Now let's see a tiny example.": 41.92,
+    "The output shows the saved state ready for a context switch.": 50.14
+  },
+  "captions": [
+    {
+      "text": "Ever wonder how the OS",
+      "start": 0.0,
+      "end": 1.5,
+      "words": [
+        {
+          "w": "Ever",
+          "start": 0.0,
+          "end": 0.38
+        },
+        {
+          "w": "wonder",
+          "start": 0.38,
+          "end": 0.78
+        },
+        {
+          "w": "how",
+          "start": 0.78,
+          "end": 1.0
+        },
+        {
+          "w": "the",
+          "start": 1.0,
+          "end": 1.2
+        },
+        {
+          "w": "OS",
+          "start": 1.2,
+          "end": 1.5
+        }
+      ]
+    },
+    {
+      "text": "remembers each running program? How",
+      "start": 1.5,
+      "end": 3.66,
+      "words": [
+        {
+          "w": "remembers",
+          "start": 1.5,
+          "end": 1.94
+        },
+        {
+          "w": "each",
+          "start": 1.94,
+          "end": 2.34
+        },
+        {
+          "w": "running",
+          "start": 2.34,
+          "end": 2.58
+        },
+        {
+          "w": "program?",
+          "start": 2.58,
+          "end": 3.12
+        },
+        {
+          "w": "How",
+          "start": 3.54,
+          "end": 3.66
+        }
+      ]
+    },
+    {
+      "text": "does the system keep track",
+      "start": 3.66,
+      "end": 4.96,
+      "words": [
+        {
+          "w": "does",
+          "start": 3.66,
+          "end": 3.86
+        },
+        {
+          "w": "the",
+          "start": 3.86,
+          "end": 4.0
+        },
+        {
+          "w": "system",
+          "start": 4.0,
+          "end": 4.32
+        },
+        {
+          "w": "keep",
+          "start": 4.32,
+          "end": 4.62
+        },
+        {
+          "w": "track",
+          "start": 4.62,
+          "end": 4.96
+        }
+      ]
+    },
+    {
+      "text": "of a process\u2019s state? That's",
+      "start": 4.96,
+      "end": 6.06,
+      "words": [
+        {
+          "w": "of",
+          "start": 4.96,
+          "end": 5.16
+        },
+        {
+          "w": "a",
+          "start": 5.16,
+          "end": 5.38
+        },
+        {
+          "w": "process\u2019s",
+          "start": 5.38,
+          "end": 5.56
+        },
+        {
+          "w": "state?",
+          "start": 5.56,
+          "end": 5.8
+        },
+        {
+          "w": "That's",
+          "start": 5.8,
+          "end": 6.06
+        }
+      ]
+    },
+    {
+      "text": "the job of the Process",
+      "start": 6.46,
+      "end": 7.62,
+      "words": [
+        {
+          "w": "the",
+          "start": 6.46,
+          "end": 6.8
+        },
+        {
+          "w": "job",
+          "start": 6.8,
+          "end": 6.96
+        },
+        {
+          "w": "of",
+          "start": 6.96,
+          "end": 7.26
+        },
+        {
+          "w": "the",
+          "start": 7.26,
+          "end": 7.48
+        },
+        {
+          "w": "Process",
+          "start": 7.48,
+          "end": 7.62
+        }
+      ]
+    },
+    {
+      "text": "Control Block. The PCB is",
+      "start": 7.62,
+      "end": 9.7,
+      "words": [
+        {
+          "w": "Control",
+          "start": 7.62,
+          "end": 7.94
+        },
+        {
+          "w": "Block.",
+          "start": 7.94,
+          "end": 8.38
+        },
+        {
+          "w": "The",
+          "start": 8.38,
+          "end": 8.76
+        },
+        {
+          "w": "PCB",
+          "start": 9.24,
+          "end": 9.38
+        },
+        {
+          "w": "is",
+          "start": 9.38,
+          "end": 9.7
+        }
+      ]
+    },
+    {
+      "text": "a data structure that the",
+      "start": 9.7,
+      "end": 11.28,
+      "words": [
+        {
+          "w": "a",
+          "start": 9.7,
+          "end": 10.12
+        },
+        {
+          "w": "data",
+          "start": 10.12,
+          "end": 10.3
+        },
+        {
+          "w": "structure",
+          "start": 10.3,
+          "end": 10.52
+        },
+        {
+          "w": "that",
+          "start": 10.52,
+          "end": 10.94
+        },
+        {
+          "w": "the",
+          "start": 10.94,
+          "end": 11.28
+        }
+      ]
+    },
+    {
+      "text": "operating system creates for every",
+      "start": 11.28,
+      "end": 12.94,
+      "words": [
+        {
+          "w": "operating",
+          "start": 11.28,
+          "end": 11.52
+        },
+        {
+          "w": "system",
+          "start": 11.52,
+          "end": 11.74
+        },
+        {
+          "w": "creates",
+          "start": 11.74,
+          "end": 12.22
+        },
+        {
+          "w": "for",
+          "start": 12.22,
+          "end": 12.6
+        },
+        {
+          "w": "every",
+          "start": 12.6,
+          "end": 12.94
+        }
+      ]
+    },
+    {
+      "text": "process. It holds the process\u2019s",
+      "start": 12.94,
+      "end": 14.72,
+      "words": [
+        {
+          "w": "process.",
+          "start": 12.94,
+          "end": 13.22
+        },
+        {
+          "w": "It",
+          "start": 13.22,
+          "end": 13.76
+        },
+        {
+          "w": "holds",
+          "start": 14.16,
+          "end": 14.32
+        },
+        {
+          "w": "the",
+          "start": 14.32,
+          "end": 14.5
+        },
+        {
+          "w": "process\u2019s",
+          "start": 14.5,
+          "end": 14.72
+        }
+      ]
+    },
+    {
+      "text": "current state, like which instruction",
+      "start": 14.72,
+      "end": 16.72,
+      "words": [
+        {
+          "w": "current",
+          "start": 14.72,
+          "end": 15.26
+        },
+        {
+          "w": "state,",
+          "start": 15.26,
+          "end": 15.5
+        },
+        {
+          "w": "like",
+          "start": 15.5,
+          "end": 15.94
+        },
+        {
+          "w": "which",
+          "start": 16.38,
+          "end": 16.52
+        },
+        {
+          "w": "instruction",
+          "start": 16.52,
+          "end": 16.72
+        }
+      ]
+    },
+    {
+      "text": "it will execute next, the",
+      "start": 16.72,
+      "end": 18.38,
+      "words": [
+        {
+          "w": "it",
+          "start": 16.72,
+          "end": 17.14
+        },
+        {
+          "w": "will",
+          "start": 17.14,
+          "end": 17.36
+        },
+        {
+          "w": "execute",
+          "start": 17.36,
+          "end": 17.62
+        },
+        {
+          "w": "next,",
+          "start": 17.62,
+          "end": 17.88
+        },
+        {
+          "w": "the",
+          "start": 17.88,
+          "end": 18.38
+        }
+      ]
+    },
+    {
+      "text": "values in its registers, and",
+      "start": 18.94,
+      "end": 20.2,
+      "words": [
+        {
+          "w": "values",
+          "start": 18.94,
+          "end": 19.08
+        },
+        {
+          "w": "in",
+          "start": 19.08,
+          "end": 19.42
+        },
+        {
+          "w": "its",
+          "start": 19.42,
+          "end": 19.66
+        },
+        {
+          "w": "registers,",
+          "start": 19.66,
+          "end": 19.82
+        },
+        {
+          "w": "and",
+          "start": 19.82,
+          "end": 20.2
+        }
+      ]
+    },
+    {
+      "text": "pointers to its memory sections.",
+      "start": 20.86,
+      "end": 21.96,
+      "words": [
+        {
+          "w": "pointers",
+          "start": 20.86,
+          "end": 21.02
+        },
+        {
+          "w": "to",
+          "start": 21.02,
+          "end": 21.3
+        },
+        {
+          "w": "its",
+          "start": 21.3,
+          "end": 21.56
+        },
+        {
+          "w": "memory",
+          "start": 21.56,
+          "end": 21.76
+        },
+        {
+          "w": "sections.",
+          "start": 21.76,
+          "end": 21.96
+        }
+      ]
+    },
+    {
+      "text": "It also stores metadata such",
+      "start": 21.96,
+      "end": 24.26,
+      "words": [
+        {
+          "w": "It",
+          "start": 21.96,
+          "end": 22.52
+        },
+        {
+          "w": "also",
+          "start": 22.96,
+          "end": 23.22
+        },
+        {
+          "w": "stores",
+          "start": 23.22,
+          "end": 23.48
+        },
+        {
+          "w": "metadata",
+          "start": 23.48,
+          "end": 23.74
+        },
+        {
+          "w": "such",
+          "start": 23.74,
+          "end": 24.26
+        }
+      ]
+    },
+    {
+      "text": "as the process identifier and",
+      "start": 24.26,
+      "end": 26.02,
+      "words": [
+        {
+          "w": "as",
+          "start": 24.26,
+          "end": 24.64
+        },
+        {
+          "w": "the",
+          "start": 24.64,
+          "end": 24.88
+        },
+        {
+          "w": "process",
+          "start": 24.88,
+          "end": 25.02
+        },
+        {
+          "w": "identifier",
+          "start": 25.02,
+          "end": 25.36
+        },
+        {
+          "w": "and",
+          "start": 25.36,
+          "end": 26.02
+        }
+      ]
+    },
+    {
+      "text": "scheduling priority. When the CPU",
+      "start": 26.02,
+      "end": 28.18,
+      "words": [
+        {
+          "w": "scheduling",
+          "start": 26.02,
+          "end": 26.46
+        },
+        {
+          "w": "priority.",
+          "start": 26.46,
+          "end": 26.76
+        },
+        {
+          "w": "When",
+          "start": 26.76,
+          "end": 27.36
+        },
+        {
+          "w": "the",
+          "start": 27.36,
+          "end": 27.96
+        },
+        {
+          "w": "CPU",
+          "start": 27.96,
+          "end": 28.18
+        }
+      ]
+    },
+    {
+      "text": "switches from one process to",
+      "start": 28.18,
+      "end": 29.64,
+      "words": [
+        {
+          "w": "switches",
+          "start": 28.18,
+          "end": 28.44
+        },
+        {
+          "w": "from",
+          "start": 28.44,
+          "end": 28.82
+        },
+        {
+          "w": "one",
+          "start": 28.82,
+          "end": 29.1
+        },
+        {
+          "w": "process",
+          "start": 29.1,
+          "end": 29.34
+        },
+        {
+          "w": "to",
+          "start": 29.34,
+          "end": 29.64
+        }
+      ]
+    },
+    {
+      "text": "another, the OS saves the",
+      "start": 29.64,
+      "end": 31.5,
+      "words": [
+        {
+          "w": "another,",
+          "start": 29.64,
+          "end": 29.86
+        },
+        {
+          "w": "the",
+          "start": 29.86,
+          "end": 30.22
+        },
+        {
+          "w": "OS",
+          "start": 30.8,
+          "end": 30.94
+        },
+        {
+          "w": "saves",
+          "start": 30.94,
+          "end": 31.24
+        },
+        {
+          "w": "the",
+          "start": 31.24,
+          "end": 31.5
+        }
+      ]
+    },
+    {
+      "text": "outgoing process\u2019s state into its",
+      "start": 31.5,
+      "end": 32.92,
+      "words": [
+        {
+          "w": "outgoing",
+          "start": 31.5,
+          "end": 31.76
+        },
+        {
+          "w": "process\u2019s",
+          "start": 31.76,
+          "end": 31.98
+        },
+        {
+          "w": "state",
+          "start": 31.98,
+          "end": 32.44
+        },
+        {
+          "w": "into",
+          "start": 32.44,
+          "end": 32.74
+        },
+        {
+          "w": "its",
+          "start": 32.74,
+          "end": 32.92
+        }
+      ]
+    },
+    {
+      "text": "PCB, then loads the incoming",
+      "start": 32.92,
+      "end": 34.98,
+      "words": [
+        {
+          "w": "PCB,",
+          "start": 32.92,
+          "end": 33.18
+        },
+        {
+          "w": "then",
+          "start": 33.18,
+          "end": 33.36
+        },
+        {
+          "w": "loads",
+          "start": 33.36,
+          "end": 33.82
+        },
+        {
+          "w": "the",
+          "start": 34.58,
+          "end": 34.76
+        },
+        {
+          "w": "incoming",
+          "start": 34.76,
+          "end": 34.98
+        }
+      ]
+    },
+    {
+      "text": "process\u2019s state from its PCB.",
+      "start": 34.98,
+      "end": 36.58,
+      "words": [
+        {
+          "w": "process\u2019s",
+          "start": 34.98,
+          "end": 35.28
+        },
+        {
+          "w": "state",
+          "start": 35.28,
+          "end": 35.48
+        },
+        {
+          "w": "from",
+          "start": 35.48,
+          "end": 36.04
+        },
+        {
+          "w": "its",
+          "start": 36.04,
+          "end": 36.38
+        },
+        {
+          "w": "PCB.",
+          "start": 36.38,
+          "end": 36.58
+        }
+      ]
+    },
+    {
+      "text": "Think of the PCB as",
+      "start": 36.58,
+      "end": 38.22,
+      "words": [
+        {
+          "w": "Think",
+          "start": 36.58,
+          "end": 36.76
+        },
+        {
+          "w": "of",
+          "start": 36.76,
+          "end": 37.22
+        },
+        {
+          "w": "the",
+          "start": 37.74,
+          "end": 37.9
+        },
+        {
+          "w": "PCB",
+          "start": 37.9,
+          "end": 38.08
+        },
+        {
+          "w": "as",
+          "start": 38.08,
+          "end": 38.22
+        }
+      ]
+    },
+    {
+      "text": "a snapshot of everything the",
+      "start": 38.22,
+      "end": 39.84,
+      "words": [
+        {
+          "w": "a",
+          "start": 38.22,
+          "end": 38.62
+        },
+        {
+          "w": "snapshot",
+          "start": 38.62,
+          "end": 39.0
+        },
+        {
+          "w": "of",
+          "start": 39.0,
+          "end": 39.2
+        },
+        {
+          "w": "everything",
+          "start": 39.2,
+          "end": 39.44
+        },
+        {
+          "w": "the",
+          "start": 39.44,
+          "end": 39.84
+        }
+      ]
+    },
+    {
+      "text": "OS needs to pause and",
+      "start": 39.84,
+      "end": 41.08,
+      "words": [
+        {
+          "w": "OS",
+          "start": 39.84,
+          "end": 40.16
+        },
+        {
+          "w": "needs",
+          "start": 40.16,
+          "end": 40.4
+        },
+        {
+          "w": "to",
+          "start": 40.4,
+          "end": 40.64
+        },
+        {
+          "w": "pause",
+          "start": 40.64,
+          "end": 40.86
+        },
+        {
+          "w": "and",
+          "start": 40.86,
+          "end": 41.08
+        }
+      ]
+    },
+    {
+      "text": "resume a process. Now let's",
+      "start": 41.08,
+      "end": 42.5,
+      "words": [
+        {
+          "w": "resume",
+          "start": 41.08,
+          "end": 41.38
+        },
+        {
+          "w": "a",
+          "start": 41.38,
+          "end": 41.66
+        },
+        {
+          "w": "process.",
+          "start": 41.66,
+          "end": 41.92
+        },
+        {
+          "w": "Now",
+          "start": 41.92,
+          "end": 42.16
+        },
+        {
+          "w": "let's",
+          "start": 42.16,
+          "end": 42.5
+        }
+      ]
+    },
+    {
+      "text": "see a tiny example. The",
+      "start": 43.0,
+      "end": 44.02,
+      "words": [
+        {
+          "w": "see",
+          "start": 43.0,
+          "end": 43.14
+        },
+        {
+          "w": "a",
+          "start": 43.14,
+          "end": 43.4
+        },
+        {
+          "w": "tiny",
+          "start": 43.4,
+          "end": 43.64
+        },
+        {
+          "w": "example.",
+          "start": 43.64,
+          "end": 43.78
+        },
+        {
+          "w": "The",
+          "start": 43.78,
+          "end": 44.02
+        }
+      ]
+    },
+    {
+      "text": "code creates a simple PCB",
+      "start": 44.02,
+      "end": 46.06,
+      "words": [
+        {
+          "w": "code",
+          "start": 44.02,
+          "end": 44.56
+        },
+        {
+          "w": "creates",
+          "start": 45.08,
+          "end": 45.22
+        },
+        {
+          "w": "a",
+          "start": 45.22,
+          "end": 45.42
+        },
+        {
+          "w": "simple",
+          "start": 45.42,
+          "end": 45.8
+        },
+        {
+          "w": "PCB",
+          "start": 45.8,
+          "end": 46.06
+        }
+      ]
+    },
+    {
+      "text": "dictionary, fills in a few",
+      "start": 46.06,
+      "end": 48.44,
+      "words": [
+        {
+          "w": "dictionary,",
+          "start": 46.06,
+          "end": 46.3
+        },
+        {
+          "w": "fills",
+          "start": 46.3,
+          "end": 46.74
+        },
+        {
+          "w": "in",
+          "start": 46.74,
+          "end": 47.28
+        },
+        {
+          "w": "a",
+          "start": 48.0,
+          "end": 48.14
+        },
+        {
+          "w": "few",
+          "start": 48.14,
+          "end": 48.44
+        }
+      ]
+    },
+    {
+      "text": "fields, and prints the saved",
+      "start": 48.44,
+      "end": 49.9,
+      "words": [
+        {
+          "w": "fields,",
+          "start": 48.44,
+          "end": 48.6
+        },
+        {
+          "w": "and",
+          "start": 48.6,
+          "end": 48.7
+        },
+        {
+          "w": "prints",
+          "start": 48.7,
+          "end": 49.14
+        },
+        {
+          "w": "the",
+          "start": 49.54,
+          "end": 49.64
+        },
+        {
+          "w": "saved",
+          "start": 49.64,
+          "end": 49.9
+        }
+      ]
+    },
+    {
+      "text": "state. The output shows the",
+      "start": 49.9,
+      "end": 51.54,
+      "words": [
+        {
+          "w": "state.",
+          "start": 49.9,
+          "end": 50.14
+        },
+        {
+          "w": "The",
+          "start": 50.14,
+          "end": 50.4
+        },
+        {
+          "w": "output",
+          "start": 50.4,
+          "end": 50.72
+        },
+        {
+          "w": "shows",
+          "start": 51.1,
+          "end": 51.28
+        },
+        {
+          "w": "the",
+          "start": 51.28,
+          "end": 51.54
+        }
+      ]
+    },
+    {
+      "text": "saved state ready for a",
+      "start": 51.54,
+      "end": 53.0,
+      "words": [
+        {
+          "w": "saved",
+          "start": 51.54,
+          "end": 51.92
+        },
+        {
+          "w": "state",
+          "start": 51.92,
+          "end": 52.16
+        },
+        {
+          "w": "ready",
+          "start": 52.16,
+          "end": 52.44
+        },
+        {
+          "w": "for",
+          "start": 52.44,
+          "end": 52.76
+        },
+        {
+          "w": "a",
+          "start": 52.76,
+          "end": 53.0
+        }
+      ]
+    },
+    {
+      "text": "context switch.",
+      "start": 53.0,
+      "end": 53.5,
+      "words": [
+        {
+          "w": "context",
+          "start": 53.0,
+          "end": 53.24
+        },
+        {
+          "w": "switch.",
+          "start": 53.24,
+          "end": 53.5
+        }
+      ]
+    }
+  ]
+}

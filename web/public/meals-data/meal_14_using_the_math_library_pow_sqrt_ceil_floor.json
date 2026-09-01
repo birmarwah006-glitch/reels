@@ -1,0 +1,178 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_14_using_the_math_library_pow_sqrt_ceil_floor",
+    "title": "Using the C math library functions",
+    "concept": "c.project.overview",
+    "objective": "Call pow, sqrt, ceil, and floor from <math.h> in a C program",
+    "difficulty": "intermediate",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "pow",
+      "sqrt",
+      "ceil",
+      "floor"
+    ],
+    "assumes": [
+      "variables",
+      "float/double"
+    ],
+    "voice": {
+      "script": "What if you could raise any number to any power in one line? How do you compute squares, roots, and round numbers in C? pow function takes a base and an exponent and returns the base raised to that exponent. sqrt function returns the square root of a number. ceil function rounds a number up to the nearest whole value. floor function rounds a number down to the nearest whole value. Let's see them in action. code starts Here we include the math header, read a number from the user, then compute its cube using pow, its square root with sqrt, the ceiling with ceil, and the floor with floor, printing each result. output is discussed When you run the program and type 2.7 you will see the power result 19.683000, the square root about 1.643167, the ceiling 3.000000 and the floor 2.000000. takeaway Remember to include <math.h> and compile with -lm to use these functions. practice_prompt Try changing the input value and observe how each function's output changes.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "What if you could raise any number to any power in one line?"
+        },
+        "narration_anchor": "What if you could raise any number to any power in one line?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "question",
+        "visual": {
+          "type": "text",
+          "tone": "question",
+          "text": "How do you compute squares, roots, and round numbers in C?"
+        },
+        "narration_anchor": "How do you compute squares, roots, and round numbers in C?"
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "pow, sqrt, ceil, floor",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "use math.h",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "calls"
+            }
+          ]
+        },
+        "narration_anchor": "pow function takes a base and an exponent and returns the base raised to that exponent."
+      },
+      {
+        "beat": "code",
+        "visual": {
+          "type": "code_editor",
+          "language": "c",
+          "filename": "main.c",
+          "code": "#include <stdio.h>\n#include <math.h>\nint main(){\n    double x;\n    printf(\"Enter a number: \");\n    scanf(\"%lf\", &x);\n    double p = pow(x, 3);\n    double r = sqrt(x);\n    double c = ceil(x);\n    double f = floor(x);\n    printf(\"pow(x,3) = %f\\n\", p);\n    printf(\"sqrt(x) = %f\\n\", r);\n    printf(\"ceil(x) = %f\\n\", c);\n    printf(\"floor(x) = %f\\n\", f);\n    return 0;\n}\n",
+          "show_line_numbers": true,
+          "actions": [
+            {
+              "action": "type",
+              "text": "#include <stdio.h>\n#include <math.h>\nint main(){\n    double x;\n    printf(\"Enter a number: \");\n    scanf(\"%lf\", &x);\n    double p = pow(x, 3);\n    double r = sqrt(x);\n    double c = ceil(x);\n    double f = floor(x);\n    printf(\"pow(x,3) = %f\\n\", p);\n    printf(\"sqrt(x) = %f\\n\", r);\n    printf(\"ceil(x) = %f\\n\", c);\n    printf(\"floor(x) = %f\\n\", f);\n    return 0;\n}",
+              "lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16
+              ],
+              "speed_cps": 26
+            }
+          ]
+        },
+        "narration_anchor": "code starts"
+      },
+      {
+        "beat": "execution",
+        "visual": {
+          "type": "terminal",
+          "command": "a.out",
+          "stdin": [
+            "2.7"
+          ],
+          "execution": {
+            "verified": true,
+            "source": "local_sandbox",
+            "executed_at": "2026-08-28T05:15:38+00:00",
+            "stdout": "Enter a number: pow(x,3) = 19.683000\nsqrt(x) = 1.643168\nceil(x) = 3.000000\nfloor(x) = 2.000000\n",
+            "stderr": "",
+            "exit_code": 0
+          }
+        },
+        "narration_anchor": "output is discussed",
+        "min_duration": 3.0
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Include <math.h> and compile with -lm to use pow, sqrt, ceil, and floor."
+        },
+        "narration_anchor": "takeaway",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Change the input number and note how each function's result changes."
+        },
+        "narration_anchor": "practice_prompt",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Change the input number and note how each function's result changes."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 14,
+      "total": 22,
+      "previous_id": "meal_13_simple_arithmetic_operations",
+      "next_id": "meal_15_writing_comments"
+    }
+  }
+}

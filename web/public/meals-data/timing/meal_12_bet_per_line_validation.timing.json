@@ -1,0 +1,1085 @@
+{
+  "meal_id": "meal_12_bet_per_line_validation",
+  "audio": "meal_12_bet_per_line_validation.mp3",
+  "duration": 50.4,
+  "alignment": "whisper",
+  "anchors": {
+    "How much should you bet per line?": 0.0,
+    "What bet amount keeps you playing without overspending?": 2.08,
+    "We use an if statement to decide if the bet is allowed.": 25.52,
+    "Now let's see the function that gets a valid bet.": 37.1,
+    "The program then prints the bet summary.": 39.84,
+    "Always check both per\u2011line limits and total against balance.": 42.2,
+    "Try changing the minimum bet and see how validation reacts.": 45.44
+  },
+  "captions": [
+    {
+      "text": "How much should you bet",
+      "start": 0.0,
+      "end": 1.06,
+      "words": [
+        {
+          "w": "How",
+          "start": 0.0,
+          "end": 0.28
+        },
+        {
+          "w": "much",
+          "start": 0.28,
+          "end": 0.52
+        },
+        {
+          "w": "should",
+          "start": 0.52,
+          "end": 0.72
+        },
+        {
+          "w": "you",
+          "start": 0.72,
+          "end": 0.9
+        },
+        {
+          "w": "bet",
+          "start": 0.9,
+          "end": 1.06
+        }
+      ]
+    },
+    {
+      "text": "per line? What bet amount",
+      "start": 1.06,
+      "end": 2.76,
+      "words": [
+        {
+          "w": "per",
+          "start": 1.06,
+          "end": 1.3
+        },
+        {
+          "w": "line?",
+          "start": 1.3,
+          "end": 1.64
+        },
+        {
+          "w": "What",
+          "start": 2.08,
+          "end": 2.2
+        },
+        {
+          "w": "bet",
+          "start": 2.2,
+          "end": 2.46
+        },
+        {
+          "w": "amount",
+          "start": 2.46,
+          "end": 2.76
+        }
+      ]
+    },
+    {
+      "text": "keeps you playing without overspending?",
+      "start": 2.76,
+      "end": 4.6,
+      "words": [
+        {
+          "w": "keeps",
+          "start": 2.76,
+          "end": 3.02
+        },
+        {
+          "w": "you",
+          "start": 3.02,
+          "end": 3.3
+        },
+        {
+          "w": "playing",
+          "start": 3.3,
+          "end": 3.54
+        },
+        {
+          "w": "without",
+          "start": 3.54,
+          "end": 3.88
+        },
+        {
+          "w": "overspending?",
+          "start": 3.88,
+          "end": 4.6
+        }
+      ]
+    },
+    {
+      "text": "Imagine you have a balance",
+      "start": 5.28,
+      "end": 6.3,
+      "words": [
+        {
+          "w": "Imagine",
+          "start": 5.28,
+          "end": 5.38
+        },
+        {
+          "w": "you",
+          "start": 5.38,
+          "end": 5.66
+        },
+        {
+          "w": "have",
+          "start": 5.66,
+          "end": 5.82
+        },
+        {
+          "w": "a",
+          "start": 5.82,
+          "end": 5.96
+        },
+        {
+          "w": "balance",
+          "start": 5.96,
+          "end": 6.3
+        }
+      ]
+    },
+    {
+      "text": "and you want to place",
+      "start": 6.3,
+      "end": 7.24,
+      "words": [
+        {
+          "w": "and",
+          "start": 6.3,
+          "end": 6.66
+        },
+        {
+          "w": "you",
+          "start": 6.66,
+          "end": 6.78
+        },
+        {
+          "w": "want",
+          "start": 6.78,
+          "end": 6.94
+        },
+        {
+          "w": "to",
+          "start": 6.94,
+          "end": 7.06
+        },
+        {
+          "w": "place",
+          "start": 7.06,
+          "end": 7.24
+        }
+      ]
+    },
+    {
+      "text": "a bet on several lines.",
+      "start": 7.24,
+      "end": 8.6,
+      "words": [
+        {
+          "w": "a",
+          "start": 7.24,
+          "end": 7.46
+        },
+        {
+          "w": "bet",
+          "start": 7.46,
+          "end": 7.6
+        },
+        {
+          "w": "on",
+          "start": 7.6,
+          "end": 7.96
+        },
+        {
+          "w": "several",
+          "start": 7.96,
+          "end": 8.2
+        },
+        {
+          "w": "lines.",
+          "start": 8.2,
+          "end": 8.6
+        }
+      ]
+    },
+    {
+      "text": "First we ask the user",
+      "start": 9.1,
+      "end": 10.38,
+      "words": [
+        {
+          "w": "First",
+          "start": 9.1,
+          "end": 9.34
+        },
+        {
+          "w": "we",
+          "start": 9.34,
+          "end": 9.58
+        },
+        {
+          "w": "ask",
+          "start": 9.58,
+          "end": 9.84
+        },
+        {
+          "w": "the",
+          "start": 9.84,
+          "end": 10.06
+        },
+        {
+          "w": "user",
+          "start": 10.06,
+          "end": 10.38
+        }
+      ]
+    },
+    {
+      "text": "for the amount they want",
+      "start": 10.38,
+      "end": 11.54,
+      "words": [
+        {
+          "w": "for",
+          "start": 10.38,
+          "end": 10.7
+        },
+        {
+          "w": "the",
+          "start": 10.7,
+          "end": 10.84
+        },
+        {
+          "w": "amount",
+          "start": 10.84,
+          "end": 11.12
+        },
+        {
+          "w": "they",
+          "start": 11.12,
+          "end": 11.36
+        },
+        {
+          "w": "want",
+          "start": 11.36,
+          "end": 11.54
+        }
+      ]
+    },
+    {
+      "text": "to wager on each line.",
+      "start": 11.54,
+      "end": 12.74,
+      "words": [
+        {
+          "w": "to",
+          "start": 11.54,
+          "end": 11.66
+        },
+        {
+          "w": "wager",
+          "start": 11.66,
+          "end": 11.96
+        },
+        {
+          "w": "on",
+          "start": 11.96,
+          "end": 12.24
+        },
+        {
+          "w": "each",
+          "start": 12.24,
+          "end": 12.4
+        },
+        {
+          "w": "line.",
+          "start": 12.4,
+          "end": 12.74
+        }
+      ]
+    },
+    {
+      "text": "We keep asking until they",
+      "start": 13.08,
+      "end": 14.58,
+      "words": [
+        {
+          "w": "We",
+          "start": 13.08,
+          "end": 13.26
+        },
+        {
+          "w": "keep",
+          "start": 13.26,
+          "end": 13.52
+        },
+        {
+          "w": "asking",
+          "start": 13.52,
+          "end": 13.96
+        },
+        {
+          "w": "until",
+          "start": 13.96,
+          "end": 14.36
+        },
+        {
+          "w": "they",
+          "start": 14.36,
+          "end": 14.58
+        }
+      ]
+    },
+    {
+      "text": "type a number. Then we",
+      "start": 14.58,
+      "end": 16.12,
+      "words": [
+        {
+          "w": "type",
+          "start": 14.58,
+          "end": 14.8
+        },
+        {
+          "w": "a",
+          "start": 14.8,
+          "end": 15.04
+        },
+        {
+          "w": "number.",
+          "start": 15.04,
+          "end": 15.3
+        },
+        {
+          "w": "Then",
+          "start": 15.74,
+          "end": 15.94
+        },
+        {
+          "w": "we",
+          "start": 15.94,
+          "end": 16.12
+        }
+      ]
+    },
+    {
+      "text": "check if that number is",
+      "start": 16.12,
+      "end": 17.32,
+      "words": [
+        {
+          "w": "check",
+          "start": 16.12,
+          "end": 16.34
+        },
+        {
+          "w": "if",
+          "start": 16.34,
+          "end": 16.54
+        },
+        {
+          "w": "that",
+          "start": 16.54,
+          "end": 16.76
+        },
+        {
+          "w": "number",
+          "start": 16.76,
+          "end": 17.04
+        },
+        {
+          "w": "is",
+          "start": 17.04,
+          "end": 17.32
+        }
+      ]
+    },
+    {
+      "text": "at least the minimum allowed",
+      "start": 17.32,
+      "end": 18.52,
+      "words": [
+        {
+          "w": "at",
+          "start": 17.32,
+          "end": 17.68
+        },
+        {
+          "w": "least",
+          "start": 17.68,
+          "end": 17.68
+        },
+        {
+          "w": "the",
+          "start": 17.68,
+          "end": 17.88
+        },
+        {
+          "w": "minimum",
+          "start": 17.88,
+          "end": 18.08
+        },
+        {
+          "w": "allowed",
+          "start": 18.08,
+          "end": 18.52
+        }
+      ]
+    },
+    {
+      "text": "and no more than the",
+      "start": 18.52,
+      "end": 19.58,
+      "words": [
+        {
+          "w": "and",
+          "start": 18.52,
+          "end": 18.82
+        },
+        {
+          "w": "no",
+          "start": 18.82,
+          "end": 19.04
+        },
+        {
+          "w": "more",
+          "start": 19.04,
+          "end": 19.24
+        },
+        {
+          "w": "than",
+          "start": 19.24,
+          "end": 19.48
+        },
+        {
+          "w": "the",
+          "start": 19.48,
+          "end": 19.58
+        }
+      ]
+    },
+    {
+      "text": "maximum allowed. We calculate the",
+      "start": 19.58,
+      "end": 21.64,
+      "words": [
+        {
+          "w": "maximum",
+          "start": 19.58,
+          "end": 19.84
+        },
+        {
+          "w": "allowed.",
+          "start": 19.84,
+          "end": 20.36
+        },
+        {
+          "w": "We",
+          "start": 20.8,
+          "end": 21.0
+        },
+        {
+          "w": "calculate",
+          "start": 21.0,
+          "end": 21.34
+        },
+        {
+          "w": "the",
+          "start": 21.34,
+          "end": 21.64
+        }
+      ]
+    },
+    {
+      "text": "total bet by multiplying the",
+      "start": 21.64,
+      "end": 23.26,
+      "words": [
+        {
+          "w": "total",
+          "start": 21.64,
+          "end": 21.9
+        },
+        {
+          "w": "bet",
+          "start": 21.9,
+          "end": 22.2
+        },
+        {
+          "w": "by",
+          "start": 22.2,
+          "end": 22.5
+        },
+        {
+          "w": "multiplying",
+          "start": 22.5,
+          "end": 22.92
+        },
+        {
+          "w": "the",
+          "start": 22.92,
+          "end": 23.26
+        }
+      ]
+    },
+    {
+      "text": "per\u2011line amount by the number",
+      "start": 23.26,
+      "end": 24.38,
+      "words": [
+        {
+          "w": "per\u2011line",
+          "start": 23.26,
+          "end": 23.36
+        },
+        {
+          "w": "amount",
+          "start": 23.36,
+          "end": 23.62
+        },
+        {
+          "w": "by",
+          "start": 23.62,
+          "end": 23.98
+        },
+        {
+          "w": "the",
+          "start": 23.98,
+          "end": 24.26
+        },
+        {
+          "w": "number",
+          "start": 24.26,
+          "end": 24.38
+        }
+      ]
+    },
+    {
+      "text": "of lines they chose earlier.",
+      "start": 24.38,
+      "end": 25.52,
+      "words": [
+        {
+          "w": "of",
+          "start": 24.38,
+          "end": 24.58
+        },
+        {
+          "w": "lines",
+          "start": 24.58,
+          "end": 24.82
+        },
+        {
+          "w": "they",
+          "start": 24.82,
+          "end": 25.06
+        },
+        {
+          "w": "chose",
+          "start": 25.06,
+          "end": 25.3
+        },
+        {
+          "w": "earlier.",
+          "start": 25.3,
+          "end": 25.52
+        }
+      ]
+    },
+    {
+      "text": "We use an if statement",
+      "start": 25.52,
+      "end": 27.14,
+      "words": [
+        {
+          "w": "We",
+          "start": 25.52,
+          "end": 26.0
+        },
+        {
+          "w": "use",
+          "start": 26.28,
+          "end": 26.54
+        },
+        {
+          "w": "an",
+          "start": 26.54,
+          "end": 26.88
+        },
+        {
+          "w": "if",
+          "start": 26.88,
+          "end": 26.98
+        },
+        {
+          "w": "statement",
+          "start": 26.98,
+          "end": 27.14
+        }
+      ]
+    },
+    {
+      "text": "to decide if the bet",
+      "start": 27.14,
+      "end": 28.54,
+      "words": [
+        {
+          "w": "to",
+          "start": 27.14,
+          "end": 27.5
+        },
+        {
+          "w": "decide",
+          "start": 27.5,
+          "end": 27.74
+        },
+        {
+          "w": "if",
+          "start": 27.74,
+          "end": 28.14
+        },
+        {
+          "w": "the",
+          "start": 28.14,
+          "end": 28.38
+        },
+        {
+          "w": "bet",
+          "start": 28.38,
+          "end": 28.54
+        }
+      ]
+    },
+    {
+      "text": "is allowed. If the total",
+      "start": 28.54,
+      "end": 30.04,
+      "words": [
+        {
+          "w": "is",
+          "start": 28.54,
+          "end": 28.68
+        },
+        {
+          "w": "allowed.",
+          "start": 28.68,
+          "end": 28.94
+        },
+        {
+          "w": "If",
+          "start": 28.94,
+          "end": 29.26
+        },
+        {
+          "w": "the",
+          "start": 29.26,
+          "end": 29.86
+        },
+        {
+          "w": "total",
+          "start": 29.86,
+          "end": 30.04
+        }
+      ]
+    },
+    {
+      "text": "exceeds the current balance, we",
+      "start": 30.04,
+      "end": 31.5,
+      "words": [
+        {
+          "w": "exceeds",
+          "start": 30.04,
+          "end": 30.26
+        },
+        {
+          "w": "the",
+          "start": 30.26,
+          "end": 30.62
+        },
+        {
+          "w": "current",
+          "start": 30.62,
+          "end": 30.9
+        },
+        {
+          "w": "balance,",
+          "start": 30.9,
+          "end": 31.1
+        },
+        {
+          "w": "we",
+          "start": 31.1,
+          "end": 31.5
+        }
+      ]
+    },
+    {
+      "text": "tell them they need to",
+      "start": 31.96,
+      "end": 32.8,
+      "words": [
+        {
+          "w": "tell",
+          "start": 31.96,
+          "end": 32.04
+        },
+        {
+          "w": "them",
+          "start": 32.04,
+          "end": 32.22
+        },
+        {
+          "w": "they",
+          "start": 32.22,
+          "end": 32.4
+        },
+        {
+          "w": "need",
+          "start": 32.4,
+          "end": 32.56
+        },
+        {
+          "w": "to",
+          "start": 32.56,
+          "end": 32.8
+        }
+      ]
+    },
+    {
+      "text": "lower their bet and ask",
+      "start": 32.8,
+      "end": 33.86,
+      "words": [
+        {
+          "w": "lower",
+          "start": 32.8,
+          "end": 32.96
+        },
+        {
+          "w": "their",
+          "start": 32.96,
+          "end": 33.16
+        },
+        {
+          "w": "bet",
+          "start": 33.16,
+          "end": 33.44
+        },
+        {
+          "w": "and",
+          "start": 33.44,
+          "end": 33.6
+        },
+        {
+          "w": "ask",
+          "start": 33.6,
+          "end": 33.86
+        }
+      ]
+    },
+    {
+      "text": "again. Once the amount passes",
+      "start": 33.86,
+      "end": 35.6,
+      "words": [
+        {
+          "w": "again.",
+          "start": 33.86,
+          "end": 34.08
+        },
+        {
+          "w": "Once",
+          "start": 34.08,
+          "end": 34.48
+        },
+        {
+          "w": "the",
+          "start": 34.9,
+          "end": 35.14
+        },
+        {
+          "w": "amount",
+          "start": 35.14,
+          "end": 35.32
+        },
+        {
+          "w": "passes",
+          "start": 35.32,
+          "end": 35.6
+        }
+      ]
+    },
+    {
+      "text": "all checks we return it.",
+      "start": 35.6,
+      "end": 37.1,
+      "words": [
+        {
+          "w": "all",
+          "start": 35.6,
+          "end": 35.96
+        },
+        {
+          "w": "checks",
+          "start": 35.96,
+          "end": 36.32
+        },
+        {
+          "w": "we",
+          "start": 36.32,
+          "end": 36.56
+        },
+        {
+          "w": "return",
+          "start": 36.56,
+          "end": 36.84
+        },
+        {
+          "w": "it.",
+          "start": 36.84,
+          "end": 37.1
+        }
+      ]
+    },
+    {
+      "text": "Now let's see the function",
+      "start": 37.1,
+      "end": 38.62,
+      "words": [
+        {
+          "w": "Now",
+          "start": 37.1,
+          "end": 37.44
+        },
+        {
+          "w": "let's",
+          "start": 37.76,
+          "end": 37.98
+        },
+        {
+          "w": "see",
+          "start": 37.98,
+          "end": 38.26
+        },
+        {
+          "w": "the",
+          "start": 38.26,
+          "end": 38.44
+        },
+        {
+          "w": "function",
+          "start": 38.44,
+          "end": 38.62
+        }
+      ]
+    },
+    {
+      "text": "that gets a valid bet.",
+      "start": 38.62,
+      "end": 39.84,
+      "words": [
+        {
+          "w": "that",
+          "start": 38.62,
+          "end": 39.02
+        },
+        {
+          "w": "gets",
+          "start": 39.02,
+          "end": 39.24
+        },
+        {
+          "w": "a",
+          "start": 39.24,
+          "end": 39.46
+        },
+        {
+          "w": "valid",
+          "start": 39.46,
+          "end": 39.68
+        },
+        {
+          "w": "bet.",
+          "start": 39.68,
+          "end": 39.84
+        }
+      ]
+    },
+    {
+      "text": "The program then prints the",
+      "start": 39.84,
+      "end": 41.78,
+      "words": [
+        {
+          "w": "The",
+          "start": 39.84,
+          "end": 40.18
+        },
+        {
+          "w": "program",
+          "start": 40.58,
+          "end": 40.78
+        },
+        {
+          "w": "then",
+          "start": 40.78,
+          "end": 41.1
+        },
+        {
+          "w": "prints",
+          "start": 41.1,
+          "end": 41.52
+        },
+        {
+          "w": "the",
+          "start": 41.52,
+          "end": 41.78
+        }
+      ]
+    },
+    {
+      "text": "bet summary. Always check both",
+      "start": 41.78,
+      "end": 43.72,
+      "words": [
+        {
+          "w": "bet",
+          "start": 41.78,
+          "end": 42.0
+        },
+        {
+          "w": "summary.",
+          "start": 42.0,
+          "end": 42.2
+        },
+        {
+          "w": "Always",
+          "start": 42.2,
+          "end": 42.6
+        },
+        {
+          "w": "check",
+          "start": 43.18,
+          "end": 43.4
+        },
+        {
+          "w": "both",
+          "start": 43.4,
+          "end": 43.72
+        }
+      ]
+    },
+    {
+      "text": "per\u2011line limits and total against",
+      "start": 43.72,
+      "end": 45.12,
+      "words": [
+        {
+          "w": "per\u2011line",
+          "start": 43.72,
+          "end": 44.04
+        },
+        {
+          "w": "limits",
+          "start": 44.04,
+          "end": 44.22
+        },
+        {
+          "w": "and",
+          "start": 44.22,
+          "end": 44.46
+        },
+        {
+          "w": "total",
+          "start": 44.46,
+          "end": 44.8
+        },
+        {
+          "w": "against",
+          "start": 44.8,
+          "end": 45.12
+        }
+      ]
+    },
+    {
+      "text": "balance. Try changing the minimum",
+      "start": 45.12,
+      "end": 47.48,
+      "words": [
+        {
+          "w": "balance.",
+          "start": 45.12,
+          "end": 45.44
+        },
+        {
+          "w": "Try",
+          "start": 45.44,
+          "end": 45.78
+        },
+        {
+          "w": "changing",
+          "start": 45.78,
+          "end": 46.26
+        },
+        {
+          "w": "the",
+          "start": 46.78,
+          "end": 47.06
+        },
+        {
+          "w": "minimum",
+          "start": 47.06,
+          "end": 47.48
+        }
+      ]
+    },
+    {
+      "text": "bet and see how validation",
+      "start": 47.48,
+      "end": 48.78,
+      "words": [
+        {
+          "w": "bet",
+          "start": 47.48,
+          "end": 47.72
+        },
+        {
+          "w": "and",
+          "start": 47.72,
+          "end": 47.94
+        },
+        {
+          "w": "see",
+          "start": 47.94,
+          "end": 48.3
+        },
+        {
+          "w": "how",
+          "start": 48.3,
+          "end": 48.58
+        },
+        {
+          "w": "validation",
+          "start": 48.58,
+          "end": 48.78
+        }
+      ]
+    },
+    {
+      "text": "reacts.",
+      "start": 48.78,
+      "end": 49.02,
+      "words": [
+        {
+          "w": "reacts.",
+          "start": 48.78,
+          "end": 49.02
+        }
+      ]
+    }
+  ]
+}

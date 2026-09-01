@@ -1,0 +1,110 @@
+{
+  "meal": {
+    "schema_version": "1.0",
+    "id": "meal_06_compiling_and_running_a_c_program",
+    "title": "Compiling and Running a C Program",
+    "concept": "c.project.overview",
+    "objective": "Build and run a C program inside the IDE",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "next_concepts": [
+      "c.project.overview",
+      "c.project.overview"
+    ],
+    "source": {
+      "kind": "lecture"
+    },
+    "teaches": [
+      "build",
+      "run"
+    ],
+    "assumes": [
+      "default main.c structure"
+    ],
+    "voice": {
+      "script": "Ever wondered how your typed C code becomes a running program? Building means the IDE calls the compiler to translate your source into machine code the computer understands. This step creates an executable file. Running then launches that executable, opening a terminal window where your program can read input and show output. Watch the terminal appear as your program runs. Remember, build turns code into something the computer can execute, and run actually starts it. Now try building and running the default main.c in your IDE.",
+      "voice_id": "en-US-BrianNeural",
+      "rate": "+6%"
+    },
+    "captions": {
+      "enabled": false,
+      "words_per_line": 5,
+      "highlight_active_word": true
+    },
+    "scenes": [
+      {
+        "beat": "hook",
+        "visual": {
+          "type": "text",
+          "tone": "hook",
+          "text": "Ever wondered how your typed C code becomes a running program?"
+        },
+        "narration_anchor": "Ever wondered how your typed C code becomes a running program?",
+        "min_duration": 2.0
+      },
+      {
+        "beat": "concept",
+        "visual": {
+          "type": "flow",
+          "layout": "vertical",
+          "nodes": [
+            {
+              "id": "a",
+              "label": "Build",
+              "kind": "box"
+            },
+            {
+              "id": "b",
+              "label": "Run",
+              "kind": "box"
+            }
+          ],
+          "edges": [
+            {
+              "from": "a",
+              "to": "b",
+              "label": "then run"
+            }
+          ]
+        },
+        "narration_anchor": "Building means the IDE calls the compiler to translate your source into machine code the computer understands."
+      },
+      {
+        "beat": "takeaway",
+        "visual": {
+          "type": "text",
+          "tone": "takeaway",
+          "text": "Build turns code into something the computer can execute, and run actually starts it."
+        },
+        "narration_anchor": "Remember, build turns code into something the computer can execute, and run actually starts it.",
+        "min_duration": 2.5
+      },
+      {
+        "beat": "practice",
+        "visual": {
+          "type": "practice",
+          "prompt": "Build and run the default main.c program in your IDE."
+        },
+        "narration_anchor": "Now try building and running the default main.c in your IDE.",
+        "min_duration": 2.5
+      }
+    ],
+    "render": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    },
+    "practice": {
+      "kind": "write_code",
+      "prompt": "Build and run the default main.c program in your IDE."
+    },
+    "series": {
+      "title": "C Programming Basics",
+      "artifact": "A simple C program that reads input, does calculations, and plays a number\u2011guessing game",
+      "order": 6,
+      "total": 22,
+      "previous_id": "meal_05_understanding_the_generated_main_c_file",
+      "next_id": "meal_07_printing_text_with_printf"
+    }
+  }
+}
